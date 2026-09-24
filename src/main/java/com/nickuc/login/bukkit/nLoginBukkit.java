@@ -1,34 +1,34 @@
 package com.nickuc.login.bukkit;
 
-import com.nickuc.login.ΓχυψπωΣςΠκγζΦ;
-import com.nickuc.login.ΔοΓκωΠαλξφιΩθ;
-import com.nickuc.login.ΔχλΩψδλΛιχ;
-import com.nickuc.login.ΠΛΨοδΩσμνΛγΦφβς;
-import com.nickuc.login.ΣδτΠνεγοΓορητ;
-import com.nickuc.login.ΦδφπθΩΩλζξ;
-import com.nickuc.login.ΦωοφυδιφΣΦ;
-import com.nickuc.login.ΨΦνΨΦωυΩνβςμ;
-import com.nickuc.login.ΨγημιδξΓτοθαζ;
-import com.nickuc.login.ΨφιωσρΓδΔθ;
-import com.nickuc.login.ΩψΨρεξοσΠςΛυ;
-import com.nickuc.login.βζερηΣολσαμ;
-import com.nickuc.login.βθκςνθΩθυμςτκχ;
-import com.nickuc.login.δςμθγκΓγΨληνυΠ;
-import com.nickuc.login.ζβησεθωυγτ;
-import com.nickuc.login.θεωψξβΛσσ;
-import com.nickuc.login.ιΠοθΩΦξκ;
-import com.nickuc.login.καΦζθθυυεφΦγ;
-import com.nickuc.login.λΣΩσμφγχ;
-import com.nickuc.login.μΛΔθΛτναεαΓ;
-import com.nickuc.login.μεςΩΔΣγν;
-import com.nickuc.login.ξψθρΣΠΣς;
-import com.nickuc.login.οοθδΨιοΦΠβδζ;
-import com.nickuc.login.ορΣψφρΔαεδψσθυ;
-import com.nickuc.login.ρΣνμχγΨοΔΦ;
-import com.nickuc.login.ςΦζσμτΓσ;
-import com.nickuc.login.ςπυηννναΣ;
-import com.nickuc.login.φΨαξωυθανΣφυκη;
-import com.nickuc.login.χΠξΦιζΨΣωΦσΨζ;
+import com.nickuc.login.NLoginCore_012;
+import com.nickuc.login.NLoginInterface_018;
+import com.nickuc.login.NLoginInterface_008;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_076;
+import com.nickuc.login.NLoginCore_232;
+import com.nickuc.login.NLoginType_018;
+import com.nickuc.login.NLoginCore_127;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginCore_559;
+import com.nickuc.login.NLoginCore_379;
+import com.nickuc.login.NLoginCore_558;
+import com.nickuc.login.NLoginCore_173;
+import com.nickuc.login.NLoginCore_111;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_530;
+import com.nickuc.login.NLoginCore_427;
+import com.nickuc.login.NLoginCore_422;
+import com.nickuc.login.NLoginCore_553;
+import com.nickuc.login.NLoginCore_089;
+import com.nickuc.login.NLoginCore_521;
+import com.nickuc.login.NLoginCore_141;
+import com.nickuc.login.NLoginCore_471;
+import com.nickuc.login.BedrockFloodgateHook;
+import com.nickuc.login.NLoginInterface_034;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_575;
+import com.nickuc.login.NLoginCore_453;
+import com.nickuc.login.NLoginCore_387;
 import com.nickuc.login.loader.MemClassLoader;
 import com.nickuc.login.loader.platform.BukkitLoader;
 import java.lang.invoke.MethodType;
@@ -46,9 +46,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 
-public class nLoginBukkit extends μΛΔθΛτναεαΓ implements ΔχλΩψδλΛιχ {
+public class nLoginBukkit extends NLoginCore_089 implements NLoginInterface_008 {
    private static int t = 917504 >>> 209 | 917504 << -209;
-   private ΦωοφυδιφΣΦ a;
+   private NLoginType_018 a;
    private static int ag = Integer.reverse(0);
    private static long ab = Long.reverse(-8358680908399640576L);
    private static int f = Integer.reverse(Integer.MIN_VALUE);
@@ -127,7 +127,7 @@ public class nLoginBukkit extends μΛΔθΛτναεαΓ implements ΔχλΩψδ
             );
             var4 = SecretKeyFactory.getInstance(new String(new byte[]{68, 69, (byte)(17 + 66)}, StandardCharsets.UTF_8));
          } catch (Exception var7) {
-            throw new RuntimeException(ςΦζσμτΓσ.C("ӧӴӳҶӶӲӭӶԁӰҽӻӿӸӻԁӃӷԋԂԃԂԎӊԊөԍԆԉԏӤԘԏԐԏԛ", (byte)69, 67));
+            throw new RuntimeException(NLoginCore_324.C("ӧӴӳҶӶӲӭӶԁӰҽӻӿӸӻԁӃӷԋԂԃԂԎӊԊөԍԆԉԏӤԘԏԐԏԛ", (byte)69, 67));
          }
 
          byte[] var5 = new byte[8];
@@ -192,42 +192,42 @@ public class nLoginBukkit extends μΛΔθΛτναεαΓ implements ΔχλΩψδ
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = ΦδφπθΩΩλζξ.D("ЛбЍЕяЕРдйЛњС", (byte)12, 68);
-               b[1] = ιΠοθΩΦξκ.D("КЪЯЮУВЦчвязлвыРћёёРпцњТТлъшШѣѦйѮ", (byte)12, 68);
-               b[2] = ζβησεθωυγτ.B("ûČĎĈàÌċâĔâíĎäĖîĀĉßęĔõĚĚĝĐħĤħĤûĜææğĠéċąôĶñĐĪùēċľĝġĩĸčĲĻĚğľňŇĻōÿĊĈňăċŉđŏİĠĔĘĮĖŅŘŘŉĺĮğŌŎĥįţłŚŅśŃĵĻŮ", (byte)12, 66);
-               b[3] = ΣδτΠνεγοΓορητ.C("ТСврЦіѕЕвлчаєўшысбвяюрУўзѩўэпѢѪњѝгѲѨяѸѪѵѨѶѭячяџѴяѕ҂ѹѹѡѕѩђ҄ѿѤѻҍўѣѽыўҖѥѪѶҙѵјюѨѾѹѫѲҙҖѿѡ҅ѳҔѺ҉ѧѴҗҢ҆ҝҎ", (byte)12, 67);
-               b[4] = ξψθρΣΠΣς.B("ĐąčÓēßĖïĐĘÖëĝøČú×ĞÿāĤĕĆÙĕÿĔäýúÿĆþÿćòġĎĊĦĪöįòĐóûħĹŀĚĤĴĦĦĺĨĝĵăōĥĉŃĜĦĦğİğčŅŃńŘĬĚĭĪĚŚěĮŝŠœķĢňőĻşŜŢŦĨ", (byte)12, 66);
-               b[5] = χΠξΦιζΨΣωΦσΨζ.D("ѐВђЕъЖѓејыѓИЛўбѕљНфњоякеУсѧѦѫѣљњѧэѴэѕѕчјѪёѥѰѼђёпрысрѹҁѐјѤѬ҂ѻѧѮѠѡҏ҉ђѳѴҎѠѮѻѹѸѶѿ҉ҙҟңћҌҠѾҨ҃ґҞҡѶѣҨҬѸѼ", (byte)12, 68);
-               b[6] = θεωψξβΛσσ.B("ĊäèÒóĆÍñćðĒÑĔýÛëčÛýĠďÝôóüàĪèĪéģÿĥąıĪĊìĊĠĩħùĺĮĩĉęüĽģĽłĲĳġėĳĦĖĩĿĬĘŁŐđďČİōŘġŉįōĤŖŏŖıœĘţţńœŒśĳŚŖŬŮĩŉ", (byte)12, 66);
-               b[7] = ΨΦνΨΦωυΩνβςμ.C("ЋЯыЍАфцђВХжљйчќђЮзєСхјѩктеѝџхѐТѢэЮєЧѶдѥіѨѼщѥцлпѮјҁмќќѵ҃јѹѕѝҀѮѬѥҎќђѠ҄ѰёѶы҆҉ѱѳѿҞҎҖѹ҄ѠҎѢѾҐҕѼҚѶ҄ѺҢҤҰ", (byte)12, 67);
-               b[8] = ςΦζσμτΓσ.E("ԽԂԘԤԐӾԷԺԞԝԓԙԼԖԸԣՄ\u0530ՂՄԵԲԟԣՇ\u0558\u0557՝ԳՐԷ՞՟ԝԱԼՔԷՏԦՀթԢ\u0530", (byte)12, 69);
-               b[9] = μεςΩΔΣγν.A("ČÑçóßÍĆĉíìåĔėěñíďÿēðěēêë", (byte)12, 65);
+               b[0] = NLoginCore_232.D("ЛбЍЕяЕРдйЛњС", (byte)12, 68);
+               b[1] = NLoginCore_427.D("КЪЯЮУВЦчвязлвыРћёёРпцњТТлъшШѣѦйѮ", (byte)12, 68);
+               b[2] = NLoginCore_027.B("ûČĎĈàÌċâĔâíĎäĖîĀĉßęĔõĚĚĝĐħĤħĤûĜææğĠéċąôĶñĐĪùēċľĝġĩĸčĲĻĚğľňŇĻōÿĊĈňăċŉđŏİĠĔĘĮĖŅŘŘŉĺĮğŌŎĥįţłŚŅśŃĵĻŮ", (byte)12, 66);
+               b[3] = NLoginCore_076.C("ТСврЦіѕЕвлчаєўшысбвяюрУўзѩўэпѢѪњѝгѲѨяѸѪѵѨѶѭячяџѴяѕ҂ѹѹѡѕѩђ҄ѿѤѻҍўѣѽыўҖѥѪѶҙѵјюѨѾѹѫѲҙҖѿѡ҅ѳҔѺ҉ѧѴҗҢ҆ҝҎ", (byte)12, 67);
+               b[4] = NLoginCore_141.B("ĐąčÓēßĖïĐĘÖëĝøČú×ĞÿāĤĕĆÙĕÿĔäýúÿĆþÿćòġĎĊĦĪöįòĐóûħĹŀĚĤĴĦĦĺĨĝĵăōĥĉŃĜĦĦğİğčŅŃńŘĬĚĭĪĚŚěĮŝŠœķĢňőĻşŜŢŦĨ", (byte)12, 66);
+               b[5] = NLoginCore_387.D("ѐВђЕъЖѓејыѓИЛўбѕљНфњоякеУсѧѦѫѣљњѧэѴэѕѕчјѪёѥѰѼђёпрысрѹҁѐјѤѬ҂ѻѧѮѠѡҏ҉ђѳѴҎѠѮѻѹѸѶѿ҉ҙҟңћҌҠѾҨ҃ґҞҡѶѣҨҬѸѼ", (byte)12, 68);
+               b[6] = NLoginCore_530.B("ĊäèÒóĆÍñćðĒÑĔýÛëčÛýĠďÝôóüàĪèĪéģÿĥąıĪĊìĊĠĩħùĺĮĩĉęüĽģĽłĲĳġėĳĦĖĩĿĬĘŁŐđďČİōŘġŉįōĤŖŏŖıœĘţţńœŒśĳŚŖŬŮĩŉ", (byte)12, 66);
+               b[7] = NLoginCore_127.C("ЋЯыЍАфцђВХжљйчќђЮзєСхјѩктеѝџхѐТѢэЮєЧѶдѥіѨѼщѥцлпѮјҁмќќѵ҃јѹѕѝҀѮѬѥҎќђѠ҄ѰёѶы҆҉ѱѳѿҞҎҖѹ҄ѠҎѢѾҐҕѼҚѶ҄ѺҢҤҰ", (byte)12, 67);
+               b[8] = NLoginCore_324.E("ԽԂԘԤԐӾԷԺԞԝԓԙԼԖԸԣՄ\u0530ՂՄԵԲԟԣՇ\u0558\u0557՝ԳՐԷ՞՟ԝԱԼՔԷՏԦՀթԢ\u0530", (byte)12, 69);
+               b[9] = NLoginCore_521.A("ČÑçóßÍĆĉíìåĔėěñíďÿēðěēêë", (byte)12, 65);
                break;
             case 1:
-               b[0] = βθκςνθΩθυμςτκχ.A("ĐąìĉđďĐČĀĘăöčÖĜ×ĞìóáÚýêë", (byte)12, 65);
-               b[1] = ςΦζσμτΓσ.E("ԉԙԞԝԒԁԕԶԡԾԦԪԡԺԏՊՀՀԏԮԵՅԒԹՂ՛ԴԧԻԷՒՏ", (byte)12, 69);
-               b[2] = ςπυηννναΣ.B("ûČĎĈàÌċâĔâíĎäĖîĀĉßęĔõĚĚĝĐħĤħĤûĜææğĠéċąôĶñĐĪùēċľĝġĩĸčĲĻĚğľňŇĻōÿĊĈňăċŉđŏİĠĔĘĮĖŅŘŘŉĺĮğŌŎĤĘĿĚŢłĶŅŢŦħ", (byte)12, 66);
-               b[3] = οοθδΨιοΦΠβδζ.B("àßðþäĔēÓðùąîĒĜĆĉÿïðčČþáĜõħĜċýĠĨĘěñİĦčĶĨĳĦĴīčąčĝĲčēŀķķğēħĐłĽĢĹŋĜġĻĉĜŔģĨĴŗĳĖČĦļķĩİŗŔĽğŃĳļĻŢŦģĦŝŝŠĻ", (byte)12, 66);
-               b[4] = λΣΩσμφγχ.F(
+               b[0] = NLoginCore_173.A("ĐąìĉđďĐČĀĘăöčÖĜ×ĞìóáÚýêë", (byte)12, 65);
+               b[1] = NLoginCore_324.E("ԉԙԞԝԒԁԕԶԡԾԦԪԡԺԏՊՀՀԏԮԵՅԒԹՂ՛ԴԧԻԷՒՏ", (byte)12, 69);
+               b[2] = NLoginCore_575.B("ûČĎĈàÌċâĔâíĎäĖîĀĉßęĔõĚĚĝĐħĤħĤûĜææğĠéċąôĶñĐĪùēċľĝġĩĸčĲĻĚğľňŇĻōÿĊĈňăċŉđŏİĠĔĘĮĖŅŘŘŉĺĮğŌŎĤĘĿĚŢłĶŅŢŦħ", (byte)12, 66);
+               b[3] = NLoginCore_471.B("àßðþäĔēÓðùąîĒĜĆĉÿïðčČþáĜõħĜċýĠĨĘěñİĦčĶĨĳĦĴīčąčĝĲčēŀķķğēħĐłĽĢĹŋĜġĻĉĜŔģĨĴŗĳĖČĦļķĩİŗŔĽğŃĳļĻŢŦģĦŝŝŠĻ", (byte)12, 66);
+               b[4] = NLoginCore_553.F(
                   "ՁԶԾԄՄԐՇԠՁՉԇԜՎԩԽԫԈՏ\u0530ԲՕՆԷԊՆ\u0530ՅԕԮԫ\u0530Էԯ\u0530ԸԣՒԿԻ\u0557՛ԧՠԣՁԤԬ\u0558ժձՋՕե\u0557\u0557իՙՎզԴվՖԺմՍ\u0557\u0557ՐաՐԾնմյ։՝Ջ՞՛Ջ\u058bՌ՟֎֑\u0590\u0557աՖպՔէլճ֝՞",
                   (byte)12,
                   70
                );
-               b[5] = λΣΩσμφγχ.D("ѐВђЕъЖѓејыѓИЛўбѕљНфњоякеУсѧѦѫѣљњѧэѴэѕѕчјѪёѥѰѼђёпрысрѹҁѐјѤѬ҂ѻѧѮѠѡҏ҉ђѳѴҎѠѮѻѹѸѶѿ҉ҙҟңћҌҠѾѡѺ҃ѡѥңҬ҅ѨѽҦ", (byte)12, 68);
-               b[6] = ΨΦνΨΦωυΩνβςμ.F(
+               b[5] = NLoginCore_553.D("ѐВђЕъЖѓејыѓИЛўбѕљНфњоякеУсѧѦѫѣљњѧэѴэѕѕчјѪёѥѰѼђёпрысрѹҁѐјѤѬ҂ѻѧѮѠѡҏ҉ђѳѴҎѠѮѻѹѸѶѿ҉ҙҟңћҌҠѾѡѺ҃ѡѥңҬ҅ѨѽҦ", (byte)12, 68);
+               b[6] = NLoginCore_127.F(
                   "ԻԕԙԃԤԷӾԢԸԡՃԂՅԮԌԜԾԌԮՑՀԎԥԤԭԑ՛ԙ՛ԚՔ\u0530ՖԶբ՛ԻԝԻՑ՚\u0558Ԫի՟՚ԺՊԭծՔծճգդՒՈդ\u0557Շ՚հ՝ՉղցՂՀԽավ։ՒպՠվՕևրևբքՉ֔֔մՔ֏Ց֕ն\u058c֒Օո֘", (byte)12, 70
                );
-               b[7] = οοθδΨιοΦΠβδζ.D("ЋЯыЍАфцђВХжљйчќђЮзєСхјѩктеѝџхѐТѢэЮєЧѶдѥіѨѼщѥцлпѮјҁмќќѵ҃јѹѕѝҀѮѬѥҎќђѠ҄ѰёѶы҆҉ѱѳѿҞҎҖѹ҄ѠҎѢѾҘѱҠҙѿҭҎҭґҭ", (byte)12, 68);
-               b[8] = ΠΛΨοδΩσμνΛγΦφβς.E("ԽԂԘԤԐӾԷԺԞԝԓԙԼԖԸԣՄ\u0530ՂՄԵԲԟԣՇ\u0558\u0557՝ԳՐԷ՞ԘԿԶԯՃԣԺ\u0558գԡԳԨՌ՞աՀՠ՚ՔԴՋՎԻԼ", (byte)12, 69);
-               b[9] = χΠξΦιζΨΣωΦσΨζ.B("ČÑçóßÍĆĉíìäĕĄČýĜîþðÙíýêë", (byte)12, 66);
+               b[7] = NLoginCore_471.D("ЋЯыЍАфцђВХжљйчќђЮзєСхјѩктеѝџхѐТѢэЮєЧѶдѥіѨѼщѥцлпѮјҁмќќѵ҃јѹѕѝҀѮѬѥҎќђѠ҄ѰёѶы҆҉ѱѳѿҞҎҖѹ҄ѠҎѢѾҘѱҠҙѿҭҎҭґҭ", (byte)12, 68);
+               b[8] = NLoginCore_091.E("ԽԂԘԤԐӾԷԺԞԝԓԙԼԖԸԣՄ\u0530ՂՄԵԲԟԣՇ\u0558\u0557՝ԳՐԷ՞ԘԿԶԯՃԣԺ\u0558գԡԳԨՌ՞աՀՠ՚ՔԴՋՎԻԼ", (byte)12, 69);
+               b[9] = NLoginCore_387.B("ČÑçóßÍĆĉíìäĕĄČýĜîþðÙíýêë", (byte)12, 66);
                break;
             case 2:
-               b[0] = ξψθρΣΠΣς.F("ԽԶӺԻӼԕԓԡԂԃԿԺԸԆԆՌԡԡՌՇԣԞԛԜ", (byte)12, 70);
+               b[0] = NLoginCore_141.F("ԽԶӺԻӼԕԓԡԂԃԿԺԸԆԆՌԡԡՌՇԣԞԛԜ", (byte)12, 70);
             case 3:
             default:
                break;
             case 4:
-               b[0] = φΨαξωυθανΣφυκη.A("èÎÎÅĒāĀëçďĖñęÛěÚĔáÜÿîģêë", (byte)12, 65);
+               b[0] = NLoginCore_453.A("èÎÎÅĒāĀëçďĖñęÛěÚĔáÜÿîģêë", (byte)12, 65);
          }
       }
    }
@@ -238,20 +238,20 @@ public class nLoginBukkit extends μΛΔθΛτναεαΓ implements ΔχλΩψδ
             var0.findStatic(
                   nLoginBukkit.class,
                   new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(ΨφιωσρΓδΔθ.D("ѶҘҚѺҞҽҵӋҷ҆ӄҺӈӂҋҰӒӑӉӏӉҞ", (byte)51, 68), nLoginBukkit.class.getClassLoader())
+                  MethodType.fromMethodDescriptorString(NLoginCore_559.D("ѶҘҚѺҞҽҵӋҷ҆ӄҺӈӂҋҰӒӑӉӏӉҞ", (byte)51, 68), nLoginBukkit.class.getClassLoader())
                )
                .asType(var2)
          );
       } catch (Exception var4) {
          throw new RuntimeException(
-            ζβησεθωυγτ.C("ұҾҽҀӀҼҷӀӋҺ҇ӅӉӂӅӋҍӁӕӌӍӌӘҔӔҳӗӐӓәҮӢәӚәӥҬ", (byte)51, 67) + var1 + ΨΦνΨΦωυΩνβςμ.E("ԩ", (byte)51, 69) + var2.toString(), var4
+            NLoginCore_027.C("ұҾҽҀӀҼҷӀӋҺ҇ӅӉӂӅӋҍӁӕӌӍӌӘҔӔҳӗӐӓәҮӢәӚәӥҬ", (byte)51, 67) + var1 + NLoginCore_127.E("ԩ", (byte)51, 69) + var2.toString(), var4
          );
       }
    }
 
    @Override
-   protected ρΣνμχγΨοΔΦ[] a() {
-      return ΩψΨρεξοσΠςΛυ.values();
+   protected NLoginInterface_034[] a() {
+      return NLoginCore_379.values();
    }
 
    @Override
@@ -260,7 +260,7 @@ public class nLoginBukkit extends μΛΔθΛτναεαΓ implements ΔχλΩψδ
       return (boolean)(var1 instanceof Cancellable && ((Cancellable)var1).isCancelled() ? ag : af);
    }
 
-   public ΨγημιδξΓτοθαζ a() {
+   public NLoginType_008 a() {
       return super.b();
    }
 
@@ -272,16 +272,16 @@ public class nLoginBukkit extends μΛΔθΛτναεαΓ implements ΔχλΩψδ
    @Override
    protected void j() {
       if (this.s) {
-         this.a = new ΦωοφυδιφΣΦ(this);
+         this.a = new NLoginType_018(this);
       }
 
-      Object var1 = this.s ? new δςμθγκΓγΨληνυΠ(this) : new βζερηΣολσαμ(this);
-      this.a(new ΨγημιδξΓτοθαζ((ΔοΓκωΠαλξφιΩθ)var1, this, this.s));
+      Object var1 = this.s ? new NLoginCore_111(this) : new NLoginCore_558(this);
+      this.a(new NLoginType_008((NLoginInterface_018)var1, this, this.s));
       super.j();
    }
 
    @Generated
-   public ΦωοφυδιφΣΦ a() {
+   public NLoginType_018 a() {
       return this.a;
    }
 
@@ -290,12 +290,12 @@ public class nLoginBukkit extends μΛΔθΛτναεαΓ implements ΔχλΩψδ
       try {
          MemClassLoader var1 = this.a().a();
          ClassLoader var2 = var1.getParentLoader();
-         (var2.getParent() != null ? var2.getParent() : ClassLoader.getSystemClassLoader()).loadClass(c<"㺀">(w, x ^ y));
-         var1.configureFilter(Collections.singleton(c<"㺃">(z, aa ^ ab)));
+         (var2.getParent() != null ? var2.getParent() : ClassLoader.getSystemClassLoader()).loadClass(a(w, x ^ y));
+         var1.configureFilter(Collections.singleton(a(z, aa ^ ab)));
       } catch (ClassNotFoundException var3) {
       }
 
-      this.s = (boolean)(ορΣψφρΔαεδψσθυ.aG || !ΓχυψπωΣςΠκγζΦ.T() && !ΓχυψπωΣςΠκγζΦ.U() ? ad : ac);
+      this.s = (boolean)(BedrockFloodgateHook.aG || !NLoginCore_012.T() && !NLoginCore_012.U() ? ad : ac);
       if (this.s) {
          this.b(ae);
       }
@@ -305,7 +305,7 @@ public class nLoginBukkit extends μΛΔθΛτναεαΓ implements ΔχλΩψδ
 
    public nLoginBukkit(BukkitLoader var1) {
       super(
-         var1, c<"㺀">(b, d ^ e), new καΦζθθυυεφΦγ(c<"㺃">(f, g), c<"㺆">(h, i), c<"㺉">(j, k), c<"㺌">(l, m ^ n), c<"㺏">(o, p ^ q), c<"㺒">(r, s), c<"㺕">(t & u, v))
+         var1, a(b, d ^ e), new NLoginCore_422(a(f, g), a(h, i), a(j, k), a(l, m ^ n), a(o, p ^ q), a(r, s), a(t & u, v))
       );
    }
 }

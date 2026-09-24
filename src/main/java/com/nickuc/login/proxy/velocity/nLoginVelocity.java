@@ -1,38 +1,38 @@
 package com.nickuc.login.proxy.velocity;
 
-import com.nickuc.login.ΔχλΩψδλΛιχ;
-import com.nickuc.login.ΣδτΠνεγοΓορητ;
-import com.nickuc.login.ΣερμΔσατσκ;
-import com.nickuc.login.ΣφδσΔζιΠρα;
-import com.nickuc.login.ΦδφπθΩΩλζξ;
-import com.nickuc.login.ΦτχπδσρχΓΨω;
-import com.nickuc.login.ΨΦνΨΦωυΩνβςμ;
-import com.nickuc.login.ΨαχΨχΣλεΠψΦ;
-import com.nickuc.login.ΨγημιδξΓτοθαζ;
-import com.nickuc.login.ΩψΨρεξοσΠςΛυ;
-import com.nickuc.login.βεξΠθρρςΔΦμ;
-import com.nickuc.login.βθκςνθΩθυμςτκχ;
-import com.nickuc.login.ζβησεθωυγτ;
-import com.nickuc.login.ηβΨςλδθσΓξ;
-import com.nickuc.login.θεωψξβΛσσ;
-import com.nickuc.login.καΦζθθυυεφΦγ;
-import com.nickuc.login.λΣΩσμφγχ;
-import com.nickuc.login.μΦξβετδμγ;
-import com.nickuc.login.νεΓτεκΓηζεΔλιΩ;
-import com.nickuc.login.ντθΔζβΔζ;
-import com.nickuc.login.ξψθρΣΠΣς;
-import com.nickuc.login.οΩνΩρωλΨηΛδωδ;
-import com.nickuc.login.οεΦρΓψωΓξγΔι;
-import com.nickuc.login.πηγμΣΔκκ;
-import com.nickuc.login.πψυκΠΨμΛΩβΣφμφσ;
-import com.nickuc.login.ρΣνμχγΨοΔΦ;
-import com.nickuc.login.ρεεμΣωωψ;
-import com.nickuc.login.ςΦζσμτΓσ;
-import com.nickuc.login.ςπυηννναΣ;
-import com.nickuc.login.φΨαξωυθανΣφυκη;
-import com.nickuc.login.φδχεθοκψαλΛογλ;
-import com.nickuc.login.χΠξΦιζΨΣωΦσΨζ;
-import com.nickuc.login.ωΓπκΩβςςδξΔν;
+import com.nickuc.login.NLoginInterface_008;
+import com.nickuc.login.NLoginCore_076;
+import com.nickuc.login.NLoginCore_241;
+import com.nickuc.login.NLoginCore_451;
+import com.nickuc.login.NLoginCore_232;
+import com.nickuc.login.NLoginInterface_041;
+import com.nickuc.login.NLoginCore_127;
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginCore_379;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_173;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_443;
+import com.nickuc.login.NLoginCore_530;
+import com.nickuc.login.NLoginCore_422;
+import com.nickuc.login.NLoginCore_553;
+import com.nickuc.login.NLoginType_010;
+import com.nickuc.login.NLoginCore_455;
+import com.nickuc.login.NLoginCore_110;
+import com.nickuc.login.NLoginCore_141;
+import com.nickuc.login.NLoginCore_397;
+import com.nickuc.login.NLoginInterface_022;
+import com.nickuc.login.NLoginCore_138;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginInterface_034;
+import com.nickuc.login.NLoginCore_424;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_575;
+import com.nickuc.login.NLoginCore_453;
+import com.nickuc.login.NLoginCore_433;
+import com.nickuc.login.NLoginCore_387;
+import com.nickuc.login.NLoginCore_199;
 import com.nickuc.login.api.enums.ServerConnectType;
 import com.nickuc.login.api.enums.event.EventEnum;
 import com.nickuc.login.api.event.internal.velocity.VelocityCancellableEvent;
@@ -59,7 +59,7 @@ import javax.crypto.spec.IvParameterSpec;
 import lombok.Generated;
 import net.kyori.adventure.text.Component;
 
-public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements ΔχλΩψδλΛιχ, μΦξβετδμγ {
+public class nLoginVelocity extends NLoginCore_455 implements NLoginInterface_008, NLoginType_010 {
    private static int av = (0 >>> 106 | 0 << ~106 + 1) & -1;
    private static long u = Long.reverse(-8086987327712914107L);
    private static long e;
@@ -74,7 +74,7 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
    private static long ag = Long.reverse(8070450532247928832L);
    private static int j = 0 >>> 66 | 0 << -66;
    private static long al = Long.reverse(-16536795464985275L);
-   private ωΓπκΩβςςδξΔν a;
+   private NLoginCore_199 a;
    private static int ae = 1792 >>> 200 | 1792 << ~200 + 1;
    private static long o = Long.reverse(-16536795464985275L);
    private static int an = (-1 >>> 233 | -1 << ~233 + 1) & -1;
@@ -122,19 +122,19 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
 
    @Generated
    @Override
-   public ωΓπκΩβςςδξΔν a() {
+   public NLoginCore_199 a() {
       return this.a;
    }
 
    public nLoginVelocity(VelocityLoader var1) {
       super(
          var1,
-         c<"㺀">(j & k, l),
-         new καΦζθθυυεφΦγ(c<"㺃">(m, o), c<"㺆">(p, r ^ s), c<"㺉">(t, u ^ v), c<"㺌">(w & x, y), c<"㺏">(z & aa, ab), c<"㺒">(ac, ad), c<"㺕">(ae, af ^ ag))
+         a(j & k, l),
+         new NLoginCore_422(a(m, o), a(p, r ^ s), a(t, u ^ v), a(w & x, y), a(z & aa, ab), a(ac, ad), a(ae, af ^ ag))
       );
-      this.c = new LegacyChannelIdentifier(c<"㺘">(ah, ai ^ aj));
-      this.d = MinecraftChannelIdentifier.create(c<"㺛">(ak, al), c<"㺞">(am & an, ao));
-      this.a(new ΨγημιδξΓτοθαζ(new ρεεμΣωωψ(this), this, (boolean)ap));
+      this.c = new LegacyChannelIdentifier(a(ah, ai ^ aj));
+      this.d = MinecraftChannelIdentifier.create(a(ak, al), a(am & an, ao));
+      this.a(new NLoginType_008(new NLoginCore_424(this), this, (boolean)ap));
    }
 
    @Generated
@@ -192,44 +192,44 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               d[0] = πψυκΠΨμΛΩβΣφμφσ.C("єцѕ҃ѭѦчхџѮѢї", (byte)30, 67);
-               d[1] = φΨαξωυθανΣφυκη.A("ÿôĳīĸõöďīĐľċĸĴİēăûĖŃĢĸĕĶĆąĨŇĉĎļņ", (byte)30, 65);
-               d[2] = χΠξΦιζΨΣωΦσΨζ.A("ĒõđİĨĲöĥČĴĞēĪĐīĐļđĖłĆĽīĥğĮĿłŏċŊīĳŎĵőŕĒŎőĹĬľŜęĳšĝŁĠŢĶŦĽńŗŠŬŇůŏłŲıŭţųŭĵŕŅņūňŖŵĲŘţļƂšŃřŦŧřŚşŋƀƉťŐţƀ", (byte)30, 65);
-               d[3] = ςπυηννναΣ.C("ѦѳњѷѾшѦҍѐѤғѠѠҊҌѷѤҗқ҉҄ѓѝіѝѬҔѴњҁҁѰҐҨқѨ҃Ҁ҇Ѭѩҙѯҋҁ҆ү҈҇ҏҵҘ҉ҹ҆ґѽҋѿҽҠ҄ѸӀҡ҉ҿѽӅҤҀҡӎҎҏҟҜҢҴӔҔҷҹҶқӗӇӍӖӜҢӍӌҠӞӑ", (byte)30, 67);
-               d[4] = λΣΩσμφγχ.A("ĉĳìíĔčöòĈĎīğĶĸĞŁŅýüĘħĪĺŅĻĝŏŉŐĬĿŋļőŗĔŋřĲĵĳďņĴīŊĪŞōŝŁŨŚťŃňŋŗŋġŰĬŨťĴĳņİŊŸůŨŜŷŘśŭŶſŔĻŃŕŠŰŞŸŃŽƈŨŻŇŎňŅ", (byte)30, 65);
-               d[5] = οΩνΩρωλΨηΛδωδ.C("ѩѸј҉ѠџѫъѩѾҍѴҔ҅ҔїѶѭѲё҄ѻҗѨѺѶҔѰҔҜѤ҅ѥҪҟҨңѸѧҊѯҮ҉ҋҳ҂ѲұҳҙҴңҹѵҼѿһҏҕ҃ѿ҄ҮҚҵӁҾҔҝӁ҈ӇӉҧҝҴҍҴӏҳӆӖҮҕқӌҬҸҸӑҡӘҳӡҳӏ", (byte)30, 67);
-               d[6] = βεξΠθρρςΔΦμ.E("ՄԬԪԿԩԪԪ\u0558ՓՋՏԸԧ՟ՀԠԞԠդՏԶՓՆՠ՚ՀիՅՅՅխՠԯԿՁԵՕՊՙՒձՍթծՋՙչՁ՟Ւ՟՟վդէպդՄ֍տ՜ՊվօքՐվհցգդջ՚֘ո։֕չ\u0557ձ֖ռ՝֞գսցտր֗ըեխְ֊֤", (byte)30, 69);
-               d[7] = βθκςνθΩθυμςτκχ.C("ђлђѽоќы҇ы҈҆ҍѲя҄ѬҗѮҒѮҒѨѦҀҚҠҏѰќҢҙҁҢҟѿңҋѶҗҡҢѣ҉ѯҔѱҪҀҴ҂ѶѸҥѹ҇ҲҋҽҫӃҌҸѼҲ҇ӈҢӈҢҗҪҟҝҐҍҍӑҝҿґҴӑӕҖҮӅҵӞӞҪӗҺҽҶӜҸ", (byte)30, 67);
-               d[8] = ΣφδσΔζιΠρα.A("ýñĐČčðĉøĖĖħćęĿĐĔģĴĖāĕđĎď", (byte)30, 65);
-               d[9] = βθκςνθΩθυμςτκχ.D("уѻ҅цҋѡҏѫѩѩѢї", (byte)30, 68);
-               d[10] = ζβησεθωυγτ.C("хѡѨ҅ҁѩыѯјѝ҈ї", (byte)30, 67);
-               d[11] = βεξΠθρρςΔΦμ.C("ѣ҃њћѥѪѷҐѐѰѾяѲѲ҈ҋіђҌїѶѥѢѣ", (byte)30, 67);
-               d[12] = λΣΩσμφγχ.E("ԎԟՅԣԑՔՄԌԖԧԼՖԩԘԴԷ՜ՂՠԱԝԾԼՇՕժԫՙ՛ագժԻճՖԭէՃԸՈՊԹ՜Ֆ՜իԺւՃգՂէ\u0557ՠԻՂոյ՞ո՝ռվհ", (byte)30, 69);
+               d[0] = NLoginCore_201.C("єцѕ҃ѭѦчхџѮѢї", (byte)30, 67);
+               d[1] = NLoginCore_453.A("ÿôĳīĸõöďīĐľċĸĴİēăûĖŃĢĸĕĶĆąĨŇĉĎļņ", (byte)30, 65);
+               d[2] = NLoginCore_387.A("ĒõđİĨĲöĥČĴĞēĪĐīĐļđĖłĆĽīĥğĮĿłŏċŊīĳŎĵőŕĒŎőĹĬľŜęĳšĝŁĠŢĶŦĽńŗŠŬŇůŏłŲıŭţųŭĵŕŅņūňŖŵĲŘţļƂšŃřŦŧřŚşŋƀƉťŐţƀ", (byte)30, 65);
+               d[3] = NLoginCore_575.C("ѦѳњѷѾшѦҍѐѤғѠѠҊҌѷѤҗқ҉҄ѓѝіѝѬҔѴњҁҁѰҐҨқѨ҃Ҁ҇Ѭѩҙѯҋҁ҆ү҈҇ҏҵҘ҉ҹ҆ґѽҋѿҽҠ҄ѸӀҡ҉ҿѽӅҤҀҡӎҎҏҟҜҢҴӔҔҷҹҶқӗӇӍӖӜҢӍӌҠӞӑ", (byte)30, 67);
+               d[4] = NLoginCore_553.A("ĉĳìíĔčöòĈĎīğĶĸĞŁŅýüĘħĪĺŅĻĝŏŉŐĬĿŋļőŗĔŋřĲĵĳďņĴīŊĪŞōŝŁŨŚťŃňŋŗŋġŰĬŨťĴĳņİŊŸůŨŜŷŘśŭŶſŔĻŃŕŠŰŞŸŃŽƈŨŻŇŎňŅ", (byte)30, 65);
+               d[5] = NLoginCore_397.C("ѩѸј҉ѠџѫъѩѾҍѴҔ҅ҔїѶѭѲё҄ѻҗѨѺѶҔѰҔҜѤ҅ѥҪҟҨңѸѧҊѯҮ҉ҋҳ҂ѲұҳҙҴңҹѵҼѿһҏҕ҃ѿ҄ҮҚҵӁҾҔҝӁ҈ӇӉҧҝҴҍҴӏҳӆӖҮҕқӌҬҸҸӑҡӘҳӡҳӏ", (byte)30, 67);
+               d[6] = NLoginCore_223.E("ՄԬԪԿԩԪԪ\u0558ՓՋՏԸԧ՟ՀԠԞԠդՏԶՓՆՠ՚ՀիՅՅՅխՠԯԿՁԵՕՊՙՒձՍթծՋՙչՁ՟Ւ՟՟վդէպդՄ֍տ՜ՊվօքՐվհցգդջ՚֘ո։֕չ\u0557ձ֖ռ՝֞գսցտր֗ըեխְ֊֤", (byte)30, 69);
+               d[7] = NLoginCore_173.C("ђлђѽоќы҇ы҈҆ҍѲя҄ѬҗѮҒѮҒѨѦҀҚҠҏѰќҢҙҁҢҟѿңҋѶҗҡҢѣ҉ѯҔѱҪҀҴ҂ѶѸҥѹ҇ҲҋҽҫӃҌҸѼҲ҇ӈҢӈҢҗҪҟҝҐҍҍӑҝҿґҴӑӕҖҮӅҵӞӞҪӗҺҽҶӜҸ", (byte)30, 67);
+               d[8] = NLoginCore_451.A("ýñĐČčðĉøĖĖħćęĿĐĔģĴĖāĕđĎď", (byte)30, 65);
+               d[9] = NLoginCore_173.D("уѻ҅цҋѡҏѫѩѩѢї", (byte)30, 68);
+               d[10] = NLoginCore_027.C("хѡѨ҅ҁѩыѯјѝ҈ї", (byte)30, 67);
+               d[11] = NLoginCore_223.C("ѣ҃њћѥѪѷҐѐѰѾяѲѲ҈ҋіђҌїѶѥѢѣ", (byte)30, 67);
+               d[12] = NLoginCore_553.E("ԎԟՅԣԑՔՄԌԖԧԼՖԩԘԴԷ՜ՂՠԱԝԾԼՇՕժԫՙ՛ագժԻճՖԭէՃԸՈՊԹ՜Ֆ՜իԺւՃգՂէ\u0557ՠԻՂոյ՞ո՝ռվհ", (byte)30, 69);
                break;
             case 1:
-               d[0] = ΣερμΔσατσκ.C("џѨѷ҅ҌѠ҇ўҊћѯхђѳђѬѸҋқѭѧѵѢѣ", (byte)30, 67);
-               d[1] = ΣφδσΔζιΠρα.D("ѓш҇ѿҌщъѣѿѤҒџҌ҈҄ѧїяѪҗѶҍїҠѶҍҊқҚҒѡҥ", (byte)30, 68);
-               d[2] = λΣΩσμφγχ.C("Ѧщѥ҄Ѽ҆ъѹѠ҈ѲѧѾѤѿѤҐѥѪҖњґѿѹѳ҂ғҖңџҞѿ҇Ң҉ҥҩѦҢҥҍҀҒҰѭ҇ҵѱҕѴҶҊҺґҘҫҴӀқӃңҖӆ҅ӁҷӇӁ҉ҩҙҚҿҜҪӉ҆ҬҷҐӖҵҗҭҺҼҧӜӞҷӞҕһҠӞӨ", (byte)30, 67);
-               d[3] = ντθΔζβΔζ.F(
+               d[0] = NLoginCore_241.C("џѨѷ҅ҌѠ҇ўҊћѯхђѳђѬѸҋқѭѧѵѢѣ", (byte)30, 67);
+               d[1] = NLoginCore_451.D("ѓш҇ѿҌщъѣѿѤҒџҌ҈҄ѧїяѪҗѶҍїҠѶҍҊқҚҒѡҥ", (byte)30, 68);
+               d[2] = NLoginCore_553.C("Ѧщѥ҄Ѽ҆ъѹѠ҈ѲѧѾѤѿѤҐѥѪҖњґѿѹѳ҂ғҖңџҞѿ҇Ң҉ҥҩѦҢҥҍҀҒҰѭ҇ҵѱҕѴҶҊҺґҘҫҴӀқӃңҖӆ҅ӁҷӇӁ҉ҩҙҚҿҜҪӉ҆ҬҷҐӖҵҗҭҺҼҧӜӞҷӞҕһҠӞӨ", (byte)30, 67);
+               d[3] = NLoginCore_110.F(
                   "ԱԾԥՂՉԓԱ\u0558ԛԯ՞ԫԫՕ\u0557ՂԯբզՔՏԞԨԡԨԷ՟ԿԥՌՌԻ՛ճզԳՎՋՒԷԴդԺՖՌՑպՓՒ՚րգՔքՑ՜ՈՖՊֈիՏՃ\u058bլՔ֊Ո\u0590կՋլ֙ՙ՚ժէխտ֟՟ւքցզ֞էոփ֔տ֣֠֊֪֜", (byte)30, 70
                );
-               d[4] = ξψθρΣΠΣς.B("ĉĳìíĔčöòĈĎīğĶĸĞŁŅýüĘħĪĺŅĻĝŏŉŐĬĿŋļőŗĔŋřĲĵĳďņĴīŊĪŞōŝŁŨŚťŃňŋŗŋġŰĬŨťĴĳņİŊŸůŨŜŷŘśŭŶſŔĻŃŕŠŰŒŽńţŉŽŎŏƋƓŪ", (byte)30, 66);
-               d[5] = πηγμΣΔκκ.C("ѩѸј҉ѠџѫъѩѾҍѴҔ҅ҔїѶѭѲё҄ѻҗѨѺѶҔѰҔҜѤ҅ѥҪҟҨңѸѧҊѯҮ҉ҋҳ҂ѲұҳҙҴңҹѵҼѿһҏҕ҃ѿ҄ҮҚҵӁҾҔҝӁ҈ӇӉҧҝҴҍҴӏҳӆӖҮҕқӔӖҕҭҙҟҮӁӟӅң", (byte)30, 67);
-               d[6] = ΦδφπθΩΩλζξ.C("ѹѡџѴўџџҍ҈Ҁ҄ѭќҔѵѕѓѕҙ҄ѫ҈ѻҕҏѵҠѺѺѺҢҕѤѴѶѪҊѿҎ҇Ҧ҂ҞңҀҎҮѶҔ҇ҔҔҳҙҜүҙѹӂҴґѿҳҺҹ҅ҳҥҶҘҙҰҏӍҭҾӊҮҌҦӋұҒӓҘҭҧҙҫӘӘӘӂӜӥҶ", (byte)30, 67);
-               d[7] = ΨΦνΨΦωυΩνβςμ.C("ђлђѽоќы҇ы҈҆ҍѲя҄ѬҗѮҒѮҒѨѦҀҚҠҏѰќҢҙҁҢҟѿңҋѶҗҡҢѣ҉ѯҔѱҪҀҴ҂ѶѸҥѹ҇ҲҋҽҫӃҌҸѼҲ҇ӈҢӈҢҗҪҟҝҐҍҍӑҝҿґҴӑӕҖҮҺұҲҬҮҡҚңҤӑӣ", (byte)30, 67);
-               d[8] = φδχεθοκψαλΛογλ.A("ýñĐČčðĉøĖĖħĉľķĔıĵĤņđŃġĎď", (byte)30, 65);
-               d[9] = ΣδτΠνεγοΓορητ.D("ѕѓ҇хѦѫ҆ҌѼҋѫђҊьѲѪҏѱѳѯ҆ҋѢѣ", (byte)30, 68);
-               d[10] = ΣερμΔσατσκ.F("ՋՆԪԥՓԦԷՆԹԦՓԢ", (byte)30, 70);
-               d[11] = ντθΔζβΔζ.D("ѣ҃њћѥѪѷҐѐѰѿѿѫѧѨѱѴ҃ѻѕљқѢѣ", (byte)30, 68);
-               d[12] = ΨΦνΨΦωυΩνβςμ.A("ïĀĦĄòĵĥí÷ĈĝķĊùĕĘĽģŁĒþğĝĨĶŋČĺļłńŋĜŔķĎňĤęĩīĚĽķĽŌěţĤńģňĸőŕŌĤŘōŜŅľĪŦ", (byte)30, 65);
+               d[4] = NLoginCore_141.B("ĉĳìíĔčöòĈĎīğĶĸĞŁŅýüĘħĪĺŅĻĝŏŉŐĬĿŋļőŗĔŋřĲĵĳďņĴīŊĪŞōŝŁŨŚťŃňŋŗŋġŰĬŨťĴĳņİŊŸůŨŜŷŘśŭŶſŔĻŃŕŠŰŒŽńţŉŽŎŏƋƓŪ", (byte)30, 66);
+               d[5] = NLoginCore_138.C("ѩѸј҉ѠџѫъѩѾҍѴҔ҅ҔїѶѭѲё҄ѻҗѨѺѶҔѰҔҜѤ҅ѥҪҟҨңѸѧҊѯҮ҉ҋҳ҂ѲұҳҙҴңҹѵҼѿһҏҕ҃ѿ҄ҮҚҵӁҾҔҝӁ҈ӇӉҧҝҴҍҴӏҳӆӖҮҕқӔӖҕҭҙҟҮӁӟӅң", (byte)30, 67);
+               d[6] = NLoginCore_232.C("ѹѡџѴўџџҍ҈Ҁ҄ѭќҔѵѕѓѕҙ҄ѫ҈ѻҕҏѵҠѺѺѺҢҕѤѴѶѪҊѿҎ҇Ҧ҂ҞңҀҎҮѶҔ҇ҔҔҳҙҜүҙѹӂҴґѿҳҺҹ҅ҳҥҶҘҙҰҏӍҭҾӊҮҌҦӋұҒӓҘҭҧҙҫӘӘӘӂӜӥҶ", (byte)30, 67);
+               d[7] = NLoginCore_127.C("ђлђѽоќы҇ы҈҆ҍѲя҄ѬҗѮҒѮҒѨѦҀҚҠҏѰќҢҙҁҢҟѿңҋѶҗҡҢѣ҉ѯҔѱҪҀҴ҂ѶѸҥѹ҇ҲҋҽҫӃҌҸѼҲ҇ӈҢӈҢҗҪҟҝҐҍҍӑҝҿґҴӑӕҖҮҺұҲҬҮҡҚңҤӑӣ", (byte)30, 67);
+               d[8] = NLoginCore_433.A("ýñĐČčðĉøĖĖħĉľķĔıĵĤņđŃġĎď", (byte)30, 65);
+               d[9] = NLoginCore_076.D("ѕѓ҇хѦѫ҆ҌѼҋѫђҊьѲѪҏѱѳѯ҆ҋѢѣ", (byte)30, 68);
+               d[10] = NLoginCore_241.F("ՋՆԪԥՓԦԷՆԹԦՓԢ", (byte)30, 70);
+               d[11] = NLoginCore_110.D("ѣ҃њћѥѪѷҐѐѰѿѿѫѧѨѱѴ҃ѻѕљқѢѣ", (byte)30, 68);
+               d[12] = NLoginCore_127.A("ïĀĦĄòĵĥí÷ĈĝķĊùĕĘĽģŁĒþğĝĨĶŋČĺļłńŋĜŔķĎňĤęĩīĚĽķĽŌěţĤńģňĸőŕŌĤŘōŜŅľĪŦ", (byte)30, 65);
                break;
             case 2:
-               d[0] = βθκςνθΩθυμςτκχ.B("ċĊĎğĆôĸĘĖČěĿŁċþńĽûĀÿńħĳāėĢŅčņĻČł", (byte)30, 66);
+               d[0] = NLoginCore_173.B("ċĊĎğĆôĸĘĖČěĿŁċþńĽûĀÿńħĳāėĢŅčņĻČł", (byte)30, 66);
             case 3:
             default:
                break;
             case 4:
-               d[0] = θεωψξβΛσσ.D("ҁѻ҈ѳ҄҆҉э҂ҊҀї", (byte)30, 68);
+               d[0] = NLoginCore_530.D("ҁѻ҈ѳ҄҆҉э҂ҊҀї", (byte)30, 68);
          }
       }
    }
@@ -270,7 +270,7 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
             );
             var4 = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(29 + 40), 83}, StandardCharsets.UTF_8));
          } catch (Exception var7) {
-            throw new RuntimeException(ΣδτΠνεγοΓορητ.B("ňŕŔėŗœŎŗŢőĞŜŠřŜŢĤŦũŧűųĪŲŢŪŮţŪŶżĳųŒŶůŲŸšűŹŽŲŹƅƋ", (byte)51, 66));
+            throw new RuntimeException(NLoginCore_076.B("ňŕŔėŗœŎŗŢőĞŜŠřŜŢĤŦũŧűųĪŲŢŪŮţŪŶżĳųŒŶůŲŸšűŹŽŲŹƅƋ", (byte)51, 66));
          }
 
          byte[] var5 = new byte[8];
@@ -289,19 +289,19 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
 
    @Override
    protected void i() {
-      this.a().a().configureFilter(Collections.singleton(c<"㺀">(aq & ar, as)));
+      this.a().a().configureFilter(Collections.singleton(a(aq & ar, as)));
       super.i();
    }
 
    @Nullable
    @Override
-   public String a(ΨαχΨχΣλεΠψΦ var1) {
+   public String a(NLoginCore_277 var1) {
       Player var2 = var1.c();
       return var2.getCurrentServer().map(var0 -> var0.getServerInfo().getName()).orElse(null);
    }
 
    @Override
-   public ΨγημιδξΓτοθαζ a() {
+   public NLoginType_008 a() {
       return super.b();
    }
 
@@ -311,33 +311,33 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
             var0.findStatic(
                   nLoginVelocity.class,
                   new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(ςπυηννναΣ.B("ŹƛƝŽơǀƸǎƺƉǇƽǋǅƎƳǕǔǌǒǌơ", (byte)105, 66), nLoginVelocity.class.getClassLoader())
+                  MethodType.fromMethodDescriptorString(NLoginCore_575.B("ŹƛƝŽơǀƸǎƺƉǇƽǋǅƎƳǕǔǌǒǌơ", (byte)105, 66), nLoginVelocity.class.getClassLoader())
                )
                .asType(var2)
          );
       } catch (Exception var4) {
          throw new RuntimeException(
-            θεωψξβΛσσ.E("ֈ֕֔\u0557֗֓֎֢֑֗՞֢֜֠֙֜դֱֳ֦֧֩ժֲֶּ֢֪֣֪֮ճֱֲֲֳֶָֹֹֽׅ֒֯֡\u05cb֍", (byte)105, 69) + var1 + ςΦζσμτΓσ.B("Ƌ", (byte)105, 66) + var2.toString(),
+            NLoginCore_530.E("ֈ֕֔\u0557֗֓֎֢֑֗՞֢֜֠֙֜դֱֳ֦֧֩ժֲֶּ֢֪֣֪֮ճֱֲֲֳֶָֹֹֽׅ֒֯֡\u05cb֍", (byte)105, 69) + var1 + NLoginCore_324.B("Ƌ", (byte)105, 66) + var2.toString(),
             var4
          );
       }
    }
 
    @Override
-   protected ρΣνμχγΨοΔΦ[] a() {
-      return ΩψΨρεξοσΠςΛυ.values();
+   protected NLoginInterface_034[] a() {
+      return NLoginCore_379.values();
    }
 
    @Override
-   public ηβΨςλδθσΓξ a(ΨαχΨχΣλεΠψΦ var1, String var2, ServerConnectType var3, @Nullable ΦτχπδσρχΓΨω<Boolean> var4) {
+   public NLoginCore_443 a(NLoginCore_277 var1, String var2, ServerConnectType var3, @Nullable NLoginInterface_041<Boolean> var4) {
       return !var1.R()
-         ? ηβΨςλδθσΓξ.c
+         ? NLoginCore_443.c
          : this.a()
             .getServer(var2)
             .map(
                var5 -> {
                   Player var6 = var1.c();
-                  ΨγημιδξΓτοθαζ var10000 = this.a();
+                  NLoginType_008 var10000 = this.a();
                   EventEnum var10001 = EventEnum.SERVER_PRE_CONNECT;
                   Object[] var10002 = new Object[bb];
                   var10002[bc] = var1;
@@ -345,7 +345,7 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
                   var10002[be] = var5;
                   ServerPreConnectEvent var7 = var10000.a(var10001, var10002);
                   if (!this.a().callEvent(var7)) {
-                     return ηβΨςλδθσΓξ.b;
+                     return NLoginCore_443.b;
                   } else {
                      var5 = var7.getServer();
                      Optional var8 = var6.getCurrentServer();
@@ -354,12 +354,12 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
                            var4.done(Boolean.valueOf((boolean)bf));
                         }
 
-                        return ηβΨςλδθσΓξ.a;
+                        return NLoginCore_443.a;
                      } else {
                         if (var4 == null) {
                            var6.createConnectionRequest(var5).connect().whenComplete((var2xx, var3xx) -> {
                               if (!var2xx.isSuccessful() && var2xx.getStatus() != Status.ALREADY_CONNECTED) {
-                                 var6.disconnect((Component)var2xx.getReasonComponent().orElse(Component.text(c<"㺀">(bi, bj) + var2)));
+                                 var6.disconnect((Component)var2xx.getReasonComponent().orElse(Component.text(a(bi, bj) + var2)));
                               }
                            });
                         } else {
@@ -368,12 +368,12 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
                               .whenComplete((var1xx, var2xx) -> var4.done(Boolean.valueOf((boolean)(var1xx != null && var2xx == null && var1xx ? bg : bh))));
                         }
 
-                        return ηβΨςλδθσΓξ.a;
+                        return NLoginCore_443.a;
                      }
                   }
                }
             )
-            .orElse(ηβΨςλδθσΓξ.c);
+            .orElse(NLoginCore_443.c);
    }
 
    @Override
@@ -388,7 +388,7 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
 
    @Override
    protected void j() {
-      this.a = new ωΓπκΩβςςδξΔν(this.a(), this.b());
+      this.a = new NLoginCore_199(this.a(), this.b());
       super.j();
    }
 
@@ -398,7 +398,7 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
    }
 
    @Override
-   public οεΦρΓψωΓξγΔι b() {
+   public NLoginInterface_022 b() {
       return this.a((boolean)ay);
    }
 
@@ -407,7 +407,7 @@ public class nLoginVelocity extends νεΓτεκΓηζεΔλιΩ implements Δχ
    }
 
    @Override
-   public boolean a(ΨαχΨχΣλεΠψΦ var1) {
+   public boolean a(NLoginCore_277 var1) {
       if (!var1.R()) {
          return (boolean)at;
       } else {

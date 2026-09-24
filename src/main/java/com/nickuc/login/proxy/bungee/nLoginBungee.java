@@ -1,38 +1,38 @@
 package com.nickuc.login.proxy.bungee;
 
-import com.nickuc.login.ΔχλΩψδλΛιχ;
-import com.nickuc.login.ΠΛΨοδΩσμνΛγΦφβς;
-import com.nickuc.login.ΣδτΠνεγοΓορητ;
-import com.nickuc.login.ΣερμΔσατσκ;
-import com.nickuc.login.ΣφδσΔζιΠρα;
-import com.nickuc.login.ΦδφπθΩΩλζξ;
-import com.nickuc.login.ΦτχπδσρχΓΨω;
-import com.nickuc.login.ΨαχΨχΣλεΠψΦ;
-import com.nickuc.login.ΨγημιδξΓτοθαζ;
-import com.nickuc.login.ΨφιωσρΓδΔθ;
-import com.nickuc.login.ΩψΨρεξοσΠςΛυ;
-import com.nickuc.login.βεξΠθρρςΔΦμ;
-import com.nickuc.login.βθκςνθΩθυμςτκχ;
-import com.nickuc.login.δΛψπξκσβγςα;
-import com.nickuc.login.ζβησεθωυγτ;
-import com.nickuc.login.ζβκψγαωηκΠΠ;
-import com.nickuc.login.ηβΨςλδθσΓξ;
-import com.nickuc.login.ιΠοθΩΦξκ;
-import com.nickuc.login.καΦζθθυυεφΦγ;
-import com.nickuc.login.λΣΩσμφγχ;
-import com.nickuc.login.μΦξβετδμγ;
-import com.nickuc.login.μζξτΩσσφυδεπλΨ;
-import com.nickuc.login.ξψθρΣΠΣς;
-import com.nickuc.login.οεΦρΓψωΓξγΔι;
-import com.nickuc.login.πργηπνπτΨζξσΓΓ;
-import com.nickuc.login.πχσδΦΦνθΔπ;
-import com.nickuc.login.πψυκΠΨμΛΩβΣφμφσ;
-import com.nickuc.login.ρΣνμχγΨοΔΦ;
-import com.nickuc.login.ςπυηννναΣ;
-import com.nickuc.login.φΨαξωυθανΣφυκη;
-import com.nickuc.login.φδχεθοκψαλΛογλ;
-import com.nickuc.login.χΠξΦιζΨΣωΦσΨζ;
-import com.nickuc.login.ωΓπκΩβςςδξΔν;
+import com.nickuc.login.NLoginInterface_008;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_076;
+import com.nickuc.login.NLoginCore_241;
+import com.nickuc.login.NLoginCore_451;
+import com.nickuc.login.NLoginCore_232;
+import com.nickuc.login.NLoginInterface_041;
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginCore_559;
+import com.nickuc.login.NLoginCore_379;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_173;
+import com.nickuc.login.NLoginCore_183;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_326;
+import com.nickuc.login.NLoginCore_443;
+import com.nickuc.login.NLoginCore_427;
+import com.nickuc.login.NLoginCore_422;
+import com.nickuc.login.NLoginCore_553;
+import com.nickuc.login.NLoginType_010;
+import com.nickuc.login.NLoginCore_446;
+import com.nickuc.login.NLoginCore_141;
+import com.nickuc.login.NLoginInterface_022;
+import com.nickuc.login.NLoginCore_383;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginInterface_034;
+import com.nickuc.login.NLoginCore_575;
+import com.nickuc.login.NLoginCore_453;
+import com.nickuc.login.NLoginCore_433;
+import com.nickuc.login.NLoginCore_387;
+import com.nickuc.login.NLoginCore_199;
 import com.nickuc.login.api.enums.ServerConnectType;
 import com.nickuc.login.api.enums.event.EventEnum;
 import com.nickuc.login.api.event.bungee.connection.ServerPreConnectEvent;
@@ -59,7 +59,7 @@ import net.md_5.bungee.api.event.ServerConnectEvent.Reason;
 import net.md_5.bungee.api.plugin.Cancellable;
 import net.md_5.bungee.api.plugin.Event;
 
-public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements ΔχλΩψδλΛιχ, μΦξβετδμγ {
+public class nLoginBungee extends NLoginCore_383 implements NLoginInterface_008, NLoginType_010 {
    private static int ay = Integer.reverse(268435456);
    private static long u = Long.reverse(432345564227567616L);
    private static int bb = Integer.reverse(-1073741824);
@@ -69,7 +69,7 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
    private static long aj = Long.reverse(4266730629119758534L);
    private static int ah = Integer.reverse(-1610612736);
    private static long q = Long.reverse(432345564227567616L);
-   private ωΓπκΩβςςδξΔν a;
+   private NLoginCore_199 a;
    private static int an = 393216 >>> 208 | 393216 << ~208 + 1;
    private static String[] c = new String[nLoginBungee.cp];
    private static long ac = Long.reverse(432345564227567616L);
@@ -118,35 +118,35 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
    private static int cn = Integer.reverse(Integer.MIN_VALUE);
 
    @Override
-   protected ρΣνμχγΨοΔΦ[] a() {
-      return ΩψΨρεξοσΠςΛυ.values();
+   protected NLoginInterface_034[] a() {
+      return NLoginCore_379.values();
    }
 
    @Override
    protected void j() {
-      this.a = new ωΓπκΩβςςδξΔν(this.a(), c<"㺀">(ay, az));
+      this.a = new NLoginCore_199(this.a(), a(ay, az));
       super.j();
    }
 
    public nLoginBungee(BungeeLoader var1) {
       super(
          var1,
-         c<"㺀">(g, h),
-         new καΦζθθυυεφΦγ(c<"㺃">(j, k), c<"㺆">(m, n ^ q), c<"㺉">(r, t ^ u), c<"㺌">(z, ab ^ ac), c<"㺏">(ah, aj ^ am), c<"㺒">(an, ap ^ as), c<"㺕">(au, av))
+         a(g, h),
+         new NLoginCore_422(a(j, k), a(m, n ^ q), a(r, t ^ u), a(z, ab ^ ac), a(ah, aj ^ am), a(an, ap ^ as), a(au, av))
       );
-      this.a(new ΨγημιδξΓτοθαζ(new ζβκψγαωηκΠΠ(this), this, (boolean)ax));
+      this.a(new NLoginType_008(new NLoginCore_326(this), this, (boolean)ax));
    }
 
    @Nullable
    @Override
-   public String a(ΨαχΨχΣλεΠψΦ var1) {
+   public String a(NLoginCore_277 var1) {
       ProxiedPlayer var2 = var1.c();
       Server var3 = var2.getServer();
       return var3 == null ? null : var3.getInfo().getName();
    }
 
    @Override
-   public boolean a(ΨαχΨχΣλεΠψΦ var1) {
+   public boolean a(NLoginCore_277 var1) {
       if (!var1.R()) {
          return (boolean)bw;
       } else {
@@ -156,16 +156,16 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
    }
 
    @Override
-   public ηβΨςλδθσΓξ a(ΨαχΨχΣλεΠψΦ var1, String var2, ServerConnectType var3, @Nullable ΦτχπδσρχΓΨω<Boolean> var4) {
+   public NLoginCore_443 a(NLoginCore_277 var1, String var2, ServerConnectType var3, @Nullable NLoginInterface_041<Boolean> var4) {
       if (!var1.R()) {
-         return ηβΨςλδθσΓξ.c;
+         return NLoginCore_443.c;
       } else {
          ServerInfo var5 = this.a().getServerInfo(var2);
          if (var5 == null) {
-            return ηβΨςλδθσΓξ.c;
+            return NLoginCore_443.c;
          } else {
             ProxiedPlayer var6 = var1.c();
-            ΨγημιδξΓτοθαζ var10000 = this.a();
+            NLoginType_008 var10000 = this.a();
             EventEnum var10001 = EventEnum.SERVER_PRE_CONNECT;
             Object[] var10002 = new Object[bb];
             var10002[bc] = var1;
@@ -173,7 +173,7 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
             var10002[bn] = var5;
             ServerPreConnectEvent var7 = var10000.a(var10001, var10002);
             if (!this.a().callEvent(var7)) {
-               return ηβΨςλδθσΓξ.b;
+               return NLoginCore_443.b;
             } else {
                var5 = var7.getServer();
                Server var8 = var6.getServer();
@@ -182,18 +182,18 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
                      var4.done(Boolean.valueOf((boolean)bq));
                   }
 
-                  return ηβΨςλδθσΓξ.a;
+                  return NLoginCore_443.a;
                } else {
                   Builder var9 = ServerConnectRequest.builder().target(var5).reason(Reason.PLUGIN);
                   if (var4 == null) {
                      var9.callback(
                         (var3x, var4x) -> {
                            if (var3x != Result.SUCCESS && var3x != Result.ALREADY_CONNECTED) {
-                              String var5x = var6.getGroups().contains(c<"㺀">(ce, cf ^ cg))
-                                 ? var4x.getClass().getSimpleName() + c<"㺃">(ch & ci, cj) + var4x.getMessage()
+                              String var5x = var6.getGroups().contains(a(ce, cf ^ cg))
+                                 ? var4x.getClass().getSimpleName() + a(ch & ci, cj) + var4x.getMessage()
                                  : var4x.getClass().getName();
                               ProxyServer var10001x = this.a();
-                              String var10002x = c<"㺆">(ck & cl, cm);
+                              String var10002x = a(ck & cl, cm);
                               Object[] var10003 = new Object[cn];
                               var10003[co] = var5x;
                               var1.a(var10001x.getTranslation(var10002x, var10003));
@@ -207,7 +207,7 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
                   }
 
                   var6.connect(var9.build());
-                  return ηβΨςλδθσΓξ.a;
+                  return NLoginCore_443.a;
                }
             }
          }
@@ -260,7 +260,7 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
             );
             var4 = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(34 + 35), (byte)(10 + 73)}, StandardCharsets.UTF_8));
          } catch (Exception var7) {
-            throw new RuntimeException(πχσδΦΦνθΔπ.C("ҙҦҥѨҨҤҟҨҳҢѯҭұҪҭҳѵҷҺҸӂӄѻүӃҽҷҶҷ҂ӂҡӅҾӁӇҜӐӊӄӃӄ", (byte)43, 67));
+            throw new RuntimeException(NLoginCore_384.C("ҙҦҥѨҨҤҟҨҳҢѯҭұҪҭҳѵҷҺҸӂӄѻүӃҽҷҶҷ҂ӂҡӅҾӁӇҜӐӊӄӃӄ", (byte)43, 67));
          }
 
          byte[] var5 = new byte[8];
@@ -279,17 +279,17 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
 
    @Generated
    @Override
-   public ωΓπκΩβςςδξΔν a() {
+   public NLoginCore_199 a() {
       return this.a;
    }
 
    @Override
-   public οεΦρΓψωΓξγΔι b() {
+   public NLoginInterface_022 b() {
       return this.a((boolean)cb);
    }
 
    @Override
-   public ΨγημιδξΓτοθαζ a() {
+   public NLoginType_008 a() {
       return super.b();
    }
 
@@ -337,46 +337,46 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               d[0] = βθκςνθΩθυμςτκχ.B("ĺĳĤĬľĺċĴĎĀĐĉ", (byte)33, 66);
-               d[1] = ΨφιωσρΓδΔθ.F("ԿԯՐԺԙՖԒԙԸՍԿԭԽԕՕ՚\u0530ՀթՒՖԧդՃԽծՄՊգԥդՏ", (byte)33, 70);
-               d[2] = φΨαξωυθανΣφυκη.C("ѱьхҁѐѠѩ҇ѬѨҚ҈ҐєґѵҗѸҔҜѢќѥѦ҄ҤңѷѧҦѮңҰҊѩѽҢҢҎҦѸҧѭѶҋҝҏҮҡҷ҃ҥҳҴһҐҧ҇ӅӉӀҚӃҽҭҰңҜӌңҏӀӄҐәҸӜҲҚҹӉҹӘӟқӆӚҿӄӟӞӁӊҺҨӧ", (byte)33, 67);
-               d[3] = ΣδτΠνεγοΓορητ.F(
+               d[0] = NLoginCore_173.B("ĺĳĤĬľĺċĴĎĀĐĉ", (byte)33, 66);
+               d[1] = NLoginCore_559.F("ԿԯՐԺԙՖԒԙԸՍԿԭԽԕՕ՚\u0530ՀթՒՖԧդՃԽծՄՊգԥդՏ", (byte)33, 70);
+               d[2] = NLoginCore_453.C("ѱьхҁѐѠѩ҇ѬѨҚ҈ҐєґѵҗѸҔҜѢќѥѦ҄ҤңѷѧҦѮңҰҊѩѽҢҢҎҦѸҧѭѶҋҝҏҮҡҷ҃ҥҳҴһҐҧ҇ӅӉӀҚӃҽҭҰңҜӌңҏӀӄҐәҸӜҲҚҹӉҹӘӟқӆӚҿӄӟӞӁӊҺҨӧ", (byte)33, 67);
+               d[3] = NLoginCore_076.F(
                   "ԍԤ\u0557\u0558ԧԻԗԧԼԬՠԻԵՠՠՍաեԦԟըՀՁթՀԪ՜Ղ՛կՏԾՅՖՑՓժՌՉՇզվռՠՂՐՠֆԸյթցէզթւժբՉ\u058bդզօևյփՠ\u058bջ֙ևՔֈ֛ծ֖չ՝֛֤ՠփ՟֡ռբ֭֠րռժթֳ֑ժ֠", (byte)33, 70
                );
-               d[4] = φΨαξωυθανΣφυκη.E(
+               d[4] = NLoginCore_453.E(
                   "Ոԣԭ՚ՐՐ\u0530ԾՊԩ\u0557ԿԺԛԠԮԷՄՙթԣՀժթԦԷՎԹագհԿՎԩԳԶճԺՏվղՉԷԸԹԾ\u0558Ցց՜ճճվյ՟նՉՈպ՟պվթյ֒֓յ\u0590մ֚ձչպի֠՚֚ճ֎\u0557֔շ֑֚֮֨֨֘֜կք֒օ֪֦֩", (byte)33, 69
                );
-               d[5] = ΣφδσΔζιΠρα.E(
+               d[5] = NLoginCore_451.E(
                   "ՂԐԯԬԑԸԖՇ\u0558ԕԗԟԳԝՃԞդԞ՝Գ՚ԥլՃՃՋծհ՚՞ԯհՆՊԯՈԵղլհզ\u0557նԿՊղՃՔհյ՜վև՛ըՃե՟Րդ՚ըցծ֕֕\u0557յեՙթմճ֟իժ֕ս֏կկ֖֘ն֧֕\u058bօեֈրօժ֤֫ֆ", (byte)33, 69
                );
-               d[6] = φΨαξωυθανΣφυκη.B("ıęĲĝĲĿûķĴęĕĔĳđćĢņĆŅīĩŉŌōġħńŐŇŗĠĭęřęŇřįœĠşĝĝĺĽŧĽĵŃŁĵŤŃřŐĬűśŪŔŃŠŃŗŹŤŴūŊřŬŝŷľĶŜőŶšŘżƆŵƌŅŘƇƋƉūŊƌŬƐŵƅ", (byte)33, 66);
-               d[7] = δΛψπξκσβγςα.B("ĊįĖĬĺĎüĊĕıđĴĒĿġğłņĪŃŊĻĭľċĭĮĶĞńřħĹŗŎĲĿĘŜľĸĲőĞĠķĚıŖĵļŁřňħőņŧūŅĳţķňĬőūĴŪűşŏŊĿŵŷƀƁŕżŁťŠŠƀśūŬŮƌƍşƓƑŴź", (byte)33, 66);
-               d[8] = φδχεθοκψαλΛογλ.D("҆ш҆ҍҒѪѮҎѰѦҌѳѶѼѧѰѽҐѶҤҚѾѫѬ", (byte)33, 68);
-               d[9] = ξψθρΣΠΣς.D("ѣѪҍѨғѓѳѭѮҔѻѠ", (byte)33, 68);
-               d[10] = πψυκΠΨμΛΩβΣφμφσ.D("ѪѺхҁѲѰѨѧҗѮ҅Ѡ", (byte)33, 68);
-               d[11] = ςπυηννναΣ.A("đõĤķĕĐĉķþĹĹŁĿļĴĝģŃĊėĖėĔĕ", (byte)33, 65);
+               d[6] = NLoginCore_453.B("ıęĲĝĲĿûķĴęĕĔĳđćĢņĆŅīĩŉŌōġħńŐŇŗĠĭęřęŇřįœĠşĝĝĺĽŧĽĵŃŁĵŤŃřŐĬűśŪŔŃŠŃŗŹŤŴūŊřŬŝŷľĶŜőŶšŘżƆŵƌŅŘƇƋƉūŊƌŬƐŵƅ", (byte)33, 66);
+               d[7] = NLoginCore_183.B("ĊįĖĬĺĎüĊĕıđĴĒĿġğłņĪŃŊĻĭľċĭĮĶĞńřħĹŗŎĲĿĘŜľĸĲőĞĠķĚıŖĵļŁřňħőņŧūŅĳţķňĬőūĴŪűşŏŊĿŵŷƀƁŕżŁťŠŠƀśūŬŮƌƍşƓƑŴź", (byte)33, 66);
+               d[8] = NLoginCore_433.D("҆ш҆ҍҒѪѮҎѰѦҌѳѶѼѧѰѽҐѶҤҚѾѫѬ", (byte)33, 68);
+               d[9] = NLoginCore_141.D("ѣѪҍѨғѓѳѭѮҔѻѠ", (byte)33, 68);
+               d[10] = NLoginCore_201.D("ѪѺхҁѲѰѨѧҗѮ҅Ѡ", (byte)33, 68);
+               d[11] = NLoginCore_575.A("đõĤķĕĐĉķþĹĹŁĿļĴĝģŃĊėĖėĔĕ", (byte)33, 65);
                break;
             case 1:
-               d[0] = ΣερμΔσατσκ.D("ѿќѻѤѶѶѱѓғѸҙюѝњњѬҡѫ҄ҔґҔѫѬ", (byte)33, 68);
-               d[1] = χΠξΦιζΨΣωΦσΨζ.F("ԿԯՐԺԙՖԒԙԸՍԿԭԽԕՕ՚\u0530ՀթՒՖԣ՞իիՅ\u0530լՃՉդա", (byte)33, 70);
-               d[2] = δΛψπξκσβγςα.D("ѱьхҁѐѠѩ҇ѬѨҚ҈ҐєґѵҗѸҔҜѢќѥѦ҄ҤңѷѧҦѮңҰҊѩѽҢҢҎҦѸҧѭѶҋҝҏҮҡҷ҃ҥҳҴһҐҧ҇ӅӉӀҚӃҽҭҰңҜӌңҏӀӄҐәҸӜҲҚҹӉҹӘӟқҾҶӂӉӤӥҧҩҿҼӝ", (byte)33, 68);
-               d[3] = ΦδφπθΩΩλζξ.B("ñĈĻļċğûċĠĐńğęńńıŅŉĊăŌĤĥōĤĎŀĦĿœĳĢĩĺĵķŎİĭīŊŢŠńĦĴńŪĜřōťŋŊōŦŎņĭůňŊũūřŧńůşŽūĸŬſŒźŝŁſƈńŧŃƅŠōŢŎŞƏņƖűƅƇŮ", (byte)33, 66);
-               d[4] = βθκςνθΩθυμςτκχ.D("҃ўѨҕҋҋѫѹ҅ѤҒѺѵіћѩѲѿҔҤўѻҥҤѡѲ҉ѴҜҞҫѺ҉ѤѮѱҮѵҊҹҭ҄ѲѳѴѹғҌҼҗҮҮҹҰҚұ҄҃ҵҚҵҹҤҰӍӎҰӋүӕҬҴҵҦӛҕӕҮӉҒӏҲӌӣӕӛҤҼӚӜҥҩӪҽҨӉ", (byte)33, 68);
-               d[5] = ζβησεθωυγτ.A("ĦôēĐõĜúīļùûăėāħĂňĂŁėľĉŐħħįŒŔľłēŔĪĮēĬęŖŐŔŊĻŚģĮŖħĸŔřŀŢūĿŌħŉŃĴňľŌťŒŹŹĻřŉĽōŘŗƃŏŎŹšųœœźżŚƋŮŝƂźŮŜƅƍƋŹŐ", (byte)33, 65);
-               d[6] = πψυκΠΨμΛΩβΣφμφσ.A("ıęĲĝĲĿûķĴęĕĔĳđćĢņĆŅīĩŉŌōġħńŐŇŗĠĭęřęŇřįœĠşĝĝĺĽŧĽĵŃŁĵŤŃřŐĬűśŪŔŃŠŃŗŹŤŴūŊřŬŝŷľĶŜőŶšŘżƆŵƌŅŜŏŢūŐƇƄƉţŊƌ", (byte)33, 65);
-               d[7] = βεξΠθρρςΔΦμ.E("ԦՋԲՈՖԪԘԦԱՍԭՐԮ՛ԽԻ՞բՆ՟զ\u0557Չ՚ԧՉՊՒԺՠյՃՕճժՎ՛Դո՚ՔՎխԺԼՓԶՍղՑ\u0558՝յդՃխբփևաՏտՓդՈխևՐֆ֍ջիզ՛֑֓֜֝ձ֘՝ցռռ֜շ֝րծ֞ծտֲ֚մ֊", (byte)33, 69);
-               d[8] = ΠΛΨοδΩσμνΛγΦφβς.A("įñįĶĻēėķęďĵŁĹĔĄŅĆĊġĨņėĔĕ", (byte)33, 65);
-               d[9] = ιΠοθΩΦξκ.C("ѺѫѩѼѬѳҒєҕѹѥѭѬҟ҈ѵѵҡ҄ѝҀҔѫѬ", (byte)33, 67);
-               d[10] = ιΠοθΩΦξκ.A("ćīąćČýıįøāĶĉ", (byte)33, 65);
-               d[11] = πψυκΠΨμΛΩβΣφμφσ.E("ԭԑՀՓԱԬԥՓԚՕՕԡԱ՜ՍԷԢզԴՂԧԤՍբՠԡԬ՞ԺՈ\u0530Պ", (byte)33, 69);
+               d[0] = NLoginCore_241.D("ѿќѻѤѶѶѱѓғѸҙюѝњњѬҡѫ҄ҔґҔѫѬ", (byte)33, 68);
+               d[1] = NLoginCore_387.F("ԿԯՐԺԙՖԒԙԸՍԿԭԽԕՕ՚\u0530ՀթՒՖԣ՞իիՅ\u0530լՃՉդա", (byte)33, 70);
+               d[2] = NLoginCore_183.D("ѱьхҁѐѠѩ҇ѬѨҚ҈ҐєґѵҗѸҔҜѢќѥѦ҄ҤңѷѧҦѮңҰҊѩѽҢҢҎҦѸҧѭѶҋҝҏҮҡҷ҃ҥҳҴһҐҧ҇ӅӉӀҚӃҽҭҰңҜӌңҏӀӄҐәҸӜҲҚҹӉҹӘӟқҾҶӂӉӤӥҧҩҿҼӝ", (byte)33, 68);
+               d[3] = NLoginCore_232.B("ñĈĻļċğûċĠĐńğęńńıŅŉĊăŌĤĥōĤĎŀĦĿœĳĢĩĺĵķŎİĭīŊŢŠńĦĴńŪĜřōťŋŊōŦŎņĭůňŊũūřŧńůşŽūĸŬſŒźŝŁſƈńŧŃƅŠōŢŎŞƏņƖűƅƇŮ", (byte)33, 66);
+               d[4] = NLoginCore_173.D("҃ўѨҕҋҋѫѹ҅ѤҒѺѵіћѩѲѿҔҤўѻҥҤѡѲ҉ѴҜҞҫѺ҉ѤѮѱҮѵҊҹҭ҄ѲѳѴѹғҌҼҗҮҮҹҰҚұ҄҃ҵҚҵҹҤҰӍӎҰӋүӕҬҴҵҦӛҕӕҮӉҒӏҲӌӣӕӛҤҼӚӜҥҩӪҽҨӉ", (byte)33, 68);
+               d[5] = NLoginCore_027.A("ĦôēĐõĜúīļùûăėāħĂňĂŁėľĉŐħħįŒŔľłēŔĪĮēĬęŖŐŔŊĻŚģĮŖħĸŔřŀŢūĿŌħŉŃĴňľŌťŒŹŹĻřŉĽōŘŗƃŏŎŹšųœœźżŚƋŮŝƂźŮŜƅƍƋŹŐ", (byte)33, 65);
+               d[6] = NLoginCore_201.A("ıęĲĝĲĿûķĴęĕĔĳđćĢņĆŅīĩŉŌōġħńŐŇŗĠĭęřęŇřįœĠşĝĝĺĽŧĽĵŃŁĵŤŃřŐĬűśŪŔŃŠŃŗŹŤŴūŊřŬŝŷľĶŜőŶšŘżƆŵƌŅŜŏŢūŐƇƄƉţŊƌ", (byte)33, 65);
+               d[7] = NLoginCore_223.E("ԦՋԲՈՖԪԘԦԱՍԭՐԮ՛ԽԻ՞բՆ՟զ\u0557Չ՚ԧՉՊՒԺՠյՃՕճժՎ՛Դո՚ՔՎխԺԼՓԶՍղՑ\u0558՝յդՃխբփևաՏտՓդՈխևՐֆ֍ջիզ՛֑֓֜֝ձ֘՝ցռռ֜շ֝րծ֞ծտֲ֚մ֊", (byte)33, 69);
+               d[8] = NLoginCore_091.A("įñįĶĻēėķęďĵŁĹĔĄŅĆĊġĨņėĔĕ", (byte)33, 65);
+               d[9] = NLoginCore_427.C("ѺѫѩѼѬѳҒєҕѹѥѭѬҟ҈ѵѵҡ҄ѝҀҔѫѬ", (byte)33, 67);
+               d[10] = NLoginCore_427.A("ćīąćČýıįøāĶĉ", (byte)33, 65);
+               d[11] = NLoginCore_201.E("ԭԑՀՓԱԬԥՓԚՕՕԡԱ՜ՍԷԢզԴՂԧԤՍբՠԡԬ՞ԺՈ\u0530Պ", (byte)33, 69);
                break;
             case 2:
-               d[0] = ΦδφπθΩΩλζξ.F("ՋԦՂԭՊՃԕԴՔԞԾԓԷՀԯԝՒՅԚԲԡՙ\u0530Ա", (byte)33, 70);
+               d[0] = NLoginCore_232.F("ՋԦՂԭՊՃԕԴՔԞԾԓԷՀԯԝՒՅԚԲԡՙ\u0530Ա", (byte)33, 70);
             case 3:
             default:
                break;
             case 4:
-               d[0] = ζβησεθωυγτ.E("ԞԨՈԬԹԮԎ՚ՙՑՎԥ", (byte)33, 69);
+               d[0] = NLoginCore_027.E("ԞԨՈԬԹԮԎ՚ՙՑՎԥ", (byte)33, 69);
          }
       }
    }
@@ -397,13 +397,13 @@ public class nLoginBungee extends πργηπνπτΨζξσΓΓ implements Δχλ
             var0.findStatic(
                   nLoginBungee.class,
                   new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(μζξτΩσσφυδεπλΨ.A("ŏűųœŷƖƎƤƐşƝƓơƛŤƉƫƪƢƨƢŷ", (byte)84, 65), nLoginBungee.class.getClassLoader())
+                  MethodType.fromMethodDescriptorString(NLoginCore_446.A("ŏűųœŷƖƎƤƐşƝƓơƛŤƉƫƪƢƨƢŷ", (byte)84, 65), nLoginBungee.class.getClassLoader())
                )
                .asType(var2)
          );
       } catch (Exception var4) {
          throw new RuntimeException(
-            ιΠοθΩΦξκ.C("ԔԡԠӣԣԟԚԣԮԝӪԨԬԥԨԮӰԲԵԳԽԿӶԪԾԸԲԱԲӽԽԜՀԹԼՂԗՋՅԿԾԿԕ", (byte)84, 67) + var1 + λΣΩσμφγχ.D("ӫ", (byte)84, 68) + var2.toString(), var4
+            NLoginCore_427.C("ԔԡԠӣԣԟԚԣԮԝӪԨԬԥԨԮӰԲԵԳԽԿӶԪԾԸԲԱԲӽԽԜՀԹԼՂԗՋՅԿԾԿԕ", (byte)84, 67) + var1 + NLoginCore_553.D("ӫ", (byte)84, 68) + var2.toString(), var4
          );
       }
    }

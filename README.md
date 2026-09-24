@@ -1,6 +1,6 @@
 # nLogin Premium v2.0.19 (Reconstructed Project)
 
-Dự án mã nguồn Java hoàn chỉnh được dịch ngược sạch và tái cấu trúc từ `nLogin Premium.jar` (Build offline/standalone).
+Dự án mã nguồn Java hoàn chỉnh được dịch ngược sạch và tái cấu trúc từ `nLogin Premium.jar`.
 
 ## 📌 Tổng quan kiến trúc
 - **Tương thích đa nền tảng**:
@@ -23,4 +23,4 @@ Dự án mã nguồn Java hoàn chỉnh được dịch ngược sạch và tái
 ```bash
 mvn clean package
 ```
-Tập tin JAR đầu ra sẽ được tạo tại thư mục `target/nLogin-2.0.19-offline.jar`.
+Tập tin JAR đầu ra sẽ được tạo tại thư mục `target/nLogin-2.0.19.jar`.
