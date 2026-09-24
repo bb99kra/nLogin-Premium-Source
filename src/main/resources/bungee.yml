@@ -1,0 +1,6 @@
+# Download it here: https://black-minecraft.com/resources/3391/
+name: nLogin
+version: 2.0.19
+main: com.nickuc.login.loader.nLoginBungeeLoader
+description: 'A practical, secure and friendly authentication plugin'
+author: NickUC

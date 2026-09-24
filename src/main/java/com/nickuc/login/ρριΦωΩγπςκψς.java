@@ -1,0 +1,25 @@
+package com.nickuc.login;
+
+// $VF: synthetic class
+class ρριΦωΩγπςκψς {
+   private static int c = (25165824 >>> 23 | 25165824 << -23) & -1;
+   private static int a = (1048576 >>> 212 | 1048576 << -212) & -1;
+   private static int b = (268435456 >>> 123 | 268435456 << ~123 + 1) & -1;
+
+   static {
+      try {
+         K[κιββωσγχςΣβΠΣδ.b.ordinal()] = a;
+      } catch (NoSuchFieldError var3) {
+      }
+
+      try {
+         K[κιββωσγχςΣβΠΣδ.c.ordinal()] = b;
+      } catch (NoSuchFieldError var2) {
+      }
+
+      try {
+         K[κιββωσγχςΣβΠΣδ.d.ordinal()] = c;
+      } catch (NoSuchFieldError var1) {
+      }
+   }
+}

@@ -1,0 +1,217 @@
+package com.nickuc.login;
+
+import java.lang.invoke.MethodType;
+import java.lang.invoke.MutableCallSite;
+import java.lang.invoke.MethodHandles.Lookup;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+import java.util.Set;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESKeySpec;
+import javax.crypto.spec.IvParameterSpec;
+
+public abstract class ΣμςΠΔυσθ extends ΩδΦσωπηοεςβοφΛτ {
+   private static int t = -1 >>> 104 | -1 << ~104 + 1;
+   private static long x = Long.reverse(5445769585795913708L);
+   private static long i = Long.reverse(-3345256886831294484L);
+   private static int an = (0 >>> 87 | 0 << -87) & -1;
+   private final String J;
+   private static long aj = Long.reverse(-3345256886831294484L);
+   private static long am = Long.reverse(-7349874591868649472L);
+   private static int ah = (12582912 >>> 53 | 12582912 << ~53 + 1) & -1;
+   private static int h = Integer.reverse(Integer.MIN_VALUE);
+   private final String K;
+   private static int ae = Integer.reverse(-1610612736);
+   private static int y = (256 >>> 166 | 256 << -166) & -1;
+   private static long ab = Long.reverse(-7349874591868649472L);
+   private static long ag = Long.reverse(5445769585795913708L);
+   private static int d = Integer.reverse(-1);
+   private static long aa = Long.reverse(-3345256886831294484L);
+   private static int aq = Integer.reverse(-536870912);
+   private static long n = Long.reverse(-7349874591868649472L);
+   private static int w = Integer.reverse(-1073741824);
+   private static int c = Integer.reverse(0);
+   private static String[] c = new String[ΣμςΠΔυσθ.ao];
+   private static long g = Long.reverse(5445769585795913708L);
+   private static String[] d = new String[aq];
+   private static int ao = Integer.reverse(-536870912);
+   private static long u = Long.reverse(5445769585795913708L);
+   private static long f;
+   private static int s = Integer.reverse(1073741824);
+
+   private static Object c(Lookup var0, String var1, MethodType var2) {
+      try {
+         return new MutableCallSite(
+            var0.findStatic(
+                  ΣμςΠΔυσθ.class,
+                  new String(new byte[]{97}, StandardCharsets.UTF_8),
+                  MethodType.fromMethodDescriptorString(ΠΛΨοδΩσμνΛγΦφβς.E("Ժ՜՞Ծբցչ֏ջՊֈվ\u058cֆՏմ֖֕֍֓֍բ", (byte)86, 69), ΣμςΠΔυσθ.class.getClassLoader())
+               )
+               .asType(var2)
+         );
+      } catch (Exception var4) {
+         throw new RuntimeException(ΨΦνΨΦωυΩνβςμ.B("ƎƛƚŝƝƙƔƝƨƗŤƢƦƟƢƨŪӟӹԀӟӔԆԅӻž", (byte)86, 66) + var1 + ζβησεθωυγτ.D("ӱ", (byte)86, 68) + var2.toString(), var4);
+      }
+   }
+
+   public ΣμςΠΔυσθ(ΨγημιδξΓτοθαζ var1, ΓεοκπνΨωπτ var2, String var3, String var4) {
+      super(var1, var2);
+      this.J = var3;
+      this.K = var4;
+   }
+
+   private static String a(int var0, long var1) {
+      var1 ^= 89L;
+      var1 ^= -6251385979590951707L;
+      if (c[var0] == null) {
+         Cipher var3;
+         SecretKeyFactory var4;
+         try {
+            var3 = Cipher.getInstance(
+               new String(
+                  new byte[]{
+                     (byte)(51 + 17),
+                     69,
+                     (byte)(14 + 69),
+                     (byte)(5 + 42),
+                     (byte)(3 + 64),
+                     (byte)(48 + 18),
+                     (byte)(6 + 61),
+                     (byte)(46 + 1),
+                     (byte)(23 + 57),
+                     (byte)(8 + 67),
+                     (byte)(13 + 54),
+                     83,
+                     (byte)(28 + 25),
+                     (byte)(58 + 22),
+                     (byte)(49 + 48),
+                     (byte)(90 + 10),
+                     (byte)(82 + 18),
+                     (byte)(81 + 24),
+                     (byte)(35 + 75),
+                     (byte)(53 + 50)
+                  },
+                  StandardCharsets.UTF_8
+               )
+            );
+            var4 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(41 + 27), 69, 83}, StandardCharsets.UTF_8));
+         } catch (Exception var7) {
+            throw new RuntimeException(ΦδφπθΩΩλζξ.F("\u0590֝֜՟֛֖֪֟֟֙զ֤֤֪֨֡լ࣡ࣻं࣡ࣖईइࣽ", (byte)113, 70));
+         }
+
+         byte[] var5 = new byte[8];
+         var5[0] = (byte)(var1 >>> 56);
+
+         for (int var6 = 1; var6 < 8; var6++) {
+            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
+         }
+
+         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
+         c[var0] = new String(var3.doFinal(Base64.getDecoder().decode(d[var0])), StandardCharsets.UTF_8);
+      }
+
+      return c[var0];
+   }
+
+   private static void b() {
+      f = 4029524966893603211L;
+      long var0 = f ^ -6251385979590951707L;
+      Cipher var2 = Cipher.getInstance(
+         new String(
+            new byte[]{
+               (byte)(7 + 61),
+               (byte)(58 + 11),
+               (byte)(55 + 28),
+               (byte)(15 + 32),
+               (byte)(61 + 6),
+               (byte)(30 + 36),
+               (byte)(2 + 65),
+               47,
+               (byte)(15 + 65),
+               (byte)(33 + 42),
+               (byte)(51 + 16),
+               (byte)(44 + 39),
+               (byte)(46 + 7),
+               (byte)(25 + 55),
+               (byte)(95 + 2),
+               (byte)(91 + 9),
+               (byte)(38 + 62),
+               105,
+               (byte)(40 + 70),
+               (byte)(87 + 16)
+            },
+            StandardCharsets.UTF_8
+         )
+      );
+      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(22 + 46), 69, 83}, StandardCharsets.UTF_8));
+      byte[] var4 = new byte[8];
+      var4[0] = (byte)(var0 >>> 56);
+
+      for (int var5 = 1; var5 < 8; var5++) {
+         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
+      }
+
+      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
+      byte var7 = 1;
+
+      for (int var6 = 0; var6 < var7; var6++) {
+         switch (var6) {
+            case 0:
+               d[0] = ιΠοθΩΦξκ.F("ԚԘԡԙԶԻԘԥՊԼԠԕ", (byte)17, 70);
+               d[1] = βεξΠθρρςΔΦμ.A("îìõíĊďìùĞĐôé", (byte)17, 65);
+               d[2] = ΨΦνΨΦωυΩνβςμ.B("ØôÖæòçÿđòĚĖé", (byte)17, 66);
+               d[3] = οΩνΩρωλΨηΛδωδ.D("юкѡЬјхўдгпѡа", (byte)17, 68);
+               d[4] = ΣφδσΔζιΠρα.B("ēĈÕèĉĖĉĂôĔĚé", (byte)17, 66);
+               d[5] = ΣφδσΔζιΠρα.A("ÖêæČċéđóČēüé", (byte)17, 65);
+               d[6] = ιΠοθΩΦξκ.F("ԒԧԵԁԂԄԴԛԣԥԇՇԱԐԨՑ\u0530ՕԕՄԢԣԹՑՓԵՍԛԔԸբՕԲբ՞ԹԡՅԵլածԧԵ", (byte)17, 70);
+               break;
+            case 1:
+               d[0] = χΠξΦιζΨΣωΦσΨζ.A("ČûÓêÞ×ēÚÿĐøé", (byte)17, 65);
+               d[1] = ΨΦνΨΦωυΩνβςμ.E("ԂՂԦӻԸԫԟԖՍՄԠԕ", (byte)17, 69);
+               d[2] = ζβησεθωυγτ.E("ԖԧՉԻԕԉՂԗԢԎԨԕ", (byte)17, 69);
+               d[3] = φΨαξωυθανΣφυκη.F("ՅՇԹԽՈՁՍԫՆԽԤԕ", (byte)17, 70);
+               d[4] = ςπυηννναΣ.D("яџэтРѐчўнџеѢШѭэЭЭѥюцѰюлм", (byte)17, 68);
+               d[5] = θεωψξβΛσσ.D("ьОоФљѧёљувѝа", (byte)17, 68);
+               d[6] = χΠξΦιζΨΣωΦσΨζ.A("æûĉÕÖØĈï÷ùÛěąäüĥĄĩéĘö÷čĥħĉġïèČĶĩĭķĝİĜĜÿýüĞĲĉ", (byte)17, 65);
+               break;
+            case 2:
+               d[0] = πχσδΦΦνθΔπ.A("ÌêċđēđöĘðďíþúÝñĝÜĆěõĊĭôõ", (byte)17, 65);
+            case 3:
+            default:
+               break;
+            case 4:
+               d[0] = ζβησεθωυγτ.D("ЙЫјѡтФХкѠсѕѭѪїыйыбѓцЭэѫѠёѻѵќќѝѷѶ", (byte)17, 68);
+         }
+      }
+   }
+
+   @Override
+   protected void b(θΦγνΩερριδκ var1) {
+      τφθχΔαΣγτφς var2 = new τφθχΔαΣγτφς(this.J, this.b());
+      Set var3 = var2.a(this.K);
+      this.j = var3.size();
+
+      for (String var5 : var3) {
+         try {
+            String var6 = this.K + c<"㺀">(c & d, g) + var5 + c<"㺃">(h, i ^ n);
+            this.a(var2, var5, var6);
+         } catch (Exception var10) {
+            ψΓωτιμωκχψΛΨ.b(
+               c<"㺆">(s & t, u) + this.a.getName() + c<"㺉">(w, x) + (var5 == null ? c<"㺌">(y, aa ^ ab) : var5 + c<"㺏">(ae, ag)) + c<"㺒">(ah, aj ^ am), var10
+            );
+         } finally {
+            this.l++;
+         }
+      }
+
+      var3.clear();
+      this.c(var1);
+   }
+
+   protected abstract void a(τφθχΔαΣγτφς var1, String var2, String var3);
+
+   static {
+      b();
+   }
+}
