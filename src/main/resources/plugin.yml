@@ -7,6 +7,7 @@ website: 'https://www.nickuc.com'
 load: STARTUP
 api-version: 1.13
 folia-supported: true
+softdepend: [floodgate]
 authors: [NickUC, Henry_Fabio, NullPointer_]
 permissions:
   nlogin.admin:
