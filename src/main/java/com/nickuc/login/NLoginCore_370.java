@@ -153,9 +153,6 @@ public final class NLoginCore_370 {
 
     public static void c(String string, Object ... objectArray) {
         NLoginCore_370.b(string, null, objectArray);
-        if (string != null && string.contains("By:") && string.contains("nickuc.com")) {
-            NLoginCore_370.c("  Thanks for using Black-Minecraft.com", new Object[0]);
-        }
     }
 
     public static void a(Throwable throwable) {
@@ -168,9 +165,6 @@ public final class NLoginCore_370 {
 
     public static void e(String string, Object ... objectArray) {
         NLoginCore_370.d(string, null, objectArray);
-        if (string != null && string.contains("By:") && string.contains("nickuc.com")) {
-            NLoginCore_370.e("  Thanks for using Black-Minecraft.com", new Object[0]);
-        }
     }
 
     private static /* synthetic */ boolean a(boolean bl, String string, String string2, String string3, Object[] objectArray) {
@@ -296,9 +290,6 @@ public final class NLoginCore_370 {
 
     public static void d(String string, Object ... objectArray) {
         NLoginCore_370.c(string, null, objectArray);
-        if (string != null && string.contains("By:") && string.contains("nickuc.com")) {
-            NLoginCore_370.d("  Thanks for using Black-Minecraft.com", new Object[0]);
-        }
     }
 
     public static void d(String string, @Nullable Throwable throwable, Object ... objectArray) {
@@ -318,9 +309,6 @@ public final class NLoginCore_370 {
 
     public static void f(String string, Object ... objectArray) {
         NLoginCore_370.a(NLoginCore_145.var_com_nickuc_login_NLoginCore_145_a, string, null, objectArray);
-        if (string != null && string.contains("By:") && string.contains("nickuc.com")) {
-            NLoginCore_370.f("  Thanks for using Black-Minecraft.com", new Object[0]);
-        }
     }
 
     public static void a(String string, @Nullable Throwable throwable, Object ... objectArray) {
@@ -336,9 +324,6 @@ public final class NLoginCore_370 {
 
     public static void b(String string, Object ... objectArray) {
         NLoginCore_370.a(string, null, objectArray);
-        if (string != null && string.contains("By:") && string.contains("nickuc.com")) {
-            NLoginCore_370.b("  Thanks for using Black-Minecraft.com", new Object[0]);
-        }
     }
 
     @Generated
