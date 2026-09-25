@@ -249,8 +249,7 @@ implements NLoginCore_151 {
     @Override
     public void void_a(NLoginType_008 NLoginType_008, NLoginCore_523 NLoginCore_4952, NLoginCore_459 NLoginCore_459) {
         String string;
-        org.geysermc.floodgate.api.FloodgateApi api = org.geysermc.floodgate.api.FloodgateApi.getInstance();
-        if (NLoginType_008.java_lang_Object_b().j((String)NLoginCore_286.c("㺀", (int)(e & f), (long)g)) && api != null && (string = api.getPlayerPrefix()) != null && string.isEmpty()) {
+        if (NLoginType_008.java_lang_Object_b().j((String)NLoginCore_286.c("㺀", (int)(e & f), (long)g)) && (string = FloodgateApi.getInstance().getPlayerPrefix()) != null && string.isEmpty()) {
             NLoginCore_286.d(NLoginType_008);
         }
         NLoginCore_4952.a(h);

@@ -440,16 +440,16 @@ implements NLoginInterface_031 {
 
     public String r() {
         try {
-            org.geysermc.floodgate.api.FloodgateApi api = org.geysermc.floodgate.api.FloodgateApi.getInstance();
-            if (api != null) {
-                String prefix = api.getPlayerPrefix();
-                if (prefix != null) {
-                    return prefix;
-                }
-            }
-            return NLoginCore_418.c("㺆", (int)(aw & ax), (long)ay);
+            return FloodgateApi.getInstance().getPlayerPrefix();
         }
         catch (Throwable throwable) {
+            if (throwable.getCause() instanceof ClassNotFoundException) {
+                Object[] objectArray = new Object[ar];
+                objectArray[NLoginCore_418.as] = throwable.getMessage();
+                NLoginCore_370.c((String)NLoginCore_418.c("㺀", (int)ao, (long)(ap ^ aq)), objectArray);
+            } else {
+                NLoginCore_370.b((String)NLoginCore_418.c("㺃", (int)at, (long)au), throwable, new Object[av]);
+            }
             return NLoginCore_418.c("㺆", (int)(aw & ax), (long)ay);
         }
     }
