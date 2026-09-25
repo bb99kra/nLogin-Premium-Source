@@ -1,69 +1,16 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-public final class NLoginCore_127 {
-   public static String B(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+import com.nickuc.login.NLoginCore_531;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginCore_490;
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String E(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String A(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String C(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String D(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String F(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
+public class NLoginCore_127
+extends NLoginCore_490 {
+    public NLoginCore_127(NLoginType_008 NLoginType_008) {
+        super(NLoginType_008, NLoginCore_531.L);
+    }
 }
+

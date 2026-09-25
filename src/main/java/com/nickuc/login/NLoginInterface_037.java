@@ -1,13 +1,20 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-public interface NLoginInterface_037 extends NLoginInterface_009 {
-   @Override
-   default String w(String var1) {
-      throw new UnsupportedOperationException();
-   }
+import com.nickuc.login.NLoginInterface_009;
 
-   @Override
-   default boolean v(String var1) {
-      return false;
-   }
+public interface NLoginInterface_037
+extends NLoginInterface_009 {
+    @Override
+    default public String java_lang_String_w(String string) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    default public boolean v(String string) {
+        return false;
+    }
 }
+

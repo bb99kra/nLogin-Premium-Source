@@ -181,6 +181,11 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                     <encoding>UTF-8</encoding>
+                    <includes>
+                        <include>com/nickuc/login/loader/**</include>
+                        <include>com/nickuc/login/api/**</include>
+                        <include>patcher/**</include>
+                    </includes>
                 </configuration>
             </plugin>
             <plugin>

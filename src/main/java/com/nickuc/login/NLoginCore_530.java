@@ -1,69 +1,89 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.nickuc.login.loader.platform.BukkitLoader
+ *  javax.annotation.Nullable
+ *  lombok.Generated
+ *  org.bukkit.entity.Player
+ *  org.bukkit.plugin.java.JavaPlugin
+ */
 package com.nickuc.login;
 
-public final class NLoginCore_530 {
-   public static String B(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+import com.nickuc.login.loader.platform.BukkitLoader;
+import com.nickuc.login.NLoginCore_598;
+import com.nickuc.login.NLoginCore_578;
+import com.nickuc.login.NLoginCore_589;
+import com.nickuc.login.NLoginCore_079;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
+import javax.annotation.Nullable;
+import lombok.Generated;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
+public class NLoginCore_530
+implements NLoginCore_589 {
+    private final NLoginCore_578 var_com_nickuc_login_NLoginCore_578_b = new NLoginCore_578();
+    private final BukkitLoader c;
+    private static int a = 0 >>> 63 | 0 << ~63 + 1;
+    @Nullable
+    private final Player var_org_bukkit_entity_Player_b;
+    private final boolean N;
 
-      return new String(x);
-   }
+    @Override
+    public NLoginCore_598 a(Consumer<NLoginCore_598> consumer, long l, TimeUnit timeUnit) {
+        return new NLoginCore_079(this.var_org_bukkit_entity_Player_b, this.N, this.var_com_nickuc_login_NLoginCore_578_b, consumer).a((JavaPlugin)this.c, l, timeUnit);
+    }
 
-   public static String C(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+    @Override
+    public NLoginCore_598 a(Consumer<NLoginCore_598> consumer, long l, long l2, TimeUnit timeUnit) {
+        return new NLoginCore_079(this.var_org_bukkit_entity_Player_b, this.N, this.var_com_nickuc_login_NLoginCore_578_b, consumer).a((JavaPlugin)this.c, l, l2, timeUnit);
+    }
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
+    @Generated
+    private NLoginCore_530(BukkitLoader bukkitLoader, @Nullable Player player, boolean bl) {
+        this.c = bukkitLoader;
+        this.var_org_bukkit_entity_Player_b = player;
+        this.N = bl;
+    }
 
-      return new String(x);
-   }
+    public NLoginCore_530(BukkitLoader bukkitLoader, boolean bl) {
+        this(bukkitLoader, null, bl);
+    }
 
-   public static String D(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+    @Override
+    public void Y() {
+        NLoginCore_079.void_a((JavaPlugin)this.c);
+    }
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
+    public NLoginCore_530(BukkitLoader bukkitLoader, @Nullable Player player) {
+        this(bukkitLoader, player, a != 0);
+    }
 
-      return new String(x);
-   }
+    @Override
+    public NLoginCore_578 a() {
+        return this.var_com_nickuc_login_NLoginCore_578_b;
+    }
 
-   public static String F(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+    @Override
+    public NLoginCore_598 a(Runnable runnable) {
+        return new NLoginCore_079(this.var_org_bukkit_entity_Player_b, this.N, this.var_com_nickuc_login_NLoginCore_578_b, runnable).com_nickuc_login_NLoginCore_079_a((JavaPlugin)this.c);
+    }
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
+    @Override
+    public NLoginCore_598 a(Runnable runnable, long l, TimeUnit timeUnit) {
+        return new NLoginCore_079(this.var_org_bukkit_entity_Player_b, this.N, this.var_com_nickuc_login_NLoginCore_578_b, runnable).a((JavaPlugin)this.c, l, timeUnit);
+    }
 
-      return new String(x);
-   }
+    @Override
+    public NLoginCore_598 a(Runnable runnable, long l, long l2, TimeUnit timeUnit) {
+        return new NLoginCore_079(this.var_org_bukkit_entity_Player_b, this.N, this.var_com_nickuc_login_NLoginCore_578_b, runnable).a((JavaPlugin)this.c, l, l2, timeUnit);
+    }
 
-   public static String E(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String A(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
+    @Override
+    public NLoginCore_598 a(Consumer<NLoginCore_598> consumer) {
+        return new NLoginCore_079(this.var_org_bukkit_entity_Player_b, this.N, this.var_com_nickuc_login_NLoginCore_578_b, consumer).com_nickuc_login_NLoginCore_079_a((JavaPlugin)this.c);
+    }
 }
+

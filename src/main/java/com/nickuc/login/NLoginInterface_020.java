@@ -1,13 +1,20 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-public interface NLoginInterface_020 extends NLoginInterface_004 {
-   void a(String var1, Throwable var2);
+import com.nickuc.login.NLoginCore_051;
 
-   void b(String var1, Throwable var2);
+public interface NLoginInterface_020
+extends NLoginCore_051 {
+    public void a(String var1, Throwable var2);
 
-   void q(String var1);
+    public void b(String var1, Throwable var2);
 
-   void s(String var1);
+    public void q(String var1);
 
-   void r(String var1);
+    public void s(String var1);
+
+    public void r(String var1);
 }
+

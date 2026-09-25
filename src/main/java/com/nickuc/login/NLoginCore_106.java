@@ -1,5 +1,15 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  lombok.Generated
+ *  org.bukkit.event.EventHandler
+ *  org.bukkit.event.EventPriority
+ *  org.bukkit.event.player.PlayerCommandSendEvent
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginInterface_027;
 import java.util.Locale;
 import java.util.Set;
 import lombok.Generated;
@@ -7,26 +17,28 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.player.PlayerCommandSendEvent;
 
-public class NLoginCore_106 implements NLoginInterface_027 {
-   private static int a = -1610612733 >>> 60 | -1610612733 << -60;
-   private static int c = Integer.reverse(0);
-   private final String ad;
-   private final Set<String> f;
-   private static int b = 268435456 >>> 28 | 268435456 << -28;
+public class NLoginCore_106
+implements NLoginInterface_027 {
+    private static int a = -1610612733 >>> 60 | -1610612733 << -60;
+    private static int c;
+    private final String ad;
+    private final Set<String> f;
+    private static int b;
 
-   @EventHandler(
-      priority = EventPriority.LOW
-   )
-   public void a(PlayerCommandSendEvent var1) {
-      var1.getCommands().removeIf(var1x -> {
-         var1x = var1x.toLowerCase(Locale.ENGLISH);
-         return ((!var1x.startsWith(this.ad + a) != 0) && !this.f.contains(var1x) ? c : b);
-      });
-   }
+    @EventHandler(priority=EventPriority.LOW)
+    public void a(PlayerCommandSendEvent playerCommandSendEvent) {
+        playerCommandSendEvent.getCommands().removeIf(string -> ((string = string.toLowerCase(Locale.ENGLISH)).startsWith(this.ad + (char)a) || this.f.contains(string) ? b : c) != 0);
+    }
 
-   @Generated
-   NLoginCore_106(String var1, Set<String> var2) {
-      this.ad = var1;
-      this.f = var2;
-   }
+    static {
+        b = 0x10000000 >>> 28 | 0x10000000 << -28;
+        c = Integer.reverse(0);
+    }
+
+    @Generated
+    NLoginCore_106(String string, Set<String> set) {
+        this.ad = string;
+        this.f = set;
+    }
 }
+

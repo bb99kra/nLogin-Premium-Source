@@ -1,69 +1,28 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
-public final class NLoginCore_433 {
-   public static String C(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+import com.nickuc.login.bukkit.nLoginBukkit;
+import com.nickuc.login.NLoginCore_297;
+import com.nickuc.login.NLoginCore_359;
+import lombok.Generated;
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
+public class NLoginCore_433 {
+    public final NLoginCore_359 var_com_nickuc_login_NLoginCore_359_a = new NLoginCore_359(this);
+    public final NLoginCore_297 var_com_nickuc_login_NLoginCore_297_a = new NLoginCore_297(this);
+    private final nLoginBukkit u;
 
-      return new String(x);
-   }
+    @Generated
+    public NLoginCore_433(nLoginBukkit nLoginBukkit2) {
+        this.u = nLoginBukkit2;
+    }
 
-   public static String D(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String A(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String E(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String F(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String B(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
+    static /* synthetic */ nLoginBukkit a(NLoginCore_433 NLoginCore_5022) {
+        return NLoginCore_5022.u;
+    }
 }
+

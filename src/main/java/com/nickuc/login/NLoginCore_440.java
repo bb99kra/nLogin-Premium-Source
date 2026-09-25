@@ -1,48 +1,73 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.nickuc.login.loader.platform.BukkitLoader
+ *  lombok.Generated
+ *  org.bukkit.plugin.java.JavaPlugin
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.loader.platform.BukkitLoader;
+import com.nickuc.login.NLoginCore_598;
+import com.nickuc.login.NLoginCore_578;
+import com.nickuc.login.NLoginCore_094;
+import com.nickuc.login.NLoginCore_589;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
 import lombok.Generated;
+import org.bukkit.plugin.java.JavaPlugin;
 
-public class NLoginCore_440 implements NLoginInterface_010, NLoginInterface_035 {
-   private static int b = (2097152 >>> 148 | 2097152 << ~148 + 1) & -1;
-   private final NLoginCore_211 S;
-   private static int d = (1024 >>> 74 | 1024 << -74) & -1;
-   private static int c = Integer.reverse(0);
-   private static int a = Integer.reverse(0);
+public class NLoginCore_440
+implements NLoginCore_589 {
+    private final NLoginCore_578 a = new NLoginCore_578();
+    private final boolean K;
+    private final BukkitLoader b;
 
-   @Override
-   public GUIButtonContainer[] a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3, NLoginInterface_024 var4) {
-      NLoginCore_150.a(var2, NLoginCore_237.h);
-      NLoginCore_445[] var10001 = new NLoginCore_445[b];
-      var10001[c] = NLoginCore_445.k;
-      var10001[d] = NLoginCore_445.l;
-      return GUIButtonContainer.a(var2, var10001);
-   }
+    @Override
+    public void Y() {
+        NLoginCore_094.void_a((JavaPlugin)this.b);
+    }
 
-   @Generated
-   @Override
-   public NLoginCore_211 a() {
-      return this.S;
-   }
+    @Override
+    public NLoginCore_598 a(Runnable runnable, long l, long l2, TimeUnit timeUnit) {
+        return new NLoginCore_094(this.K, this.a, runnable).a((JavaPlugin)this.b, l, l2, timeUnit);
+    }
 
-   @Override
-   public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
-      return var1.a().q();
-   }
+    @Generated
+    public NLoginCore_440(BukkitLoader bukkitLoader, boolean bl) {
+        this.b = bukkitLoader;
+        this.K = bl;
+    }
 
-   // $VF: Unable to simplify switch on enum
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   @Override
-   public void a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3, NLoginInterface_024 var4, NLoginCore_445 var5) {
-      switch (NLoginCore_013.y[var5.ordinal()]) {
-         case 1:
-         case 2:
-            this.a(var3).a(var5 == NLoginCore_445.k ? NLoginCore_566.d : NLoginCore_566.f);
-            NLoginInterface_035.super.a(var1, var2, var3, var4, var5);
-      }
-   }
+    @Override
+    public NLoginCore_598 a(Consumer<NLoginCore_598> consumer, long l, long l2, TimeUnit timeUnit) {
+        return new NLoginCore_094(this.K, this.a, consumer).a((JavaPlugin)this.b, l, l2, timeUnit);
+    }
 
-   @Generated
-   public NLoginCore_440(NLoginCore_211 var1) {
-      this.S = var1;
-   }
+    @Override
+    public NLoginCore_578 a() {
+        return this.a;
+    }
+
+    @Override
+    public NLoginCore_598 a(Consumer<NLoginCore_598> consumer) {
+        return new NLoginCore_094(this.K, this.a, consumer).com_nickuc_login_NLoginCore_094_a((JavaPlugin)this.b);
+    }
+
+    @Override
+    public NLoginCore_598 a(Runnable runnable) {
+        return new NLoginCore_094(this.K, this.a, runnable).com_nickuc_login_NLoginCore_094_a((JavaPlugin)this.b);
+    }
+
+    @Override
+    public NLoginCore_598 a(Consumer<NLoginCore_598> consumer, long l, TimeUnit timeUnit) {
+        return new NLoginCore_094(this.K, this.a, consumer).a((JavaPlugin)this.b, l, timeUnit);
+    }
+
+    @Override
+    public NLoginCore_598 a(Runnable runnable, long l, TimeUnit timeUnit) {
+        return new NLoginCore_094(this.K, this.a, runnable).a((JavaPlugin)this.b, l, timeUnit);
+    }
 }
+

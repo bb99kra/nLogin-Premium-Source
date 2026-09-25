@@ -1,12 +1,45 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.nickuc.login.api.enums.event.EventEnum
+ *  com.nickuc.login.api.enums.event.UnregisterSource
+ *  com.nickuc.login.api.enums.event.UpdatePasswordSource
+ */
 package com.nickuc.login;
 
 import com.nickuc.login.api.enums.event.EventEnum;
 import com.nickuc.login.api.enums.event.UnregisterSource;
 import com.nickuc.login.api.enums.event.UpdatePasswordSource;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginCore_173;
+import com.nickuc.login.NLoginCore_150;
+import com.nickuc.login.NLoginType_032;
+import com.nickuc.login.NLoginCore_119;
+import com.nickuc.login.NLoginCore_466;
+import com.nickuc.login.NLoginCore_494;
+import com.nickuc.login.NLoginCore_559;
+import com.nickuc.login.NLoginCore_509;
+import com.nickuc.login.NLoginCore_004;
+import com.nickuc.login.NLoginCore_138;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_374;
+import com.nickuc.login.NLoginCore_291;
+import com.nickuc.login.ForceRegisterConfig;
+import com.nickuc.login.NLoginCore_453;
+import com.nickuc.login.NLoginCore_387;
+import com.nickuc.login.NLoginCore_451;
+import com.nickuc.login.NLoginCore_370;
+import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
 import java.nio.charset.StandardCharsets;
+import java.security.Key;
 import java.util.Base64;
 import java.util.UUID;
 import javax.crypto.Cipher;
@@ -14,294 +47,276 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
-public class NLoginType_025 extends NLoginType_032 {
-   private static int bu = (256 >>> 232 | 256 << -232) & -1;
-   private static long ay = Long.reverse(-6052837899185946624L);
-   private static int cc = Integer.reverse(1610612736);
-   private static int bf = 3 >>> 160 | 3 << ~160 + 1;
-   private static int cj = 1024 >>> 105 | 1024 << -105;
-   private static int ca = (-1 >>> 121 | -1 << ~121 + 1) & -1;
-   private static int bh = (134217728 >>> 25 | 134217728 << -25) & -1;
-   private static int br = 0 >>> 187 | 0 << -187;
-   private static int cg = (167772160 >>> 217 | 167772160 << ~217 + 1) & -1;
-   private static int bo = Integer.reverse(0);
-   private static int bj = Integer.reverse(1073741824);
-   private static int bp = Integer.reverse(0);
-   private static int ci = Integer.reverse(Integer.MIN_VALUE);
-   private static int cf = (0 >>> 150 | 0 << ~150 + 1) & -1;
-   private static long ce = Long.reverse(1836577777307984813L);
-   private static int av = Integer.reverse(0);
-   private static long be = Long.reverse(-6052837899185946624L);
-   private static int ch = Integer.reverse(0);
-   private static int cl = (134217728 >>> 217 | 134217728 << -217) & -1;
-   private static int bw = 6 >>> 33 | 6 << ~33 + 1;
-   private static long bd = Long.reverse(-5369181626484808787L);
-   private static String[] ZKM_STR_B = new String[NLoginType_025.cp];
-   private static long bb = Long.reverse(-6052837899185946624L);
-   private static long bi = Long.reverse(1836577777307984813L);
-   private static int bq = Integer.reverse(0);
-   private static int bt = Integer.reverse(0);
-   private static int by = Integer.reverse(0);
-   private static int bl = 1073741824 >>> 126 | 1073741824 << -126;
-   private static int aw = 0 >>> 207 | 0 << ~207 + 1;
-   private static int bc = Integer.reverse(1073741824);
-   private static long cb = Long.reverse(1836577777307984813L);
-   private static long ax = Long.reverse(-5369181626484808787L);
-   private static long bg = Long.reverse(1836577777307984813L);
-   private static int bm = 0 >>> 50 | 0 << -50;
-   private static int cd = Integer.reverse(-1);
-   private static int bz = 1342177280 >>> 60 | 1342177280 << -60;
-   private static int bn = Integer.reverse(Integer.MIN_VALUE);
-   private static int bk = Integer.reverse(0);
-   private static int cn = Integer.reverse(0);
-   private static int cm = 0 >>> 240 | 0 << -240;
-   private static int a = Integer.reverse(Integer.MIN_VALUE);
-   private static int bv = Integer.reverse(1073741824);
-   private static int az = Integer.reverse(Integer.MIN_VALUE);
-   private static int co = (896 >>> 231 | 896 << -231) & -1;
-   private static int bs = 262144 >>> 16 | 262144 << ~16 + 1;
-   private static String[] ZKM_STR_A = new String[co];
-   private static long ba = Long.reverse(-5369181626484808787L);
-   private static int ck = 3145728 >>> 116 | 3145728 << -116;
-   private static int cp = (28672 >>> 12 | 28672 << ~12 + 1) & -1;
-   private static int bx = 0 >>> 246 | 0 << ~246 + 1;
-   private static long e;
+public class NLoginType_025
+extends NLoginType_032 {
+    private static int bu;
+    private static long ay;
+    private static int cc;
+    private static int bf;
+    private static int cj;
+    private static int ca;
+    private static int bh;
+    private static int br;
+    private static int cg;
+    private static int bo;
+    private static int bj;
+    private static int bp;
+    private static int ci;
+    private static int cf;
+    private static long ce;
+    private static int av;
+    private static long be;
+    private static int ch;
+    private static int cl;
+    private static int bw;
+    private static long bd;
+    private static String[] d;
+    private static long bb;
+    private static long bi;
+    private static int bq;
+    private static int bt;
+    private static int by;
+    private static int bl;
+    private static int aw;
+    private static int bc;
+    private static long cb;
+    private static long ax;
+    private static long bg;
+    private static int bm;
+    private static int cd;
+    private static int bz;
+    private static int bn;
+    private static int bk;
+    private static int cn;
+    private static int cm;
+    private static int a;
+    private static int bv;
+    private static int az;
+    private static int co;
+    private static int bs;
+    private static String[] c;
+    private static long ba;
+    private static int ck;
+    private static int cp;
+    private static int bx;
+    private static long e;
 
-   private static void b() {
-      e = -5348715874303131987L;
-      long var0 = e ^ -4502855976632122097L;
-      Cipher var2 = Cipher.getInstance(
-         new String(
-            new byte[]{
-               (byte)(43 + 25),
-               (byte)(34 + 35),
-               (byte)(6 + 77),
-               (byte)(11 + 36),
-               (byte)(47 + 20),
-               (byte)(47 + 19),
-               (byte)(60 + 7),
-               (byte)(25 + 22),
-               (byte)(42 + 38),
-               (byte)(68 + 7),
-               (byte)(26 + 41),
-               (byte)(22 + 61),
-               (byte)(21 + 32),
-               (byte)(73 + 7),
-               97,
-               100,
-               (byte)(90 + 10),
-               (byte)(91 + 14),
-               (byte)(98 + 12),
-               (byte)(74 + 29)
-            },
-            StandardCharsets.UTF_8
-         )
-      );
-      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(48 + 20), 69, 83}, StandardCharsets.UTF_8));
-      byte[] var4 = new byte[8];
-      var4[0] = (byte)(var0 >>> 56);
-
-      for (int var5 = 1; var5 < 8; var5++) {
-         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
-      }
-
-      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
-      byte var7 = 1;
-
-      for (int var6 = 0; var6 < var7; var6++) {
-         switch (var6) {
-            case 0:
-               ZKM_STR_B[0] = NLoginCore_004.D("ӎӯӽӚҵӱӑӍӂӖӹӣӑӗԂӴӡәӧԌӟӬӠԏӊԓԔӿԋӵӗӰ", (byte)68, 68);
-               ZKM_STR_B[1] = NLoginCore_453.A("ŔŊŰĿţŦŏţŝŧƀŏ", (byte)68, 65);
-               ZKM_STR_B[2] = NLoginCore_091.B("ŸœśŭŌųŹſƄŘƄŏ", (byte)68, 66);
-               ZKM_STR_B[3] = NLoginCore_453.F("ՍՃթԸ՜՟Ո՜ՖՠչՈ", (byte)68, 70);
-               ZKM_STR_B[4] = NLoginCore_110.E("ժՇՈԻ՞Խ\u0557ԷԻատբօՀմՑևՃ՞պՖռՓՔ", (byte)68, 69);
-               ZKM_STR_B[5] = NLoginCore_241.B("ƀŪžřŎŷſŀŞƉŪŏ", (byte)68, 66);
-               ZKM_STR_B[6] = NLoginCore_173.F("ՊՇՈՓչ՞սՑի՛մվփՅՄթ՚ռռլե՛շչսք։֓ֆհիհմ\u058c՛՜։ձ֛֎֒ծ֛խֆշյ՞բգ֩֡֟ջ֢վ֯֜ևճհ\u058c֩ն", (byte)68, 70);
-               break;
-            case 1:
-               ZKM_STR_B[0] = NLoginCore_091.D("ӎӯӽӚҵӱӑӍӂӖӹӣӑӗԂӴӡәӧԌӟӭӢԃӄԂԐӍԊӓӘԈ", (byte)68, 68);
-               ZKM_STR_B[1] = NLoginCore_530.B("ŰĺŘœŰŁžŜŨŗŪŏ", (byte)68, 66);
-               ZKM_STR_B[2] = NLoginCore_004.B("ůĳŹŵŤŃűńœũŒŏ", (byte)68, 66);
-               ZKM_STR_B[3] = NLoginCore_201.D("ұӏӛӸҽӶӬӡӻӀӮӉ", (byte)68, 68);
-               ZKM_STR_B[4] = NLoginCore_387.A("űŎŏłťńŞľłŨƆžšŵƀşůƑůŨƊƃŚś", (byte)68, 65);
-               ZKM_STR_B[5] = NLoginCore_173.A("ĽŬŸĿřźŶŢőŤŇŕƃōńźůŽŲƓƍƃŚś", (byte)68, 65);
-               ZKM_STR_B[6] = NLoginCore_451.A("őŎŏŚƀťƄŘŲŢŻƅƊŌŋŰšƃƃųŬŢžƀƄƋƐƚƍŷŲŷŻƓŢţƐŸƢƕƙŵƢŴƍžżťũŪưƨƦƄƞƲƮƕŬƔƭƱŴƛ", (byte)68, 65);
-               break;
-            case 2:
-               ZKM_STR_B[0] = NLoginCore_091.C("ӑӶӏӌөӛӐӹӻӗӺӉ", (byte)68, 67);
-            case 3:
-            default:
-               break;
-            case 4:
-               ZKM_STR_B[0] = NLoginCore_091.F("շՐՅ\u0557թվտՙ՚տ՛Ո", (byte)68, 70);
-         }
-      }
-   }
-
-   // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   @Override
-   public void a(NLoginInterface_042 var1, String var2, String[] var3) {
-      if (!(var1 instanceof NLoginCore_277)) {
-         NLoginCore_487 var27 = NLoginCore_487.x;
-         Object[] var30 = new Object[a];
-         var30[av] = a(aw, ax ^ ay) + (var3.length > 0 ? a(az, ba ^ bb) : a(bc, bd ^ be)) + String.join(a(bf, bg), var3);
-         NLoginCore_150.a(var1, var27, var30);
-      } else {
-         NLoginCore_277 var4 = (NLoginCore_277)var1;
-         if (var3.length == 0) {
-            String var23 = a(bh, bi);
-            Object[] var25 = new Object[bj];
-            var25[bk] = var2;
-            var25[bl] = NLoginCore_150.a(NLoginCore_487.D, var4);
-            String var19 = String.format(var23, var25);
-            NLoginCore_487 var26 = NLoginCore_487.x;
-            Object[] var29 = new Object[bn];
-            var29[bo] = var19;
-            NLoginCore_150.a(var4, var26, var29);
-         } else {
-            NLoginCore_509 var5 = this.a.a().b(var4);
-            ForceRegisterConfig var6 = var5.a();
-            if (var6.h() && (!var6.t() || var6.s())) {
-               NLoginCore_291 var7 = this.a.a();
-               String var8 = var3[bq];
-               if (!var7.a(var6, var8)) {
-                  NLoginCore_150.a(var4, NLoginCore_487.P);
-                  NLoginCore_150.a(var4, NLoginCore_194.F);
-               } else {
-                  String var9 = var4.getName();
-                  UUID var10 = var4.a();
-                  NLoginType_008 var10000 = this.a;
-                  EventEnum var10001 = EventEnum.UNREGISTER;
-                  Object[] var10002 = new Object[bs];
-                  var10002[bt] = var4;
-                  var10002[bu] = var10;
-                  var10002[bv] = var9;
-                  var10002[bw] = UnregisterSource.BY_PLAYER;
-                  if (var10000.a(var10001, var10002)) {
-                     synchronized (var6.c) {
-                        if (!var6.h()) {
-                           NLoginCore_150.a(var4, NLoginCore_487.t);
-                           NLoginCore_150.a(var4, NLoginCore_194.F);
-                           return;
-                        }
-
-                        if (!var7.a(var6)) {
-                           NLoginCore_150.a(var4, NLoginCore_487.w);
-                           NLoginCore_150.a(var4, NLoginCore_194.F);
-                           return;
-                        }
-
-                        NLoginCore_370.b(a(bz & ca, cb) + var9 + a(cc & cd, ce) + var4.ac());
-                        boolean var16 = false /* VF: Semaphore variable */;
-
-                        try {
-                           var16 = true;
-                           var10000 = this.a;
-                           var10001 = EventEnum.PASSWORD_UPDATE_EVENT;
-                           var10002 = new Object[cg];
-                           var10002[ch] = var4;
-                           var10002[ci] = var10;
-                           var10002[cj] = var9;
-                           var10002[ck] = null;
-                           var10002[cl] = UpdatePasswordSource.BY_PLAYER;
-                           var10000.a(var10001, var10002);
-                           var16 = false;
-                        } finally {
-                           if (var16) {
-                              var4.a(NLoginCore_150.a(NLoginCore_487.q, var4));
-                           }
-                        }
-
-                        var4.a(NLoginCore_150.a(NLoginCore_487.q, var4));
-                     }
-                  }
-               }
-            } else {
-               NLoginCore_150.a(var4, NLoginCore_487.t);
-               NLoginCore_150.a(var4, NLoginCore_194.F);
+    private static void b() {
+        int n;
+        e = -5348715874303131987L;
+        long l = e ^ 0xC182A458AE19050FL;
+        Cipher cipher = Cipher.getInstance(new String(new byte[]{(byte)(43 + 25), (byte)(34 + 35), (byte)(6 + 77), (byte)(11 + 36), (byte)(47 + 20), (byte)(47 + 19), (byte)(60 + 7), (byte)(25 + 22), (byte)(42 + 38), (byte)(68 + 7), (byte)(26 + 41), (byte)(22 + 61), (byte)(21 + 32), (byte)(73 + 7), 97, 100, (byte)(90 + 10), (byte)(91 + 14), (byte)(98 + 12), (byte)(74 + 29)}, StandardCharsets.UTF_8));
+        SecretKeyFactory secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(48 + 20), 69, 83}, StandardCharsets.UTF_8));
+        byte[] byArray = new byte[8];
+        byArray[0] = (byte)(l >>> 56);
+        for (n = 1; n < 8; ++n) {
+            byArray[n] = (byte)(l << n * 8 >>> 56);
+        }
+        cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+        n = 1;
+        block7: for (int i = 0; i < n; ++i) {
+            switch (i) {
+                case 0: {
+                    NLoginType_025.d[0] = NLoginCore_451.D("ӎӯӽӚҵӱӑӍӂӖӹӣӑӗԂӴӡәӧԌӟӬӠԏӊԓԔӿԋӵӗӰ", (byte)68, 68);
+                    NLoginType_025.d[1] = NLoginCore_453.A("ŔŊŰĿţŦŏţŝŧƀŏ", (byte)68, 65);
+                    NLoginType_025.d[2] = NLoginCore_091.B("ŸœśŭŌųŹſƄŘƄŏ", (byte)68, 66);
+                    NLoginType_025.d[3] = NLoginCore_453.F("ՍՃթԸ՜՟Ո՜ՖՠչՈ", (byte)68, 70);
+                    NLoginType_025.d[4] = NLoginCore_004.E("ժՇՈԻ՞Խ՗ԷԻատբօՀմՑևՃ՞պՖռՓՔ", (byte)68, 69);
+                    NLoginType_025.d[5] = NLoginCore_027.B("ƀŪžřŎŷſŀŞƉŪŏ", (byte)68, 66);
+                    NLoginType_025.d[6] = NLoginCore_173.F("ՊՇՈՓչ՞սՑի՛մվփՅՄթ՚ռռլե՛շչսք։֓ֆհիհմ֌՛՜։ձ֛֎֒ծ֛խֆշյ՞բգ֩֡֟ջ֢վ֯֜ևճհ֌֩ն", (byte)68, 70);
+                    continue block7;
+                }
+                case 1: {
+                    NLoginType_025.d[0] = NLoginCore_091.D("ӎӯӽӚҵӱӑӍӂӖӹӣӑӗԂӴӡәӧԌӟӭӢԃӄԂԐӍԊӓӘԈ", (byte)68, 68);
+                    NLoginType_025.d[1] = NLoginCore_559.B("ŰĺŘœŰŁžŜŨŗŪŏ", (byte)68, 66);
+                    NLoginType_025.d[2] = NLoginCore_451.B("ůĳŹŵŤŃűńœũŒŏ", (byte)68, 66);
+                    NLoginType_025.d[3] = NLoginCore_201.D("ұӏӛӸҽӶӬӡӻӀӮӉ", (byte)68, 68);
+                    NLoginType_025.d[4] = NLoginCore_387.A("űŎŏłťńŞľłŨƆžšŵƀşůƑůŨƊƃŚś", (byte)68, 65);
+                    NLoginType_025.d[5] = NLoginCore_173.A("ĽŬŸĿřźŶŢőŤŇŕƃōńźůŽŲƓƍƃŚś", (byte)68, 65);
+                    NLoginType_025.d[6] = NLoginCore_384.A("őŎŏŚƀťƄŘŲŢŻƅƊŌŋŰšƃƃųŬŢžƀƄƋƐƚƍŷŲŷŻƓŢţƐŸƢƕƙŵƢŴƍžżťũŪưƨƦƄƞƲƮƕŬƔƭƱŴƛ", (byte)68, 65);
+                    continue block7;
+                }
+                case 2: {
+                    NLoginType_025.d[0] = NLoginCore_091.C("ӑӶӏӌөӛӐӹӻӗӺӉ", (byte)68, 67);
+                    continue block7;
+                }
+                case 4: {
+                    NLoginType_025.d[0] = NLoginCore_091.F("շՐՅ՗թվտՙ՚տ՛Ո", (byte)68, 70);
+                }
             }
-         }
-      }
-   }
+        }
+    }
 
-   private static String a(int var0, long var1) {
-      var1 ^= 53L;
-      var1 ^= -4502855976632122097L;
-      if (ZKM_STR_A[var0] == null) {
-         Cipher var3;
-         SecretKeyFactory var4;
-         try {
-            var3 = Cipher.getInstance(
-               new String(
-                  new byte[]{
-                     68,
-                     (byte)(55 + 14),
-                     (byte)(3 + 80),
-                     (byte)(20 + 27),
-                     (byte)(22 + 45),
-                     (byte)(50 + 16),
-                     (byte)(55 + 12),
-                     (byte)(38 + 9),
-                     (byte)(56 + 24),
-                     (byte)(74 + 1),
-                     67,
-                     (byte)(2 + 81),
-                     (byte)(12 + 41),
-                     (byte)(68 + 12),
-                     (byte)(36 + 61),
-                     (byte)(19 + 81),
-                     (byte)(39 + 61),
-                     (byte)(104 + 1),
-                     (byte)(34 + 76),
-                     (byte)(34 + 69)
-                  },
-                  StandardCharsets.UTF_8
-               )
-            );
-            var4 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(24 + 44), 69, 83}, StandardCharsets.UTF_8));
-         } catch (Exception var7) {
-            throw new RuntimeException(NLoginCore_141.F("ԭԺԹӼԼԸԳԼՇԶԃՁՅԾՁՇԉ\u086eࢍࢣ\u0896࢚ࡴࡵ࢘ࢤࡸ࢘࢘࢟ࢎ", (byte)14, 70));
-         }
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    @Override
+    public void a(NLoginCore_494 NLoginInterface_0422, String string, String[] stringArray) {
+        block11: {
+            String string2;
+            if (!(NLoginInterface_0422 instanceof NLoginCore_277)) {
+                Object[] objectArray = new Object[a];
+                objectArray[NLoginType_025.av] = (String)NLoginType_025.c("㺀", (int)aw, (long)(ax ^ ay)) + (String)(stringArray.length > 0 ? NLoginType_025.c("㺃", (int)az, (long)(ba ^ bb)) : NLoginType_025.c("㺆", (int)bc, (long)(bd ^ be))) + String.join((CharSequence)NLoginType_025.c("㺉", (int)bf, (long)bg), stringArray);
+                NLoginCore_150.a(NLoginInterface_0422, NLoginCore_374.x, objectArray);
+                return;
+            }
+            NLoginCore_277 NLoginCore_277 = (NLoginCore_277)NLoginInterface_0422;
+            if (stringArray.length == 0) {
+                Object[] objectArray = new Object[bj];
+                objectArray[NLoginType_025.bk] = string;
+                objectArray[NLoginType_025.bl] = NLoginCore_150.a(NLoginCore_374.D, NLoginCore_277, new Object[bm]);
+                String string3 = String.format((String)NLoginType_025.c("㺌", (int)bh, (long)bi), objectArray);
+                Object[] objectArray2 = new Object[bn];
+                objectArray2[NLoginType_025.bo] = string3;
+                NLoginCore_150.a((NLoginCore_494)NLoginCore_277, NLoginCore_374.x, objectArray2);
+                return;
+            }
+            NLoginCore_509 NLoginCore_5092 = ((NLoginType_008)this.a).com_nickuc_login_NLoginCore_187_a().com_nickuc_login_NLoginCore_509_b(NLoginCore_277);
+            ForceRegisterConfig ForceRegisterConfig2 = NLoginCore_5092.com_nickuc_login_ForceRegisterConfig_a();
+            if (!ForceRegisterConfig2.boolean_h() || ForceRegisterConfig2.t() && !ForceRegisterConfig2.s()) {
+                NLoginCore_150.a((NLoginCore_494)NLoginCore_277, NLoginCore_374.t, new Object[bp]);
+                NLoginCore_150.a(NLoginCore_277, NLoginCore_119.F);
+                return;
+            }
+            NLoginCore_291 NLoginCore_2912 = ((NLoginType_008)this.a).com_nickuc_login_NLoginCore_291_a();
+            if (!NLoginCore_2912.boolean_a(ForceRegisterConfig2, string2 = stringArray[bq])) {
+                NLoginCore_150.a((NLoginCore_494)NLoginCore_277, NLoginCore_374.P, new Object[br]);
+                NLoginCore_150.a(NLoginCore_277, NLoginCore_119.F);
+                return;
+            }
+            String string4 = NLoginCore_277.getName();
+            UUID uUID = NLoginCore_277.java_util_UUID_a();
+            Object[] objectArray = new Object[bs];
+            objectArray[NLoginType_025.bt] = NLoginCore_277;
+            objectArray[NLoginType_025.bu] = uUID;
+            objectArray[NLoginType_025.bv] = string4;
+            objectArray[NLoginType_025.bw] = UnregisterSource.BY_PLAYER;
+            if (!((NLoginType_008)this.a).a(EventEnum.UNREGISTER, objectArray)) break block11;
+            Object object = ForceRegisterConfig2.var_java_lang_Object_c;
+            synchronized (object) {
+                if (!ForceRegisterConfig2.boolean_h()) {
+                    NLoginCore_150.a((NLoginCore_494)NLoginCore_277, NLoginCore_374.t, new Object[bx]);
+                    NLoginCore_150.a(NLoginCore_277, NLoginCore_119.F);
+                    return;
+                }
+                if (!NLoginCore_2912.boolean_a(ForceRegisterConfig2)) {
+                    NLoginCore_150.a((NLoginCore_494)NLoginCore_277, NLoginCore_374.w, new Object[by]);
+                    NLoginCore_150.a(NLoginCore_277, NLoginCore_119.F);
+                    return;
+                }
+                NLoginCore_370.b((String)NLoginType_025.c("㺏", (int)(bz & ca), (long)cb) + string4 + (String)NLoginType_025.c("㺒", (int)(cc & cd), (long)ce) + NLoginCore_277.ac(), new Object[cf]);
+                try {
+                    Object[] objectArray3 = new Object[cg];
+                    objectArray3[NLoginType_025.ch] = NLoginCore_277;
+                    objectArray3[NLoginType_025.ci] = uUID;
+                    objectArray3[NLoginType_025.cj] = string4;
+                    objectArray3[NLoginType_025.ck] = null;
+                    objectArray3[NLoginType_025.cl] = UpdatePasswordSource.BY_PLAYER;
+                    ((NLoginType_008)this.a).a(EventEnum.PASSWORD_UPDATE_EVENT, objectArray3);
+                    NLoginCore_277.a(NLoginCore_150.a(NLoginCore_374.q, NLoginCore_277, new Object[cm]));
+                }
+                catch (Throwable throwable) {
+                    NLoginCore_277.a(NLoginCore_150.a(NLoginCore_374.q, NLoginCore_277, new Object[cn]));
+                    throw throwable;
+                }
+            }
+        }
+    }
 
-         byte[] var5 = new byte[8];
-         var5[0] = (byte)(var1 >>> 56);
+    private static String a(int n, long l) {
+        l ^= 0x35L;
+        l ^= 0xC182A458AE19050FL;
+        if (c[n] == null) {
+            SecretKeyFactory secretKeyFactory;
+            Cipher cipher;
+            try {
+                cipher = Cipher.getInstance(new String(new byte[]{68, (byte)(55 + 14), (byte)(3 + 80), (byte)(20 + 27), (byte)(22 + 45), (byte)(50 + 16), (byte)(55 + 12), (byte)(38 + 9), (byte)(56 + 24), (byte)(74 + 1), 67, (byte)(2 + 81), (byte)(12 + 41), (byte)(68 + 12), (byte)(36 + 61), (byte)(19 + 81), (byte)(39 + 61), (byte)(104 + 1), (byte)(34 + 76), (byte)(34 + 69)}, StandardCharsets.UTF_8));
+                secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(24 + 44), 69, 83}, StandardCharsets.UTF_8));
+            }
+            catch (Exception exception) {
+                throw new RuntimeException(NLoginCore_138.F("ԭԺԹӼԼԸԳԼՇԶԃՁՅԾՁՇԉ࡮ࢍࢣ࢖࢚ࡴࡵ࢘ࢤࡸ࢘࢘࢟ࢎ", (byte)14, 70));
+            }
+            byte[] byArray = new byte[8];
+            byArray[0] = (byte)(l >>> 56);
+            for (int i = 1; i < 8; ++i) {
+                byArray[i] = (byte)(l << i * 8 >>> 56);
+            }
+            cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+            NLoginType_025.c[n] = new String(cipher.doFinal(Base64.getDecoder().decode(d[n])), StandardCharsets.UTF_8);
+        }
+        return c[n];
+    }
 
-         for (int var6 = 1; var6 < 8; var6++) {
-            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
-         }
+    public NLoginType_025(NLoginCore_466 NLoginCore_4662) {
+        super(NLoginCore_4662);
+        this.b();
+    }
 
-         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
-      }
+    private static String c(String s, int n, long l) {
+        return a(n, l);
+    }
 
-      return ZKM_STR_A[var0];
-   }
+    private static Object c(MethodHandles.Lookup lookup, String string, MethodType methodType) {
+        try {
+            return new MutableCallSite(lookup.findStatic(NLoginType_025.class, new String(new byte[]{97}, StandardCharsets.UTF_8), MethodType.fromMethodDescriptorString(NLoginCore_559.B("¿áãÃçĆþĔĀÏčăđċÔùěĚĒĘĒç", (byte)12, 66), NLoginType_025.class.getClassLoader())).asType(methodType));
+        }
+        catch (Exception exception) {
+            throw new RuntimeException(NLoginCore_004.A("úćĆÉĉąĀĉĔăÐĎĒċĎĔÖлњѰѣѧстѥѱхѥѥѬћð", (byte)12, 65) + string + NLoginCore_223.A("Ñ", (byte)12, 65) + methodType.toString(), exception);
+        }
+    }
 
-   public NLoginType_025(NLoginCore_466 var1) {
-      super(var1);
-      this.b();
-   }
-
-   private static Object c(Lookup var0, String var1, MethodType var2) {
-      try {
-         return new MutableCallSite(
-            var0.findStatic(
-                  NLoginType_025.class,
-                  new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(NLoginCore_530.B("¿áãÃçĆþĔĀÏčăđċÔùěĚĒĘĒç", (byte)12, 66), NLoginType_025.class.getClassLoader())
-               )
-               .asType(var2)
-         );
-      } catch (Exception var4) {
-         throw new RuntimeException(
-            NLoginCore_110.A("úćĆÉĉąĀĉĔăÐĎĒċĎĔÖлњѰѣѧстѥѱхѥѥѬћð", (byte)12, 65) + var1 + NLoginCore_397.A("Ñ", (byte)12, 65) + var2.toString(), var4
-         );
-      }
-   }
-
-   static {
-      b();
-   }
+    static {
+        a = Integer.reverse(Integer.MIN_VALUE);
+        av = Integer.reverse(0);
+        aw = 0 >>> 207 | 0 << ~207 + 1;
+        ax = Long.reverse(-5369181626484808787L);
+        ay = Long.reverse(-6052837899185946624L);
+        az = Integer.reverse(Integer.MIN_VALUE);
+        ba = Long.reverse(-5369181626484808787L);
+        bb = Long.reverse(-6052837899185946624L);
+        bc = Integer.reverse(0x40000000);
+        bd = Long.reverse(-5369181626484808787L);
+        be = Long.reverse(-6052837899185946624L);
+        bf = 3 >>> 160 | 3 << ~160 + 1;
+        bg = Long.reverse(1836577777307984813L);
+        bh = (0x8000000 >>> 25 | 0x8000000 << -25) & 0xFFFFFFFF;
+        bi = Long.reverse(1836577777307984813L);
+        bj = Integer.reverse(0x40000000);
+        bk = Integer.reverse(0);
+        bl = 0x40000000 >>> 126 | 0x40000000 << -126;
+        bm = 0 >>> 50 | 0 << -50;
+        bn = Integer.reverse(Integer.MIN_VALUE);
+        bo = Integer.reverse(0);
+        bp = Integer.reverse(0);
+        bq = Integer.reverse(0);
+        br = 0 >>> 187 | 0 << -187;
+        bs = 262144 >>> 16 | 262144 << ~16 + 1;
+        bt = Integer.reverse(0);
+        bu = (256 >>> 232 | 256 << -232) & 0xFFFFFFFF;
+        bv = Integer.reverse(0x40000000);
+        bw = 6 >>> 33 | 6 << ~33 + 1;
+        bx = 0 >>> 246 | 0 << ~246 + 1;
+        by = Integer.reverse(0);
+        bz = 0x50000000 >>> 60 | 0x50000000 << -60;
+        ca = (-1 >>> 121 | -1 << ~121 + 1) & 0xFFFFFFFF;
+        cb = Long.reverse(1836577777307984813L);
+        cc = Integer.reverse(0x60000000);
+        cd = Integer.reverse(-1);
+        ce = Long.reverse(1836577777307984813L);
+        cf = (0 >>> 150 | 0 << ~150 + 1) & 0xFFFFFFFF;
+        cg = (0xA000000 >>> 217 | 0xA000000 << ~217 + 1) & 0xFFFFFFFF;
+        ch = Integer.reverse(0);
+        ci = Integer.reverse(Integer.MIN_VALUE);
+        cj = 1024 >>> 105 | 1024 << -105;
+        ck = 0x300000 >>> 116 | 0x300000 << -116;
+        cl = (0x8000000 >>> 217 | 0x8000000 << -217) & 0xFFFFFFFF;
+        cm = 0 >>> 240 | 0 << -240;
+        cn = Integer.reverse(0);
+        co = (896 >>> 231 | 896 << -231) & 0xFFFFFFFF;
+        cp = (28672 >>> 12 | 28672 << ~12 + 1) & 0xFFFFFFFF;
+        c = new String[co];
+        d = new String[cp];
+        NLoginType_025.b();
+    }
 }
+

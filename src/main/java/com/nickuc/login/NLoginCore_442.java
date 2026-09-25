@@ -1,11 +1,53 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  lombok.Generated
+ *  org.bukkit.Server
+ *  org.bukkit.command.Command
+ *  org.bukkit.command.CommandExecutor
+ *  org.bukkit.command.CommandMap
+ *  org.bukkit.command.CommandSender
+ *  org.bukkit.command.PluginCommand
+ *  org.bukkit.command.SimpleCommandMap
+ *  org.bukkit.command.TabCompleter
+ *  org.bukkit.entity.Player
+ *  org.bukkit.plugin.Plugin
+ *  org.bukkit.plugin.PluginManager
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_546;
+import com.nickuc.login.NLoginCore_427;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_559;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_173;
+import com.nickuc.login.NLoginCore_110;
+import com.nickuc.login.NLoginCore_092;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_168;
+import com.nickuc.login.NLoginCore_446;
+import com.nickuc.login.NLoginCore_004;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginInterface_021;
+import com.nickuc.login.NLoginCore_138;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_575;
+import com.nickuc.login.NLoginCore_453;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_387;
+import com.nickuc.login.NLoginCore_451;
+import com.nickuc.login.NLoginCore_370;
+import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.nio.charset.StandardCharsets;
+import java.security.Key;
 import java.util.Base64;
 import java.util.Collections;
 import java.util.List;
@@ -28,286 +70,275 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 
-public final class NLoginCore_442 implements NLoginInterface_021, CommandExecutor, TabCompleter {
-   private static int af = (-1 >>> 212 | -1 << ~212 + 1) & -1;
-   private static long g = Long.reverse(6009847471270414956L);
-   private static long ag = Long.reverse(6009847471270414956L);
-   private static int am = Integer.reverse(-1879048192);
-   private static int x = (0 >>> 34 | 0 << -34) & -1;
-   private static long w = Long.reverse(-1008806316530991104L);
-   private static long k = Long.reverse(-1008806316530991104L);
-   private static long v = Long.reverse(-6816404267480757652L);
-   private static int z = (0 >>> 117 | 0 << -117) & -1;
-   private static long aj = Long.reverse(6009847471270414956L);
-   private static long p = Long.reverse(-6816404267480757652L);
-   private static String[] ZKM_STR_B = new String[am];
-   private static int ai = Integer.reverse(-1);
-   private static int al = Integer.reverse(-1879048192);
-   private static int ad = (8192 >>> 109 | 8192 << ~109 + 1) & -1;
-   private final NLoginCore_168<?> b;
-   private PluginCommand a;
-   private static int l = Integer.reverse(-1073741824);
-   private static long q = Long.reverse(-1008806316530991104L);
-   private static int b = Integer.reverse(0);
-   private static int ab = Integer.reverse(1073741824);
-   private static int ac = Integer.reverse(0);
-   private static int aa = Integer.reverse(Integer.MIN_VALUE);
-   private static int a = Integer.reverse(Integer.MIN_VALUE);
-   private final Server a;
-   private static long d = Long.reverse(-6816404267480757652L);
-   private static long c;
-   private static int u = Integer.reverse(1610612736);
-   private static int ak = 0 >>> 154 | 0 << ~154 + 1;
-   private static long t = Long.reverse(-1008806316530991104L);
-   private static int ae = -1073741823 >>> 94 | -1073741823 << -94;
-   private static long s = Long.reverse(-6816404267480757652L);
-   private static int ah = (1 >>> 93 | 1 << ~93 + 1) & -1;
-   private static int r = (10 >>> 1 | 10 << ~1 + 1) & -1;
-   private static int h = (0 >>> 6 | 0 << ~6 + 1) & -1;
-   private static int i = Integer.MIN_VALUE >>> 94 | Integer.MIN_VALUE << ~94 + 1;
-   private static int y = (1073741824 >>> 93 | 1073741824 << ~93 + 1) & -1;
-   private static long j = Long.reverse(-6816404267480757652L);
-   private static int f = 4096 >>> 204 | 4096 << -204;
-   private static long m = Long.reverse(-6816404267480757652L);
-   private static int o = Integer.reverse(536870912);
-   private static long n = Long.reverse(-1008806316530991104L);
-   private static String[] ZKM_STR_A = new String[al];
-   private static long e = Long.reverse(-1008806316530991104L);
+public final class NLoginCore_442
+implements NLoginInterface_021,
+CommandExecutor,
+TabCompleter {
+    private static int af;
+    private static long g;
+    private static long ag;
+    private static int am;
+    private static int x;
+    private static long w;
+    private static long k;
+    private static long v;
+    private static int z;
+    private static long aj;
+    private static long p;
+    private static String[] var_java_lang_String_arr_b;
+    private static int ai;
+    private static int al;
+    private static int ad;
+    private final NLoginCore_168<?> var_com_nickuc_login_NLoginCore_168____b;
+    private PluginCommand var_org_bukkit_command_PluginCommand_a;
+    private static int l;
+    private static long q;
+    private static int var_int_b;
+    private static int ab;
+    private static int ac;
+    private static int aa;
+    private static int var_int_a;
+    private final Server var_org_bukkit_Server_a;
+    private static long d;
+    private static long c;
+    private static int u;
+    private static int ak;
+    private static long t;
+    private static int ae;
+    private static long s;
+    private static int ah;
+    private static int r;
+    private static int h;
+    private static int i;
+    private static int y;
+    private static long j;
+    private static int f;
+    private static long m;
+    private static int o;
+    private static long n;
+    private static String[] var_java_lang_String_arr_a;
+    private static long e;
 
-   @Override
-   public void W() {
-      this.a = this.a();
-      if (this.a != null) {
-         try {
-            PluginManager var1 = this.a.getPluginManager();
-            Field var2 = NLoginCore_546.a(var1.getClass(), a(b, d ^ e));
-            Object var3 = var2.get(var1);
-            if (var3 instanceof CommandMap) {
-               CommandMap var4 = (CommandMap)var3;
-               var4.register(this.b.a().q().toLowerCase(Locale.ENGLISH), this.a);
+    @Override
+    public void W() {
+        this.var_org_bukkit_command_PluginCommand_a = this.a();
+        if (this.var_org_bukkit_command_PluginCommand_a == null) {
+            return;
+        }
+        try {
+            PluginManager pluginManager = this.var_org_bukkit_Server_a.getPluginManager();
+            Field field = NLoginCore_546.a(pluginManager.getClass(), (String)NLoginCore_442.c("㺀", (int)var_int_b, (long)(d ^ e)));
+            Object object = field.get(pluginManager);
+            if (object instanceof CommandMap) {
+                CommandMap commandMap = (CommandMap)object;
+                commandMap.register(this.var_java_lang_String_arr_b.a().q().toLowerCase(Locale.ENGLISH), (Command)this.var_org_bukkit_command_PluginCommand_a);
             }
-         } catch (Exception var5) {
-            NLoginCore_370.c(a(f, g) + var5.getLocalizedMessage(), var5);
-         }
-      }
-   }
+        }
+        catch (Exception exception) {
+            NLoginCore_370.c((String)NLoginCore_442.c("㺃", (int)f, (long)g) + exception.getLocalizedMessage(), exception, new Object[h]);
+        }
+    }
 
-   public boolean onCommand(CommandSender var1, Command var2, String var3, String[] var4) {
-      this.b.a(var1, var1.getName(), var1 instanceof Player, var3, var4);
-      return (a != 0);
-   }
+    public boolean onCommand(CommandSender commandSender, Command command, String string, String[] stringArray) {
+        this.var_java_lang_String_arr_b.a(commandSender, commandSender.getName(), commandSender instanceof Player, string, stringArray);
+        return var_int_a != 0;
+    }
 
-   static {
-      b();
-   }
+    static {
+        var_int_a = Integer.reverse(Integer.MIN_VALUE);
+        var_int_b = Integer.reverse(0);
+        d = Long.reverse(-6816404267480757652L);
+        e = Long.reverse(-1008806316530991104L);
+        f = 4096 >>> 204 | 4096 << -204;
+        g = Long.reverse(6009847471270414956L);
+        h = (0 >>> 6 | 0 << ~6 + 1) & 0xFFFFFFFF;
+        i = Integer.MIN_VALUE >>> 94 | Integer.MIN_VALUE << ~94 + 1;
+        j = Long.reverse(-6816404267480757652L);
+        k = Long.reverse(-1008806316530991104L);
+        l = Integer.reverse(-1073741824);
+        m = Long.reverse(-6816404267480757652L);
+        n = Long.reverse(-1008806316530991104L);
+        o = Integer.reverse(0x20000000);
+        p = Long.reverse(-6816404267480757652L);
+        q = Long.reverse(-1008806316530991104L);
+        r = (10 >>> 1 | 10 << ~1 + 1) & 0xFFFFFFFF;
+        s = Long.reverse(-6816404267480757652L);
+        t = Long.reverse(-1008806316530991104L);
+        u = Integer.reverse(0x60000000);
+        v = Long.reverse(-6816404267480757652L);
+        w = Long.reverse(-1008806316530991104L);
+        x = (0 >>> 34 | 0 << -34) & 0xFFFFFFFF;
+        y = (0x40000000 >>> 93 | 0x40000000 << ~93 + 1) & 0xFFFFFFFF;
+        z = (0 >>> 117 | 0 << -117) & 0xFFFFFFFF;
+        aa = Integer.reverse(Integer.MIN_VALUE);
+        ab = Integer.reverse(0x40000000);
+        ac = Integer.reverse(0);
+        ad = (8192 >>> 109 | 8192 << ~109 + 1) & 0xFFFFFFFF;
+        ae = -1073741823 >>> 94 | -1073741823 << -94;
+        af = (-1 >>> 212 | -1 << ~212 + 1) & 0xFFFFFFFF;
+        ag = Long.reverse(6009847471270414956L);
+        ah = (1 >>> 93 | 1 << ~93 + 1) & 0xFFFFFFFF;
+        ai = Integer.reverse(-1);
+        aj = Long.reverse(6009847471270414956L);
+        ak = 0 >>> 154 | 0 << ~154 + 1;
+        al = Integer.reverse(-1879048192);
+        am = Integer.reverse(-1879048192);
+        var_java_lang_String_arr_a = new String[al];
+        var_java_lang_String_arr_b = new String[am];
+        NLoginCore_442.b();
+    }
 
-   private PluginCommand a() {
-      try {
-         Class[] var10001 = new Class[y];
-         var10001[z] = String.class;
-         var10001[aa] = Plugin.class;
-         Constructor var1 = NLoginCore_546.b(PluginCommand.class, var10001);
-         Object[] var5 = new Object[ab];
-         var5[ac] = this.b.aa();
-         var5[ad] = this.b.a().b();
-         PluginCommand var2 = (PluginCommand)var1.newInstance(var5);
-         var2.setAliases(this.b.c());
-         String var3 = this.b.ab();
-         var2.setDescription(var3 == null ? a(ae & af, ag) : var3);
-         var2.setExecutor(this);
-         var2.setTabCompleter(this);
-         return var2;
-      } catch (Exception var4) {
-         NLoginCore_370.c(a(ah & ai, aj) + var4.getLocalizedMessage(), var4);
-         return null;
-      }
-   }
+    private PluginCommand a() {
+        try {
+            Class[] classArray = new Class[y];
+            classArray[NLoginCore_442.z] = String.class;
+            classArray[NLoginCore_442.aa] = Plugin.class;
+            Constructor constructor = NLoginCore_546.b(PluginCommand.class, classArray);
+            Object[] objectArray = new Object[ab];
+            objectArray[NLoginCore_442.ac] = this.var_java_lang_String_arr_b.aa();
+            objectArray[NLoginCore_442.ad] = this.var_java_lang_String_arr_b.a().b();
+            PluginCommand pluginCommand = (PluginCommand)constructor.newInstance(objectArray);
+            pluginCommand.setAliases(this.var_java_lang_String_arr_b.c());
+            String string = this.var_java_lang_String_arr_b.ab();
+            pluginCommand.setDescription((String)(string == null ? NLoginCore_442.c("㺀", (int)(ae & af), (long)ag) : string));
+            pluginCommand.setExecutor((CommandExecutor)this);
+            pluginCommand.setTabCompleter((TabCompleter)this);
+            return pluginCommand;
+        }
+        catch (Exception exception) {
+            NLoginCore_370.c((String)NLoginCore_442.c("㺃", (int)(ah & ai), (long)aj) + exception.getLocalizedMessage(), exception, new Object[ak]);
+            return null;
+        }
+    }
 
-   private static String a(int var0, long var1) {
-      var1 ^= 79L;
-      var1 ^= -7795250138684718832L;
-      if (ZKM_STR_A[var0] == null) {
-         Cipher var3;
-         SecretKeyFactory var4;
-         try {
-            var3 = Cipher.getInstance(
-               new String(
-                  new byte[]{
-                     (byte)(33 + 35),
-                     69,
-                     (byte)(65 + 18),
-                     (byte)(6 + 41),
-                     (byte)(45 + 22),
-                     (byte)(19 + 47),
-                     (byte)(58 + 9),
-                     (byte)(27 + 20),
-                     (byte)(60 + 20),
-                     (byte)(53 + 22),
-                     (byte)(54 + 13),
-                     (byte)(21 + 62),
-                     53,
-                     (byte)(64 + 16),
-                     (byte)(28 + 69),
-                     (byte)(4 + 96),
-                     (byte)(17 + 83),
-                     (byte)(17 + 88),
-                     (byte)(61 + 49),
-                     (byte)(37 + 66)
-                  },
-                  StandardCharsets.UTF_8
-               )
-            );
-            var4 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(60 + 8), (byte)(60 + 9), 83}, StandardCharsets.UTF_8));
-         } catch (Exception var7) {
-            throw new RuntimeException(NLoginCore_076.E("ԸՅՄԇՇՃԾՇՒՁԎՌՐՉՌՒԔ࢙ࢧ࢝ࢮ\u0890ࢆࢥࢦࢥࢧࢲ", (byte)25, 69));
-         }
-
-         byte[] var5 = new byte[8];
-         var5[0] = (byte)(var1 >>> 56);
-
-         for (int var6 = 1; var6 < 8; var6++) {
-            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
-         }
-
-         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
-      }
-
-      return ZKM_STR_A[var0];
-   }
-
-   private static void b() {
-      c = 3914291079383541381L;
-      long var0 = c ^ -7795250138684718832L;
-      Cipher var2 = Cipher.getInstance(
-         new String(
-            new byte[]{
-               (byte)(27 + 41),
-               (byte)(16 + 53),
-               (byte)(58 + 25),
-               (byte)(4 + 43),
-               (byte)(5 + 62),
-               (byte)(63 + 3),
-               (byte)(8 + 59),
-               (byte)(3 + 44),
-               (byte)(47 + 33),
-               (byte)(14 + 61),
-               (byte)(7 + 60),
-               (byte)(46 + 37),
-               (byte)(28 + 25),
-               80,
-               97,
-               (byte)(43 + 57),
-               (byte)(10 + 90),
-               (byte)(97 + 8),
-               (byte)(64 + 46),
-               (byte)(3 + 100)
-            },
-            StandardCharsets.UTF_8
-         )
-      );
-      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(63 + 6), (byte)(27 + 56)}, StandardCharsets.UTF_8));
-      byte[] var4 = new byte[8];
-      var4[0] = (byte)(var0 >>> 56);
-
-      for (int var5 = 1; var5 < 8; var5++) {
-         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
-      }
-
-      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
-      byte var7 = 1;
-
-      for (int var6 = 0; var6 < var7; var6++) {
-         switch (var6) {
-            case 0:
-               ZKM_STR_B[0] = NLoginCore_559.A("ƘƞǁƘƠƟƠƞƣƎǋƅƵǆƒǒƬƲƲƹǑǛƢƣ", (byte)104, 65);
-               ZKM_STR_B[1] = NLoginCore_241.C("ԽԯԟէԡՔՍԭՁԬՂԱԫ՟ՠԿԾԯՈՙհմռԼնՠկԸլբԿնՐՇրևՅթսնէՙլՕ", (byte)104, 67);
-               ZKM_STR_B[2] = NLoginCore_427.C("ԶԼ՟ԶԾԽԾԼՁԬթԣՓդ\u0530հՊՐՐ\u0557կչՀՁ", (byte)104, 67);
-               ZKM_STR_B[3] = NLoginCore_092.A("ưƶƹƶƼƿƪƽƛƼƥƼƓƞǖƥƑƫƥǄǅǋƢƣ", (byte)104, 65);
-               ZKM_STR_B[4] = NLoginCore_004.F("զ՛֒ս֗֕պաջ֟֝լ", (byte)104, 70);
-               ZKM_STR_B[5] = NLoginCore_138.B("ƑƆƽƨǂǀƥƌƦǊǈƗ", (byte)104, 66);
-               ZKM_STR_B[6] = NLoginCore_110.E("մզՖ֞\u0558\u058bքդոգշա֛֥՝սվվ֡պցտց֎ք֎֯կղփֻ֦֪հ֛րַ֬֙֫փ׃ֆ\u058c", (byte)104, 69);
-               ZKM_STR_B[7] = NLoginCore_173.E("֛֓֏ծ֚֚ռ֢֟֟ս֑աղց՞֩֘ի\u058bչ֪ց֡ք֑֊֏ָն֥։ֵհ׀֩։ֿ֕քրֆֵ֟ք֓քּ֦֨ׄ׃\u05cfֽ־֡֫\u05c9ׄ֓֩\u05ccל֕", (byte)104, 69);
-               ZKM_STR_B[8] = NLoginCore_446.C("ԽԯԟէԡՔՍԭՁԬՁՀԽԮՊզՕՇՙեժԳՈեսՐձՙխփձԻվֈ\u0557շտբյ\u058cՆ֎֊Օ", (byte)104, 67);
-               break;
-            case 1:
-               ZKM_STR_B[0] = NLoginCore_575.A("ƘƞǁƘƠƟƠƞƣƎǈƿǏƕƞƒǁƭƓǌƷƥƢƣ", (byte)104, 65);
-               ZKM_STR_B[1] = NLoginCore_127.E("մզՖ֞\u0558\u058bքդոգչըբ֖֗նյզտ\u0590ֳ֧֫ճ֦֭֗կ֣֙ն֭\u058bֲֽ֟չֽ֢֑֥ւֹ\u058c", (byte)104, 69);
-               ZKM_STR_B[2] = NLoginCore_076.C("ԶԼ՟ԶԾԽԾԼՁԬզ՟՚իՠԳՏՊյհգՃՀՁ", (byte)104, 67);
-               ZKM_STR_B[3] = NLoginCore_433.B("ưƶƹƶƼƿƪƽƛƼƤƢǐƽƴƓƏƩƬƓƛǛƢƣ", (byte)104, 66);
-               ZKM_STR_B[4] = NLoginCore_241.A("ƆǄƛƫǌƦƋƧƠǌǌƗ", (byte)104, 65);
-               ZKM_STR_B[5] = NLoginCore_232.C("ԟըԼՈՃՂՌԸԠՠԯԵ", (byte)104, 67);
-               ZKM_STR_B[6] = NLoginCore_183.A("ƟƑƁǉƃƶƯƏƣƎƢƌǆǐƈƨƩƩǌƥƬƪƬƹƯƹǚƚƝƮǑǦƨƧǙǜƴƟƼƺǣƨǇǞǣǈǟƮƴǢǛǌǥǕǂǃ", (byte)104, 65);
-               ZKM_STR_B[7] = NLoginCore_397.C("՜դ\u0558ԷգգՅըիըՆ՚ԪԻՊԧղաԴՔՂճՊժՍ՚Փ\u0558ցԿծՒվԹ։ղՒֈ՞ՍՉՏվըՍ՜Սօկձ֍\u058c֘օ֎թ֕ժ\u0558՚֝\u058bհֆ", (byte)104, 67);
-               ZKM_STR_B[8] = NLoginCore_223.C("ԽԯԟէԡՔՍԭՁԬՁՀԽԮՊզՕՇՙեժԳՈեսՐձՙխփձԻէզյՑ։ՅսռՠՆդՕ", (byte)104, 67);
-               break;
-            case 2:
-               ZKM_STR_B[0] = NLoginCore_559.A("ǇſǀƸƛƥƺƥƭƠƧƮƍƓƣƳƢƳǌưǍƴƾƝƞƽƾƶǀǕơǜ", (byte)104, 65);
-            case 3:
-            default:
-               break;
-            case 4:
-               ZKM_STR_B[0] = NLoginCore_453.C("ՐԵՇՃՅԩԪԭՙբՏԻՊլ՟ՇըղիաջԹԲՓՖպմվլհՐւ", (byte)104, 67);
-         }
-      }
-   }
-
-   private static Object c(Lookup var0, String var1, MethodType var2) {
-      try {
-         return new MutableCallSite(
-            var0.findStatic(
-                  NLoginCore_442.class,
-                  new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(NLoginCore_201.E("բքֆզ֊ַ֣֩֡ղְִ֦֮շ֜־ֵֵֻֽ֊", (byte)126, 69), NLoginCore_442.class.getClassLoader())
-               )
-               .asType(var2)
-         );
-      } catch (Exception var4) {
-         throw new RuntimeException(
-            NLoginCore_387.E("֪֝֩լַ֣֦֬֨֬ճֱֱֵַ֮չࣾऌंओࣵ࣫ऊऋऊऌग\u0590", (byte)126, 69) + var1 + NLoginCore_076.F("մ", (byte)126, 70) + var2.toString(), var4
-         );
-      }
-   }
-
-   @Override
-   public synchronized void X() {
-      if (this.a != null) {
-         try {
-            PluginManager var1 = this.a.getPluginManager();
-            Field var2 = NLoginCore_546.a(var1.getClass(), a(i, j ^ k));
-            Object var3 = var2.get(var1);
-            if (var3 instanceof CommandMap) {
-               CommandMap var4 = (CommandMap)var3;
-               List var5 = this.a.getAliases();
-               this.a.setAliases(Collections.emptyList());
-               this.a.unregister(var4);
-               if (var4 instanceof SimpleCommandMap) {
-                  Field var6 = NLoginCore_546.a(SimpleCommandMap.class, a(l, m ^ n));
-                  Map var7 = (Map)var6.get(var4);
-                  String var8 = this.b.a().q().toLowerCase(Locale.ENGLISH);
-                  String var9 = this.a.getName();
-                  var7.remove(var8 + a(o, p ^ q) + var9);
-                  var7.remove(var9);
-
-                  for (String var11 : var5) {
-                     var7.remove(var8 + a(r, s ^ t) + var11);
-                     var7.remove(var11);
-                  }
-               }
+    private static String a(int n, long l) {
+        l ^= 0x4FL;
+        l ^= 0x93D1B54CC4620110L;
+        if (var_java_lang_String_arr_a[n] == null) {
+            SecretKeyFactory secretKeyFactory;
+            Cipher cipher;
+            try {
+                cipher = Cipher.getInstance(new String(new byte[]{(byte)(33 + 35), 69, (byte)(65 + 18), (byte)(6 + 41), (byte)(45 + 22), (byte)(19 + 47), (byte)(58 + 9), (byte)(27 + 20), (byte)(60 + 20), (byte)(53 + 22), (byte)(54 + 13), (byte)(21 + 62), 53, (byte)(64 + 16), (byte)(28 + 69), (byte)(4 + 96), (byte)(17 + 83), (byte)(17 + 88), (byte)(61 + 49), (byte)(37 + 66)}, StandardCharsets.UTF_8));
+                secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(60 + 8), (byte)(60 + 9), 83}, StandardCharsets.UTF_8));
             }
-         } catch (Exception var12) {
-            NLoginCore_370.c(a(u, v ^ w) + var12.getLocalizedMessage(), var12);
-         }
-      }
-   }
+            catch (Exception exception) {
+                throw new RuntimeException(NLoginCore_427.E("ԸՅՄԇՇՃԾՇՒՁԎՌՐՉՌՒԔ࢙ࢧ࢝ࢮ࢐ࢆࢥࢦࢥࢧࢲ", (byte)25, 69));
+            }
+            byte[] byArray = new byte[8];
+            byArray[0] = (byte)(l >>> 56);
+            for (int i = 1; i < 8; ++i) {
+                byArray[i] = (byte)(l << i * 8 >>> 56);
+            }
+            cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+            NLoginCore_442.var_java_lang_String_arr_a[n] = new String(cipher.doFinal(Base64.getDecoder().decode(var_java_lang_String_arr_b[n])), StandardCharsets.UTF_8);
+        }
+        return var_java_lang_String_arr_a[n];
+    }
 
-   public List<String> onTabComplete(CommandSender var1, Command var2, String var3, String[] var4) {
-      return this.b.a(var1, var1.getName(), var1 instanceof Player, var3, var4);
-   }
+    private static void b() {
+        int n;
+        c = 3914291079383541381L;
+        long l = c ^ 0x93D1B54CC4620110L;
+        Cipher cipher = Cipher.getInstance(new String(new byte[]{(byte)(27 + 41), (byte)(16 + 53), (byte)(58 + 25), (byte)(4 + 43), (byte)(5 + 62), (byte)(63 + 3), (byte)(8 + 59), (byte)(3 + 44), (byte)(47 + 33), (byte)(14 + 61), (byte)(7 + 60), (byte)(46 + 37), (byte)(28 + 25), 80, 97, (byte)(43 + 57), (byte)(10 + 90), (byte)(97 + 8), (byte)(64 + 46), (byte)(3 + 100)}, StandardCharsets.UTF_8));
+        SecretKeyFactory secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(63 + 6), (byte)(27 + 56)}, StandardCharsets.UTF_8));
+        byte[] byArray = new byte[8];
+        byArray[0] = (byte)(l >>> 56);
+        for (n = 1; n < 8; ++n) {
+            byArray[n] = (byte)(l << n * 8 >>> 56);
+        }
+        cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+        n = 1;
+        block7: for (int i = 0; i < n; ++i) {
+            switch (i) {
+                case 0: {
+                    NLoginCore_442.var_java_lang_String_arr_b[0] = NLoginCore_201.A("ƘƞǁƘƠƟƠƞƣƎǋƅƵǆƒǒƬƲƲƹǑǛƢƣ", (byte)104, 65);
+                    NLoginCore_442.var_java_lang_String_arr_b[1] = NLoginCore_027.C("ԽԯԟէԡՔՍԭՁԬՂԱԫ՟ՠԿԾԯՈՙհմռԼնՠկԸլբԿնՐՇրևՅթսնէՙլՕ", (byte)104, 67);
+                    NLoginCore_442.var_java_lang_String_arr_b[2] = NLoginCore_027.C("ԶԼ՟ԶԾԽԾԼՁԬթԣՓդ԰հՊՐՐ՗կչՀՁ", (byte)104, 67);
+                    NLoginCore_442.var_java_lang_String_arr_b[3] = NLoginCore_092.A("ưƶƹƶƼƿƪƽƛƼƥƼƓƞǖƥƑƫƥǄǅǋƢƣ", (byte)104, 65);
+                    NLoginCore_442.var_java_lang_String_arr_b[4] = NLoginCore_451.F("զ՛֒ս֗֕պաջ֟֝լ", (byte)104, 70);
+                    NLoginCore_442.var_java_lang_String_arr_b[5] = NLoginCore_138.B("ƑƆƽƨǂǀƥƌƦǊǈƗ", (byte)104, 66);
+                    NLoginCore_442.var_java_lang_String_arr_b[6] = NLoginCore_004.E("մզՖ֞՘֋քդոգշա֛֥՝սվվ֡պցտց֎ք֎֯կղփֻ֦֪հ֛րַ֬֙֫փ׃ֆ֌", (byte)104, 69);
+                    NLoginCore_442.var_java_lang_String_arr_b[7] = NLoginCore_173.E("֛֓֏ծ֚֚ռ֢֟֟ս֑աղց՞֩֘ի֋չ֪ց֡ք֑֊֏ָն֥։ֵհ׀֩։ֿ֕քրֆֵ֟ք֓քּ֦֨ׄ׃׏ֽ־֡֫׉ׄ֓֩׌ל֕", (byte)104, 69);
+                    NLoginCore_442.var_java_lang_String_arr_b[8] = NLoginCore_446.C("ԽԯԟէԡՔՍԭՁԬՁՀԽԮՊզՕՇՙեժԳՈեսՐձՙխփձԻվֈ՗շտբյ֌Ն֎֊Օ", (byte)104, 67);
+                    continue block7;
+                }
+                case 1: {
+                    NLoginCore_442.var_java_lang_String_arr_b[0] = NLoginCore_575.A("ƘƞǁƘƠƟƠƞƣƎǈƿǏƕƞƒǁƭƓǌƷƥƢƣ", (byte)104, 65);
+                    NLoginCore_442.var_java_lang_String_arr_b[1] = NLoginCore_091.E("մզՖ֞՘֋քդոգչըբ֖֗նյզտ֐ֳ֧֫ճ֦֭֗կ֣֙ն֭֋ֲֽ֟չֽ֢֑֥ւֹ֌", (byte)104, 69);
+                    NLoginCore_442.var_java_lang_String_arr_b[2] = NLoginCore_427.C("ԶԼ՟ԶԾԽԾԼՁԬզ՟՚իՠԳՏՊյհգՃՀՁ", (byte)104, 67);
+                    NLoginCore_442.var_java_lang_String_arr_b[3] = NLoginCore_223.B("ưƶƹƶƼƿƪƽƛƼƤƢǐƽƴƓƏƩƬƓƛǛƢƣ", (byte)104, 66);
+                    NLoginCore_442.var_java_lang_String_arr_b[4] = NLoginCore_027.A("ƆǄƛƫǌƦƋƧƠǌǌƗ", (byte)104, 65);
+                    NLoginCore_442.var_java_lang_String_arr_b[5] = NLoginCore_559.C("ԟըԼՈՃՂՌԸԠՠԯԵ", (byte)104, 67);
+                    NLoginCore_442.var_java_lang_String_arr_b[6] = NLoginCore_110.A("ƟƑƁǉƃƶƯƏƣƎƢƌǆǐƈƨƩƩǌƥƬƪƬƹƯƹǚƚƝƮǑǦƨƧǙǜƴƟƼƺǣƨǇǞǣǈǟƮƴǢǛǌǥǕǂǃ", (byte)104, 65);
+                    NLoginCore_442.var_java_lang_String_arr_b[7] = NLoginCore_223.C("՜դ՘ԷգգՅըիըՆ՚ԪԻՊԧղաԴՔՂճՊժՍ՚Փ՘ցԿծՒվԹ։ղՒֈ՞ՍՉՏվըՍ՜Սօկձ֍֌֘օ֎թ֕ժ՘՚֝֋հֆ", (byte)104, 67);
+                    NLoginCore_442.var_java_lang_String_arr_b[8] = NLoginCore_223.C("ԽԯԟէԡՔՍԭՁԬՁՀԽԮՊզՕՇՙեժԳՈեսՐձՙխփձԻէզյՑ։ՅսռՠՆդՕ", (byte)104, 67);
+                    continue block7;
+                }
+                case 2: {
+                    NLoginCore_442.var_java_lang_String_arr_b[0] = NLoginCore_201.A("ǇſǀƸƛƥƺƥƭƠƧƮƍƓƣƳƢƳǌưǍƴƾƝƞƽƾƶǀǕơǜ", (byte)104, 65);
+                    continue block7;
+                }
+                case 4: {
+                    NLoginCore_442.var_java_lang_String_arr_b[0] = NLoginCore_453.C("ՐԵՇՃՅԩԪԭՙբՏԻՊլ՟ՇըղիաջԹԲՓՖպմվլհՐւ", (byte)104, 67);
+                }
+            }
+        }
+    }
 
-   @Generated
-   public NLoginCore_442(Server var1, NLoginCore_168<?> var2) {
-      this.a = var1;
-      this.b = var2;
-   }
+    private static String c(String s, int n, long l) {
+        return a(n, l);
+    }
+
+    private static Object c(MethodHandles.Lookup lookup, String string, MethodType methodType) {
+        try {
+            return new MutableCallSite(lookup.findStatic(NLoginCore_442.class, new String(new byte[]{97}, StandardCharsets.UTF_8), MethodType.fromMethodDescriptorString(NLoginCore_201.E("բքֆզ֊ַ֣֩֡ղְִ֦֮շ֜־ֵֵֻֽ֊", (byte)126, 69), NLoginCore_442.class.getClassLoader())).asType(methodType));
+        }
+        catch (Exception exception) {
+            throw new RuntimeException(NLoginCore_387.E("֪֝֩լַ֣֦֬֨֬ճֱֱֵַ֮չࣾऌंओࣵ࣫ऊऋऊऌग֐", (byte)126, 69) + string + NLoginCore_427.F("մ", (byte)126, 70) + methodType.toString(), exception);
+        }
+    }
+
+    @Override
+    public synchronized void X() {
+        if (this.var_org_bukkit_command_PluginCommand_a == null) {
+            return;
+        }
+        try {
+            PluginManager pluginManager = this.var_org_bukkit_Server_a.getPluginManager();
+            Field field = NLoginCore_546.a(pluginManager.getClass(), (String)NLoginCore_442.c("㺀", (int)i, (long)(j ^ k)));
+            Object object = field.get(pluginManager);
+            if (object instanceof CommandMap) {
+                CommandMap commandMap = (CommandMap)object;
+                List list = this.var_org_bukkit_command_PluginCommand_a.getAliases();
+                this.var_org_bukkit_command_PluginCommand_a.setAliases(Collections.emptyList());
+                this.var_org_bukkit_command_PluginCommand_a.unregister(commandMap);
+                if (commandMap instanceof SimpleCommandMap) {
+                    Field field2 = NLoginCore_546.a(SimpleCommandMap.class, (String)NLoginCore_442.c("㺃", (int)l, (long)(m ^ n)));
+                    Map map = (Map)field2.get(commandMap);
+                    String string = this.var_java_lang_String_arr_b.a().q().toLowerCase(Locale.ENGLISH);
+                    String string2 = this.var_org_bukkit_command_PluginCommand_a.getName();
+                    map.remove(string + (String)NLoginCore_442.c("㺆", (int)o, (long)(p ^ q)) + string2);
+                    map.remove(string2);
+                    for (String string3 : list) {
+                        map.remove(string + (String)NLoginCore_442.c("㺉", (int)r, (long)(s ^ t)) + string3);
+                        map.remove(string3);
+                    }
+                }
+            }
+        }
+        catch (Exception exception) {
+            NLoginCore_370.c((String)NLoginCore_442.c("㺌", (int)u, (long)(v ^ w)) + exception.getLocalizedMessage(), exception, new Object[x]);
+        }
+    }
+
+    public List<String> onTabComplete(CommandSender commandSender, Command command, String string, String[] stringArray) {
+        return this.var_java_lang_String_arr_b.a(commandSender, commandSender.getName(), commandSender instanceof Player, string, stringArray);
+    }
+
+    @Generated
+    public NLoginCore_442(Server server, NLoginCore_168<?> NLoginCore_1682) {
+        this.var_org_bukkit_Server_a = server;
+        this.var_java_lang_String_arr_b = NLoginCore_1682;
+    }
 }
+

@@ -1,11 +1,45 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.nickuc.login.lib.caffeine.cache.Cache
+ *  com.nickuc.login.lib.caffeine.cache.Caffeine
+ *  javax.annotation.Nullable
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
 import com.nickuc.login.lib.caffeine.cache.Cache;
 import com.nickuc.login.lib.caffeine.cache.Caffeine;
+import com.nickuc.login.NLoginCore_427;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_173;
+import com.nickuc.login.NLoginCore_110;
+import com.nickuc.login.NLoginCore_116;
+import com.nickuc.login.NLoginCore_092;
+import com.nickuc.login.NLoginCore_494;
+import com.nickuc.login.NLoginCore_004;
+import com.nickuc.login.NLoginCore_138;
+import com.nickuc.login.NLoginInterface_021;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_138;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_451;
+import com.nickuc.login.NLoginCore_370;
+import com.nickuc.login.NLoginInterface_040;
+import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
 import java.nio.charset.StandardCharsets;
+import java.security.Key;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
@@ -20,482 +54,459 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 import lombok.Generated;
 
-public abstract class NLoginCore_168<T extends NLoginInterface_011<?>> {
-   private List<String> k;
-   private static int l = Integer.reverse(0);
-   private String Z;
-   private static int j = (-1 >>> 167 | -1 << -167) & -1;
-   private boolean am;
-   private static long p = Long.reverse(5827742062194508055L);
-   private static int d = (0 >>> 29 | 0 << -29) & -1;
-   private static int q = Integer.reverse(Integer.MIN_VALUE);
-   private static final Set<String> o = ConcurrentHashMap.newKeySet();
-   private static int n = (65536 >>> 143 | 65536 << -143) & -1;
-   private static int aa = (5120 >>> 74 | 5120 << -74) & -1;
-   private static long ac = Long.reverse(7638104968020361216L);
-   private boolean al;
-   private static int e = Integer.reverse(Integer.MIN_VALUE);
-   private static int x = (128 >>> 167 | 128 << ~167 + 1) & -1;
-   private static int an = 589824 >>> 208 | 589824 << ~208 + 1;
-   private static String[] ZKM_STR_A = new String[NLoginCore_168.am];
-   private static long c;
-   private static long s = Long.reverse(4242474993360093463L);
-   private static int u = 4096 >>> 42 | 4096 << -42;
-   private static long k = Long.reverse(5827742062194508055L);
-   private static double a = Double.longBitsToDouble(Long.reverse(2044L));
-   private static int y = Integer.reverse(Integer.MIN_VALUE);
-   private static int aj = '耀' >>> 140 | 32768 << ~140 + 1;
-   private static double b = Double.longBitsToDouble(Long.reverse(6456360425798341628L));
-   private static int m = 1073741824 >>> 62 | 1073741824 << -62;
-   private static long v = Long.reverse(5827742062194508055L);
-   private static long h = Long.reverse(5827742062194508055L);
-   private static int z = Integer.reverse(0);
-   private static int i = Integer.reverse(Integer.MIN_VALUE);
-   private static int ae = -1 >>> 126 | -1 << -126;
-   protected T a;
-   private static long af = Long.reverse(5827742062194508055L);
-   private static String[] ZKM_STR_B = new String[an];
-   private static int w = 0 >>> 55 | 0 << ~55 + 1;
-   private static final Cache<String, Long> f = Caffeine.newBuilder().expireAfterWrite(NLoginCore_168.ao, TimeUnit.SECONDS).build();
-   private static int c = 2048 >>> 75 | 2048 << -75;
-   private double e = a;
-   private String bw;
-   private static int ad = Integer.reverse(1610612736);
-   private NLoginInterface_040 a;
-   private static long ab = Long.reverse(4242474993360093463L);
-   private static int o = -1 >>> 31 | -1 << ~31 + 1;
-   private double f = b;
-   private static long ah = Long.reverse(4242474993360093463L);
-   private static int al = (0 >>> 240 | 0 << -240) & -1;
-   private static long t = Long.reverse(7638104968020361216L);
-   private static long ai = Long.reverse(7638104968020361216L);
-   private static long ak = Long.reverse(5827742062194508055L);
-   private static int f = 0 >>> 211 | 0 << ~211 + 1;
-   private static int g = Integer.reverse(-1);
-   private static int r = Integer.reverse(-1073741824);
-   private List<String> b;
-   private static int ag = Integer.reverse(-536870912);
-   private static int am = (2304 >>> 136 | 2304 << ~136 + 1) & -1;
-   private static long ao = Long.reverse(-6917529027641081856L);
+public abstract class NLoginCore_168<T extends NLoginCore_116<?>> {
+    private List<String> var_java_util_List_java_lang_String__k;
+    private static int l;
+    private String Z;
+    private static int j;
+    private boolean var_boolean_am;
+    private static long p;
+    private static int d;
+    private static int q;
+    private static final Set<String> var_java_util_Set_java_lang_String__o;
+    private static int n;
+    private static int aa;
+    private static long ac;
+    private boolean var_boolean_al;
+    private static int var_int_e;
+    private static int x;
+    private static int an;
+    private static String[] var_java_lang_String_arr_a;
+    private static long var_long_c;
+    private static long s;
+    private static int u;
+    private static long var_long_k;
+    private static double var_double_a;
+    private static int y;
+    private static int aj;
+    private static double var_double_b;
+    private static int m;
+    private static long v;
+    private static long h;
+    private static int z;
+    private static int i;
+    private static int ae;
+    protected T var_T_a;
+    private static long af;
+    private static String[] var_java_lang_String_arr_b;
+    private static int w;
+    private static final Cache<String, Long> cfr_renamed_12;
+    private static int var_int_c;
+    private double var_double_e = var_double_a;
+    private String bw;
+    private static int ad;
+    private NLoginInterface_040 var_com_nickuc_login_NLoginInterface_040_a;
+    private static long ab;
+    private static int var_int_o;
+    private double var_double_f = var_double_b;
+    private static long ah;
+    private static int var_int_al;
+    private static long t;
+    private static long ai;
+    private static long ak;
+    private static int var_int_f;
+    private static int g;
+    private static int r;
+    private List<String> var_java_util_List_java_lang_String__b;
+    private static int ag;
+    private static int var_int_am;
+    private static long ao;
 
-   @Generated
-   public NLoginCore_168<T> a(boolean var1) {
-      this.al = var1;
-      return this;
-   }
+    @Generated
+    public NLoginCore_168<T> a(boolean bl) {
+        this.var_boolean_al = bl;
+        return this;
+    }
 
-   @Generated
-   public NLoginCore_168<T> b(String var1) {
-      this.bw = var1;
-      return this;
-   }
+    @Generated
+    public NLoginCore_168<T> b(String string) {
+        this.bw = string;
+        return this;
+    }
 
-   @Generated
-   public NLoginCore_168<T> a(String var1) {
-      this.Z = var1;
-      return this;
-   }
+    @Generated
+    public NLoginCore_168<T> a(String string) {
+        this.Z = string;
+        return this;
+    }
 
-   @Nullable
-   public final List<String> a(Object var1, String var2, boolean var3, String var4, String[] var5) {
-      String var6 = a(n & o, p) + var2.toLowerCase(Locale.ENGLISH);
-      if (var3) {
-         Long var7 = (Long)f.getIfPresent(var6);
-         long var8 = System.currentTimeMillis();
-         if (var7 != null && var8 - var7 <= this.e) {
-            return null;
-         }
-
-         f.put(var6, var8);
-      }
-
-      if (this.al && !o.add(var6)) {
-         return null;
-      } else {
-         List var14;
-         try {
-            Object var13 = var3 ? this.a.a(var1) : this.a.a();
-            var14 = this.d((NLoginInterface_042)var13, var4, var5);
-         } finally {
-            o.remove(var6);
-         }
-
-         return var14;
-      }
-   }
-
-   public void s() {
-   }
-
-   @Generated
-   public T a() {
-      return this.a;
-   }
-
-   protected List<String> a(NLoginInterface_042 var1, String var2, String[] var3) {
-      return null;
-   }
-
-   public final void d(NLoginInterface_042 var1, String var2, String[] var3) {
-      if (this.a(var1, var2, var3, (l != 0))) {
-         Runnable var4 = () -> {
-            if (!(var1 instanceof NLoginCore_277) || ((NLoginCore_277)var1).R()) {
-               try {
-                  this.b(var1, var2, var3);
-               } catch (Exception var5) {
-                  var1.k(a(aa, ab ^ ac));
-                  NLoginCore_370.c(a(ad & ae, af) + var2.toLowerCase(Locale.ENGLISH) + a(ag, ah ^ ai) + var1.getName() + a(aj, ak) + this.am, var5);
-               }
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    @Nullable
+    public final List<String> a(Object object, String string, boolean bl, String string2, String[] stringArray) {
+        Object object2;
+        String string3 = (String)NLoginCore_168.c("㺀", (int)(n & var_int_o), (long)p) + string.toLowerCase(Locale.ENGLISH);
+        if (bl) {
+            object2 = (Long)cfr_renamed_12.getIfPresent((Object)string3);
+            long l = System.currentTimeMillis();
+            if (object2 != null && (double)(l - (Long)object2) <= this.var_double_e) {
+                return null;
             }
-         };
-         if (this.am) {
-            this.a.b((m != 0)).a(var4);
-         } else {
-            var4.run();
-         }
-      }
-   }
-
-   public NLoginCore_168(String var1) {
-      this.al = (c != 0);
-      this.Z = var1;
-      this.b = new ArrayList<>();
-      this.k = new ArrayList<>();
-   }
-
-   public NLoginCore_168<T> b() {
-      this.am = (e != 0);
-      return this;
-   }
-
-   @Generated
-   public NLoginCore_168<T> a(double var1) {
-      this.e = var1;
-      return this;
-   }
-
-   @Generated
-   public List<String> d() {
-      return this.k;
-   }
-
-   @Generated
-   public NLoginCore_168<T> a(List<String> var1) {
-      this.b = var1;
-      return this;
-   }
-
-   private static Object c(Lookup var0, String var1, MethodType var2) {
-      try {
-         return new MutableCallSite(
-            var0.findStatic(
-                  NLoginCore_168.class,
-                  new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(NLoginCore_559.F("ӬԎԐӰԔԳԫՁԭӼԺ\u0530ԾԸԁԦՈՇԿՅԿԔ", (byte)8, 70), NLoginCore_168.class.getClassLoader())
-               )
-               .asType(var2)
-         );
-      } catch (Exception var4) {
-         throw new RuntimeException(
-            NLoginCore_141.F("ԧԴԳӶԶԲԭԶՁ\u0530ӽԻԿԸԻՁԃࢎ࢝࢘ࢀ\u0893\u088f࢛ࢡ࢛Ԙ", (byte)8, 70) + var1 + NLoginCore_471.E("Ӿ", (byte)8, 69) + var2.toString(), var4
-         );
-      }
-   }
-
-   @Generated
-   public double b() {
-      return this.f;
-   }
-
-   public final void a(Object var1, String var2, boolean var3, String var4, String[] var5) {
-      String var6 = a(f & g, h) + var2.toLowerCase(Locale.ENGLISH);
-      if (var3) {
-         Long var7 = (Long)f.getIfPresent(var6);
-         long var8 = System.currentTimeMillis();
-         if (var7 != null && var8 - var7 <= this.e) {
-            return;
-         }
-
-         f.put(var6, var8);
-      }
-
-      if (!this.al || o.add(var6)) {
-         try {
-            Object var13 = var3 ? this.a.a(var1) : this.a.a();
-            this.d((NLoginInterface_042)var13, var4, var5);
-         } finally {
-            o.remove(var6);
-         }
-      }
-   }
-
-   @Generated
-   public double a() {
-      return this.e;
-   }
-
-   protected boolean a(NLoginInterface_042 var1, String var2, String[] var3, boolean var4) {
-      if (this.k.isEmpty()) {
-         return (x != 0);
-      } else {
-         for (String var6 : this.k) {
-            if (var1.i(var6)) {
-               return (y != 0);
-            }
-         }
-
-         return (z != 0);
-      }
-   }
-
-   @Generated
-   public boolean aq() {
-      return this.am;
-   }
-
-   private List<String> d(NLoginInterface_042 var1, String var2, String[] var3) {
-      if (!this.a(var1, var2, var3, (q != 0))) {
-         return null;
-      } else {
-         try {
-            return this.a(var1, var2, var3);
-         } catch (Exception var5) {
-            var1.k(a(r, s ^ t));
-            NLoginCore_370.c(a(u, v) + var2.toLowerCase(Locale.ENGLISH), var5);
+            cfr_renamed_12.put((Object)string3, (Object)l);
+        }
+        if (this.var_boolean_al && !var_java_util_Set_java_lang_String__o.add(string3)) {
             return null;
-         }
-      }
-   }
+        }
+        try {
+            object2 = bl ? this.var_com_nickuc_login_NLoginInterface_040_a.a(object) : this.var_com_nickuc_login_NLoginInterface_040_a.com_nickuc_login_NLoginInterface_006_a();
+            List<String> list = this.d((NLoginCore_494)object2, string2, stringArray);
+            return list;
+        }
+        finally {
+            var_java_util_Set_java_lang_String__o.remove(string3);
+        }
+    }
 
-   private static String a(int var0, long var1) {
-      var1 ^= 86L;
-      var1 ^= -8783148707470470624L;
-      if (ZKM_STR_A[var0] == null) {
-         Cipher var3;
-         SecretKeyFactory var4;
-         try {
-            var3 = Cipher.getInstance(
-               new String(
-                  new byte[]{
-                     (byte)(19 + 49),
-                     (byte)(57 + 12),
-                     (byte)(24 + 59),
-                     (byte)(6 + 41),
-                     (byte)(23 + 44),
-                     (byte)(36 + 30),
-                     (byte)(4 + 63),
-                     (byte)(29 + 18),
-                     (byte)(9 + 71),
-                     (byte)(63 + 12),
-                     (byte)(20 + 47),
-                     (byte)(37 + 46),
-                     (byte)(19 + 34),
-                     80,
-                     (byte)(32 + 65),
-                     (byte)(99 + 1),
-                     100,
-                     (byte)(41 + 64),
-                     (byte)(104 + 6),
-                     (byte)(58 + 45)
-                  },
-                  StandardCharsets.UTF_8
-               )
-            );
-            var4 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(19 + 49), 69, 83}, StandardCharsets.UTF_8));
-         } catch (Exception var7) {
-            throw new RuntimeException(NLoginCore_324.B("öăĂÅąāüąĐÿÌĊĎćĊĐÒѝѬѧяѢўѪѰѪ", (byte)10, 66));
-         }
+    public void s() {
+    }
 
-         byte[] var5 = new byte[8];
-         var5[0] = (byte)(var1 >>> 56);
+    @Generated
+    public T a() {
+        return (T)this.var_java_lang_String_arr_a;
+    }
 
-         for (int var6 = 1; var6 < 8; var6++) {
-            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
-         }
+    protected List<String> a(NLoginCore_494 NLoginInterface_0422, String string, String[] stringArray) {
+        return null;
+    }
 
-         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
-      }
-
-      return ZKM_STR_A[var0];
-   }
-
-   public NLoginInterface_021 a(NLoginInterface_011<?> var1) {
-      this.a = (T)var1;
-      this.a = this.a.b();
-      NLoginInterface_021 var2 = this.a.a(this);
-      var2.W();
-      this.s();
-      return var2;
-   }
-
-   protected abstract void b(NLoginInterface_042 var1, String var2, String[] var3);
-
-   @Generated
-   public String aa() {
-      return this.Z;
-   }
-
-   public void a(String... var1) {
-      String[] var2 = var1;
-      int var3 = var1.length;
-
-      for (int var4 = d; var4 < var3; var4++) {
-         String var5 = var2[var4];
-         this.b.add(var5.toLowerCase(Locale.ENGLISH));
-      }
-   }
-
-   @Generated
-   public String ab() {
-      return this.bw;
-   }
-
-   @Generated
-   public NLoginCore_168<T> b(List<String> var1) {
-      this.k = var1;
-      return this;
-   }
-
-   private static void b() {
-      c = -1692458702756247716L;
-      long var0 = c ^ -8783148707470470624L;
-      Cipher var2 = Cipher.getInstance(
-         new String(
-            new byte[]{
-               (byte)(44 + 24),
-               (byte)(2 + 67),
-               (byte)(40 + 43),
-               (byte)(7 + 40),
-               (byte)(53 + 14),
-               66,
-               (byte)(62 + 5),
-               (byte)(15 + 32),
-               (byte)(39 + 41),
-               (byte)(71 + 4),
-               67,
-               (byte)(19 + 64),
-               (byte)(20 + 33),
-               (byte)(9 + 71),
-               (byte)(72 + 25),
-               (byte)(18 + 82),
-               (byte)(55 + 45),
-               (byte)(35 + 70),
-               (byte)(22 + 88),
-               (byte)(102 + 1)
-            },
-            StandardCharsets.UTF_8
-         )
-      );
-      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{68, 69, (byte)(43 + 40)}, StandardCharsets.UTF_8));
-      byte[] var4 = new byte[8];
-      var4[0] = (byte)(var0 >>> 56);
-
-      for (int var5 = 1; var5 < 8; var5++) {
-         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
-      }
-
-      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
-      byte var7 = 1;
-
-      for (int var6 = 0; var6 < var7; var6++) {
-         switch (var6) {
-            case 0:
-               ZKM_STR_B[0] = NLoginCore_471.E("ԴեՉճխԺպոնՍշՆ", (byte)66, 69);
-               ZKM_STR_B[1] = NLoginCore_241.B("ĹŪŎŸŲĿſŽŻŒżŋ", (byte)66, 66);
-               ZKM_STR_B[2] = NLoginCore_092.E("՟Տա\u0530հղ\u0557ջոշաՆ", (byte)66, 69);
-               ZKM_STR_B[3] = NLoginCore_110.D(
-                  "ҬӉөҴҷӎӘҴӎӘӝӒӻӷӓәӹӘӽԅӦӨӥԇԌӦӦӽӻӟӰӪԃӎԏӐӨԑԎӮԖӻԈӚәӷӭӮԕӯԧӹӹӴӴԡӹԝԤӬԠӱԭԀԆԤԋԴԆӴԃԺԈԔԹԝԍԏӽԷԛԅԒԙԷԈԦԸԝԆՃՄԂԐԺԞԋԠՃԏԳԩԭԶՍԳ՞ԹԖ՞ՙԝՂԾ՚ՔԧԦԢԡբԺԼ՝ՉՒՠՀ",
-                  (byte)66,
-                  68
-               );
-               ZKM_STR_B[4] = NLoginCore_324.A("ŔŋűŜůƀľŹťŕŚżƆŜŔŚśƅŞƇōƎŭŦƂƋŷŠŪƃŭƈƌŻŘŗŭŲƚšŻŽƤū", (byte)66, 65);
-               ZKM_STR_B[5] = NLoginCore_138.B(
-                  "ĴőűļĿŖŠļŖŠťŚƃſśšƁŠƅƍŮŰŭƏƔŮŮƅƃŧŸŲƋŖƗŘŰƙƖŶƞƃƐƆƩƘƫƕƥƢŻƄƍſƥƍůƋƱŶƸƸƃƩƍƩƗƵƀƸƟƼƵƃƜƕƗƱƚǀƵƽƅƣǋǍƉƮƱƦƒǉǏǈƺǏƹǔƐǇǀƛơǖƽǡǒǃƣǨƳƼǫǈƪƽǛǂƿǜƴǉǬǉǐǮƸǚ",
-                  (byte)66,
-                  66
-               );
-               ZKM_STR_B[6] = NLoginCore_183.A("ŔŋűŜůƀľŹťŕśŕűƈŜŉŋŊſŉƅƊƁōŝŐŔŬŏƃūƅ", (byte)66, 65);
-               ZKM_STR_B[7] = NLoginCore_004.E("ԵԶՙԲյջչհ՟ԺթՔփՕՁՁ\u0557՞գես֊ՑՒ", (byte)66, 69);
-               ZKM_STR_B[8] = NLoginCore_451.C("ӡӱҾӃӄӔөӌәӍӓӪӜӝӼӔӄӓӝӏәӷӎӏ", (byte)66, 67);
-               break;
-            case 1:
-               ZKM_STR_B[0] = NLoginCore_173.F("գ\u0558ՈԲնԮ՜՝ՌՠտՆ", (byte)66, 70);
-               ZKM_STR_B[1] = NLoginCore_433.D("ӭӫӀӟӣӇӧҶӻӜӴӃ", (byte)66, 68);
-               ZKM_STR_B[2] = NLoginCore_127.E("ԮԳՋդիՖԵպ՜ՖՉՆ", (byte)66, 69);
-               ZKM_STR_B[3] = NLoginCore_223.A(
-                  "ĴőűļĿŖŠļŖŠťŚƃſśšƁŠƅƍŮŰŭƏƔŮŮƅƃŧŸŲƋŖƗŘŰƙƖŶƞƃƐŢšſŵŶƝŷƯƁƁżżƩƁƥƬŴƨŹƵƈƎƬƓƼƎżƋǂƐƜǁƥƕƗƅƿƣƍƚơƿƐƮǀƥƎǋǌƊƘǂƦƓƨǋƗƻƱƵƾǕƻǦǁƞǦǡƥǊǆǢǜƯƧƩƮƦǉǲǓǩǅǱǅ",
-                  (byte)66,
-                  65
-               );
-               ZKM_STR_B[4] = NLoginCore_384.C("ӌӃөӔӧӸҶӱӝӍӒӴӾӔӌӒӓӽӖӿӅԆӥӞӺԃӯӘӢӻӥԀԑӝӎӔӤӳԖԔԛӺӨӟԟӠӿӿӬӢԕԓԀԗӮӯ", (byte)66, 67);
-               ZKM_STR_B[5] = NLoginCore_324.B(
-                  "ĴőűļĿŖŠļŖŠťŚƃſśšƁŠƅƍŮŰŭƏƔŮŮƅƃŧŸŲƋŖƗŘŰƙƖŶƞƃƐƆƩƘƫƕƥƢŻƄƍſƥƍůƋƱŶƸƸƃƩƍƩƗƵƀƸƟƼƵƃƜƕƗƱƚǀƵƽƅƣǋǍƉƮƱƦƒǉǏǈƺǏƹǔƐǇǀƛơǖƽǡǒǃƣǨƳƼǫǈƪƽǛƺǣǊǀƽƱǔǆǬǆǰǫƴǇǞƸǶǐǟǍǑȀǋ",
-                  (byte)66,
-                  66
-               );
-               ZKM_STR_B[6] = NLoginCore_076.C("ӌӃөӔӧӸҶӱӝӍӓӍөԀӔӁӃӂӷӁӽӿԃԉӥӠӬӾӐӮӥԊӠԋӳӣԌӷӥӦԘԎӮӣ", (byte)66, 67);
-               ZKM_STR_B[7] = NLoginCore_471.E("ԵԶՙԲյջչհ՟Ժթհյս\u0558դւՇՑևգՔՑՒ", (byte)66, 69);
-               ZKM_STR_B[8] = NLoginCore_201.D("ӡӱҾӃӄӔөӌәӍӕӝҼӭӏӤһӥӣәӾӷӎӏ", (byte)66, 68);
-               break;
-            case 2:
-               ZKM_STR_B[0] = NLoginCore_471.B("ĲĳųŴŋƂžżĺŚņţŖŕśżńŚŪŉżƋƇŮőƁŔūƘŖŭŵ", (byte)66, 66);
-            case 3:
-            default:
-               break;
-            case 4:
-               ZKM_STR_B[0] = NLoginCore_241.E("խՓՄՆզԸվծիԼլԺ՛աՁմՒքճ\u0558ջ֊ՑՒ", (byte)66, 69);
-         }
-      }
-   }
-
-   @Generated
-   public NLoginCore_168<T> b(double var1) {
-      this.f = var1;
-      return this;
-   }
-
-   @Generated
-   public List<String> c() {
-      return this.b;
-   }
-
-   @Generated
-   public boolean ap() {
-      return this.al;
-   }
-
-   @Generated
-   public NLoginInterface_040 b() {
-      return this.a;
-   }
-
-   public final void c(NLoginInterface_042 var1, String var2, String[] var3) {
-      String var4 = a(i & j, k) + var1.getName().toLowerCase(Locale.ENGLISH);
-      if (var1 instanceof NLoginCore_277) {
-         Long var5 = (Long)f.getIfPresent(var4);
-         long var6 = System.currentTimeMillis();
-         if (var5 != null && var6 - var5 <= this.e) {
+    public final void d(NLoginCore_494 NLoginInterface_0422, String string, String[] stringArray) {
+        if (!this.a(NLoginInterface_0422, string, stringArray, l != 0)) {
             return;
-         }
+        }
+        Runnable runnable = () -> {
+            if (NLoginInterface_0422 instanceof NLoginCore_277 && !((NLoginCore_277)NLoginInterface_0422).R()) {
+                return;
+            }
+            try {
+                this.b(NLoginInterface_0422, string, stringArray);
+            }
+            catch (Exception exception) {
+                NLoginInterface_0422.k((String)NLoginCore_168.c("㺀", (int)aa, (long)(ab ^ ac)));
+                NLoginCore_370.c((String)NLoginCore_168.c("㺃", (int)(ad & ae), (long)af) + string.toLowerCase(Locale.ENGLISH) + (String)NLoginCore_168.c("㺆", (int)ag, (long)(ah ^ ai)) + NLoginInterface_0422.getName() + (String)NLoginCore_168.c("㺉", (int)aj, (long)ak) + this.var_boolean_am, exception, new Object[var_int_al]);
+            }
+        };
+        if (this.var_boolean_am) {
+            this.var_java_lang_String_arr_a.b(m != 0).a(runnable);
+        } else {
+            runnable.run();
+        }
+    }
 
-         f.put(var4, var6);
-      }
+    public NLoginCore_168(String string) {
+        this.var_boolean_al = var_int_c;
+        this.Z = string;
+        this.var_double_b = (double)new ArrayList();
+        this.var_java_util_List_java_lang_String__k = new ArrayList<String>();
+    }
 
-      if (!this.al || o.add(var4)) {
-         try {
-            this.d(var1, var2, var3);
-         } finally {
-            o.remove(var4);
-         }
-      }
-   }
+    public NLoginCore_168<T> b() {
+        this.var_boolean_am = var_int_e;
+        return this;
+    }
 
-   static {
-      b();
-   }
+    @Generated
+    public NLoginCore_168<T> a(double d) {
+        this.var_double_e = d;
+        return this;
+    }
 
-   public void u(String var1) {
-      this.k.add(var1.toLowerCase(Locale.ENGLISH));
-   }
+    @Generated
+    public List<String> d() {
+        return this.var_java_util_List_java_lang_String__k;
+    }
+
+    @Generated
+    public NLoginCore_168<T> a(List<String> list) {
+        this.var_double_b = (double)list;
+        return this;
+    }
+
+    private static String c(String s, int n, long l) {
+        return a(n, l);
+    }
+
+    private static Object c(MethodHandles.Lookup lookup, String string, MethodType methodType) {
+        try {
+            return new MutableCallSite(lookup.findStatic(NLoginCore_168.class, new String(new byte[]{97}, StandardCharsets.UTF_8), MethodType.fromMethodDescriptorString(NLoginCore_201.F("ӬԎԐӰԔԳԫՁԭӼԺ԰ԾԸԁԦՈՇԿՅԿԔ", (byte)8, 70), NLoginCore_168.class.getClassLoader())).asType(methodType));
+        }
+        catch (Exception exception) {
+            throw new RuntimeException(NLoginCore_138.F("ԧԴԳӶԶԲԭԶՁ԰ӽԻԿԸԻՁԃࢎ࢝࢘ࢀ࢓࢏࢛ࢡ࢛Ԙ", (byte)8, 70) + string + NLoginCore_384.E("Ӿ", (byte)8, 69) + methodType.toString(), exception);
+        }
+    }
+
+    @Generated
+    public double double_b() {
+        return this.var_double_f;
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public final void a(Object object, String string, boolean bl, String string2, String[] stringArray) {
+        Object object2;
+        String string3 = (String)NLoginCore_168.c("㺀", (int)(var_int_f & g), (long)h) + string.toLowerCase(Locale.ENGLISH);
+        if (bl) {
+            object2 = (Long)cfr_renamed_12.getIfPresent((Object)string3);
+            long l = System.currentTimeMillis();
+            if (object2 != null && (double)(l - (Long)object2) <= this.var_double_e) {
+                return;
+            }
+            cfr_renamed_12.put((Object)string3, (Object)l);
+        }
+        if (this.var_boolean_al && !var_java_util_Set_java_lang_String__o.add(string3)) {
+            return;
+        }
+        try {
+            object2 = bl ? this.var_com_nickuc_login_NLoginInterface_040_a.a(object) : this.var_com_nickuc_login_NLoginInterface_040_a.com_nickuc_login_NLoginInterface_006_a();
+            this.d((NLoginCore_494)object2, string2, stringArray);
+        }
+        finally {
+            var_java_util_Set_java_lang_String__o.remove(string3);
+        }
+    }
+
+    @Generated
+    public double a() {
+        return this.var_double_e;
+    }
+
+    protected boolean a(NLoginCore_494 NLoginInterface_0422, String string, String[] stringArray, boolean bl) {
+        if (this.var_java_util_List_java_lang_String__k.isEmpty()) {
+            return x != 0;
+        }
+        for (String string2 : this.var_java_util_List_java_lang_String__k) {
+            if (!NLoginInterface_0422.i(string2)) continue;
+            return y != 0;
+        }
+        return z != 0;
+    }
+
+    @Generated
+    public boolean aq() {
+        return this.var_boolean_am;
+    }
+
+    private List<String> d(NLoginCore_494 NLoginInterface_0422, String string, String[] stringArray) {
+        if (!this.a(NLoginInterface_0422, string, stringArray, q != 0)) {
+            return null;
+        }
+        try {
+            return this.a(NLoginInterface_0422, string, stringArray);
+        }
+        catch (Exception exception) {
+            NLoginInterface_0422.k((String)NLoginCore_168.c("㺀", (int)r, (long)(s ^ t)));
+            NLoginCore_370.c((String)NLoginCore_168.c("㺃", (int)u, (long)v) + string.toLowerCase(Locale.ENGLISH), exception, new Object[w]);
+            return null;
+        }
+    }
+
+    private static String a(int n, long l) {
+        l ^= 0x56L;
+        l ^= 0x861BFCC921CA9220L;
+        if (var_java_lang_String_arr_a[n] == null) {
+            SecretKeyFactory secretKeyFactory;
+            Cipher cipher;
+            try {
+                cipher = Cipher.getInstance(new String(new byte[]{(byte)(19 + 49), (byte)(57 + 12), (byte)(24 + 59), (byte)(6 + 41), (byte)(23 + 44), (byte)(36 + 30), (byte)(4 + 63), (byte)(29 + 18), (byte)(9 + 71), (byte)(63 + 12), (byte)(20 + 47), (byte)(37 + 46), (byte)(19 + 34), 80, (byte)(32 + 65), (byte)(99 + 1), 100, (byte)(41 + 64), (byte)(104 + 6), (byte)(58 + 45)}, StandardCharsets.UTF_8));
+                secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(19 + 49), 69, 83}, StandardCharsets.UTF_8));
+            }
+            catch (Exception exception) {
+                throw new RuntimeException(NLoginCore_324.B("öăĂÅąāüąĐÿÌĊĎćĊĐÒѝѬѧяѢўѪѰѪ", (byte)10, 66));
+            }
+            byte[] byArray = new byte[8];
+            byArray[0] = (byte)(l >>> 56);
+            for (int i = 1; i < 8; ++i) {
+                byArray[i] = (byte)(l << i * 8 >>> 56);
+            }
+            cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+            NLoginCore_168.var_java_lang_String_arr_a[n] = new String(cipher.doFinal(Base64.getDecoder().decode(var_java_lang_String_arr_b[n])), StandardCharsets.UTF_8);
+        }
+        return var_java_lang_String_arr_a[n];
+    }
+
+    public NLoginInterface_021 a(NLoginCore_116<?> NLoginInterface_0112) {
+        this.var_java_lang_String_arr_a = NLoginInterface_0112;
+        this.var_com_nickuc_login_NLoginInterface_040_a = this.var_java_lang_String_arr_a.com_nickuc_login_NLoginInterface_040_b();
+        NLoginInterface_021 NLoginInterface_0212 = this.var_com_nickuc_login_NLoginInterface_040_a.a(this);
+        NLoginInterface_0212.W();
+        this.s();
+        return NLoginInterface_0212;
+    }
+
+    protected abstract void b(NLoginCore_494 var1, String var2, String[] var3);
+
+    @Generated
+    public String aa() {
+        return this.Z;
+    }
+
+    public void a(String ... stringArray) {
+        String[] stringArray2 = stringArray;
+        int n = stringArray2.length;
+        for (int i = d; i < n; ++i) {
+            String string = stringArray2[i];
+            this.var_double_b.add(string.toLowerCase(Locale.ENGLISH));
+        }
+    }
+
+    @Generated
+    public String ab() {
+        return this.bw;
+    }
+
+    @Generated
+    public NLoginCore_168<T> b(List<String> list) {
+        this.var_java_util_List_java_lang_String__k = list;
+        return this;
+    }
+
+    private static void void_b() {
+        int n;
+        var_long_c = -1692458702756247716L;
+        long l = var_long_c ^ 0x861BFCC921CA9220L;
+        Cipher cipher = Cipher.getInstance(new String(new byte[]{(byte)(44 + 24), (byte)(2 + 67), (byte)(40 + 43), (byte)(7 + 40), (byte)(53 + 14), 66, (byte)(62 + 5), (byte)(15 + 32), (byte)(39 + 41), (byte)(71 + 4), 67, (byte)(19 + 64), (byte)(20 + 33), (byte)(9 + 71), (byte)(72 + 25), (byte)(18 + 82), (byte)(55 + 45), (byte)(35 + 70), (byte)(22 + 88), (byte)(102 + 1)}, StandardCharsets.UTF_8));
+        SecretKeyFactory secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, 69, (byte)(43 + 40)}, StandardCharsets.UTF_8));
+        byte[] byArray = new byte[8];
+        byArray[0] = (byte)(l >>> 56);
+        for (n = 1; n < 8; ++n) {
+            byArray[n] = (byte)(l << n * 8 >>> 56);
+        }
+        cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+        n = 1;
+        block7: for (int i = 0; i < n; ++i) {
+            switch (i) {
+                case 0: {
+                    NLoginCore_168.var_java_lang_String_arr_b[0] = NLoginCore_384.E("ԴեՉճխԺպոնՍշՆ", (byte)66, 69);
+                    NLoginCore_168.var_java_lang_String_arr_b[1] = NLoginCore_027.B("ĹŪŎŸŲĿſŽŻŒżŋ", (byte)66, 66);
+                    NLoginCore_168.var_java_lang_String_arr_b[2] = NLoginCore_092.E("՟Տա԰հղ՗ջոշաՆ", (byte)66, 69);
+                    NLoginCore_168.var_java_lang_String_arr_b[3] = NLoginCore_004.D("ҬӉөҴҷӎӘҴӎӘӝӒӻӷӓәӹӘӽԅӦӨӥԇԌӦӦӽӻӟӰӪԃӎԏӐӨԑԎӮԖӻԈӚәӷӭӮԕӯԧӹӹӴӴԡӹԝԤӬԠӱԭԀԆԤԋԴԆӴԃԺԈԔԹԝԍԏӽԷԛԅԒԙԷԈԦԸԝԆՃՄԂԐԺԞԋԠՃԏԳԩԭԶՍԳ՞ԹԖ՞ՙԝՂԾ՚ՔԧԦԢԡբԺԼ՝ՉՒՠՀ", (byte)66, 68);
+                    NLoginCore_168.var_java_lang_String_arr_b[4] = NLoginCore_324.A("ŔŋűŜůƀľŹťŕŚżƆŜŔŚśƅŞƇōƎŭŦƂƋŷŠŪƃŭƈƌŻŘŗŭŲƚšŻŽƤū", (byte)66, 65);
+                    NLoginCore_168.var_java_lang_String_arr_b[5] = NLoginCore_138.B("ĴőűļĿŖŠļŖŠťŚƃſśšƁŠƅƍŮŰŭƏƔŮŮƅƃŧŸŲƋŖƗŘŰƙƖŶƞƃƐƆƩƘƫƕƥƢŻƄƍſƥƍůƋƱŶƸƸƃƩƍƩƗƵƀƸƟƼƵƃƜƕƗƱƚǀƵƽƅƣǋǍƉƮƱƦƒǉǏǈƺǏƹǔƐǇǀƛơǖƽǡǒǃƣǨƳƼǫǈƪƽǛǂƿǜƴǉǬǉǐǮƸǚ", (byte)66, 66);
+                    NLoginCore_168.var_java_lang_String_arr_b[6] = NLoginCore_110.A("ŔŋűŜůƀľŹťŕśŕűƈŜŉŋŊſŉƅƊƁōŝŐŔŬŏƃūƅ", (byte)66, 65);
+                    NLoginCore_168.var_java_lang_String_arr_b[7] = NLoginCore_451.E("ԵԶՙԲյջչհ՟ԺթՔփՕՁՁ՗՞գես֊ՑՒ", (byte)66, 69);
+                    NLoginCore_168.var_java_lang_String_arr_b[8] = NLoginCore_384.C("ӡӱҾӃӄӔөӌәӍӓӪӜӝӼӔӄӓӝӏәӷӎӏ", (byte)66, 67);
+                    continue block7;
+                }
+                case 1: {
+                    NLoginCore_168.var_java_lang_String_arr_b[0] = NLoginCore_173.F("գ՘ՈԲնԮ՜՝ՌՠտՆ", (byte)66, 70);
+                    NLoginCore_168.var_java_lang_String_arr_b[1] = NLoginCore_223.D("ӭӫӀӟӣӇӧҶӻӜӴӃ", (byte)66, 68);
+                    NLoginCore_168.var_java_lang_String_arr_b[2] = NLoginCore_091.E("ԮԳՋդիՖԵպ՜ՖՉՆ", (byte)66, 69);
+                    NLoginCore_168.var_java_lang_String_arr_b[3] = NLoginCore_223.A("ĴőűļĿŖŠļŖŠťŚƃſśšƁŠƅƍŮŰŭƏƔŮŮƅƃŧŸŲƋŖƗŘŰƙƖŶƞƃƐŢšſŵŶƝŷƯƁƁżżƩƁƥƬŴƨŹƵƈƎƬƓƼƎżƋǂƐƜǁƥƕƗƅƿƣƍƚơƿƐƮǀƥƎǋǌƊƘǂƦƓƨǋƗƻƱƵƾǕƻǦǁƞǦǡƥǊǆǢǜƯƧƩƮƦǉǲǓǩǅǱǅ", (byte)66, 65);
+                    NLoginCore_168.var_java_lang_String_arr_b[4] = NLoginCore_324.C("ӌӃөӔӧӸҶӱӝӍӒӴӾӔӌӒӓӽӖӿӅԆӥӞӺԃӯӘӢӻӥԀԑӝӎӔӤӳԖԔԛӺӨӟԟӠӿӿӬӢԕԓԀԗӮӯ", (byte)66, 67);
+                    NLoginCore_168.var_java_lang_String_arr_b[5] = NLoginCore_324.B("ĴőűļĿŖŠļŖŠťŚƃſśšƁŠƅƍŮŰŭƏƔŮŮƅƃŧŸŲƋŖƗŘŰƙƖŶƞƃƐƆƩƘƫƕƥƢŻƄƍſƥƍůƋƱŶƸƸƃƩƍƩƗƵƀƸƟƼƵƃƜƕƗƱƚǀƵƽƅƣǋǍƉƮƱƦƒǉǏǈƺǏƹǔƐǇǀƛơǖƽǡǒǃƣǨƳƼǫǈƪƽǛƺǣǊǀƽƱǔǆǬǆǰǫƴǇǞƸǶǐǟǍǑȀǋ", (byte)66, 66);
+                    NLoginCore_168.var_java_lang_String_arr_b[6] = NLoginCore_427.C("ӌӃөӔӧӸҶӱӝӍӓӍөԀӔӁӃӂӷӁӽӿԃԉӥӠӬӾӐӮӥԊӠԋӳӣԌӷӥӦԘԎӮӣ", (byte)66, 67);
+                    NLoginCore_168.var_java_lang_String_arr_b[7] = NLoginCore_384.E("ԵԶՙԲյջչհ՟Ժթհյս՘դւՇՑևգՔՑՒ", (byte)66, 69);
+                    NLoginCore_168.var_java_lang_String_arr_b[8] = NLoginCore_201.D("ӡӱҾӃӄӔөӌәӍӕӝҼӭӏӤһӥӣәӾӷӎӏ", (byte)66, 68);
+                    continue block7;
+                }
+                case 2: {
+                    NLoginCore_168.var_java_lang_String_arr_b[0] = NLoginCore_384.B("ĲĳųŴŋƂžżĺŚņţŖŕśżńŚŪŉżƋƇŮőƁŔūƘŖŭŵ", (byte)66, 66);
+                    continue block7;
+                }
+                case 4: {
+                    NLoginCore_168.var_java_lang_String_arr_b[0] = NLoginCore_027.E("խՓՄՆզԸվծիԼլԺ՛աՁմՒքճ՘ջ֊ՑՒ", (byte)66, 69);
+                }
+            }
+        }
+    }
+
+    @Generated
+    public NLoginCore_168<T> b(double d) {
+        this.var_double_f = d;
+        return this;
+    }
+
+    @Generated
+    public List<String> c() {
+        return this.var_double_b;
+    }
+
+    @Generated
+    public boolean ap() {
+        return this.var_boolean_al;
+    }
+
+    @Generated
+    public NLoginInterface_040 com_nickuc_login_NLoginInterface_040_b() {
+        return this.var_com_nickuc_login_NLoginInterface_040_a;
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public final void c(NLoginCore_494 NLoginInterface_0422, String string, String[] stringArray) {
+        String string2 = (String)NLoginCore_168.c("㺀", (int)(i & j), (long)var_long_k) + NLoginInterface_0422.getName().toLowerCase(Locale.ENGLISH);
+        if (NLoginInterface_0422 instanceof NLoginCore_277) {
+            Long l = (Long)cfr_renamed_12.getIfPresent((Object)string2);
+            long l2 = System.currentTimeMillis();
+            if (l != null && (double)(l2 - l) <= this.var_double_e) {
+                return;
+            }
+            cfr_renamed_12.put((Object)string2, (Object)l2);
+        }
+        if (this.var_boolean_al && !var_java_util_Set_java_lang_String__o.add(string2)) {
+            return;
+        }
+        try {
+            this.d(NLoginInterface_0422, string, stringArray);
+        }
+        finally {
+            var_java_util_Set_java_lang_String__o.remove(string2);
+        }
+    }
+
+    static {
+        var_double_a = Double.longBitsToDouble(Long.reverse(2044L));
+        var_double_b = Double.longBitsToDouble(Long.reverse(6456360425798341628L));
+        var_int_c = 2048 >>> 75 | 2048 << -75;
+        d = (0 >>> 29 | 0 << -29) & 0xFFFFFFFF;
+        var_int_e = Integer.reverse(Integer.MIN_VALUE);
+        var_int_f = 0 >>> 211 | 0 << ~211 + 1;
+        g = Integer.reverse(-1);
+        h = Long.reverse(5827742062194508055L);
+        i = Integer.reverse(Integer.MIN_VALUE);
+        j = (-1 >>> 167 | -1 << -167) & 0xFFFFFFFF;
+        var_long_k = Long.reverse(5827742062194508055L);
+        l = Integer.reverse(0);
+        m = 0x40000000 >>> 62 | 0x40000000 << -62;
+        n = (65536 >>> 143 | 65536 << -143) & 0xFFFFFFFF;
+        var_int_o = -1 >>> 31 | -1 << ~31 + 1;
+        p = Long.reverse(5827742062194508055L);
+        q = Integer.reverse(Integer.MIN_VALUE);
+        r = Integer.reverse(-1073741824);
+        s = Long.reverse(4242474993360093463L);
+        t = Long.reverse(0x6A00000000000000L);
+        u = 4096 >>> 42 | 4096 << -42;
+        v = Long.reverse(5827742062194508055L);
+        w = 0 >>> 55 | 0 << ~55 + 1;
+        x = (128 >>> 167 | 128 << ~167 + 1) & 0xFFFFFFFF;
+        y = Integer.reverse(Integer.MIN_VALUE);
+        z = Integer.reverse(0);
+        aa = (5120 >>> 74 | 5120 << -74) & 0xFFFFFFFF;
+        ab = Long.reverse(4242474993360093463L);
+        ac = Long.reverse(0x6A00000000000000L);
+        ad = Integer.reverse(0x60000000);
+        ae = -1 >>> 126 | -1 << -126;
+        af = Long.reverse(5827742062194508055L);
+        ag = Integer.reverse(-536870912);
+        ah = Long.reverse(4242474993360093463L);
+        ai = Long.reverse(0x6A00000000000000L);
+        aj = 32768 >>> 140 | 32768 << ~140 + 1;
+        ak = Long.reverse(5827742062194508055L);
+        var_int_al = (0 >>> 240 | 0 << -240) & 0xFFFFFFFF;
+        var_int_am = (2304 >>> 136 | 2304 << ~136 + 1) & 0xFFFFFFFF;
+        an = 589824 >>> 208 | 589824 << ~208 + 1;
+        ao = Long.reverse(-6917529027641081856L);
+        var_java_lang_String_arr_a = new String[var_int_am];
+        var_java_lang_String_arr_b = new String[an];
+        NLoginCore_168.void_b();
+        var_java_util_Set_java_lang_String__o = ConcurrentHashMap.newKeySet();
+        cfr_renamed_12 = Caffeine.newBuilder().expireAfterWrite(ao, TimeUnit.SECONDS).build();
+    }
+
+    public void u(String string) {
+        this.var_java_util_List_java_lang_String__k.add(string.toLowerCase(Locale.ENGLISH));
+    }
 }
+

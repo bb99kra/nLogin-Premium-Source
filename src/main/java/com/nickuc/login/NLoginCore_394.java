@@ -1,5 +1,15 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  io.github.waterfallmc.waterfall.event.ProxyDefineCommandsEvent
+ *  lombok.Generated
+ *  net.md_5.bungee.api.connection.ProxiedPlayer
+ *  net.md_5.bungee.event.EventHandler
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginInterface_046;
 import io.github.waterfallmc.waterfall.event.ProxyDefineCommandsEvent;
 import java.util.Locale;
 import java.util.Set;
@@ -7,28 +17,35 @@ import lombok.Generated;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.event.EventHandler;
 
-public class NLoginCore_394 implements NLoginInterface_046 {
-   private static int b = Integer.reverse(Integer.MIN_VALUE);
-   private static int c = Integer.reverse(0);
-   private final Set<String> l;
-   private static int a = Integer.reverse(1543503872);
-   private final String aq;
+public class NLoginCore_394
+implements NLoginInterface_046 {
+    private static int b;
+    private static int c;
+    private final Set<String> l;
+    private static int a;
+    private final String aq;
 
-   @Generated
-   NLoginCore_394(String var1, Set<String> var2) {
-      this.aq = var1;
-      this.l = var2;
-   }
+    static {
+        a = Integer.reverse(0x5C000000);
+        b = Integer.reverse(Integer.MIN_VALUE);
+        c = Integer.reverse(0);
+    }
 
-   @EventHandler(
-      priority = -32
-   )
-   public void a(ProxyDefineCommandsEvent var1) {
-      if (var1.getReceiver() instanceof ProxiedPlayer) {
-         var1.getCommands().values().removeIf(var1x -> {
-            String var2 = var1x.getName().toLowerCase(Locale.ENGLISH);
-            return ((!var2.startsWith(this.aq + a) != 0) && !this.l.contains(var2) ? c : b);
-         });
-      }
-   }
+    @Generated
+    NLoginCore_394(String string, Set<String> set) {
+        this.aq = string;
+        this.l = set;
+    }
+
+    @EventHandler(priority=-32)
+    public void a(ProxyDefineCommandsEvent proxyDefineCommandsEvent) {
+        if (!(proxyDefineCommandsEvent.getReceiver() instanceof ProxiedPlayer)) {
+            return;
+        }
+        proxyDefineCommandsEvent.getCommands().values().removeIf(command -> {
+            String string = command.getName().toLowerCase(Locale.ENGLISH);
+            return (string.startsWith(this.aq + (char)a) || this.l.contains(string) ? b : c) != 0;
+        });
+    }
 }
+

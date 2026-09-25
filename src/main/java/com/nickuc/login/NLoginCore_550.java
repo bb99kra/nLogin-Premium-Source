@@ -1,45 +1,63 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
 import java.util.concurrent.TimeUnit;
 
-// $VF: synthetic class
 class NLoginCore_550 {
-   private static int e = Integer.reverse(-1610612736);
-   private static int f = (384 >>> 38 | 384 << ~38 + 1) & -1;
-   private static int c = Integer.reverse(-1073741824);
-   private static int d = 2 >>> 223 | 2 << ~223 + 1;
-   private static int b = Integer.MIN_VALUE >>> 222 | Integer.MIN_VALUE << ~222 + 1;
-   private static int a = 1048576 >>> 244 | 1048576 << -244;
+    static final /* synthetic */ int[] aj;
+    private static int e;
+    private static int f;
+    private static int c;
+    private static int d;
+    private static int b;
+    private static int a;
 
-   static {
-      try {
-         aj[TimeUnit.MICROSECONDS.ordinal()] = a;
-      } catch (NoSuchFieldError var6) {
-      }
-
-      try {
-         aj[TimeUnit.MILLISECONDS.ordinal()] = b;
-      } catch (NoSuchFieldError var5) {
-      }
-
-      try {
-         aj[TimeUnit.SECONDS.ordinal()] = c;
-      } catch (NoSuchFieldError var4) {
-      }
-
-      try {
-         aj[TimeUnit.MINUTES.ordinal()] = d;
-      } catch (NoSuchFieldError var3) {
-      }
-
-      try {
-         aj[TimeUnit.HOURS.ordinal()] = e;
-      } catch (NoSuchFieldError var2) {
-      }
-
-      try {
-         aj[TimeUnit.DAYS.ordinal()] = f;
-      } catch (NoSuchFieldError var1) {
-      }
-   }
+    static {
+        a = 0x100000 >>> 244 | 0x100000 << -244;
+        b = Integer.MIN_VALUE >>> 222 | Integer.MIN_VALUE << ~222 + 1;
+        c = Integer.reverse(-1073741824);
+        d = 2 >>> 223 | 2 << ~223 + 1;
+        e = Integer.reverse(-1610612736);
+        f = (384 >>> 38 | 384 << ~38 + 1) & 0xFFFFFFFF;
+        aj = new int[TimeUnit.values().length];
+        try {
+            NLoginCore_550.aj[TimeUnit.MICROSECONDS.ordinal()] = a;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_550.aj[TimeUnit.MILLISECONDS.ordinal()] = b;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_550.aj[TimeUnit.SECONDS.ordinal()] = c;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_550.aj[TimeUnit.MINUTES.ordinal()] = d;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_550.aj[TimeUnit.HOURS.ordinal()] = e;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_550.aj[TimeUnit.DAYS.ordinal()] = f;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+    }
 }
+

@@ -1,69 +1,27 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-public final class NLoginCore_241 {
-   public static String F(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+import com.nickuc.login.NLoginCore_331;
+import com.nickuc.login.NLoginCore_459;
+import com.nickuc.login.NLoginCore_218;
+import java.sql.Connection;
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
+public abstract class NLoginCore_241<T>
+extends NLoginCore_218<T>
+implements AutoCloseable {
+    protected final Connection b;
+    protected final NLoginCore_459 e;
 
-      return new String(x);
-   }
+    /* synthetic */ NLoginCore_241(NLoginCore_459 NLoginCore_459, Connection connection, Object object, NLoginCore_331 NLoginCore_331) {
+        this(NLoginCore_459, connection, object);
+    }
 
-   public static String E(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String A(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String B(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String D(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String C(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
-
-      return new String(x);
-   }
+    private NLoginCore_241(NLoginCore_459 NLoginCore_459, Connection connection, T t) {
+        super(t, null);
+        this.e = NLoginCore_459;
+        this.b = connection;
+    }
 }
+

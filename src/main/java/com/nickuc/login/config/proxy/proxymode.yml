@@ -1,2 +1,0 @@
-# Defines whether the proxy should check if authentication servers are properly configured.
-check-ack-message: true

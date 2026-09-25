@@ -1,51 +1,71 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
 import java.util.concurrent.TimeUnit;
 
-// $VF: synthetic class
 class NLoginCore_537 {
-   private static int f = (384 >>> 102 | 384 << ~102 + 1) & -1;
-   private static int d = Integer.reverse(536870912);
-   private static int e = Integer.reverse(-1610612736);
-   private static int g = (14680064 >>> 181 | 14680064 << ~181 + 1) & -1;
-   private static int c = (3145728 >>> 52 | 3145728 << ~52 + 1) & -1;
-   private static int b = Integer.reverse(1073741824);
-   private static int a = (1024 >>> 106 | 1024 << ~106 + 1) & -1;
+    private static int f;
+    private static int d;
+    private static int e;
+    private static int g;
+    private static int c;
+    static final /* synthetic */ int[] s;
+    private static int b;
+    private static int a;
 
-   static {
-      try {
-         s[TimeUnit.NANOSECONDS.ordinal()] = a;
-      } catch (NoSuchFieldError var7) {
-      }
-
-      try {
-         s[TimeUnit.MICROSECONDS.ordinal()] = b;
-      } catch (NoSuchFieldError var6) {
-      }
-
-      try {
-         s[TimeUnit.MILLISECONDS.ordinal()] = c;
-      } catch (NoSuchFieldError var5) {
-      }
-
-      try {
-         s[TimeUnit.SECONDS.ordinal()] = d;
-      } catch (NoSuchFieldError var4) {
-      }
-
-      try {
-         s[TimeUnit.MINUTES.ordinal()] = e;
-      } catch (NoSuchFieldError var3) {
-      }
-
-      try {
-         s[TimeUnit.HOURS.ordinal()] = f;
-      } catch (NoSuchFieldError var2) {
-      }
-
-      try {
-         s[TimeUnit.DAYS.ordinal()] = g;
-      } catch (NoSuchFieldError var1) {
-      }
-   }
+    static {
+        a = (1024 >>> 106 | 1024 << ~106 + 1) & 0xFFFFFFFF;
+        b = Integer.reverse(0x40000000);
+        c = (0x300000 >>> 52 | 0x300000 << ~52 + 1) & 0xFFFFFFFF;
+        d = Integer.reverse(0x20000000);
+        e = Integer.reverse(-1610612736);
+        f = (384 >>> 102 | 384 << ~102 + 1) & 0xFFFFFFFF;
+        g = (0xE00000 >>> 181 | 0xE00000 << ~181 + 1) & 0xFFFFFFFF;
+        s = new int[TimeUnit.values().length];
+        try {
+            NLoginCore_537.s[TimeUnit.NANOSECONDS.ordinal()] = a;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_537.s[TimeUnit.MICROSECONDS.ordinal()] = b;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_537.s[TimeUnit.MILLISECONDS.ordinal()] = c;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_537.s[TimeUnit.SECONDS.ordinal()] = d;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_537.s[TimeUnit.MINUTES.ordinal()] = e;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_537.s[TimeUnit.HOURS.ordinal()] = f;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_537.s[TimeUnit.DAYS.ordinal()] = g;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+    }
 }
+

@@ -1,189 +1,214 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.annotation.Nonnull
+ *  javax.annotation.Nullable
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_138;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_453;
+import com.nickuc.login.NLoginCore_387;
+import com.nickuc.login.NLoginCore_451;
 import java.util.List;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 public interface NLoginInterface_002<K> {
-   @Nullable
-   default List<?> b(K var1) {
-      return this.d((K)var1);
-   }
+    @Nullable
+    default public List<?> b(K k) {
+        return (List)this.d(k);
+    }
 
-   default long a(K var1, long var2) {
-      Object var4 = this.b((K)var1, var2);
-      return var4 instanceof Long ? (Long)var4 : Long.parseLong(var4.toString());
-   }
+    default public long a(K k, long l) {
+        Object object = this.b(k, l);
+        if (object instanceof Long) {
+            return (Long)object;
+        }
+        return Long.parseLong(object.toString());
+    }
 
-   default int a(K var1) {
-      Object var2 = this.e((K)var1);
-      if (var2 instanceof Integer) {
-         return (Integer)var2;
-      } else {
-         return var2 != null ? Integer.parseInt(var2.toString()) : 0;
-      }
-   }
+    default public int int_a(K k) {
+        Object object = this.e(k);
+        if (object instanceof Integer) {
+            return (Integer)object;
+        }
+        if (object != null) {
+            return Integer.parseInt(object.toString());
+        }
+        return 0;
+    }
 
-   default long b(K var1) {
-      Object var2 = this.e((K)var1);
-      if (var2 instanceof Long) {
-         return (Long)var2;
-      } else {
-         return var2 != null ? Long.parseLong(var2.toString()) : 0L;
-      }
-   }
+    default public long long_b(K k) {
+        Object object = this.e(k);
+        if (object instanceof Long) {
+            return (Long)object;
+        }
+        if (object != null) {
+            return Long.parseLong(object.toString());
+        }
+        return 0L;
+    }
 
-   @Nullable
-   default <T> T d(K var1) {
-      Object var2 = this.e((K)var1);
+    @Nullable
+    default public <T> T d(K k) {
+        Object object = this.e(k);
+        try {
+            return (T)object;
+        }
+        catch (Throwable throwable) {
+            throw new RuntimeException(NLoginCore_201.B("ĒļĲŅņôĸķŊŌùĿœĿłŎœŉŐŐďĄŐŋŠĈ", (byte)40, 66) + k + (object != null ? NLoginCore_223.F("Ԑԅ՜ՈՔ՞ՏԋՏՙՏբգԑ", (byte)40, 70) + object.getClass().getCanonicalName() : ""), throwable);
+        }
+    }
 
-      try {
-         return (T)var2;
-      } catch (Throwable var4) {
-         throw new RuntimeException(
-            NLoginCore_559.B("ĒļĲŅņôĸķŊŌùĿœĿłŎœŉŐŐďĄŐŋŠĈ", (byte)40, 66)
-               + var1
-               + (var2 != null ? NLoginCore_397.F("Ԑԅ՜ՈՔ՞ՏԋՏՙՏբգԑ", (byte)40, 70) + var2.getClass().getCanonicalName() : ""),
-            var4
-         );
-      }
-   }
+    @Nonnull
+    default public List<Integer> c(K k, List<Integer> list) {
+        return this.a(k, (Object)list);
+    }
 
-   @Nonnull
-   default List<Integer> c(K var1, List<Integer> var2) {
-      return this.a((K)var1, var2);
-   }
+    @Nullable
+    public Object java_lang_Object_a(K var1);
 
-   @Nullable
-   Object a(K var1);
+    @Nonnull
+    default public <T> T a(K k, T t) {
+        Object object = this.b(k, t);
+        try {
+            return (T)object;
+        }
+        catch (Throwable throwable) {
+            throw new RuntimeException(NLoginCore_324.E("ԙՃԹՌՍӻԿԾՑՓԀՆ՚ՆՉՕ՚Ր՗՗Ԗԋ՗Ւէԏ", (byte)26, 69) + k + (object != null ? NLoginCore_027.C("ЯФѻѧѳѽѮЪѮѸѮҁ҂а", (byte)26, 67) + object.getClass().getCanonicalName() : ""), throwable);
+        }
+    }
 
-   @Nonnull
-   default <T> T a(K var1, T var2) {
-      Object var3 = this.b((K)var1, var2);
+    @Nullable
+    default public List<String> a(K k) {
+        return (List)this.d(k);
+    }
 
-      try {
-         return (T)var3;
-      } catch (Throwable var5) {
-         throw new RuntimeException(
-            NLoginCore_384.E("ԙՃԹՌՍӻԿԾՑՓԀՆ՚ՆՉՕ՚Ր\u0557\u0557Ԗԋ\u0557Ւէԏ", (byte)26, 69)
-               + var1
-               + (var3 != null ? NLoginCore_241.C("ЯФѻѧѳѽѮЪѮѸѮҁ҂а", (byte)26, 67) + var3.getClass().getCanonicalName() : ""),
-            var5
-         );
-      }
-   }
+    default public int a(K k, int n) {
+        Object object = this.b(k, n);
+        if (object instanceof Integer) {
+            return (Integer)object;
+        }
+        return Integer.parseInt(object.toString());
+    }
 
-   @Nullable
-   default List<String> a(K var1) {
-      return this.d((K)var1);
-   }
+    default public boolean a(K k, boolean bl) {
+        Object object = this.b(k, bl);
+        if (object instanceof Boolean) {
+            return (Boolean)object;
+        }
+        return Boolean.parseBoolean(object.toString());
+    }
 
-   default int a(K var1, int var2) {
-      Object var3 = this.b((K)var1, var2);
-      return var3 instanceof Integer ? (Integer)var3 : Integer.parseInt(var3.toString());
-   }
+    @Nonnull
+    default public Object b(K k, Object object) {
+        if (object == null) {
+            throw new IllegalArgumentException(NLoginCore_453.A("ķřśŗŬŤŭĚűŝũųŤĠŤţűŲŴźħŪŮĪŹƁŹźİ", (byte)58, 65));
+        }
+        Object object2 = this.e(k);
+        return object2 != null ? object2 : object;
+    }
 
-   default boolean a(K var1, boolean var2) {
-      Object var3 = this.b((K)var1, var2);
-      return var3 instanceof Boolean ? (Boolean)var3 : Boolean.parseBoolean(var3.toString());
-   }
+    @Nonnull
+    default public List<?> b(K k, List<?> list) {
+        return this.a(k, (Object)list);
+    }
 
-   @Nonnull
-   default Object b(K var1, Object var2) {
-      if (var2 == null) {
-         throw new IllegalArgumentException(NLoginCore_453.A("ķřśŗŬŤŭĚűŝũųŤĠŤţűŲŴźħŪŮĪŹƁŹźİ", (byte)58, 65));
-      } else {
-         Object var3 = this.e((K)var1);
-         return var3 != null ? var3 : var2;
-      }
-   }
+    @Nullable
+    default public Object e(K k) {
+        if (k == null) {
+            throw new IllegalArgumentException(NLoginCore_387.E("ԭՈ՝ԅՉՈՖ՗ՙ՟ԌՏՓԏ՞զ՞՟ԕ", (byte)38, 69));
+        }
+        return this.c(k) ? this.java_lang_Object_a(k) : null;
+    }
 
-   @Nonnull
-   default List<?> b(K var1, List<?> var2) {
-      return this.a((K)var1, var2);
-   }
+    default public short a(K k, short s) {
+        Object object = this.b(k, s);
+        if (object instanceof Short) {
+            return (Short)object;
+        }
+        return Short.parseShort(object.toString());
+    }
 
-   @Nullable
-   default Object e(K var1) {
-      if (var1 == null) {
-         throw new IllegalArgumentException(NLoginCore_387.E("ԭՈ՝ԅՉՈՖ\u0557ՙ՟ԌՏՓԏ՞զ՞՟ԕ", (byte)38, 69));
-      } else {
-         return this.c((K)var1) ? this.a((K)var1) : null;
-      }
-   }
+    default public boolean d(K k) {
+        Object object = this.e(k);
+        if (object instanceof Boolean) {
+            return (Boolean)object;
+        }
+        return object != null && Boolean.parseBoolean(object.toString());
+    }
 
-   default short a(K var1, short var2) {
-      Object var3 = this.b((K)var1, var2);
-      return var3 instanceof Short ? (Short)var3 : Short.parseShort(var3.toString());
-   }
+    default public String java_lang_String_b(K k) {
+        Object object = this.e(k);
+        return object != null ? object.toString() : null;
+    }
 
-   default boolean d(K var1) {
-      Object var2 = this.e((K)var1);
-      return var2 instanceof Boolean ? (Boolean)var2 : var2 != null && Boolean.parseBoolean(var2.toString());
-   }
+    @Nonnull
+    default public <T> T c(K k) {
+        Object object = this.e(k);
+        if (object == null) {
+            throw new IllegalStateException(NLoginCore_451.D("ҙҴӉѱ", (byte)51, 68) + k + NLoginCore_027.E("ԏ՞ՠզԓ՚դիե՜Ԛ", (byte)51, 69));
+        }
+        try {
+            return (T)object;
+        }
+        catch (Throwable throwable) {
+            throw new RuntimeException(NLoginCore_138.E("Բ՜ՒեզԔ՘՗ժլԙ՟ճ՟բծճթհհԯԤհիրԨ", (byte)51, 69) + k + (object != null ? NLoginCore_027.A("đĆŝŉŕşŐČŐŚŐţŤĒ", (byte)51, 65) + object.getClass().getCanonicalName() : ""), throwable);
+        }
+    }
 
-   default String b(K var1) {
-      Object var2 = this.e((K)var1);
-      return var2 != null ? var2.toString() : null;
-   }
+    @Nullable
+    default public List<Integer> c(K k) {
+        return (List)this.d(k);
+    }
 
-   @Nonnull
-   default <T> T c(K var1) {
-      Object var2 = this.e((K)var1);
-      if (var2 == null) {
-         throw new IllegalStateException(NLoginCore_004.D("ҙҴӉѱ", (byte)51, 68) + var1 + NLoginCore_241.E("ԏ՞ՠզԓ՚դիե՜Ԛ", (byte)51, 69));
-      } else {
-         try {
-            return (T)var2;
-         } catch (Throwable var4) {
-            throw new RuntimeException(
-               NLoginCore_138.E("Բ՜ՒեզԔ\u0558\u0557ժլԙ՟ճ՟բծճթհհԯԤհիրԨ", (byte)51, 69)
-                  + var1
-                  + (var2 != null ? NLoginCore_241.A("đĆŝŉŕşŐČŐŚŐţŤĒ", (byte)51, 65) + var2.getClass().getCanonicalName() : ""),
-               var4
-            );
-         }
-      }
-   }
+    public boolean c(K var1);
 
-   @Nullable
-   default List<Integer> c(K var1) {
-      return this.d((K)var1);
-   }
+    default public double double_a(K k) {
+        Object object = this.e(k);
+        if (object instanceof Double) {
+            return (Double)object;
+        }
+        if (object != null) {
+            return Double.parseDouble(object.toString());
+        }
+        return 0.0;
+    }
 
-   boolean c(K var1);
+    @Nonnull
+    default public List<String> a(K k, List<String> list) {
+        return this.a(k, (Object)list);
+    }
 
-   default double a(K var1) {
-      Object var2 = this.e((K)var1);
-      if (var2 instanceof Double) {
-         return (Double)var2;
-      } else {
-         return var2 != null ? Double.parseDouble(var2.toString()) : 0.0;
-      }
-   }
+    default public double a(K k, double d) {
+        Object object = this.b(k, d);
+        if (object instanceof Double) {
+            return (Double)object;
+        }
+        return Double.parseDouble(object.toString());
+    }
 
-   @Nonnull
-   default List<String> a(K var1, List<String> var2) {
-      return this.a((K)var1, var2);
-   }
+    default public short short_a(K k) {
+        Object object = this.e(k);
+        if (object instanceof Short) {
+            return (Short)object;
+        }
+        if (object != null) {
+            return Short.parseShort(object.toString());
+        }
+        return 0;
+    }
 
-   default double a(K var1, double var2) {
-      Object var4 = this.b((K)var1, var2);
-      return var4 instanceof Double ? (Double)var4 : Double.parseDouble(var4.toString());
-   }
-
-   default short a(K var1) {
-      Object var2 = this.e((K)var1);
-      if (var2 instanceof Short) {
-         return (Short)var2;
-      } else {
-         return var2 != null ? Short.parseShort(var2.toString()) : 0;
-      }
-   }
-
-   @Nonnull
-   default String a(K var1, String var2) {
-      Object var3 = this.b((K)var1, var2);
-      return var3.toString();
-   }
+    @Nonnull
+    default public String a(K k, String string) {
+        Object object = this.b(k, string);
+        return object.toString();
+    }
 }
+

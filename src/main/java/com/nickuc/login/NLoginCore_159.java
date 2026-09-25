@@ -1,5 +1,27 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.annotation.Nullable
+ *  lombok.Generated
+ *  net.md_5.bungee.api.ProxyServer
+ *  net.md_5.bungee.api.connection.ProxiedPlayer
+ *  net.md_5.bungee.api.plugin.Plugin
+ *  net.md_5.bungee.api.plugin.PluginDescription
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_230;
+import com.nickuc.login.PluginInfoModel;
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.NLoginCore_061;
+import com.nickuc.login.NLoginCore_135;
+import com.nickuc.login.NLoginCore_168;
+import com.nickuc.login.NLoginInterface_021;
+import com.nickuc.login.NLoginCore_383;
+import com.nickuc.login.NLoginCore_348;
+import com.nickuc.login.NLoginInterface_040;
+import com.nickuc.login.NLoginCore_081;
 import java.io.File;
 import java.util.Collection;
 import java.util.UUID;
@@ -11,99 +33,107 @@ import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.plugin.PluginDescription;
 
-public class NLoginCore_159 implements NLoginInterface_040 {
-   private static int b = Integer.reverse(0);
-   private final NLoginCore_383 d;
-   private static int a = Integer.reverse(Integer.MIN_VALUE);
-   private static int d = 2048 >>> 235 | 2048 << -235;
-   private static int c = (0 >>> 103 | 0 << -103) & -1;
-   private final ProxyServer e;
-   private static int e = Integer.reverse(0);
-   private final NLoginInterface_006 b;
+public class NLoginCore_159
+implements NLoginInterface_040 {
+    private static int var_int_b;
+    private final NLoginCore_383 var_com_nickuc_login_NLoginCore_383_d;
+    private static int a;
+    private static int var_int_d;
+    private static int c;
+    private final ProxyServer var_net_md_5_bungee_api_ProxyServer_e;
+    private static int var_int_e;
+    private final NLoginCore_061 var_com_nickuc_login_NLoginInterface_006_b;
 
-   @Override
-   public NLoginCore_277 a(Object var1) {
-      return NLoginCore_230.a(this.d, this.e, var1);
-   }
+    @Override
+    public NLoginCore_277 a(Object object) {
+        return NLoginCore_230.a(this.var_com_nickuc_login_NLoginCore_383_d, this.var_net_md_5_bungee_api_ProxyServer_e, object);
+    }
 
-   @Override
-   public <T> T c() {
-      return (T)this.e;
-   }
+    @Override
+    public <T> T c() {
+        return (T)this.var_net_md_5_bungee_api_ProxyServer_e;
+    }
 
-   @Generated
-   @Override
-   public NLoginInterface_006 a() {
-      return this.b;
-   }
+    @Override
+    @Generated
+    public NLoginCore_061 com_nickuc_login_NLoginInterface_006_a() {
+        return this.var_com_nickuc_login_NLoginInterface_006_b;
+    }
 
-   @Override
-   public Collection<NLoginCore_277> c() {
-      return this.e.getPlayers().stream().map(this::a).collect(Collectors.toList());
-   }
+    @Override
+    public Collection<NLoginCore_277> c() {
+        return this.var_net_md_5_bungee_api_ProxyServer_e.getPlayers().stream().map(this::a).collect(Collectors.toList());
+    }
 
-   @Override
-   public NLoginCore_277 a(UUID var1) {
-      ProxiedPlayer var2 = this.e.getPlayer(var1);
-      return var2 != null ? this.a(var2) : null;
-   }
+    static {
+        a = Integer.reverse(Integer.MIN_VALUE);
+        var_int_b = Integer.reverse(0);
+        c = (0 >>> 103 | 0 << -103) & 0xFFFFFFFF;
+        var_int_d = 2048 >>> 235 | 2048 << -235;
+        var_int_e = Integer.reverse(0);
+    }
 
-   @Override
-   public NLoginCore_277 a(String var1) {
-      return NLoginCore_230.a(this.d, this.e, var1);
-   }
+    @Override
+    public NLoginCore_277 a(UUID uUID) {
+        ProxiedPlayer proxiedPlayer = this.var_net_md_5_bungee_api_ProxyServer_e.getPlayer(uUID);
+        return proxiedPlayer != null ? this.a(proxiedPlayer) : null;
+    }
 
-   @Override
-   public void c() {
-      this.e.stop();
-   }
+    @Override
+    public NLoginCore_277 com_nickuc_login_NLoginCore_277_a(String string) {
+        return NLoginCore_230.a(this.var_com_nickuc_login_NLoginCore_383_d, this.var_net_md_5_bungee_api_ProxyServer_e, string);
+    }
 
-   @Override
-   public PluginInfoModel[] a() {
-      Collection var1 = this.e.getPluginManager().getPlugins();
-      PluginInfoModel[] var2 = new PluginInfoModel[var1.size()];
-      int var3 = c;
+    @Override
+    public void c() {
+        this.var_net_md_5_bungee_api_ProxyServer_e.stop();
+    }
 
-      for (Plugin var5 : var1) {
-         PluginDescription var6 = var5.getDescription();
-         File var7 = var5.getFile();
-         int var10001 = var3++;
-         String var10004 = var6.getName();
-         String var10005 = var6.getVersion();
-         String[] var10006 = new String[d];
-         var10006[e] = var6.getAuthor();
-         var2[var10001] = new PluginInfoModel(var10004, var10005, NLoginCore_135.a(var10006), var7 != null ? var7.toPath() : null);
-      }
+    @Override
+    public PluginInfoModel[] com_nickuc_login_PluginInfoModel_arr_a() {
+        Collection collection = this.var_net_md_5_bungee_api_ProxyServer_e.getPluginManager().getPlugins();
+        PluginInfoModel[] PluginInfoModelArray = new PluginInfoModel[collection.size()];
+        int n = c;
+        for (Plugin plugin : collection) {
+            PluginDescription pluginDescription = plugin.getDescription();
+            File file = plugin.getFile();
+            int n2 = n++;
+            String[] stringArray = new String[var_int_d];
+            stringArray[NLoginCore_159.var_int_e] = pluginDescription.getAuthor();
+            PluginInfoModelArray[n2] = new PluginInfoModel(pluginDescription.getName(), pluginDescription.getVersion(), NLoginCore_135.a(stringArray), file != null ? file.toPath() : null);
+        }
+        return PluginInfoModelArray;
+    }
 
-      return var2;
-   }
+    @Generated
+    public NLoginCore_159(NLoginCore_383 NLoginCore_3832, ProxyServer proxyServer, NLoginCore_061 NLoginInterface_0062) {
+        this.var_com_nickuc_login_NLoginCore_383_d = NLoginCore_3832;
+        this.var_net_md_5_bungee_api_ProxyServer_e = proxyServer;
+        this.var_com_nickuc_login_NLoginInterface_006_b = NLoginInterface_0062;
+    }
 
-   @Generated
-   public NLoginCore_159(NLoginCore_383 var1, ProxyServer var2, NLoginInterface_006 var3) {
-      this.d = var1;
-      this.e = var2;
-      this.b = var3;
-   }
+    @Override
+    public boolean j(String string) {
+        return (this.var_net_md_5_bungee_api_ProxyServer_e.getPluginManager().getPlugin(string) != null ? a : var_int_b) != 0;
+    }
 
-   @Override
-   public boolean j(String var1) {
-      return ((this.e.getPluginManager() != 0).getPlugin(var1) != null ? a : b);
-   }
+    @Override
+    @Nullable
+    public NLoginCore_081 com_nickuc_login_NLoginCore_081_a(String string) {
+        Plugin plugin = this.var_net_md_5_bungee_api_ProxyServer_e.getPluginManager().getPlugin(string);
+        if (plugin == null) {
+            return null;
+        }
+        PluginDescription pluginDescription = plugin.getDescription();
+        if (pluginDescription == null) {
+            return null;
+        }
+        return new NLoginCore_081(pluginDescription.getName(), pluginDescription.getVersion(), plugin);
+    }
 
-   @Nullable
-   @Override
-   public NLoginCore_081 a(String var1) {
-      Plugin var2 = this.e.getPluginManager().getPlugin(var1);
-      if (var2 == null) {
-         return null;
-      } else {
-         PluginDescription var3 = var2.getDescription();
-         return var3 == null ? null : new NLoginCore_081(var3.getName(), var3.getVersion(), var2);
-      }
-   }
-
-   @Override
-   public NLoginInterface_021 a(NLoginCore_168<?> var1) {
-      return new NLoginCore_348(this.e, var1);
-   }
+    @Override
+    public NLoginInterface_021 a(NLoginCore_168<?> NLoginCore_1682) {
+        return new NLoginCore_348(this.var_net_md_5_bungee_api_ProxyServer_e, NLoginCore_1682);
+    }
 }
+

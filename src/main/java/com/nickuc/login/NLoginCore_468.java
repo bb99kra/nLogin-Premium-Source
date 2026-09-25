@@ -1,25 +1,39 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-// $VF: synthetic class
+import com.nickuc.login.NLoginCore_036;
+
 class NLoginCore_468 {
-   private static int b = Integer.reverse(1073741824);
-   private static int c = 50331648 >>> 184 | 50331648 << -184;
-   private static int a = 2097152 >>> 245 | 2097152 << -245;
+    private static int b;
+    private static int c;
+    private static int a;
+    static final /* synthetic */ int[] g;
 
-   static {
-      try {
-         g[NLoginCore_036.d.ordinal()] = a;
-      } catch (NoSuchFieldError var3) {
-      }
-
-      try {
-         g[NLoginCore_036.c.ordinal()] = b;
-      } catch (NoSuchFieldError var2) {
-      }
-
-      try {
-         g[NLoginCore_036.f.ordinal()] = c;
-      } catch (NoSuchFieldError var1) {
-      }
-   }
+    static {
+        a = 0x200000 >>> 245 | 0x200000 << -245;
+        b = Integer.reverse(0x40000000);
+        c = 0x3000000 >>> 184 | 0x3000000 << -184;
+        g = new int[NLoginCore_036.values().length];
+        try {
+            NLoginCore_468.g[NLoginCore_036.var_com_nickuc_login_NLoginCore_036_d.ordinal()] = a;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_468.g[NLoginCore_036.var_com_nickuc_login_NLoginCore_036_c.ordinal()] = b;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_468.g[NLoginCore_036.var_com_nickuc_login_NLoginCore_036_f.ordinal()] = c;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+    }
 }
+

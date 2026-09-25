@@ -1,69 +1,17 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-public final class NLoginCore_141 {
-   public static String C(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+import com.nickuc.login.NLoginCore_211;
+import com.nickuc.login.NLoginCore_438;
+import com.nickuc.login.NLoginCore_248;
+import com.nickuc.login.NLoginCore_374;
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String F(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String A(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String B(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String E(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String D(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
-
-      return new String(x);
-   }
+public class NLoginCore_141
+extends NLoginCore_438 {
+    public NLoginCore_141(NLoginCore_211 NLoginCore_211) {
+        super(NLoginCore_211, NLoginCore_248.var_com_nickuc_login_NLoginCore_311_f, NLoginCore_374.bo);
+    }
 }
+

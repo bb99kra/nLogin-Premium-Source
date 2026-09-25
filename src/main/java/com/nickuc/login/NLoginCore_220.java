@@ -1,10 +1,19 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.nickuc.login.lib.bcrypt.BCrypt
+ *  com.nickuc.login.lib.bcrypt.BCrypt$Version
+ */
 package com.nickuc.login;
 
 import com.nickuc.login.lib.bcrypt.BCrypt;
-import com.nickuc.login.lib.bcrypt.BCrypt.Version;
+import com.nickuc.login.NLoginCore_128;
 
-public class NLoginCore_220 extends NLoginCore_128 {
-   public NLoginCore_220() {
-      super(BCrypt.with(Version.VERSION_2A));
-   }
+public class NLoginCore_220
+extends NLoginCore_128 {
+    public NLoginCore_220() {
+        super(BCrypt.with((BCrypt.Version)BCrypt.Version.VERSION_2A));
+    }
 }
+

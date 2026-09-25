@@ -1,36 +1,42 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
-import java.util.List;
+import com.nickuc.login.NLoginCore_208;
+import com.nickuc.login.NLoginInterface_005;
+import com.nickuc.login.NLoginCore_386;
 import lombok.Generated;
 
-public class NLoginCore_053 implements NLoginInterface_012 {
-   private final NLoginCore_211 ao;
-   private static int a = Integer.reverse(0);
+public class NLoginCore_053 {
+    private final Object g;
+    private final NLoginInterface_005 a;
+    private final NLoginCore_208 b;
 
-   @Generated
-   public NLoginCore_053(NLoginCore_211 var1) {
-      this.ao = var1;
-   }
+    static /* synthetic */ NLoginCore_208 com_nickuc_login_NLoginCore_208_a(NLoginCore_053 NLoginCore_0442) {
+        return NLoginCore_0442.b;
+    }
 
-   @Generated
-   @Override
-   public NLoginCore_211 a() {
-      return this.ao;
-   }
+    static /* synthetic */ NLoginInterface_005 com_nickuc_login_NLoginInterface_005_a(NLoginCore_053 NLoginCore_0442) {
+        return NLoginCore_0442.a;
+    }
 
-   @Override
-   public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
-      return var3.a(NLoginCore_567.l);
-   }
+    /* synthetic */ NLoginCore_053(NLoginInterface_005 NLoginInterface_0052, NLoginCore_208 NLoginCore_2082, Object object, NLoginCore_386 φΔΨρχοεδΛΓζσμκ2) {
+        this(NLoginInterface_0052, NLoginCore_2082, object);
+    }
 
-   @Override
-   public GUIButtonContainer[] a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3, NLoginInterface_024 var4) {
-      List var5 = var3.a(NLoginCore_567.l);
-      if (var5 != null) {
-         var5.forEach(var2x -> var1.b().a(var2, var2x));
-      }
+    static /* synthetic */ Object java_lang_Object_a(NLoginCore_053 NLoginCore_0442) {
+        return NLoginCore_0442.g;
+    }
 
-      NLoginInterface_012.super.b(var1, var2, var3);
-      return new GUIButtonContainer[a];
-   }
+    @Generated
+    private NLoginCore_053(NLoginInterface_005 NLoginInterface_0052, NLoginCore_208 NLoginCore_2082, Object object) {
+        this.a = NLoginInterface_0052;
+        this.b = NLoginCore_2082;
+        this.g = object;
+    }
 }
+

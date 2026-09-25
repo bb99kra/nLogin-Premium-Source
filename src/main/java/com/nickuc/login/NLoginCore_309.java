@@ -1,19 +1,33 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.nickuc.login.lib.packetevents.api.event.PacketSendEvent
+ *  com.nickuc.login.lib.packetevents.api.wrapper.PacketWrapper
+ */
 package com.nickuc.login;
 
 import com.nickuc.login.lib.packetevents.api.event.PacketSendEvent;
 import com.nickuc.login.lib.packetevents.api.wrapper.PacketWrapper;
+import com.nickuc.login.NLoginCore_349;
+import com.nickuc.login.NLoginInterface_043;
 
-public class NLoginCore_309 implements NLoginInterface_043 {
-   @Override
-   public void a(PacketSendEvent var1) {
-      if (!NLoginCore_349.a(this.c)) {
-         PacketWrapper var2 = new PacketWrapper(var1);
-         int var3 = var2.readContainerId();
-         NLoginCore_349.a(this.c, var1, var3);
-      }
-   }
+public class NLoginCore_309
+implements NLoginInterface_043 {
+    final /* synthetic */ NLoginCore_349 c;
 
-   public NLoginCore_309(NLoginCore_349 var1) {
-      this.c = var1;
-   }
+    @Override
+    public void a(PacketSendEvent packetSendEvent) {
+        if (NLoginCore_349.a(this.c)) {
+            return;
+        }
+        PacketWrapper packetWrapper = new PacketWrapper(packetSendEvent);
+        int n = packetWrapper.readContainerId();
+        NLoginCore_349.a(this.c, packetSendEvent, n);
+    }
+
+    public NLoginCore_309(NLoginCore_349 NLoginCore_349) {
+        this.c = NLoginCore_349;
+    }
 }
+

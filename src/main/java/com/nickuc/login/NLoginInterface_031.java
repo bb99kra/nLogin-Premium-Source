@@ -1,9 +1,13 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
 import java.util.UUID;
 
 public interface NLoginInterface_031 {
-   boolean J();
+    public boolean J();
 
-   boolean a(UUID var1);
+    public boolean boolean_a(UUID var1);
 }
+

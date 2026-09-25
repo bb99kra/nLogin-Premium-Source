@@ -1,11 +1,20 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-public interface NLoginInterface_030 extends NLoginInterface_036 {
-   NLoginCore_033 a();
+import com.nickuc.login.NLoginInterface_031;
+import com.nickuc.login.NLoginCore_487;
+import com.nickuc.login.NLoginCore_033;
 
-   void k();
+public interface NLoginInterface_030
+extends NLoginCore_487 {
+    public NLoginCore_033 com_nickuc_login_NLoginCore_033_a();
 
-   void l();
+    public void k();
 
-   NLoginInterface_031 a();
+    public void l();
+
+    public NLoginInterface_031 com_nickuc_login_NLoginInterface_031_a();
 }
+

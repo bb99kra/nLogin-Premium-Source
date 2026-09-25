@@ -1,112 +1,115 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.annotation.CheckReturnValue
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_366;
 import java.io.BufferedWriter;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.io.Writer;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import javax.annotation.CheckReturnValue;
 
 public class NLoginCore_294 {
-   private static int d = Integer.reverse(0);
-   private static int e = (128 >>> 135 | 128 << ~135 + 1) & -1;
-   private static int l = 0 >>> 194 | 0 << ~194 + 1;
-   private static int c = (0 >>> 103 | 0 << ~103 + 1) & -1;
-   private static int b = 0 >>> 195 | 0 << ~195 + 1;
-   private static int k = Integer.reverse(0);
-   private static int g = (0 >>> 172 | 0 << ~172 + 1) & -1;
-   private static int a = (4 >>> 66 | 4 << -66) & -1;
-   private static int j = Integer.reverse(Integer.MIN_VALUE);
-   private static int i = Integer.reverse(0);
-   private static int h = 1048576 >>> 244 | 1048576 << ~244 + 1;
-   private static int f = Integer.reverse(0);
+    private static int d;
+    private static int e;
+    private static int l;
+    private static int c;
+    private static int b;
+    private static int k;
+    private static int g;
+    private static int a;
+    private static int j;
+    private static int i;
+    private static int h;
+    private static int f;
 
-   // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   public static boolean a(File var0, Charset var1, String... var2) {
-      if (var2.length == 0) {
-         return (f != 0);
-      } else if (!NLoginCore_366.b(var0)) {
-         return (g != 0);
-      } else {
-         PrintWriter var3 = a(var0, var1, (h != 0));
-         boolean var10 = false /* VF: Semaphore variable */;
+    static {
+        a = (4 >>> 66 | 4 << -66) & 0xFFFFFFFF;
+        b = 0 >>> 195 | 0 << ~195 + 1;
+        c = (0 >>> 103 | 0 << ~103 + 1) & 0xFFFFFFFF;
+        d = Integer.reverse(0);
+        e = (128 >>> 135 | 128 << ~135 + 1) & 0xFFFFFFFF;
+        f = Integer.reverse(0);
+        g = (0 >>> 172 | 0 << ~172 + 1) & 0xFFFFFFFF;
+        h = 0x100000 >>> 244 | 0x100000 << ~244 + 1;
+        i = Integer.reverse(0);
+        j = Integer.reverse(Integer.MIN_VALUE);
+        k = Integer.reverse(0);
+        l = 0 >>> 194 | 0 << ~194 + 1;
+    }
 
-         int var12;
-         try {
-            var10 = true;
-            String[] var4 = var2;
-            int var5 = var2.length;
-
-            for (int var6 = i; var6 < var5; var6++) {
-               String var7 = var4[var6];
-               if (var7.isEmpty()) {
-                  var3.println();
-               } else {
-                  var3.println(var7);
-               }
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public static boolean a(File file, Charset charset, String ... stringArray) {
+        if (stringArray.length == 0) {
+            return f != 0;
+        }
+        if (!NLoginCore_366.b(file)) {
+            return g != 0;
+        }
+        PrintWriter printWriter = NLoginCore_294.a(file, charset, h != 0);
+        try {
+            String[] stringArray2 = stringArray;
+            int n = stringArray2.length;
+            for (int i = NLoginCore_294.i; i < n; ++i) {
+                String string = stringArray2[i];
+                if (string.isEmpty()) {
+                    printWriter.println();
+                    continue;
+                }
+                printWriter.println(string);
             }
-
-            var3.flush();
-            var12 = j;
-            var10 = false;
-         } finally {
-            if (var10) {
-               if (Collections.singletonList(var3).get(l) != null) {
-                  var3.close();
-               }
+            printWriter.flush();
+            boolean bl = j;
+            return bl;
+        }
+        finally {
+            if (Collections.singletonList(printWriter).get(k) != null) {
+                printWriter.close();
             }
-         }
+        }
+    }
 
-         if (Collections.singletonList(var3).get(k) != null) {
-            var3.close();
-         }
+    @CheckReturnValue
+    public static PrintWriter a(File file, Charset charset, boolean bl) {
+        return new PrintWriter((Writer)new BufferedWriter(new OutputStreamWriter((OutputStream)new FileOutputStream(file, e != 0), charset)), bl);
+    }
 
-         return (var12 != 0);
-      }
-   }
-
-   @CheckReturnValue
-   public static PrintWriter a(File var0, Charset var1, boolean var2) {
-      return new PrintWriter(new BufferedWriter(new OutputStreamWriter(new FileOutputStream(var0, (e != 0)), var1)), var2);
-   }
-
-   // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   public static boolean a(File var0, byte[] var1) {
-      if (NLoginCore_366.b(var0)) {
-         ByteArrayInputStream var2 = new ByteArrayInputStream(var1);
-         boolean var6 = false /* VF: Semaphore variable */;
-
-         int var3;
-         try {
-            var6 = true;
-            NLoginCore_366.a(var2, var0);
-            var3 = a;
-            var6 = false;
-         } finally {
-            if (var6) {
-               if (Collections.singletonList(var2).get(c) != null) {
-                  var2.close();
-               }
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public static boolean a(File file, byte[] byArray) {
+        if (NLoginCore_366.b(file)) {
+            ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(byArray);
+            try {
+                NLoginCore_366.a(byteArrayInputStream, file);
+                boolean bl = a;
+                return bl;
             }
-         }
+            finally {
+                if (Collections.singletonList(byteArrayInputStream).get(b) != null) {
+                    ((InputStream)byteArrayInputStream).close();
+                }
+            }
+        }
+        return d != 0;
+    }
 
-         if (Collections.singletonList(var2).get(b) != null) {
-            var2.close();
-         }
-
-         return (var3 != 0);
-      } else {
-         return (d != 0);
-      }
-   }
-
-   public static boolean a(File var0, String... var1) {
-      return a(var0, StandardCharsets.UTF_8, var1);
-   }
+    public static boolean a(File file, String ... stringArray) {
+        return NLoginCore_294.a(file, StandardCharsets.UTF_8, stringArray);
+    }
 }
+

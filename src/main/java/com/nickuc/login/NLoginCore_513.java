@@ -1,54 +1,72 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  lombok.Generated
+ *  net.md_5.bungee.api.CommandSender
+ *  net.md_5.bungee.api.ProxyServer
+ *  net.md_5.bungee.api.chat.TextComponent
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_061;
 import lombok.Generated;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.chat.TextComponent;
 
-public class NLoginCore_513 implements NLoginInterface_006 {
-   private final ProxyServer b;
-   private static int d = 1024 >>> 202 | 1024 << ~202 + 1;
-   private static int c = (-1140850688 >>> 218 | -1140850688 << -218) & -1;
-   private final CommandSender a;
-   private static int a = 4096 >>> 235 | 4096 << ~235 + 1;
-   private static int b = Integer.reverse(0);
+public class NLoginCore_513
+implements NLoginCore_061 {
+    private final ProxyServer var_net_md_5_bungee_api_ProxyServer_b;
+    private static int d;
+    private static int c;
+    private final CommandSender var_net_md_5_bungee_api_CommandSender_a;
+    private static int var_int_a;
+    private static int var_int_b;
 
-   @Override
-   public void l(String var1) {
-      if (var1.length() >= a && var1.charAt(b) == c) {
-         var1 = var1.substring(d);
-      }
+    @Override
+    public void l(String string) {
+        if (string.length() >= var_int_a && string.charAt(var_int_b) == c) {
+            string = string.substring(d);
+        }
+        this.var_net_md_5_bungee_api_ProxyServer_b.getPluginManager().dispatchCommand(this.var_net_md_5_bungee_api_CommandSender_a, string);
+    }
 
-      this.b.getPluginManager().dispatchCommand(this.a, var1);
-   }
+    public static NLoginCore_513 a(ProxyServer proxyServer, CommandSender commandSender) {
+        return new NLoginCore_513(proxyServer, commandSender);
+    }
 
-   public static NLoginCore_513 a(ProxyServer var0, CommandSender var1) {
-      return new NLoginCore_513(var0, var1);
-   }
+    @Override
+    public String getName() {
+        return this.var_net_md_5_bungee_api_CommandSender_a.getName();
+    }
 
-   @Override
-   public String getName() {
-      return this.a.getName();
-   }
+    @Generated
+    private NLoginCore_513(ProxyServer proxyServer, CommandSender commandSender) {
+        this.var_net_md_5_bungee_api_ProxyServer_b = proxyServer;
+        this.var_net_md_5_bungee_api_CommandSender_a = commandSender;
+    }
 
-   @Generated
-   private NLoginCore_513(ProxyServer var1, CommandSender var2) {
-      this.b = var1;
-      this.a = var2;
-   }
+    static {
+        var_int_a = 4096 >>> 235 | 4096 << ~235 + 1;
+        var_int_b = Integer.reverse(0);
+        c = (-1140850688 >>> 218 | -1140850688 << -218) & 0xFFFFFFFF;
+        d = 1024 >>> 202 | 1024 << ~202 + 1;
+    }
 
-   @Override
-   public boolean i(String var1) {
-      return this.a.hasPermission(var1);
-   }
+    @Override
+    public boolean i(String string) {
+        return this.var_net_md_5_bungee_api_CommandSender_a.hasPermission(string);
+    }
 
-   @Override
-   public <T> T c() {
-      return (T)this.a;
-   }
+    @Override
+    public <T> T c() {
+        return (T)this.var_net_md_5_bungee_api_CommandSender_a;
+    }
 
-   @Override
-   public void k(String var1) {
-      this.a.sendMessage(TextComponent.fromLegacyText(var1));
-   }
+    @Override
+    public void k(String string) {
+        this.var_net_md_5_bungee_api_CommandSender_a.sendMessage(TextComponent.fromLegacyText((String)string));
+    }
 }
+

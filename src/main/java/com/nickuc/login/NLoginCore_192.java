@@ -1,7 +1,17 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-public class NLoginCore_192 extends NLoginCore_531 {
-   public NLoginCore_192(NLoginCore_211 var1) {
-      super(var1, NLoginCore_311.e, NLoginCore_487.aB);
-   }
+import com.nickuc.login.NLoginCore_325;
+import com.nickuc.login.NLoginCore_211;
+import com.nickuc.login.NLoginCore_248;
+import com.nickuc.login.NLoginCore_374;
+
+public class NLoginCore_192
+extends NLoginCore_325 {
+    public NLoginCore_192(NLoginCore_211 NLoginCore_211) {
+        super(NLoginCore_211, NLoginCore_248.var_com_nickuc_login_NLoginCore_311_e, NLoginCore_374.aB);
+    }
 }
+

@@ -1,6 +1,27 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.nickuc.login.api.enums.ServerConnectType
+ *  javax.annotation.Nullable
+ */
 package com.nickuc.login;
 
 import com.nickuc.login.api.enums.ServerConnectType;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginInterface_041;
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginType_033;
+import com.nickuc.login.NLoginCore_592;
+import com.nickuc.login.NLoginCore_443;
+import com.nickuc.login.NLoginCore_509;
+import com.nickuc.login.NLoginCore_354;
+import com.nickuc.login.NLoginCore_589;
+import com.nickuc.login.NLoginCore_567;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.ForceRegisterConfig;
+import com.nickuc.login.NLoginCore_199;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -8,144 +29,135 @@ import java.util.Set;
 import javax.annotation.Nullable;
 
 public interface NLoginType_010 {
-   NLoginInterface_022 b();
+    public NLoginCore_589 com_nickuc_login_NLoginInterface_022_b();
 
-   default boolean b(NLoginCore_277 var1, NLoginCore_509 var2) {
-      return this.a(var2, this.a(var1));
-   }
+    default public boolean b(NLoginCore_277 NLoginCore_277, NLoginCore_509 NLoginCore_5092) {
+        return this.a(NLoginCore_5092, this.java_lang_String_a(NLoginCore_277));
+    }
 
-   NLoginCore_199 a();
+    public NLoginCore_199 com_nickuc_login_NLoginCore_199_a();
 
-   @Nullable
-   default ServerConnectType a(NLoginCore_277 var1, NLoginCore_509 var2) {
-      for (ServerConnectType var6 : ServerConnectType.values()) {
-         NLoginCore_443 var7 = this.a(var1, var2, var6);
-         if (NLoginCore_443.a(var7)) {
-            return var6;
-         }
-      }
+    @Nullable
+    default public ServerConnectType a(NLoginCore_277 NLoginCore_277, NLoginCore_509 NLoginCore_5092) {
+        for (ServerConnectType serverConnectType : ServerConnectType.values()) {
+            NLoginCore_443 NLoginCore_4432 = this.com_nickuc_login_NLoginCore_443_a(NLoginCore_277, NLoginCore_5092, serverConnectType);
+            if (!NLoginCore_443.a(NLoginCore_4432)) continue;
+            return serverConnectType;
+        }
+        return null;
+    }
 
-      return null;
-   }
+    @Nullable
+    public String java_lang_String_a(NLoginCore_277 var1);
 
-   @Nullable
-   String a(NLoginCore_277 var1);
+    default public boolean a(NLoginCore_509 NLoginCore_5092, String string) {
+        if (string == null) {
+            return false;
+        }
+        if (string.equals(NLoginCore_5092.d(NLoginCore_567.F))) {
+            return true;
+        }
+        return NLoginCore_592.var_com_nickuc_login_NLoginCore_532_a.a(new Object[0]).stream().anyMatch(string2 -> string2.equalsIgnoreCase(string));
+    }
 
-   default boolean a(NLoginCore_509 var1, String var2) {
-      if (var2 == null) {
-         return false;
-      } else {
-         return var2.equals(var1.d(NLoginCore_567.F)) ? true : NLoginCore_532.a.a(new Object[0]).stream().anyMatch(var1x -> var1x.equalsIgnoreCase(var2));
-      }
-   }
+    public NLoginCore_443 a(NLoginCore_277 var1, String var2, ServerConnectType var3, @Nullable NLoginInterface_041<Boolean> var4);
 
-   NLoginCore_443 a(NLoginCore_277 var1, String var2, ServerConnectType var3, @Nullable NLoginInterface_041<Boolean> var4);
-
-   // $VF: Unable to simplify switch on enum
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   default NLoginCore_443 a(NLoginCore_277 var1, NLoginCore_509 var2, ServerConnectType var3) {
-      switch (NLoginType_033.T[var3.ordinal()]) {
-         case 1:
-            if (NLoginCore_532.g.ar()) {
-               ForceRegisterConfig var15 = var2.a();
-               String var17 = var15.a().a(NLoginCore_241.B("ǋǁǔǖƐǗǊǘǝǍǛ", (byte)112, 66));
-               if (var17 != null && !this.a(var2, var17) && this.t(var17) && !NLoginCore_532.h.a(new Object[0]).contains(var17)) {
-                  int var19 = NLoginCore_532.f.r();
-                  NLoginInterface_041 var20 = var19 <= 0 ? null : var5x -> {
-                     if (!var5x) {
-                        this.b().a(() -> this.a(var1, var2, var3), (long)var19);
-                     } else {
-                        this.a().b().a().a(var1, var2, false);
-                     }
-                  };
-                  return this.a(var1, var17, ServerConnectType.WITH_LAST_SERVER, var20);
-               }
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    default public NLoginCore_443 com_nickuc_login_NLoginCore_443_a(NLoginCore_277 NLoginCore_277, NLoginCore_509 NLoginCore_5092, ServerConnectType serverConnectType) {
+        switch (NLoginType_033.T[serverConnectType.ordinal()]) {
+            case 1: {
+                ForceRegisterConfig ForceRegisterConfig2;
+                String string;
+                if (!NLoginCore_592.var_com_nickuc_login_NLoginCore_532_g.ar() || (string = (String)(ForceRegisterConfig2 = NLoginCore_5092.com_nickuc_login_ForceRegisterConfig_a()).com_nickuc_login_NLoginCore_407_a().a(NLoginCore_027.B("ǋǁǔǖƐǗǊǘǝǍǛ", (byte)112, 66))) == null || this.a(NLoginCore_5092, string) || !this.t(string) || NLoginCore_592.var_com_nickuc_login_NLoginCore_532_h.a(new Object[0]).contains(string)) break;
+                int n = NLoginCore_592.var_com_nickuc_login_NLoginCore_532_f.r();
+                NLoginInterface_041<Boolean> NLoginInterface_041 = n <= 0 ? null : bl -> {
+                    if (!bl.booleanValue()) {
+                        this.com_nickuc_login_NLoginInterface_022_b().a(() -> this.com_nickuc_login_NLoginCore_443_a(NLoginCore_277, NLoginCore_5092, serverConnectType), (long)n);
+                    } else {
+                        this.com_nickuc_login_NLoginType_008_a().com_nickuc_login_NLoginType_005_b().com_nickuc_login_NLoginType_001_a().a(NLoginCore_277, NLoginCore_5092, false);
+                    }
+                };
+                return this.a(NLoginCore_277, string, ServerConnectType.WITH_LAST_SERVER, NLoginInterface_041);
             }
-            break;
-         case 2:
-            if (NLoginCore_532.d.ar()) {
-               String var14 = var2.d(NLoginCore_567.L);
-               if (var14 != null && !this.a(var2, var14) && this.t(var14)) {
-                  int var16 = NLoginCore_532.f.r();
-                  NLoginInterface_041 var18 = var16 <= 0 ? null : var5x -> {
-                     if (!var5x) {
-                        this.b().a(() -> this.a(var1, var2, var3), (long)var16);
-                     } else {
-                        this.a().b().a().a(var1, var2, false);
-                     }
-                  };
-                  return this.a(var1, var14, ServerConnectType.WITH_PLATFORM_SERVER, var18);
-               }
+            case 2: {
+                String string;
+                if (!NLoginCore_592.var_com_nickuc_login_NLoginCore_532_d.ar() || (string = (String)NLoginCore_5092.d(NLoginCore_567.L)) == null || this.a(NLoginCore_5092, string) || !this.t(string)) break;
+                int n = NLoginCore_592.var_com_nickuc_login_NLoginCore_532_f.r();
+                NLoginInterface_041<Boolean> NLoginInterface_041 = n <= 0 ? null : bl -> {
+                    if (!bl.booleanValue()) {
+                        this.com_nickuc_login_NLoginInterface_022_b().a(() -> this.com_nickuc_login_NLoginCore_443_a(NLoginCore_277, NLoginCore_5092, serverConnectType), (long)n);
+                    } else {
+                        this.com_nickuc_login_NLoginType_008_a().com_nickuc_login_NLoginType_005_b().com_nickuc_login_NLoginType_001_a().a(NLoginCore_277, NLoginCore_5092, false);
+                    }
+                };
+                return this.a(NLoginCore_277, string, ServerConnectType.WITH_PLATFORM_SERVER, NLoginInterface_041);
             }
-            break;
-         case 3:
-            if (!NLoginCore_532.i.ar()) {
-               break;
+            case 3: {
+                int n;
+                Object object;
+                Set set;
+                Object object2;
+                Set set2;
+                List<String> list;
+                if (!NLoginCore_592.var_com_nickuc_login_NLoginCore_532_i.ar() || (list = NLoginCore_592.var_com_nickuc_login_NLoginCore_532_j.a(new Object[0])).isEmpty()) break;
+                String string = this.java_lang_String_a(NLoginCore_277);
+                if (string != null) {
+                    if (list.stream().anyMatch(string::equalsIgnoreCase)) break;
+                }
+                if ((set2 = (Set)NLoginCore_5092.d(NLoginCore_567.K)) != null) {
+                    object2 = new ArrayList<String>(list);
+                    set = set2;
+                    synchronized (set) {
+                        object2.removeIf(set2::contains);
+                    }
+                    if (object2.isEmpty()) {
+                        object = list;
+                        NLoginCore_5092.a(NLoginCore_567.K);
+                        set2 = null;
+                    } else {
+                        object = object2;
+                    }
+                } else {
+                    object = list;
+                }
+                object2 = object.get(NLoginCore_354.a().nextInt(object.size()));
+                if (set2 != null) {
+                    set = set2;
+                    synchronized (set) {
+                        set2.add(object2);
+                    }
+                }
+                NLoginInterface_041<Boolean> NLoginInterface_041 = (n = NLoginCore_592.var_com_nickuc_login_NLoginCore_532_f.r()) <= 0 ? null : arg_0 -> this.a(list, NLoginCore_5092, (String)object2, NLoginCore_277, serverConnectType, n, arg_0);
+                return this.a(NLoginCore_277, (String)object2, ServerConnectType.WITH_CONFIGURED_SERVER, NLoginInterface_041);
             }
-
-            List var4 = NLoginCore_532.j.a(new Object[0]);
-            if (var4.isEmpty()) {
-               break;
+            default: {
+                throw new IllegalArgumentException(NLoginCore_324.B("ƴǎǔǗǓǔǔǘǛǍǍƊǞǑǟǤǔǢƑǕǢǢǣǛǚǬƙǮǴǬǢƟƟ", (byte)112, 66) + serverConnectType);
             }
+        }
+        return NLoginCore_443.var_com_nickuc_login_NLoginCore_443_d;
+    }
 
-            String var5 = this.a(var1);
-            if (var5 != null && var4.stream().anyMatch(var5::equalsIgnoreCase)) {
-               break;
-            }
+    public boolean t(String var1);
 
-            Set var6 = var2.d(NLoginCore_567.K);
-            Object var7;
-            if (var6 != null) {
-               ArrayList var8 = new ArrayList(var4);
-               synchronized (var6) {
-                  var8.removeIf(var6::contains);
-               }
+    public NLoginType_008 com_nickuc_login_NLoginType_008_a();
 
-               if (var8.isEmpty()) {
-                  var7 = var4;
-                  var2.a(NLoginCore_567.K);
-                  var6 = null;
-               } else {
-                  var7 = var8;
-               }
-            } else {
-               var7 = var4;
-            }
+    public boolean boolean_a(NLoginCore_277 var1);
 
-            String var21 = (String)var7.get(NLoginCore_354.a().nextInt(var7.size()));
-            if (var6 != null) {
-               synchronized (var6) {
-                  var6.add(var21);
-               }
-            }
-
-            int var9 = NLoginCore_532.f.r();
-            NLoginInterface_041 var10 = var9 <= 0 ? null : var7x -> {
-               if (!var7x) {
-                  this.b().a(() -> {
-                     if (var4.size() > 1 && !var2.a(NLoginCore_567.K)) {
-                        HashSet var6xx = new HashSet();
-                        var6xx.add(var21);
-                        var2.a(NLoginCore_567.K, var6xx);
-                     }
-
-                     this.a(var1, var2, var3);
-                  }, (long)var9);
-               } else {
-                  this.a().b().a().a(var1, var2, false);
-               }
-            };
-            return this.a(var1, var21, ServerConnectType.WITH_CONFIGURED_SERVER, var10);
-         default:
-            throw new IllegalArgumentException(NLoginCore_324.B("ƴǎǔǗǓǔǔǘǛǍǍƊǞǑǟǤǔǢƑǕǢǢǣǛǚǬƙǮǴǬǢƟƟ", (byte)112, 66) + var3);
-      }
-
-      return NLoginCore_443.d;
-   }
-
-   boolean t(String var1);
-
-   NLoginType_008 a();
-
-   boolean a(NLoginCore_277 var1);
+    private /* synthetic */ void a(List list, NLoginCore_509 NLoginCore_5092, String string, NLoginCore_277 NLoginCore_277, ServerConnectType serverConnectType, int n, Boolean bl) {
+        if (!bl.booleanValue()) {
+            this.com_nickuc_login_NLoginInterface_022_b().a(() -> {
+                if (list.size() > 1 && !NLoginCore_5092.a(NLoginCore_567.K)) {
+                    HashSet<String> hashSet = new HashSet<String>();
+                    hashSet.add(string);
+                    NLoginCore_5092.a(NLoginCore_567.K, hashSet);
+                }
+                this.com_nickuc_login_NLoginCore_443_a(NLoginCore_277, NLoginCore_5092, serverConnectType);
+            }, (long)n);
+        } else {
+            this.com_nickuc_login_NLoginType_008_a().com_nickuc_login_NLoginType_005_b().com_nickuc_login_NLoginType_001_a().a(NLoginCore_277, NLoginCore_5092, false);
+        }
+    }
 }
+

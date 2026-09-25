@@ -1,20 +1,29 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.annotation.Nullable
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_042;
+import com.nickuc.login.ForceRegisterConfig;
 import javax.annotation.Nullable;
 
 public interface NLoginInterface_017 {
-   String d();
+    public String java_lang_String_d();
 
-   boolean e();
+    public boolean e();
 
-   void b(String var1, @Nullable String var2);
+    public void b(String var1, @Nullable String var2);
 
-   void g();
+    public void g();
 
-   ForceRegisterConfig a();
+    public ForceRegisterConfig com_nickuc_login_ForceRegisterConfig_a();
 
-   boolean f();
+    public boolean f();
 
-   @Nullable
-   NLoginCore_042 a();
+    @Nullable
+    public NLoginCore_042 com_nickuc_login_NLoginCore_042_a();
 }
+

@@ -1,4 +1,11 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-public interface NLoginInterface_014 extends NLoginInterface_005 {
+import com.nickuc.login.NLoginInterface_005;
+
+public interface NLoginInterface_014
+extends NLoginInterface_005 {
 }
+

@@ -1,69 +1,84 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
-public final class NLoginCore_553 {
-   public static String D(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginCore_211;
+import com.nickuc.login.GUIButtonContainer;
+import com.nickuc.login.NLoginCore_445;
+import com.nickuc.login.NLoginCore_150;
+import com.nickuc.login.NLoginCore_397;
+import com.nickuc.login.NLoginCore_494;
+import com.nickuc.login.NLoginCore_249;
+import com.nickuc.login.NLoginCore_509;
+import com.nickuc.login.NLoginCore_415;
+import com.nickuc.login.NLoginCore_499;
+import com.nickuc.login.NLoginInterface_024;
+import lombok.Generated;
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
+public class NLoginCore_553
+implements NLoginCore_249,
+NLoginCore_415 {
+    private static int a = Integer.reverse(-1879048192);
+    private static int b = 0x100000 >>> 20 | 0x100000 << -20;
+    private static int g;
+    private static int f;
+    private static int c;
+    private final NLoginCore_211 ae;
+    private static int d;
+    private static int e;
+    private static int i;
+    private static int h;
 
-      return new String(x);
-   }
+    @Override
+    public boolean a(NLoginType_008 NLoginType_008, NLoginCore_277 NLoginCore_277, NLoginCore_509 NLoginCore_5092) {
+        return (NLoginType_008.com_nickuc_login_NLoginCore_227_a().n() == a && NLoginType_008.com_nickuc_login_NLoginCore_495_a().q() ? b : c) != 0;
+    }
 
-   public static String C(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+    static {
+        c = Integer.reverse(0);
+        d = (0 >>> 95 | 0 << ~95 + 1) & 0xFFFFFFFF;
+        e = 64 >>> 197 | 64 << ~197 + 1;
+        f = 0 >>> 80 | 0 << ~80 + 1;
+        g = 4096 >>> 236 | 4096 << ~236 + 1;
+        h = (64 >>> 102 | 64 << -102) & 0xFFFFFFFF;
+        i = (0 >>> 66 | 0 << ~66 + 1) & 0xFFFFFFFF;
+    }
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
+    @Override
+    public GUIButtonContainer[] com_nickuc_login_GUIButtonContainer_arr_a(NLoginType_008 NLoginType_008, NLoginCore_277 NLoginCore_277, NLoginCore_509 NLoginCore_5092, NLoginInterface_024 NLoginInterface_0242) {
+        NLoginCore_150.a((NLoginCore_494)NLoginCore_277, NLoginCore_397.var_com_nickuc_login_NLoginCore_237_q, new Object[d]);
+        NLoginCore_445[] NLoginCore_445Array = new NLoginCore_445[e];
+        NLoginCore_445Array[NLoginCore_553.f] = NLoginCore_445.var_com_nickuc_login_NLoginCore_445_b;
+        NLoginCore_445Array[NLoginCore_553.g] = NLoginCore_445.var_com_nickuc_login_NLoginCore_445_c;
+        return GUIButtonContainer.a(NLoginCore_277, NLoginCore_445Array);
+    }
 
-      return new String(x);
-   }
+    @Generated
+    public NLoginCore_553(NLoginCore_211 NLoginCore_211) {
+        this.ae = NLoginCore_211;
+    }
 
-   public static String A(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+    @Override
+    public void a(NLoginType_008 NLoginType_008, NLoginCore_277 NLoginCore_277, NLoginCore_509 NLoginCore_5092, NLoginInterface_024 NLoginInterface_0242, NLoginCore_445 NLoginCore_4452) {
+        switch (NLoginCore_499.E[NLoginCore_4452.ordinal()]) {
+            case 1: 
+            case 2: {
+                this.com_nickuc_login_NLoginCore_283_a(NLoginCore_5092).j((NLoginCore_4452 == NLoginCore_445.var_com_nickuc_login_NLoginCore_445_b ? h : i) != 0);
+                NLoginCore_415.super.a(NLoginType_008, NLoginCore_277, NLoginCore_5092, NLoginInterface_0242, NLoginCore_4452);
+            }
+        }
+    }
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String F(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String E(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String B(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
+    @Override
+    @Generated
+    public NLoginCore_211 com_nickuc_login_NLoginCore_211_a() {
+        return this.ae;
+    }
 }
+

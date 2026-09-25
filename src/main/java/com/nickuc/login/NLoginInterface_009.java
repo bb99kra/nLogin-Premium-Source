@@ -1,9 +1,13 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
 public interface NLoginInterface_009 {
-   String w(String var1);
+    public String java_lang_String_w(String var1);
 
-   boolean i(String var1, String var2);
+    public boolean boolean_i(String var1, String var2);
 
-   boolean v(String var1);
+    public boolean v(String var1);
 }
+

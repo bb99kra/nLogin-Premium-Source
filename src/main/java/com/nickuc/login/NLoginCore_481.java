@@ -1,11 +1,32 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.nickuc.login.lib.packetevents.api.wrapper.login.client.WrapperLoginClientLoginStart
+ *  io.netty.util.AttributeKey
+ *  javax.annotation.Nullable
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
 import com.nickuc.login.lib.packetevents.api.wrapper.login.client.WrapperLoginClientLoginStart;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_092;
+import com.nickuc.login.NLoginCore_004;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_389;
+import com.nickuc.login.ForceRegisterConfig;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_451;
+import com.nickuc.login.NLoginCore_517;
+import com.nickuc.login.NLoginCore_454;
 import io.netty.util.AttributeKey;
+import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
 import java.nio.charset.StandardCharsets;
+import java.security.Key;
 import java.util.Base64;
 import javax.annotation.Nullable;
 import javax.crypto.Cipher;
@@ -15,226 +36,171 @@ import javax.crypto.spec.IvParameterSpec;
 import lombok.Generated;
 
 public class NLoginCore_481 {
-   private static String[] a;
-   private static long d = Long.reverse(8253171242719629439L);
-   private static long e = Long.reverse(7349874591868649472L);
-   private static int b = 16777216 >>> 216 | 16777216 << ~216 + 1;
-   private final String cc;
-   private NLoginCore_454 a;
-   @Nullable
-   private final NLoginCore_517 a;
-   private static long c;
-   @Nullable
-   private final byte[] f;
-   private static int a = Integer.reverse(Integer.MIN_VALUE);
-   public static final AttributeKey<NLoginCore_481> e;
-   @Nullable
-   private final ForceRegisterConfig e;
-   private final String cb;
-   private final Object i;
-   private final WrapperLoginClientLoginStart a;
-   private static int c = (0 >>> 179 | 0 << -179) & -1;
-   private static String[] b;
+    private static String[] var_java_lang_String_arr_a;
+    private static long d;
+    private static long var_long_e;
+    private static int var_int_b;
+    private final String cc;
+    private NLoginCore_454 var_com_nickuc_login_NLoginCore_454_a;
+    @Nullable
+    private final NLoginCore_517 var_com_nickuc_login_NLoginCore_517_a;
+    private static long var_long_c;
+    @Nullable
+    private final byte[] f;
+    private static int var_int_a;
+    public static final AttributeKey<NLoginCore_481> var_io_netty_util_AttributeKey_com_nickuc_login_NLoginCore_481__e;
+    @Nullable
+    private final ForceRegisterConfig var_com_nickuc_login_ForceRegisterConfig_e;
+    private final String cb;
+    private final Object i;
+    private final WrapperLoginClientLoginStart var_com_nickuc_login_lib_packetevents_api_wrapper_login_client_WrapperLoginClientLoginStart_a;
+    private static int var_int_c;
+    private static String[] var_java_lang_String_arr_b;
 
-   private static Object c(Lookup var0, String var1, MethodType var2) {
-      try {
-         return new MutableCallSite(
-            var0.findStatic(
-                  NLoginCore_481.class,
-                  new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(NLoginCore_324.E("ՀբդՄըևտ֕ցՐ֎ք֒\u058cՕպ֛֜֓֙֓ը", (byte)92, 69), NLoginCore_481.class.getClassLoader())
-               )
-               .asType(var2)
-         );
-      } catch (Exception var4) {
-         throw new RuntimeException(
-            NLoginCore_433.D("ԬԹԸӻԻԷԲԻՆԵԂՀՄԽՀՆԈࢂ\u086e࢙࢛ࢠ\u0896ࢠࢉԜ", (byte)92, 68) + var1 + NLoginCore_004.A("ű", (byte)92, 65) + var2.toString(), var4
-         );
-      }
-   }
+    private static String c(String s, int n, long l) {
+        return a(n, l);
+    }
 
-   @Generated
-   public Object h() {
-      return this.i;
-   }
+    private static Object c(MethodHandles.Lookup lookup, String string, MethodType methodType) {
+        try {
+            return new MutableCallSite(lookup.findStatic(NLoginCore_481.class, new String(new byte[]{97}, StandardCharsets.UTF_8), MethodType.fromMethodDescriptorString(NLoginCore_324.E("ՀբդՄըևտ֕ցՐ֎ք֒֌Օպ֛֜֓֙֓ը", (byte)92, 69), NLoginCore_481.class.getClassLoader())).asType(methodType));
+        }
+        catch (Exception exception) {
+            throw new RuntimeException(NLoginCore_223.D("ԬԹԸӻԻԷԲԻՆԵԂՀՄԽՀՆԈࢂ࡮࢙࢛ࢠ࢖ࢠࢉԜ", (byte)92, 68) + string + NLoginCore_451.A("ű", (byte)92, 65) + methodType.toString(), exception);
+        }
+    }
 
-   @Generated
-   public NLoginCore_481(
-      @Nullable ForceRegisterConfig var1, String var2, String var3, Object var4, WrapperLoginClientLoginStart var5, @Nullable NLoginCore_517 var6, @Nullable byte[] var7
-   ) {
-      this.e = var1;
-      this.cb = var2;
-      this.cc = var3;
-      this.i = var4;
-      this.a = var5;
-      this.a = var6;
-      this.f = var7;
-   }
+    @Generated
+    public Object h() {
+        return this.i;
+    }
 
-   @Nullable
-   @Generated
-   public ForceRegisterConfig a() {
-      return this.e;
-   }
+    @Generated
+    public NLoginCore_481(@Nullable ForceRegisterConfig ForceRegisterConfig2, String string, String string2, Object object, WrapperLoginClientLoginStart wrapperLoginClientLoginStart, @Nullable NLoginCore_517 NLoginCore_5172, @Nullable byte[] byArray) {
+        this.var_com_nickuc_login_ForceRegisterConfig_e = ForceRegisterConfig2;
+        this.cb = string;
+        this.cc = string2;
+        this.i = object;
+        this.var_com_nickuc_login_lib_packetevents_api_wrapper_login_client_WrapperLoginClientLoginStart_a = wrapperLoginClientLoginStart;
+        this.var_com_nickuc_login_NLoginCore_517_a = NLoginCore_5172;
+        this.f = byArray;
+    }
 
-   private static String a(int var0, long var1) {
-      var1 ^= 102L;
-      var1 ^= -8756372245062267741L;
-      if (a[var0] == null) {
-         Cipher var3;
-         SecretKeyFactory var4;
-         try {
-            var3 = Cipher.getInstance(
-               new String(
-                  new byte[]{
-                     (byte)(8 + 60),
-                     (byte)(34 + 35),
-                     (byte)(68 + 15),
-                     (byte)(17 + 30),
-                     (byte)(18 + 49),
-                     (byte)(6 + 60),
-                     (byte)(54 + 13),
-                     (byte)(23 + 24),
-                     (byte)(19 + 61),
-                     75,
-                     (byte)(50 + 17),
-                     (byte)(53 + 30),
-                     (byte)(30 + 23),
-                     80,
-                     (byte)(81 + 16),
-                     (byte)(63 + 37),
-                     (byte)(37 + 63),
-                     (byte)(27 + 78),
-                     (byte)(77 + 33),
-                     (byte)(76 + 27)
-                  },
-                  StandardCharsets.UTF_8
-               )
-            );
-            var4 = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(64 + 5), 83}, StandardCharsets.UTF_8));
-         } catch (Exception var7) {
-            throw new RuntimeException(NLoginCore_092.E("ԡԮԭӰ\u0530Ԭԧ\u0530ԻԪӷԵԹԲԵԻӽࡷࡣࢎ\u0890\u0895ࢋ\u0895ࡾ", (byte)2, 69));
-         }
+    @Nullable
+    @Generated
+    public ForceRegisterConfig com_nickuc_login_ForceRegisterConfig_a() {
+        return this.var_com_nickuc_login_ForceRegisterConfig_e;
+    }
 
-         byte[] var5 = new byte[8];
-         var5[0] = (byte)(var1 >>> 56);
+    private static String a(int n, long l) {
+        l ^= 0x66L;
+        l ^= 0x867B1DD61BF94CA3L;
+        if (var_java_lang_String_arr_a[n] == null) {
+            SecretKeyFactory secretKeyFactory;
+            Cipher cipher;
+            try {
+                cipher = Cipher.getInstance(new String(new byte[]{(byte)(8 + 60), (byte)(34 + 35), (byte)(68 + 15), (byte)(17 + 30), (byte)(18 + 49), (byte)(6 + 60), (byte)(54 + 13), (byte)(23 + 24), (byte)(19 + 61), 75, (byte)(50 + 17), (byte)(53 + 30), (byte)(30 + 23), 80, (byte)(81 + 16), (byte)(63 + 37), (byte)(37 + 63), (byte)(27 + 78), (byte)(77 + 33), (byte)(76 + 27)}, StandardCharsets.UTF_8));
+                secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(64 + 5), 83}, StandardCharsets.UTF_8));
+            }
+            catch (Exception exception) {
+                throw new RuntimeException(NLoginCore_092.E("ԡԮԭӰ԰Ԭԧ԰ԻԪӷԵԹԲԵԻӽࡷࡣࢎ࢐࢕ࢋ࢕ࡾ", (byte)2, 69));
+            }
+            byte[] byArray = new byte[8];
+            byArray[0] = (byte)(l >>> 56);
+            for (int i = 1; i < 8; ++i) {
+                byArray[i] = (byte)(l << i * 8 >>> 56);
+            }
+            cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+            NLoginCore_481.var_java_lang_String_arr_a[n] = new String(cipher.doFinal(Base64.getDecoder().decode(var_java_lang_String_arr_b[n])), StandardCharsets.UTF_8);
+        }
+        return var_java_lang_String_arr_a[n];
+    }
 
-         for (int var6 = 1; var6 < 8; var6++) {
-            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
-         }
+    private static void b() {
+        int n;
+        var_long_c = -140839720893247154L;
+        long l = var_long_c ^ 0x867B1DD61BF94CA3L;
+        Cipher cipher = Cipher.getInstance(new String(new byte[]{(byte)(14 + 54), (byte)(35 + 34), (byte)(66 + 17), (byte)(24 + 23), (byte)(22 + 45), (byte)(38 + 28), (byte)(60 + 7), 47, (byte)(72 + 8), (byte)(58 + 17), (byte)(35 + 32), (byte)(40 + 43), (byte)(43 + 10), (byte)(39 + 41), (byte)(16 + 81), 100, (byte)(9 + 91), (byte)(104 + 1), (byte)(46 + 64), (byte)(93 + 10)}, StandardCharsets.UTF_8));
+        SecretKeyFactory secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(16 + 53), (byte)(54 + 29)}, StandardCharsets.UTF_8));
+        byte[] byArray = new byte[8];
+        byArray[0] = (byte)(l >>> 56);
+        for (n = 1; n < 8; ++n) {
+            byArray[n] = (byte)(l << n * 8 >>> 56);
+        }
+        cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+        n = 1;
+        block7: for (int i = 0; i < n; ++i) {
+            switch (i) {
+                case 0: {
+                    NLoginCore_481.var_java_lang_String_arr_b[0] = NLoginCore_324.C("ҰӤӘҵӧӠӼӛӠӟӀӎӰӿӀӇӟӼӭӢӻԊӫӾӈԑӾӬӣӕӘԋ", (byte)68, 67);
+                    continue block7;
+                }
+                case 1: {
+                    NLoginCore_481.var_java_lang_String_arr_b[0] = NLoginCore_027.B("ĶŪŞĻŭŦƂšŦťņŔŶƅņōťƂųŨƁƍŕųŪŏƑųŜƒƎƞ", (byte)68, 66);
+                    continue block7;
+                }
+                case 2: {
+                    NLoginCore_481.var_java_lang_String_arr_b[0] = NLoginCore_004.D("ӌҺҹӵӾәӺӑӟӘԀӴӁԅӷөӦӼԌԄԄӨԌӨӞӛԇӵӎӿӰԘ", (byte)68, 68);
+                    continue block7;
+                }
+                case 4: {
+                    NLoginCore_481.var_java_lang_String_arr_b[0] = NLoginCore_027.E("ՉՌՏէԳձ՟՟ՔլՕւփՒեջ՝Չռփպն՜ռ֑ըՓ֑րի֋֊", (byte)68, 69);
+                }
+            }
+        }
+    }
 
-         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
-      }
+    @Generated
+    public String ax() {
+        return this.cb;
+    }
 
-      return a[var0];
-   }
+    @Generated
+    public void a(NLoginCore_454 NLoginCore_4542) {
+        this.var_com_nickuc_login_NLoginCore_454_a = NLoginCore_4542;
+    }
 
-   private static void b() {
-      c = -140839720893247154L;
-      long var0 = c ^ -8756372245062267741L;
-      Cipher var2 = Cipher.getInstance(
-         new String(
-            new byte[]{
-               (byte)(14 + 54),
-               (byte)(35 + 34),
-               (byte)(66 + 17),
-               (byte)(24 + 23),
-               (byte)(22 + 45),
-               (byte)(38 + 28),
-               (byte)(60 + 7),
-               47,
-               (byte)(72 + 8),
-               (byte)(58 + 17),
-               (byte)(35 + 32),
-               (byte)(40 + 43),
-               (byte)(43 + 10),
-               (byte)(39 + 41),
-               (byte)(16 + 81),
-               100,
-               (byte)(9 + 91),
-               (byte)(104 + 1),
-               (byte)(46 + 64),
-               (byte)(93 + 10)
-            },
-            StandardCharsets.UTF_8
-         )
-      );
-      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(16 + 53), (byte)(54 + 29)}, StandardCharsets.UTF_8));
-      byte[] var4 = new byte[8];
-      var4[0] = (byte)(var0 >>> 56);
+    @Generated
+    public WrapperLoginClientLoginStart com_nickuc_login_lib_packetevents_api_wrapper_login_client_WrapperLoginClientLoginStart_a() {
+        return this.var_com_nickuc_login_lib_packetevents_api_wrapper_login_client_WrapperLoginClientLoginStart_a;
+    }
 
-      for (int var5 = 1; var5 < 8; var5++) {
-         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
-      }
+    @Nullable
+    @Generated
+    public byte[] d() {
+        return this.f;
+    }
 
-      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
-      byte var7 = 1;
+    @Generated
+    public String ay() {
+        return this.cc;
+    }
 
-      for (int var6 = 0; var6 < var7; var6++) {
-         switch (var6) {
-            case 0:
-               b[0] = NLoginCore_384.C("ҰӤӘҵӧӠӼӛӠӟӀӎӰӿӀӇӟӼӭӢӻԊӫӾӈԑӾӬӣӕӘԋ", (byte)68, 67);
-               break;
-            case 1:
-               b[0] = NLoginCore_241.B("ĶŪŞĻŭŦƂšŦťņŔŶƅņōťƂųŨƁƍŕųŪŏƑųŜƒƎƞ", (byte)68, 66);
-               break;
-            case 2:
-               b[0] = NLoginCore_110.D("ӌҺҹӵӾәӺӑӟӘԀӴӁԅӷөӦӼԌԄԄӨԌӨӞӛԇӵӎӿӰԘ", (byte)68, 68);
-            case 3:
-            default:
-               break;
-            case 4:
-               b[0] = NLoginCore_241.E("ՉՌՏէԳձ՟՟ՔլՕւփՒեջ՝Չռփպն՜ռ֑ըՓ֑րի\u058b֊", (byte)68, 69);
-         }
-      }
-   }
+    static {
+        var_int_a = Integer.reverse(Integer.MIN_VALUE);
+        var_int_b = 0x1000000 >>> 216 | 0x1000000 << ~216 + 1;
+        var_int_c = (0 >>> 179 | 0 << -179) & 0xFFFFFFFF;
+        d = Long.reverse(8253171242719629439L);
+        var_long_e = Long.reverse(0x6600000000000000L);
+        var_java_lang_String_arr_a = new String[var_int_a];
+        var_java_lang_String_arr_b = new String[var_int_b];
+        NLoginCore_481.b();
+        var_long_e = (long)NLoginCore_389.a((String)NLoginCore_481.c("㺀", (int)var_int_c, (long)(d ^ var_long_e)));
+    }
 
-   @Generated
-   public String ax() {
-      return this.cb;
-   }
+    @Generated
+    public NLoginCore_454 com_nickuc_login_NLoginCore_454_a() {
+        return this.var_com_nickuc_login_NLoginCore_454_a;
+    }
 
-   @Generated
-   public void a(NLoginCore_454 var1) {
-      this.a = var1;
-   }
+    public NLoginCore_481 a(byte[] byArray) {
+        return new NLoginCore_481(this.var_com_nickuc_login_ForceRegisterConfig_e, this.cb, this.cc, this.i, this.var_com_nickuc_login_lib_packetevents_api_wrapper_login_client_WrapperLoginClientLoginStart_a, this.var_com_nickuc_login_NLoginCore_517_a, byArray);
+    }
 
-   @Generated
-   public WrapperLoginClientLoginStart a() {
-      return this.a;
-   }
-
-   @Nullable
-   @Generated
-   public byte[] d() {
-      return this.f;
-   }
-
-   @Generated
-   public String ay() {
-      return this.cc;
-   }
-
-   static {
-      a = new String[a];
-      b = new String[b];
-      b();
-      e = NLoginCore_389.a(a(NLoginCore_481.c, d ^ e));
-   }
-
-   @Generated
-   public NLoginCore_454 a() {
-      return this.a;
-   }
-
-   public NLoginCore_481 a(byte[] var1) {
-      return new NLoginCore_481(this.e, this.cb, this.cc, this.i, this.a, this.a, var1);
-   }
-
-   @Nullable
-   @Generated
-   public NLoginCore_517 a() {
-      return this.a;
-   }
+    @Nullable
+    @Generated
+    public NLoginCore_517 com_nickuc_login_NLoginCore_517_a() {
+        return this.var_com_nickuc_login_NLoginCore_517_a;
+    }
 }
+

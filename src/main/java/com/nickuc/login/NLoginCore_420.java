@@ -1,16 +1,63 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.velocitypowered.api.command.CommandSource
+ *  com.velocitypowered.api.proxy.Player
+ *  com.velocitypowered.api.proxy.ProxyServer
+ *  com.velocitypowered.api.proxy.messages.ChannelIdentifier
+ *  com.velocitypowered.api.proxy.messages.LegacyChannelIdentifier
+ *  com.velocitypowered.api.proxy.messages.MinecraftChannelIdentifier
+ *  javax.annotation.Nullable
+ *  lombok.Generated
+ *  net.kyori.adventure.text.Component
+ *  net.kyori.adventure.title.Title
+ *  net.kyori.adventure.title.Title$Times
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_427;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_559;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.NLoginCore_529;
+import com.nickuc.login.NLoginCore_465;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_337;
+import com.nickuc.login.NLoginCore_116;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_092;
+import com.nickuc.login.NLoginCore_559;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginInterface_023;
+import com.nickuc.login.NLoginCore_446;
+import com.nickuc.login.NLoginCore_455;
+import com.nickuc.login.NLoginCore_138;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_589;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_575;
+import com.nickuc.login.NLoginCore_453;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_387;
+import com.nickuc.login.NLoginCore_451;
+import com.nickuc.login.NLoginCore_370;
+import com.velocitypowered.api.command.CommandSource;
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
 import com.velocitypowered.api.proxy.messages.ChannelIdentifier;
 import com.velocitypowered.api.proxy.messages.LegacyChannelIdentifier;
 import com.velocitypowered.api.proxy.messages.MinecraftChannelIdentifier;
-import io.netty.channel.Channel;
+import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
 import java.net.InetSocketAddress;
 import java.nio.charset.StandardCharsets;
+import java.security.Key;
 import java.time.Duration;
 import java.util.Base64;
 import java.util.Locale;
@@ -28,536 +75,540 @@ import javax.crypto.spec.IvParameterSpec;
 import lombok.Generated;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.title.Title;
-import net.kyori.adventure.title.Title.Times;
 
-public class NLoginCore_420 implements NLoginCore_277 {
-   private static int bf = Integer.reverse(-1342177280);
-   private static String[] ZKM_STR_B = new String[NLoginCore_420.ci];
-   private static int bi = Integer.reverse(1073741824);
-   private static long bq = Long.reverse(6574064702852149874L);
-   private static int bp = (503316480 >>> 89 | 503316480 << ~89 + 1) & -1;
-   private static int an = Integer.reverse(268435456);
-   private static long i = Long.reverse(7582871019383140978L);
-   private static int ce = (2304 >>> 135 | 2304 << -135) & -1;
-   private static int ar = Integer.reverse(-1879048192);
-   private static long aw = Long.reverse(7582871019383140978L);
-   private static int w = Integer.reverse(1610612736);
-   private static int bx = Integer.reverse(-2013265920);
-   private static int bo = Integer.reverse(-1);
-   private static long bn = Long.reverse(3602879701896396800L);
-   private static long ao = Long.reverse(6574064702852149874L);
-   private static int bb = Integer.reverse(Integer.MIN_VALUE);
-   private static int r = (4 >>> 2 | 4 << -2) & -1;
-   private static long az = Long.reverse(7582871019383140978L);
-   private static long t = Long.reverse(7582871019383140978L);
-   private static int f = Integer.reverse(Integer.MIN_VALUE);
-   private static int s = 4096 >>> 106 | 4096 << -106;
-   private static int z = Integer.reverse(1073741824);
-   private static int h = 2 >>> 128 | 2 << -128;
-   private static int q = 0 >>> 184 | 0 << ~184 + 1;
-   private static int u = Integer.reverse(-1610612736);
-   private static int af = 2097152 >>> 245 | 2097152 << -245;
-   private static int a = (0 >>> 151 | 0 << ~151 + 1) & -1;
-   private final UUID f = UUID.randomUUID();
-   private static int b = Integer.reverse(-1);
-   private NLoginInterface_023 a;
-   private static int x = Integer.reverse(-1);
-   private static long cg = Long.reverse(7582871019383140978L);
-   private static long bh = Long.reverse(7582871019383140978L);
-   private static int ay = -1 >>> 93 | -1 << -93;
-   private static int n = Integer.reverse(-1);
-   private final ProxyServer c;
-   private static int bw = 256 >>> 72 | 256 << -72;
-   private static int ci = (1275068416 >>> 218 | 1275068416 << ~218 + 1) & -1;
-   private static long g = Long.reverse(7582871019383140978L);
-   private static long bd = Long.reverse(6574064702852149874L);
-   private static int ag = Integer.reverse(0);
-   private static int ak = Integer.reverse(-536870912);
-   private static int ad = Integer.reverse(Integer.MIN_VALUE);
-   private static String[] ZKM_STR_A = new String[NLoginCore_420.ch];
-   private static int aq = (1073741855 >>> 254 | 1073741855 << ~254 + 1) & -1;
-   private static int aa = Integer.reverse(0);
-   private static long be = Long.reverse(3602879701896396800L);
-   private static int e = Integer.reverse(Integer.MIN_VALUE);
-   private final NLoginCore_455 b;
-   private static int ca = Integer.reverse(1073741824);
-   private static long am = Long.reverse(7582871019383140978L);
-   private static int ac = (8192 >>> 173 | 8192 << -173) & -1;
-   private static int bt = Integer.reverse(134217728);
-   private static int cb = 67108864 >>> 26 | 67108864 << -26;
-   private static int au = Integer.reverse(1342177280);
-   private static int bl = (469762048 >>> 57 | 469762048 << -57) & -1;
-   private static int ax = (2816 >>> 40 | 2816 << ~40 + 1) & -1;
-   private static long by = Long.reverse(6574064702852149874L);
-   private static int bk = (4 >>> 162 | 4 << ~162 + 1) & -1;
-   private static int bu = -1 >>> 7 | -1 << -7;
-   private static long as = Long.reverse(6574064702852149874L);
-   private static int ah = 33554432 >>> 24 | 33554432 << ~24 + 1;
-   private static int bg = -1 >>> 35 | -1 << ~35 + 1;
-   private static long d = Long.reverse(7582871019383140978L);
-   private static int bj = (0 >>> 111 | 0 << -111) & -1;
-   private static int ab = Integer.reverse(-201326592);
-   private static long j = Long.reverse(5476377146882523136L);
-   private final boolean aq;
-   private static int ba = Integer.reverse(-1073741824);
-   private static long ap = Long.reverse(3602879701896396800L);
-   private static long v = Long.reverse(7582871019383140978L);
-   private static int cf = Integer.reverse(-1);
-   private static long k = Long.reverse(5476377146882523136L);
-   static final Map<Player, NLoginCore_420> j = new ConcurrentHashMap<>();
-   private static int aj = (65536 >>> 112 | 65536 << -112) & -1;
-   private static int bc = (24 >>> 161 | 24 << -161) & -1;
-   private static int ch = Integer.reverse(-939524096);
-   private static long br = Long.reverse(3602879701896396800L);
-   private static int p = (1024 >>> 137 | 1024 << ~137 + 1) & -1;
-   private final Player a;
-   private static int cc = (0 >>> 25 | 0 << ~25 + 1) & -1;
-   private static int m = (24576 >>> 109 | 24576 << ~109 + 1) & -1;
-   private static int ae = (0 >>> 114 | 0 << ~114 + 1) & -1;
-   private static int ai = 0 >>> 170 | 0 << -170;
-   private static int al = Integer.reverse(-1);
-   private static long bm = Long.reverse(6574064702852149874L);
-   private static int av = (-1 >>> 181 | -1 << -181) & -1;
-   private static long c;
-   private static long l = Long.reverse(5476377146882523136L);
-   private static int cd = Integer.reverse(0);
-   private static long bv = Long.reverse(7582871019383140978L);
-   private static long bz = Long.reverse(3602879701896396800L);
-   private static long at = Long.reverse(3602879701896396800L);
-   private static long y = Long.reverse(7582871019383140978L);
-   private static long o = Long.reverse(7582871019383140978L);
-   private static int bs = 0 >>> 210 | 0 << -210;
+public class NLoginCore_420
+implements NLoginCore_277 {
+    private static int bf;
+    private static String[] var_java_lang_String_arr_b;
+    private static int bi;
+    private static long bq;
+    private static int bp;
+    private static int an;
+    private static long i;
+    private static int ce;
+    private static int ar;
+    private static long aw;
+    private static int w;
+    private static int bx;
+    private static int bo;
+    private static long bn;
+    private static long ao;
+    private static int bb;
+    private static int r;
+    private static long az;
+    private static long t;
+    private static int var_int_f;
+    private static int s;
+    private static int z;
+    private static int h;
+    private static int q;
+    private static int u;
+    private static int af;
+    private static int var_int_a;
+    private final UUID var_java_util_UUID_f = UUID.randomUUID();
+    private static int var_int_b;
+    private NLoginInterface_023 var_com_nickuc_login_NLoginInterface_023_a;
+    private static int x;
+    private static long cg;
+    private static long bh;
+    private static int ay;
+    private static int n;
+    private final ProxyServer var_com_velocitypowered_api_proxy_ProxyServer_c;
+    private static int bw;
+    private static int ci;
+    private static long g;
+    private static long bd;
+    private static int ag;
+    private static int ak;
+    private static int ad;
+    private static String[] var_java_lang_String_arr_a;
+    private static int var_int_aq;
+    private static int aa;
+    private static long be;
+    private static int e;
+    private final NLoginCore_455 var_com_nickuc_login_NLoginCore_455_b;
+    private static int ca;
+    private static long am;
+    private static int ac;
+    private static int bt;
+    private static int cb;
+    private static int au;
+    private static int bl;
+    private static int ax;
+    private static long by;
+    private static int bk;
+    private static int bu;
+    private static long as;
+    private static int ah;
+    private static int bg;
+    private static long d;
+    private static int bj;
+    private static int ab;
+    private static long var_long_j;
+    private final boolean var_boolean_aq;
+    private static int ba;
+    private static long ap;
+    private static long v;
+    private static int cf;
+    private static long k;
+    static final Map<Player, NLoginCore_420> cfr_renamed_22;
+    private static int aj;
+    private static int bc;
+    private static int ch;
+    private static long br;
+    private static int p;
+    private final Player var_com_velocitypowered_api_proxy_Player_a;
+    private static int cc;
+    private static int m;
+    private static int ae;
+    private static int ai;
+    private static int al;
+    private static long bm;
+    private static int av;
+    private static long var_long_c;
+    private static long l;
+    private static int cd;
+    private static long bv;
+    private static long bz;
+    private static long at;
+    private static long y;
+    private static long o;
+    private static int bs;
 
-   @Override
-   public void l(String var1) {
-      if (var1.length() >= z && var1.charAt(aa) == ab) {
-         var1 = var1.substring(ac);
-      }
+    @Override
+    public void l(String string) {
+        if (string.length() >= z && string.charAt(aa) == ab) {
+            string = string.substring(ac);
+        }
+        this.var_com_velocitypowered_api_proxy_ProxyServer_c.getCommandManager().executeImmediatelyAsync((CommandSource)this.var_com_velocitypowered_api_proxy_Player_a, string);
+    }
 
-      this.c.getCommandManager().executeImmediatelyAsync(this.a, var1);
-   }
+    @Override
+    public CompletableFuture<Void> a(String string) {
+        CompletableFuture<Void> completableFuture = new CompletableFuture<Void>();
+        this.var_com_velocitypowered_api_proxy_Player_a.disconnect((Component)NLoginCore_529.a(string));
+        completableFuture.complete(null);
+        return completableFuture;
+    }
 
-   @Override
-   public CompletableFuture<Void> a(String var1) {
-      CompletableFuture var2 = new CompletableFuture();
-      this.a.disconnect(NLoginCore_529.a(var1));
-      var2.complete(null);
-      return var2;
-   }
+    @Generated
+    private NLoginCore_420(NLoginCore_455 NLoginCore_4552, Player player, ProxyServer proxyServer, boolean bl) {
+        this.var_com_nickuc_login_NLoginCore_455_b = NLoginCore_4552;
+        this.var_com_velocitypowered_api_proxy_Player_a = player;
+        this.var_com_velocitypowered_api_proxy_ProxyServer_c = proxyServer;
+        this.var_boolean_aq = bl;
+    }
 
-   @Generated
-   private NLoginCore_420(NLoginCore_455 var1, Player var2, ProxyServer var3, boolean var4) {
-      this.b = var1;
-      this.a = var2;
-      this.c = var3;
-      this.aq = var4;
-   }
+    @Override
+    public UUID java_util_UUID_a() {
+        return this.var_com_velocitypowered_api_proxy_Player_a.getUniqueId();
+    }
 
-   @Override
-   public UUID a() {
-      return this.a.getUniqueId();
-   }
+    private static String c(String s, int n, long l) {
+        return a(n, l);
+    }
 
-   private static Object c(Lookup var0, String var1, MethodType var2) {
-      try {
-         return new MutableCallSite(
-            var0.findStatic(
-                  NLoginCore_420.class,
-                  new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(NLoginCore_433.C("ӫԍԏӯԓԲԪՀԬӻԹԯԽԷԀԥՇՆԾՄԾԓ", (byte)90, 67), NLoginCore_420.class.getClassLoader())
-               )
-               .asType(var2)
-         );
-      } catch (Exception var4) {
-         throw new RuntimeException(
-            NLoginCore_027.C("ԦԳԲӵԵԱԬԵՀԯӼԺԾԷԺՀԂ\u0892\u0894࢜࢟ࢊ\u086dࢎ࢙ࢂ࢝ࢣ\u0893Ԛ", (byte)90, 67) + var1 + NLoginCore_127.B("ŭ", (byte)90, 66) + var2.toString(), var4
-         );
-      }
-   }
+    private static Object c(MethodHandles.Lookup lookup, String string, MethodType methodType) {
+        try {
+            return new MutableCallSite(lookup.findStatic(NLoginCore_420.class, new String(new byte[]{97}, StandardCharsets.UTF_8), MethodType.fromMethodDescriptorString(NLoginCore_223.C("ӫԍԏӯԓԲԪՀԬӻԹԯԽԷԀԥՇՆԾՄԾԓ", (byte)90, 67), NLoginCore_420.class.getClassLoader())).asType(methodType));
+        }
+        catch (Exception exception) {
+            throw new RuntimeException(NLoginCore_027.C("ԦԳԲӵԵԱԬԵՀԯӼԺԾԷԺՀԂ࢒࢔࢜࢟ࢊ࡭ࢎ࢙ࢂ࢝ࢣ࢓Ԛ", (byte)90, 67) + string + NLoginCore_091.B("ŭ", (byte)90, 66) + methodType.toString(), exception);
+        }
+    }
 
-   @Override
-   public boolean i(String var1) {
-      return this.a.hasPermission(var1);
-   }
+    @Override
+    public boolean i(String string) {
+        return this.var_com_velocitypowered_api_proxy_Player_a.hasPermission(string);
+    }
 
-   private static String a(int var0, long var1) {
-      var1 ^= 76L;
-      var1 ^= -5169414587375368864L;
-      if (ZKM_STR_A[var0] == null) {
-         Cipher var3;
-         SecretKeyFactory var4;
-         try {
-            var3 = Cipher.getInstance(
-               new String(
-                  new byte[]{
-                     (byte)(33 + 35),
-                     (byte)(24 + 45),
-                     (byte)(42 + 41),
-                     (byte)(2 + 45),
-                     67,
-                     (byte)(39 + 27),
-                     (byte)(19 + 48),
-                     (byte)(44 + 3),
-                     (byte)(33 + 47),
-                     (byte)(14 + 61),
-                     (byte)(30 + 37),
-                     (byte)(28 + 55),
-                     (byte)(51 + 2),
-                     (byte)(15 + 65),
-                     97,
-                     (byte)(2 + 98),
-                     (byte)(30 + 70),
-                     (byte)(45 + 60),
-                     (byte)(72 + 38),
-                     (byte)(81 + 22)
-                  },
-                  StandardCharsets.UTF_8
-               )
-            );
-            var4 = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(27 + 42), (byte)(8 + 75)}, StandardCharsets.UTF_8));
-         } catch (Exception var7) {
-            throw new RuntimeException(NLoginCore_232.F("ԩԶԵӸԸԴԯԸՃԲӿԽՁԺԽՃԅ\u0895\u0897࢟ࢢࢍࡰ\u0891࢜ࢅࢠࢦ\u0896", (byte)10, 70));
-         }
+    private static String a(int n, long l) {
+        l ^= 0x4CL;
+        l ^= 0xB8428CD24EC4C560L;
+        if (var_java_lang_String_arr_a[n] == null) {
+            SecretKeyFactory secretKeyFactory;
+            Cipher cipher;
+            try {
+                cipher = Cipher.getInstance(new String(new byte[]{(byte)(33 + 35), (byte)(24 + 45), (byte)(42 + 41), (byte)(2 + 45), 67, (byte)(39 + 27), (byte)(19 + 48), (byte)(44 + 3), (byte)(33 + 47), (byte)(14 + 61), (byte)(30 + 37), (byte)(28 + 55), (byte)(51 + 2), (byte)(15 + 65), 97, (byte)(2 + 98), (byte)(30 + 70), (byte)(45 + 60), (byte)(72 + 38), (byte)(81 + 22)}, StandardCharsets.UTF_8));
+                secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(27 + 42), (byte)(8 + 75)}, StandardCharsets.UTF_8));
+            }
+            catch (Exception exception) {
+                throw new RuntimeException(NLoginCore_559.F("ԩԶԵӸԸԴԯԸՃԲӿԽՁԺԽՃԅ࢕ࢗ࢟ࢢࢍࡰ࢑࢜ࢅࢠࢦ࢖", (byte)10, 70));
+            }
+            byte[] byArray = new byte[8];
+            byArray[0] = (byte)(l >>> 56);
+            for (int i = 1; i < 8; ++i) {
+                byArray[i] = (byte)(l << i * 8 >>> 56);
+            }
+            cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+            NLoginCore_420.var_java_lang_String_arr_a[n] = new String(cipher.doFinal(Base64.getDecoder().decode(var_java_lang_String_arr_b[n])), StandardCharsets.UTF_8);
+        }
+        return var_java_lang_String_arr_a[n];
+    }
 
-         byte[] var5 = new byte[8];
-         var5[0] = (byte)(var1 >>> 56);
+    private static NLoginCore_420 a(NLoginCore_455 NLoginCore_4552, ProxyServer proxyServer, Player player) {
+        NLoginCore_420 NLoginCore_4202 = (NLoginCore_420)var_long_j.get(player);
+        if (NLoginCore_4202 != null) {
+            return NLoginCore_4202;
+        }
+        if (NLoginCore_370.aj()) {
+            StackTraceElement[] stackTraceElementArray = new Exception().getStackTrace();
+            Object object = stackTraceElementArray.length > 0 ? stackTraceElementArray[Math.min(ba, stackTraceElementArray.length - bb)].toString() : NLoginCore_420.c("㺀", (int)bc, (long)(bd ^ be));
+            Object[] objectArray = new Object[bi];
+            objectArray[NLoginCore_420.bj] = player.getUsername();
+            objectArray[NLoginCore_420.bk] = object;
+            NLoginCore_370.c((String)NLoginCore_420.c("㺃", (int)(bf & bg), (long)bh), objectArray);
+        }
+        return NLoginCore_420.b(NLoginCore_4552, proxyServer, player);
+    }
 
-         for (int var6 = 1; var6 < 8; var6++) {
-            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
-         }
+    @Override
+    public Optional<String> a() {
+        return Optional.of(this.var_com_velocitypowered_api_proxy_Player_a.getPlayerSettings().getLocale().toLanguageTag());
+    }
 
-         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
-      }
+    static {
+        var_int_a = (0 >>> 151 | 0 << ~151 + 1) & 0xFFFFFFFF;
+        var_int_b = Integer.reverse(-1);
+        d = Long.reverse(7582871019383140978L);
+        e = Integer.reverse(Integer.MIN_VALUE);
+        var_int_f = Integer.reverse(Integer.MIN_VALUE);
+        g = Long.reverse(7582871019383140978L);
+        h = 2 >>> 128 | 2 << -128;
+        i = Long.reverse(7582871019383140978L);
+        var_long_j = Long.reverse(0x4C00000000000000L);
+        k = Long.reverse(0x4C00000000000000L);
+        l = Long.reverse(0x4C00000000000000L);
+        m = (24576 >>> 109 | 24576 << ~109 + 1) & 0xFFFFFFFF;
+        n = Integer.reverse(-1);
+        o = Long.reverse(7582871019383140978L);
+        p = (1024 >>> 137 | 1024 << ~137 + 1) & 0xFFFFFFFF;
+        q = 0 >>> 184 | 0 << ~184 + 1;
+        r = (4 >>> 2 | 4 << -2) & 0xFFFFFFFF;
+        s = 4096 >>> 106 | 4096 << -106;
+        t = Long.reverse(7582871019383140978L);
+        u = Integer.reverse(-1610612736);
+        v = Long.reverse(7582871019383140978L);
+        w = Integer.reverse(0x60000000);
+        x = Integer.reverse(-1);
+        y = Long.reverse(7582871019383140978L);
+        z = Integer.reverse(0x40000000);
+        aa = Integer.reverse(0);
+        ab = Integer.reverse(-201326592);
+        ac = (8192 >>> 173 | 8192 << -173) & 0xFFFFFFFF;
+        ad = Integer.reverse(Integer.MIN_VALUE);
+        ae = (0 >>> 114 | 0 << ~114 + 1) & 0xFFFFFFFF;
+        af = 0x200000 >>> 245 | 0x200000 << -245;
+        ag = Integer.reverse(0);
+        ah = 0x2000000 >>> 24 | 0x2000000 << ~24 + 1;
+        ai = 0 >>> 170 | 0 << -170;
+        aj = (65536 >>> 112 | 65536 << -112) & 0xFFFFFFFF;
+        ak = Integer.reverse(-536870912);
+        al = Integer.reverse(-1);
+        am = Long.reverse(7582871019383140978L);
+        an = Integer.reverse(0x10000000);
+        ao = Long.reverse(6574064702852149874L);
+        ap = Long.reverse(0x3200000000000000L);
+        var_int_aq = (1073741855 >>> 254 | 1073741855 << ~254 + 1) & 0xFFFFFFFF;
+        ar = Integer.reverse(-1879048192);
+        as = Long.reverse(6574064702852149874L);
+        at = Long.reverse(0x3200000000000000L);
+        au = Integer.reverse(0x50000000);
+        av = (-1 >>> 181 | -1 << -181) & 0xFFFFFFFF;
+        aw = Long.reverse(7582871019383140978L);
+        ax = (2816 >>> 40 | 2816 << ~40 + 1) & 0xFFFFFFFF;
+        ay = -1 >>> 93 | -1 << -93;
+        az = Long.reverse(7582871019383140978L);
+        ba = Integer.reverse(-1073741824);
+        bb = Integer.reverse(Integer.MIN_VALUE);
+        bc = (24 >>> 161 | 24 << -161) & 0xFFFFFFFF;
+        bd = Long.reverse(6574064702852149874L);
+        be = Long.reverse(0x3200000000000000L);
+        bf = Integer.reverse(-1342177280);
+        bg = -1 >>> 35 | -1 << ~35 + 1;
+        bh = Long.reverse(7582871019383140978L);
+        bi = Integer.reverse(0x40000000);
+        bj = (0 >>> 111 | 0 << -111) & 0xFFFFFFFF;
+        bk = (4 >>> 162 | 4 << ~162 + 1) & 0xFFFFFFFF;
+        bl = (0x1C000000 >>> 57 | 0x1C000000 << -57) & 0xFFFFFFFF;
+        bm = Long.reverse(6574064702852149874L);
+        bn = Long.reverse(0x3200000000000000L);
+        bo = Integer.reverse(-1);
+        bp = (0x1E000000 >>> 89 | 0x1E000000 << ~89 + 1) & 0xFFFFFFFF;
+        bq = Long.reverse(6574064702852149874L);
+        br = Long.reverse(0x3200000000000000L);
+        bs = 0 >>> 210 | 0 << -210;
+        bt = Integer.reverse(0x8000000);
+        bu = -1 >>> 7 | -1 << -7;
+        bv = Long.reverse(7582871019383140978L);
+        bw = 256 >>> 72 | 256 << -72;
+        bx = Integer.reverse(-2013265920);
+        by = Long.reverse(6574064702852149874L);
+        bz = Long.reverse(0x3200000000000000L);
+        ca = Integer.reverse(0x40000000);
+        cb = 0x4000000 >>> 26 | 0x4000000 << -26;
+        cc = (0 >>> 25 | 0 << ~25 + 1) & 0xFFFFFFFF;
+        cd = Integer.reverse(0);
+        ce = (2304 >>> 135 | 2304 << -135) & 0xFFFFFFFF;
+        cf = Integer.reverse(-1);
+        cg = Long.reverse(7582871019383140978L);
+        ch = Integer.reverse(-939524096);
+        ci = (0x4C000000 >>> 218 | 0x4C000000 << ~218 + 1) & 0xFFFFFFFF;
+        var_java_lang_String_arr_a = new String[ch];
+        var_java_lang_String_arr_b = new String[ci];
+        NLoginCore_420.void_b();
+        var_long_j = (long)new ConcurrentHashMap();
+    }
 
-      return ZKM_STR_A[var0];
-   }
+    @Override
+    public void a(String string, String string2, int n, int n2, int n3) {
+        this.var_com_velocitypowered_api_proxy_Player_a.showTitle(Title.title((Component)NLoginCore_529.a(string), (Component)NLoginCore_529.a(string2), (Title.Times)Title.Times.times((Duration)Duration.ofMillis((long)n * var_long_j), (Duration)Duration.ofMillis((long)n2 * k), (Duration)Duration.ofMillis((long)n3 * l))));
+    }
 
-   private static NLoginCore_420 a(NLoginCore_455 var0, ProxyServer var1, Player var2) {
-      NLoginCore_420 var3 = j.get(var2);
-      if (var3 != null) {
-         return var3;
-      } else {
-         if (NLoginCore_370.aj()) {
-            StackTraceElement[] var4 = new Exception().getStackTrace();
-            String var5 = var4.length > 0 ? var4[Math.min(ba, var4.length - bb)].toString() : a(bc, bd ^ be);
-            String var10000 = a(bf & bg, bh);
-            Object[] var10001 = new Object[bi];
-            var10001[bj] = var2.getUsername();
-            var10001[bk] = var5;
-            NLoginCore_370.c(var10000, var10001);
-         }
+    public int hashCode() {
+        Object[] objectArray = new Object[ah];
+        objectArray[NLoginCore_420.ai] = this.var_java_util_UUID_f;
+        objectArray[NLoginCore_420.aj] = this.var_com_velocitypowered_api_proxy_Player_a;
+        return Objects.hash(objectArray);
+    }
 
-         return b(var0, var1, var2);
-      }
-   }
+    @Override
+    public boolean R() {
+        return this.var_com_velocitypowered_api_proxy_Player_a.isActive();
+    }
 
-   @Override
-   public Optional<String> a() {
-      return Optional.of(this.a.getPlayerSettings().getLocale().toLanguageTag());
-   }
+    @Override
+    public void n(String string) {
+        throw new UnsupportedOperationException((String)NLoginCore_420.c("㺀", (int)(var_int_a & var_int_b), (long)d));
+    }
 
-   static {
-      b();
-   }
+    @Override
+    @Nullable
+    public InetSocketAddress java_net_InetSocketAddress_a() {
+        return this.var_com_velocitypowered_api_proxy_Player_a.getRemoteAddress();
+    }
 
-   @Override
-   public void a(String var1, String var2, int var3, int var4, int var5) {
-      this.a
-         .showTitle(
-            Title.title(
-               NLoginCore_529.a(var1), NLoginCore_529.a(var2), Times.times(Duration.ofMillis(var3 * j), Duration.ofMillis(var4 * k), Duration.ofMillis(var5 * l))
-            )
-         );
-   }
+    @Override
+    @Generated
+    public boolean S() {
+        return this.var_boolean_aq;
+    }
 
-   @Override
-   public int hashCode() {
-      Object[] var10000 = new Object[ah];
-      var10000[ai] = this.f;
-      var10000[aj] = this.a;
-      return Objects.hash(var10000);
-   }
+    private static void void_b() {
+        int n;
+        var_long_c = 5642438536056790234L;
+        long l = var_long_c ^ 0xB8428CD24EC4C560L;
+        Cipher cipher = Cipher.getInstance(new String(new byte[]{(byte)(67 + 1), (byte)(49 + 20), (byte)(55 + 28), (byte)(45 + 2), 67, (byte)(65 + 1), (byte)(59 + 8), (byte)(23 + 24), (byte)(73 + 7), 75, (byte)(12 + 55), (byte)(54 + 29), (byte)(16 + 37), (byte)(34 + 46), (byte)(86 + 11), (byte)(34 + 66), (byte)(83 + 17), (byte)(93 + 12), (byte)(63 + 47), (byte)(15 + 88)}, StandardCharsets.UTF_8));
+        SecretKeyFactory secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(46 + 23), (byte)(53 + 30)}, StandardCharsets.UTF_8));
+        byte[] byArray = new byte[8];
+        byArray[0] = (byte)(l >>> 56);
+        for (n = 1; n < 8; ++n) {
+            byArray[n] = (byte)(l << n * 8 >>> 56);
+        }
+        cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+        n = 1;
+        block7: for (int i = 0; i < n; ++i) {
+            switch (i) {
+                case 0: {
+                    NLoginCore_420.var_java_lang_String_arr_b[0] = NLoginCore_027.A("ûĎðċõýûüġÝðĎñğĤóáęĈġþĭôõ", (byte)17, 65);
+                    NLoginCore_420.var_java_lang_String_arr_b[1] = NLoginCore_451.B("òíÓðóğĒñăÿíĥĐħĢğäġĈĖďďĪģèþđĔĔÿõôįõĤĕčĩŁěįúĺĉ", (byte)17, 66);
+                    NLoginCore_420.var_java_lang_String_arr_b[2] = NLoginCore_223.F("ԃԄԞԪԉԾԥԿԬՐՊԕ", (byte)17, 70);
+                    NLoginCore_420.var_java_lang_String_arr_b[3] = NLoginCore_559.E("ӽԻԧԴԲՉՆԟԤ԰Ԭԕ", (byte)17, 69);
+                    NLoginCore_420.var_java_lang_String_arr_b[4] = NLoginCore_384.C("ИгѝбяЮѓѠЩпзфцѭѦхйШхўѐгѤъвљѺѱжемъћыѶѾѸѤѣ҄҅Ѿѫѐ", (byte)17, 67);
+                    NLoginCore_420.var_java_lang_String_arr_b[5] = NLoginCore_387.D("ОПйхФљрњчѫѥа", (byte)17, 68);
+                    NLoginCore_420.var_java_lang_String_arr_b[6] = NLoginCore_446.E("ԞԙӿԜԟՋԾԝԯԫԚԃԺԍԆԬԩԲԡՌԔԳԔՍ԰ԘՔԩ՛ՓՁԭ", (byte)17, 69);
+                    NLoginCore_420.var_java_lang_String_arr_b[7] = NLoginCore_575.C("ћѢжхгѧкКФШѓЬПЪзооѯщбѩхѳѫьфшщьѭѷѓѷѐљэѵѴчјѿѻѹѐ", (byte)17, 67);
+                    NLoginCore_420.var_java_lang_String_arr_b[8] = NLoginCore_427.D("ѕѡЫѣЗолџѤмзкќШѬиЬѢчѮпѤлм", (byte)17, 68);
+                    NLoginCore_420.var_java_lang_String_arr_b[9] = NLoginCore_453.F("ԞԙӿԜԟՋԾԝԯԫԚԜՓՍՁԨԡՔԮԓԕԵՅԴԷԞ՗Ր՟ԶԢՕԵՔԽԽՃՈՂ՛ՆԬ՚Ե", (byte)17, 70);
+                    NLoginCore_420.var_java_lang_String_arr_b[10] = NLoginCore_223.C("ОПйхФљрњчѫѥа", (byte)17, 67);
+                    NLoginCore_420.var_java_lang_String_arr_b[11] = NLoginCore_223.C("ўефѝбчСѩСУѝа", (byte)17, 67);
+                    NLoginCore_420.var_java_lang_String_arr_b[12] = NLoginCore_575.C("иНїСмчУшбфуа", (byte)17, 67);
+                    NLoginCore_420.var_java_lang_String_arr_b[13] = NLoginCore_092.C("џѢѤєкѦхиПѫцТоЦЦТфоѲђѬѠяѮѺљхѯѧкљѾѫјѝѸо҅ѯоѩѡјќѻѪѸшҐ҈ьѿҒ҄ѱғғ҈ѪґҐҊѼҕѓѲћўѺ҄Қҥ҂ѵѿѣѼѥѻѬҏҥҟҰѭҞѩѲѶѷқҔѯѷҖҴ", (byte)17, 67);
+                    NLoginCore_420.var_java_lang_String_arr_b[14] = NLoginCore_324.D("ѡлѕгћМўношљѭмћйѝѮќЮђѪолм", (byte)17, 68);
+                    NLoginCore_420.var_java_lang_String_arr_b[15] = NLoginCore_223.F("ӿՈԽՀԞԫՉԩԄՇԸԠԽԡԲԯԷՓՌՐՕԳԠԡ", (byte)17, 70);
+                    NLoginCore_420.var_java_lang_String_arr_b[16] = NLoginCore_223.A("ė÷üðæÕğēöÞğĖćÙþòäúČĈććôõ", (byte)17, 65);
+                    NLoginCore_420.var_java_lang_String_arr_b[17] = NLoginCore_559.D("ѐТуѕбУЙѐтСЪШыщЬсхщћыоѴлм", (byte)17, 68);
+                    NLoginCore_420.var_java_lang_String_arr_b[18] = NLoginCore_027.C("ѝтїЬвПѥѝжЪчѕитцѥѢѠрЫѡѤлм", (byte)17, 67);
+                    continue block7;
+                }
+                case 1: {
+                    NLoginCore_420.var_java_lang_String_arr_b[0] = NLoginCore_027.B("ûĎðċõýûüġÝñöđġßēĝûĥĈĥĊçĭďħĩİĤÿİĦ", (byte)17, 66);
+                    NLoginCore_420.var_java_lang_String_arr_b[1] = NLoginCore_453.D("йдКзкѦљиъцдѬїѮѩѦЫѨяѝііѱѪЯхјћћцмлћю҃рѲсҁј҈ѷ҅ѐ", (byte)17, 68);
+                    NLoginCore_420.var_java_lang_String_arr_b[2] = NLoginCore_559.F("ԆԂԹԆԜԖԨԚԶԣԘԕ", (byte)17, 70);
+                    NLoginCore_420.var_java_lang_String_arr_b[3] = NLoginCore_324.D("ИиЬМјеУнърТа", (byte)17, 68);
+                    NLoginCore_420.var_java_lang_String_arr_b[4] = NLoginCore_575.B("ÑìĖêĈçČęâøðýÿĦğþòáþėĉìĝăëĒĳĪïîõăĶĻĺïĿĊĜþċùĞįĞĦĆħĒŉĨġčōĔĕ", (byte)17, 66);
+                    NLoginCore_420.var_java_lang_String_arr_b[5] = NLoginCore_446.E("ӸԁԽԇՇԴԩՂԹԟԏԕ", (byte)17, 69);
+                    NLoginCore_420.var_java_lang_String_arr_b[6] = NLoginCore_324.A("òíÓðóğĒñăÿî×ĎáÚĀýĆõĠèęěĜēċæĵĶĀė÷ĐčĳýĮĎīČĢĲĐĉ", (byte)17, 65);
+                    NLoginCore_420.var_java_lang_String_arr_b[7] = NLoginCore_027.D("ћѢжхгѧкКФШѓЬПЪзооѯщбѩхѳѫьфшщьѭѷѓпђєуѳѺіѨўѩ҉ѐ", (byte)17, 68);
+                    NLoginCore_420.var_java_lang_String_arr_b[8] = NLoginCore_427.F("ԺՆԐՈӼԣԠՄՉԡԜՒԐՑԼՈԏ԰ԲՐ՚ՙԠԡ", (byte)17, 70);
+                    NLoginCore_420.var_java_lang_String_arr_b[9] = NLoginCore_559.E("ԞԙӿԜԟՋԾԝԯԫԚԜՓՍՁԨԡՔԮԓԕԵՅԴԷԞ՗Ր՟ԶԢՕԶԥԴՠբ՟Ո՜՟ՙզԵ", (byte)17, 69);
+                    NLoginCore_420.var_java_lang_String_arr_b[10] = NLoginCore_387.A("ï×æêďÿÞðôßĖé", (byte)17, 65);
+                    NLoginCore_420.var_java_lang_String_arr_b[11] = NLoginCore_446.B("Öě×ėíÚøÓêâðé", (byte)17, 66);
+                    NLoginCore_420.var_java_lang_String_arr_b[12] = NLoginCore_092.C("вТрМђѥяаСъјпѪзѝњѫбфџѲолм", (byte)17, 67);
+                    NLoginCore_420.var_java_lang_String_arr_b[13] = NLoginCore_138.D("џѢѤєкѦхиПѫцТоЦЦТфоѲђѬѠяѮѺљхѯѧкљѾѫјѝѸо҅ѯоѩѡјќѻѪѸшҐ҈ьѿҒ҄ѱғғ҈ѪґҐҊѼҕѓѲћўѺ҄Қҥ҂ѵѿѣѼѥѻѬҏҥҟҰѭҢ҉ҴҙѴҴѷҨҐҠҭ", (byte)17, 68);
+                    NLoginCore_420.var_java_lang_String_arr_b[14] = NLoginCore_559.B("ĚôĎìĔÕėö÷āĔðĤüþĢĕĕûĜćĪĂĬăðĐāĄčĒñ", (byte)17, 66);
+                    NLoginCore_420.var_java_lang_String_arr_b[15] = NLoginCore_027.B("ÓĜđĔòÿĝýØěČåøôèöĝõêģĜěĩéĭħīĎēđĮĤ", (byte)17, 66);
+                    NLoginCore_420.var_java_lang_String_arr_b[16] = NLoginCore_223.E("ՃԣԨԜԒԁՋԿԢԊՌԼՓԌՂԩՎԶԎՊԕՙԠԡ", (byte)17, 69);
+                    NLoginCore_420.var_java_lang_String_arr_b[17] = NLoginCore_427.A("ĉÛüĎêÜÒĉûÚãĐę÷ÿēĞĕ÷ĞìĤûĪéěĠĵèĔõĪ", (byte)17, 65);
+                    NLoginCore_420.var_java_lang_String_arr_b[18] = NLoginCore_201.B("ĖûĐåëØĞĖïãāïüåóø÷ĊĞħċĝôõ", (byte)17, 66);
+                    continue block7;
+                }
+                case 2: {
+                    NLoginCore_420.var_java_lang_String_arr_b[0] = NLoginCore_387.D("ѠљЮёЯжХђчѓѪзўќтцсшгЮсѤлм", (byte)17, 68);
+                    continue block7;
+                }
+                case 4: {
+                    NLoginCore_420.var_java_lang_String_arr_b[0] = NLoginCore_092.B("æĊąñùęØ×ûĤġýģāûááÿõęæ÷ôõ", (byte)17, 66);
+                }
+            }
+        }
+    }
 
-   @Override
-   public boolean R() {
-      return this.a.isActive();
-   }
+    public String toString() {
+        return (String)NLoginCore_420.c("㺀", (int)(ak & al), (long)am) + this.var_com_velocitypowered_api_proxy_Player_a + (String)NLoginCore_420.c("㺃", (int)an, (long)(ao ^ ap)) + this.var_java_util_UUID_f + (char)var_int_aq;
+    }
 
-   @Override
-   public void n(String var1) {
-      throw new UnsupportedOperationException(a(a & b, d));
-   }
+    @Override
+    public String u() {
+        return this.var_com_velocitypowered_api_proxy_Player_a.getUsername();
+    }
 
-   @Nullable
-   @Override
-   public InetSocketAddress a() {
-      return this.a.getRemoteAddress();
-   }
+    public boolean equals(Object object) {
+        if (object == null || this.getClass() != object.getClass()) {
+            return ae != 0;
+        }
+        NLoginCore_420 NLoginCore_4202 = (NLoginCore_420)object;
+        return (Objects.equals(this.var_java_util_UUID_f, NLoginCore_4202.var_java_util_UUID_f) && Objects.equals(this.var_com_velocitypowered_api_proxy_Player_a, NLoginCore_4202.var_com_velocitypowered_api_proxy_Player_a) ? af : ag) != 0;
+    }
 
-   @Generated
-   @Override
-   public boolean S() {
-      return this.aq;
-   }
+    @Override
+    public void d(Object object) {
+        if (object instanceof String) {
+            this.var_com_velocitypowered_api_proxy_Player_a.sendMessage((Component)NLoginCore_529.b((String)object, e != 0));
+        } else if (object instanceof Component) {
+            this.var_com_velocitypowered_api_proxy_Player_a.sendMessage((Component)object);
+        } else {
+            throw new IllegalArgumentException((String)NLoginCore_420.c("㺀", (int)var_int_f, (long)g) + object + (String)NLoginCore_420.c("㺃", (int)h, (long)i) + object.getClass().getCanonicalName());
+        }
+    }
 
-   private static void b() {
-      c = 5642438536056790234L;
-      long var0 = c ^ -5169414587375368864L;
-      Cipher var2 = Cipher.getInstance(
-         new String(
-            new byte[]{
-               (byte)(67 + 1),
-               (byte)(49 + 20),
-               (byte)(55 + 28),
-               (byte)(45 + 2),
-               67,
-               (byte)(65 + 1),
-               (byte)(59 + 8),
-               (byte)(23 + 24),
-               (byte)(73 + 7),
-               75,
-               (byte)(12 + 55),
-               (byte)(54 + 29),
-               (byte)(16 + 37),
-               (byte)(34 + 46),
-               (byte)(86 + 11),
-               (byte)(34 + 66),
-               (byte)(83 + 17),
-               (byte)(93 + 12),
-               (byte)(63 + 47),
-               (byte)(15 + 88)
-            },
-            StandardCharsets.UTF_8
-         )
-      );
-      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(46 + 23), (byte)(53 + 30)}, StandardCharsets.UTF_8));
-      byte[] var4 = new byte[8];
-      var4[0] = (byte)(var0 >>> 56);
+    @Override
+    public void p(String string) {
+        this.var_com_velocitypowered_api_proxy_Player_a.spoofChatInput(string);
+    }
 
-      for (int var5 = 1; var5 < 8; var5++) {
-         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
-      }
+    @Override
+    public void a(NLoginCore_116<?> NLoginInterface_0112, NLoginCore_337 NLoginCore_3372, Object object, byte[] byArray) {
+        ChannelIdentifier channelIdentifier;
+        if (object instanceof String) {
+            String string = (String)object;
+            String[] stringArray = string.split((String)NLoginCore_420.c("㺀", (int)(m & n), (long)o));
+            channelIdentifier = stringArray.length == p ? MinecraftChannelIdentifier.create((String)stringArray[q], (String)stringArray[r]) : new LegacyChannelIdentifier(string);
+        } else if (object instanceof ChannelIdentifier) {
+            channelIdentifier = (ChannelIdentifier)object;
+        } else {
+            throw new IllegalArgumentException((String)NLoginCore_420.c("㺃", (int)s, (long)t) + object + (String)NLoginCore_420.c("㺆", (int)u, (long)v) + object.getClass().getCanonicalName());
+        }
+        switch (NLoginCore_465.t[NLoginCore_3372.ordinal()]) {
+            case 1: {
+                this.var_com_velocitypowered_api_proxy_Player_a.sendPluginMessage(channelIdentifier, byArray);
+                break;
+            }
+            case 2: {
+                this.var_com_velocitypowered_api_proxy_Player_a.getCurrentServer().ifPresent(serverConnection -> {
+                    if (!serverConnection.getServer().getPlayersConnected().isEmpty()) {
+                        serverConnection.sendPluginMessage(channelIdentifier, byArray);
+                    }
+                });
+                break;
+            }
+            default: {
+                throw new IllegalArgumentException((String)NLoginCore_420.c("㺉", (int)(w & x), (long)y) + (Object)((Object)NLoginCore_3372));
+            }
+        }
+    }
 
-      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
-      byte var7 = 1;
+    public static NLoginCore_420 a(NLoginCore_455 NLoginCore_4552, ProxyServer proxyServer, Object object) {
+        if (object instanceof String) {
+            String string = ((String)object).toLowerCase(Locale.ENGLISH);
+            return proxyServer.getPlayer(string).map(player -> NLoginCore_420.a(NLoginCore_4552, proxyServer, player)).orElse(null);
+        }
+        if (object instanceof Player) {
+            return NLoginCore_420.a(NLoginCore_4552, proxyServer, (Player)object);
+        }
+        throw new IllegalArgumentException((String)NLoginCore_420.c("㺀", (int)ar, (long)(as ^ at)) + object + (String)NLoginCore_420.c("㺃", (int)(au & av), (long)aw) + (String)(object != null ? object.getClass().getCanonicalName() : NLoginCore_420.c("㺆", (int)(ax & ay), (long)az)));
+    }
 
-      for (int var6 = 0; var6 < var7; var6++) {
-         switch (var6) {
-            case 0:
-               ZKM_STR_B[0] = NLoginCore_427.A("ûĎðċõýûüġÝðĎñğĤóáęĈġþĭôõ", (byte)17, 65);
-               ZKM_STR_B[1] = NLoginCore_004.B("òíÓðóğĒñăÿíĥĐħĢğäġĈĖďďĪģèþđĔĔÿõôįõĤĕčĩŁěįúĺĉ", (byte)17, 66);
-               ZKM_STR_B[2] = NLoginCore_223.F("ԃԄԞԪԉԾԥԿԬՐՊԕ", (byte)17, 70);
-               ZKM_STR_B[3] = NLoginCore_530.E("ӽԻԧԴԲՉՆԟԤ\u0530Ԭԕ", (byte)17, 69);
-               ZKM_STR_B[4] = NLoginCore_471.C("ИгѝбяЮѓѠЩпзфцѭѦхйШхўѐгѤъвљѺѱжемъћыѶѾѸѤѣ҄҅Ѿѫѐ", (byte)17, 67);
-               ZKM_STR_B[5] = NLoginCore_387.D("ОПйхФљрњчѫѥа", (byte)17, 68);
-               ZKM_STR_B[6] = NLoginCore_446.E("ԞԙӿԜԟՋԾԝԯԫԚԃԺԍԆԬԩԲԡՌԔԳԔՍ\u0530ԘՔԩ՛ՓՁԭ", (byte)17, 69);
-               ZKM_STR_B[7] = NLoginCore_575.C("ћѢжхгѧкКФШѓЬПЪзооѯщбѩхѳѫьфшщьѭѷѓѷѐљэѵѴчјѿѻѹѐ", (byte)17, 67);
-               ZKM_STR_B[8] = NLoginCore_076.D("ѕѡЫѣЗолџѤмзкќШѬиЬѢчѮпѤлм", (byte)17, 68);
-               ZKM_STR_B[9] = NLoginCore_453.F("ԞԙӿԜԟՋԾԝԯԫԚԜՓՍՁԨԡՔԮԓԕԵՅԴԷԞ\u0557Ր՟ԶԢՕԵՔԽԽՃՈՂ՛ՆԬ՚Ե", (byte)17, 70);
-               ZKM_STR_B[10] = NLoginCore_223.C("ОПйхФљрњчѫѥа", (byte)17, 67);
-               ZKM_STR_B[11] = NLoginCore_223.C("ўефѝбчСѩСУѝа", (byte)17, 67);
-               ZKM_STR_B[12] = NLoginCore_575.C("иНїСмчУшбфуа", (byte)17, 67);
-               ZKM_STR_B[13] = NLoginCore_092.C("џѢѤєкѦхиПѫцТоЦЦТфоѲђѬѠяѮѺљхѯѧкљѾѫјѝѸо҅ѯоѩѡјќѻѪѸшҐ҈ьѿҒ҄ѱғғ҈ѪґҐҊѼҕѓѲћўѺ҄Қҥ҂ѵѿѣѼѥѻѬҏҥҟҰѭҞѩѲѶѷқҔѯѷҖҴ", (byte)17, 67);
-               ZKM_STR_B[14] = NLoginCore_324.D("ѡлѕгћМўношљѭмћйѝѮќЮђѪолм", (byte)17, 68);
-               ZKM_STR_B[15] = NLoginCore_433.F("ӿՈԽՀԞԫՉԩԄՇԸԠԽԡԲԯԷՓՌՐՕԳԠԡ", (byte)17, 70);
-               ZKM_STR_B[16] = NLoginCore_397.A("ė÷üðæÕğēöÞğĖćÙþòäúČĈććôõ", (byte)17, 65);
-               ZKM_STR_B[17] = NLoginCore_530.D("ѐТуѕбУЙѐтСЪШыщЬсхщћыоѴлм", (byte)17, 68);
-               ZKM_STR_B[18] = NLoginCore_241.C("ѝтїЬвПѥѝжЪчѕитцѥѢѠрЫѡѤлм", (byte)17, 67);
-               break;
-            case 1:
-               ZKM_STR_B[0] = NLoginCore_241.B("ûĎðċõýûüġÝñöđġßēĝûĥĈĥĊçĭďħĩİĤÿİĦ", (byte)17, 66);
-               ZKM_STR_B[1] = NLoginCore_453.D("йдКзкѦљиъцдѬїѮѩѦЫѨяѝііѱѪЯхјћћцмлћю҃рѲсҁј҈ѷ҅ѐ", (byte)17, 68);
-               ZKM_STR_B[2] = NLoginCore_232.F("ԆԂԹԆԜԖԨԚԶԣԘԕ", (byte)17, 70);
-               ZKM_STR_B[3] = NLoginCore_324.D("ИиЬМјеУнърТа", (byte)17, 68);
-               ZKM_STR_B[4] = NLoginCore_575.B("ÑìĖêĈçČęâøðýÿĦğþòáþėĉìĝăëĒĳĪïîõăĶĻĺïĿĊĜþċùĞįĞĦĆħĒŉĨġčōĔĕ", (byte)17, 66);
-               ZKM_STR_B[5] = NLoginCore_446.E("ӸԁԽԇՇԴԩՂԹԟԏԕ", (byte)17, 69);
-               ZKM_STR_B[6] = NLoginCore_384.A("òíÓðóğĒñăÿî×ĎáÚĀýĆõĠèęěĜēċæĵĶĀė÷ĐčĳýĮĎīČĢĲĐĉ", (byte)17, 65);
-               ZKM_STR_B[7] = NLoginCore_427.D("ћѢжхгѧкКФШѓЬПЪзооѯщбѩхѳѫьфшщьѭѷѓпђєуѳѺіѨўѩ҉ѐ", (byte)17, 68);
-               ZKM_STR_B[8] = NLoginCore_076.F("ԺՆԐՈӼԣԠՄՉԡԜՒԐՑԼՈԏ\u0530ԲՐ՚ՙԠԡ", (byte)17, 70);
-               ZKM_STR_B[9] = NLoginCore_530.E("ԞԙӿԜԟՋԾԝԯԫԚԜՓՍՁԨԡՔԮԓԕԵՅԴԷԞ\u0557Ր՟ԶԢՕԶԥԴՠբ՟Ո՜՟ՙզԵ", (byte)17, 69);
-               ZKM_STR_B[10] = NLoginCore_387.A("ï×æêďÿÞðôßĖé", (byte)17, 65);
-               ZKM_STR_B[11] = NLoginCore_446.B("Öě×ėíÚøÓêâðé", (byte)17, 66);
-               ZKM_STR_B[12] = NLoginCore_092.C("вТрМђѥяаСъјпѪзѝњѫбфџѲолм", (byte)17, 67);
-               ZKM_STR_B[13] = NLoginCore_141.D("џѢѤєкѦхиПѫцТоЦЦТфоѲђѬѠяѮѺљхѯѧкљѾѫјѝѸо҅ѯоѩѡјќѻѪѸшҐ҈ьѿҒ҄ѱғғ҈ѪґҐҊѼҕѓѲћўѺ҄Қҥ҂ѵѿѣѼѥѻѬҏҥҟҰѭҢ҉ҴҙѴҴѷҨҐҠҭ", (byte)17, 68);
-               ZKM_STR_B[14] = NLoginCore_530.B("ĚôĎìĔÕėö÷āĔðĤüþĢĕĕûĜćĪĂĬăðĐāĄčĒñ", (byte)17, 66);
-               ZKM_STR_B[15] = NLoginCore_427.B("ÓĜđĔòÿĝýØěČåøôèöĝõêģĜěĩéĭħīĎēđĮĤ", (byte)17, 66);
-               ZKM_STR_B[16] = NLoginCore_433.E("ՃԣԨԜԒԁՋԿԢԊՌԼՓԌՂԩՎԶԎՊԕՙԠԡ", (byte)17, 69);
-               ZKM_STR_B[17] = NLoginCore_076.A("ĉÛüĎêÜÒĉûÚãĐę÷ÿēĞĕ÷ĞìĤûĪéěĠĵèĔõĪ", (byte)17, 65);
-               ZKM_STR_B[18] = NLoginCore_201.B("ĖûĐåëØĞĖïãāïüåóø÷ĊĞħċĝôõ", (byte)17, 66);
-               break;
-            case 2:
-               ZKM_STR_B[0] = NLoginCore_387.D("ѠљЮёЯжХђчѓѪзўќтцсшгЮсѤлм", (byte)17, 68);
-            case 3:
-            default:
-               break;
-            case 4:
-               ZKM_STR_B[0] = NLoginCore_092.B("æĊąñùęØ×ûĤġýģāûááÿõęæ÷ôõ", (byte)17, 66);
-         }
-      }
-   }
+    /*
+     * Exception decompiling
+     */
+    static NLoginCore_420 b(NLoginCore_455 var0, ProxyServer var1_1, Player var2_2) {
+        /*
+         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (var_if you hold appropriate legal rights) the relevant class file.
+         * 
+         * org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter$TooOptimisticMatchException
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter.getString(SwitchStringRewriter.java:404)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter.access$600(SwitchStringRewriter.java:53)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter$SwitchStringMatchResultCollector.collectMatches(SwitchStringRewriter.java:368)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.matchutil.ResetAfterTest.match(ResetAfterTest.java:24)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.matchutil.KleeneN.match(KleeneN.java:24)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.matchutil.MatchSequence.match(MatchSequence.java:26)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.matchutil.ResetAfterTest.match(ResetAfterTest.java:23)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter.rewriteComplex(SwitchStringRewriter.java:201)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter.rewrite(SwitchStringRewriter.java:73)
+         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:881)
+         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
+         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
+         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
+         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
+         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
+         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
+         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
+         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
+         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
+         *     at org.benf.cfr.reader.Main.main(Main.java:54)
+         */
+        throw new IllegalStateException("Decompilation failed");
+    }
 
-   @Override
-   public String toString() {
-      return a(ak & al, am) + this.a + a(an, ao ^ ap) + this.f + aq;
-   }
+    @Override
+    public void ad() {
+        this.var_com_velocitypowered_api_proxy_Player_a.resetTitle();
+    }
 
-   @Override
-   public String u() {
-      return this.a.getUsername();
-   }
+    @Override
+    public NLoginCore_589 com_nickuc_login_NLoginInterface_022_a() {
+        return this.var_com_nickuc_login_NLoginCore_455_b.a(ad != 0);
+    }
 
-   @Override
-   public boolean equals(Object var1) {
-      if (var1 != null && this.getClass() == var1.getClass()) {
-         NLoginCore_420 var2 = (NLoginCore_420)var1;
-         return ((Objects.equals(this.f, var2.f) != 0) && Objects.equals(this.a, var2.a) ? af : ag);
-      } else {
-         return (ae != 0);
-      }
-   }
+    @Override
+    public <T> T c() {
+        return (T)this.var_com_velocitypowered_api_proxy_Player_a;
+    }
 
-   @Override
-   public void d(Object var1) {
-      if (var1 instanceof String) {
-         this.a.sendMessage(NLoginCore_529.b((String)var1, (e != 0)));
-      } else {
-         if (!(var1 instanceof Component)) {
-            throw new IllegalArgumentException(a(f, g) + var1 + a(h, i) + var1.getClass().getCanonicalName());
-         }
+    @Override
+    public NLoginInterface_023 com_nickuc_login_NLoginInterface_023_a() {
+        if (this.var_com_nickuc_login_NLoginInterface_023_a == null) {
+            this.var_com_nickuc_login_NLoginInterface_023_a = (object, objectArray) -> {
+                throw new UnsupportedOperationException((String)NLoginCore_420.c("㺀", (int)(ce & cf), (long)cg));
+            };
+        }
+        return this.var_com_nickuc_login_NLoginInterface_023_a;
+    }
 
-         this.a.sendMessage((Component)var1);
-      }
-   }
+    @Override
+    public int h() {
+        return (int)this.var_com_velocitypowered_api_proxy_Player_a.getPing();
+    }
 
-   @Override
-   public void p(String var1) {
-      this.a.spoofChatInput(var1);
-   }
+    @Override
+    public void o(String string) {
+        this.var_com_velocitypowered_api_proxy_Player_a.sendActionBar((Component)NLoginCore_529.a(string));
+    }
 
-   // $VF: Unable to simplify switch on enum
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   @Override
-   public void a(NLoginInterface_011<?> var1, NLoginCore_337 var2, Object var3, byte[] var4) {
-      Object var5;
-      if (var3 instanceof String) {
-         String var6 = (String)var3;
-         String[] var7 = var6.split(a(m & n, o));
-         var5 = var7.length == p ? MinecraftChannelIdentifier.create(var7[q], var7[r]) : new LegacyChannelIdentifier(var6);
-      } else {
-         if (!(var3 instanceof ChannelIdentifier)) {
-            throw new IllegalArgumentException(a(s, t) + var3 + a(u, v) + var3.getClass().getCanonicalName());
-         }
-
-         var5 = (ChannelIdentifier)var3;
-      }
-
-      switch (NLoginCore_465.t[var2.ordinal()]) {
-         case 1:
-            this.a.sendPluginMessage((ChannelIdentifier)var5, var4);
-            break;
-         case 2:
-            this.a.getCurrentServer().ifPresent(var2x -> {
-               if (!var2x.getServer().getPlayersConnected().isEmpty()) {
-                  var2x.sendPluginMessage(var5, var4);
-               }
-            });
-            break;
-         default:
-            throw new IllegalArgumentException(a(w & x, y) + var2);
-      }
-   }
-
-   public static NLoginCore_420 a(NLoginCore_455 var0, ProxyServer var1, Object var2) {
-      if (var2 instanceof String) {
-         String var3 = ((String)var2).toLowerCase(Locale.ENGLISH);
-         return var1.getPlayer(var3).map(var2x -> a(var0, var1, var2x)).orElse(null);
-      } else if (var2 instanceof Player) {
-         return a(var0, var1, (Player)var2);
-      } else {
-         throw new IllegalArgumentException(
-            a(ar, as ^ at) + var2 + a(au & av, aw) + (var2 != null ? var2.getClass().getCanonicalName() : a(ax & ay, az))
-         );
-      }
-   }
-
-   static NLoginCore_420 b(NLoginCore_455 var0, ProxyServer var1, Player var2) {
-      Channel var4 = NLoginCore_063.a(a(bl, bm ^ bn), var2);
-      int var3;
-      if (var4 != null) {
-         String var5 = var4.getClass().getSimpleName();
-         int var6 = bo;
-         switch (var5.hashCode()) {
-            case -904795186:
-               if (var5.equals(a(bt & bu, bv))) {
-                  var6 = bw;
-               }
-               break;
-            case -217013511:
-               if (var5.equals(a(bp, bq ^ br))) {
-                  var6 = bs;
-               }
-               break;
-            case 1894246043:
-               if (var5.equals(a(bx, by ^ bz))) {
-                  var6 = ca;
-               }
-         }
-
-         switch (var6) {
-            case 0:
-            case 1:
-            case 2:
-               var3 = cb;
-               break;
-            default:
-               var3 = cc;
-         }
-      } else {
-         var3 = cd;
-      }
-
-      return new NLoginCore_420(var0, var2, var1, (var3 != 0));
-   }
-
-   @Override
-   public void ad() {
-      this.a.resetTitle();
-   }
-
-   @Override
-   public NLoginInterface_022 a() {
-      return this.b.a((ad != 0));
-   }
-
-   @Override
-   public <T> T c() {
-      return (T)this.a;
-   }
-
-   @Override
-   public NLoginInterface_023 a() {
-      if (this.a == null) {
-         this.a = (var0, var1) -> {
-            throw new UnsupportedOperationException(a(ce & cf, cg));
-         };
-      }
-
-      return this.a;
-   }
-
-   @Override
-   public int h() {
-      return (int)this.a.getPing();
-   }
-
-   @Override
-   public void o(String var1) {
-      this.a.sendActionBar(NLoginCore_529.a(var1));
-   }
-
-   @Override
-   public String getName() {
-      return this.a.getUsername();
-   }
+    @Override
+    public String getName() {
+        return this.var_com_velocitypowered_api_proxy_Player_a.getUsername();
+    }
 }
+

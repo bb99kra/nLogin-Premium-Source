@@ -1,13 +1,58 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  io.netty.util.AttributeKey
+ *  javax.annotation.Nullable
+ *  lombok.Generated
+ *  org.geysermc.floodgate.api.FloodgateApi
+ *  org.geysermc.floodgate.api.player.FloodgatePlayer
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_546;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_118;
+import com.nickuc.login.NLoginCore_427;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_559;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginInterface_031;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_071;
+import com.nickuc.login.NLoginCore_110;
+import com.nickuc.login.NLoginCore_150;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_092;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_419;
+import com.nickuc.login.NLoginCore_076;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_446;
+import com.nickuc.login.NLoginCore_004;
+import com.nickuc.login.NLoginCore_138;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.BedrockFloodgateHook;
+import com.nickuc.login.NLoginCore_138;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_453;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_387;
+import com.nickuc.login.NLoginCore_451;
+import com.nickuc.login.NLoginCore_370;
+import com.nickuc.login.NLoginCore_298;
 import io.netty.util.AttributeKey;
+import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
 import java.lang.reflect.Field;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
+import java.security.Key;
 import java.util.Base64;
 import java.util.UUID;
 import javax.annotation.Nullable;
@@ -19,560 +64,495 @@ import lombok.Generated;
 import org.geysermc.floodgate.api.FloodgateApi;
 import org.geysermc.floodgate.api.player.FloodgatePlayer;
 
-public class NLoginCore_418 implements NLoginInterface_031 {
-   private static long bc = Long.reverse(4079989545037668093L);
-   private static int bo = -1 >>> 237 | -1 << ~237 + 1;
-   private static long n = Long.reverse(-6440419184499810563L);
-   private static int m = Integer.reverse(-1073741824);
-   private static int at = (163840 >>> 174 | 163840 << ~174 + 1) & -1;
-   private static int al = Integer.reverse(0);
-   private static long bg = Long.reverse(-7061644215716937728L);
-   private static int h = 0 >>> 190 | 0 << -190;
-   private static int ax = Integer.reverse(-1);
-   private static long co = Long.reverse(4079989545037668093L);
-   private static long cs = Long.reverse(-6440419184499810563L);
-   private static long cw = Long.reverse(4079989545037668093L);
-   private static int cc = (512 >>> 5 | 512 << -5) & -1;
-   private static long cz = Long.reverse(4079989545037668093L);
-   private static int cu = Integer.reverse(0);
-   private static long q = Long.reverse(4079989545037668093L);
-   private static long ae = Long.reverse(-6440419184499810563L);
-   private static long d = Long.reverse(-7061644215716937728L);
-   private static int bu = Integer.reverse(-1073741824);
-   private static long ap = Long.reverse(4079989545037668093L);
-   private static int ak = 0 >>> 153 | 0 << -153;
-   @Nullable
-   private final NLoginCore_118 a;
-   private static long u = Long.reverse(-6440419184499810563L);
-   private static long cj = Long.reverse(-7061644215716937728L);
-   private static int ch = Integer.reverse(-2013265920);
-   private static int ba = (-268435451 >>> 188 | -268435451 << -188) & -1;
-   private static int cd = Integer.reverse(-1);
-   private static long aq = Long.reverse(-7061644215716937728L);
-   private static int az = Integer.reverse(67108864);
-   private static long cp = Long.reverse(-7061644215716937728L);
-   private static int l = (0 >>> 228 | 0 << -228) & -1;
-   private static long c;
-   private static int af = Integer.reverse(Integer.MIN_VALUE);
-   private static int a = Integer.reverse(0);
-   private static int be = Integer.reverse(-1342177280);
-   private static int e = (268435456 >>> 60 | 268435456 << -60) & -1;
-   private static int bm = Integer.reverse(0);
-   private static int ab = Integer.reverse(0);
-   private static int z = Integer.reverse(0);
-   private static final Field a;
-   private static int cy = Integer.reverse(-1476395008);
-   private static long bx = Long.reverse(4079989545037668093L);
-   private static long y = Long.reverse(-6440419184499810563L);
-   private static int ah = Integer.reverse(268435456);
-   private static int ct = Integer.reverse(Integer.MIN_VALUE);
-   private static int ad = -1 >>> 177 | -1 << -177;
-   private static int o = 0 >>> 61 | 0 << -61;
-   private static int ag = 0 >>> 33 | 0 << -33;
-   private static int bw = 1920 >>> 103 | 1920 << -103;
-   private static int bj = Integer.reverse(Integer.MIN_VALUE);
-   private static int x = (-1 >>> 116 | -1 << -116) & -1;
-   private static int j = (-1 >>> 122 | -1 << -122) & -1;
-   private static int as = Integer.reverse(0);
-   private static long b = Long.reverse(4079989545037668093L);
-   private static long f = Long.reverse(4079989545037668093L);
-   private static int p = Integer.reverse(536870912);
-   private static int an = Integer.reverse(0);
-   private static int bv = Integer.reverse(0);
-   private static int bq = Integer.reverse(536870912);
-   private static int cv = (1310720 >>> 240 | 1310720 << ~240 + 1) & -1;
-   private static long r = Long.reverse(-7061644215716937728L);
-   private static int w = (96 >>> 100 | 96 << -100) & -1;
-   private static int bt = Integer.reverse(1073741824);
-   private static int bh = (8 >>> 161 | 8 << ~161 + 1) & -1;
-   private static int cn = Integer.reverse(1207959552);
-   private static int bk = Integer.reverse(1073741824);
-   private static long by = Long.reverse(-7061644215716937728L);
-   private static int aw = Integer.reverse(-805306368);
-   private static int bi = Integer.reverse(0);
-   private static int br = (0 >>> 221 | 0 << -221) & -1;
-   private static long ay = Long.reverse(-6440419184499810563L);
-   private static long au = Long.reverse(-6440419184499810563L);
-   private static int bb = Integer.reverse(805306368);
-   private static int cr = Integer.reverse(-939524096);
-   private static long k = Long.reverse(-6440419184499810563L);
-   private static int am = (64 >>> 6 | 64 << -6) & -1;
-   private static int ai = -1 >>> 67 | -1 << -67;
-   private static int ca = (Integer.MIN_VALUE >>> 223 | Integer.MIN_VALUE << ~223 + 1) & -1;
-   private static long bp = Long.reverse(-6440419184499810563L);
-   private static int cm = 176 >>> 99 | 176 << -99;
-   private static int ck = Integer.reverse(0);
-   private static int bn = Integer.reverse(1879048192);
-   private static int bz = Integer.reverse(0);
-   private static String[] ZKM_STR_A = new String[NLoginCore_418.cl];
-   private static String[] ZKM_STR_B = new String[cm];
-   private static long g = Long.reverse(-7061644215716937728L);
-   private static long da = Long.reverse(-7061644215716937728L);
-   private static int aa = 2097152 >>> 53 | 2097152 << -53;
-   private static long ci = Long.reverse(4079989545037668093L);
-   private static final Class<?> e = NLoginCore_298.a(a(cn, co ^ cp));
-   private static int cl = 5767168 >>> 18 | 5767168 << ~18 + 1;
-   private static int cq = 0 >>> 38 | 0 << ~38 + 1;
-   private static int bs = Integer.reverse(Integer.MIN_VALUE);
-   private static int bl = Integer.reverse(-1073741824);
-   private static int ar = Integer.reverse(Integer.MIN_VALUE);
-   private static int t = (20 >>> 98 | 20 << ~98 + 1) & -1;
-   private static int ac = (3670016 >>> 211 | 3670016 << ~211 + 1) & -1;
-   private static long ce = Long.reverse(-6440419184499810563L);
-   private static long bf = Long.reverse(4079989545037668093L);
-   private static int ao = Integer.reverse(-1879048192);
-   private static int v = 0 >>> 9 | 0 << ~9 + 1;
-   private final AttributeKey<FloodgatePlayer> b = AttributeKey.valueOf(a(a, b ^ d));
-   private static int cb = Integer.reverse(0);
-   private static long cx = Long.reverse(-7061644215716937728L);
-   private static long bd = Long.reverse(-7061644215716937728L);
-   private static int i = 128 >>> 70 | 128 << ~70 + 1;
-   private static int cg = Integer.reverse(0);
-   private static int s = (0 >>> 46 | 0 << -46) & -1;
-   private static int av = (0 >>> 253 | 0 << ~253 + 1) & -1;
-   private static int cf = (Integer.MIN_VALUE >>> 63 | Integer.MIN_VALUE << ~63 + 1) & -1;
-   private static long aj = Long.reverse(-6440419184499810563L);
+public class NLoginCore_418
+implements NLoginInterface_031 {
+    private static long bc;
+    private static int bo;
+    private static long n;
+    private static int m;
+    private static int at;
+    private static int al;
+    private static long bg;
+    private static int h;
+    private static int ax;
+    private static long co;
+    private static long cs;
+    private static long cw;
+    private static int cc;
+    private static long cz;
+    private static int cu;
+    private static long q;
+    private static long ae;
+    private static long d;
+    private static int bu;
+    private static long ap;
+    private static int ak;
+    @Nullable
+    private final NLoginCore_118 var_com_nickuc_login_NLoginCore_118_a;
+    private static long u;
+    private static long cj;
+    private static int ch;
+    private static int ba;
+    private static int cd;
+    private static long aq;
+    private static int az;
+    private static long cp;
+    private static int l;
+    private static long c;
+    private static int af;
+    private static int var_int_a;
+    private static int be;
+    private static int var_int_e;
+    private static int bm;
+    private static int ab;
+    private static int z;
+    private static final Field var_java_lang_reflect_Field_a;
+    private static int cy;
+    private static long bx;
+    private static long y;
+    private static int ah;
+    private static int ct;
+    private static int ad;
+    private static int o;
+    private static int ag;
+    private static int bw;
+    private static int bj;
+    private static int x;
+    private static int j;
+    private static int as;
+    private static long var_long_b;
+    private static long f;
+    private static int p;
+    private static int an;
+    private static int bv;
+    private static int bq;
+    private static int cv;
+    private static long r;
+    private static int w;
+    private static int bt;
+    private static int bh;
+    private static int cn;
+    private static int bk;
+    private static long by;
+    private static int aw;
+    private static int bi;
+    private static int br;
+    private static long ay;
+    private static long au;
+    private static int bb;
+    private static int cr;
+    private static long k;
+    private static int am;
+    private static int ai;
+    private static int ca;
+    private static long bp;
+    private static int cm;
+    private static int ck;
+    private static int bn;
+    private static int bz;
+    private static String[] var_java_lang_String_arr_a;
+    private static String[] var_java_lang_String_arr_b;
+    private static long g;
+    private static long da;
+    private static int aa;
+    private static long ci;
+    private static final Class<?> var_java_lang_Class____e;
+    private static int cl;
+    private static int cq;
+    private static int bs;
+    private static int bl;
+    private static int ar;
+    private static int t;
+    private static int ac;
+    private static long ce;
+    private static long bf;
+    private static int ao;
+    private static int v;
+    private final AttributeKey<FloodgatePlayer> var_io_netty_util_AttributeKey_org_geysermc_floodgate_api_player_FloodgatePlayer__b;
+    private static int cb;
+    private static long cx;
+    private static long bd;
+    private static int i;
+    private static int cg;
+    private static int s;
+    private static int av;
+    private static int cf;
+    private static long aj;
 
-   static {
-      b();
-      if (e == null) {
-         throw new IllegalArgumentException(a(cr, cs));
-      } else {
-         Class var10000 = e;
-         String[] var10001 = new String[ct];
-         var10001[cu] = a(cv, cw ^ cx);
-         a = NLoginCore_546.a(var10000, var10001);
-         if (a == null) {
-            throw new IllegalArgumentException(a(cy, cz ^ da));
-         }
-      }
-   }
+    static {
+        var_int_a = Integer.reverse(0);
+        var_long_b = Long.reverse(4079989545037668093L);
+        d = Long.reverse(-7061644215716937728L);
+        var_int_e = (0x10000000 >>> 60 | 0x10000000 << -60) & 0xFFFFFFFF;
+        f = Long.reverse(4079989545037668093L);
+        g = Long.reverse(-7061644215716937728L);
+        h = 0 >>> 190 | 0 << -190;
+        i = 128 >>> 70 | 128 << ~70 + 1;
+        j = (-1 >>> 122 | -1 << -122) & 0xFFFFFFFF;
+        k = Long.reverse(-6440419184499810563L);
+        l = (0 >>> 228 | 0 << -228) & 0xFFFFFFFF;
+        m = Integer.reverse(-1073741824);
+        n = Long.reverse(-6440419184499810563L);
+        o = 0 >>> 61 | 0 << -61;
+        p = Integer.reverse(0x20000000);
+        q = Long.reverse(4079989545037668093L);
+        r = Long.reverse(-7061644215716937728L);
+        s = (0 >>> 46 | 0 << -46) & 0xFFFFFFFF;
+        t = (20 >>> 98 | 20 << ~98 + 1) & 0xFFFFFFFF;
+        u = Long.reverse(-6440419184499810563L);
+        v = 0 >>> 9 | 0 << ~9 + 1;
+        w = (96 >>> 100 | 96 << -100) & 0xFFFFFFFF;
+        x = (-1 >>> 116 | -1 << -116) & 0xFFFFFFFF;
+        y = Long.reverse(-6440419184499810563L);
+        z = Integer.reverse(0);
+        aa = 0x200000 >>> 53 | 0x200000 << -53;
+        ab = Integer.reverse(0);
+        ac = (0x380000 >>> 211 | 0x380000 << ~211 + 1) & 0xFFFFFFFF;
+        ad = -1 >>> 177 | -1 << -177;
+        ae = Long.reverse(-6440419184499810563L);
+        af = Integer.reverse(Integer.MIN_VALUE);
+        ag = 0 >>> 33 | 0 << -33;
+        ah = Integer.reverse(0x10000000);
+        ai = -1 >>> 67 | -1 << -67;
+        aj = Long.reverse(-6440419184499810563L);
+        ak = 0 >>> 153 | 0 << -153;
+        al = Integer.reverse(0);
+        am = (64 >>> 6 | 64 << -6) & 0xFFFFFFFF;
+        an = Integer.reverse(0);
+        ao = Integer.reverse(-1879048192);
+        ap = Long.reverse(4079989545037668093L);
+        aq = Long.reverse(-7061644215716937728L);
+        ar = Integer.reverse(Integer.MIN_VALUE);
+        as = Integer.reverse(0);
+        at = (163840 >>> 174 | 163840 << ~174 + 1) & 0xFFFFFFFF;
+        au = Long.reverse(-6440419184499810563L);
+        av = (0 >>> 253 | 0 << ~253 + 1) & 0xFFFFFFFF;
+        aw = Integer.reverse(-805306368);
+        ax = Integer.reverse(-1);
+        ay = Long.reverse(-6440419184499810563L);
+        az = Integer.reverse(0x4000000);
+        ba = (-268435451 >>> 188 | -268435451 << -188) & 0xFFFFFFFF;
+        bb = Integer.reverse(0x30000000);
+        bc = Long.reverse(4079989545037668093L);
+        bd = Long.reverse(-7061644215716937728L);
+        be = Integer.reverse(-1342177280);
+        bf = Long.reverse(4079989545037668093L);
+        bg = Long.reverse(-7061644215716937728L);
+        bh = (8 >>> 161 | 8 << ~161 + 1) & 0xFFFFFFFF;
+        bi = Integer.reverse(0);
+        bj = Integer.reverse(Integer.MIN_VALUE);
+        bk = Integer.reverse(0x40000000);
+        bl = Integer.reverse(-1073741824);
+        bm = Integer.reverse(0);
+        bn = Integer.reverse(0x70000000);
+        bo = -1 >>> 237 | -1 << ~237 + 1;
+        bp = Long.reverse(-6440419184499810563L);
+        bq = Integer.reverse(0x20000000);
+        br = (0 >>> 221 | 0 << -221) & 0xFFFFFFFF;
+        bs = Integer.reverse(Integer.MIN_VALUE);
+        bt = Integer.reverse(0x40000000);
+        bu = Integer.reverse(-1073741824);
+        bv = Integer.reverse(0);
+        bw = 1920 >>> 103 | 1920 << -103;
+        bx = Long.reverse(4079989545037668093L);
+        by = Long.reverse(-7061644215716937728L);
+        bz = Integer.reverse(0);
+        ca = (Integer.MIN_VALUE >>> 223 | Integer.MIN_VALUE << ~223 + 1) & 0xFFFFFFFF;
+        cb = Integer.reverse(0);
+        cc = (512 >>> 5 | 512 << -5) & 0xFFFFFFFF;
+        cd = Integer.reverse(-1);
+        ce = Long.reverse(-6440419184499810563L);
+        cf = (Integer.MIN_VALUE >>> 63 | Integer.MIN_VALUE << ~63 + 1) & 0xFFFFFFFF;
+        cg = Integer.reverse(0);
+        ch = Integer.reverse(-2013265920);
+        ci = Long.reverse(4079989545037668093L);
+        cj = Long.reverse(-7061644215716937728L);
+        ck = Integer.reverse(0);
+        cl = 0x580000 >>> 18 | 0x580000 << ~18 + 1;
+        cm = 176 >>> 99 | 176 << -99;
+        cn = Integer.reverse(0x48000000);
+        co = Long.reverse(4079989545037668093L);
+        cp = Long.reverse(-7061644215716937728L);
+        cq = 0 >>> 38 | 0 << ~38 + 1;
+        cr = Integer.reverse(-939524096);
+        cs = Long.reverse(-6440419184499810563L);
+        ct = Integer.reverse(Integer.MIN_VALUE);
+        cu = Integer.reverse(0);
+        cv = (0x140000 >>> 240 | 0x140000 << ~240 + 1) & 0xFFFFFFFF;
+        cw = Long.reverse(4079989545037668093L);
+        cx = Long.reverse(-7061644215716937728L);
+        cy = Integer.reverse(-1476395008);
+        cz = Long.reverse(4079989545037668093L);
+        da = Long.reverse(-7061644215716937728L);
+        var_java_lang_String_arr_a = new String[cl];
+        var_java_lang_String_arr_b = new String[cm];
+        NLoginCore_418.b();
+        var_int_e = (int)NLoginCore_298.a((String)NLoginCore_418.c("㺀", (int)cn, (long)(co ^ cp)), new String[cq]);
+        if (var_int_e == null) {
+            throw new IllegalArgumentException((String)NLoginCore_418.c("㺃", (int)cr, (long)cs));
+        }
+        String[] stringArray = new String[ct];
+        stringArray[NLoginCore_418.cu] = NLoginCore_418.c("㺆", (int)cv, (long)(cw ^ cx));
+        var_java_lang_reflect_Field_a = NLoginCore_546.a(var_int_e, stringArray);
+        if (var_java_lang_reflect_Field_a == null) {
+            throw new IllegalArgumentException((String)NLoginCore_418.c("㺉", (int)cy, (long)(cz ^ da)));
+        }
+    }
 
-   private static String a(int var0, long var1) {
-      var1 ^= 121L;
-      var1 ^= 174066875729282586L;
-      if (ZKM_STR_A[var0] == null) {
-         Cipher var3;
-         SecretKeyFactory var4;
-         try {
-            var3 = Cipher.getInstance(
-               new String(
-                  new byte[]{
-                     (byte)(52 + 16),
-                     (byte)(37 + 32),
-                     83,
-                     (byte)(27 + 20),
-                     (byte)(66 + 1),
-                     (byte)(26 + 40),
-                     (byte)(31 + 36),
-                     (byte)(23 + 24),
-                     (byte)(60 + 20),
-                     (byte)(40 + 35),
-                     67,
-                     (byte)(20 + 63),
-                     (byte)(46 + 7),
-                     (byte)(16 + 64),
-                     (byte)(62 + 35),
-                     (byte)(3 + 97),
-                     (byte)(34 + 66),
-                     (byte)(79 + 26),
-                     (byte)(102 + 8),
-                     (byte)(72 + 31)
-                  },
-                  StandardCharsets.UTF_8
-               )
-            );
-            var4 = SecretKeyFactory.getInstance(new String(new byte[]{68, 69, (byte)(43 + 40)}, StandardCharsets.UTF_8));
-         } catch (Exception var7) {
-            throw new RuntimeException(NLoginCore_223.E("խպչԼռոճռևնՃցօվցևՉࣤࢯࢸࣆࢿࣩࣇ\u08e2࣋࣫࣫ࣘ", (byte)78, 69));
-         }
-
-         byte[] var5 = new byte[8];
-         var5[0] = (byte)(var1 >>> 56);
-
-         for (int var6 = 1; var6 < 8; var6++) {
-            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
-         }
-
-         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
-      }
-
-      return ZKM_STR_A[var0];
-   }
-
-   @Nullable
-   @Generated
-   public NLoginCore_118 a() {
-      return this.a;
-   }
-
-   private boolean a(InetAddress var1) {
-      return ((!var1.isLoopbackAddress() != 0) && !var1.isAnyLocalAddress() && !NLoginCore_071.a.b(var1) && !NLoginCore_071.b.b(var1) && !NLoginCore_071.c.b(var1) ? cb : ca);
-   }
-
-   @Override
-   public boolean J() {
-      return ((this.d() != 0) != 0 ? am : an);
-   }
-
-   private static void b() {
-      c = -4649717043383174884L;
-      long var0 = c ^ 174066875729282586L;
-      Cipher var2 = Cipher.getInstance(
-         new String(
-            new byte[]{
-               (byte)(49 + 19),
-               (byte)(16 + 53),
-               (byte)(41 + 42),
-               (byte)(23 + 24),
-               (byte)(43 + 24),
-               (byte)(27 + 39),
-               (byte)(38 + 29),
-               (byte)(28 + 19),
-               (byte)(53 + 27),
-               (byte)(74 + 1),
-               67,
-               (byte)(27 + 56),
-               53,
-               (byte)(19 + 61),
-               (byte)(2 + 95),
-               (byte)(79 + 21),
-               (byte)(27 + 73),
-               (byte)(51 + 54),
-               (byte)(18 + 92),
-               (byte)(39 + 64)
-            },
-            StandardCharsets.UTF_8
-         )
-      );
-      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(51 + 17), (byte)(32 + 37), 83}, StandardCharsets.UTF_8));
-      byte[] var4 = new byte[8];
-      var4[0] = (byte)(var0 >>> 56);
-
-      for (int var5 = 1; var5 < 8; var5++) {
-         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
-      }
-
-      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
-      byte var7 = 1;
-
-      for (int var6 = 0; var6 < var7; var6++) {
-         switch (var6) {
-            case 0:
-               ZKM_STR_B[0] = NLoginCore_397.A("ƹƧƥǫƾǏƯƥǝǮǥǕǌǕǈǹǗǷǹǎǨǲǬǣȄǠǀǰǸǳȀȀ", (byte)122, 65);
-               ZKM_STR_B[1] = NLoginCore_141.C(
-                  "֓թՖմվ֛հ\u0590չճ֚֜ոոփ֛֦ժ֛ֆխվ\u058bքիվֵ֦֞֩֬օ֚֬վչֲֵ֭վֱֶֺֹּ֧֭֝֕ֈֶׄֈֿ֦֛֏֤ׄ֟\u05cb\u05ce\u05c9ּכבךְֳִָ֣הלף֣֦֤ר\u05c8ׇֹףץֿל\u05eeׅׯְֱאֶׅשךֵַצ\u05f5״בחױב\u05ed\u0600\u0605׆ֻמק\u0602\u05f6\u05fcםםؑ\u05cf\u05cd\u05ffקסף\u0604א\u05eb؛״םך؏\u05f5ؙؕ\u05fbؕ׳ؗװؠأؤأ\u05fd؍\u0605،ׯ\u05ed\u05fc،س؇ة\u0602\u0600\u05f8\u05ec\u05f5ؼ׳ع؇ءذذفطؓل؋",
-                  (byte)122,
-                  67
-               );
-               ZKM_STR_B[2] = NLoginCore_387.D(
-                  "ղռշէղ՛խ֔ձ֟և֞֗ջ֜ֈը֎֬ց֬ցղ֜։ֈֲմ֦\u0590օֲֵֺֈ\u058c֎ֳ֊\u058c׀ջׁրָָׅ֛֥֗֜֍ָ֍ֳִ֢֫\u05ceׂ֣֠י\u05cdָֹ֪֗֨֯֠עככגז֤הֹ\u05cc֥֩֬טכׯאֳׁ֮ׄ׃\u05ca\u05c8י׃ױ\u05f9\u05ce\u05eeב\u05ff\u05ce\u05fdא\u05edצך\u05feץ\u05f6ך\u05c8؍ן؆\u0603\u05ffזח",
-                  (byte)122,
-                  68
-               );
-               ZKM_STR_B[3] = NLoginCore_433.C(
-                  "ժ֚\u0557ծղՓ\u0558֙ծան֠֜ղտ֊֛շո֦֡տ֎ֲֲַ֧֣֦֮֩֔֗մպ։տְջָ֘׃׃֡֝\u05c8ֵֿ։׃\u05cc֬ւאֽ։ׄ֍\u05cbׂ֤֬\u05ccַ֓־\u05cfֲֶׁ֛֩֘֠֜חלךׇ֣ני\u05ccץררׁלב\u05ec\u05c8\u05edְׁזֻ\u05cd\u05f7\u05cbֱב\u05f6חןןךע\u05cb",
-                  (byte)122,
-                  67
-               );
-               ZKM_STR_B[4] = NLoginCore_138.B(
-                  "ǟƣǋǈǏǑƼǁƪƧǏǗǯǪǃǍǐǗǹǎǻǚƽǋƾǳƼǀǷȀȇǵȋǭǝȁȌȁȉǬȋǧǩȄȀǑǺǲȗțǝǙțǙȜǲǻșǸǿȔǛȡȢǢțȈǿǫǩȁȯȇǵȪȕȕȷȂșǲȈǽȚȫțȲȭȬɄȺȠȡȝȁȪȄȢȯȯȆȌȿȤȲȋɎȨɀɑȭșȫȽɌɇɉɊɋɌɅɡȲɄȞȿȻɢȣȨɬȩɌȾɛȰɬɨɆȻ",
-                  (byte)122,
-                  66
-               );
-               ZKM_STR_B[5] = NLoginCore_232.C(
-                  "յե֏\u0590֏ժվ՜փտվՠե։ըբ֦ֆ\u058cւցց\u058bց֣֔ղ\u0590ֵַָ֔֬֜ռֱֳָ֒֞֬֘֡\u05c8ֶ֓׀ֽׁ֛֭և\u05cfֱׅ\u05cc֪\u05c9ֿ֣א\u05ceָ֖\u05cd\u05ceְֳ\u05caֹט֕לזֳׇׇּ֧םֹצֽ\u05ceק\u05ed\u05ceהן״רב\u05ecץ\u05cdֲ",
-                  (byte)122,
-                  67
-               );
-               ZKM_STR_B[6] = NLoginCore_232.A(
-                  "ƣƧǏǐƿƿƱǀǪƲǷƮƳǱǺǷǭǘǬƹǿǕȃǮǝȀȄǔȁǪǥǺȇȈǖǅǘǪǺȅȈǥǲȂǩǕȍȅȒȖǱǿȓǾȔȋǢȁǢȇǦȡțȅȍȠȉǿȊǭǻȲȇǭȉȄǲȌȒȘȺȵȘǽȖǷȪɂȿȣȟɂȩȓȘȜȤȫɎȨȋȋȍȎȰɌȿȡȳȣȑɉțȻȬȴȮɁɀɝȲɜəɅɕɒȽɝ",
-                  (byte)122,
-                  65
-               );
-               ZKM_STR_B[7] = NLoginCore_183.E(
-                  "ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ\u058cֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և\u05c9׃֞\u058b׃ְ֮֩\u05c9֓ׄה\u058b׆זּ֬חכ֛֩֗\u05ccׅ֯ב\u05cfנֹ֠םֵּשפֹאנ֯ל֭ׄרדַרַצ\u05cdזא\u05ec\u05cdֿכ\u05f6\u0605\u0604ֹ\u0605פ\u05f6\u05c9؆\u05edט׆\u0602؉؆ׅא\u05ed\u05f7؈דץמ",
-                  (byte)122,
-                  69
-               );
-               ZKM_STR_B[8] = NLoginCore_471.E(
-                  "ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ\u058cֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և\u05c9׃֞\u058b׃ְ֮֩\u05c9֓ׄה\u058b׆זּ֬חכ֛֩֗\u05ccֱחךףרע֡\u05cc׃\u05cb\u05c8ץץֽגװ׆ו\u05eeר\u05edְ\u05ce\u05cc׳וא\u05ff\u05fe\u05edגֿעםל\u0602װ\u05f9ד\u05faם\u0601ׯׯ\u05cc\u05eeסבל؆ף\u05cfנ\u05eb؈؆؎؎\u05fbטמ\u0600הؒ\u05fcשת",
-                  (byte)122,
-                  69
-               );
-               ZKM_STR_B[9] = NLoginCore_453.D(
-                  "ժ։ջը֛ափ֤֑֕ձֈշ֪չվ֟֞֨կպպְլց֏ր։ְմְֶ\u058bոְֶ֛֖֝րֱׁոֳ׃֩֙ׄ\u05c8֖քֈֲֹ֜־ּ\u05cd֍֦\u05ca֢֩זבֽ֦\u05cd֜\u05c9ֱ֚ו׀֤ו֤דֺ׃ֽיֺ֬\u05c8ףײױ֦ײבףֶ׳ךֳׅׯ\u05f6׳ֲֽךפ\u05f5׀ג\u05cb",
-                  (byte)122,
-                  68
-               );
-               ZKM_STR_B[10] = NLoginCore_004.C(
-                  "ժ։ջը֛ափ֤֑֕ձֈշ֪չվ֟֞֨կպպְլց֏ր։ְմְֶ\u058bոְֶ֛֖֝րֱׁոֳ׃֩֙ׄ\u05c8֖քֈׇֹ֞ׄאו\u05cf֎ְֵָֹגגֿ֪םֳׂכוךֹֻ֝נֽׂ\u05ec\u05ebךֿ֬\u05cf\u05ca\u05c9ׯםצ׀ק\u05ca\u05eeללֹכ\u05ce־\u05c9׳אּ\u05cdט\u05f5׳\u05fb\u05fbרׅ\u05cb\u05edׁ\u05ffשזח",
-                  (byte)122,
-                  67
-               );
-               ZKM_STR_B[11] = NLoginCore_384.B("ƧǙƶǢǙǚǝǪǂǌǆƻ", (byte)122, 66);
-               ZKM_STR_B[12] = NLoginCore_223.D(
-                  "ՙ֘Ֆէՠ֙֟՟ՠ՛֣ոշ֖֓ր֟ռս֬ջիիլ֣֭ծ֑֗օַ֩֝շ֊֩նպֻ\u058bָ֦֣֗պ֒֜քփ\u05cd׃ּֽֽׁׁ֣ׄ֨ה\u05cc֩֫֯ל֪֯בה֯הםֿ׆֟׆ַֿ֢תף֭ךֻנֿ֫\u05cd֫ײקׇ\u05c9ֵצֵצא\u05fbזנָדד\u05f7\u05fe׆ךבק״ׅ\u05cbכ\u05edמ\u0603\u05fc\u05ceװ\u05ff\u0604\u05ebו\u05ebהעג؆ׯؐؗؠ\u05ffן\u05f6أ؛\u0605\u05fcנ״\u05feث؝تثء،\u05f9؈؆؇؏ׯ\u0602،ظؒؤعؖ؈ؘ\u05fbض\u05f8\u05ffإص؞؋",
-                  (byte)122,
-                  68
-               );
-               ZKM_STR_B[13] = NLoginCore_427.C("հիծտվ՛փ֝ապֆի", (byte)122, 67);
-               ZKM_STR_B[14] = NLoginCore_446.B(
-                  "ƩǨƦƷưǩǯƯưƫǳǈǇǦǣǐǯǌǍǼǋƻƻƼǽǳƾǧǡǕȇǹǭǇǚǹǆǊȋǛǧȈǶǳǊǢǬǔǓȝȓȌȍȔǳǸȑȍȑȤȜǹǻǿȬǿǺȡȤǿȤȭȏȖǭȰȘȊȉȋȄȶȬȜȡȠȽȳȐȻșșȑȂȃȪȚȧɏȊȨȑȾȉɉɓȕɖɍȯɏȦɌȱɎȺȗȡɖȹɁɜɅȿɛȟȠȺɝɆȸɜɧȮɯɅɁȰɖȲɤȹɣɆɩɮȴɈɒɉɆɇ",
-                  (byte)122,
-                  66
-               );
-               ZKM_STR_B[15] = NLoginCore_324.F("ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ\u058cֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և\u05c9׃֞\u058b׃ְ֮֩\u05c9֓ׄה\u058b׆זּ֬חכ֛֩֗\u05ccֳֺ֥׃ֺ֠ע׀\u05caטֽ", (byte)122, 70);
-               ZKM_STR_B[16] = NLoginCore_521.F(
-                  "ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ\u058cֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և\u05c9׃֞\u058b׃ְ֮֩\u05c9֓ׄה\u058b׆זּ֬חכ֛֩֗\u05ccׅ֯ב\u05cfנֹ֠םֵּשפֹאנ֯ל֭ׄרדַרַצ\u05cdזא\u05ec\u05cdֿכ\u05f6\u0605\u0604ֹ\u0605פ\u05f6\u05c9؆\u05edט׆\u0602؉؆ׅא\u05ed\u05f7؈דץמ",
-                  (byte)122,
-                  70
-               );
-               ZKM_STR_B[17] = NLoginCore_110.F(
-                  "ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ\u058cֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և\u05c9׃֞\u058b׃ְ֮֩\u05c9֓ׄה\u058b׆זּ֬חכ֛֩֗\u05ccֱחךףרע֡\u05cc׃\u05cb\u05c8ץץֽגװ׆ו\u05eeר\u05edְ\u05ce\u05cc׳וא\u05ff\u05fe\u05edגֿעםל\u0602װ\u05f9ד\u05faם\u0601ׯׯ\u05cc\u05eeסבל؆ף\u05cfנ\u05eb؈؆؎؎\u05fbטמ\u0600הؒ\u05fcשת",
-                  (byte)122,
-                  70
-               );
-               ZKM_STR_B[18] = NLoginCore_183.C("֜Ք՞Ց֑֑փ֕֒բր֙տդզզ֟օ֦փփְ֮֨֨֫նշ֣շ֖֥֪֓ո֫\u0590րռ֭փ׀֕ևַׇֽ֤֕\u05c8\u05cfֹּ\u05ceֱׇׁ֒ׄבֻ֗֩הגֹ֫֝אי\u05ceֳׄמ֮֫", (byte)122, 67);
-               ZKM_STR_B[19] = NLoginCore_446.F("փ֜֩ս֔վֲղ֒քյֲֳ֪֧֗֔֟ց֭\u058bּ֤ցֲֈ֢֢֮֟֞\u05ca֭׀ִׅׅ֦ׅ֠\u05c9\u05cc֓טׄלהֳ֪\u05ccֲֳ֪֢֥֙֞\u05c8ק֣֜קמל", (byte)122, 70);
-               ZKM_STR_B[20] = NLoginCore_451.A("ǚǀǍƮǛƫǍƼǊƯǨƻ", (byte)122, 65);
-               ZKM_STR_B[21] = NLoginCore_076.D("հ։֖ժցի֟՟տձբք֗֔֟ց֠\u058cծ֚ո֠փօ֊֩֯֟ֈյֵ֛֕־պ֑֟֘\u058cֺւ֡֡ց֘֒ռֽֽׅ֢֥֡֡֎ׅ֢֤֔\u05cc֮\u0590ֺֻ", (byte)122, 68);
-               break;
-            case 1:
-               ZKM_STR_B[0] = NLoginCore_027.D("թ\u0557Օ֛ծտ՟Օ֍֞֕օռօո֩և֧֩վ֛֘֟֟֔ֆְ֦֭֠֫֜", (byte)122, 68);
-               ZKM_STR_B[1] = NLoginCore_553.D(
-                  "֓թՖմվ֛հ\u0590չճ֚֜ոոփ֛֦ժ֛ֆխվ\u058bքիվֵ֦֞֩֬օ֚֬վչֲֵ֭վֱֶֺֹּ֧֭֝֕ֈֶׄֈֿ֦֛֏֤ׄ֟\u05cb\u05ce\u05c9ּכבךְֳִָ֣הלף֣֦֤ר\u05c8ׇֹףץֿל\u05eeׅׯְֱאֶׅשךֵַצ\u05f5״בחױב\u05ed\u0600\u0605׆ֻמק\u0602\u05f6\u05fcםםؑ\u05cf\u05cd\u05ffקסף\u0604א\u05eb؛״םך؏\u05f5ؙؕ\u05fbؕ׳ؗװؠأؤأ\u05fd؍\u0605،ׯ\u05ed\u05fc،س؇ة\u0602\u0600\u05f8\u05ec\u05f5\u0604سؒشب؊؛ج\u0603آؖ؋",
-                  (byte)122,
-                  68
-               );
-               ZKM_STR_B[2] = NLoginCore_521.D(
-                  "ղռշէղ՛խ֔ձ֟և֞֗ջ֜ֈը֎֬ց֬ցղ֜։ֈֲմ֦\u0590օֲֵֺֈ\u058c֎ֳ֊\u058c׀ջׁրָָׅ֛֥֗֜֍ָ֍ֳִ֢֫\u05ceׂ֣֠י\u05cdָֹ֪֗֨֯֠עככגז֤הֹ\u05cc֥֩֬טכׯאֳׁ֮ׄ׃\u05ca\u05c8י׃ױ\u05f9\u05ce\u05eeב\u05ff\u05ce\u05fdא\u05ed\u05eeײח\u05fbי\u05f8מ؉שצ\u05caשפ؎؊؇\u05cf\u05ecײ׳יב",
-                  (byte)122,
-                  68
-               );
-               ZKM_STR_B[3] = NLoginCore_427.E(
-                  "ս֭ժցօզի֬ցմ։ֳ֯օ֮֒֝֊\u058bִֶֹֺֹּ֧֪ׅ֒֡\u05caׁׅև֍֜֒׃֎\u05cb֫זזְִכ\u05c8ג֜זןֿ֕ףא֜ח֠מוַֿן֦\u05caבעֳּׅ֮֫\u05c9֯התׯ\u05edךֶ׳\u05ecן\u05f8\u05fb\u05fbהׯפ\u05ffכ\u0600׃הש\u05ceׇׯײؐ؇ץפןؓקؗמ",
-                  (byte)122,
-                  69
-               );
-               ZKM_STR_B[4] = NLoginCore_397.D(
-                  "֏Փջոտցլձ՚\u0557տև֚֟ճսրև֩վ֫֊խջծ֣լհְַֻ֧֥֝֍ְֱֱִֹֻּ֜֗֙ցׇ֪֢\u05cb֍։\u05cb։\u05cc֢֫\u05c9֨֯ׄ\u058bבג֒\u05cbֱָ֛֯֙ןַ֥ךׅׅקֲ\u05c9ָ֢֭\u05caכ\u05cbעםל״תאב\u05cdֱךִגןןֶּׯהעֻ\u05feטװ\u0601ם\u05c9כ\u05ed\u05fc\u05f7\u05f9\u05fa\u05fb\u05fc\u05f5ؑע״\u05ceׯ\u05ebؒ׳צؑוؠל\u05fd\u05fc\u05feלؠ\u05eb",
-                  (byte)122,
-                  68
-               );
-               ZKM_STR_B[5] = NLoginCore_201.C(
-                  "յե֏\u0590֏ժվ՜փտվՠե։ըբ֦ֆ\u058cւցց\u058bց֣֔ղ\u0590ֵַָ֔֬֜ռֱֳָ֒֞֬֘֡\u05c8ֶ֓׀ֽׁ֛֭և\u05cfֱׅ\u05cc֪\u05c9ֿ֣א\u05ceָ֖\u05cd\u05ceְֳ\u05caֹט֕לזֳׇׇּ֧םֹצֽ\u05ceקסצײ׃א֨\u05cfח\u05ee\u05caא",
-                  (byte)122,
-                  67
-               );
-               ZKM_STR_B[6] = NLoginCore_387.F(
-                  "զժ֒֓ււմփ֭յֺձնְִֺֽ֛֯ռׂ֘׆ֱ֠׃ׇֽ֭֗ׄ֨\u05ca\u05cb֙ֈֽ֛֭\u05c8\u05cbֵׅ֨֬֘א\u05c8ויִׂזׁח\u05ce֥֥ׄ\u05ca֩פמ\u05c8אף\u05ccׂ\u05cdְ־\u05f5\u05caְ\u05ccֵׇ\u05cfוכ\u05fd\u05f8כ׀יֺ\u05ed\u0605\u0602צע\u0605\u05ecזכןק\u05eeؑ\u05eb\u05ce\u05ceאב׳؏\u0602פ\u05f6צה،מ\u05feׯ\u05f7ױ؎ל\u05f5ף\u05ff؆ףתؘ\u05f5\u05f7",
-                  (byte)122,
-                  70
-               );
-               ZKM_STR_B[7] = NLoginCore_453.C(
-                  "ժ։ջը֛ափ֤֑֕ձֈշ֪չվ֟֞֨կպպְլց֏ր։ְմְֶ\u058bոְֶ֛֖֝րֱׁոֳ׃֩֙ׄ\u05c8֖քֈֲֹ֜־ּ\u05cd֍֦\u05ca֢֩זבֽ֦\u05cd֜\u05c9ֱ֚ו׀֤ו֤דֺ׃ֽיֺ֬\u05c8ףײױ֦ײבףֶ׳ךַׅ\u05feוֵדֹתס\u05ccֻ\u05fc\u05cb",
-                  (byte)122,
-                  67
-               );
-               ZKM_STR_B[8] = NLoginCore_451.A(
-                  "ƺǙǋƸǫƱǓǴǥǡǁǘǇǺǉǎǯǮǸƿǊǊȀƼǑǟǐǙȀǄȆȀǛǈȀǫǦǭȆǐȁȑǈȃȓǹǩȔȘǦǔǘȉǮȔȗȠȥȟǞȉȀȈȅȢȢǺȏȭȃȒȫȥȪǭȋȉȰȒȍȼȻȪȏǼȟȚșȿȭȶȐȷȚȾȬȬȉȫȞȎșɃȠȌȝȨȢɒɌɂȖɘɐȐȼɛɏȦȧ", (byte)122, 65
-               );
-               ZKM_STR_B[9] = NLoginCore_076.B(
-                  "ƺǙǋƸǫƱǓǴǥǡǁǘǇǺǉǎǯǮǸƿǊǊȀƼǑǟǐǙȀǄȆȀǛǈȀǫǦǭȆǐȁȑǈȃȓǹǩȔȘǦǔǘȉǬȂȎȌȝǝǶȚǲǹȦȡǶȍȝǬșȁǪȥȐǴȥǴȣȊȓȍȩȊǼȘȳɂɁǶɂȡȳȆɃȪȕȇǿȯɂȜɁɏȮȤȑȪț", (byte)122, 66
-               );
-               ZKM_STR_B[10] = NLoginCore_384.F(
-                  "ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ\u058cֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և\u05c9׃֞\u058b׃ְ֮֩\u05c9֓ׄה\u058b׆זּ֬חכ֛֩֗\u05ccֱחךףרע֡\u05cc׃\u05cb\u05c8ץץֽגװ׆ו\u05eeר\u05edְ\u05ce\u05cc׳וא\u05ff\u05fe\u05edגֿעםל\u0602װ\u05f9ד\u05faם\u0601ׯׯ\u05cc\u05eeסבל؆ף\u05cfנ\u05eb\u05ee\u05cd\u061c؈׳ؓװןؐװؒשת",
-                  (byte)122,
-                  70
-               );
-               ZKM_STR_B[11] = NLoginCore_092.B("ƼǍƶǥǊǛǅƻǨƭǊƻ", (byte)122, 66);
-               ZKM_STR_B[12] = NLoginCore_138.A(
-                  "ƩǨƦƷưǩǯƯưƫǳǈǇǦǣǐǯǌǍǼǋƻƻƼǽǳƾǧǡǕȇǹǭǇǚǹǆǊȋǛǧȈǶǳǊǢǬǔǓȝȓȌȍȔǳǸȑȍȑȤȜǹǻǿȬǿǺȡȤǿȤȭȏȖǯȖǲȇȏȺȳǽȪȋȰȏǻȝǻɂȷȗșȅȶȅȶȠɋȦȰȈȣȣɇɎȖȪȡȷɄȕțȫȽȮɓɌȞɀɏɔȻȥȻȤȲȢɖȿɠɧɰɏȯɆɳɫɕɌȰɄɎɻɭɺɻɱɜɉɘɖɗɟȿɒɜʈɢɴɢɉʄɷɹɝɰʈɟʃɭʘɷʈʉɯɗʋɖʕʐʟɦɧ",
-                  (byte)122,
-                  65
-               );
-               ZKM_STR_B[13] = NLoginCore_201.E("֗ծչ֧ռւ֝տֱ֗֍վ", (byte)122, 69);
-               ZKM_STR_B[14] = NLoginCore_141.F(
-                  "լ֫թպճֲ֬ղճծֶ\u058b֊ֲ֦֩֓֏\u0590ֿ֎վվտ׀ֶց֪֤֘\u05caְּ֊ּ֝։֍\u05ce֪֞\u05cbֶֹ֍֥֖֯֗נז\u05cfאחֶֻהאהקןּ־ׂׯֽׂפקׂקװגיְ׳כ\u05cd\u05cc\u05ceׇ\u05f9ׯןפף\u0600\u05f6ד\u05feללהׅ׆\u05edםתؒ\u05cd\u05ebה\u0601\u05cc،ؖטؙؐײؒש؏״ؑ\u05fdךפؙ\u05fc\u0604؟؈\u0602؞עף\u05fdؠ؉\u05fb؟تױز؈\u0604׳ءضؐزؕؔاؾػ؎ؔ،؉؊",
-                  (byte)122,
-                  70
-               );
-               ZKM_STR_B[15] = NLoginCore_387.B("ƺǙǋƸǫƱǓǴǥǡǁǘǇǺǉǎǯǮǸƿǊǊȀƼǑǟǐǙȀǄȆȀǛǈȀǫǦǭȆǐȁȑǈȃȓǹǩȔȘǦǔǘȉǩǠǬǷȄȐǤȗǟȒǦ", (byte)122, 66);
-               ZKM_STR_B[16] = NLoginCore_453.B(
-                  "ƺǙǋƸǫƱǓǴǥǡǁǘǇǺǉǎǯǮǸƿǊǊȀƼǑǟǐǙȀǄȆȀǛǈȀǫǦǭȆǐȁȑǈȃȓǹǩȔȘǦǔǘȉǬȂȎȌȝǝǶȚǲǹȦȡǶȍȝǬșȁǪȥȐǴȥǴȣȊȓȍȩȊǼȘȳɂɁǶɂȡȳȆɃȪȕȗȿɅȬɐȽȿȬȐȌȞț", (byte)122, 66
-               );
-               ZKM_STR_B[17] = NLoginCore_091.E(
-                  "ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ\u058cֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և\u05c9׃֞\u058b׃ְ֮֩\u05c9֓ׄה\u058b׆זּ֬חכ֛֩֗\u05ccֱחךףרע֡\u05cc׃\u05cb\u05c8ץץֽגװ׆ו\u05eeר\u05edְ\u05ce\u05cc׳וא\u05ff\u05fe\u05edגֿעםל\u0602װ\u05f9ד\u05faם\u0601ׯׯ\u05cc\u05eeסבל؆ף\u05cfנ\u05ecא\u05edץ؉ק؈ן\u05fc\u0602آآשת",
-                  (byte)122,
-                  69
-               );
-               ZKM_STR_B[18] = NLoginCore_092.A("ǬƤƮơǡǡǓǥǢƲǐǩǏƴƶƶǯǕǶǓǓȀǸǸǻǾǆǇǳǇǦǣǵǺǈǻǠǐǌǽǓȐǥǗȗǴȇǥȍȘȟȌȉȞǢȗȁȔȑȡǧǹȋȤȟȕȯǮǭǿȦǿȤȀȂǻ", (byte)122, 65);
-               ZKM_STR_B[19] = NLoginCore_433.B("ǀǙǦƺǑƻǯƯǏǁƲǔǧǤǯǑǰǜƾǪǈǹǡƾǯǅǜǟǛǟǫȇǪǽȂȂǣǝȂǱȆȉǐȕȁșȑǧǰȉǧǖǯǛǙǜȠȑǝȖȚȣȄȞ", (byte)122, 66);
-               ZKM_STR_B[20] = NLoginCore_141.A("ƸƧƸǇƨǇƨƿǭǆǰƻ", (byte)122, 65);
-               ZKM_STR_B[21] = NLoginCore_092.B("ǀǙǦƺǑƻǯƯǏǁƲǔǧǤǯǑǰǜƾǪǈǰǓǕǚǹǿǯǘǅǫǥȅȎǊǯǨǡǜȊǒǱǱǑǨǢǌȕǲȍȍǱǱǬțǵǛǮȒǰǻȒȘǨ", (byte)122, 66);
-               break;
-            case 2:
-               ZKM_STR_B[0] = NLoginCore_471.B("ƿǧǆƹǣǆƽƻǜƳǨǟǩǌǘǺǗǖǵƱǿǿǆǇ", (byte)122, 66);
-            case 3:
-            default:
-               break;
-            case 4:
-               ZKM_STR_B[0] = NLoginCore_092.E("թռգվ֣։և֤թ\u058c֭ք֍ְִִּ֧֪֮վ\u058c։֊", (byte)122, 69);
-         }
-      }
-   }
-
-   public int d() {
-      return this.r().length();
-   }
-
-   public NLoginCore_418(NLoginType_008 var1) {
-      if (var1.b().a() == NLoginCore_419.c && !BedrockFloodgateHook.aF) {
-         NLoginCore_370.c(a(e, f ^ g));
-         NLoginCore_370.c(a(i & j, k));
-         this.a = null;
-      } else {
-         this.a = new NLoginCore_118(var1, this);
-      }
-
-      if (!this.J()) {
-         if (NLoginCore_150.j()) {
-            NLoginCore_370.c(a(m, n));
-            NLoginCore_370.c(a(p, q ^ r));
-         } else {
-            NLoginCore_370.c(a(t, u));
-            NLoginCore_370.c(a(w & x, y));
-         }
-      }
-   }
-
-   public String r() {
-      try {
-         return FloodgateApi.getInstance().getPlayerPrefix();
-      } catch (Throwable var2) {
-         if (var2.getCause() instanceof ClassNotFoundException) {
-            String var10000 = a(ao, ap ^ aq);
-            Object[] var10001 = new Object[ar];
-            var10001[as] = var2.getMessage();
-            NLoginCore_370.c(var10000, var10001);
-         } else {
-            NLoginCore_370.b(a(at, au), var2);
-         }
-
-         return a(aw & ax, ay);
-      }
-   }
-
-   private static Object c(Lookup var0, String var1, MethodType var2) {
-      try {
-         return new MutableCallSite(
-            var0.findStatic(
-                  NLoginCore_418.class,
-                  new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(NLoginCore_027.B("ÝÿāáąĤĜĲĞíīġįĩòėĹĸİĶİą", (byte)27, 66), NLoginCore_418.class.getClassLoader())
-               )
-               .asType(var2)
-         );
-      } catch (Exception var4) {
-         throw new RuntimeException(
-            NLoginCore_521.C("ѩѶѵиѸѴѯѸ҃ѲпѽҁѺѽ҃хߠޫ\u07b4߂\u07bbߥ߃ߞ߇ߧߧߔѝ", (byte)27, 67) + var1 + NLoginCore_553.B("ï", (byte)27, 66) + var2.toString(), var4
-         );
-      }
-   }
-
-   @Nullable
-   public FloodgatePlayer a(String var1, String var2) {
-      try {
-         for (FloodgatePlayer var4 : FloodgateApi.getInstance().getPlayers()) {
-            String var5 = var4.getUsername().replace((char)az, (char)ba);
-            String var6 = var4.getCorrectUsername();
-            if (var5.equals(var1) || var6.equals(var1)) {
-               String var7;
-               try {
-                  var7 = (String)a.get(var4);
-               } catch (IllegalAccessException var11) {
-                  throw new RuntimeException(var11);
-               }
-
-               if (!var7.equals(var2)) {
-                  InetAddress var8;
-                  try {
-                     var8 = InetAddress.getByName(var2);
-                  } catch (UnknownHostException var12) {
-                     String var10000 = a(bb, bc ^ bd) + var12.getMessage() + a(be, bf ^ bg);
-                     Object[] var10001 = new Object[bh];
-                     var10001[bi] = var4.getUsername();
-                     var10001[bj] = var4.getCorrectUsername();
-                     var10001[bk] = var2;
-                     var10001[bl] = var7;
-                     String var10 = String.format(var10000, var10001);
-                     NLoginCore_370.c(var10);
-                     break;
-                  }
-
-                  if (!this.a(var8)) {
-                     String var14 = a(bn & bo, bp);
-                     Object[] var15 = new Object[bq];
-                     var15[br] = var4.getUsername();
-                     var15[bs] = var4.getCorrectUsername();
-                     var15[bt] = var7;
-                     var15[bu] = var2;
-                     String var9 = String.format(var14, var15);
-                     NLoginCore_370.c(var9);
-                     break;
-                  }
-               }
-
-               return var4;
+    private static String a(int n, long l) {
+        l ^= 0x79L;
+        l ^= 0x26A68E6B701861AL;
+        if (var_java_lang_String_arr_a[n] == null) {
+            SecretKeyFactory secretKeyFactory;
+            Cipher cipher;
+            try {
+                cipher = Cipher.getInstance(new String(new byte[]{(byte)(52 + 16), (byte)(37 + 32), 83, (byte)(27 + 20), (byte)(66 + 1), (byte)(26 + 40), (byte)(31 + 36), (byte)(23 + 24), (byte)(60 + 20), (byte)(40 + 35), 67, (byte)(20 + 63), (byte)(46 + 7), (byte)(16 + 64), (byte)(62 + 35), (byte)(3 + 97), (byte)(34 + 66), (byte)(79 + 26), (byte)(102 + 8), (byte)(72 + 31)}, StandardCharsets.UTF_8));
+                secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, 69, (byte)(43 + 40)}, StandardCharsets.UTF_8));
             }
-         }
-      } catch (Throwable var13) {
-         NLoginCore_370.c(a(bw, bx ^ by), var13);
-      }
+            catch (Exception exception) {
+                throw new RuntimeException(NLoginCore_223.E("խպչԼռոճռևնՃցօվցևՉࣤࢯࢸࣆࢿࣩࣇ࣢࣋࣫࣫ࣘ", (byte)78, 69));
+            }
+            byte[] byArray = new byte[8];
+            byArray[0] = (byte)(l >>> 56);
+            for (int i = 1; i < 8; ++i) {
+                byArray[i] = (byte)(l << i * 8 >>> 56);
+            }
+            cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+            NLoginCore_418.var_java_lang_String_arr_a[n] = new String(cipher.doFinal(Base64.getDecoder().decode(var_java_lang_String_arr_b[n])), StandardCharsets.UTF_8);
+        }
+        return var_java_lang_String_arr_a[n];
+    }
 
-      return null;
-   }
+    @Nullable
+    @Generated
+    public NLoginCore_118 a() {
+        return this.var_com_nickuc_login_NLoginCore_118_a;
+    }
 
-   @Generated
-   public AttributeKey<FloodgatePlayer> a() {
-      return this.b;
-   }
+    private boolean a(InetAddress inetAddress) {
+        return (inetAddress.isLoopbackAddress() || inetAddress.isAnyLocalAddress() || NLoginCore_071.var_com_nickuc_login_NLoginCore_071_a.b(inetAddress) || NLoginCore_071.var_com_nickuc_login_NLoginCore_071_b.b(inetAddress) || NLoginCore_071.var_com_nickuc_login_NLoginCore_071_c.b(inetAddress) ? ca : cb) != 0;
+    }
 
-   @Override
-   public boolean a(UUID var1) {
-      try {
-         return ((var1 != null && FloodgateApi.getInstance() != 0).isFloodgatePlayer(var1) ? aa : ab);
-      } catch (Throwable var3) {
-         if (var3.getCause() instanceof ClassNotFoundException) {
-            String var10000 = a(ac & ad, ae);
-            Object[] var10001 = new Object[af];
-            var10001[ag] = var3.getMessage();
-            NLoginCore_370.c(var10000, var10001);
-         } else {
-            NLoginCore_370.b(a(ah & ai, aj), var3);
-         }
+    @Override
+    public boolean J() {
+        return (this.d() != 0 ? am : an) != 0;
+    }
 
-         return (al != 0);
-      }
-   }
+    private static void b() {
+        int n;
+        c = -4649717043383174884L;
+        long l = c ^ 0x26A68E6B701861AL;
+        Cipher cipher = Cipher.getInstance(new String(new byte[]{(byte)(49 + 19), (byte)(16 + 53), (byte)(41 + 42), (byte)(23 + 24), (byte)(43 + 24), (byte)(27 + 39), (byte)(38 + 29), (byte)(28 + 19), (byte)(53 + 27), (byte)(74 + 1), 67, (byte)(27 + 56), 53, (byte)(19 + 61), (byte)(2 + 95), (byte)(79 + 21), (byte)(27 + 73), (byte)(51 + 54), (byte)(18 + 92), (byte)(39 + 64)}, StandardCharsets.UTF_8));
+        SecretKeyFactory secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(51 + 17), (byte)(32 + 37), 83}, StandardCharsets.UTF_8));
+        byte[] byArray = new byte[8];
+        byArray[0] = (byte)(l >>> 56);
+        for (n = 1; n < 8; ++n) {
+            byArray[n] = (byte)(l << n * 8 >>> 56);
+        }
+        cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+        n = 1;
+        block7: for (int i = 0; i < n; ++i) {
+            switch (i) {
+                case 0: {
+                    NLoginCore_418.var_java_lang_String_arr_b[0] = NLoginCore_223.A("ƹƧƥǫƾǏƯƥǝǮǥǕǌǕǈǹǗǷǹǎǨǲǬǣȄǠǀǰǸǳȀȀ", (byte)122, 65);
+                    NLoginCore_418.var_java_lang_String_arr_b[1] = NLoginCore_138.C("֓թՖմվ֛հ֐չճ֚֜ոոփ֛֦ժ֛ֆխվ֋քիվֵ֦֞֩֬օ֚֬վչֲֵ֭վֱֶֺֹּ֧֭֝֕ֈֶׄֈֿ֦֛֏֤ׄ֟׋׎׉ּכבךְֳִָ֣הלף֣֦֤ר׈ׇֹףץֿל׮ׅׯְֱאֶׅשךֵַצ׵״בחױב׭؀؅׆ֻמק؂׶׼םםؑ׏׍׿קסף؄א׫؛״םך؏׵ؙؕ׻ؕ׳ؗװؠأؤأ׽؍؅،ׯ׭׼،س؇ة؂؀׸׬׵ؼ׳ع؇ءذذفطؓل؋", (byte)122, 67);
+                    NLoginCore_418.var_java_lang_String_arr_b[2] = NLoginCore_387.D("ղռշէղ՛խ֔ձ֟և֞֗ջ֜ֈը֎֬ց֬ցղ֜։ֈֲմ֦֐օֲֵֺֈ֌֎ֳ֊֌׀ջׁրָָׅ֛֥֗֜֍ָ֍ֳִ֢֫׎ׂ֣֠י׍ָֹ֪֗֨֯֠עככגז֤הֹ׌֥֩֬טכׯאֳׁ֮ׄ׃׊׈י׃ױ׹׎׮ב׿׎׽א׭צך׾ץ׶ך׈؍ן؆؃׿זח", (byte)122, 68);
+                    NLoginCore_418.var_java_lang_String_arr_b[3] = NLoginCore_223.C("ժ֚՗ծղՓ՘֙ծան֠֜ղտ֊֛շո֦֡տ֎ֲֲַ֧֣֦֮֩֔֗մպ։տְջָ֘׃׃֡֝׈ֵֿ։׃׌֬ւאֽ։ׄ֍׋ׂ֤֬׌ַ֓־׏ֲֶׁ֛֩֘֠֜חלךׇ֣ני׌ץררׁלב׬׈׭ְׁזֻ׍׷׋ֱב׶חןןךע׋", (byte)122, 67);
+                    NLoginCore_418.var_java_lang_String_arr_b[4] = NLoginCore_138.B("ǟƣǋǈǏǑƼǁƪƧǏǗǯǪǃǍǐǗǹǎǻǚƽǋƾǳƼǀǷȀȇǵȋǭǝȁȌȁȉǬȋǧǩȄȀǑǺǲȗțǝǙțǙȜǲǻșǸǿȔǛȡȢǢțȈǿǫǩȁȯȇǵȪȕȕȷȂșǲȈǽȚȫțȲȭȬɄȺȠȡȝȁȪȄȢȯȯȆȌȿȤȲȋɎȨɀɑȭșȫȽɌɇɉɊɋɌɅɡȲɄȞȿȻɢȣȨɬȩɌȾɛȰɬɨɆȻ", (byte)122, 66);
+                    NLoginCore_418.var_java_lang_String_arr_b[5] = NLoginCore_559.C("յե֏֐֏ժվ՜փտվՠե։ըբ֦ֆ֌ւցց֋ց֣֔ղ֐ֵַָ֔֬֜ռֱֳָ֒֞֬֘֡׈ֶ֓׀ֽׁ֛֭և׏ֱׅ׌֪׉ֿ֣א׎ָ֖׍׎ְֳ׊ֹט֕לזֳׇׇּ֧םֹצֽ׎ק׭׎הן״רב׬ץ׍ֲ", (byte)122, 67);
+                    NLoginCore_418.var_java_lang_String_arr_b[6] = NLoginCore_559.A("ƣƧǏǐƿƿƱǀǪƲǷƮƳǱǺǷǭǘǬƹǿǕȃǮǝȀȄǔȁǪǥǺȇȈǖǅǘǪǺȅȈǥǲȂǩǕȍȅȒȖǱǿȓǾȔȋǢȁǢȇǦȡțȅȍȠȉǿȊǭǻȲȇǭȉȄǲȌȒȘȺȵȘǽȖǷȪɂȿȣȟɂȩȓȘȜȤȫɎȨȋȋȍȎȰɌȿȡȳȣȑɉțȻȬȴȮɁɀɝȲɜəɅɕɒȽɝ", (byte)122, 65);
+                    NLoginCore_418.var_java_lang_String_arr_b[7] = NLoginCore_110.E("ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ֌ֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և׉׃֞֋׃ְ֮֩׉֓ׄה֋׆זּ֬חכ֛֩֗׌ׅ֯ב׏נֹ֠םֵּשפֹאנ֯ל֭ׄרדַרַצ׍זא׬׍ֿכ׶؅؄ֹ؅פ׶׉؆׭ט׆؂؉؆ׅא׭׷؈דץמ", (byte)122, 69);
+                    NLoginCore_418.var_java_lang_String_arr_b[8] = NLoginCore_384.E("ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ֌ֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և׉׃֞֋׃ְ֮֩׉֓ׄה֋׆זּ֬חכ֛֩֗׌ֱחךףרע֡׌׃׋׈ץץֽגװ׆ו׮ר׭ְ׎׌׳וא׿׾׭גֿעםל؂װ׹ד׺ם؁ׯׯ׌׮סבל؆ף׏נ׫؈؆؎؎׻טמ؀הؒ׼שת", (byte)122, 69);
+                    NLoginCore_418.var_java_lang_String_arr_b[9] = NLoginCore_453.D("ժ։ջը֛ափ֤֑֕ձֈշ֪չվ֟֞֨կպպְլց֏ր։ְմְֶ֋ոְֶ֛֖֝րֱׁոֳ׃֩֙ׄ׈֖քֈֲֹ֜־ּ׍֍֦׊֢֩זבֽ֦׍֜׉ֱ֚ו׀֤ו֤דֺ׃ֽיֺ֬׈ףײױ֦ײבףֶ׳ךֳׅׯ׶׳ֲֽךפ׵׀ג׋", (byte)122, 68);
+                    NLoginCore_418.var_java_lang_String_arr_b[10] = NLoginCore_451.C("ժ։ջը֛ափ֤֑֕ձֈշ֪չվ֟֞֨կպպְլց֏ր։ְմְֶ֋ոְֶ֛֖֝րֱׁոֳ׃֩֙ׄ׈֖քֈׇֹ֞ׄאו׏֎ְֵָֹגגֿ֪םֳׂכוךֹֻ֝נֽׂ׬׫ךֿ֬׏׊׉ׯםצ׀ק׊׮ללֹכ׎־׉׳אּ׍ט׵׳׻׻רׅ׋׭ׁ׿שזח", (byte)122, 67);
+                    NLoginCore_418.var_java_lang_String_arr_b[11] = NLoginCore_324.B("ƧǙƶǢǙǚǝǪǂǌǆƻ", (byte)122, 66);
+                    NLoginCore_418.var_java_lang_String_arr_b[12] = NLoginCore_223.D("ՙ֘Ֆէՠ֙֟՟ՠ՛֣ոշ֖֓ր֟ռս֬ջիիլ֣֭ծ֑֗օַ֩֝շ֊֩նպֻ֋ָ֦֣֗պ֒֜քփ׍׃ּֽֽׁׁ֣ׄ֨ה׌֩֫֯ל֪֯בה֯הםֿ׆֟׆ַֿ֢תף֭ךֻנֿ֫׍֫ײקׇ׉ֵצֵצא׻זנָדד׷׾׆ךבק״ׅ׋כ׭מ؃׼׎װ׿؄׫ו׫העג؆ׯؐؗؠ׿ן׶أ؛؅׼נ״׾ث؝تثء،׹؈؆؇؏ׯ؂،ظؒؤعؖ؈ؘ׻ض׸׿إص؞؋", (byte)122, 68);
+                    NLoginCore_418.var_java_lang_String_arr_b[13] = NLoginCore_027.C("հիծտվ՛փ֝ապֆի", (byte)122, 67);
+                    NLoginCore_418.var_java_lang_String_arr_b[14] = NLoginCore_446.B("ƩǨƦƷưǩǯƯưƫǳǈǇǦǣǐǯǌǍǼǋƻƻƼǽǳƾǧǡǕȇǹǭǇǚǹǆǊȋǛǧȈǶǳǊǢǬǔǓȝȓȌȍȔǳǸȑȍȑȤȜǹǻǿȬǿǺȡȤǿȤȭȏȖǭȰȘȊȉȋȄȶȬȜȡȠȽȳȐȻșșȑȂȃȪȚȧɏȊȨȑȾȉɉɓȕɖɍȯɏȦɌȱɎȺȗȡɖȹɁɜɅȿɛȟȠȺɝɆȸɜɧȮɯɅɁȰɖȲɤȹɣɆɩɮȴɈɒɉɆɇ", (byte)122, 66);
+                    NLoginCore_418.var_java_lang_String_arr_b[15] = NLoginCore_324.F("ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ֌ֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և׉׃֞֋׃ְ֮֩׉֓ׄה֋׆זּ֬חכ֛֩֗׌ֳֺ֥׃ֺ֠ע׀׊טֽ", (byte)122, 70);
+                    NLoginCore_418.var_java_lang_String_arr_b[16] = NLoginCore_091.F("ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ֌ֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և׉׃֞֋׃ְ֮֩׉֓ׄה֋׆זּ֬חכ֛֩֗׌ׅ֯ב׏נֹ֠םֵּשפֹאנ֯ל֭ׄרדַרַצ׍זא׬׍ֿכ׶؅؄ֹ؅פ׶׉؆׭ט׆؂؉؆ׅא׭׷؈דץמ", (byte)122, 70);
+                    NLoginCore_418.var_java_lang_String_arr_b[17] = NLoginCore_004.F("ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ֌ֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և׉׃֞֋׃ְ֮֩׉֓ׄה֋׆זּ֬חכ֛֩֗׌ֱחךףרע֡׌׃׋׈ץץֽגװ׆ו׮ר׭ְ׎׌׳וא׿׾׭גֿעםל؂װ׹ד׺ם؁ׯׯ׌׮סבל؆ף׏נ׫؈؆؎؎׻טמ؀הؒ׼שת", (byte)122, 70);
+                    NLoginCore_418.var_java_lang_String_arr_b[18] = NLoginCore_110.C("֜Ք՞Ց֑֑փ֕֒բր֙տդզզ֟օ֦փփְ֮֨֨֫նշ֣շ֖֥֪֓ո֫֐րռ֭փ׀֕ևַׇֽ֤֕׈׏ֹּ׎ֱׇׁ֒ׄבֻ֗֩הגֹ֫֝אי׎ֳׄמ֮֫", (byte)122, 67);
+                    NLoginCore_418.var_java_lang_String_arr_b[19] = NLoginCore_446.F("փ֜֩ս֔վֲղ֒քյֲֳ֪֧֗֔֟ց֭֋ּ֤ցֲֈ֢֢֮֟֞׊֭׀ִׅׅ֦ׅ֠׉׌֓טׄלהֳ֪׌ֲֳ֪֢֥֙֞׈ק֣֜קמל", (byte)122, 70);
+                    NLoginCore_418.var_java_lang_String_arr_b[20] = NLoginCore_384.A("ǚǀǍƮǛƫǍƼǊƯǨƻ", (byte)122, 65);
+                    NLoginCore_418.var_java_lang_String_arr_b[21] = NLoginCore_427.D("հ։֖ժցի֟՟տձբք֗֔֟ց֠֌ծ֚ո֠փօ֊֩֯֟ֈյֵ֛֕־պ֑֟֘֌ֺւ֡֡ց֘֒ռֽֽׅ֢֥֡֡֎ׅ֢֤֔׌֮֐ֺֻ", (byte)122, 68);
+                    continue block7;
+                }
+                case 1: {
+                    NLoginCore_418.var_java_lang_String_arr_b[0] = NLoginCore_027.D("թ՗Օ֛ծտ՟Օ֍֞֕օռօո֩և֧֩վ֛֘֟֟֔ֆְ֦֭֠֫֜", (byte)122, 68);
+                    NLoginCore_418.var_java_lang_String_arr_b[1] = NLoginCore_076.D("֓թՖմվ֛հ֐չճ֚֜ոոփ֛֦ժ֛ֆխվ֋քիվֵ֦֞֩֬օ֚֬վչֲֵ֭վֱֶֺֹּ֧֭֝֕ֈֶׄֈֿ֦֛֏֤ׄ֟׋׎׉ּכבךְֳִָ֣הלף֣֦֤ר׈ׇֹףץֿל׮ׅׯְֱאֶׅשךֵַצ׵״בחױב׭؀؅׆ֻמק؂׶׼םםؑ׏׍׿קסף؄א׫؛״םך؏׵ؙؕ׻ؕ׳ؗװؠأؤأ׽؍؅،ׯ׭׼،س؇ة؂؀׸׬׵؄سؒشب؊؛ج؃آؖ؋", (byte)122, 68);
+                    NLoginCore_418.var_java_lang_String_arr_b[2] = NLoginCore_091.D("ղռշէղ՛խ֔ձ֟և֞֗ջ֜ֈը֎֬ց֬ցղ֜։ֈֲմ֦֐օֲֵֺֈ֌֎ֳ֊֌׀ջׁրָָׅ֛֥֗֜֍ָ֍ֳִ֢֫׎ׂ֣֠י׍ָֹ֪֗֨֯֠עככגז֤הֹ׌֥֩֬טכׯאֳׁ֮ׄ׃׊׈י׃ױ׹׎׮ב׿׎׽א׭׮ײח׻י׸מ؉שצ׊שפ؎؊؇׏׬ײ׳יב", (byte)122, 68);
+                    NLoginCore_418.var_java_lang_String_arr_b[3] = NLoginCore_027.E("ս֭ժցօզի֬ցմ։ֳ֯օ֮֒֝֊֋ִֶֹֺֹּ֧֪ׅ֒֡׊ׁׅև֍֜֒׃֎׋֫זזְִכ׈ג֜זןֿ֕ףא֜ח֠מוַֿן֦׊בעֳּׅ֮֫׉֯התׯ׭ךֶ׳׬ן׸׻׻הׯפ׿כ؀׃הש׎ׇׯײؐ؇ץפןؓקؗמ", (byte)122, 69);
+                    NLoginCore_418.var_java_lang_String_arr_b[4] = NLoginCore_223.D("֏Փջոտցլձ՚՗տև֚֟ճսրև֩վ֫֊խջծ֣լհְַֻ֧֥֝֍ְֱֱִֹֻּ֜֗֙ցׇ֪֢׋֍։׋։׌֢֫׉֨֯ׄ֋בג֒׋ֱָ֛֯֙ןַ֥ךׅׅקֲ׉ָ֢֭׊כ׋עםל״תאב׍ֱךִגןןֶּׯהעֻ׾טװ؁ם׉כ׭׼׷׹׺׻׼׵ؑע״׎ׯ׫ؒ׳צؑוؠל׽׼׾לؠ׫", (byte)122, 68);
+                    NLoginCore_418.var_java_lang_String_arr_b[5] = NLoginCore_201.C("յե֏֐֏ժվ՜փտվՠե։ըբ֦ֆ֌ւցց֋ց֣֔ղ֐ֵַָ֔֬֜ռֱֳָ֒֞֬֘֡׈ֶ֓׀ֽׁ֛֭և׏ֱׅ׌֪׉ֿ֣א׎ָ֖׍׎ְֳ׊ֹט֕לזֳׇׇּ֧םֹצֽ׎קסצײ׃א֨׏ח׮׊א", (byte)122, 67);
+                    NLoginCore_418.var_java_lang_String_arr_b[6] = NLoginCore_387.F("զժ֒֓ււմփ֭յֺձնְִֺֽ֛֯ռׂ֘׆ֱ֠׃ׇֽ֭֗ׄ֨׊׋֙ֈֽ֛֭׈׋ֵׅ֨֬֘א׈ויִׂזׁח׎֥֥ׄ׊֩פמ׈אף׌ׂ׍ְ־׵׊ְ׌ֵׇ׏וכ׽׸כ׀יֺ׭؅؂צע؅׬זכןק׮ؑ׫׎׎אב׳؏؂פ׶צה،מ׾ׯ׷ױ؎ל׵ף׿؆ףתؘ׵׷", (byte)122, 70);
+                    NLoginCore_418.var_java_lang_String_arr_b[7] = NLoginCore_453.C("ժ։ջը֛ափ֤֑֕ձֈշ֪չվ֟֞֨կպպְլց֏ր։ְմְֶ֋ոְֶ֛֖֝րֱׁոֳ׃֩֙ׄ׈֖քֈֲֹ֜־ּ׍֍֦׊֢֩זבֽ֦׍֜׉ֱ֚ו׀֤ו֤דֺ׃ֽיֺ֬׈ףײױ֦ײבףֶ׳ךַׅ׾וֵדֹתס׌ֻ׼׋", (byte)122, 67);
+                    NLoginCore_418.var_java_lang_String_arr_b[8] = NLoginCore_384.A("ƺǙǋƸǫƱǓǴǥǡǁǘǇǺǉǎǯǮǸƿǊǊȀƼǑǟǐǙȀǄȆȀǛǈȀǫǦǭȆǐȁȑǈȃȓǹǩȔȘǦǔǘȉǮȔȗȠȥȟǞȉȀȈȅȢȢǺȏȭȃȒȫȥȪǭȋȉȰȒȍȼȻȪȏǼȟȚșȿȭȶȐȷȚȾȬȬȉȫȞȎșɃȠȌȝȨȢɒɌɂȖɘɐȐȼɛɏȦȧ", (byte)122, 65);
+                    NLoginCore_418.var_java_lang_String_arr_b[9] = NLoginCore_427.B("ƺǙǋƸǫƱǓǴǥǡǁǘǇǺǉǎǯǮǸƿǊǊȀƼǑǟǐǙȀǄȆȀǛǈȀǫǦǭȆǐȁȑǈȃȓǹǩȔȘǦǔǘȉǬȂȎȌȝǝǶȚǲǹȦȡǶȍȝǬșȁǪȥȐǴȥǴȣȊȓȍȩȊǼȘȳɂɁǶɂȡȳȆɃȪȕȇǿȯɂȜɁɏȮȤȑȪț", (byte)122, 66);
+                    NLoginCore_418.var_java_lang_String_arr_b[10] = NLoginCore_324.F("ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ֌ֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և׉׃֞֋׃ְ֮֩׉֓ׄה֋׆זּ֬חכ֛֩֗׌ֱחךףרע֡׌׃׋׈ץץֽגװ׆ו׮ר׭ְ׎׌׳וא׿׾׭גֿעםל؂װ׹ד׺ם؁ׯׯ׌׮סבל؆ף׏נ׫׮׍؜؈׳ؓװןؐװؒשת", (byte)122, 70);
+                    NLoginCore_418.var_java_lang_String_arr_b[11] = NLoginCore_092.B("ƼǍƶǥǊǛǅƻǨƭǊƻ", (byte)122, 66);
+                    NLoginCore_418.var_java_lang_String_arr_b[12] = NLoginCore_138.A("ƩǨƦƷưǩǯƯưƫǳǈǇǦǣǐǯǌǍǼǋƻƻƼǽǳƾǧǡǕȇǹǭǇǚǹǆǊȋǛǧȈǶǳǊǢǬǔǓȝȓȌȍȔǳǸȑȍȑȤȜǹǻǿȬǿǺȡȤǿȤȭȏȖǯȖǲȇȏȺȳǽȪȋȰȏǻȝǻɂȷȗșȅȶȅȶȠɋȦȰȈȣȣɇɎȖȪȡȷɄȕțȫȽȮɓɌȞɀɏɔȻȥȻȤȲȢɖȿɠɧɰɏȯɆɳɫɕɌȰɄɎɻɭɺɻɱɜɉɘɖɗɟȿɒɜʈɢɴɢɉʄɷɹɝɰʈɟʃɭʘɷʈʉɯɗʋɖʕʐʟɦɧ", (byte)122, 65);
+                    NLoginCore_418.var_java_lang_String_arr_b[13] = NLoginCore_201.E("֗ծչ֧ռւ֝տֱ֗֍վ", (byte)122, 69);
+                    NLoginCore_418.var_java_lang_String_arr_b[14] = NLoginCore_138.F("լ֫թպճֲ֬ղճծֶ֋֊ֲ֦֩֓֏֐ֿ֎վվտ׀ֶց֪֤֘׊ְּ֊ּ֝։֍׎֪֞׋ֶֹ֍֥֖֯֗נז׏אחֶֻהאהקןּ־ׂׯֽׂפקׂקװגיְ׳כ׍׌׎ׇ׹ׯןפף؀׶ד׾ללהׅ׆׭םתؒ׍׫ה؁׌،ؖטؙؐײؒש؏״ؑ׽ךפؙ׼؄؟؈؂؞עף׽ؠ؉׻؟تױز؈؄׳ءضؐزؕؔاؾػ؎ؔ،؉؊", (byte)122, 70);
+                    NLoginCore_418.var_java_lang_String_arr_b[15] = NLoginCore_387.B("ƺǙǋƸǫƱǓǴǥǡǁǘǇǺǉǎǯǮǸƿǊǊȀƼǑǟǐǙȀǄȆȀǛǈȀǫǦǭȆǐȁȑǈȃȓǹǩȔȘǦǔǘȉǩǠǬǷȄȐǤȗǟȒǦ", (byte)122, 66);
+                    NLoginCore_418.var_java_lang_String_arr_b[16] = NLoginCore_453.B("ƺǙǋƸǫƱǓǴǥǡǁǘǇǺǉǎǯǮǸƿǊǊȀƼǑǟǐǙȀǄȆȀǛǈȀǫǦǭȆǐȁȑǈȃȓǹǩȔȘǦǔǘȉǬȂȎȌȝǝǶȚǲǹȦȡǶȍȝǬșȁǪȥȐǴȥǴȣȊȓȍȩȊǼȘȳɂɁǶɂȡȳȆɃȪȕȗȿɅȬɐȽȿȬȐȌȞț", (byte)122, 66);
+                    NLoginCore_418.var_java_lang_String_arr_b[17] = NLoginCore_091.E("ս֜֎ջ֮մַ֖֤֨ք֛֊ֽ֌ֱֲֻ֑ւ֍֍׃տ֢֔֓֜׃և׉׃֞֋׃ְ֮֩׉֓ׄה֋׆זּ֬חכ֛֩֗׌ֱחךףרע֡׌׃׋׈ץץֽגװ׆ו׮ר׭ְ׎׌׳וא׿׾׭גֿעםל؂װ׹ד׺ם؁ׯׯ׌׮סבל؆ף׏נ׬א׭ץ؉ק؈ן׼؂آآשת", (byte)122, 69);
+                    NLoginCore_418.var_java_lang_String_arr_b[18] = NLoginCore_092.A("ǬƤƮơǡǡǓǥǢƲǐǩǏƴƶƶǯǕǶǓǓȀǸǸǻǾǆǇǳǇǦǣǵǺǈǻǠǐǌǽǓȐǥǗȗǴȇǥȍȘȟȌȉȞǢȗȁȔȑȡǧǹȋȤȟȕȯǮǭǿȦǿȤȀȂǻ", (byte)122, 65);
+                    NLoginCore_418.var_java_lang_String_arr_b[19] = NLoginCore_223.B("ǀǙǦƺǑƻǯƯǏǁƲǔǧǤǯǑǰǜƾǪǈǹǡƾǯǅǜǟǛǟǫȇǪǽȂȂǣǝȂǱȆȉǐȕȁșȑǧǰȉǧǖǯǛǙǜȠȑǝȖȚȣȄȞ", (byte)122, 66);
+                    NLoginCore_418.var_java_lang_String_arr_b[20] = NLoginCore_138.A("ƸƧƸǇƨǇƨƿǭǆǰƻ", (byte)122, 65);
+                    NLoginCore_418.var_java_lang_String_arr_b[21] = NLoginCore_092.B("ǀǙǦƺǑƻǯƯǏǁƲǔǧǤǯǑǰǜƾǪǈǰǓǕǚǹǿǯǘǅǫǥȅȎǊǯǨǡǜȊǒǱǱǑǨǢǌȕǲȍȍǱǱǬțǵǛǮȒǰǻȒȘǨ", (byte)122, 66);
+                    continue block7;
+                }
+                case 2: {
+                    NLoginCore_418.var_java_lang_String_arr_b[0] = NLoginCore_384.B("ƿǧǆƹǣǆƽƻǜƳǨǟǩǌǘǺǗǖǵƱǿǿǆǇ", (byte)122, 66);
+                    continue block7;
+                }
+                case 4: {
+                    NLoginCore_418.var_java_lang_String_arr_b[0] = NLoginCore_092.E("թռգվ֣։և֤թ֌֭ք֍ְִִּ֧֪֮վ֌։֊", (byte)122, 69);
+                }
+            }
+        }
+    }
 
-   @Nullable
-   public FloodgatePlayer a(UUID var1) {
-      try {
-         return var1 != null ? FloodgateApi.getInstance().getPlayer(var1) : null;
-      } catch (Throwable var3) {
-         if (var3.getCause() instanceof ClassNotFoundException) {
-            String var10000 = a(cc & cd, ce);
-            Object[] var10001 = new Object[cf];
-            var10001[cg] = var3.getMessage();
-            NLoginCore_370.c(var10000, var10001);
-         } else {
-            NLoginCore_370.b(a(ch, ci ^ cj), var3);
-         }
+    public int d() {
+        return this.r().length();
+    }
 
-         return null;
-      }
-   }
+    public NLoginCore_418(NLoginType_008 NLoginType_008) {
+        this.var_long_b = (long)AttributeKey.valueOf((String)NLoginCore_418.c("㺀", (int)var_int_a, (long)(var_long_b ^ d)));
+        if (NLoginType_008.com_nickuc_login_NLoginCore_364_b().a() != NLoginCore_419.var_com_nickuc_login_NLoginCore_419_c || BedrockFloodgateHook.aF) {
+            this.var_com_nickuc_login_NLoginCore_118_a = new NLoginCore_118(NLoginType_008, this);
+        } else {
+            NLoginCore_370.c((String)NLoginCore_418.c("㺃", (int)var_int_e, (long)(f ^ g)), new Object[h]);
+            NLoginCore_370.c((String)NLoginCore_418.c("㺆", (int)(i & j), (long)k), new Object[l]);
+            this.var_com_nickuc_login_NLoginCore_118_a = null;
+        }
+        if (!this.J()) {
+            if (NLoginCore_150.j()) {
+                NLoginCore_370.c((String)NLoginCore_418.c("㺉", (int)m, (long)n), new Object[o]);
+                NLoginCore_370.c((String)NLoginCore_418.c("㺌", (int)p, (long)(q ^ r)), new Object[s]);
+            } else {
+                NLoginCore_370.c((String)NLoginCore_418.c("㺏", (int)t, (long)u), new Object[v]);
+                NLoginCore_370.c((String)NLoginCore_418.c("㺒", (int)(w & x), (long)y), new Object[z]);
+            }
+        }
+    }
+
+    public String r() {
+        try {
+            return FloodgateApi.getInstance().getPlayerPrefix();
+        }
+        catch (Throwable throwable) {
+            if (throwable.getCause() instanceof ClassNotFoundException) {
+                Object[] objectArray = new Object[ar];
+                objectArray[NLoginCore_418.as] = throwable.getMessage();
+                NLoginCore_370.c((String)NLoginCore_418.c("㺀", (int)ao, (long)(ap ^ aq)), objectArray);
+            } else {
+                NLoginCore_370.b((String)NLoginCore_418.c("㺃", (int)at, (long)au), throwable, new Object[av]);
+            }
+            return NLoginCore_418.c("㺆", (int)(aw & ax), (long)ay);
+        }
+    }
+
+    private static String c(String s, int n, long l) {
+        return a(n, l);
+    }
+
+    private static Object c(MethodHandles.Lookup lookup, String string, MethodType methodType) {
+        try {
+            return new MutableCallSite(lookup.findStatic(NLoginCore_418.class, new String(new byte[]{97}, StandardCharsets.UTF_8), MethodType.fromMethodDescriptorString(NLoginCore_027.B("ÝÿāáąĤĜĲĞíīġįĩòėĹĸİĶİą", (byte)27, 66), NLoginCore_418.class.getClassLoader())).asType(methodType));
+        }
+        catch (Exception exception) {
+            throw new RuntimeException(NLoginCore_091.C("ѩѶѵиѸѴѯѸ҃ѲпѽҁѺѽ҃хߠޫ޴߂޻ߥ߃ߞ߇ߧߧߔѝ", (byte)27, 67) + string + NLoginCore_076.B("ï", (byte)27, 66) + methodType.toString(), exception);
+        }
+    }
+
+    @Nullable
+    public FloodgatePlayer a(String string, String string2) {
+        try {
+            for (FloodgatePlayer floodgatePlayer : FloodgateApi.getInstance().getPlayers()) {
+                String string3;
+                String string4 = floodgatePlayer.getUsername().replace((char)az, (char)ba);
+                String string5 = floodgatePlayer.getCorrectUsername();
+                if (!string4.equals(string) && !string5.equals(string)) continue;
+                try {
+                    string3 = (String)var_java_lang_reflect_Field_a.get(floodgatePlayer);
+                }
+                catch (IllegalAccessException illegalAccessException) {
+                    throw new RuntimeException(illegalAccessException);
+                }
+                if (!string3.equals(string2)) {
+                    InetAddress inetAddress;
+                    try {
+                        inetAddress = InetAddress.getByName(string2);
+                    }
+                    catch (UnknownHostException unknownHostException) {
+                        Object[] objectArray = new Object[bh];
+                        objectArray[NLoginCore_418.bi] = floodgatePlayer.getUsername();
+                        objectArray[NLoginCore_418.bj] = floodgatePlayer.getCorrectUsername();
+                        objectArray[NLoginCore_418.bk] = string2;
+                        objectArray[NLoginCore_418.bl] = string3;
+                        String string6 = String.format((String)NLoginCore_418.c("㺀", (int)bb, (long)(bc ^ bd)) + unknownHostException.getMessage() + (String)NLoginCore_418.c("㺃", (int)be, (long)(bf ^ bg)), objectArray);
+                        NLoginCore_370.c(string6, new Object[bm]);
+                        break;
+                    }
+                    if (!this.a(inetAddress)) {
+                        Object[] objectArray = new Object[bq];
+                        objectArray[NLoginCore_418.br] = floodgatePlayer.getUsername();
+                        objectArray[NLoginCore_418.bs] = floodgatePlayer.getCorrectUsername();
+                        objectArray[NLoginCore_418.bt] = string3;
+                        objectArray[NLoginCore_418.bu] = string2;
+                        String string7 = String.format((String)NLoginCore_418.c("㺆", (int)(bn & bo), (long)bp), objectArray);
+                        NLoginCore_370.c(string7, new Object[bv]);
+                        break;
+                    }
+                }
+                return floodgatePlayer;
+            }
+        }
+        catch (Throwable throwable) {
+            NLoginCore_370.c((String)NLoginCore_418.c("㺉", (int)bw, (long)(bx ^ by)), throwable, new Object[bz]);
+        }
+        return null;
+    }
+
+    @Generated
+    public AttributeKey<FloodgatePlayer> a() {
+        return this.var_long_b;
+    }
+
+    @Override
+    public boolean boolean_a(UUID uUID) {
+        try {
+            return (uUID != null && FloodgateApi.getInstance().isFloodgatePlayer(uUID) ? aa : ab) != 0;
+        }
+        catch (Throwable throwable) {
+            if (throwable.getCause() instanceof ClassNotFoundException) {
+                Object[] objectArray = new Object[af];
+                objectArray[NLoginCore_418.ag] = throwable.getMessage();
+                NLoginCore_370.c((String)NLoginCore_418.c("㺀", (int)(ac & ad), (long)ae), objectArray);
+            } else {
+                NLoginCore_370.b((String)NLoginCore_418.c("㺃", (int)(ah & ai), (long)aj), throwable, new Object[ak]);
+            }
+            return al != 0;
+        }
+    }
+
+    @Nullable
+    public FloodgatePlayer org_geysermc_floodgate_api_player_FloodgatePlayer_a(UUID uUID) {
+        try {
+            return uUID != null ? FloodgateApi.getInstance().getPlayer(uUID) : null;
+        }
+        catch (Throwable throwable) {
+            if (throwable.getCause() instanceof ClassNotFoundException) {
+                Object[] objectArray = new Object[cf];
+                objectArray[NLoginCore_418.cg] = throwable.getMessage();
+                NLoginCore_370.c((String)NLoginCore_418.c("㺀", (int)(cc & cd), (long)ce), objectArray);
+            } else {
+                NLoginCore_370.b((String)NLoginCore_418.c("㺃", (int)ch, (long)(ci ^ cj)), throwable, new Object[ck]);
+            }
+            return null;
+        }
+    }
 }
+

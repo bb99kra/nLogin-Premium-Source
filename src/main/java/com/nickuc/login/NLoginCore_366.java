@@ -1,19 +1,43 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.annotation.CheckReturnValue
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_559;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_110;
+import com.nickuc.login.NLoginCore_092;
+import com.nickuc.login.NLoginCore_559;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_140;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_324;
+import com.nickuc.login.NLoginCore_453;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
+import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.LinkOption;
 import java.nio.file.OpenOption;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.security.Key;
 import java.security.MessageDigest;
 import java.util.Arrays;
 import java.util.Base64;
@@ -25,455 +49,378 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
 public class NLoginCore_366 {
-   private static long k = Long.reverse(4035225266123964416L);
-   private static int x = 0 >>> 40 | 0 << ~40 + 1;
-   private static int aw = Integer.reverse(536870912);
-   private static int as = (0 >>> 119 | 0 << -119) & -1;
-   private static int an = Integer.reverse(0);
-   private static String[] ZKM_STR_B = new String[NLoginCore_366.ax];
-   private static int o = Integer.reverse(Integer.MIN_VALUE);
-   private static int s = Integer.reverse(0);
-   private static int b = Integer.reverse(-1);
-   private static int ae = Integer.reverse(0);
-   private static int ar = Integer.reverse(Integer.MIN_VALUE);
-   private static long ah = Long.reverse(4035225266123964416L);
-   private static int ab = 0 >>> 65 | 0 << ~65 + 1;
-   private static int q = Integer.reverse(0);
-   private static int u = Integer.reverse(0);
-   private static int ak = Integer.reverse(Integer.MIN_VALUE);
-   private static int av = Integer.reverse(0);
-   private static long c;
-   private static int ac = Integer.reverse(0);
-   private static int at = 0 >>> 186 | 0 << -186;
-   private static int ai = Integer.reverse(0);
-   private static int aj = 0 >>> 12 | 0 << -12;
-   private static long ag = Long.reverse(6313306922169161603L);
-   private static int ap = Integer.reverse(0);
-   private static int l = Integer.reverse(0);
-   private static String[] ZKM_STR_A = new String[aw];
-   private static int p = Integer.reverse(0);
-   private static int t = Integer.reverse(0);
-   private static int aa = (0 >>> 147 | 0 << -147) & -1;
-   private static long d = Long.reverse(8042689179079432067L);
-   private static int r = 0 >>> 127 | 0 << -127;
-   private static int z = (2 >>> 129 | 2 << -129) & -1;
-   private static int am = (0 >>> 254 | 0 << ~254 + 1) & -1;
-   private static int au = 64 >>> 198 | 64 << -198;
-   private static int ax = (512 >>> 135 | 512 << ~135 + 1) & -1;
-   private static long j = Long.reverse(6313306922169161603L);
-   private static int n = Integer.reverse(0);
-   private static int y = Integer.reverse(0);
-   private static int af = 3072 >>> 42 | 3072 << ~42 + 1;
-   private static int i = 4096 >>> 203 | 4096 << ~203 + 1;
-   private static long g = Long.reverse(4035225266123964416L);
-   private static int m = Integer.reverse(Integer.MIN_VALUE);
-   private static int a = Integer.reverse(0);
-   private static int e = Integer.reverse(Integer.MIN_VALUE);
-   private static int ao = Integer.reverse(0);
-   private static int al = Integer.reverse(0);
-   private static int aq = (0 >>> 145 | 0 << -145) & -1;
-   private static int h = (134217728 >>> 251 | 134217728 << -251) & -1;
-   private static long f = Long.reverse(6313306922169161603L);
-   private static int v = (0 >>> 157 | 0 << -157) & -1;
-   private static int ad = (0 >>> 209 | 0 << ~209 + 1) & -1;
-   private static int w = 0 >>> 140 | 0 << -140;
+    private static long k;
+    private static int x;
+    private static int aw;
+    private static int as;
+    private static int an;
+    private static String[] var_java_lang_String_arr_b;
+    private static int o;
+    private static int s;
+    private static int var_int_b;
+    private static int ae;
+    private static int ar;
+    private static long ah;
+    private static int ab;
+    private static int q;
+    private static int u;
+    private static int ak;
+    private static int av;
+    private static long c;
+    private static int ac;
+    private static int at;
+    private static int ai;
+    private static int aj;
+    private static long ag;
+    private static int ap;
+    private static int l;
+    private static String[] var_java_lang_String_arr_a;
+    private static int p;
+    private static int t;
+    private static int aa;
+    private static long d;
+    private static int r;
+    private static int z;
+    private static int am;
+    private static int au;
+    private static int ax;
+    private static long j;
+    private static int n;
+    private static int y;
+    private static int af;
+    private static int i;
+    private static long g;
+    private static int m;
+    private static int var_int_a;
+    private static int e;
+    private static int ao;
+    private static int al;
+    private static int aq;
+    private static int h;
+    private static long f;
+    private static int v;
+    private static int ad;
+    private static int w;
 
-   @CheckReturnValue
-   public static BufferedOutputStream a(File var0, int var1, OpenOption... var2) {
-      return new BufferedOutputStream(Files.newOutputStream(var0.toPath(), var2), var1);
-   }
+    @CheckReturnValue
+    public static BufferedOutputStream java_io_BufferedOutputStream_a(File file, int n, OpenOption ... openOptionArray) {
+        return new BufferedOutputStream(Files.newOutputStream(file.toPath(), openOptionArray), n);
+    }
 
-   // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   public static boolean a(String var0, File var1) {
-      InputStream var2 = NLoginCore_140.a(var0);
-      boolean var6 = false /* VF: Semaphore variable */;
-
-      int var8;
-      label70: {
-         try {
-            var6 = true;
-            if (var2 == null) {
-               throw new IOException(a(af, ag ^ ah) + var0);
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public static boolean a(String string, File file) {
+        InputStream inputStream = NLoginCore_140.java_io_InputStream_a(string);
+        try {
+            if (inputStream == null) {
+                throw new IOException((String)NLoginCore_366.c("㺀", (int)af, (long)(ag ^ ah)) + string);
             }
-
-            if (!b(var1)) {
-               var8 = ai;
-               var6 = false;
-               break label70;
+            if (!NLoginCore_366.b(file)) {
+                boolean bl = ai;
+                return bl;
             }
-
-            a(var2, var1);
-            var8 = ak;
-            var6 = false;
-         } finally {
-            if (var6) {
-               if (Collections.singletonList(var2).get(am) != null) {
-                  var2.close();
-               }
+            NLoginCore_366.a(inputStream, file);
+            boolean bl = ak;
+            return bl;
+        }
+        finally {
+            if (Collections.singletonList(inputStream).get(aj) != null) {
+                inputStream.close();
             }
-         }
+        }
+    }
 
-         if (Collections.singletonList(var2).get(al) != null) {
-            var2.close();
-         }
-
-         return (var8 != 0);
-      }
-
-      if (Collections.singletonList(var2).get(aj) != null) {
-         var2.close();
-      }
-
-      return (var8 != 0);
-   }
-
-   public static boolean a(File var0) {
-      if (var0.isDirectory()) {
-         File[] var1 = var0.listFiles();
-         if (var1 != null) {
-            File[] var2 = var1;
-            int var3 = var1.length;
-
-            for (int var4 = q; var4 < var3; var4++) {
-               File var5 = var2[var4];
-               a(var5);
+    public static boolean a(File file) {
+        File[] fileArray;
+        if (file.isDirectory() && (fileArray = file.listFiles()) != null) {
+            File[] fileArray2 = fileArray;
+            int n = fileArray2.length;
+            for (int i = q; i < n; ++i) {
+                File file2 = fileArray2[i];
+                NLoginCore_366.a(file2);
             }
-         }
-      }
+        }
+        return file.delete();
+    }
 
-      return var0.delete();
-   }
+    public static File a(File file, String string) {
+        Object[] objectArray;
+        File file2;
+        int n = NLoginCore_366.n;
+        File file3 = file.getParentFile();
+        do {
+            objectArray = new Object[o];
+            objectArray[NLoginCore_366.p] = n++;
+        } while ((file2 = new File(file3, String.format(string, objectArray))).exists());
+        return file2;
+    }
 
-   public static File a(File var0, String var1) {
-      int var2 = n;
-      File var3 = var0.getParentFile();
-
-      File var4;
-      do {
-         Object[] var10004 = new Object[o];
-         var10004[p] = var2++;
-         var4 = new File(var3, String.format(var1, var10004));
-      } while (var4.exists());
-
-      return var4;
-   }
-
-   // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   public static boolean c(File var0, File var1) {
-      if (b(var1)) {
-         BufferedInputStream var2 = a(var0);
-         boolean var9 = false /* VF: Semaphore variable */;
-
-         int var4;
-         try {
-            var9 = true;
-            BufferedOutputStream var3 = a(var1);
-            boolean var12 = false /* VF: Semaphore variable */;
-
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public static boolean c(File file, File file2) {
+        if (NLoginCore_366.b(file2)) {
+            BufferedInputStream bufferedInputStream = NLoginCore_366.java_io_BufferedInputStream_a(file, new OpenOption[x]);
             try {
-               var12 = true;
-               NLoginCore_140.a(var2, var3);
-               var4 = z;
-               var12 = false;
-            } finally {
-               if (var12) {
-                  if (Collections.singletonList(var3).get(ac) != null) {
-                     var3.close();
-                  }
-               }
+                boolean bl;
+                block9: {
+                    BufferedOutputStream bufferedOutputStream = NLoginCore_366.java_io_BufferedOutputStream_a(file2, new OpenOption[y]);
+                    try {
+                        NLoginCore_140.a((InputStream)bufferedInputStream, bufferedOutputStream);
+                        bl = z;
+                        if (Collections.singletonList(bufferedOutputStream).get(aa) == null) break block9;
+                    }
+                    catch (Throwable throwable) {
+                        if (Collections.singletonList(bufferedOutputStream).get(ac) != null) {
+                            ((OutputStream)bufferedOutputStream).close();
+                        }
+                        throw throwable;
+                    }
+                    ((OutputStream)bufferedOutputStream).close();
+                }
+                return bl;
             }
-
-            if (Collections.singletonList(var3).get(aa) != null) {
-               var3.close();
-               var9 = false;
-            } else {
-               var9 = false;
+            finally {
+                if (Collections.singletonList(bufferedInputStream).get(ab) != null) {
+                    ((InputStream)bufferedInputStream).close();
+                }
             }
-         } finally {
-            if (var9) {
-               if (Collections.singletonList(var2).get(ad) != null) {
-                  var2.close();
-               }
+        }
+        return ae != 0;
+    }
+
+    private static void b() {
+        int n;
+        c = -4473737293995525654L;
+        long l = c ^ 0xA2BF699ACFA7CB21L;
+        Cipher cipher = Cipher.getInstance(new String(new byte[]{(byte)(4 + 64), (byte)(16 + 53), (byte)(70 + 13), 47, (byte)(66 + 1), (byte)(63 + 3), (byte)(32 + 35), (byte)(13 + 34), (byte)(34 + 46), (byte)(48 + 27), (byte)(66 + 1), (byte)(38 + 45), (byte)(50 + 3), (byte)(52 + 28), (byte)(8 + 89), (byte)(80 + 20), (byte)(44 + 56), (byte)(71 + 34), 110, (byte)(21 + 82)}, StandardCharsets.UTF_8));
+        SecretKeyFactory secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(41 + 28), (byte)(72 + 11)}, StandardCharsets.UTF_8));
+        byte[] byArray = new byte[8];
+        byArray[0] = (byte)(l >>> 56);
+        for (n = 1; n < 8; ++n) {
+            byArray[n] = (byte)(l << n * 8 >>> 56);
+        }
+        cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+        n = 1;
+        block7: for (int i = 0; i < n; ++i) {
+            switch (i) {
+                case 0: {
+                    NLoginCore_366.var_java_lang_String_arr_b[0] = NLoginCore_384.F("չք֘ֈքս֌ծ։իւջ", (byte)119, 70);
+                    NLoginCore_366.var_java_lang_String_arr_b[1] = NLoginCore_027.E("ֆ֧֪֠֯վվխֆճ֒ջ", (byte)119, 69);
+                    NLoginCore_366.var_java_lang_String_arr_b[2] = NLoginCore_110.A("ƿƹƸƣǧǚǢǃǭǆǦƵ", (byte)119, 65);
+                    NLoginCore_366.var_java_lang_String_arr_b[3] = NLoginCore_091.F("ցլ֗ց֢ր֎֭փְ֪֯ֈ֕ոօ֒պְֿ֣֒֝ׄվֵֹֻ׈ֿֿ֧֥֚֓֘֕֟֟א֏֋ֳׇֹׁׁ֟ה֓׌׏֚֟֘֞ףסםפּ֞זַ", (byte)119, 70);
+                    continue block7;
+                }
+                case 1: {
+                    NLoginCore_366.var_java_lang_String_arr_b[0] = NLoginCore_201.D("ՋյքՕՉյ֐Ռղ։֜֙՝֗սծ֕պֆքՙ֦խծ", (byte)119, 68);
+                    NLoginCore_366.var_java_lang_String_arr_b[1] = NLoginCore_091.B("ǝǨǩƛƳƹǈǢǈǙƯƵ", (byte)119, 66);
+                    NLoginCore_366.var_java_lang_String_arr_b[2] = NLoginCore_559.D("մ՝ՐկժՠՖփՖճ֏բ", (byte)119, 68);
+                    NLoginCore_366.var_java_lang_String_arr_b[3] = NLoginCore_092.E("ցլ֗ց֢ր֎֭փְ֪֯ֈ֕ոօ֒պְֿ֣֒֝ׄվֵֹֻ׈ֿֿ֧֥֚֓֘֕֟֟א֏֋ֳׇֹׁׁ֟ה֓׌׏֚סֶֹֺדֳָ׉צחתו֦ׄ׉שףּׁ֩סנֻ", (byte)119, 69);
+                    continue block7;
+                }
+                case 2: {
+                    NLoginCore_366.var_java_lang_String_arr_b[0] = NLoginCore_324.E("ի֧֟ժօ֚իծռ֒խջ", (byte)119, 69);
+                    continue block7;
+                }
+                case 4: {
+                    NLoginCore_366.var_java_lang_String_arr_b[0] = NLoginCore_559.E("ըք֨֬֫վ֥֫փֆֲ֤֭հ֘չ֕ևָջֳ֯ֆև", (byte)119, 69);
+                }
             }
-         }
+        }
+    }
 
-         if (Collections.singletonList(var2).get(ab) != null) {
-            var2.close();
-         }
+    private static String c(String s, int n, long l) {
+        return a(n, l);
+    }
 
-         return (var4 != 0);
-      } else {
-         return (ae != 0);
-      }
-   }
+    private static Object c(MethodHandles.Lookup lookup, String string, MethodType methodType) {
+        try {
+            return new MutableCallSite(lookup.findStatic(NLoginCore_366.class, new String(new byte[]{97}, StandardCharsets.UTF_8), MethodType.fromMethodDescriptorString(NLoginCore_027.A("ŕŷŹřŽƜƔƪƖťƣƙƧơŪƏƱưƨƮƨŽ", (byte)87, 65), NLoginCore_366.class.getClassLoader())).asType(methodType));
+        }
+        catch (Exception exception) {
+            throw new RuntimeException(NLoginCore_453.D("ԝԪԩӬԬԨԣԬԷԦӳԱԵԮԱԷӹࢋࢃ࢐ࢍ࢈ࡳࢇࡻࢋ࡯ࢉ࢑ࢍ࢛ԓ", (byte)87, 68) + string + NLoginCore_324.E("Ս", (byte)87, 69) + methodType.toString(), exception);
+        }
+    }
 
-   private static void b() {
-      c = -4473737293995525654L;
-      long var0 = c ^ -6719536005383730399L;
-      Cipher var2 = Cipher.getInstance(
-         new String(
-            new byte[]{
-               (byte)(4 + 64),
-               (byte)(16 + 53),
-               (byte)(70 + 13),
-               47,
-               (byte)(66 + 1),
-               (byte)(63 + 3),
-               (byte)(32 + 35),
-               (byte)(13 + 34),
-               (byte)(34 + 46),
-               (byte)(48 + 27),
-               (byte)(66 + 1),
-               (byte)(38 + 45),
-               (byte)(50 + 3),
-               (byte)(52 + 28),
-               (byte)(8 + 89),
-               (byte)(80 + 20),
-               (byte)(44 + 56),
-               (byte)(71 + 34),
-               110,
-               (byte)(21 + 82)
-            },
-            StandardCharsets.UTF_8
-         )
-      );
-      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(41 + 28), (byte)(72 + 11)}, StandardCharsets.UTF_8));
-      byte[] var4 = new byte[8];
-      var4[0] = (byte)(var0 >>> 56);
+    public static boolean a(File file, boolean bl) {
+        if (!bl && file.exists()) {
+            return ar != 0;
+        }
+        File file2 = file.getParentFile();
+        if (file2 != null && !file2.exists() && !file2.mkdirs()) {
+            return as != 0;
+        }
+        return file.createNewFile();
+    }
 
-      for (int var5 = 1; var5 < 8; var5++) {
-         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
-      }
-
-      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
-      byte var7 = 1;
-
-      for (int var6 = 0; var6 < var7; var6++) {
-         switch (var6) {
-            case 0:
-               ZKM_STR_B[0] = NLoginCore_451.F("չք֘ֈքս\u058cծ։իւջ", (byte)119, 70);
-               ZKM_STR_B[1] = NLoginCore_241.E("ֆ֧֪֠֯վվխֆճ֒ջ", (byte)119, 69);
-               ZKM_STR_B[2] = NLoginCore_183.A("ƿƹƸƣǧǚǢǃǭǆǦƵ", (byte)119, 65);
-               ZKM_STR_B[3] = NLoginCore_091.F("ցլ֗ց֢ր֎֭փְ֪֯ֈ֕ոօ֒պְֿ֣֒֝ׄվֵֹֻ\u05c8ֿֿ֧֥֚֓֘֕֟֟א֏\u058bֳׇֹׁׁ֟ה֓\u05cc\u05cf֚֟֘֞ףסםפּ֞זַ", (byte)119, 70);
-               break;
-            case 1:
-               ZKM_STR_B[0] = NLoginCore_201.D("ՋյքՕՉյ\u0590Ռղ։֜֙՝֗սծ֕պֆքՙ֦խծ", (byte)119, 68);
-               ZKM_STR_B[1] = NLoginCore_127.B("ǝǨǩƛƳƹǈǢǈǙƯƵ", (byte)119, 66);
-               ZKM_STR_B[2] = NLoginCore_232.D("մ՝ՐկժՠՖփՖճ֏բ", (byte)119, 68);
-               ZKM_STR_B[3] = NLoginCore_092.E(
-                  "ցլ֗ց֢ր֎֭փְ֪֯ֈ֕ոօ֒պְֿ֣֒֝ׄվֵֹֻ\u05c8ֿֿ֧֥֚֓֘֕֟֟א֏\u058bֳׇֹׁׁ֟ה֓\u05cc\u05cf֚סֶֹֺדֳָ\u05c9צחתו֦ׄ\u05c9שףּׁ֩סנֻ", (byte)119, 69
-               );
-               break;
-            case 2:
-               ZKM_STR_B[0] = NLoginCore_324.E("ի֧֟ժօ֚իծռ֒խջ", (byte)119, 69);
-            case 3:
-            default:
-               break;
-            case 4:
-               ZKM_STR_B[0] = NLoginCore_530.E("ըք֨֬֫վ֥֫փֆֲ֤֭հ֘չ֕ևָջֳ֯ֆև", (byte)119, 69);
-         }
-      }
-   }
-
-   private static Object c(Lookup var0, String var1, MethodType var2) {
-      try {
-         return new MutableCallSite(
-            var0.findStatic(
-                  NLoginCore_366.class,
-                  new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(NLoginCore_427.A("ŕŷŹřŽƜƔƪƖťƣƙƧơŪƏƱưƨƮƨŽ", (byte)87, 65), NLoginCore_366.class.getClassLoader())
-               )
-               .asType(var2)
-         );
-      } catch (Exception var4) {
-         throw new RuntimeException(
-            NLoginCore_453.D("ԝԪԩӬԬԨԣԬԷԦӳԱԵԮԱԷӹࢋࢃ\u0890ࢍ࢈ࡳࢇࡻࢋ\u086fࢉ\u0891ࢍ࢛ԓ", (byte)87, 68) + var1 + NLoginCore_384.E("Ս", (byte)87, 69) + var2.toString(), var4
-         );
-      }
-   }
-
-   public static boolean a(File var0, boolean var1) {
-      if (!var1 && var0.exists()) {
-         return (ar != 0);
-      } else {
-         File var2 = var0.getParentFile();
-         return ((var2 != null && !var2.exists() != 0) && !var2.mkdirs() ? as : var0.createNewFile());
-      }
-   }
-
-   // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   public static String a(File var0, MessageDigest var1) {
-      BufferedInputStream var2 = a(var0);
-      boolean var6 = false /* VF: Semaphore variable */;
-
-      String var3;
-      try {
-         var6 = true;
-         var3 = NLoginCore_140.a(var2, var1);
-         var6 = false;
-      } finally {
-         if (var6) {
-            if (Collections.singletonList(var2).get(w) != null) {
-               var2.close();
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public static String a(File file, MessageDigest messageDigest) {
+        BufferedInputStream bufferedInputStream = NLoginCore_366.java_io_BufferedInputStream_a(file, new OpenOption[u]);
+        try {
+            String string = NLoginCore_140.a((InputStream)bufferedInputStream, messageDigest);
+            return string;
+        }
+        finally {
+            if (Collections.singletonList(bufferedInputStream).get(v) != null) {
+                bufferedInputStream.close();
             }
-         }
-      }
+        }
+    }
 
-      if (Collections.singletonList(var2).get(v) != null) {
-         var2.close();
-      }
+    public static File a(Class<?> clazz) {
+        try {
+            String string = clazz.getProtectionDomain().getCodeSource().getLocation().getPath();
+            String string2 = URLDecoder.decode(string, (String)NLoginCore_366.c("㺀", (int)(var_int_a & var_int_b), (long)d));
+            return new File(string2);
+        }
+        catch (UnsupportedEncodingException unsupportedEncodingException) {
+            throw new RuntimeException(unsupportedEncodingException);
+        }
+    }
 
-      return var3;
-   }
-
-   public static File a(Class<?> var0) {
-      try {
-         String var1 = var0.getProtectionDomain().getCodeSource().getLocation().getPath();
-         String var2 = URLDecoder.decode(var1, a(a & b, d));
-         return new File(var2);
-      } catch (UnsupportedEncodingException var3) {
-         throw new RuntimeException(var3);
-      }
-   }
-
-   private static String a(int var0, long var1) {
-      var1 ^= 28L;
-      var1 ^= -6719536005383730399L;
-      if (ZKM_STR_A[var0] == null) {
-         Cipher var3;
-         SecretKeyFactory var4;
-         try {
-            var3 = Cipher.getInstance(
-               new String(
-                  new byte[]{
-                     (byte)(26 + 42),
-                     (byte)(63 + 6),
-                     (byte)(49 + 34),
-                     (byte)(5 + 42),
-                     (byte)(18 + 49),
-                     (byte)(48 + 18),
-                     (byte)(21 + 46),
-                     (byte)(39 + 8),
-                     (byte)(62 + 18),
-                     (byte)(56 + 19),
-                     (byte)(48 + 19),
-                     (byte)(51 + 32),
-                     (byte)(19 + 34),
-                     (byte)(39 + 41),
-                     97,
-                     (byte)(89 + 11),
-                     (byte)(49 + 51),
-                     105,
-                     (byte)(18 + 92),
-                     (byte)(47 + 56)
-                  },
-                  StandardCharsets.UTF_8
-               )
-            );
-            var4 = SecretKeyFactory.getInstance(new String(new byte[]{68, 69, (byte)(63 + 20)}, StandardCharsets.UTF_8));
-         } catch (Exception var7) {
-            throw new RuntimeException(NLoginCore_521.E("֒֟֞ա֛֡֝֘֡֬ը֦֪֣֦֬ծऀࣸअंࣰࣽࣨࣼऀࣤࣾआंऐ", (byte)115, 69));
-         }
-
-         byte[] var5 = new byte[8];
-         var5[0] = (byte)(var1 >>> 56);
-
-         for (int var6 = 1; var6 < 8; var6++) {
-            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
-         }
-
-         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
-      }
-
-      return ZKM_STR_A[var0];
-   }
-
-   @CheckReturnValue
-   public static BufferedOutputStream a(File var0, OpenOption... var1) {
-      return new BufferedOutputStream(Files.newOutputStream(var0.toPath(), var1));
-   }
-
-   @CheckReturnValue
-   public static BufferedInputStream a(File var0, OpenOption... var1) {
-      return new BufferedInputStream(Files.newInputStream(var0.toPath(), var1));
-   }
-
-   public static boolean b(File var0) {
-      return a(var0, (aq != 0));
-   }
-
-   public static String c(File var0) {
-      String var1 = var0.getName();
-      String[] var2 = var1.split(a(e, f ^ g));
-      return var2.length == h ? var1 : String.join(a(i, j ^ k), Arrays.copyOfRange(var2, l, var2.length - m));
-   }
-
-   static {
-      b();
-   }
-
-   public static boolean a(File var0, long var1) {
-      BasicFileAttributes var3 = Files.readAttributes(var0.toPath(), BasicFileAttributes.class);
-      long var4 = var3.creationTime().toMillis();
-      return ((System.currentTimeMillis() != 0) - var4 >= var1 ? au : av);
-   }
-
-   // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   public static void a(InputStream var0, File var1) {
-      BufferedOutputStream var2 = a(var1);
-      boolean var5 = false /* VF: Semaphore variable */;
-
-      try {
-         var5 = true;
-         NLoginCore_140.a(var0, var2);
-         var5 = false;
-      } finally {
-         if (var5) {
-            if (Collections.singletonList(var2).get(ap) != null) {
-               var2.close();
+    private static String a(int n, long l) {
+        l ^= 0x1CL;
+        l ^= 0xA2BF699ACFA7CB21L;
+        if (var_java_lang_String_arr_a[n] == null) {
+            SecretKeyFactory secretKeyFactory;
+            Cipher cipher;
+            try {
+                cipher = Cipher.getInstance(new String(new byte[]{(byte)(26 + 42), (byte)(63 + 6), (byte)(49 + 34), (byte)(5 + 42), (byte)(18 + 49), (byte)(48 + 18), (byte)(21 + 46), (byte)(39 + 8), (byte)(62 + 18), (byte)(56 + 19), (byte)(48 + 19), (byte)(51 + 32), (byte)(19 + 34), (byte)(39 + 41), 97, (byte)(89 + 11), (byte)(49 + 51), 105, (byte)(18 + 92), (byte)(47 + 56)}, StandardCharsets.UTF_8));
+                secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, 69, (byte)(63 + 20)}, StandardCharsets.UTF_8));
             }
-         }
-      }
-
-      if (Collections.singletonList(var2).get(ao) != null) {
-         var2.close();
-      }
-   }
-
-   @CheckReturnValue
-   public static BufferedInputStream a(File var0, int var1, OpenOption... var2) {
-      return new BufferedInputStream(Files.newInputStream(var0.toPath(), var2), var1);
-   }
-
-   // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
-   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   public static String d(File var0) {
-      BufferedInputStream var1 = a(var0);
-      boolean var6 = false /* VF: Semaphore variable */;
-
-      String var3;
-      try {
-         var6 = true;
-         byte[] var2 = NLoginCore_140.a(var1);
-         var3 = new String(Base64.getEncoder().encode(var2));
-         var6 = false;
-      } finally {
-         if (var6) {
-            if (Collections.singletonList(var1).get(t) != null) {
-               var1.close();
+            catch (Exception exception) {
+                throw new RuntimeException(NLoginCore_091.E("֒֟֞ա֛֡֝֘֡֬ը֦֪֣֦֬ծऀࣸअंࣰࣽࣨࣼऀࣤࣾआंऐ", (byte)115, 69));
             }
-         }
-      }
+            byte[] byArray = new byte[8];
+            byArray[0] = (byte)(l >>> 56);
+            for (int i = 1; i < 8; ++i) {
+                byArray[i] = (byte)(l << i * 8 >>> 56);
+            }
+            cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+            NLoginCore_366.var_java_lang_String_arr_a[n] = new String(cipher.doFinal(Base64.getDecoder().decode(var_java_lang_String_arr_b[n])), StandardCharsets.UTF_8);
+        }
+        return var_java_lang_String_arr_a[n];
+    }
 
-      if (Collections.singletonList(var1).get(s) != null) {
-         var1.close();
-      }
+    @CheckReturnValue
+    public static BufferedOutputStream java_io_BufferedOutputStream_a(File file, OpenOption ... openOptionArray) {
+        return new BufferedOutputStream(Files.newOutputStream(file.toPath(), openOptionArray));
+    }
 
-      return var3;
-   }
+    @CheckReturnValue
+    public static BufferedInputStream java_io_BufferedInputStream_a(File file, OpenOption ... openOptionArray) {
+        return new BufferedInputStream(Files.newInputStream(file.toPath(), openOptionArray));
+    }
+
+    public static boolean b(File file) {
+        return NLoginCore_366.a(file, aq != 0);
+    }
+
+    public static String c(File file) {
+        String string = file.getName();
+        String[] stringArray = string.split((String)NLoginCore_366.c("㺀", (int)e, (long)(f ^ g)));
+        if (stringArray.length == h) {
+            return string;
+        }
+        return String.join((CharSequence)NLoginCore_366.c("㺃", (int)i, (long)(j ^ k)), Arrays.copyOfRange(stringArray, l, stringArray.length - m));
+    }
+
+    static {
+        var_int_a = Integer.reverse(0);
+        var_int_b = Integer.reverse(-1);
+        d = Long.reverse(8042689179079432067L);
+        e = Integer.reverse(Integer.MIN_VALUE);
+        f = Long.reverse(6313306922169161603L);
+        g = Long.reverse(0x3800000000000000L);
+        h = (0x8000000 >>> 251 | 0x8000000 << -251) & 0xFFFFFFFF;
+        i = 4096 >>> 203 | 4096 << ~203 + 1;
+        j = Long.reverse(6313306922169161603L);
+        k = Long.reverse(0x3800000000000000L);
+        l = Integer.reverse(0);
+        m = Integer.reverse(Integer.MIN_VALUE);
+        n = Integer.reverse(0);
+        o = Integer.reverse(Integer.MIN_VALUE);
+        p = Integer.reverse(0);
+        q = Integer.reverse(0);
+        r = 0 >>> 127 | 0 << -127;
+        s = Integer.reverse(0);
+        t = Integer.reverse(0);
+        u = Integer.reverse(0);
+        v = (0 >>> 157 | 0 << -157) & 0xFFFFFFFF;
+        w = 0 >>> 140 | 0 << -140;
+        x = 0 >>> 40 | 0 << ~40 + 1;
+        y = Integer.reverse(0);
+        z = (2 >>> 129 | 2 << -129) & 0xFFFFFFFF;
+        aa = (0 >>> 147 | 0 << -147) & 0xFFFFFFFF;
+        ab = 0 >>> 65 | 0 << ~65 + 1;
+        ac = Integer.reverse(0);
+        ad = (0 >>> 209 | 0 << ~209 + 1) & 0xFFFFFFFF;
+        ae = Integer.reverse(0);
+        af = 3072 >>> 42 | 3072 << ~42 + 1;
+        ag = Long.reverse(6313306922169161603L);
+        ah = Long.reverse(0x3800000000000000L);
+        ai = Integer.reverse(0);
+        aj = 0 >>> 12 | 0 << -12;
+        ak = Integer.reverse(Integer.MIN_VALUE);
+        al = Integer.reverse(0);
+        am = (0 >>> 254 | 0 << ~254 + 1) & 0xFFFFFFFF;
+        an = Integer.reverse(0);
+        ao = Integer.reverse(0);
+        ap = Integer.reverse(0);
+        aq = (0 >>> 145 | 0 << -145) & 0xFFFFFFFF;
+        ar = Integer.reverse(Integer.MIN_VALUE);
+        as = (0 >>> 119 | 0 << -119) & 0xFFFFFFFF;
+        at = 0 >>> 186 | 0 << -186;
+        au = 64 >>> 198 | 64 << -198;
+        av = Integer.reverse(0);
+        aw = Integer.reverse(0x20000000);
+        ax = (512 >>> 135 | 512 << ~135 + 1) & 0xFFFFFFFF;
+        var_java_lang_String_arr_a = new String[aw];
+        var_java_lang_String_arr_b = new String[ax];
+        NLoginCore_366.b();
+    }
+
+    public static boolean a(File file, long l) {
+        BasicFileAttributes basicFileAttributes = Files.readAttributes(file.toPath(), BasicFileAttributes.class, new LinkOption[at]);
+        long l2 = basicFileAttributes.creationTime().toMillis();
+        return (System.currentTimeMillis() - l2 >= l ? au : av) != 0;
+    }
+
+    public static void a(InputStream inputStream, File file) {
+        BufferedOutputStream bufferedOutputStream = NLoginCore_366.java_io_BufferedOutputStream_a(file, new OpenOption[an]);
+        try {
+            NLoginCore_140.a(inputStream, bufferedOutputStream);
+        }
+        finally {
+            if (Collections.singletonList(bufferedOutputStream).get(ao) != null) {
+                bufferedOutputStream.close();
+            }
+        }
+    }
+
+    @CheckReturnValue
+    public static BufferedInputStream java_io_BufferedInputStream_a(File file, int n, OpenOption ... openOptionArray) {
+        return new BufferedInputStream(Files.newInputStream(file.toPath(), openOptionArray), n);
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public static String d(File file) {
+        BufferedInputStream bufferedInputStream = NLoginCore_366.java_io_BufferedInputStream_a(file, new OpenOption[r]);
+        try {
+            byte[] byArray = NLoginCore_140.a(bufferedInputStream);
+            String string = new String(Base64.getEncoder().encode(byArray));
+            return string;
+        }
+        finally {
+            if (Collections.singletonList(bufferedInputStream).get(s) != null) {
+                ((InputStream)bufferedInputStream).close();
+            }
+        }
+    }
 }
+

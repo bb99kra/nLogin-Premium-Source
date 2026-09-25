@@ -1,69 +1,69 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.nickuc.login.loader.platform.VelocityLoader
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
-public final class NLoginCore_471 {
-   public static String E(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+import com.nickuc.login.loader.platform.VelocityLoader;
+import com.nickuc.login.NLoginCore_598;
+import com.nickuc.login.NLoginCore_578;
+import com.nickuc.login.NLoginCore_589;
+import com.nickuc.login.NLoginCore_261;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
+import lombok.Generated;
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
+public class NLoginCore_471
+implements NLoginCore_589 {
+    private final VelocityLoader b;
+    private final NLoginCore_578 d = new NLoginCore_578();
 
-      return new String(x);
-   }
+    @Override
+    public NLoginCore_261 a(Runnable runnable, long l, long l2, TimeUnit timeUnit) {
+        return new NLoginCore_261(this.d, runnable).a(this.b, l, l2, timeUnit);
+    }
 
-   public static String A(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+    @Override
+    public NLoginCore_261 a(Consumer<NLoginCore_598> consumer, long l, long l2, TimeUnit timeUnit) {
+        return new NLoginCore_261(this.d, consumer).a(this.b, l, l2, timeUnit);
+    }
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
+    @Override
+    public void Y() {
+        this.f().forEach(NLoginCore_598::Z);
+    }
 
-      return new String(x);
-   }
+    @Override
+    public NLoginCore_261 a(Consumer<NLoginCore_598> consumer, long l, TimeUnit timeUnit) {
+        return new NLoginCore_261(this.d, consumer).a(this.b, l, timeUnit);
+    }
 
-   public static String F(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+    @Generated
+    public NLoginCore_471(VelocityLoader velocityLoader) {
+        this.b = velocityLoader;
+    }
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (1212 + i) - nickuc);
-      }
+    @Override
+    public NLoginCore_261 a(Consumer<NLoginCore_598> consumer) {
+        return new NLoginCore_261(this.d, consumer).a(this.b);
+    }
 
-      return new String(x);
-   }
+    @Override
+    public NLoginCore_261 a(Runnable runnable) {
+        return new NLoginCore_261(this.d, runnable).a(this.b);
+    }
 
-   public static String B(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
+    @Override
+    public NLoginCore_578 a() {
+        return this.d;
+    }
 
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (127 + i) - 2 * nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String D(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
-
-      return new String(x);
-   }
-
-   public static String C(String www, byte nickuc, int com) {
-      char[] x = new char[www.length()];
-      int i = -1;
-
-      for (char c : www.toCharArray()) {
-         x[++i] = (char)(c - (949 + i) - -3 * -nickuc);
-      }
-
-      return new String(x);
-   }
+    @Override
+    public NLoginCore_261 a(Runnable runnable, long l, TimeUnit timeUnit) {
+        return new NLoginCore_261(this.d, runnable).a(this.b, l, timeUnit);
+    }
 }
+

@@ -1,7 +1,11 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
 public interface NLoginInterface_021 {
-   void W();
+    public void W();
 
-   void X();
+    public void X();
 }
+

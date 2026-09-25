@@ -1,16 +1,43 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.velocitypowered.api.command.Command
+ *  com.velocitypowered.api.command.CommandInvocation
+ *  com.velocitypowered.api.command.CommandManager
+ *  com.velocitypowered.api.command.CommandMeta
+ *  com.velocitypowered.api.command.CommandSource
+ *  com.velocitypowered.api.command.SimpleCommand
+ *  com.velocitypowered.api.command.SimpleCommand$Invocation
+ *  com.velocitypowered.api.proxy.Player
+ *  com.velocitypowered.api.proxy.ProxyServer
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_168;
+import com.nickuc.login.NLoginCore_446;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginInterface_021;
+import com.nickuc.login.NLoginCore_575;
+import com.nickuc.login.NLoginCore_387;
+import com.nickuc.login.NLoginCore_451;
+import com.velocitypowered.api.command.Command;
+import com.velocitypowered.api.command.CommandInvocation;
 import com.velocitypowered.api.command.CommandManager;
 import com.velocitypowered.api.command.CommandMeta;
 import com.velocitypowered.api.command.CommandSource;
 import com.velocitypowered.api.command.SimpleCommand;
-import com.velocitypowered.api.command.SimpleCommand.Invocation;
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
+import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
 import java.nio.charset.StandardCharsets;
+import java.security.Key;
 import java.util.Base64;
 import java.util.Collections;
 import java.util.List;
@@ -20,188 +47,151 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 import lombok.Generated;
 
-public class NLoginCore_191 implements NLoginInterface_021, SimpleCommand {
-   private static long g = Long.reverse(4823502279966634215L);
-   private static String[] ZKM_STR_A = new String[NLoginCore_191.i];
-   private static long d = Long.reverse(8070450532247928832L);
-   private static int i = 1048576 >>> 147 | 1048576 << ~147 + 1;
-   private static int a = Integer.reverse(0);
-   private static int f = (-1 >>> 45 | -1 << ~45 + 1) & -1;
-   private static int e = (262144 >>> 242 | 262144 << -242) & -1;
-   private static long b = Long.reverse(3670580775359787239L);
-   private static String[] ZKM_STR_B = new String[NLoginCore_191.j];
-   private static int h = (0 >>> 204 | 0 << -204) & -1;
-   private static int j = (262144 >>> 145 | 262144 << -145) & -1;
-   private final NLoginCore_168<?> d;
-   private final ProxyServer a;
-   private static long c;
+public class NLoginCore_191
+implements NLoginInterface_021,
+SimpleCommand {
+    private static long g;
+    private static String[] var_java_lang_String_arr_a;
+    private static long var_long_d;
+    private static int i;
+    private static int var_int_a;
+    private static int f;
+    private static int e;
+    private static long var_long_b;
+    private static String[] var_java_lang_String_arr_b;
+    private static int h;
+    private static int j;
+    private final NLoginCore_168<?> var_com_nickuc_login_NLoginCore_168____d;
+    private final ProxyServer var_com_velocitypowered_api_proxy_ProxyServer_a;
+    private static long c;
 
-   private static Object c(Lookup var0, String var1, MethodType var2) {
-      try {
-         return new MutableCallSite(
-            var0.findStatic(
-                  NLoginCore_191.class,
-                  new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(NLoginCore_397.F("ӿԡԣԃԧՆԾՔՀԏՍՃՑՋԔԹ՛՚Ւ\u0558Ւԧ", (byte)27, 70), NLoginCore_191.class.getClassLoader())
-               )
-               .asType(var2)
-         );
-      } catch (Exception var4) {
-         throw new RuntimeException(
-            NLoginCore_451.E("ԺՇՆԉՉՅՀՉՔՃԐՎՒՋՎՔԖࡻࢯࢮࢋࢠࢭࢲࢂࢋࢩࢍ࢙ࢭࢹࢸԱ", (byte)27, 69) + var1 + NLoginCore_559.A("ï", (byte)27, 65) + var2.toString(), var4
-         );
-      }
-   }
+    private static String c(String s, int n, long l) {
+        return a(n, l);
+    }
 
-   public List<String> a(Invocation var1) {
-      CommandSource var2 = var1.source();
-      boolean var3 = var2 instanceof Player;
-      String var4 = var3 ? ((Player)var2).getUsername() : a(e & f, g);
-      List var5 = this.d.a(var2, var4, var3, var1.alias(), (String[])var1.arguments());
-      return var5 != null ? var5 : Collections.emptyList();
-   }
+    private static Object c(MethodHandles.Lookup lookup, String string, MethodType methodType) {
+        try {
+            return new MutableCallSite(lookup.findStatic(NLoginCore_191.class, new String(new byte[]{97}, StandardCharsets.UTF_8), MethodType.fromMethodDescriptorString(NLoginCore_223.F("ӿԡԣԃԧՆԾՔՀԏՍՃՑՋԔԹ՛՚Ւ՘Ւԧ", (byte)27, 70), NLoginCore_191.class.getClassLoader())).asType(methodType));
+        }
+        catch (Exception exception) {
+            throw new RuntimeException(NLoginCore_384.E("ԺՇՆԉՉՅՀՉՔՃԐՎՒՋՎՔԖࡻࢯࢮࢋࢠࢭࢲࢂࢋࢩࢍ࢙ࢭࢹࢸԱ", (byte)27, 69) + string + NLoginCore_201.A("ï", (byte)27, 65) + methodType.toString(), exception);
+        }
+    }
 
-   @Override
-   public void W() {
-      CommandManager var1 = this.a.getCommandManager();
-      CommandMeta var2 = var1.metaBuilder(this.d.aa()).aliases(this.d.c().toArray(new String[h])).build();
-      var1.register(var2, this);
-   }
+    public List<String> a(SimpleCommand.Invocation invocation) {
+        CommandSource commandSource = invocation.source();
+        boolean bl = commandSource instanceof Player;
+        String string = bl ? ((Player)commandSource).getUsername() : NLoginCore_191.c("㺀", (int)(e & f), (long)g);
+        List<String> list = this.var_long_d.a(commandSource, string, bl, invocation.alias(), (String[])invocation.arguments());
+        return list != null ? list : Collections.emptyList();
+    }
 
-   static {
-      b();
-   }
+    @Override
+    public void W() {
+        CommandManager commandManager = this.var_com_velocitypowered_api_proxy_ProxyServer_a.getCommandManager();
+        CommandMeta commandMeta = commandManager.metaBuilder(this.var_long_d.aa()).aliases(this.var_long_d.c().toArray(new String[h])).build();
+        commandManager.register(commandMeta, (Command)this);
+    }
 
-   private static void b() {
-      c = -1797695734084989108L;
-      long var0 = c ^ 5236053179007801768L;
-      Cipher var2 = Cipher.getInstance(
-         new String(
-            new byte[]{
-               (byte)(58 + 10),
-               (byte)(16 + 53),
-               (byte)(44 + 39),
-               47,
-               (byte)(29 + 38),
-               (byte)(43 + 23),
-               (byte)(33 + 34),
-               (byte)(26 + 21),
-               (byte)(70 + 10),
-               (byte)(60 + 15),
-               (byte)(5 + 62),
-               (byte)(54 + 29),
-               (byte)(33 + 20),
-               (byte)(43 + 37),
-               (byte)(29 + 68),
-               100,
-               (byte)(84 + 16),
-               (byte)(37 + 68),
-               (byte)(45 + 65),
-               (byte)(99 + 4)
-            },
-            StandardCharsets.UTF_8
-         )
-      );
-      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(38 + 30), 69, (byte)(28 + 55)}, StandardCharsets.UTF_8));
-      byte[] var4 = new byte[8];
-      var4[0] = (byte)(var0 >>> 56);
+    static {
+        var_int_a = Integer.reverse(0);
+        var_long_b = Long.reverse(3670580775359787239L);
+        var_long_d = Long.reverse(0x7000000000000000L);
+        e = (262144 >>> 242 | 262144 << -242) & 0xFFFFFFFF;
+        f = (-1 >>> 45 | -1 << ~45 + 1) & 0xFFFFFFFF;
+        g = Long.reverse(4823502279966634215L);
+        h = (0 >>> 204 | 0 << -204) & 0xFFFFFFFF;
+        i = 0x100000 >>> 147 | 0x100000 << ~147 + 1;
+        j = (262144 >>> 145 | 262144 << -145) & 0xFFFFFFFF;
+        var_java_lang_String_arr_a = new String[i];
+        var_java_lang_String_arr_b = new String[j];
+        NLoginCore_191.b();
+    }
 
-      for (int var5 = 1; var5 < 8; var5++) {
-         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
-      }
+    private static void b() {
+        int n;
+        c = -1797695734084989108L;
+        long l = c ^ 0x48AA329FDFD099A8L;
+        Cipher cipher = Cipher.getInstance(new String(new byte[]{(byte)(58 + 10), (byte)(16 + 53), (byte)(44 + 39), 47, (byte)(29 + 38), (byte)(43 + 23), (byte)(33 + 34), (byte)(26 + 21), (byte)(70 + 10), (byte)(60 + 15), (byte)(5 + 62), (byte)(54 + 29), (byte)(33 + 20), (byte)(43 + 37), (byte)(29 + 68), 100, (byte)(84 + 16), (byte)(37 + 68), (byte)(45 + 65), (byte)(99 + 4)}, StandardCharsets.UTF_8));
+        SecretKeyFactory secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(38 + 30), 69, (byte)(28 + 55)}, StandardCharsets.UTF_8));
+        byte[] byArray = new byte[8];
+        byArray[0] = (byte)(l >>> 56);
+        for (n = 1; n < 8; ++n) {
+            byArray[n] = (byte)(l << n * 8 >>> 56);
+        }
+        cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+        n = 1;
+        block7: for (int i = 0; i < n; ++i) {
+            switch (i) {
+                case 0: {
+                    NLoginCore_191.var_java_lang_String_arr_b[0] = NLoginCore_387.B("ðĔþčĶġĔąİİľč", (byte)35, 66);
+                    NLoginCore_191.var_java_lang_String_arr_b[1] = NLoginCore_223.E("ԊԮԘԧՐԻԮԟՊՊ՘ԧ", (byte)35, 69);
+                    continue block7;
+                }
+                case 1: {
+                    NLoginCore_191.var_java_lang_String_arr_b[0] = NLoginCore_575.D("҄ѯђҐғ҅ѱѫѵѭҋґҎҖѭѱљҕ҄ќѹҚѱѲ", (byte)35, 68);
+                    NLoginCore_191.var_java_lang_String_arr_b[1] = NLoginCore_446.B("ĕĜĎļġăĬĴıħĲŇģĊĔăĮĺŋčīőĘę", (byte)35, 66);
+                    continue block7;
+                }
+                case 2: {
+                    NLoginCore_191.var_java_lang_String_arr_b[0] = NLoginCore_451.D("ҕ҆ѥҗљҋґѧѝҟѝѹҝ҂ќҚѧҘѷҀѨ҄ѱѲ", (byte)35, 68);
+                    continue block7;
+                }
+                case 4: {
+                    NLoginCore_191.var_java_lang_String_arr_b[0] = NLoginCore_446.A("÷īĽøĮĒĢüĺāĜč", (byte)35, 65);
+                }
+            }
+        }
+    }
 
-      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
-      byte var7 = 1;
+    @Override
+    public void X() {
+        this.var_com_velocitypowered_api_proxy_ProxyServer_a.getCommandManager().unregister(this.var_long_d.aa());
+    }
 
-      for (int var6 = 0; var6 < var7; var6++) {
-         switch (var6) {
-            case 0:
-               ZKM_STR_B[0] = NLoginCore_387.B("ðĔþčĶġĔąİİľč", (byte)35, 66);
-               ZKM_STR_B[1] = NLoginCore_397.E("ԊԮԘԧՐԻԮԟՊՊ\u0558ԧ", (byte)35, 69);
-               break;
-            case 1:
-               ZKM_STR_B[0] = NLoginCore_575.D("҄ѯђҐғ҅ѱѫѵѭҋґҎҖѭѱљҕ҄ќѹҚѱѲ", (byte)35, 68);
-               ZKM_STR_B[1] = NLoginCore_446.B("ĕĜĎļġăĬĴıħĲŇģĊĔăĮĺŋčīőĘę", (byte)35, 66);
-               break;
-            case 2:
-               ZKM_STR_B[0] = NLoginCore_004.D("ҕ҆ѥҗљҋґѧѝҟѝѹҝ҂ќҚѧҘѷҀѨ҄ѱѲ", (byte)35, 68);
-            case 3:
-            default:
-               break;
-            case 4:
-               ZKM_STR_B[0] = NLoginCore_446.A("÷īĽøĮĒĢüĺāĜč", (byte)35, 65);
-         }
-      }
-   }
+    @Generated
+    public NLoginCore_191(ProxyServer proxyServer, NLoginCore_168<?> NLoginCore_1682) {
+        this.var_com_velocitypowered_api_proxy_ProxyServer_a = proxyServer;
+        this.var_long_d = (long)NLoginCore_1682;
+    }
 
-   @Override
-   public void X() {
-      this.a.getCommandManager().unregister(this.d.aa());
-   }
+    private static String a(int n, long l) {
+        l ^= 0xEL;
+        l ^= 0x48AA329FDFD099A8L;
+        if (var_java_lang_String_arr_a[n] == null) {
+            SecretKeyFactory secretKeyFactory;
+            Cipher cipher;
+            try {
+                cipher = Cipher.getInstance(new String(new byte[]{68, (byte)(60 + 9), (byte)(23 + 60), (byte)(13 + 34), (byte)(20 + 47), (byte)(28 + 38), (byte)(3 + 64), (byte)(16 + 31), (byte)(78 + 2), (byte)(71 + 4), (byte)(57 + 10), (byte)(21 + 62), 53, (byte)(53 + 27), (byte)(64 + 33), (byte)(90 + 10), (byte)(8 + 92), (byte)(24 + 81), (byte)(42 + 68), (byte)(32 + 71)}, StandardCharsets.UTF_8));
+                secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(58 + 11), 83}, StandardCharsets.UTF_8));
+            }
+            catch (Exception exception) {
+                throw new RuntimeException(NLoginCore_091.C("ԣ԰ԯӲԲԮԩԲԽԬӹԷԻԴԷԽӿࡤ࢘ࢗࡴࢉ࢖࢛࡫ࡴ࢒ࡶࢂ࢖ࢢࢡ", (byte)89, 67));
+            }
+            byte[] byArray = new byte[8];
+            byArray[0] = (byte)(l >>> 56);
+            for (int i = 1; i < 8; ++i) {
+                byArray[i] = (byte)(l << i * 8 >>> 56);
+            }
+            cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+            NLoginCore_191.var_java_lang_String_arr_a[n] = new String(cipher.doFinal(Base64.getDecoder().decode(var_java_lang_String_arr_b[n])), StandardCharsets.UTF_8);
+        }
+        return var_java_lang_String_arr_a[n];
+    }
 
-   @Generated
-   public NLoginCore_191(ProxyServer var1, NLoginCore_168<?> var2) {
-      this.a = var1;
-      this.d = var2;
-   }
+    public void a(SimpleCommand.Invocation invocation) {
+        CommandSource commandSource = invocation.source();
+        boolean bl = commandSource instanceof Player;
+        String string = bl ? ((Player)commandSource).getUsername() : NLoginCore_191.c("㺀", (int)var_int_a, (long)(var_long_b ^ var_long_d));
+        this.var_long_d.a(commandSource, string, bl, invocation.alias(), (String[])invocation.arguments());
+    }
 
-   private static String a(int var0, long var1) {
-      var1 ^= 14L;
-      var1 ^= 5236053179007801768L;
-      if (ZKM_STR_A[var0] == null) {
-         Cipher var3;
-         SecretKeyFactory var4;
-         try {
-            var3 = Cipher.getInstance(
-               new String(
-                  new byte[]{
-                     68,
-                     (byte)(60 + 9),
-                     (byte)(23 + 60),
-                     (byte)(13 + 34),
-                     (byte)(20 + 47),
-                     (byte)(28 + 38),
-                     (byte)(3 + 64),
-                     (byte)(16 + 31),
-                     (byte)(78 + 2),
-                     (byte)(71 + 4),
-                     (byte)(57 + 10),
-                     (byte)(21 + 62),
-                     53,
-                     (byte)(53 + 27),
-                     (byte)(64 + 33),
-                     (byte)(90 + 10),
-                     (byte)(8 + 92),
-                     (byte)(24 + 81),
-                     (byte)(42 + 68),
-                     (byte)(32 + 71)
-                  },
-                  StandardCharsets.UTF_8
-               )
-            );
-            var4 = SecretKeyFactory.getInstance(new String(new byte[]{68, (byte)(58 + 11), 83}, StandardCharsets.UTF_8));
-         } catch (Exception var7) {
-            throw new RuntimeException(NLoginCore_091.C("ԣ\u0530ԯӲԲԮԩԲԽԬӹԷԻԴԷԽӿࡤ࢘\u0897ࡴࢉ\u0896࢛\u086bࡴ\u0892ࡶࢂ\u0896ࢢࢡ", (byte)89, 67));
-         }
+    public /* synthetic */ List suggest(CommandInvocation commandInvocation) {
+        return this.a((SimpleCommand.Invocation)commandInvocation);
+    }
 
-         byte[] var5 = new byte[8];
-         var5[0] = (byte)(var1 >>> 56);
-
-         for (int var6 = 1; var6 < 8; var6++) {
-            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
-         }
-
-         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
-      }
-
-      return ZKM_STR_A[var0];
-   }
-
-   public void a(Invocation var1) {
-      CommandSource var2 = var1.source();
-      boolean var3 = var2 instanceof Player;
-      String var4 = var3 ? ((Player)var2).getUsername() : a(a, b ^ d);
-      this.d.a(var2, var4, var3, var1.alias(), (String[])var1.arguments());
-   }
+    public /* synthetic */ void execute(CommandInvocation commandInvocation) {
+        this.a((SimpleCommand.Invocation)commandInvocation);
+    }
 }
+

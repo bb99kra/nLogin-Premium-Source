@@ -1,162 +1,167 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_474;
+import com.nickuc.login.NLoginCore_112;
+import com.nickuc.login.NLoginCore_135;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_208;
+import com.nickuc.login.NLoginCore_525;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_324;
 import java.util.ArrayList;
 import java.util.List;
 
 public interface NLoginInterface_005 {
-   default double c() {
-      return this.a(this.a());
-   }
+    default public double c() {
+        return this.double_a(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-   default short a(NLoginCore_208 var1) {
-      return this.<Short>b(var1);
-   }
+    default public short short_a(NLoginCore_208 NLoginCore_2082) {
+        return (Short)this.b(NLoginCore_2082);
+    }
 
-   default short a() {
-      return this.a(this.a());
-   }
+    default public short short_a() {
+        return this.short_a(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-   default Object a(NLoginInterface_005 var1, Object var2) {
-      return var2;
-   }
+    default public Object a(NLoginInterface_005 NLoginInterface_0052, Object object) {
+        return object;
+    }
 
-   default List<Integer> i() {
-      return this.c(this.a());
-   }
+    default public List<Integer> i() {
+        return this.c(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-   default long a(NLoginCore_208 var1) {
-      return this.<Long>b(var1);
-   }
+    default public long long_a(NLoginCore_208 NLoginCore_2082) {
+        return (Long)this.b(NLoginCore_2082);
+    }
 
-   default List<?> b(NLoginCore_208 var1) {
-      return new ArrayList(this.a(var1));
-   }
+    default public List<?> b(NLoginCore_208 NLoginCore_2082) {
+        return new ArrayList(this.java_lang_Object_a(NLoginCore_2082));
+    }
 
-   default List<Integer> c(NLoginCore_208 var1) {
-      return this.b(var1);
-   }
+    default public List<Integer> c(NLoginCore_208 NLoginCore_2082) {
+        return (List)this.b(NLoginCore_2082);
+    }
 
-   default String a(Object... var1) {
-      return this.a(this.a(), var1);
-   }
+    default public String a(Object ... objectArray) {
+        return this.a(this.com_nickuc_login_NLoginCore_208_a(), objectArray);
+    }
 
-   NLoginCore_474 a();
+    public NLoginCore_474 com_nickuc_login_NLoginCore_474_a();
 
-   NLoginCore_208 a();
+    public NLoginCore_208 com_nickuc_login_NLoginCore_208_a();
 
-   default List<Integer> j() {
-      return this.d(this.a());
-   }
+    default public List<Integer> j() {
+        return this.d(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-   default int a(NLoginCore_208 var1) {
-      return this.<Integer>b(var1);
-   }
+    default public int int_a(NLoginCore_208 NLoginCore_2082) {
+        return (Integer)this.b(NLoginCore_2082);
+    }
 
-   default List<String> b(Object... var1) {
-      return this.b(this.a(), var1);
-   }
+    default public List<String> b(Object ... objectArray) {
+        return this.b(this.com_nickuc_login_NLoginCore_208_a(), objectArray);
+    }
 
-   default int r() {
-      return this.a(this.a());
-   }
+    default public int r() {
+        return this.int_a(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-   default List<?> h() {
-      return this.b(this.a());
-   }
+    default public List<?> h() {
+        return this.b(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-   default List<String> a(NLoginCore_208 var1, Object... var2) {
-      List var3 = this.b(var1);
-      if (var2 != null && var2.length > 0) {
-         String[] var4 = var3.toArray(new String[0]);
-         boolean var5 = false;
-
-         for (int var6 = 0; var6 < var4.length; var6++) {
-            String var7 = var4[var6];
-            String var8 = NLoginCore_112.a(var7, var2);
-            if (!var5 && !var7.equals(var8)) {
-               var5 = true;
+    default public List<String> a(NLoginCore_208 NLoginCore_2082, Object ... objectArray) {
+        List list = (List)this.b(NLoginCore_2082);
+        if (objectArray != null && objectArray.length > 0) {
+            String[] stringArray = list.toArray(new String[0]);
+            boolean bl = false;
+            for (int i = 0; i < stringArray.length; ++i) {
+                String string = stringArray[i];
+                String string2 = NLoginCore_112.a(string, objectArray);
+                if (!bl && !string.equals(string2)) {
+                    bl = true;
+                }
+                stringArray[i] = string2;
             }
+            if (bl) {
+                return NLoginCore_135.a(stringArray);
+            }
+        }
+        return list;
+    }
 
-            var4[var6] = var8;
-         }
+    default public long g() {
+        return this.long_a(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-         if (var5) {
-            return NLoginCore_135.a(var4);
-         }
-      }
+    default public boolean ar() {
+        return this.boolean_a(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-      return var3;
-   }
+    default public Object f() {
+        return this.java_lang_Object_a(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-   default long g() {
-      return this.a(this.a());
-   }
+    default public List<?> a(NLoginCore_208 NLoginCore_2082) {
+        return (List)this.b(NLoginCore_2082);
+    }
 
-   default boolean ar() {
-      return this.a(this.a());
-   }
+    default public List<Integer> d(NLoginCore_208 NLoginCore_2082) {
+        return new ArrayList<Integer>(this.c(NLoginCore_2082));
+    }
 
-   default Object f() {
-      return this.a(this.a());
-   }
+    default public double double_a(NLoginCore_208 NLoginCore_2082) {
+        return (Double)this.b(NLoginCore_2082);
+    }
 
-   default List<?> a(NLoginCore_208 var1) {
-      return this.b(var1);
-   }
+    public int int_a();
 
-   default List<Integer> d(NLoginCore_208 var1) {
-      return new ArrayList<>(this.c(var1));
-   }
+    default public <T> T g() {
+        return this.b(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-   default double a(NLoginCore_208 var1) {
-      return this.<Double>b(var1);
-   }
+    default public List<String> b(NLoginCore_208 NLoginCore_2082, Object ... objectArray) {
+        return new ArrayList<String>(this.a(NLoginCore_2082, objectArray));
+    }
 
-   int a();
+    public Object java_lang_Object_a();
 
-   default <T> T g() {
-      return this.b(this.a());
-   }
+    default public boolean boolean_a(NLoginCore_208 NLoginCore_2082) {
+        return (Boolean)this.b(NLoginCore_2082);
+    }
 
-   default List<String> b(NLoginCore_208 var1, Object... var2) {
-      return new ArrayList<>(this.a(var1, var2));
-   }
+    default public List<String> a(Object ... objectArray) {
+        return this.a(this.com_nickuc_login_NLoginCore_208_a(), objectArray);
+    }
 
-   Object a();
+    default public <T> T b(NLoginCore_208 NLoginCore_2082) {
+        Object object = NLoginCore_525.a(this, NLoginCore_2082);
+        if (object == null && (object = this.java_lang_Object_a()) == null) {
+            throw new IllegalArgumentException(NLoginCore_027.D("қҽҿһӐӈӑѾӕӁӍӗӈ҄ӈӇӕӖӘӞҋӎӒҎӝӥӝӞҔ", (byte)54, 68));
+        }
+        try {
+            return (T)object;
+        }
+        catch (Throwable throwable) {
+            throw new RuntimeException(NLoginCore_324.C("ҬӆҺҼӇӁѽӒӎҀӄӃӖӘ҅", (byte)54, 67) + this + NLoginCore_201.E("Ԓէգԕը՜թծ՟ծհբբԟմպղըԥ", (byte)54, 69), throwable);
+        }
+    }
 
-   default boolean a(NLoginCore_208 var1) {
-      return this.<Boolean>b(var1);
-   }
+    default public Object java_lang_Object_a(NLoginCore_208 NLoginCore_2082) {
+        return this.b(NLoginCore_2082);
+    }
 
-   default List<String> a(Object... var1) {
-      return this.a(this.a(), var1);
-   }
+    default public List<?> g() {
+        return this.java_lang_Object_a(this.com_nickuc_login_NLoginCore_208_a());
+    }
 
-   default <T> T b(NLoginCore_208 var1) {
-      Object var2 = NLoginCore_525.a(this, var1);
-      if (var2 == null) {
-         var2 = this.a();
-         if (var2 == null) {
-            throw new IllegalArgumentException(NLoginCore_427.D("қҽҿһӐӈӑѾӕӁӍӗӈ҄ӈӇӕӖӘӞҋӎӒҎӝӥӝӞҔ", (byte)54, 68));
-         }
-      }
-
-      try {
-         return (T)var2;
-      } catch (Throwable var4) {
-         throw new RuntimeException(NLoginCore_324.C("ҬӆҺҼӇӁѽӒӎҀӄӃӖӘ҅", (byte)54, 67) + this + NLoginCore_201.E("Ԓէգԕը՜թծ՟ծհբբԟմպղըԥ", (byte)54, 69), var4);
-      }
-   }
-
-   default Object a(NLoginCore_208 var1) {
-      return this.b(var1);
-   }
-
-   default List<?> g() {
-      return this.a(this.a());
-   }
-
-   default String a(NLoginCore_208 var1, Object... var2) {
-      return NLoginCore_112.a(this.b(var1), var2);
-   }
+    default public String a(NLoginCore_208 NLoginCore_2082, Object ... objectArray) {
+        return NLoginCore_112.a((String)this.b(NLoginCore_2082), objectArray);
+    }
 }
+

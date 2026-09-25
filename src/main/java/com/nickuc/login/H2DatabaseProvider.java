@@ -1,11 +1,40 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.annotation.Nullable
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_200;
+import com.nickuc.login.NLoginCore_091;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_173;
+import com.nickuc.login.NLoginCore_116;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_027;
+import com.nickuc.login.NLoginCore_076;
+import com.nickuc.login.NLoginCore_446;
+import com.nickuc.login.NLoginCore_004;
+import com.nickuc.login.NLoginCore_223;
+import com.nickuc.login.NLoginCore_384;
+import com.nickuc.login.NLoginCore_201;
+import com.nickuc.login.NLoginCore_363;
+import com.nickuc.login.NLoginCore_036;
+import com.nickuc.login.NLoginCore_575;
+import com.nickuc.login.NLoginCore_021;
+import com.nickuc.login.NLoginCore_453;
+import com.nickuc.login.NLoginCore_387;
+import com.nickuc.login.NLoginCore_282;
 import java.io.File;
+import java.io.Serializable;
+import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
 import java.lang.reflect.Constructor;
 import java.nio.charset.StandardCharsets;
+import java.security.Key;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Base64;
@@ -16,293 +45,273 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
-public class H2DatabaseProvider extends NLoginCore_021 {
-   private static long q = Long.reverse(5764607523034234880L);
-   private static int r = 2 >>> 160 | 2 << ~160 + 1;
-   private static int a = 131072 >>> 241 | 131072 << -241;
-   private static int n = (128 >>> 197 | 128 << ~197 + 1) & -1;
-   private static String[] ZKM_STR_B = new String[H2DatabaseProvider.ap];
-   private final String aA;
-   private static int l = Integer.reverse(1073741824);
-   private static int ai = Integer.reverse(-1073741824);
-   private static int am = 0 >>> 1 | 0 << ~1 + 1;
-   private static int al = (2 >>> 32 | 2 << -32) & -1;
-   private static int c = 0 >>> 66 | 0 << -66;
-   private static int ah = 16777216 >>> 119 | 16777216 << ~119 + 1;
-   private static long t = Long.reverse(5764607523034234880L);
-   private static int u = Integer.reverse(-1073741824);
-   private static int ak = 0 >>> 220 | 0 << ~220 + 1;
-   private static long e = Long.reverse(5764607523034234880L);
-   private static int b = 0 >>> 179 | 0 << -179;
-   private static long s = Long.reverse(5461652613437406826L);
-   private static long ad = Long.reverse(2002888099616865898L);
-   private final NLoginCore_282 a;
-   private static int z = Integer.reverse(-1);
-   private static long aa = Long.reverse(2002888099616865898L);
-   @Nullable
-   private final String aB;
-   private static int j = 0 >>> 34 | 0 << ~34 + 1;
-   @Nullable
-   private final Object e;
-   private final Properties c;
-   private static long p = Long.reverse(5461652613437406826L);
-   private static long v = Long.reverse(5461652613437406826L);
-   private static long w = Long.reverse(5764607523034234880L);
-   private static int i = Integer.reverse(-1610612736);
-   private static String[] ZKM_STR_A = new String[H2DatabaseProvider.ao];
-   private static long d = Long.reverse(5461652613437406826L);
-   private static int ap = (384 >>> 102 | 384 << ~102 + 1) & -1;
-   private static int ab = Integer.reverse(-1610612736);
-   private static int h = (16 >>> 132 | 16 << -132) & -1;
-   private static int g = (0 >>> 214 | 0 << -214) & -1;
-   private static int ac = (-1 >>> 100 | -1 << ~100 + 1) & -1;
-   private static int an = Integer.reverse(Integer.MIN_VALUE);
-   private final Constructor<?> c;
-   private static int ao = '쀀' >>> '-' | 49152 << ~45 + 1;
-   private static int o = Integer.reverse(Integer.MIN_VALUE);
-   private static int f = Integer.reverse(1073741824);
-   private static int af = Integer.reverse(0);
-   private static int k = 134217728 >>> 251 | 134217728 << -251;
-   private static int ag = Integer.reverse(Integer.MIN_VALUE);
-   private static int ae = Integer.reverse(-1610612736);
-   private static long c;
-   private static int x = Integer.reverse(0);
-   private static int aj = (2 >>> 159 | 2 << ~159 + 1) & -1;
-   private static int y = (16384 >>> 172 | 16384 << -172) & -1;
-   private static int m = Integer.reverse(-1073741824);
+public class H2DatabaseProvider
+extends NLoginCore_021 {
+    private static long q;
+    private static int r;
+    private static int var_int_a;
+    private static int n;
+    private static String[] var_java_lang_String_arr_b;
+    private final String aA;
+    private static int l;
+    private static int ai;
+    private static int am;
+    private static int al;
+    private static int var_int_c;
+    private static int ah;
+    private static long t;
+    private static int u;
+    private static int ak;
+    private static long var_long_e;
+    private static int var_int_b;
+    private static long s;
+    private static long ad;
+    private final NLoginCore_282 var_com_nickuc_login_NLoginCore_282_a;
+    private static int z;
+    private static long aa;
+    @Nullable
+    private final String aB;
+    private static int j;
+    @Nullable
+    private final Object var_java_lang_Object_e;
+    private final Properties var_java_util_Properties_c;
+    private static long p;
+    private static long v;
+    private static long w;
+    private static int i;
+    private static String[] var_java_lang_String_arr_a;
+    private static long d;
+    private static int ap;
+    private static int ab;
+    private static int h;
+    private static int g;
+    private static int ac;
+    private static int an;
+    private final Constructor<?> var_java_lang_reflect_Constructor____c;
+    private static int ao;
+    private static int o;
+    private static int f;
+    private static int af;
+    private static int k;
+    private static int ag;
+    private static int ae;
+    private static long var_long_c;
+    private static int x;
+    private static int aj;
+    private static int y;
+    private static int m;
 
-   @Override
-   public NLoginCore_036 a() {
-      return NLoginCore_036.g;
-   }
+    @Override
+    public NLoginCore_036 com_nickuc_login_NLoginCore_036_a() {
+        return NLoginCore_036.var_com_nickuc_login_NLoginCore_036_g;
+    }
 
-   @Override
-   protected Connection c() {
-      try {
-         Object var3;
-         if (this.a.compareTo(NLoginCore_282.c) >= 0) {
-            var3 = this.c;
-            Object[] var10001 = new Object[ae];
-            var10001[af] = this.aA;
-            var10001[ag] = this.c;
-            var10001[ah] = this.aB;
-            var10001[ai] = this.e;
-            var10001[aj] = Boolean.valueOf((ak != 0));
-            var3 = (Constructor)var3.newInstance(var10001);
-         } else {
-            var3 = this.c;
-            Object[] var5 = new Object[al];
-            var5[am] = this.aA;
-            var5[an] = this.c;
-            var3 = (Constructor)var3.newInstance(var5);
-         }
+    @Override
+    protected Connection java_sql_Connection_c() {
+        try {
+            Object t;
+            if (this.var_com_nickuc_login_NLoginCore_282_a.compareTo(NLoginCore_282.var_com_nickuc_login_NLoginCore_282_c) >= 0) {
+                Object[] objectArray = new Object[ae];
+                objectArray[H2DatabaseProvider.af] = this.aA;
+                objectArray[H2DatabaseProvider.ag] = this.var_java_util_Properties_c;
+                objectArray[H2DatabaseProvider.ah] = this.aB;
+                objectArray[H2DatabaseProvider.ai] = this.var_java_lang_Object_e;
+                objectArray[H2DatabaseProvider.aj] = ak != 0;
+                t = this.var_int_c.newInstance(objectArray);
+            } else {
+                Object[] objectArray = new Object[al];
+                objectArray[H2DatabaseProvider.am] = this.aA;
+                objectArray[H2DatabaseProvider.an] = this.var_java_util_Properties_c;
+                t = this.var_int_c.newInstance(objectArray);
+            }
+            Object t2 = t;
+            return (Connection)t2;
+        }
+        catch (ReflectiveOperationException reflectiveOperationException) {
+            if (reflectiveOperationException.getCause() instanceof SQLException) {
+                throw (SQLException)reflectiveOperationException.getCause();
+            }
+            throw new RuntimeException(reflectiveOperationException);
+        }
+    }
 
-         Object var1 = var3;
-         return (Connection)var1;
-      } catch (ReflectiveOperationException var2) {
-         if (var2.getCause() instanceof SQLException) {
-            throw (SQLException)var2.getCause();
-         } else {
-            throw new RuntimeException(var2);
-         }
-      }
-   }
+    private static String a(int n, long l) {
+        l ^= 0xAL;
+        l ^= 0xC6AFFD1897C1CE22L;
+        if (var_java_lang_String_arr_a[n] == null) {
+            SecretKeyFactory secretKeyFactory;
+            Cipher cipher;
+            try {
+                cipher = Cipher.getInstance(new String(new byte[]{(byte)(44 + 24), (byte)(13 + 56), (byte)(68 + 15), (byte)(45 + 2), 67, (byte)(22 + 44), (byte)(18 + 49), (byte)(5 + 42), 80, (byte)(30 + 45), (byte)(64 + 3), (byte)(74 + 9), (byte)(24 + 29), (byte)(44 + 36), (byte)(8 + 89), (byte)(90 + 10), (byte)(59 + 41), (byte)(66 + 39), (byte)(104 + 6), (byte)(12 + 91)}, StandardCharsets.UTF_8));
+                secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(60 + 8), 69, 83}, StandardCharsets.UTF_8));
+            }
+            catch (Exception exception) {
+                throw new RuntimeException(NLoginCore_201.D("ҜҩҨѫҫҧҢҫҶҥѲҰҴҭҰҶѸࠀࠎߧࠔࠕࠋ߹ࠊࠕࠍࠇࠔࠖࠋ࠙", (byte)44, 68));
+            }
+            byte[] byArray = new byte[8];
+            byArray[0] = (byte)(l >>> 56);
+            for (int i = 1; i < 8; ++i) {
+                byArray[i] = (byte)(l << i * 8 >>> 56);
+            }
+            cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+            H2DatabaseProvider.var_java_lang_String_arr_a[n] = new String(cipher.doFinal(Base64.getDecoder().decode(var_java_lang_String_arr_b[n])), StandardCharsets.UTF_8);
+        }
+        return var_java_lang_String_arr_a[n];
+    }
 
-   private static String a(int var0, long var1) {
-      var1 ^= 10L;
-      var1 ^= -4129804051208352222L;
-      if (ZKM_STR_A[var0] == null) {
-         Cipher var3;
-         SecretKeyFactory var4;
-         try {
-            var3 = Cipher.getInstance(
-               new String(
-                  new byte[]{
-                     (byte)(44 + 24),
-                     (byte)(13 + 56),
-                     (byte)(68 + 15),
-                     (byte)(45 + 2),
-                     67,
-                     (byte)(22 + 44),
-                     (byte)(18 + 49),
-                     (byte)(5 + 42),
-                     80,
-                     (byte)(30 + 45),
-                     (byte)(64 + 3),
-                     (byte)(74 + 9),
-                     (byte)(24 + 29),
-                     (byte)(44 + 36),
-                     (byte)(8 + 89),
-                     (byte)(90 + 10),
-                     (byte)(59 + 41),
-                     (byte)(66 + 39),
-                     (byte)(104 + 6),
-                     (byte)(12 + 91)
-                  },
-                  StandardCharsets.UTF_8
-               )
-            );
-            var4 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(60 + 8), 69, 83}, StandardCharsets.UTF_8));
-         } catch (Exception var7) {
-            throw new RuntimeException(NLoginCore_559.D("ҜҩҨѫҫҧҢҫҶҥѲҰҴҭҰҶѸࠀࠎߧࠔࠕࠋ߹ࠊࠕࠍࠇࠔࠖࠋ࠙", (byte)44, 68));
-         }
+    static {
+        var_int_a = 131072 >>> 241 | 131072 << -241;
+        var_int_b = 0 >>> 179 | 0 << -179;
+        var_int_c = 0 >>> 66 | 0 << -66;
+        d = Long.reverse(5461652613437406826L);
+        var_long_e = Long.reverse(0x5000000000000000L);
+        f = Integer.reverse(0x40000000);
+        g = (0 >>> 214 | 0 << -214) & 0xFFFFFFFF;
+        h = (16 >>> 132 | 16 << -132) & 0xFFFFFFFF;
+        i = Integer.reverse(-1610612736);
+        j = 0 >>> 34 | 0 << ~34 + 1;
+        k = 0x8000000 >>> 251 | 0x8000000 << -251;
+        l = Integer.reverse(0x40000000);
+        m = Integer.reverse(-1073741824);
+        n = (128 >>> 197 | 128 << ~197 + 1) & 0xFFFFFFFF;
+        o = Integer.reverse(Integer.MIN_VALUE);
+        p = Long.reverse(5461652613437406826L);
+        q = Long.reverse(0x5000000000000000L);
+        r = 2 >>> 160 | 2 << ~160 + 1;
+        s = Long.reverse(5461652613437406826L);
+        t = Long.reverse(0x5000000000000000L);
+        u = Integer.reverse(-1073741824);
+        v = Long.reverse(5461652613437406826L);
+        w = Long.reverse(0x5000000000000000L);
+        x = Integer.reverse(0);
+        y = (16384 >>> 172 | 16384 << -172) & 0xFFFFFFFF;
+        z = Integer.reverse(-1);
+        aa = Long.reverse(2002888099616865898L);
+        ab = Integer.reverse(-1610612736);
+        ac = (-1 >>> 100 | -1 << ~100 + 1) & 0xFFFFFFFF;
+        ad = Long.reverse(2002888099616865898L);
+        ae = Integer.reverse(-1610612736);
+        af = Integer.reverse(0);
+        ag = Integer.reverse(Integer.MIN_VALUE);
+        ah = 0x1000000 >>> 119 | 0x1000000 << ~119 + 1;
+        ai = Integer.reverse(-1073741824);
+        aj = (2 >>> 159 | 2 << ~159 + 1) & 0xFFFFFFFF;
+        ak = 0 >>> 220 | 0 << ~220 + 1;
+        al = (2 >>> 32 | 2 << -32) & 0xFFFFFFFF;
+        am = 0 >>> 1 | 0 << ~1 + 1;
+        an = Integer.reverse(Integer.MIN_VALUE);
+        ao = 49152 >>> 45 | 49152 << ~45 + 1;
+        ap = (384 >>> 102 | 384 << ~102 + 1) & 0xFFFFFFFF;
+        var_java_lang_String_arr_a = new String[ao];
+        var_java_lang_String_arr_b = new String[ap];
+        H2DatabaseProvider.b();
+    }
 
-         byte[] var5 = new byte[8];
-         var5[0] = (byte)(var1 >>> 56);
+    private static String c(String s, int n, long l) {
+        return a(n, l);
+    }
 
-         for (int var6 = 1; var6 < 8; var6++) {
-            var5[var6] = (byte)(var1 << var6 * 8 >>> 56);
-         }
+    private static Object c(MethodHandles.Lookup lookup, String string, MethodType methodType) {
+        try {
+            return new MutableCallSite(lookup.findStatic(H2DatabaseProvider.class, new String(new byte[]{97}, StandardCharsets.UTF_8), MethodType.fromMethodDescriptorString(NLoginCore_091.D("ӐӲӴӔӸԗԏԥԑӠԞԔԢԜӥԊԬԫԣԩԣӸ", (byte)81, 68), H2DatabaseProvider.class.getClassLoader())).asType(methodType));
+        }
+        catch (Exception exception) {
+            throw new RuntimeException(NLoginCore_027.C("ԋԘԗӚԚԖԑԚԥԔӡԟԣԜԟԥӧ࡯ࡽࡖࢃࢄࡺࡨࡹࢄࡼࡶࢃࢅࡺ࢈Ԃ", (byte)81, 67) + string + NLoginCore_387.B("ś", (byte)81, 66) + methodType.toString(), exception);
+        }
+    }
 
-         var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
-      }
+    private static void b() {
+        int n;
+        var_long_c = 6232033446920573906L;
+        long l = var_long_c ^ 0xC6AFFD1897C1CE22L;
+        Cipher cipher = Cipher.getInstance(new String(new byte[]{(byte)(41 + 27), (byte)(65 + 4), (byte)(3 + 80), (byte)(11 + 36), (byte)(16 + 51), (byte)(55 + 11), (byte)(38 + 29), (byte)(15 + 32), (byte)(6 + 74), (byte)(73 + 2), (byte)(11 + 56), (byte)(7 + 76), (byte)(48 + 5), (byte)(79 + 1), (byte)(9 + 88), (byte)(31 + 69), (byte)(70 + 30), 105, 110, (byte)(79 + 24)}, StandardCharsets.UTF_8));
+        SecretKeyFactory secretKeyFactory = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(35 + 33), 69, (byte)(28 + 55)}, StandardCharsets.UTF_8));
+        byte[] byArray = new byte[8];
+        byArray[0] = (byte)(l >>> 56);
+        for (n = 1; n < 8; ++n) {
+            byArray[n] = (byte)(l << n * 8 >>> 56);
+        }
+        cipher.init(2, (Key)secretKeyFactory.generateSecret(new DESKeySpec(byArray)), new IvParameterSpec(new byte[8]));
+        n = 1;
+        block7: for (int i = 0; i < n; ++i) {
+            switch (i) {
+                case 0: {
+                    H2DatabaseProvider.var_java_lang_String_arr_b[0] = NLoginCore_201.A("ģŌĒĴņŖķŇŐĹşŖŞŒĢĻŢĴŁœŋŚśĩĬŀīŏŦőŁĲŒŷĳŌļŭŒœūĳŸŇ", (byte)48, 65);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[1] = NLoginCore_027.D("҆ҵҺҏҖҋҎӄӄҽ҂҈ҞҾ҆ҥӂӅӆҪҝӉҧҿҔҏӎңӇӍӄӊҘҲҬӑӖҫӠӕәӞҴҭ", (byte)48, 68);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[2] = NLoginCore_076.F("ՄՖԞՠԽՂՔ՝՜՞ՏԴ", (byte)48, 70);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[3] = NLoginCore_027.C("үҠҝӂүѾҬҭ҄ӃҲҍ", (byte)48, 67);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[4] = NLoginCore_575.F("ՖՇՄթՖԥՓՔԫժՙԴ", (byte)48, 70);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[5] = NLoginCore_384.D("ѷҵҌҊҎҒѼӆҗӆҨ҈҅ҦҔ҆ҜӎҧӆӃҫҘҙ", (byte)48, 68);
+                    continue block7;
+                }
+                case 1: {
+                    H2DatabaseProvider.var_java_lang_String_arr_b[0] = NLoginCore_453.C("҉ҲѸҚҬҼҝҭҶҟӅҼӄҸ҈ҡӈҚҧҹұӀӁҏҒҦґҵӌҷҧҘһӒҚҮӗӟҼӐҹӥӦҭ", (byte)48, 67);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[1] = NLoginCore_027.A("ĠŏŔĩİĥĨŞŞŗĜĢĸŘĠĿŜşŠńķţŁřĮĩŨĽšŧŞŤłňůţŪĽļſűŗŸŇ", (byte)48, 65);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[2] = NLoginCore_453.F("ՕԶԼՕգՀի՝բժՃԴ", (byte)48, 70);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[3] = NLoginCore_384.A("ĕġņķļĭĝŝŝēŃŔģŅŦŞłĤşŉōŅĲĳ", (byte)48, 65);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[4] = NLoginCore_446.F("ԥ՞԰Ց՛՚ՓբաԷ՗զԯ՟իՅբԾեճԸՒԿՀ", (byte)48, 70);
+                    H2DatabaseProvider.var_java_lang_String_arr_b[5] = NLoginCore_173.B("đŏĦĤĨĬĖŠıŠłĲĜĞĘİŚŪŀŊŗśĲĳ", (byte)48, 66);
+                    continue block7;
+                }
+                case 2: {
+                    H2DatabaseProvider.var_java_lang_String_arr_b[0] = NLoginCore_223.F("ՅԸՙԼՕԩբԸիԬ՝Դ", (byte)48, 70);
+                    continue block7;
+                }
+                case 4: {
+                    H2DatabaseProvider.var_java_lang_String_arr_b[0] = NLoginCore_004.D("ҰҠҨҼҼҠҸӀқҖғҖӁӊҋҿҍӈҝӋӋӁҘҙ", (byte)48, 68);
+                }
+            }
+        }
+    }
 
-      return ZKM_STR_A[var0];
-   }
+    private H2DatabaseProvider(NLoginCore_116<?> NLoginInterface_0112, NLoginCore_282 NLoginCore_2822, File file, Properties properties, @Nullable String string, @Nullable Object object) {
+        Serializable serializable;
+        NLoginCore_363[] NLoginInterface_034Array = new NLoginCore_363[var_int_a];
+        NLoginInterface_034Array[H2DatabaseProvider.var_int_b] = NLoginCore_282.a(NLoginCore_2822);
+        NLoginCore_200 NLoginCore_200 = NLoginInterface_0112.com_nickuc_login_NLoginCore_583_a().com_nickuc_login_NLoginCore_200_a(NLoginInterface_034Array);
+        try {
+            Constructor<?> constructor;
+            serializable = NLoginCore_200.loadClass((String)H2DatabaseProvider.c("㺀", (int)var_int_c, (long)(d ^ var_long_e)));
+            if (NLoginCore_2822 == NLoginCore_282.var_com_nickuc_login_NLoginCore_282_b) {
+                Class[] classArray = new Class[f];
+                classArray[H2DatabaseProvider.g] = String.class;
+                classArray[H2DatabaseProvider.h] = Properties.class;
+                constructor = ((Class)serializable).getConstructor(classArray);
+            } else {
+                Class[] classArray = new Class[i];
+                classArray[H2DatabaseProvider.j] = String.class;
+                classArray[H2DatabaseProvider.k] = Properties.class;
+                classArray[H2DatabaseProvider.l] = String.class;
+                classArray[H2DatabaseProvider.m] = Object.class;
+                classArray[H2DatabaseProvider.n] = Boolean.TYPE;
+                constructor = ((Class)serializable).getConstructor(classArray);
+            }
+            this.var_int_c = (int)constructor;
+        }
+        catch (ReflectiveOperationException reflectiveOperationException) {
+            throw new RuntimeException(reflectiveOperationException);
+        }
+        serializable = file.getParentFile();
+        if (!((File)serializable).exists() && !((File)serializable).mkdirs()) {
+            throw new RuntimeException((String)H2DatabaseProvider.c("㺃", (int)o, (long)(p ^ q)) + serializable + (String)H2DatabaseProvider.c("㺆", (int)r, (long)(s ^ t)));
+        }
+        String string2 = file.getAbsolutePath();
+        if (string2.endsWith((String)H2DatabaseProvider.c("㺉", (int)u, (long)(v ^ w)))) {
+            string2 = string2.substring(x, string2.length() - ((String)H2DatabaseProvider.c("㺌", (int)(y & z), (long)aa)).length());
+        }
+        this.var_com_nickuc_login_NLoginCore_282_a = NLoginCore_2822;
+        this.aA = (String)H2DatabaseProvider.c("㺏", (int)(ab & ac), (long)ad) + string2;
+        this.var_java_util_Properties_c = properties;
+        this.aB = string;
+        this.var_java_lang_Object_e = object;
+    }
 
-   static {
-      b();
-   }
+    public static H2DatabaseProvider a(NLoginCore_116<?> NLoginInterface_0112, NLoginCore_282 NLoginCore_2822, File file, Properties properties, @Nullable String string, @Nullable Object object) {
+        return new H2DatabaseProvider(NLoginInterface_0112, NLoginCore_2822, file, properties, string, object);
+    }
 
-   private static Object c(Lookup var0, String var1, MethodType var2) {
-      try {
-         return new MutableCallSite(
-            var0.findStatic(
-                  H2DatabaseProvider.class,
-                  new String(new byte[]{97}, StandardCharsets.UTF_8),
-                  MethodType.fromMethodDescriptorString(NLoginCore_091.D("ӐӲӴӔӸԗԏԥԑӠԞԔԢԜӥԊԬԫԣԩԣӸ", (byte)81, 68), H2DatabaseProvider.class.getClassLoader())
-               )
-               .asType(var2)
-         );
-      } catch (Exception var4) {
-         throw new RuntimeException(
-            NLoginCore_027.C("ԋԘԗӚԚԖԑԚԥԔӡԟԣԜԟԥӧ\u086fࡽࡖࢃࢄࡺࡨࡹࢄࡼࡶࢃࢅࡺ࢈Ԃ", (byte)81, 67) + var1 + NLoginCore_387.B("ś", (byte)81, 66) + var2.toString(), var4
-         );
-      }
-   }
-
-   private static void b() {
-      c = 6232033446920573906L;
-      long var0 = c ^ -4129804051208352222L;
-      Cipher var2 = Cipher.getInstance(
-         new String(
-            new byte[]{
-               (byte)(41 + 27),
-               (byte)(65 + 4),
-               (byte)(3 + 80),
-               (byte)(11 + 36),
-               (byte)(16 + 51),
-               (byte)(55 + 11),
-               (byte)(38 + 29),
-               (byte)(15 + 32),
-               (byte)(6 + 74),
-               (byte)(73 + 2),
-               (byte)(11 + 56),
-               (byte)(7 + 76),
-               (byte)(48 + 5),
-               (byte)(79 + 1),
-               (byte)(9 + 88),
-               (byte)(31 + 69),
-               (byte)(70 + 30),
-               105,
-               110,
-               (byte)(79 + 24)
-            },
-            StandardCharsets.UTF_8
-         )
-      );
-      SecretKeyFactory var3 = SecretKeyFactory.getInstance(new String(new byte[]{(byte)(35 + 33), 69, (byte)(28 + 55)}, StandardCharsets.UTF_8));
-      byte[] var4 = new byte[8];
-      var4[0] = (byte)(var0 >>> 56);
-
-      for (int var5 = 1; var5 < 8; var5++) {
-         var4[var5] = (byte)(var0 << var5 * 8 >>> 56);
-      }
-
-      var2.init(2, var3.generateSecret(new DESKeySpec(var4)), new IvParameterSpec(new byte[8]));
-      byte var7 = 1;
-
-      for (int var6 = 0; var6 < var7; var6++) {
-         switch (var6) {
-            case 0:
-               ZKM_STR_B[0] = NLoginCore_201.A("ģŌĒĴņŖķŇŐĹşŖŞŒĢĻŢĴŁœŋŚśĩĬŀīŏŦőŁĲŒŷĳŌļŭŒœūĳŸŇ", (byte)48, 65);
-               ZKM_STR_B[1] = NLoginCore_427.D("҆ҵҺҏҖҋҎӄӄҽ҂҈ҞҾ҆ҥӂӅӆҪҝӉҧҿҔҏӎңӇӍӄӊҘҲҬӑӖҫӠӕәӞҴҭ", (byte)48, 68);
-               ZKM_STR_B[2] = NLoginCore_553.F("ՄՖԞՠԽՂՔ՝՜՞ՏԴ", (byte)48, 70);
-               ZKM_STR_B[3] = NLoginCore_427.C("үҠҝӂүѾҬҭ҄ӃҲҍ", (byte)48, 67);
-               ZKM_STR_B[4] = NLoginCore_575.F("ՖՇՄթՖԥՓՔԫժՙԴ", (byte)48, 70);
-               ZKM_STR_B[5] = NLoginCore_451.D("ѷҵҌҊҎҒѼӆҗӆҨ҈҅ҦҔ҆ҜӎҧӆӃҫҘҙ", (byte)48, 68);
-               break;
-            case 1:
-               ZKM_STR_B[0] = NLoginCore_453.C("҉ҲѸҚҬҼҝҭҶҟӅҼӄҸ҈ҡӈҚҧҹұӀӁҏҒҦґҵӌҷҧҘһӒҚҮӗӟҼӐҹӥӦҭ", (byte)48, 67);
-               ZKM_STR_B[1] = NLoginCore_427.A("ĠŏŔĩİĥĨŞŞŗĜĢĸŘĠĿŜşŠńķţŁřĮĩŨĽšŧŞŤłňůţŪĽļſűŗŸŇ", (byte)48, 65);
-               ZKM_STR_B[2] = NLoginCore_453.F("ՕԶԼՕգՀի՝բժՃԴ", (byte)48, 70);
-               ZKM_STR_B[3] = NLoginCore_471.A("ĕġņķļĭĝŝŝēŃŔģŅŦŞłĤşŉōŅĲĳ", (byte)48, 65);
-               ZKM_STR_B[4] = NLoginCore_446.F("ԥ՞\u0530Ց՛՚ՓբաԷ\u0557զԯ՟իՅբԾեճԸՒԿՀ", (byte)48, 70);
-               ZKM_STR_B[5] = NLoginCore_173.B("đŏĦĤĨĬĖŠıŠłĲĜĞĘİŚŪŀŊŗśĲĳ", (byte)48, 66);
-               break;
-            case 2:
-               ZKM_STR_B[0] = NLoginCore_397.F("ՅԸՙԼՕԩբԸիԬ՝Դ", (byte)48, 70);
-            case 3:
-            default:
-               break;
-            case 4:
-               ZKM_STR_B[0] = NLoginCore_110.D("ҰҠҨҼҼҠҸӀқҖғҖӁӊҋҿҍӈҝӋӋӁҘҙ", (byte)48, 68);
-         }
-      }
-   }
-
-   private H2DatabaseProvider(NLoginInterface_011<?> var1, NLoginCore_282 var2, File var3, Properties var4, @Nullable String var5, @Nullable Object var6) {
-      NLoginCore_583 var10000 = var1.a();
-      NLoginInterface_034[] var10001 = new NLoginInterface_034[a];
-      var10001[b] = NLoginCore_282.a(var2);
-      NLoginCore_200 var7 = var10000.a(var10001);
-
-      try {
-         Class var8 = var7.loadClass(a(c, d ^ e));
-         Constructor var12;
-         if (var2 == NLoginCore_282.b) {
-            Class[] var10002 = new Class[f];
-            var10002[g] = String.class;
-            var10002[h] = Properties.class;
-            var12 = var8.getConstructor(var10002);
-         } else {
-            Class[] var13 = new Class[i];
-            var13[j] = String.class;
-            var13[k] = Properties.class;
-            var13[l] = String.class;
-            var13[m] = Object.class;
-            var13[n] = boolean.class;
-            var12 = var8.getConstructor(var13);
-         }
-
-         this.c = var12;
-      } catch (ReflectiveOperationException var10) {
-         throw new RuntimeException(var10);
-      }
-
-      File var11 = var3.getParentFile();
-      if (!var11.exists() && !var11.mkdirs()) {
-         throw new RuntimeException(a(o, p ^ q) + var11 + a(r, s ^ t));
-      } else {
-         String var9 = var3.getAbsolutePath();
-         if (var9.endsWith(a(u, v ^ w))) {
-            var9 = var9.substring(x, var9.length() - a(y & z, aa).length());
-         }
-
-         this.a = var2;
-         this.aA = a(ab & ac, ad) + var9;
-         this.c = var4;
-         this.aB = var5;
-         this.e = var6;
-      }
-   }
-
-   public static H2DatabaseProvider a(NLoginInterface_011<?> var0, NLoginCore_282 var1, File var2, Properties var3, @Nullable String var4, @Nullable Object var5) {
-      return new H2DatabaseProvider(var0, var1, var2, var3, var4, var5);
-   }
-
-   public static H2DatabaseProvider a(NLoginInterface_011<?> var0, NLoginCore_282 var1, File var2, Properties var3) {
-      return a(var0, var1, var2, var3, null, null);
-   }
+    public static H2DatabaseProvider a(NLoginCore_116<?> NLoginInterface_0112, NLoginCore_282 NLoginCore_2822, File file, Properties properties) {
+        return H2DatabaseProvider.a(NLoginInterface_0112, NLoginCore_2822, file, properties, null, null);
+    }
 }
+

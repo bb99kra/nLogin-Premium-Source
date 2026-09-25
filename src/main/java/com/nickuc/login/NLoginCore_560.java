@@ -1,37 +1,28 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-import lombok.Generated;
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.ForceRegisterConfig;
 
-public class NLoginCore_560 implements NLoginInterface_010, NLoginInterface_035 {
-   private static int c = (0 >>> 71 | 0 << -71) & -1;
-   private final NLoginCore_211 ai;
-   private static int a = Integer.reverse(-1879048192);
-   private static int e = Integer.reverse(Integer.MIN_VALUE);
-   private static int d = Integer.reverse(0);
-   private static int f = 0 >>> 171 | 0 << ~171 + 1;
-   private static int b = Integer.reverse(Integer.MIN_VALUE);
+public interface NLoginCore_560 {
+    public void a(ForceRegisterConfig var1, NLoginCore_277 var2);
 
-   @Override
-   public GUIButtonContainer[] a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3, NLoginInterface_024 var4) {
-      NLoginCore_150.a(var2, NLoginCore_237.l);
-      NLoginCore_445[] var10001 = new NLoginCore_445[e];
-      var10001[f] = NLoginCore_445.f;
-      return GUIButtonContainer.a(var2, var10001);
-   }
+    public void c(ForceRegisterConfig var1, NLoginCore_277 var2, String var3);
 
-   @Generated
-   @Override
-   public NLoginCore_211 a() {
-      return this.ai;
-   }
+    default public boolean aE() {
+        return false;
+    }
 
-   @Override
-   public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
-      return ((var1.a() != 0).n() == a && var1.a().q() ? b : c);
-   }
+    public void aH();
 
-   @Generated
-   public NLoginCore_560(NLoginCore_211 var1) {
-      this.ai = var1;
-   }
+    public boolean aF();
+
+    public void b(ForceRegisterConfig var1, NLoginCore_277 var2, String var3);
+
+    public void b(ForceRegisterConfig var1, NLoginCore_277 var2);
+
+    public void a(ForceRegisterConfig var1, NLoginCore_277 var2, String var3);
 }
+

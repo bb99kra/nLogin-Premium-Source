@@ -1,64 +1,35 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_312;
+import com.nickuc.login.NLoginCore_543;
+import com.nickuc.login.NLoginCore_099;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginCore_361;
 import lombok.Generated;
 
-public class NLoginCore_538 implements NLoginInterface_039, NLoginInterface_044 {
-   private static int b = Integer.reverse(0);
-   private static int a = (0 >>> 136 | 0 << ~136 + 1) & -1;
-   private static int e = 0 >>> 141 | 0 << ~141 + 1;
-   private static int d = Integer.reverse(Integer.MIN_VALUE);
-   private static int h = Integer.reverse(0);
-   private static int f = Integer.reverse(0);
-   private static int i = Integer.reverse(0);
-   private static int c = (0 >>> 90 | 0 << -90) & -1;
-   private final NLoginCore_211 aj;
-   private static int g = (0 >>> 51 | 0 << ~51 + 1) & -1;
+public class NLoginCore_538 {
+    public final NLoginCore_099 var_com_nickuc_login_NLoginCore_099_a;
+    private final NLoginType_008 u;
+    public final NLoginCore_543 var_com_nickuc_login_NLoginCore_543_a = new NLoginCore_543(this, null);
+    public final NLoginCore_312 var_com_nickuc_login_NLoginCore_312_a;
+    public final NLoginCore_361 var_com_nickuc_login_NLoginCore_361_a;
 
-   @Generated
-   public NLoginCore_538(NLoginCore_211 var1) {
-      this.aj = var1;
-   }
+    @Generated
+    public NLoginCore_538(NLoginType_008 NLoginType_008) {
+        this.var_com_nickuc_login_NLoginCore_099_a = new NLoginCore_099(this, null);
+        this.var_com_nickuc_login_NLoginCore_361_a = new NLoginCore_361(this, null);
+        this.var_com_nickuc_login_NLoginCore_312_a = new NLoginCore_312(this, null);
+        this.u = NLoginType_008;
+    }
 
-   @Override
-   public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
-      String var4 = var3.d(NLoginCore_567.u);
-      if (var4 == null) {
-         return (a != 0);
-      } else if (NLoginCore_477.V.ar() && NLoginCore_477.W.ar()) {
-         ForceRegisterConfig var5 = var3.a();
-         if (!var5.s()) {
-            return (c != 0);
-         } else {
-            return ((!var5.x() != 0) && BCryptHashProvider.b().matcher(var4).matches() ? e : d);
-         }
-      } else {
-         return (b != 0);
-      }
-   }
-
-   @Generated
-   @Override
-   public NLoginCore_211 a() {
-      return this.aj;
-   }
-
-   @Override
-   public boolean c(NLoginType_008 var1) {
-      return (h != 0);
-   }
-
-   @Override
-   public boolean at() {
-      return (i != 0);
-   }
-
-   @Override
-   public GUIButtonContainer[] a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3, NLoginInterface_024 var4) {
-      NLoginCore_150.a(var2, NLoginCore_487.ai);
-      return new GUIButtonContainer[g];
-   }
-
-   @Override
-   public void a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3, NLoginInterface_024 var4, NLoginCore_445 var5) {
-   }
+    static /* synthetic */ NLoginType_008 a(NLoginCore_538 NLoginCore_346) {
+        return NLoginCore_346.u;
+    }
 }
+

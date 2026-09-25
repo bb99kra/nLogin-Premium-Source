@@ -1,19 +1,47 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-import lombok.Generated;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginCore_459;
+import com.nickuc.login.NLoginCore_502;
+import com.nickuc.login.NLoginCore_523;
 
-public class NLoginCore_151 extends NLoginCore_123 {
-   private static final NLoginCore_151 b = new NLoginCore_151(null, NLoginCore_151.d, null);
-   private final String aX;
-   private static int d = Integer.reverse(0);
+public interface NLoginCore_151
+extends NLoginCore_502 {
+    @Override
+    default public boolean a(NLoginType_008 NLoginType_008) {
+        NLoginCore_523 NLoginCore_4952 = NLoginType_008.com_nickuc_login_NLoginCore_495_a();
+        return this.boolean_a(NLoginType_008, NLoginCore_4952, NLoginCore_4952.com_nickuc_login_NLoginCore_459_a());
+    }
 
-   @Generated
-   public String K() {
-      return this.aX;
-   }
+    public boolean boolean_a(NLoginType_008 var1, NLoginCore_523 var2, NLoginCore_459 var3);
 
-   public NLoginCore_151(byte[] var1, int var2, String var3) {
-      super(var1, var2);
-      this.aX = var3;
-   }
+    default public boolean I() {
+        return true;
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    @Override
+    default public void c(NLoginType_008 NLoginType_008) {
+        NLoginCore_523 NLoginCore_4952 = NLoginType_008.com_nickuc_login_NLoginCore_495_a();
+        NLoginCore_459 NLoginCore_459 = NLoginCore_4952.com_nickuc_login_NLoginCore_459_a();
+        if (this.I()) {
+            NLoginCore_459 NLoginCore_4592 = NLoginCore_523.a(NLoginType_008, NLoginCore_459.com_nickuc_login_NLoginCore_036_a(), true);
+            try {
+                this.void_a(NLoginType_008, NLoginCore_4952, NLoginCore_4592);
+            }
+            finally {
+                NLoginCore_4592.void_c();
+            }
+        } else {
+            this.void_a(NLoginType_008, NLoginCore_4952, NLoginCore_459);
+        }
+    }
+
+    public void void_a(NLoginType_008 var1, NLoginCore_523 var2, NLoginCore_459 var3);
 }
+

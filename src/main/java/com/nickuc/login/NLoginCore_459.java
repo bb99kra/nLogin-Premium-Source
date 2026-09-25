@@ -1,5 +1,16 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.annotation.CheckReturnValue
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_171;
+import com.nickuc.login.NLoginCore_218;
+import com.nickuc.login.NLoginCore_365;
+import com.nickuc.login.NLoginCore_288;
+import com.nickuc.login.NLoginCore_036;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,167 +19,157 @@ import java.sql.Timestamp;
 import javax.annotation.CheckReturnValue;
 
 public interface NLoginCore_459 {
-   @CheckReturnValue
-   default NLoginCore_171 a(String var1, Object... var2) {
-      Connection var3 = this.a();
-      PreparedStatement var4 = null;
-
-      try {
-         var4 = var3.prepareStatement(var1);
-         this.a(var4, var2);
-         ResultSet var5 = var4.executeQuery();
-         return new NLoginCore_171(this, var3, var4, var5, null);
-      } catch (SQLException var6) {
-         if (var4 != null) {
-            var4.close();
-         }
-
-         this.a(var3);
-         throw var6;
-      }
-   }
-
-   default NLoginCore_218<Integer> b(String var1, Object... var2) {
-      Connection var3 = this.a();
-
-      NLoginCore_218 var5;
-      try {
-         PreparedStatement var4 = var3.prepareStatement(var1);
-
-         try {
-            this.a(var4, var2);
-            var5 = new NLoginCore_218(var4.executeUpdate(), null);
-         } catch (Throwable var12) {
-            if (var4 != null) {
-               try {
-                  var4.close();
-               } catch (Throwable var11) {
-                  var12.addSuppressed(var11);
-               }
+    @CheckReturnValue
+    default public NLoginCore_171 com_nickuc_login_NLoginCore_171_a(String string, Object ... objectArray) {
+        Connection connection = this.java_sql_Connection_a();
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = connection.prepareStatement(string);
+            this.a(preparedStatement, objectArray);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            return new NLoginCore_171(this, connection, preparedStatement, resultSet, null);
+        }
+        catch (SQLException sQLException) {
+            if (preparedStatement != null) {
+                preparedStatement.close();
             }
+            this.a(connection);
+            throw sQLException;
+        }
+    }
 
-            throw var12;
-         }
-
-         if (var4 != null) {
-            var4.close();
-         }
-      } finally {
-         this.a(var3);
-      }
-
-      return var5;
-   }
-
-   @CheckReturnValue
-   default NLoginCore_365 a() {
-      return new NLoginCore_365(this, this.a(), null);
-   }
-
-   default void a(String var1, Object... var2) {
-      Connection var3 = this.a();
-
-      try {
-         PreparedStatement var4 = var3.prepareStatement(var1);
-
-         try {
-            this.a(var4, var2);
-            var4.execute();
-         } catch (Throwable var12) {
-            if (var4 != null) {
-               try {
-                  var4.close();
-               } catch (Throwable var11) {
-                  var12.addSuppressed(var11);
-               }
+    default public NLoginCore_218<Integer> b(String string, Object ... objectArray) {
+        Connection connection = this.java_sql_Connection_a();
+        try {
+            NLoginCore_218<Integer> NLoginCore_2182;
+            block9: {
+                PreparedStatement preparedStatement = connection.prepareStatement(string);
+                try {
+                    this.a(preparedStatement, objectArray);
+                    NLoginCore_2182 = new NLoginCore_218<Integer>(preparedStatement.executeUpdate(), null);
+                    if (preparedStatement == null) break block9;
+                }
+                catch (Throwable throwable) {
+                    if (preparedStatement != null) {
+                        try {
+                            preparedStatement.close();
+                        }
+                        catch (Throwable throwable2) {
+                            throwable.addSuppressed(throwable2);
+                        }
+                    }
+                    throw throwable;
+                }
+                preparedStatement.close();
             }
+            return NLoginCore_2182;
+        }
+        finally {
+            this.a(connection);
+        }
+    }
 
-            throw var12;
-         }
+    @CheckReturnValue
+    default public NLoginCore_365 com_nickuc_login_NLoginCore_365_a() {
+        return new NLoginCore_365(this, this.java_sql_Connection_a(), null);
+    }
 
-         if (var4 != null) {
-            var4.close();
-         }
-      } finally {
-         this.a(var3);
-      }
-   }
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    default public void void_a(String string, Object ... objectArray) {
+        Connection connection = this.java_sql_Connection_a();
+        try (PreparedStatement preparedStatement = connection.prepareStatement(string);){
+            this.a(preparedStatement, objectArray);
+            preparedStatement.execute();
+        }
+        finally {
+            this.a(connection);
+        }
+    }
 
-   Connection a();
+    public Connection java_sql_Connection_a();
 
-   default void a(PreparedStatement var1, Object[] var2) {
-      for (int var3 = 0; var3 < var2.length; var3++) {
-         Object var4 = var2[var3];
-         if (var4 instanceof String) {
-            var1.setString(var3 + 1, (String)var4);
-         } else if (var4 instanceof Long) {
-            var1.setLong(var3 + 1, (Long)var4);
-         } else if (var4 instanceof Integer) {
-            var1.setInt(var3 + 1, (Integer)var4);
-         } else if (var4 instanceof Timestamp) {
-            var1.setTimestamp(var3 + 1, (Timestamp)var4);
-         } else if (var4 instanceof byte[]) {
-            var1.setBytes(var3 + 1, (byte[])var4);
-         } else {
-            var1.setObject(var3 + 1, var4);
-         }
-      }
-   }
-
-   void c();
-
-   @CheckReturnValue
-   default NLoginCore_288 a(String var1, Object... var2) {
-      Connection var3 = this.a();
-      PreparedStatement var4 = null;
-
-      try {
-         var4 = var3.prepareStatement(var1);
-         this.a(var4, var2);
-         return new NLoginCore_288(this, var3, var4, null);
-      } catch (SQLException var6) {
-         if (var4 != null) {
-            var4.close();
-         }
-
-         this.a(var3);
-         throw var6;
-      }
-   }
-
-   NLoginCore_036 a();
-
-   default NLoginCore_218<Boolean> a(String var1, Object... var2) {
-      Connection var3 = this.a();
-
-      NLoginCore_218 var5;
-      try {
-         PreparedStatement var4 = var3.prepareStatement(var1);
-
-         try {
-            this.a(var4, var2);
-            var5 = new NLoginCore_218(var4.execute(), null);
-         } catch (Throwable var12) {
-            if (var4 != null) {
-               try {
-                  var4.close();
-               } catch (Throwable var11) {
-                  var12.addSuppressed(var11);
-               }
+    default public void a(PreparedStatement preparedStatement, Object[] objectArray) {
+        for (int i = 0; i < objectArray.length; ++i) {
+            Object object = objectArray[i];
+            if (object instanceof String) {
+                preparedStatement.setString(i + 1, (String)object);
+                continue;
             }
+            if (object instanceof Long) {
+                preparedStatement.setLong(i + 1, (Long)object);
+                continue;
+            }
+            if (object instanceof Integer) {
+                preparedStatement.setInt(i + 1, (Integer)object);
+                continue;
+            }
+            if (object instanceof Timestamp) {
+                preparedStatement.setTimestamp(i + 1, (Timestamp)object);
+                continue;
+            }
+            if (object instanceof byte[]) {
+                preparedStatement.setBytes(i + 1, (byte[])object);
+                continue;
+            }
+            preparedStatement.setObject(i + 1, object);
+        }
+    }
 
-            throw var12;
-         }
+    public void void_c();
 
-         if (var4 != null) {
-            var4.close();
-         }
-      } finally {
-         this.a(var3);
-      }
+    @CheckReturnValue
+    default public NLoginCore_288 com_nickuc_login_NLoginCore_288_a(String string, Object ... objectArray) {
+        Connection connection = this.java_sql_Connection_a();
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = connection.prepareStatement(string);
+            this.a(preparedStatement, objectArray);
+            return new NLoginCore_288(this, connection, preparedStatement, null);
+        }
+        catch (SQLException sQLException) {
+            if (preparedStatement != null) {
+                preparedStatement.close();
+            }
+            this.a(connection);
+            throw sQLException;
+        }
+    }
 
-      return var5;
-   }
+    public NLoginCore_036 com_nickuc_login_NLoginCore_036_a();
 
-   void a(Connection var1);
+    default public NLoginCore_218<Boolean> a(String string, Object ... objectArray) {
+        Connection connection = this.java_sql_Connection_a();
+        try {
+            NLoginCore_218<Boolean> NLoginCore_2182;
+            block9: {
+                PreparedStatement preparedStatement = connection.prepareStatement(string);
+                try {
+                    this.a(preparedStatement, objectArray);
+                    NLoginCore_2182 = new NLoginCore_218<Boolean>(preparedStatement.execute(), null);
+                    if (preparedStatement == null) break block9;
+                }
+                catch (Throwable throwable) {
+                    if (preparedStatement != null) {
+                        try {
+                            preparedStatement.close();
+                        }
+                        catch (Throwable throwable2) {
+                            throwable.addSuppressed(throwable2);
+                        }
+                    }
+                    throw throwable;
+                }
+                preparedStatement.close();
+            }
+            return NLoginCore_2182;
+        }
+        finally {
+            this.a(connection);
+        }
+    }
+
+    public void a(Connection var1);
 }
+

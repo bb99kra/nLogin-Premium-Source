@@ -1,43 +1,90 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_425;
+
 public class NLoginCore_548 {
-   private static final int aT = NLoginCore_425.values().length;
-   private static int a = Integer.reverse(Integer.MIN_VALUE);
-   private static int g = (250 >>> 95 | 250 << -95) & -1;
-   private static final long[][] a = new long[aT][g];
-   private static int e = Integer.reverse(0);
-   private static final long[] a = new long[aT];
-   private static final int aS = NLoginCore_548.f;
-   private static final boolean[] a = new boolean[aT];
-   private static final int[] ai = new int[aT];
-   private static int d = 0 >>> 235 | 0 << ~235 + 1;
-   private static int b = Integer.reverse(-813694976);
-   private static int c = Integer.reverse(Integer.MIN_VALUE);
-   private static int f = 4000 >>> 227 | 4000 << ~227 + 1;
-   private static final Object[] d = a(aT);
+    private static final int aT;
+    private static int var_int_a;
+    private static int g;
+    private static final long[][] var_long_arr_arr_a;
+    private static int e;
+    private static final long[] var_long_arr_a;
+    private static final int aS;
+    private static final boolean[] var_boolean_arr_a;
+    private static final int[] ai;
+    private static int var_int_d;
+    private static int b;
+    private static int c;
+    private static int f;
+    private static final Object[] var_java_lang_Object_arr_d;
 
-   public static void a(NLoginCore_425 var0, long var1) {
-      long var3 = System.nanoTime() - var1;
-      int var5 = var0.ordinal();
-      synchronized (d[var5]) {
-         ai[var5] = ai[var5] + a;
-         int var7 = ai[var5];
-         a[var5][var7] = var3;
-         a[var5] = var3;
-         if (var7 == b) {
-            a[var5] = (c != 0);
-            ai[var5] = d;
-         }
-      }
-   }
+    static /* synthetic */ Object[] java_lang_Object_arr_a() {
+        return var_java_lang_Object_arr_d;
+    }
 
-   private static Object[] a(int var0) {
-      Object[] var1 = new Object[var0];
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public static void a(NLoginCore_425 NLoginCore_425, long l) {
+        long l2 = System.nanoTime() - l;
+        int n = NLoginCore_425.ordinal();
+        Object object = var_java_lang_Object_arr_d[n];
+        synchronized (object) {
+            int n2 = n;
+            int n3 = ai[n2];
+            ai[n2] = n3 + var_int_a;
+            int n4 = n3;
+            NLoginCore_548.var_long_arr_arr_a[n][n4] = l2;
+            NLoginCore_548.var_long_arr_a[n] = l2;
+            if (n4 == b) {
+                NLoginCore_548.var_boolean_arr_a[n] = c;
+                NLoginCore_548.ai[n] = var_int_d;
+            }
+        }
+    }
 
-      for (int var2 = e; var2 < var1.length; var2++) {
-         var1[var2] = new Object();
-      }
+    static {
+        var_int_a = Integer.reverse(Integer.MIN_VALUE);
+        b = Integer.reverse(-813694976);
+        c = Integer.reverse(Integer.MIN_VALUE);
+        var_int_d = 0 >>> 235 | 0 << ~235 + 1;
+        e = Integer.reverse(0);
+        f = 4000 >>> 227 | 4000 << ~227 + 1;
+        g = (250 >>> 95 | 250 << -95) & 0xFFFFFFFF;
+        aS = f;
+        aT = NLoginCore_425.values().length;
+        var_java_lang_Object_arr_d = NLoginCore_548.a(aT);
+        var_long_arr_arr_a = new long[aT][g];
+        var_long_arr_a = new long[aT];
+        ai = new int[aT];
+        var_boolean_arr_a = new boolean[aT];
+    }
 
-      return var1;
-   }
+    static /* synthetic */ int[] int_arr_a() {
+        return ai;
+    }
+
+    static /* synthetic */ boolean[] boolean_arr_a() {
+        return var_boolean_arr_a;
+    }
+
+    static /* synthetic */ long[] long_arr_a() {
+        return var_long_arr_a;
+    }
+
+    private static Object[] a(int n) {
+        Object[] objectArray = new Object[n];
+        for (int i = e; i < objectArray.length; ++i) {
+            objectArray[i] = new Object();
+        }
+        return objectArray;
+    }
+
+    static /* synthetic */ long[][] long_arr_arr_a() {
+        return var_long_arr_arr_a;
+    }
 }
+

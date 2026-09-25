@@ -1,33 +1,40 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
 import lombok.Generated;
 
 public class NLoginCore_474 {
-   private final String[] d;
-   private static int a = (0 >>> 3 | 0 << ~3 + 1) & -1;
-   private final boolean an;
+    private final String[] d;
+    private static int a = (0 >>> 3 | 0 << ~3 + 1) & 0xFFFFFFFF;
+    private final boolean an;
 
-   public static NLoginCore_474 a(String... var0) {
-      return a((a != 0), var0);
-   }
+    public static NLoginCore_474 a(String ... stringArray) {
+        return NLoginCore_474.a(a != 0, stringArray);
+    }
 
-   public static NLoginCore_474 a(boolean var0, String... var1) {
-      return new NLoginCore_474(var1, var0);
-   }
+    public static NLoginCore_474 a(boolean bl, String ... stringArray) {
+        return new NLoginCore_474(stringArray, bl);
+    }
 
-   @Generated
-   public String[] a() {
-      return this.d;
-   }
+    @Generated
+    public String[] a() {
+        return this.d;
+    }
 
-   @Generated
-   private NLoginCore_474(String[] var1, boolean var2) {
-      this.d = var1;
-      this.an = var2;
-   }
+    @Generated
+    private NLoginCore_474(String[] stringArray, boolean bl) {
+        this.d = stringArray;
+        this.an = bl;
+    }
 
-   @Generated
-   public boolean t() {
-      return this.an;
-   }
+    @Generated
+    public boolean t() {
+        return this.an;
+    }
 }
+

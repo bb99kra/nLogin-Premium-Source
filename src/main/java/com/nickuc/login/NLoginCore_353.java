@@ -1,83 +1,101 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  lombok.Generated
+ */
 package com.nickuc.login;
 
+import com.nickuc.login.NLoginCore_277;
+import com.nickuc.login.NLoginType_008;
+import com.nickuc.login.NLoginCore_150;
+import com.nickuc.login.NLoginCore_055;
+import com.nickuc.login.NLoginCore_466;
+import com.nickuc.login.NLoginCore_494;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import lombok.Generated;
 
 public abstract class NLoginCore_353 {
-   private final boolean w;
-   private final String p;
-   protected NLoginCore_055 a;
-   private final boolean x;
-   private static int a = 16 >>> 4 | 16 << -4;
-   private final List<String> b;
-   protected final NLoginCore_466 l = NLoginCore_466.b;
-   private final String o;
-   private static int b = Integer.reverse(0);
-   protected NLoginType_008 a;
+    private final boolean w;
+    private final String p;
+    protected NLoginCore_055 var_com_nickuc_login_NLoginCore_055_a;
+    private final boolean x;
+    private static int var_int_a;
+    private final List<String> var_java_util_List_java_lang_String__b;
+    protected final NLoginCore_466 l = NLoginCore_466.var_com_nickuc_login_NLoginCore_466_b;
+    private final String o;
+    private static int var_int_b;
+    protected NLoginType_008 var_com_nickuc_login_NLoginType_008_a;
 
-   protected boolean j() {
-      return ((this.a != NLoginCore_055.c && this.a != NLoginCore_055.s ? b : a) != 0);
-   }
+    static {
+        var_int_a = 16 >>> 4 | 16 << -4;
+        var_int_b = Integer.reverse(0);
+    }
 
-   public void a(NLoginInterface_042 var1, String[] var2) {
-      this.a = var1 instanceof NLoginCore_277 ? this.a.a().b((NLoginCore_277)var1).a() : NLoginCore_150.c();
-      this.b(var1, var2);
-   }
+    protected boolean j() {
+        return (this.var_com_nickuc_login_NLoginCore_055_a == NLoginCore_055.var_com_nickuc_login_NLoginCore_055_c || this.var_com_nickuc_login_NLoginCore_055_a == NLoginCore_055.var_com_nickuc_login_NLoginCore_055_s ? var_int_a : var_int_b) != 0;
+    }
 
-   protected List<String> c(NLoginInterface_042 var1, String var2, String[] var3) {
-      return null;
-   }
+    public void a(NLoginCore_494 NLoginInterface_0422, String[] stringArray) {
+        this.var_com_nickuc_login_NLoginCore_055_a = NLoginInterface_0422 instanceof NLoginCore_277 ? this.var_com_nickuc_login_NLoginType_008_a.com_nickuc_login_NLoginCore_187_a().com_nickuc_login_NLoginCore_509_b((NLoginCore_277)NLoginInterface_0422).com_nickuc_login_NLoginCore_055_a() : NLoginCore_150.c();
+        this.b(NLoginInterface_0422, stringArray);
+    }
 
-   @Generated
-   public NLoginType_008 b() {
-      return this.a;
-   }
+    protected List<String> c(NLoginCore_494 NLoginInterface_0422, String string, String[] stringArray) {
+        return null;
+    }
 
-   @Generated
-   public boolean o() {
-      return this.x;
-   }
+    @Generated
+    public NLoginType_008 com_nickuc_login_NLoginType_008_b() {
+        return this.var_com_nickuc_login_NLoginType_008_a;
+    }
 
-   protected abstract void b(NLoginInterface_042 var1, String[] var2);
+    @Generated
+    public boolean o() {
+        return this.x;
+    }
 
-   @Generated
-   public NLoginCore_466 a() {
-      return this.l;
-   }
+    protected abstract void b(NLoginCore_494 var1, String[] var2);
 
-   @Generated
-   public boolean n() {
-      return this.w;
-   }
+    @Generated
+    public NLoginCore_466 com_nickuc_login_NLoginCore_466_a() {
+        return this.l;
+    }
 
-   public NLoginCore_353(NLoginType_008 var1, String var2, String var3, boolean var4, boolean var5, String... var6) {
-      this.a = var1;
-      this.o = var2;
-      this.p = var3;
-      this.w = var4;
-      this.x = var5;
-      this.b = var6.length == 0 ? Collections.emptyList() : Arrays.asList(var6);
-   }
+    @Generated
+    public boolean n() {
+        return this.w;
+    }
 
-   @Generated
-   public String f() {
-      return this.p;
-   }
+    public NLoginCore_353(NLoginType_008 NLoginType_008, String string, String string2, boolean bl, boolean bl2, String ... stringArray) {
+        this.var_com_nickuc_login_NLoginType_008_a = NLoginType_008;
+        this.o = string;
+        this.p = string2;
+        this.w = bl;
+        this.x = bl2;
+        this.var_java_util_List_java_lang_String__b = stringArray.length == 0 ? Collections.emptyList() : Arrays.asList(stringArray);
+    }
 
-   @Generated
-   public List<String> b() {
-      return this.b;
-   }
+    @Generated
+    public String f() {
+        return this.p;
+    }
 
-   @Generated
-   public String e() {
-      return this.o;
-   }
+    @Generated
+    public List<String> b() {
+        return this.var_java_util_List_java_lang_String__b;
+    }
 
-   @Generated
-   public NLoginCore_055 a() {
-      return this.a;
-   }
+    @Generated
+    public String e() {
+        return this.o;
+    }
+
+    @Generated
+    public NLoginCore_055 com_nickuc_login_NLoginCore_055_a() {
+        return this.var_com_nickuc_login_NLoginCore_055_a;
+    }
 }
+

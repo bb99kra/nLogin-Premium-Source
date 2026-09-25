@@ -1,19 +1,29 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 package com.nickuc.login;
 
-// $VF: synthetic class
+import com.nickuc.login.NLoginCore_445;
+
 class NLoginCore_475 {
-   private static int a = Integer.reverse(Integer.MIN_VALUE);
-   private static int b = 33554432 >>> 216 | 33554432 << ~216 + 1;
+    private static int a = Integer.reverse(Integer.MIN_VALUE);
+    private static int b = 0x2000000 >>> 216 | 0x2000000 << ~216 + 1;
+    static final /* synthetic */ int[] v;
 
-   static {
-      try {
-         v[NLoginCore_445.i.ordinal()] = a;
-      } catch (NoSuchFieldError var2) {
-      }
-
-      try {
-         v[NLoginCore_445.j.ordinal()] = b;
-      } catch (NoSuchFieldError var1) {
-      }
-   }
+    static {
+        v = new int[NLoginCore_445.values().length];
+        try {
+            NLoginCore_475.v[NLoginCore_445.var_com_nickuc_login_NLoginCore_445_i.ordinal()] = a;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            NLoginCore_475.v[NLoginCore_445.var_com_nickuc_login_NLoginCore_445_j.ordinal()] = b;
+        }
+        catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+    }
 }
+
