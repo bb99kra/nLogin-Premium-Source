@@ -15,7 +15,7 @@ import lombok.Generated;
 
 public final class NLoginCore_498 implements Filter {
    private static int o = (262144 >>> 17 | 262144 << ~17 + 1) & -1;
-   private static String[] a = new String[NLoginCore_498.n];
+   private static String[] ZKM_STR_A = new String[NLoginCore_498.n];
    private static int e = Integer.reverse(0);
    private static int b = 0 >>> 155 | 0 << ~155 + 1;
    private static int n = 256 >>> 71 | 256 << -71;
@@ -32,7 +32,7 @@ public final class NLoginCore_498 implements Filter {
    private final Filter a;
    private static int i = 1 >>> 128 | 1 << ~128 + 1;
    private static int l = 4 >>> 130 | 4 << -130;
-   private static String[] b = new String[o];
+   private static String[] ZKM_STR_B = new String[o];
    private static long f = Long.reverse(6328939591602276655L);
    private static int m = Integer.reverse(0);
    private static long c;
@@ -40,7 +40,7 @@ public final class NLoginCore_498 implements Filter {
    private static String a(int var0, long var1) {
       var1 ^= 91L;
       var1 ^= -1060502292199797024L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -84,10 +84,10 @@ public final class NLoginCore_498 implements Filter {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    static {
@@ -138,20 +138,20 @@ public final class NLoginCore_498 implements Filter {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_127.C("ҰӅӋұӊӴӖӖӘүӹӪӴҷӾӃӰӼӁӤԀԉԄԇӾөԆӽөԀӾӉӪӌӿӥԐӱԔӯӼԗӭԗӝӠӮӕӹԣӝԤԥӤӳӹԬӪԚԬԏԎԌԳ", (byte)66, 67);
-               b[1] = NLoginCore_384.A("ŅŲŦŪŞĳŘŐŖķŜŒŴŃŝŦņŤŖŨƃŌŭŠŜŋƉƏŲƍŢżŸŔŦŕƠƑŷŢƙųŝū", (byte)66, 65);
+               ZKM_STR_B[0] = NLoginCore_127.C("ҰӅӋұӊӴӖӖӘүӹӪӴҷӾӃӰӼӁӤԀԉԄԇӾөԆӽөԀӾӉӪӌӿӥԐӱԔӯӼԗӭԗӝӠӮӕӹԣӝԤԥӤӳӹԬӪԚԬԏԎԌԳ", (byte)66, 67);
+               ZKM_STR_B[1] = NLoginCore_384.A("ŅŲŦŪŞĳŘŐŖķŜŒŴŃŝŦņŤŖŨƃŌŭŠŜŋƉƏŲƍŢżŸŔŦŕƠƑŷŢƙųŝū", (byte)66, 65);
                break;
             case 1:
-               b[0] = NLoginCore_232.B("ĸōœĹŒżŞŞŠķƁŲżĿƆŋŸƄŉŬƈƑƌƏƆűƎƅűƈƆőŲŔƇŭƘŹƜŷƄƟŵƟťŨŶŝƁƫťƬƭŰƳƏƍƌƆƓƤŵƑƌ", (byte)66, 66);
-               b[1] = NLoginCore_223.A("ŅŲŦŪŞĳŘŐŖķŜŒŴŃŝŦņŤŖŨƃŌŭŠŜŋƉƏŲƍŢżūŬŴŴŚƚƐƁŹƝžū", (byte)66, 65);
+               ZKM_STR_B[0] = NLoginCore_232.B("ĸōœĹŒżŞŞŠķƁŲżĿƆŋŸƄŉŬƈƑƌƏƆűƎƅűƈƆőŲŔƇŭƘŹƜŷƄƟŵƟťŨŶŝƁƫťƬƭŰƳƏƍƌƆƓƤŵƑƌ", (byte)66, 66);
+               ZKM_STR_B[1] = NLoginCore_223.A("ŅŲŦŪŞĳŘŐŖķŜŒŴŃŝŦņŤŖŨƃŌŭŠŜŋƉƏŲƍŢżūŬŴŴŚƚƐƁŹƝžū", (byte)66, 65);
                break;
             case 2:
-               b[0] = NLoginCore_183.A("ŊťşĻŖƁŐŵŃżżŨŃŒŵƈżňŊŇŬřŖŗ", (byte)66, 65);
+               ZKM_STR_B[0] = NLoginCore_183.A("ŊťşĻŖƁŐŵŃżżŨŃŒŵƈżňŊŇŬřŖŗ", (byte)66, 65);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_521.F("եբկդԵդԸջԼՒնչՍ՟նաղՕՂՃ\u058b՝՛Մռչ֏ժխվֆե", (byte)66, 70);
+               ZKM_STR_B[0] = NLoginCore_521.F("եբկդԵդԸջԼՒնչՍ՟նաղՕՂՃ\u058b՝՛Մռչ֏ժխվֆե", (byte)66, 70);
          }
       }
    }
@@ -187,17 +187,17 @@ public final class NLoginCore_498 implements Filter {
                return var3.filter(var1.getLoggerName(), var1.getMessage(), var2 == null ? c : var2);
             } catch (Throwable var5) {
                NLoginCore_370.c(a(i, j), var5);
-               this.ac = (boolean)l;
-               return (boolean)m;
+               this.ac = (l != 0);
+               return (m != 0);
             }
          })) {
             var1.setMessage(a(e, f ^ g));
-            return (boolean)h;
+            return (h != 0);
          } else {
-            return (boolean)(this.a != null && !this.a.isLoggable(var1) ? d : c);
+            return ((this.a != null && !this.a.isLoggable(var1) != 0) ? d : c);
          }
       } else {
-         return (boolean)(this.a != null && !this.a.isLoggable(var1) ? b : a);
+         return ((this.a != null && !this.a.isLoggable(var1) != 0) ? b : a);
       }
    }
 }

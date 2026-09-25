@@ -89,7 +89,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    private final nLoginBukkit g;
    private static int ag = 131072 >>> 49 | 131072 << ~49 + 1;
    private static int ak = (2048 >>> 107 | 2048 << -107) & -1;
-   private static String[] b = new String[bm];
+   private static String[] ZKM_STR_B = new String[bm];
    private static int ba = Integer.reverse(0);
    private static long bp = Long.reverse(6917529027641081856L);
    private static int ap = 112 >>> 196 | 112 << -196;
@@ -113,7 +113,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    private static int ae = Integer.reverse(Integer.MIN_VALUE);
    private static int ah = (524288 >>> 19 | 524288 << ~19 + 1) & -1;
    private static int az = Integer.reverse(0);
-   private static String[] a = new String[bl];
+   private static String[] ZKM_STR_A = new String[bl];
    private static int ac = 2 >>> 65 | 2 << -65;
    private static int bc = 1577058304 >>> 57 | 1577058304 << -57;
    private static int au = 67108864 >>> 55 | 67108864 << -55;
@@ -135,7 +135,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerDropItemEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)ah);
+         var1.setCancelled((ah != 0));
       }
    }
 
@@ -144,7 +144,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void b(PlayerCommandPreprocessEvent var1) {
       if (!this.o && var1.isCancelled() && this.a(var1.getMessage())) {
-         var1.setCancelled((boolean)ay);
+         var1.setCancelled((ay != 0));
       }
    }
 
@@ -154,7 +154,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerInteractEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)aa);
+         var1.setCancelled((aa != 0));
       }
    }
 
@@ -164,7 +164,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerShearEntityEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)ac);
+         var1.setCancelled((ac != 0));
       }
    }
 
@@ -174,7 +174,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerItemConsumeEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)aj);
+         var1.setCancelled((aj != 0));
       }
    }
 
@@ -191,7 +191,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerItemHeldEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)ai);
+         var1.setCancelled((ai != 0));
       }
    }
 
@@ -239,44 +239,44 @@ public class NLoginCore_253 implements NLoginInterface_027 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_110.D("ЂмЀщятщПгдафвзЭШьљджгџЦЧ", (byte)10, 68);
-               b[1] = NLoginCore_004.C("ишЄычрЊЅѓыьЛ", (byte)10, 67);
-               b[2] = NLoginCore_433.E(
+               ZKM_STR_B[0] = NLoginCore_110.D("ЂмЀщятщПгдафвзЭШьљджгџЦЧ", (byte)10, 68);
+               ZKM_STR_B[1] = NLoginCore_004.C("ишЄычрЊЅѓыьЛ", (byte)10, 67);
+               ZKM_STR_B[2] = NLoginCore_433.E(
                   "ӵԎԺՁԞԝԯԏԅԀԽԖԅԅԵՉԮԚՋԯԠՅՔՁՖՌՉԗԕԯ՜ԹՑՕԡԪ՛\u0530՜ԡԥ՞դէԳդԾ՞ԷՊղՅգԫ\u0530ՉՑՠյՂՏՓ\u0558ջձաՠՐ՝՞ՙՒՄՐդտ՚֊բ\u058bրկ֒ռծ՟ըՌլիձ֛ճհ֞֗", (byte)10, 69
                );
-               b[3] = NLoginCore_553.F("ԫԻӷԾԺԳӽӸՆԾԿԎ", (byte)10, 70);
-               b[4] = NLoginCore_427.C("ЃЫуЌШЛмѓЦцчсБВБэшКМѕЩѝњўтѥНѧаѢўѬыѝФѫѡњтаЭрѲѤѡѷљкжѨѭљнѬѪія҆ѻѕѵѪѴѣѶѵ҂стѩѐяцѓѢћ", (byte)10, 67);
-               b[5] = NLoginCore_232.A("ĉĈĎûÈêąĔÜâďĈăĘäÖěÖþĕÖéâāĄăÜĦĔýĚåĔùįĠĠĦĈĪĕĔĨĖĘćĖěıĎĜöĬĉĆć", (byte)10, 65);
-               b[6] = NLoginCore_471.F("ԲԷԹԭӼՄԵԠԒԥԈԶԊԞՁԅՍԧՉՉԤՕԏԠՎՍՄՊԻԽ՚ՈԸՎ՛ԙՐՑբԷ՞ՂԱՃՅաբՠաԦԯծԻԼԹԺ", (byte)10, 70);
-               b[7] = NLoginCore_397.C("ЈлІънЪпШДТъЧЧЬєЯњќЙиаџЦЧ", (byte)10, 67);
-               b[8] = NLoginCore_433.D("ЌьІПЊхЬђодАёьѐЕХяХявЮйЦЧ", (byte)10, 68);
-               b[9] = NLoginCore_141.F("ԺԞԓՂԜӺՁԏԒԁԣԃԾԞԩԛԚԼԤԺՆԜԙԚ", (byte)10, 70);
-               b[10] = NLoginCore_433.C("НУщКЌПТшятТЛ", (byte)10, 67);
-               b[11] = NLoginCore_384.F("ԌӼԖԲԑԙԼԏԷԸԈԎ", (byte)10, 70);
-               b[12] = NLoginCore_427.C("ЬЈкТЬЙђЩБУаАъФЧШжшОпњйЦЧ", (byte)10, 67);
+               ZKM_STR_B[3] = NLoginCore_553.F("ԫԻӷԾԺԳӽӸՆԾԿԎ", (byte)10, 70);
+               ZKM_STR_B[4] = NLoginCore_427.C("ЃЫуЌШЛмѓЦцчсБВБэшКМѕЩѝњўтѥНѧаѢўѬыѝФѫѡњтаЭрѲѤѡѷљкжѨѭљнѬѪія҆ѻѕѵѪѴѣѶѵ҂стѩѐяцѓѢћ", (byte)10, 67);
+               ZKM_STR_B[5] = NLoginCore_232.A("ĉĈĎûÈêąĔÜâďĈăĘäÖěÖþĕÖéâāĄăÜĦĔýĚåĔùįĠĠĦĈĪĕĔĨĖĘćĖěıĎĜöĬĉĆć", (byte)10, 65);
+               ZKM_STR_B[6] = NLoginCore_471.F("ԲԷԹԭӼՄԵԠԒԥԈԶԊԞՁԅՍԧՉՉԤՕԏԠՎՍՄՊԻԽ՚ՈԸՎ՛ԙՐՑբԷ՞ՂԱՃՅաբՠաԦԯծԻԼԹԺ", (byte)10, 70);
+               ZKM_STR_B[7] = NLoginCore_397.C("ЈлІънЪпШДТъЧЧЬєЯњќЙиаџЦЧ", (byte)10, 67);
+               ZKM_STR_B[8] = NLoginCore_433.D("ЌьІПЊхЬђодАёьѐЕХяХявЮйЦЧ", (byte)10, 68);
+               ZKM_STR_B[9] = NLoginCore_141.F("ԺԞԓՂԜӺՁԏԒԁԣԃԾԞԩԛԚԼԤԺՆԜԙԚ", (byte)10, 70);
+               ZKM_STR_B[10] = NLoginCore_433.C("НУщКЌПТшятТЛ", (byte)10, 67);
+               ZKM_STR_B[11] = NLoginCore_384.F("ԌӼԖԲԑԙԼԏԷԸԈԎ", (byte)10, 70);
+               ZKM_STR_B[12] = NLoginCore_427.C("ЬЈкТЬЙђЩБУаАъФЧШжшОпњйЦЧ", (byte)10, 67);
                break;
             case 1:
-               b[0] = NLoginCore_110.C("ЂмЀщятщПгдаіѐяяјѐѓђмћџЦЧ", (byte)10, 67);
-               b[1] = NLoginCore_521.C("чниМЇЋмЋуЋшЛ", (byte)10, 67);
-               b[2] = NLoginCore_471.A("ÂÛćĎëêüÜÒÍĊãÒÒĂĖûçĘüíĒġĎģęĖäâüĩĆĞĢî÷ĨýĩîòīıĴĀıċīĄėĿĒİøýĖĞĭłďĜĠĥňľĮĭĝĪīĦğđĝıŌħŗįŘōļşŉĻīĿľĴĵŧĴĺŇšŁ", (byte)10, 65);
-               b[3] = NLoginCore_575.D("хЭЦуоЪомРШшЛ", (byte)10, 68);
-               b[4] = NLoginCore_223.F("ӶԞԶӿԛԎԯՆԙԹԺԴԄԅԄՀԻԍԏՈԜՐՍՑԵ\u0558Ԑ՚ԣՕՑ՟ԾՐԗ՞ՔՍԵԣԠԳե\u0557ՔժՌԭԩ՛ՠՌ\u0530՟՝ՉՂչծՈը՝էՖջՍիԴՑՕ՚ռ՚եՑՎ", (byte)10, 70);
-               b[5] = NLoginCore_076.A("ĉĈĎûÈêąĔÜâďĈăĘäÖěÖþĕÖéâāĄăÜĦĔýĚåĔùįĠĠĦĈĪĕĔĩîıðìĵĨčĬħøęĆć", (byte)10, 65);
-               b[6] = NLoginCore_141.F("ԲԷԹԭӼՄԵԠԒԥԈԶԊԞՁԅՍԧՉՉԤՕԏԠՎՍՄՊԻԽ՚ՈԸՎ՛ԙՐՑբԷ՞ՂԳՆՓգաՉաիղձզբԹԺ", (byte)10, 70);
-               b[7] = NLoginCore_427.D("ЈлІънЪпШДТщаЩвћќвЖлђиЩЦЧ", (byte)10, 68);
-               b[8] = NLoginCore_223.C("ЌьІПЊхЬђодЏтбГъЧаццЪгЗЮяяаѠёєйСѡ", (byte)10, 67);
-               b[9] = NLoginCore_521.A("ćëàďéÇĎÜßÎïÖåęêøĊđēÞóğæç", (byte)10, 65);
-               b[10] = NLoginCore_553.D("щюЩЊЮЌшЅЋОьЛ", (byte)10, 68);
-               b[11] = NLoginCore_232.F("ԐԭԿԫԼԷԁԵԗӿԢՃԋՋՂՎԬԏԯԪՒԜԙԚ", (byte)10, 70);
-               b[12] = NLoginCore_433.C("ЬЈкТЬЙђЩБУЯщєУЧьжЯЯЫОџЦЧ", (byte)10, 67);
+               ZKM_STR_B[0] = NLoginCore_110.C("ЂмЀщятщПгдаіѐяяјѐѓђмћџЦЧ", (byte)10, 67);
+               ZKM_STR_B[1] = NLoginCore_521.C("чниМЇЋмЋуЋшЛ", (byte)10, 67);
+               ZKM_STR_B[2] = NLoginCore_471.A("ÂÛćĎëêüÜÒÍĊãÒÒĂĖûçĘüíĒġĎģęĖäâüĩĆĞĢî÷ĨýĩîòīıĴĀıċīĄėĿĒİøýĖĞĭłďĜĠĥňľĮĭĝĪīĦğđĝıŌħŗįŘōļşŉĻīĿľĴĵŧĴĺŇšŁ", (byte)10, 65);
+               ZKM_STR_B[3] = NLoginCore_575.D("хЭЦуоЪомРШшЛ", (byte)10, 68);
+               ZKM_STR_B[4] = NLoginCore_223.F("ӶԞԶӿԛԎԯՆԙԹԺԴԄԅԄՀԻԍԏՈԜՐՍՑԵ\u0558Ԑ՚ԣՕՑ՟ԾՐԗ՞ՔՍԵԣԠԳե\u0557ՔժՌԭԩ՛ՠՌ\u0530՟՝ՉՂչծՈը՝էՖջՍիԴՑՕ՚ռ՚եՑՎ", (byte)10, 70);
+               ZKM_STR_B[5] = NLoginCore_076.A("ĉĈĎûÈêąĔÜâďĈăĘäÖěÖþĕÖéâāĄăÜĦĔýĚåĔùįĠĠĦĈĪĕĔĩîıðìĵĨčĬħøęĆć", (byte)10, 65);
+               ZKM_STR_B[6] = NLoginCore_141.F("ԲԷԹԭӼՄԵԠԒԥԈԶԊԞՁԅՍԧՉՉԤՕԏԠՎՍՄՊԻԽ՚ՈԸՎ՛ԙՐՑբԷ՞ՂԳՆՓգաՉաիղձզբԹԺ", (byte)10, 70);
+               ZKM_STR_B[7] = NLoginCore_427.D("ЈлІънЪпШДТщаЩвћќвЖлђиЩЦЧ", (byte)10, 68);
+               ZKM_STR_B[8] = NLoginCore_223.C("ЌьІПЊхЬђодЏтбГъЧаццЪгЗЮяяаѠёєйСѡ", (byte)10, 67);
+               ZKM_STR_B[9] = NLoginCore_521.A("ćëàďéÇĎÜßÎïÖåęêøĊđēÞóğæç", (byte)10, 65);
+               ZKM_STR_B[10] = NLoginCore_553.D("щюЩЊЮЌшЅЋОьЛ", (byte)10, 68);
+               ZKM_STR_B[11] = NLoginCore_232.F("ԐԭԿԫԼԷԁԵԗӿԢՃԋՋՂՎԬԏԯԪՒԜԙԚ", (byte)10, 70);
+               ZKM_STR_B[12] = NLoginCore_433.C("ЬЈкТЬЙђЩБУЯщєУЧьжЯЯЫОџЦЧ", (byte)10, 67);
                break;
             case 2:
-               b[0] = NLoginCore_138.E("ӺԿԬӴԏԳԲՂԷԆԴԟԆՄԶԛՈՉԫՂՂՒԙԚ", (byte)10, 69);
+               ZKM_STR_B[0] = NLoginCore_138.E("ӺԿԬӴԏԳԲՂԷԆԴԟԆՄԶԛՈՉԫՂՂՒԙԚ", (byte)10, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_521.B("ÅÊāøøċďÞñäÕáÕêĂėåÕĆÕĒàġĜĠâāāĝġěö", (byte)10, 66);
+               ZKM_STR_B[0] = NLoginCore_521.B("ÅÊāøøċďÞñäÕáÕêĂėåÕĆÕĒàġĜĠâāāĝġěö", (byte)10, 66);
          }
       }
    }
@@ -320,7 +320,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    public void a(InventoryOpenEvent var1) {
       HumanEntity var2 = var1.getPlayer();
       if (this.c.a(var2) && this.a(var1.getView())) {
-         var1.setCancelled((boolean)ak);
+         var1.setCancelled((ak != 0));
       }
    }
 
@@ -330,17 +330,17 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerInteractEntityEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)ab);
+         var1.setCancelled((ab != 0));
       }
    }
 
    private boolean a(Object var1) {
       if (var1 == null) {
-         return (boolean)am;
+         return (am != 0);
       } else {
          List var2 = NLoginCore_477.D.a(new Object[an]);
          if (var2.isEmpty()) {
-            return (boolean)ao;
+            return (ao != 0);
          } else {
             String var3;
             try {
@@ -362,7 +362,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
       String var2 = var1.getReason();
       int var3 = !var2.equalsIgnoreCase(a(t, u)) && (this.a.b(this.g.b().a(var1.getPlayer())) || !var2.equalsIgnoreCase(a(v, w))) ? y : x;
       if (var3 != 0) {
-         var1.setCancelled((boolean)z);
+         var1.setCancelled((z != 0));
       }
    }
 
@@ -371,7 +371,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(ServerCommandEvent var1) {
       if (!this.o && var1 instanceof Cancellable && var1.isCancelled() && this.a(var1.getCommand())) {
-         var1.setCancelled((boolean)az);
+         var1.setCancelled((az != 0));
       }
    }
 
@@ -388,7 +388,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
          }
       }
 
-      return (boolean)bk;
+      return (bk != 0);
    }
 
    @Generated
@@ -405,7 +405,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerPickupItemEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)ag);
+         var1.setCancelled((ag != 0));
       }
    }
 
@@ -415,7 +415,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerFishEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)ad);
+         var1.setCancelled((ad != 0));
       }
    }
 
@@ -434,7 +434,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    private static String a(int var0, long var1) {
       var1 ^= 6L;
       var1 ^= 2082339479008291025L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -478,10 +478,10 @@ public class NLoginCore_253 implements NLoginInterface_027 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {
@@ -525,7 +525,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerBedEnterEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)ae);
+         var1.setCancelled((ae != 0));
       }
    }
 
@@ -535,7 +535,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(InventoryClickEvent var1) {
       if (this.c.a(var1.getWhoClicked()) && this.a(var1.getView())) {
-         var1.setCancelled((boolean)al);
+         var1.setCancelled((al != 0));
       }
    }
 
@@ -545,7 +545,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
    )
    public void a(PlayerEditBookEvent var1) {
       if (this.c.a(var1)) {
-         var1.setCancelled((boolean)af);
+         var1.setCancelled((af != 0));
       }
    }
 
@@ -557,7 +557,7 @@ public class NLoginCore_253 implements NLoginInterface_027 {
       String var3 = var1.getMessage().trim();
       String var4 = this.g.a().b().a(var2, var3);
       if (var4 == null) {
-         var1.setCancelled((boolean)s);
+         var1.setCancelled((s != 0));
       } else {
          if (!var3.equals(var4)) {
             var1.setMessage(var4);

@@ -18,7 +18,7 @@ public abstract class NLoginCore_353 {
    protected NLoginType_008 a;
 
    protected boolean j() {
-      return (boolean)(this.a != NLoginCore_055.c && this.a != NLoginCore_055.s ? b : a);
+      return ((this.a != NLoginCore_055.c && this.a != NLoginCore_055.s ? b : a) != 0);
    }
 
    public void a(NLoginInterface_042 var1, String[] var2) {

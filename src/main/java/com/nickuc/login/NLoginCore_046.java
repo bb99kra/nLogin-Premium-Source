@@ -16,7 +16,7 @@ public class NLoginCore_046 implements NLoginInterface_027 {
    )
    public void a(PlayerInteractAtEntityEvent var1) {
       if (this.e.a(var1)) {
-         var1.setCancelled((boolean)a);
+         var1.setCancelled((a != 0));
       }
    }
 
@@ -25,7 +25,7 @@ public class NLoginCore_046 implements NLoginInterface_027 {
    )
    public void b(EntityDamageByEntityEvent var1) {
       if (this.e.a(var1)) {
-         var1.setCancelled((boolean)b);
+         var1.setCancelled((b != 0));
       }
    }
 

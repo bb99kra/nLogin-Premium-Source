@@ -14,7 +14,7 @@ public class NLoginCore_006 implements NLoginInterface_003 {
       String var3 = var2.getUsername();
       Channel var4 = (Channel)var1.getChannel();
       InetAddress var5 = var1.getSocketAddress().getAddress();
-      com.nickuc.login.bukkit.BukkitHelper_001 var6 = new com.nickuc.login.bukkit.BukkitHelper_001(var1.getUser(), null, var3, null, (boolean)a, null, var4, null);
+      com.nickuc.login.bukkit.BukkitHelper_001 var6 = new com.nickuc.login.bukkit.BukkitHelper_001(var1.getUser(), null, var3, null, (a != 0), null, var4, null);
       var4.attr(com.nickuc.login.bukkit.BukkitHelper_001.a).set(var6);
       com.nickuc.login.bukkit.BukkitHelper_001.a(var3, var3, var5, var6);
    }

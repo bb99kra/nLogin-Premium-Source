@@ -22,7 +22,7 @@ public class NLoginCore_403 implements NLoginInterface_048 {
    private static long e = Long.reverse(8791026472627208192L);
    private static int c = (0 >>> 52 | 0 << -52) & -1;
    private final String ar;
-   private static String[] b = new String[NLoginCore_403.n];
+   private static String[] ZKM_STR_B = new String[NLoginCore_403.n];
    private static int b = (4194304 >>> 85 | 4194304 << ~85 + 1) & -1;
    private ScheduledTask a;
    private static long d = Long.reverse(-8022389614314102054L);
@@ -31,7 +31,7 @@ public class NLoginCore_403 implements NLoginInterface_048 {
    private final Runnable c;
    private static int l = (134217728 >>> 59 | 134217728 << ~59 + 1) & -1;
    private static long k = Long.reverse(8791026472627208192L);
-   private static String[] a = new String[m];
+   private static String[] ZKM_STR_A = new String[m];
    private static int i = (134217728 >>> 218 | 134217728 << ~218 + 1) & -1;
    private static long j = Long.reverse(-8022389614314102054L);
    private static long g = Long.reverse(-8022389614314102054L);
@@ -98,22 +98,22 @@ public class NLoginCore_403 implements NLoginInterface_048 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_110.C("ԷՉծՌԸԵ՚ՙյ՜ղթւոֈ֍Նրհ֏հհվճօՓզպՖ֚֏֘", (byte)112, 67);
-               b[1] = NLoginCore_575.D("ԷՉծՌԸԵ՚ՙյ՜ղթւոֈ֍Նրհ֏հհվճօՓզպՖ֚֏֘", (byte)112, 68);
-               b[2] = NLoginCore_110.C("ԷՉծՌԸԵ՚ՙյ՜ղթւոֈ֍Նրհ֏հհվճօՓզպՖ֚֏֘", (byte)112, 67);
+               ZKM_STR_B[0] = NLoginCore_110.C("ԷՉծՌԸԵ՚ՙյ՜ղթւոֈ֍Նրհ֏հհվճօՓզպՖ֚֏֘", (byte)112, 67);
+               ZKM_STR_B[1] = NLoginCore_575.D("ԷՉծՌԸԵ՚ՙյ՜ղթւոֈ֍Նրհ֏հհվճօՓզպՖ֚֏֘", (byte)112, 68);
+               ZKM_STR_B[2] = NLoginCore_110.C("ԷՉծՌԸԵ՚ՙյ՜ղթւոֈ֍Նրհ֏հհվճօՓզպՖ֚֏֘", (byte)112, 67);
                break;
             case 1:
-               b[0] = NLoginCore_092.D("ԷՉծՌԸԵ՚ՙյ՜ղթւոֈ֍Նրհ֏հջևի֓խ\u0557աօՙՓ\u0558զնՠվ\u0558ծ֘ճցղ֒խ", (byte)112, 68);
-               b[1] = NLoginCore_223.B("ƑƣǈƦƒƏƴƳǏƶǌǃǜǒǢǧƠǚǊǩǊǘǁƿǃǊƼǰƭǬǕǕǐƳǩǗǒǐƴǝǈǰǼǇ", (byte)112, 66);
-               b[2] = NLoginCore_076.E("՞հ֕ճ՟՜ցր֜փ֙\u0590ִ֩֟֯խֱֶֽ֧֖֮֗֗֔ն֎ֳּ֪֖֦֗փִփׇׂ\u05cdַ֤֎֔", (byte)112, 69);
+               ZKM_STR_B[0] = NLoginCore_092.D("ԷՉծՌԸԵ՚ՙյ՜ղթւոֈ֍Նրհ֏հջևի֓խ\u0557աօՙՓ\u0558զնՠվ\u0558ծ֘ճցղ֒խ", (byte)112, 68);
+               ZKM_STR_B[1] = NLoginCore_223.B("ƑƣǈƦƒƏƴƳǏƶǌǃǜǒǢǧƠǚǊǩǊǘǁƿǃǊƼǰƭǬǕǕǐƳǩǗǒǐƴǝǈǰǼǇ", (byte)112, 66);
+               ZKM_STR_B[2] = NLoginCore_076.E("՞հ֕ճ՟՜ցր֜փ֙\u0590ִ֩֟֯խֱֶֽ֧֖֮֗֗֔ն֎ֳּ֪֖֦֗փִփׇׂ\u05cdַ֤֎֔", (byte)112, 69);
                break;
             case 2:
-               b[0] = NLoginCore_451.B("ǀǏǐǙƺƦƴǖƒƾƔǝǁǤƦǅǔǟǅǂƫǗƬǦƮǝǅƽƴƳƾƭ", (byte)112, 66);
+               ZKM_STR_B[0] = NLoginCore_451.B("ǀǏǐǙƺƦƴǖƒƾƔǝǁǤƦǅǔǟǅǂƫǗƬǦƮǝǅƽƴƳƾƭ", (byte)112, 66);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_127.A("ƊǒǙưƧǕƘƱǋƮƾǌƣƱƞƿǐƽƻǖƫǛƲƳ", (byte)112, 65);
+               ZKM_STR_B[0] = NLoginCore_127.A("ƊǒǙưƧǕƘƱǋƮƾǌƣƱƞƿǐƽƻǖƫǛƲƳ", (byte)112, 65);
          }
       }
    }
@@ -151,7 +151,7 @@ public class NLoginCore_403 implements NLoginInterface_048 {
    private static String a(int var0, long var1) {
       var1 ^= 94L;
       var1 ^= 4077558349996226714L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -195,10 +195,10 @@ public class NLoginCore_403 implements NLoginInterface_048 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public NLoginCore_403 a(Plugin var1) {
@@ -247,6 +247,6 @@ public class NLoginCore_403 implements NLoginInterface_048 {
          this.a.cancel();
       }
 
-      this.M = (boolean)l;
+      this.M = (l != 0);
    }
 }

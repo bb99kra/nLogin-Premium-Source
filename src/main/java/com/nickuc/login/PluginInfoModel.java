@@ -16,7 +16,7 @@ import lombok.Generated;
 
 public class PluginInfoModel {
    private static int o = 83886080 >>> 24 | 83886080 << ~24 + 1;
-   private static String[] a = new String[o];
+   private static String[] ZKM_STR_A = new String[o];
    @Nullable
    private final Path a;
    private final String bz;
@@ -33,7 +33,7 @@ public class PluginInfoModel {
    private static int m = 67108864 >>> 216 | 67108864 << ~216 + 1;
    private static long l = Long.reverse(-6385736449816462996L);
    private final String bA;
-   private static String[] b = new String[p];
+   private static String[] ZKM_STR_B = new String[p];
    private static long f = Long.reverse(-7394542766347454100L);
    private static int j = (-2147483647 >>> 31 | -2147483647 << -31) & -1;
    private static long c;
@@ -74,7 +74,7 @@ public class PluginInfoModel {
    private static String a(int var0, long var1) {
       var1 ^= 124L;
       var1 ^= 820860335062832355L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -118,10 +118,10 @@ public class PluginInfoModel {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Generated
@@ -186,26 +186,26 @@ public class PluginInfoModel {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_232.A("ĝĎĻėŃķĲĎąćĩđńęŅĘŅęģďĮŅĲĭĖĲďďđĘŊŊĖğīŋŚŌŃšśŗŦĭ", (byte)35, 65);
-               b[1] = NLoginCore_397.B("þþİĎēùþĸėłĹņěņħĶŎĚľłŒěĘę", (byte)35, 66);
-               b[2] = NLoginCore_471.E("ԦԖԳԨԥԚԪՈԿԸՁՎՐԸՠԽ՜ԥԻԫա՛ԲԳ", (byte)35, 69);
-               b[3] = NLoginCore_173.A("ĈúÿĴûĲŁġĎĕĘč", (byte)35, 65);
-               b[4] = NLoginCore_183.F("ԤՅԬՄԶԜԜԴՋԮՌԧ", (byte)35, 70);
+               ZKM_STR_B[0] = NLoginCore_232.A("ĝĎĻėŃķĲĎąćĩđńęŅĘŅęģďĮŅĲĭĖĲďďđĘŊŊĖğīŋŚŌŃšśŗŦĭ", (byte)35, 65);
+               ZKM_STR_B[1] = NLoginCore_397.B("þþİĎēùþĸėłĹņěņħĶŎĚľłŒěĘę", (byte)35, 66);
+               ZKM_STR_B[2] = NLoginCore_471.E("ԦԖԳԨԥԚԪՈԿԸՁՎՐԸՠԽ՜ԥԻԫա՛ԲԳ", (byte)35, 69);
+               ZKM_STR_B[3] = NLoginCore_173.A("ĈúÿĴûĲŁġĎĕĘč", (byte)35, 65);
+               ZKM_STR_B[4] = NLoginCore_183.F("ԤՅԬՄԶԜԜԴՋԮՌԧ", (byte)35, 70);
                break;
             case 1:
-               b[0] = NLoginCore_575.A("ĝĎĻėŃķĲĎąćĩđńęŅĘŅęģďĮŅĲĭĖĲďďđĘŊŊŝŋřĞıĲĮłŏŔļŀŕŇŠŠĨśşİŅĻĸĹ", (byte)35, 65);
-               b[1] = NLoginCore_324.B("þþİĎēùþĸėłĶŁňļėčĜĿİđĤőĘę", (byte)35, 66);
-               b[2] = NLoginCore_446.C("ѥѕѲѧѤљѩ҇ѾѷѿѳҀћҟҥҚҠ҄ѲҬҚѱѲ", (byte)35, 67);
-               b[3] = NLoginCore_451.B("ĖįþĻĸıĀŀıĴĂķĦĦľěĄŎıŋĜőĘę", (byte)35, 66);
-               b[4] = NLoginCore_553.E("ՅԔԙՐԳՑԗՔԻԺՌԧ", (byte)35, 69);
+               ZKM_STR_B[0] = NLoginCore_575.A("ĝĎĻėŃķĲĎąćĩđńęŅĘŅęģďĮŅĲĭĖĲďďđĘŊŊŝŋřĞıĲĮłŏŔļŀŕŇŠŠĨśşİŅĻĸĹ", (byte)35, 65);
+               ZKM_STR_B[1] = NLoginCore_324.B("þþİĎēùþĸėłĶŁňļėčĜĿİđĤőĘę", (byte)35, 66);
+               ZKM_STR_B[2] = NLoginCore_446.C("ѥѕѲѧѤљѩ҇ѾѷѿѳҀћҟҥҚҠ҄ѲҬҚѱѲ", (byte)35, 67);
+               ZKM_STR_B[3] = NLoginCore_451.B("ĖįþĻĸıĀŀıĴĂķĦĦľěĄŎıŋĜőĘę", (byte)35, 66);
+               ZKM_STR_B[4] = NLoginCore_553.E("ՅԔԙՐԳՑԗՔԻԺՌԧ", (byte)35, 69);
                break;
             case 2:
-               b[0] = NLoginCore_397.E("ՕԳՑ՜ԨԷՏԶՁՒԹԜԡՔԸՏՃԳԥԥԦՈ՟ծԢ՞հեՌԯճԳ", (byte)35, 69);
+               ZKM_STR_B[0] = NLoginCore_397.E("ՕԳՑ՜ԨԷՏԶՁՒԹԜԡՔԸՏՃԳԥԥԦՈ՟ծԢ՞հեՌԯճԳ", (byte)35, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_183.E("ԒՕՒԔԸՌՒԜԩԡ՚դԚԶՙ\u0530ԡՀիՠ՟ԬԸԷհ՞ԨԩԦղՠ\u0557", (byte)35, 69);
+               ZKM_STR_B[0] = NLoginCore_183.E("ԒՕՒԔԸՌՒԜԩԡ՚դԚԶՙ\u0530ԡՀիՠ՟ԬԸԷհ՞ԨԩԦղՠ\u0557", (byte)35, 69);
          }
       }
    }

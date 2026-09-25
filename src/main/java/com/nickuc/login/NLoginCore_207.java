@@ -24,10 +24,10 @@ public class NLoginCore_207 extends NLoginCore_353 {
    private static long e = Long.reverse(1873497444986126336L);
    private static int o = Integer.reverse(1073741824);
    private static int u = Integer.reverse(-1073741824);
-   private static String[] a = new String[u];
+   private static String[] ZKM_STR_A = new String[u];
    private static int l = -1 >>> 151 | -1 << ~151 + 1;
    private static int i = Integer.reverse(0);
-   private static String[] b = new String[NLoginCore_207.v];
+   private static String[] ZKM_STR_B = new String[NLoginCore_207.v];
    private static int n = (256 >>> 232 | 256 << ~232 + 1) & -1;
    private static int s = 12582912 >>> 214 | 12582912 << -214;
    private static int k = (33554432 >>> 185 | 33554432 << ~185 + 1) & -1;
@@ -76,7 +76,7 @@ public class NLoginCore_207 extends NLoginCore_353 {
    }
 
    public NLoginCore_207(NLoginType_008 var1) {
-      super(var1, a(c, d ^ e), null, (boolean)f, (boolean)g);
+      super(var1, a(c, d ^ e), null, (f != 0), (g != 0));
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {
@@ -140,28 +140,28 @@ public class NLoginCore_207 extends NLoginCore_353 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_110.C("ոդ՟բՉփե։գ֍ջՖ", (byte)115, 67);
-               b[1] = NLoginCore_427.D(
+               ZKM_STR_B[0] = NLoginCore_110.C("ոդ՟բՉփե։գ֍ջՖ", (byte)115, 67);
+               ZKM_STR_B[1] = NLoginCore_427.D(
                   "եֈփՄբԾքևըՐխՋթ֊ՔղՕ֘մդժ֚\u0557ժ֒՝֍՛սռբցճ֤֛֞չ֪֡֏զևռք֞տֆַօ֭֯չջ֪շնֳּ֡֞֏֖׃վַ֠֗֕։\u05c8ֶ\u05c9\u05ccׅ׃ְ֎ֳ֥\u05c8ֳׅ֒֨ד֤֢֡", (byte)115, 68
                );
-               b[2] = NLoginCore_451.A("ƶƹƫǠƯǟǜƷǔƣƥƱǪǡƶǮǍǙƮǍƨǱƸƹ", (byte)115, 65);
+               ZKM_STR_B[2] = NLoginCore_451.A("ƶƹƫǠƯǟǜƷǔƣƥƱǪǡƶǮǍǙƮǍƨǱƸƹ", (byte)115, 65);
                break;
             case 1:
-               b[0] = NLoginCore_446.E("գոյ֧֛֘֗֟֩֞֩։֤֭֫֩ֈֻ֫շֻ֭ւփ", (byte)115, 69);
-               b[1] = NLoginCore_092.D(
+               ZKM_STR_B[0] = NLoginCore_446.E("գոյ֧֛֘֗֟֩֞֩։֤֭֫֩ֈֻ֫շֻ֭ւփ", (byte)115, 69);
+               ZKM_STR_B[1] = NLoginCore_092.D(
                   "եֈփՄբԾքևըՐխՋթ֊ՔղՕ֘մդժ֚\u0557ժ֒՝֍՛սռբցճ֤֛֞չ֪֡֏զևռք֞տֆַօ֭֯չջ֪շնֳּ֡֞֏֖׃վַ֠֗֕։\u05c8ֶ\u05c9\u05ccׅ׆\u05ceּ֬֎ה֑֓\u05cdז֪זֱ֔֙֗אׂ\u05ceמץ׀",
                   (byte)115,
                   68
                );
-               b[2] = NLoginCore_127.E("րփյ֪չ֦֩ց֞խկֲտ\u0590֮օָ֣֊֯ք֥֟նְ֑֮֮֩֎րֆ", (byte)115, 69);
+               ZKM_STR_B[2] = NLoginCore_127.E("րփյ֪չ֦֩ց֞խկֲտ\u0590֮օָ֣֊֯ք֥֟նְ֑֮֮֩֎րֆ", (byte)115, 69);
                break;
             case 2:
-               b[0] = NLoginCore_387.A("ƙƹƵƚƙƱǗƲǧǓǈƩƢǔǜƭƺǃƩǣƽǒǞǡǤǒǲǯǆǋǑƽ", (byte)115, 65);
+               ZKM_STR_B[0] = NLoginCore_387.A("ƙƹƵƚƙƱǗƲǧǓǈƩƢǔǜƭƺǃƩǣƽǒǞǡǤǒǲǯǆǋǑƽ", (byte)115, 65);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_559.D("ձ՚եդմ՚ՠֆՌրջՖ", (byte)115, 68);
+               ZKM_STR_B[0] = NLoginCore_559.D("ձ՚եդմ՚ՠֆՌրջՖ", (byte)115, 68);
          }
       }
    }
@@ -173,7 +173,7 @@ public class NLoginCore_207 extends NLoginCore_353 {
    private static String a(int var0, long var1) {
       var1 ^= 88L;
       var1 ^= 4188745449508115615L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -217,9 +217,9 @@ public class NLoginCore_207 extends NLoginCore_353 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 }

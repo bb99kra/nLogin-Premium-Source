@@ -12,11 +12,11 @@ import javax.crypto.spec.IvParameterSpec;
 import lombok.Generated;
 
 public enum NLoginCore_036 {
-   c(NLoginCore_315.u, a(NLoginCore_036.m, NLoginCore_036.n ^ NLoginCore_036.o), (boolean)NLoginCore_036.p, NLoginCore_036.q),
-   d(NLoginCore_315.v, a(NLoginCore_036.u, NLoginCore_036.v ^ NLoginCore_036.w), (boolean)NLoginCore_036.x, NLoginCore_036.y),
-   e(NLoginCore_315.w, a(NLoginCore_036.ad, NLoginCore_036.ae), (boolean)NLoginCore_036.af, NLoginCore_036.ag),
-   f(NLoginCore_315.A, a(NLoginCore_036.al, NLoginCore_036.am ^ NLoginCore_036.an), (boolean)NLoginCore_036.ao, NLoginCore_036.ap),
-   g(NLoginCore_315.y, a(NLoginCore_036.au & NLoginCore_036.av, NLoginCore_036.aw), (boolean)NLoginCore_036.ax, NLoginCore_036.ay);
+   c(NLoginCore_315.u, a(NLoginCore_036.m, NLoginCore_036.n ^ NLoginCore_036.o), (NLoginCore_036 != 0).p, NLoginCore_036.q),
+   d(NLoginCore_315.v, a(NLoginCore_036.u, NLoginCore_036.v ^ NLoginCore_036.w), (NLoginCore_036 != 0).x, NLoginCore_036.y),
+   e(NLoginCore_315.w, a(NLoginCore_036.ad, NLoginCore_036.ae), (NLoginCore_036 != 0).af, NLoginCore_036.ag),
+   f(NLoginCore_315.A, a(NLoginCore_036.al, NLoginCore_036.am ^ NLoginCore_036.an), (NLoginCore_036 != 0).ao, NLoginCore_036.ap),
+   g(NLoginCore_315.y, a(NLoginCore_036.au & NLoginCore_036.av, NLoginCore_036.aw), (NLoginCore_036 != 0).ax, NLoginCore_036.ay);
 
    private final NLoginCore_315 a;
    private final String at;

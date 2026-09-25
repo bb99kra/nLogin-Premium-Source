@@ -23,7 +23,7 @@ public class NLoginCore_079 implements NLoginInterface_048 {
    private static int r = (4096 >>> 108 | 4096 << -108) & -1;
    private static int s = 24 >>> 99 | 24 << ~99 + 1;
    private static long i = Long.reverse(5476377146882523136L);
-   private static String[] a = new String[s];
+   private static String[] ZKM_STR_A = new String[s];
    private static long e = Long.reverse(-5188146770730811392L);
    private static long g = Long.reverse(-2028287012880967597L);
    private static long q = Long.reverse(5476377146882523136L);
@@ -34,7 +34,7 @@ public class NLoginCore_079 implements NLoginInterface_048 {
    @Nullable
    private final Player c;
    private static int t = (1572864 >>> 115 | 1572864 << ~115 + 1) & -1;
-   private static String[] b = new String[t];
+   private static String[] ZKM_STR_B = new String[t];
    private final Consumer<ScheduledTask> a;
    private boolean M;
    private static long h = Long.reverse(-5188146770730811392L);
@@ -72,7 +72,7 @@ public class NLoginCore_079 implements NLoginInterface_048 {
    private static String a(int var0, long var1) {
       var1 ^= 29L;
       var1 ^= 9118004334000895825L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -116,10 +116,10 @@ public class NLoginCore_079 implements NLoginInterface_048 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public NLoginCore_079 a(JavaPlugin var1, long var2, long var4, TimeUnit var6) {
@@ -151,7 +151,7 @@ public class NLoginCore_079 implements NLoginInterface_048 {
          this.a.cancel();
       }
 
-      this.M = (boolean)r;
+      this.M = (r != 0);
    }
 
    static void a(JavaPlugin var0) {
@@ -222,22 +222,22 @@ public class NLoginCore_079 implements NLoginInterface_048 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_324.E("ՂՅաճԫՅՌՕՓՏԯՇ\u0557ԹհՌ\u0558ՐՉՎՀԶզՆՃ\u0558Ֆդսյդ՝", (byte)58, 69);
-               b[1] = NLoginCore_138.B("ĿłŞŰĨłŉŒŐŌĬńŔĶŭŉŕōņŋĽĳţŃŀŕœšźŲšŚ", (byte)58, 66);
-               b[2] = NLoginCore_387.E("ՂՅաճԫՅՌՕՓՏԯՇ\u0557ԹհՌ\u0558ՐՉՎՀԶզՆՃ\u0558Ֆդսյդ՝", (byte)58, 69);
+               ZKM_STR_B[0] = NLoginCore_324.E("ՂՅաճԫՅՌՕՓՏԯՇ\u0557ԹհՌ\u0558ՐՉՎՀԶզՆՃ\u0558Ֆդսյդ՝", (byte)58, 69);
+               ZKM_STR_B[1] = NLoginCore_138.B("ĿłŞŰĨłŉŒŐŌĬńŔĶŭŉŕōņŋĽĳţŃŀŕœšźŲšŚ", (byte)58, 66);
+               ZKM_STR_B[2] = NLoginCore_387.E("ՂՅաճԫՅՌՕՓՏԯՇ\u0557ԹհՌ\u0558ՐՉՎՀԶզՆՃ\u0558Ֆդսյդ՝", (byte)58, 69);
                break;
             case 1:
-               b[0] = NLoginCore_138.C("үҲӎӠҘҲҹӂӀҼҜҴӄҦӝҹӅҽҶһҭұӆӝӴҳӆӠӴӤӢӶӖӴӴҸӏӯӱӯӭӼӰӋ", (byte)58, 67);
-               b[1] = NLoginCore_183.E("ՂՅաճԫՅՌՕՓՏԯՇ\u0557ԹհՌ\u0558ՐՉՎՀԺգւԽքժց\u0558քսՈծի\u058bտ՞ծ֍֏\u0590ՕՔ՞", (byte)58, 69);
-               b[2] = NLoginCore_451.C("үҲӎӠҘҲҹӂӀҼҜҴӄҦӝҹӅҽҶһҭүҼӳҦӪӈҩӣӭӕӭӗӹӧҽӷӠӶһӯҷӰӋ", (byte)58, 67);
+               ZKM_STR_B[0] = NLoginCore_138.C("үҲӎӠҘҲҹӂӀҼҜҴӄҦӝҹӅҽҶһҭұӆӝӴҳӆӠӴӤӢӶӖӴӴҸӏӯӱӯӭӼӰӋ", (byte)58, 67);
+               ZKM_STR_B[1] = NLoginCore_183.E("ՂՅաճԫՅՌՕՓՏԯՇ\u0557ԹհՌ\u0558ՐՉՎՀԺգւԽքժց\u0558քսՈծի\u058bտ՞ծ֍֏\u0590ՕՔ՞", (byte)58, 69);
+               ZKM_STR_B[2] = NLoginCore_451.C("үҲӎӠҘҲҹӂӀҼҜҴӄҦӝҹӅҽҶһҭүҼӳҦӪӈҩӣӭӕӭӗӹӧҽӷӠӶһӯҷӰӋ", (byte)58, 67);
                break;
             case 2:
-               b[0] = NLoginCore_141.B("īŅŧřĻŏŞųŵŕıŇņŘŏĶźĶśĵŉŉņŇ", (byte)58, 66);
+               ZKM_STR_B[0] = NLoginCore_141.B("īŅŧřĻŏŞųŵŕıŇņŘŏĶźĶśĵŉŉņŇ", (byte)58, 66);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_141.D("ғҲҨӑӠӢӐҕҰқӗӠҧӉҾӋӊҦҧӇҾӯҶҷ", (byte)58, 68);
+               ZKM_STR_B[0] = NLoginCore_141.D("ғҲҨӑӠӢӐҕҰқӗӠҧӉҾӋӊҦҧӇҾӯҶҷ", (byte)58, 68);
          }
       }
    }

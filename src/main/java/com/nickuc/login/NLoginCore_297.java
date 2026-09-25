@@ -15,9 +15,9 @@ import org.bukkit.entity.Player;
 
 public class NLoginCore_297 implements NLoginInterface_003 {
    private static int d = 33554432 >>> 185 | 33554432 << -185;
-   private static String[] b = new String[NLoginCore_297.e];
+   private static String[] ZKM_STR_B = new String[NLoginCore_297.e];
    private static int a = Integer.reverse(0);
-   private static String[] a = new String[d];
+   private static String[] ZKM_STR_A = new String[d];
    private static int c = Integer.reverse(Integer.MIN_VALUE);
    private static int e = (268435456 >>> 60 | 268435456 << ~60 + 1) & -1;
    private static long c;
@@ -30,7 +30,7 @@ public class NLoginCore_297 implements NLoginInterface_003 {
    private static String a(int var0, long var1) {
       var1 ^= 15L;
       var1 ^= 585071055120017033L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -74,10 +74,10 @@ public class NLoginCore_297 implements NLoginInterface_003 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {
@@ -141,18 +141,18 @@ public class NLoginCore_297 implements NLoginInterface_003 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_575.B("ĆķüĝĄľĚōħĉĒĩċĿńĸēċČŊĩśĢģ", (byte)40, 66);
+               ZKM_STR_B[0] = NLoginCore_575.B("ĆķüĝĄľĚōħĉĒĩċĿńĸēċČŊĩśĢģ", (byte)40, 66);
                break;
             case 1:
-               b[0] = NLoginCore_201.B("ĆķüĝĄľĚōħĉĒĉŉłīħŔĮĳĹśśĢģ", (byte)40, 66);
+               ZKM_STR_B[0] = NLoginCore_201.B("ĆķüĝĄľĚōħĉĒĉŉłīħŔĮĳĹśśĢģ", (byte)40, 66);
                break;
             case 2:
-               b[0] = NLoginCore_451.E("՞ԚՙԞՐԠբՌԜԯԣ\u0530ԦԴԽԧԵ՜ԫՌՂՠԷԸ", (byte)40, 69);
+               ZKM_STR_B[0] = NLoginCore_451.E("՞ԚՙԞՐԠբՌԜԯԣ\u0530ԦԴԽԧԵ՜ԫՌՂՠԷԸ", (byte)40, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_530.B("ĥĉēŋňĦŀģħıŉġĔĐğőġħńėīĵĢģ", (byte)40, 66);
+               ZKM_STR_B[0] = NLoginCore_530.B("ĥĉēŋňĦŀģħıŉġĔĐğőġħńėīĵĢģ", (byte)40, 66);
          }
       }
    }
@@ -168,7 +168,7 @@ public class NLoginCore_297 implements NLoginInterface_003 {
       if (var3.equals(a(a, b))) {
          Player var4 = (Player)var1.getPlayer();
          if (var4 != null) {
-            var1.setCancelled((boolean)c);
+            var1.setCancelled((c != 0));
             NLoginCore_502.a(this.a).a().a(NLoginCore_502.a(this.a).b().a(var4), var2.getData());
          }
       }

@@ -17,12 +17,12 @@ import lombok.Generated;
 public class NLoginCore_128 implements NLoginInterface_009 {
    private static int g = Integer.reverse(0);
    private final Hasher a;
-   private static String[] a = new String[NLoginCore_128.q];
+   private static String[] ZKM_STR_A = new String[NLoginCore_128.q];
    private static int a = 245760 >>> 108 | 245760 << ~108 + 1;
    private static int r = Integer.reverse(-1073741824);
    private static long j = Long.reverse(5499164058363125042L);
    private static int o = Integer.reverse(Integer.MIN_VALUE);
-   private static String[] b = new String[r];
+   private static String[] ZKM_STR_B = new String[r];
    private static int c = (-1 >>> 254 | -1 << -254) & -1;
    private static int p = 0 >>> 39 | 0 << ~39 + 1;
    private static long c;
@@ -40,13 +40,13 @@ public class NLoginCore_128 implements NLoginInterface_009 {
 
    @Override
    public boolean v(String var1) {
-      return (boolean)(!w(var1) ? o : p);
+      return ((!w(var1) != 0) ? o : p);
    }
 
    private static String a(int var0, long var1) {
       var1 ^= 44L;
       var1 ^= 1151386622389837448L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -90,10 +90,10 @@ public class NLoginCore_128 implements NLoginInterface_009 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static void b() {
@@ -140,22 +140,22 @@ public class NLoginCore_128 implements NLoginInterface_009 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_241.F("թն֑ի֏կն֥֞հ֑լ", (byte)104, 70);
-               b[1] = NLoginCore_138.E("խչձՙ՜վ՞տցշկլ", (byte)104, 69);
-               b[2] = NLoginCore_110.B("ƘƤƜƄƇƩƉƪƬƢƚƗ", (byte)104, 66);
+               ZKM_STR_B[0] = NLoginCore_241.F("թն֑ի֏կն֥֞հ֑լ", (byte)104, 70);
+               ZKM_STR_B[1] = NLoginCore_138.E("խչձՙ՜վ՞տցշկլ", (byte)104, 69);
+               ZKM_STR_B[2] = NLoginCore_110.B("ƘƤƜƄƇƩƉƪƬƢƚƗ", (byte)104, 66);
                break;
             case 1:
-               b[0] = NLoginCore_324.A("ƈƺƖƁǆƌƀƘǈǆǄƗ", (byte)104, 65);
-               b[1] = NLoginCore_553.E("֕֏֙մ֑֔լռղ֢֙լ", (byte)104, 69);
-               b[2] = NLoginCore_324.A("ƈƀǈƝǋƵǇƞƜƽǄƗ", (byte)104, 65);
+               ZKM_STR_B[0] = NLoginCore_324.A("ƈƺƖƁǆƌƀƘǈǆǄƗ", (byte)104, 65);
+               ZKM_STR_B[1] = NLoginCore_553.E("֕֏֙մ֑֔լռղ֢֙լ", (byte)104, 69);
+               ZKM_STR_B[2] = NLoginCore_324.A("ƈƀǈƝǋƵǇƞƜƽǄƗ", (byte)104, 65);
                break;
             case 2:
-               b[0] = NLoginCore_446.D("ՐԵ՜ԴՄՕՂԷկԼԬԹԮՆՂԳՍՇճզՑչՀՁ", (byte)104, 68);
+               ZKM_STR_B[0] = NLoginCore_446.D("ՐԵ՜ԴՄՕՂԷկԼԬԹԮՆՂԳՍՇճզՑչՀՁ", (byte)104, 68);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_091.B("ǁƛƝǈƭƅƥƞǉƪƢƍƆƎǉƵƸƳƳǛƵǏǋǌƙǞǞǤƿƟƺǈ", (byte)104, 66);
+               ZKM_STR_B[0] = NLoginCore_091.B("ǁƛƝǈƭƅƥƞǉƪƢƍƆƎǉƵƸƳƳǛƵǏǋǌƙǞǞǤƿƟƺǈ", (byte)104, 66);
          }
       }
    }
@@ -177,7 +177,7 @@ public class NLoginCore_128 implements NLoginInterface_009 {
    @Override
    public boolean i(String var1, String var2) {
       if (!w(var2)) {
-         return (boolean)g;
+         return (g != 0);
       } else {
          String var3 = var2.contains(a(h & i, j)) ? var2.split(a(k, l ^ m))[n] : var2;
          Result var4 = BCrypt.verifyer().verify(var1.getBytes(StandardCharsets.UTF_8), var3.getBytes(StandardCharsets.UTF_8));
@@ -186,7 +186,7 @@ public class NLoginCore_128 implements NLoginInterface_009 {
    }
 
    private static boolean w(String var0) {
-      return (boolean)(var0.length() == a && var0.startsWith(a(b & c, d)) ? e : f);
+      return ((var0.length() != 0) == a && var0.startsWith(a(b & c, d)) ? e : f);
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {

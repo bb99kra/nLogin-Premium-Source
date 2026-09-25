@@ -82,7 +82,7 @@ public class NLoginCore_409 {
    private static int am = Integer.reverse(0);
    private static int cj = 0 >>> 197 | 0 << ~197 + 1;
    private static long cr = Long.reverse(4302828165633161840L);
-   private static String[] a = new String[aj];
+   private static String[] ZKM_STR_A = new String[aj];
    private static int dl = Integer.reverse(-1);
    private static int c = Integer.reverse(Integer.MIN_VALUE);
    private static int ak = 81920 >>> 77 | 81920 << -77;
@@ -94,7 +94,7 @@ public class NLoginCore_409 {
    private static int ci = (2621440 >>> 50 | 2621440 << -50) & -1;
    private static long du = Long.reverse(8791026472627208192L);
    private static long dt = Long.reverse(4302828165633161840L);
-   private static String[] b = new String[ak];
+   private static String[] ZKM_STR_B = new String[ak];
    private static int bb = Integer.reverse(-939524096);
    private static int cn = Integer.reverse(Integer.MIN_VALUE);
    private static int bk = -2147483644 >>> 190 | -2147483644 << -190;
@@ -196,15 +196,15 @@ public class NLoginCore_409 {
 
    public boolean b(NLoginCore_409 var1) {
       if (this.z > var1.z) {
-         return (boolean)c;
+         return (c != 0);
       } else if (this.z < var1.z) {
-         return (boolean)d;
+         return (d != 0);
       } else if (this.A > var1.A) {
-         return (boolean)e;
+         return (e != 0);
       } else if (this.A < var1.A) {
-         return (boolean)f;
+         return (f != 0);
       } else {
-         return (boolean)(this.B > var1.B ? g : h);
+         return ((this.B > var1.B ? g : h) != 0);
       }
    }
 
@@ -214,13 +214,13 @@ public class NLoginCore_409 {
    }
 
    public boolean c(NLoginCore_409 var1) {
-      return (boolean)(!this.b(var1) ? i : j);
+      return ((!this.b(var1) != 0) ? i : j);
    }
 
    private static String a(int var0, long var1) {
       var1 ^= 94L;
       var1 ^= 5290796461318668923L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -264,10 +264,10 @@ public class NLoginCore_409 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Generated
@@ -319,36 +319,36 @@ public class NLoginCore_409 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_127.A("ļƇŶŶŽňƃƐŨœŠř", (byte)73, 65);
-               b[1] = NLoginCore_575.B("ļƇŶŶŽňƃƐŨœŠř", (byte)73, 66);
-               b[2] = NLoginCore_092.C("ӽӆӋӥӆӦԐӤӊӝӽӘ", (byte)73, 67);
-               b[3] = NLoginCore_324.A("łŅƌšŨƆŉŻŰūőƑƇŨŢŴƈƌŜƎŭſƚſƘƄŴƙŲƃƥŹƧƦƢƉƦơƜƮƎƪƐŹ", (byte)73, 65);
-               b[4] = NLoginCore_559.D("ӻӈӞҾӅԂӋӋӟӒԉӘ", (byte)73, 68);
-               b[5] = NLoginCore_004.C("ӒӈԆӆӜӨԇԇӫӢӫӘ", (byte)73, 67);
-               b[6] = NLoginCore_201.B("ŽƅūƁŝƀƃżōŽŨř", (byte)73, 66);
-               b[7] = NLoginCore_521.D("ӁӄԋӠӧԅӈӺӯӪӐԐԆӧӡӳԇԋӛԍӬӾԙӾԗԃӳԘӱԂԤӸԦԥԡԈԥԠԛԭԍԩԏӸ", (byte)73, 68);
-               b[8] = NLoginCore_232.F("ՇԽջԻՑ՝ռռՠ\u0557ՠՍ", (byte)73, 70);
-               b[9] = NLoginCore_004.B("řƊƅŸŝŁšŦŤŢųƌƏũťŒœƚŴŨƏƌŲŞŢŭƛƛƓŠžƨƨƠũƕƆƯŧƯƑƧƌƱƵƴűƍƬŻƔƈƊƨƉƊƣƤŶƙơƿƗơƔǋǋǊƨƊưƻǋƑƞưƓƕƱǄǋƪǐǊǚƷƤƥ", (byte)73, 66);
+               ZKM_STR_B[0] = NLoginCore_127.A("ļƇŶŶŽňƃƐŨœŠř", (byte)73, 65);
+               ZKM_STR_B[1] = NLoginCore_575.B("ļƇŶŶŽňƃƐŨœŠř", (byte)73, 66);
+               ZKM_STR_B[2] = NLoginCore_092.C("ӽӆӋӥӆӦԐӤӊӝӽӘ", (byte)73, 67);
+               ZKM_STR_B[3] = NLoginCore_324.A("łŅƌšŨƆŉŻŰūőƑƇŨŢŴƈƌŜƎŭſƚſƘƄŴƙŲƃƥŹƧƦƢƉƦơƜƮƎƪƐŹ", (byte)73, 65);
+               ZKM_STR_B[4] = NLoginCore_559.D("ӻӈӞҾӅԂӋӋӟӒԉӘ", (byte)73, 68);
+               ZKM_STR_B[5] = NLoginCore_004.C("ӒӈԆӆӜӨԇԇӫӢӫӘ", (byte)73, 67);
+               ZKM_STR_B[6] = NLoginCore_201.B("ŽƅūƁŝƀƃżōŽŨř", (byte)73, 66);
+               ZKM_STR_B[7] = NLoginCore_521.D("ӁӄԋӠӧԅӈӺӯӪӐԐԆӧӡӳԇԋӛԍӬӾԙӾԗԃӳԘӱԂԤӸԦԥԡԈԥԠԛԭԍԩԏӸ", (byte)73, 68);
+               ZKM_STR_B[8] = NLoginCore_232.F("ՇԽջԻՑ՝ռռՠ\u0557ՠՍ", (byte)73, 70);
+               ZKM_STR_B[9] = NLoginCore_004.B("řƊƅŸŝŁšŦŤŢųƌƏũťŒœƚŴŨƏƌŲŞŢŭƛƛƓŠžƨƨƠũƕƆƯŧƯƑƧƌƱƵƴűƍƬŻƔƈƊƨƉƊƣƤŶƙơƿƗơƔǋǋǊƨƊưƻǋƑƞưƓƕƱǄǋƪǐǊǚƷƤƥ", (byte)73, 66);
                break;
             case 1:
-               b[0] = NLoginCore_232.B("ƈŶƍşŅƍżőŉŤŠř", (byte)73, 66);
-               b[1] = NLoginCore_138.D("ӨӖӇӝӬӥӁӹӍӫԑӘ", (byte)73, 68);
-               b[2] = NLoginCore_575.A("ňŇŪŵšōŞƑũőŏř", (byte)73, 65);
-               b[3] = NLoginCore_384.D("ӁӄԋӠӧԅӈӺӯӪӐԐԆӧӡӳԇԋӛԍӬӾԙӾԗԃӳԘӱԂԤӸӺӸӾԇԢԊԘӽԜԢԔӫԔԭԯԆԙӲӸԛԱԼԃԄ", (byte)73, 68);
-               b[4] = NLoginCore_427.C("ӽӀӕԈӌӀӜӈӨӲӫӘ", (byte)73, 67);
-               b[5] = NLoginCore_201.F("թՕՋՊՊԾ\u0558Փգ՟ՐՍ", (byte)73, 70);
-               b[6] = NLoginCore_451.A("ţŤŶƁŘůŦƁƌŊŨř", (byte)73, 65);
-               b[7] = NLoginCore_453.E("ԶԹրՕ՜պԽկդ՟Յօջ՜ՖըռրՐւաճ֎ճ\u058cոը֍զշ֙խտ֒լ֚ռփ֦֒ւն֘֓օ֨ն\u058bֈսֆֈֱ֨ոչ", (byte)73, 69);
-               b[8] = NLoginCore_471.A("ŧŷŗƁżřŨƁŮſŠř", (byte)73, 65);
-               b[9] = NLoginCore_110.C("ӘԉԄӷӜӀӠӥӣӡӲԋԎӨӤӑӒԙӳӧԎԋӱӝӡӬԚԚԒӟӽԧԧԟӨԔԅԮӦԮԐԦԋ\u0530ԴԳӰԌԫӺԓԇԉԧԈԉԢԣӵԘԠԾԖԠԓՊՊՉԧԉԯԺՊԐԞԭԞՅՆԓԔՋԙԗԮՌԣԤ", (byte)73, 67);
+               ZKM_STR_B[0] = NLoginCore_232.B("ƈŶƍşŅƍżőŉŤŠř", (byte)73, 66);
+               ZKM_STR_B[1] = NLoginCore_138.D("ӨӖӇӝӬӥӁӹӍӫԑӘ", (byte)73, 68);
+               ZKM_STR_B[2] = NLoginCore_575.A("ňŇŪŵšōŞƑũőŏř", (byte)73, 65);
+               ZKM_STR_B[3] = NLoginCore_384.D("ӁӄԋӠӧԅӈӺӯӪӐԐԆӧӡӳԇԋӛԍӬӾԙӾԗԃӳԘӱԂԤӸӺӸӾԇԢԊԘӽԜԢԔӫԔԭԯԆԙӲӸԛԱԼԃԄ", (byte)73, 68);
+               ZKM_STR_B[4] = NLoginCore_427.C("ӽӀӕԈӌӀӜӈӨӲӫӘ", (byte)73, 67);
+               ZKM_STR_B[5] = NLoginCore_201.F("թՕՋՊՊԾ\u0558Փգ՟ՐՍ", (byte)73, 70);
+               ZKM_STR_B[6] = NLoginCore_451.A("ţŤŶƁŘůŦƁƌŊŨř", (byte)73, 65);
+               ZKM_STR_B[7] = NLoginCore_453.E("ԶԹրՕ՜պԽկդ՟Յօջ՜ՖըռրՐւաճ֎ճ\u058cոը֍զշ֙խտ֒լ֚ռփ֦֒ւն֘֓օ֨ն\u058bֈսֆֈֱ֨ոչ", (byte)73, 69);
+               ZKM_STR_B[8] = NLoginCore_471.A("ŧŷŗƁżřŨƁŮſŠř", (byte)73, 65);
+               ZKM_STR_B[9] = NLoginCore_110.C("ӘԉԄӷӜӀӠӥӣӡӲԋԎӨӤӑӒԙӳӧԎԋӱӝӡӬԚԚԒӟӽԧԧԟӨԔԅԮӦԮԐԦԋ\u0530ԴԳӰԌԫӺԓԇԉԧԈԉԢԣӵԘԠԾԖԠԓՊՊՉԧԉԯԺՊԐԞԭԞՅՆԓԔՋԙԗԮՌԣԤ", (byte)73, 67);
                break;
             case 2:
-               b[0] = NLoginCore_004.E("ջՉծՖԹՋԻյոպՃևճՂ֊ժպօ՛փՎֆլ֊տց\u0590յ֖խ֙Ք", (byte)73, 69);
+               ZKM_STR_B[0] = NLoginCore_004.E("ջՉծՖԹՋԻյոպՃևճՂ֊ժպօ՛փՎֆլ֊տց\u0590յ֖խ֙Ք", (byte)73, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_173.C("ӞӺԇԈӽӤӥӾӨԇӧӘ", (byte)73, 67);
+               ZKM_STR_B[0] = NLoginCore_173.C("ӞӺԇԈӽӤӥӾӨԇӧӘ", (byte)73, 67);
          }
       }
    }
@@ -414,20 +414,20 @@ public class NLoginCore_409 {
    }
 
    public boolean a(NLoginCore_409 var1) {
-      return (boolean)(!this.d(var1) ? a : b);
+      return ((!this.d(var1) != 0) ? a : b);
    }
 
    public boolean d(NLoginCore_409 var1) {
       if (this.z < var1.z) {
-         return (boolean)k;
+         return (k != 0);
       } else if (this.z > var1.z) {
-         return (boolean)l;
+         return (l != 0);
       } else if (this.A < var1.A) {
-         return (boolean)m;
+         return (m != 0);
       } else if (this.A > var1.A) {
-         return (boolean)n;
+         return (n != 0);
       } else {
-         return (boolean)(this.B < var1.B ? o : p);
+         return ((this.B < var1.B ? o : p) != 0);
       }
    }
 
@@ -440,19 +440,19 @@ public class NLoginCore_409 {
    @Override
    public boolean equals(Object var1) {
       if (var1 == this) {
-         return (boolean)w;
+         return (w != 0);
       } else if (!(var1 instanceof NLoginCore_409)) {
-         return (boolean)x;
+         return (x != 0);
       } else {
          NLoginCore_409 var2 = (NLoginCore_409)var1;
          if (!var2.b((Object)this)) {
-            return (boolean)y;
+            return (y != 0);
          } else if (this.e() != var2.e()) {
-            return (boolean)aa;
+            return (aa != 0);
          } else if (this.f() != var2.f()) {
-            return (boolean)ab;
+            return (ab != 0);
          } else {
-            return (boolean)(this.g() != var2.g() ? ac : ad);
+            return ((this.g() != 0) != var2.g() ? ac : ad);
          }
       }
    }

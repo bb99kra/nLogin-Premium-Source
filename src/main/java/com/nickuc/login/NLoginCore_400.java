@@ -13,7 +13,7 @@ public class NLoginCore_400 implements NLoginInterface_010, NLoginInterface_035 
 
    @Override
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
-      return (boolean)(var1.a().q() && this.a(var3).a() != NLoginCore_175.b ? a : b);
+      return ((var1.a() != 0).q() && this.a(var3).a() != NLoginCore_175.b ? a : b);
    }
 
    @Override

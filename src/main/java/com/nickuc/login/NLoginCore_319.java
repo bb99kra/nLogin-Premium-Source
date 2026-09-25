@@ -28,9 +28,9 @@ public class NLoginCore_319 implements Closeable {
    private static long c;
    private static int n = 128 >>> 38 | 128 << ~38 + 1;
    private final Map<String, NLoginCore_587> i = new HashMap<>();
-   private static String[] a = new String[NLoginCore_319.r];
+   private static String[] ZKM_STR_A = new String[NLoginCore_319.r];
    private static long e = Long.reverse(8358680908399640576L);
-   private static String[] b = new String[NLoginCore_319.s];
+   private static String[] ZKM_STR_B = new String[NLoginCore_319.s];
    private static int r = 1610612736 >>> 125 | 1610612736 << ~125 + 1;
    private static long p = Long.reverse(8358680908399640576L);
    private static int g = (1073741824 >>> 254 | 1073741824 << -254) & -1;
@@ -99,22 +99,22 @@ public class NLoginCore_319 implements Closeable {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_471.E("\u0558ՂԷծՌբիՍգՐՓԼ", (byte)56, 69);
-               b[1] = NLoginCore_397.A("şťńţĵśŉŤįĩŐłıŝœőŕŊŦĺĶĶŎňŒĻōŎŚŖƀŢƃŝſĽŹŃŧŚžŝŚŗ", (byte)56, 65);
-               b[2] = NLoginCore_183.B("şťńţĵśŉŤįĩŐłıŝœőŕŊŦĺĶĶŎňŒĻōŎŚŖƀŢƃŝſĽŹŃŧŚžŝŚŗ", (byte)56, 66);
+               ZKM_STR_B[0] = NLoginCore_471.E("\u0558ՂԷծՌբիՍգՐՓԼ", (byte)56, 69);
+               ZKM_STR_B[1] = NLoginCore_397.A("şťńţĵśŉŤįĩŐłıŝœőŕŊŦĺĶĶŎňŒĻōŎŚŖƀŢƃŝſĽŹŃŧŚžŝŚŗ", (byte)56, 65);
+               ZKM_STR_B[2] = NLoginCore_183.B("şťńţĵśŉŤįĩŐłıŝœőŕŊŦĺĶĶŎňŒĻōŎŚŖƀŢƃŝſĽŹŃŧŚžŝŚŗ", (byte)56, 66);
                break;
             case 1:
-               b[0] = NLoginCore_241.F("ԹՁԼդդՄզԮԾիաԼ", (byte)56, 70);
-               b[1] = NLoginCore_471.B("şťńţĵśŉŤįĩŐłıŝœőŕŊŦĺĶĶŎňŒĻōŎŚŖƀŢżűŉńŊŅƅŜŋűőƓƐŎƌťŠŶƎōƔťŢţ", (byte)56, 66);
-               b[2] = NLoginCore_232.E("դժՉըԺՠՎթԴԮՕՇԶբ\u0558Ֆ՚ՏիԿԻԻՓՍ\u0557ՀՒՓ՟՛օէ՚\u0557ռադՋ։հիայ֘֊\u0557խ\u0558եֈվ֞։֠էը", (byte)56, 69);
+               ZKM_STR_B[0] = NLoginCore_241.F("ԹՁԼդդՄզԮԾիաԼ", (byte)56, 70);
+               ZKM_STR_B[1] = NLoginCore_471.B("şťńţĵśŉŤįĩŐłıŝœőŕŊŦĺĶĶŎňŒĻōŎŚŖƀŢżűŉńŊŅƅŜŋűőƓƐŎƌťŠŶƎōƔťŢţ", (byte)56, 66);
+               ZKM_STR_B[2] = NLoginCore_232.E("դժՉըԺՠՎթԴԮՕՇԶբ\u0558Ֆ՚ՏիԿԻԻՓՍ\u0557ՀՒՓ՟՛օէ՚\u0557ռադՋ։հիայ֘֊\u0557խ\u0558եֈվ֞։֠էը", (byte)56, 69);
                break;
             case 2:
-               b[0] = NLoginCore_004.E("ԬԩՠԽ՝ԬՊՓՈկեԼ", (byte)56, 69);
+               ZKM_STR_B[0] = NLoginCore_004.E("ԬԩՠԽ՝ԬՊՓՈկեԼ", (byte)56, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_201.D("ҖҬӎҦӕӕһӔҰҵҨҥ", (byte)56, 68);
+               ZKM_STR_B[0] = NLoginCore_201.D("ҖҬӎҦӕӕһӔҰҵҨҥ", (byte)56, 68);
          }
       }
    }
@@ -130,7 +130,7 @@ public class NLoginCore_319 implements Closeable {
 
    @Override
    public void close() {
-      this.ad = (boolean)q;
+      this.ad = (q != 0);
       synchronized (this.i) {
          this.i.values().forEach(NLoginCore_587::close);
       }
@@ -168,7 +168,7 @@ public class NLoginCore_319 implements Closeable {
          synchronized (this.i) {
             NLoginCore_587 var4 = new NLoginCore_587(this, var1, var2, null);
             this.i.put(var1, var4);
-            this.f.b((boolean)m).a(var4);
+            this.f.b((m != 0)).a(var4);
          }
       }
    }
@@ -176,7 +176,7 @@ public class NLoginCore_319 implements Closeable {
    private static String a(int var0, long var1) {
       var1 ^= 46L;
       var1 ^= 6109697636854521877L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -220,10 +220,10 @@ public class NLoginCore_319 implements Closeable {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static HostAndPort a(String var0) {

@@ -16,7 +16,7 @@ public class NLoginCore_002 {
    public static boolean a(String var0, Cache<String, Long> var1) {
       long var2 = System.currentTimeMillis();
       long var4 = (Long)var1.get(var0, var2x -> var2);
-      return (boolean)(var4 == var2 ? a : b);
+      return ((var4 == var2 ? a : b) != 0);
    }
 
    public boolean s(String var1) {

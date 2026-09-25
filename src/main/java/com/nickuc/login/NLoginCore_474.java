@@ -8,7 +8,7 @@ public class NLoginCore_474 {
    private final boolean an;
 
    public static NLoginCore_474 a(String... var0) {
-      return a((boolean)a, var0);
+      return a((a != 0), var0);
    }
 
    public static NLoginCore_474 a(boolean var0, String... var1) {

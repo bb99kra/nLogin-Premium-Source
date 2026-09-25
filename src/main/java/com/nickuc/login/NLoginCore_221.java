@@ -38,7 +38,7 @@ public class NLoginCore_221 implements NLoginCore_459 {
       this.c = var1;
       this.r = var2;
       this.a = var1.a();
-      this.a.setAutoCommit((boolean)a);
+      this.a.setAutoCommit((a != 0));
    }
 
    @Override

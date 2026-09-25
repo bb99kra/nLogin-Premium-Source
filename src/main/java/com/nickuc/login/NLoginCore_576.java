@@ -27,10 +27,10 @@ public class NLoginCore_576 {
    private static long l = Long.reverse(-5575472716769139069L);
    private static int o = 4 >>> 2 | 4 << ~2 + 1;
    private static long c;
-   private static String[] b = new String[r];
+   private static String[] ZKM_STR_B = new String[r];
    private final Collection<NLoginCore_216> a;
    private static int c = 536870912 >>> 189 | 536870912 << -189;
-   private static String[] a = new String[NLoginCore_576.q];
+   private static String[] ZKM_STR_A = new String[NLoginCore_576.q];
    private static long h = Long.reverse(-963786698341751165L);
    private static int m = Integer.reverse(1073741824);
    private static int a = Integer.reverse(Integer.MIN_VALUE);
@@ -86,28 +86,28 @@ public class NLoginCore_576 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_387.C("ՈՅչՈ՛\u0590֎վ՚Չ֏֕։ՐօՔլ֚ռէղ֍դե", (byte)116, 67);
-               b[1] = NLoginCore_471.E("ֆ֕ն֍չ֟֜ոէ֨֠֊֥֕փֳֵ֧֊ն\u0590ּփք", (byte)116, 69);
-               b[2] = NLoginCore_076.A("ƖƲǜǢǝƻǣǅƷǑǠƯ", (byte)116, 65);
+               ZKM_STR_B[0] = NLoginCore_387.C("ՈՅչՈ՛\u0590֎վ՚Չ֏֕։ՐօՔլ֚ռէղ֍դե", (byte)116, 67);
+               ZKM_STR_B[1] = NLoginCore_471.E("ֆ֕ն֍չ֟֜ոէ֨֠֊֥֕փֳֵ֧֊ն\u0590ּփք", (byte)116, 69);
+               ZKM_STR_B[2] = NLoginCore_076.A("ƖƲǜǢǝƻǣǅƷǑǠƯ", (byte)116, 65);
                break;
             case 1:
-               b[0] = NLoginCore_397.A("ƞƛǏƞƱǦǤǔưƟǤǛǪǘǏǯǭǏǤǛǪǞƳǱǘǌǪǈǏǭƽǊ", (byte)116, 65);
-               b[1] = NLoginCore_387.D("էն\u0557ծ՚րսՙՈ։վծ֗ի֏Քժձ\u0558֖֒֍դե", (byte)116, 68);
-               b[2] = NLoginCore_201.C("՚՛։Ջ՝ռ\u058c՟ւՍվՙ", (byte)116, 67);
+               ZKM_STR_B[0] = NLoginCore_397.A("ƞƛǏƞƱǦǤǔưƟǤǛǪǘǏǯǭǏǤǛǪǞƳǱǘǌǪǈǏǭƽǊ", (byte)116, 65);
+               ZKM_STR_B[1] = NLoginCore_387.D("էն\u0557ծ՚րսՙՈ։վծ֗ի֏Քժձ\u0558֖֒֍դե", (byte)116, 68);
+               ZKM_STR_B[2] = NLoginCore_201.C("՚՛։Ջ՝ռ\u058c՟ւՍվՙ", (byte)116, 67);
                break;
             case 2:
-               b[0] = NLoginCore_223.F("չագ֧ո֍ջֱ֟֡լ֎տխ֊ֳցֽ֖֑֕ջְֺ֑֡\u058cնւׁ֚֜", (byte)116, 70);
+               ZKM_STR_B[0] = NLoginCore_223.F("չագ֧ո֍ջֱ֟֡լ֎տխ֊ֳցֽ֖֑֕ջְֺ֑֡\u058cնւׁ֚֜", (byte)116, 70);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_173.E("ՠչիֆք֝եծ֠ը֥֊հկօֹ֣֪֠ն֩֏ֳֵֶּ֦֟֠֡֯֩", (byte)116, 69);
+               ZKM_STR_B[0] = NLoginCore_173.E("ՠչիֆք֝եծ֠ը֥֊հկօֹ֣֪֠ն֩֏ֳֵֶּ֦֟֠֡֯֩", (byte)116, 69);
          }
       }
    }
 
    public boolean a(int var1) {
-      return (boolean)(this.a.size() >= var1 ? a : b);
+      return ((this.a.size() != 0) >= var1 ? a : b);
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {
@@ -138,11 +138,11 @@ public class NLoginCore_576 {
    }
 
    public boolean a(@Nullable Long var1, int var2) {
-      return (boolean)(this.a.size() >= var2 && !this.a(var1) ? c : d);
+      return ((this.a.size() != 0) >= var2 && !this.a(var1) ? c : d);
    }
 
    public boolean a(@Nullable Long var1) {
-      return (boolean)(var1 != null && !this.F() && this.a.stream().anyMatch(var1x -> (boolean)(NLoginCore_216.a(var1x) == var1 ? o : p)) ? e : f);
+      return ((var1 != null && !this.F() != 0) && this.a.stream().anyMatch(var1x -> ((NLoginCore_216.a(var1x) != 0) == var1 ? o : p)) ? e : f);
    }
 
    static {
@@ -152,7 +152,7 @@ public class NLoginCore_576 {
    private static String a(int var0, long var1) {
       var1 ^= 2L;
       var1 ^= 5836840985886288112L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -196,10 +196,10 @@ public class NLoginCore_576 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Generated

@@ -17,17 +17,17 @@ public class GUIButtonContainer {
    private final NLoginCore_445 q;
    private final NLoginCore_190 a;
    private static long d = Long.reverse(-7741388606031145556L);
-   private static String[] a = new String[f];
+   private static String[] ZKM_STR_A = new String[f];
    private static int e = (0 >>> 1 | 0 << ~1 + 1) & -1;
    private static long c;
    private static int b = -1 >>> 79 | -1 << -79;
-   private static String[] b = new String[g];
+   private static String[] ZKM_STR_B = new String[g];
    private static int a = Integer.reverse(0);
 
    private static String a(int var0, long var1) {
       var1 ^= 24L;
       var1 ^= 5176793162442191896L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -71,10 +71,10 @@ public class GUIButtonContainer {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static void b() {
@@ -121,18 +121,18 @@ public class GUIButtonContainer {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_397.A("ƟƦƗǋǐƷǎƺǓǞƠǔǣǞƯǅǠǛƦǇǒƴǆǌƭǛǮǅǲǅǃƱƮǦǒǯǉǍǲǚǴǻǶǅ", (byte)111, 65);
+               ZKM_STR_B[0] = NLoginCore_397.A("ƟƦƗǋǐƷǎƺǓǞƠǔǣǞƯǅǠǛƦǇǒƴǆǌƭǛǮǅǲǅǃƱƮǦǒǯǉǍǲǚǴǻǶǅ", (byte)111, 65);
                break;
             case 1:
-               b[0] = NLoginCore_471.A("ƟƦƗǋǐƷǎƺǓǞƠǔǣǞƯǅǠǛƦǇǒƴǆǌƭǛǮǅǲǅǃƱƯƵǧǋƸǧǴǝǪǭǘǅ", (byte)111, 65);
+               ZKM_STR_B[0] = NLoginCore_471.A("ƟƦƗǋǐƷǎƺǓǞƠǔǣǞƯǅǠǛƦǇǒƴǆǌƭǛǮǅǲǅǃƱƯƵǧǋƸǧǴǝǪǭǘǅ", (byte)111, 65);
                break;
             case 2:
-               b[0] = NLoginCore_521.A("ǒǍƢƴƐǐǏƧƱƸǡƚƼǚǟƱǐǂǀǘǦǅƤǮǋǩǪǰǪǛǉǋ", (byte)111, 65);
+               ZKM_STR_B[0] = NLoginCore_521.A("ǒǍƢƴƐǐǏƧƱƸǡƚƼǚǟƱǐǂǀǘǦǅƤǮǋǩǪǰǪǛǉǋ", (byte)111, 65);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_027.E("շ֕ձցօն֣֪֦֝նիօթ֍֤֞֔֊։ַցվտ", (byte)111, 69);
+               ZKM_STR_B[0] = NLoginCore_027.E("շ֕ձցօն֣֪֦֝նիօթ֍֤֞֔֊։ַցվտ", (byte)111, 69);
          }
       }
    }

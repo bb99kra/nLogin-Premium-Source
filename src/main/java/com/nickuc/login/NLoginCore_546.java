@@ -26,10 +26,10 @@ public class NLoginCore_546 {
    private static long e = Long.reverse(3112719754340077518L);
    private static long k = Long.reverse(3112719754340077518L);
    private static int h = (536870912 >>> 221 | 536870912 << -221) & -1;
-   private static String[] b = new String[NLoginCore_546.p];
+   private static String[] ZKM_STR_B = new String[NLoginCore_546.p];
    private static int n = Integer.reverse(Integer.MIN_VALUE);
    private static int g = (0 >>> 37 | 0 << ~37 + 1) & -1;
-   private static String[] a = new String[NLoginCore_546.o];
+   private static String[] ZKM_STR_A = new String[NLoginCore_546.o];
    private static int a = 32 >>> 37 | 32 << ~37 + 1;
    private static int j = Integer.reverse(-1);
    private static int o = Integer.reverse(1073741824);
@@ -60,7 +60,7 @@ public class NLoginCore_546 {
          if ((var1 == null || var7.getName().equals(var1))
             && (var2 == null || var7.getReturnType().equals(var2))
             && Arrays.equals((Object[])var7.getParameterTypes(), (Object[])var3)) {
-            var7.setAccessible((boolean)c);
+            var7.setAccessible((c != 0));
             return var7;
          }
       }
@@ -82,7 +82,7 @@ public class NLoginCore_546 {
 
    public static Method b(Class<?> var0, String var1, Class<?>... var2) {
       Method var3 = var0.getDeclaredMethod(var1, var2);
-      var3.setAccessible((boolean)a);
+      var3.setAccessible((a != 0));
       return var3;
    }
 
@@ -130,20 +130,20 @@ public class NLoginCore_546 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_138.F("Ոէ\u0558՟ցՉՒօտնժ\u0590\u0557ցմփ։՝իյ՝պ֏աբ֣֛֤֗֜֔֔", (byte)87, 70);
-               b[1] = NLoginCore_384.C("ԡԠԴӳӶӪԹԗӴԼӸԦԑӲԔӽԝӼԗ\u0530ԂԙՂԩՀԋԦԬԭԩ\u0530ԟ", (byte)87, 67);
+               ZKM_STR_B[0] = NLoginCore_138.F("Ոէ\u0558՟ցՉՒօտնժ\u0590\u0557ցմփ։՝իյ՝պ֏աբ֣֛֤֗֜֔֔", (byte)87, 70);
+               ZKM_STR_B[1] = NLoginCore_384.C("ԡԠԴӳӶӪԹԗӴԼӸԦԑӲԔӽԝӼԗ\u0530ԂԙՂԩՀԋԦԬԭԩ\u0530ԟ", (byte)87, 67);
                break;
             case 1:
-               b[0] = NLoginCore_446.A("ŢƁŲŹƛţŬƟƙƐƄƪűƛƎƝƣŷƅƏŷƔƺƒƔŸƴƍƠƿżƄ", (byte)87, 65);
-               b[1] = NLoginCore_384.C("ԡԠԴӳӶӪԹԗӴԼӸԦԑӲԔӽԝӼԗ\u0530ԂԓՃՄԔԅԣՏՏԮԩԼՎՒԪԕ\u0530ՕՇԌՖԚ\u0557Ԣ", (byte)87, 67);
+               ZKM_STR_B[0] = NLoginCore_446.A("ŢƁŲŹƛţŬƟƙƐƄƪűƛƎƝƣŷƅƏŷƔƺƒƔŸƴƍƠƿżƄ", (byte)87, 65);
+               ZKM_STR_B[1] = NLoginCore_384.C("ԡԠԴӳӶӪԹԗӴԼӸԦԑӲԔӽԝӼԗ\u0530ԂԓՃՄԔԅԣՏՏԮԩԼՎՒԪԕ\u0530ՕՇԌՖԚ\u0557Ԣ", (byte)87, 67);
                break;
             case 2:
-               b[0] = NLoginCore_127.D("ӪԁԎԨӲԐԲԍԜԪԨԵӸՀӽԬԭԥԭԻՁԐԍԎ", (byte)87, 68);
+               ZKM_STR_B[0] = NLoginCore_127.D("ӪԁԎԨӲԐԲԍԜԪԨԵӸՀӽԬԭԥԭԻՁԐԍԎ", (byte)87, 68);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_110.E("՞֍բՋջի՜՞\u0590կՐե\u058c֘Ր֔֘պ֑֍֞֏զէ", (byte)87, 69);
+               ZKM_STR_B[0] = NLoginCore_110.E("՞֍բՋջի՜՞\u0590կՐե\u058c֘Ր֔֘պ֑֍֞֏զէ", (byte)87, 69);
          }
       }
    }
@@ -182,7 +182,7 @@ public class NLoginCore_546 {
 
    public static Field a(Class<?> var0, String var1) {
       Field var2 = var0.getDeclaredField(var1);
-      var2.setAccessible((boolean)m);
+      var2.setAccessible((m != 0));
       return var2;
    }
 
@@ -207,7 +207,7 @@ public class NLoginCore_546 {
                }
 
                if (var4 == var2) {
-                  var8.setAccessible((boolean)h);
+                  var8.setAccessible((h != 0));
                   return var8;
                }
 
@@ -248,7 +248,7 @@ public class NLoginCore_546 {
    private static String a(int var0, long var1) {
       var1 ^= 90L;
       var1 ^= -5233251952210518379L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -292,10 +292,10 @@ public class NLoginCore_546 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Nullable
@@ -309,7 +309,7 @@ public class NLoginCore_546 {
 
    public static <T> Constructor<T> b(Class<?> var0, Class<?>... var1) {
       Constructor var2 = var0.getDeclaredConstructor(var1);
-      var2.setAccessible((boolean)n);
+      var2.setAccessible((n != 0));
       return var2;
    }
 

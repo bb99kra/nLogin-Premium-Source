@@ -30,7 +30,7 @@ public class NLoginCore_366 {
    private static int aw = Integer.reverse(536870912);
    private static int as = (0 >>> 119 | 0 << -119) & -1;
    private static int an = Integer.reverse(0);
-   private static String[] b = new String[NLoginCore_366.ax];
+   private static String[] ZKM_STR_B = new String[NLoginCore_366.ax];
    private static int o = Integer.reverse(Integer.MIN_VALUE);
    private static int s = Integer.reverse(0);
    private static int b = Integer.reverse(-1);
@@ -50,7 +50,7 @@ public class NLoginCore_366 {
    private static long ag = Long.reverse(6313306922169161603L);
    private static int ap = Integer.reverse(0);
    private static int l = Integer.reverse(0);
-   private static String[] a = new String[aw];
+   private static String[] ZKM_STR_A = new String[aw];
    private static int p = Integer.reverse(0);
    private static int t = Integer.reverse(0);
    private static int aa = (0 >>> 147 | 0 << -147) & -1;
@@ -118,14 +118,14 @@ public class NLoginCore_366 {
             var2.close();
          }
 
-         return (boolean)var8;
+         return (var8 != 0);
       }
 
       if (Collections.singletonList(var2).get(aj) != null) {
          var2.close();
       }
 
-      return (boolean)var8;
+      return (var8 != 0);
    }
 
    public static boolean a(File var0) {
@@ -203,9 +203,9 @@ public class NLoginCore_366 {
             var2.close();
          }
 
-         return (boolean)var4;
+         return (var4 != 0);
       } else {
-         return (boolean)ae;
+         return (ae != 0);
       }
    }
 
@@ -253,26 +253,26 @@ public class NLoginCore_366 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_451.F("չք֘ֈքս\u058cծ։իւջ", (byte)119, 70);
-               b[1] = NLoginCore_241.E("ֆ֧֪֠֯վվխֆճ֒ջ", (byte)119, 69);
-               b[2] = NLoginCore_183.A("ƿƹƸƣǧǚǢǃǭǆǦƵ", (byte)119, 65);
-               b[3] = NLoginCore_091.F("ցլ֗ց֢ր֎֭փְ֪֯ֈ֕ոօ֒պְֿ֣֒֝ׄվֵֹֻ\u05c8ֿֿ֧֥֚֓֘֕֟֟א֏\u058bֳׇֹׁׁ֟ה֓\u05cc\u05cf֚֟֘֞ףסםפּ֞זַ", (byte)119, 70);
+               ZKM_STR_B[0] = NLoginCore_451.F("չք֘ֈքս\u058cծ։իւջ", (byte)119, 70);
+               ZKM_STR_B[1] = NLoginCore_241.E("ֆ֧֪֠֯վվխֆճ֒ջ", (byte)119, 69);
+               ZKM_STR_B[2] = NLoginCore_183.A("ƿƹƸƣǧǚǢǃǭǆǦƵ", (byte)119, 65);
+               ZKM_STR_B[3] = NLoginCore_091.F("ցլ֗ց֢ր֎֭փְ֪֯ֈ֕ոօ֒պְֿ֣֒֝ׄվֵֹֻ\u05c8ֿֿ֧֥֚֓֘֕֟֟א֏\u058bֳׇֹׁׁ֟ה֓\u05cc\u05cf֚֟֘֞ףסםפּ֞זַ", (byte)119, 70);
                break;
             case 1:
-               b[0] = NLoginCore_201.D("ՋյքՕՉյ\u0590Ռղ։֜֙՝֗սծ֕պֆքՙ֦խծ", (byte)119, 68);
-               b[1] = NLoginCore_127.B("ǝǨǩƛƳƹǈǢǈǙƯƵ", (byte)119, 66);
-               b[2] = NLoginCore_232.D("մ՝ՐկժՠՖփՖճ֏բ", (byte)119, 68);
-               b[3] = NLoginCore_092.E(
+               ZKM_STR_B[0] = NLoginCore_201.D("ՋյքՕՉյ\u0590Ռղ։֜֙՝֗սծ֕պֆքՙ֦խծ", (byte)119, 68);
+               ZKM_STR_B[1] = NLoginCore_127.B("ǝǨǩƛƳƹǈǢǈǙƯƵ", (byte)119, 66);
+               ZKM_STR_B[2] = NLoginCore_232.D("մ՝ՐկժՠՖփՖճ֏բ", (byte)119, 68);
+               ZKM_STR_B[3] = NLoginCore_092.E(
                   "ցլ֗ց֢ր֎֭փְ֪֯ֈ֕ոօ֒պְֿ֣֒֝ׄվֵֹֻ\u05c8ֿֿ֧֥֚֓֘֕֟֟א֏\u058bֳׇֹׁׁ֟ה֓\u05cc\u05cf֚סֶֹֺדֳָ\u05c9צחתו֦ׄ\u05c9שףּׁ֩סנֻ", (byte)119, 69
                );
                break;
             case 2:
-               b[0] = NLoginCore_324.E("ի֧֟ժօ֚իծռ֒խջ", (byte)119, 69);
+               ZKM_STR_B[0] = NLoginCore_324.E("ի֧֟ժօ֚իծռ֒խջ", (byte)119, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_530.E("ըք֨֬֫վ֥֫փֆֲ֤֭հ֘չ֕ևָջֳ֯ֆև", (byte)119, 69);
+               ZKM_STR_B[0] = NLoginCore_530.E("ըք֨֬֫վ֥֫փֆֲ֤֭հ֘չ֕ևָջֳ֯ֆև", (byte)119, 69);
          }
       }
    }
@@ -296,10 +296,10 @@ public class NLoginCore_366 {
 
    public static boolean a(File var0, boolean var1) {
       if (!var1 && var0.exists()) {
-         return (boolean)ar;
+         return (ar != 0);
       } else {
          File var2 = var0.getParentFile();
-         return (boolean)(var2 != null && !var2.exists() && !var2.mkdirs() ? as : var0.createNewFile());
+         return ((var2 != null && !var2.exists() != 0) && !var2.mkdirs() ? as : var0.createNewFile());
       }
    }
 
@@ -342,7 +342,7 @@ public class NLoginCore_366 {
    private static String a(int var0, long var1) {
       var1 ^= 28L;
       var1 ^= -6719536005383730399L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -386,10 +386,10 @@ public class NLoginCore_366 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @CheckReturnValue
@@ -403,7 +403,7 @@ public class NLoginCore_366 {
    }
 
    public static boolean b(File var0) {
-      return a(var0, (boolean)aq);
+      return a(var0, (aq != 0));
    }
 
    public static String c(File var0) {
@@ -419,7 +419,7 @@ public class NLoginCore_366 {
    public static boolean a(File var0, long var1) {
       BasicFileAttributes var3 = Files.readAttributes(var0.toPath(), BasicFileAttributes.class);
       long var4 = var3.creationTime().toMillis();
-      return (boolean)(System.currentTimeMillis() - var4 >= var1 ? au : av);
+      return ((System.currentTimeMillis() != 0) - var4 >= var1 ? au : av);
    }
 
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.

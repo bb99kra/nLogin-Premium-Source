@@ -19,8 +19,8 @@ import org.bukkit.entity.Player.Spigot;
 
 public class NLoginCore_534 implements NLoginInterface_001 {
    private static int m = Integer.reverse(1073741824);
-   private static String[] a = new String[m];
-   private static String[] b = new String[NLoginCore_534.n];
+   private static String[] ZKM_STR_A = new String[m];
+   private static String[] ZKM_STR_B = new String[NLoginCore_534.n];
    private static long d = Long.reverse(1152921504606846976L);
    private static long b = Long.reverse(-1744366225216420974L);
    private static int i = 16 >>> 3 | 16 << -3;
@@ -73,7 +73,7 @@ public class NLoginCore_534 implements NLoginInterface_001 {
    private static String a(int var0, long var1) {
       var1 ^= 8L;
       var1 ^= 7443382481383945549L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -117,10 +117,10 @@ public class NLoginCore_534 implements NLoginInterface_001 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static void b() {
@@ -167,20 +167,20 @@ public class NLoginCore_534 implements NLoginInterface_001 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_110.D("ҠӂҼһұӜӡҿӆӚӋҴ", (byte)61, 68);
-               b[1] = NLoginCore_127.A("ŝńŒųĮŷĴŤŌķŰųųŖŪĻŻŻŘŒźşŌō", (byte)61, 65);
+               ZKM_STR_B[0] = NLoginCore_110.D("ҠӂҼһұӜӡҿӆӚӋҴ", (byte)61, 68);
+               ZKM_STR_B[1] = NLoginCore_127.A("ŝńŒųĮŷĴŤŌķŰųųŖŪĻŻŻŘŒźşŌō", (byte)61, 65);
                break;
             case 1:
-               b[0] = NLoginCore_141.C("ӄӅӄҰӈҴӦҢӖӘӡҬҿӊҳӥӏҰӅҴҷӂҿӀ", (byte)61, 67);
-               b[1] = NLoginCore_141.E("՝ՄՒճԮշԴդՌԷծՕ\u0558տիՖԸպ՞Վօ՟ՌՍ", (byte)61, 69);
+               ZKM_STR_B[0] = NLoginCore_141.C("ӄӅӄҰӈҴӦҢӖӘӡҬҿӊҳӥӏҰӅҴҷӂҿӀ", (byte)61, 67);
+               ZKM_STR_B[1] = NLoginCore_141.E("՝ՄՒճԮշԴդՌԷծՕ\u0558տիՖԸպ՞Վօ՟ՌՍ", (byte)61, 69);
                break;
             case 2:
-               b[0] = NLoginCore_530.B("ŨŐŜŌŠŮŎŒŇňŏźŝŴŻŏŖļőĿŁŏŌō", (byte)61, 66);
+               ZKM_STR_B[0] = NLoginCore_530.B("ŨŐŜŌŠŮŎŒŇňŏźŝŴŻŏŖļőĿŁŏŌō", (byte)61, 66);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_183.A("ţńōőŮŷŬŲŇŅŶŁ", (byte)61, 65);
+               ZKM_STR_B[0] = NLoginCore_183.A("ţńōőŮŷŬŲŇŅŶŁ", (byte)61, 65);
          }
       }
    }

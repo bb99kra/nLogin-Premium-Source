@@ -23,7 +23,7 @@ final class NLoginCore_178 implements NLoginInterface_026 {
    private static int n = Integer.reverse(-1073741824);
    private static int z = (3 >>> 31 | 3 << -31) & -1;
    private static int ac = (14680064 >>> 213 | 14680064 << -213) & -1;
-   private static String[] a = new String[ac];
+   private static String[] ZKM_STR_A = new String[ac];
    private static long s = Long.reverse(4913160985879796909L);
    private static int g = 1 >>> 192 | 1 << -192;
    private static int r = 8388608 >>> 21 | 8388608 << ~21 + 1;
@@ -36,7 +36,7 @@ final class NLoginCore_178 implements NLoginInterface_026 {
    private static int k = Integer.reverse(1073741824);
    private static long f = Long.reverse(3904354669348805805L);
    private static long t = Long.reverse(8214565720323784704L);
-   private static String[] b = new String[NLoginCore_178.ad];
+   private static String[] ZKM_STR_B = new String[NLoginCore_178.ad];
    private static long h = Long.reverse(4913160985879796909L);
    private static long o = Long.reverse(3904354669348805805L);
    private static long l = Long.reverse(4913160985879796909L);
@@ -56,7 +56,7 @@ final class NLoginCore_178 implements NLoginInterface_026 {
    private static String a(int var0, long var1) {
       var1 ^= 78L;
       var1 ^= -4892950930752995798L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -100,10 +100,10 @@ final class NLoginCore_178 implements NLoginInterface_026 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Override
@@ -114,7 +114,7 @@ final class NLoginCore_178 implements NLoginInterface_026 {
    @Override
    public NLoginCore_364 a() {
       ProxyServer var1 = this.a.a();
-      return new NLoginCore_364(var1.getName(), var1.getVersion(), var1.getVersion(), NLoginCore_419.c, (boolean)c);
+      return new NLoginCore_364(var1.getName(), var1.getVersion(), var1.getVersion(), NLoginCore_419.c, (c != 0));
    }
 
    @Override
@@ -171,30 +171,30 @@ final class NLoginCore_178 implements NLoginInterface_026 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_138.D("ѼҌҏѤѐѴѠҍѣѭђїњѯҕҕқѶѽѫѷҡѨѩ", (byte)32, 68);
-               b[1] = NLoginCore_387.D("ҌҁѪѠҋхѢ҉҇щ҂ѝ", (byte)32, 68);
-               b[2] = NLoginCore_324.D("ѣҐцҀѣ҇ѼғѠѴјёіҚѱҙѲѽҐѳҕѡ҃Ѥҏҗ҈Ѥ҆ѽѶҡҨҎҋұѾҰҡҤ҅ѭ҂ҋѳҤҏҸҦҶҩґҸһѶңңҡҝұ҅ҿӉӂҹҧӏҼӇҨҨӋӏҡҡҔӄҷҷҴӛҳҗҜӟҫҨҩ", (byte)32, 68);
-               b[3] = NLoginCore_138.C("ѨхяѢѿҔѼ҃ҐҀѓѝ", (byte)32, 67);
-               b[4] = NLoginCore_110.E("ԐԌՎԨԱ՛՚ՐՋՓՉԤ", (byte)32, 69);
-               b[5] = NLoginCore_446.B("čĺðĪčıĦĽĊĞĂûĀńěŃĜħĺĝĿċĭĎĹŁĲĎİħĠŋŒĸĵśĨŚŋŎįėĪĲĮřşŕŚńūŧŬŅşŃĪŋĻİŕŭŐŉĶŧŏŤŊśĻűĺŵųőšŒŔŕņŃƄƈƃŇžŻƃŧƆůŌŏŌƑ", (byte)32, 66);
-               b[6] = NLoginCore_451.F("ԶՀ\u0557ԖԢԚՒԫԶՏՉԤ", (byte)32, 70);
+               ZKM_STR_B[0] = NLoginCore_138.D("ѼҌҏѤѐѴѠҍѣѭђїњѯҕҕқѶѽѫѷҡѨѩ", (byte)32, 68);
+               ZKM_STR_B[1] = NLoginCore_387.D("ҌҁѪѠҋхѢ҉҇щ҂ѝ", (byte)32, 68);
+               ZKM_STR_B[2] = NLoginCore_324.D("ѣҐцҀѣ҇ѼғѠѴјёіҚѱҙѲѽҐѳҕѡ҃Ѥҏҗ҈Ѥ҆ѽѶҡҨҎҋұѾҰҡҤ҅ѭ҂ҋѳҤҏҸҦҶҩґҸһѶңңҡҝұ҅ҿӉӂҹҧӏҼӇҨҨӋӏҡҡҔӄҷҷҴӛҳҗҜӟҫҨҩ", (byte)32, 68);
+               ZKM_STR_B[3] = NLoginCore_138.C("ѨхяѢѿҔѼ҃ҐҀѓѝ", (byte)32, 67);
+               ZKM_STR_B[4] = NLoginCore_110.E("ԐԌՎԨԱ՛՚ՐՋՓՉԤ", (byte)32, 69);
+               ZKM_STR_B[5] = NLoginCore_446.B("čĺðĪčıĦĽĊĞĂûĀńěŃĜħĺĝĿċĭĎĹŁĲĎİħĠŋŒĸĵśĨŚŋŎįėĪĲĮřşŕŚńūŧŬŅşŃĪŋĻİŕŭŐŉĶŧŏŤŊśĻűĺŵųőšŒŔŕņŃƄƈƃŇžŻƃŧƆůŌŏŌƑ", (byte)32, 66);
+               ZKM_STR_B[6] = NLoginCore_451.F("ԶՀ\u0557ԖԢԚՒԫԶՏՉԤ", (byte)32, 70);
                break;
             case 1:
-               b[0] = NLoginCore_076.F("ՃՓՖԫԗԻԧՔԪԴԘԼ՟ԲԼՂ\u0530ԺԼԡԟՂԯ\u0530", (byte)32, 70);
-               b[1] = NLoginCore_141.C("іҐѢяѮѤҔѽҌ҅ѓѝ", (byte)32, 67);
-               b[2] = NLoginCore_433.B("čĺðĪčıĦĽĊĞĂûĀńěŃĜħĺĝĿċĭĎĹŁĲĎİħĠŋŒĸĵśĨŚŋŎįėĬĵĝŎĹŢŐŠœĻŢťĠōōŋŇśįũųŬţőŹŦűŒŒŵŹŋŊōńƄƃŠŚźźŪŌŕŒœ", (byte)32, 66);
-               b[3] = NLoginCore_232.D("ѼсњћҊ҂ѧѢѧѯҖѝ", (byte)32, 68);
-               b[4] = NLoginCore_453.C("ф҈ѥѣ҈ѡѪўўюҋҋҋҘѤѰ҉ҎҋѠҗѻѨѩ", (byte)32, 67);
-               b[5] = NLoginCore_232.B("čĺðĪčıĦĽĊĞĂûĀńěŃĜħĺĝĿċĭĎĹŁĲĎİħĠŋŒĸĵśĨŚŋŎįėĪĲĮřşŕŚńūŧŬŅşŃĪŋĻİŕŭŐŉĶŧŏŤŊśĻűĺŵųőšŒŔŕņŃƄƈƃƋŧŦŻŰŧƁƋƆŧŪūťƘƗƈřŭŮƉƔƔŧ", (byte)32, 66);
-               b[6] = NLoginCore_076.C("҅њшъўѮѝѥѩҍҊѝ", (byte)32, 67);
+               ZKM_STR_B[0] = NLoginCore_076.F("ՃՓՖԫԗԻԧՔԪԴԘԼ՟ԲԼՂ\u0530ԺԼԡԟՂԯ\u0530", (byte)32, 70);
+               ZKM_STR_B[1] = NLoginCore_141.C("іҐѢяѮѤҔѽҌ҅ѓѝ", (byte)32, 67);
+               ZKM_STR_B[2] = NLoginCore_433.B("čĺðĪčıĦĽĊĞĂûĀńěŃĜħĺĝĿċĭĎĹŁĲĎİħĠŋŒĸĵśĨŚŋŎįėĬĵĝŎĹŢŐŠœĻŢťĠōōŋŇśįũųŬţőŹŦűŒŒŵŹŋŊōńƄƃŠŚźźŪŌŕŒœ", (byte)32, 66);
+               ZKM_STR_B[3] = NLoginCore_232.D("ѼсњћҊ҂ѧѢѧѯҖѝ", (byte)32, 68);
+               ZKM_STR_B[4] = NLoginCore_453.C("ф҈ѥѣ҈ѡѪўўюҋҋҋҘѤѰ҉ҎҋѠҗѻѨѩ", (byte)32, 67);
+               ZKM_STR_B[5] = NLoginCore_232.B("čĺðĪčıĦĽĊĞĂûĀńěŃĜħĺĝĿċĭĎĹŁĲĎİħĠŋŒĸĵśĨŚŋŎįėĪĲĮřşŕŚńūŧŬŅşŃĪŋĻİŕŭŐŉĶŧŏŤŊśĻűĺŵųőšŒŔŕņŃƄƈƃƋŧŦŻŰŧƁƋƆŧŪūťƘƗƈřŭŮƉƔƔŧ", (byte)32, 66);
+               ZKM_STR_B[6] = NLoginCore_076.C("҅њшъўѮѝѥѩҍҊѝ", (byte)32, 67);
                break;
             case 2:
-               b[0] = NLoginCore_138.D("҈ѨѮѼяэѮҍѫҌѳ҂ѱѣю҇ѵѭѵҍҞѰѶҢѼҒ҈ѡѶ҇ңѿ", (byte)32, 68);
+               ZKM_STR_B[0] = NLoginCore_138.D("҈ѨѮѼяэѮҍѫҌѳ҂ѱѣю҇ѵѭѵҍҞѰѶҢѼҒ҈ѡѶ҇ңѿ", (byte)32, 68);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_127.F("ԬՎԦԊՋԬԧԺ՝ԔԬԘԴԔԙԽ՝\u0530ԟԺաԣըԫՌԶՅԫՉ\u0530Ճե", (byte)32, 70);
+               ZKM_STR_B[0] = NLoginCore_127.F("ԬՎԦԊՋԬԧԺ՝ԔԬԘԴԔԙԽ՝\u0530ԟԺաԣըԫՌԶՅԫՉ\u0530Ճե", (byte)32, 70);
          }
       }
    }
@@ -263,7 +263,7 @@ final class NLoginCore_178 implements NLoginInterface_026 {
          var2 = y;
       }
 
-      return (boolean)var2;
+      return (var2 != 0);
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {
@@ -290,7 +290,7 @@ final class NLoginCore_178 implements NLoginInterface_026 {
 
    @Override
    public void U() {
-      NLoginCore_370.a(this.a, (boolean)a, (boolean)b);
+      NLoginCore_370.a(this.a, (a != 0), (b != 0));
    }
 
    @Override

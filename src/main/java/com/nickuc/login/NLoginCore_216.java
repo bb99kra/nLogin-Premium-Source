@@ -13,7 +13,7 @@ import lombok.Generated;
 
 public class NLoginCore_216 {
    private static long m = Long.reverse(-3602879701896396800L);
-   private static String[] b = new String[NLoginCore_216.o];
+   private static String[] ZKM_STR_B = new String[NLoginCore_216.o];
    private final NLoginCore_229 e;
    private static int o = (33554432 >>> 23 | 33554432 << ~23 + 1) & -1;
    private static int n = 67108864 >>> 24 | 67108864 << ~24 + 1;
@@ -30,7 +30,7 @@ public class NLoginCore_216 {
    private static int h = Integer.reverse(1073741824);
    private final String A;
    private static int f = Integer.reverse(Integer.MIN_VALUE);
-   private static String[] a = new String[n];
+   private static String[] ZKM_STR_A = new String[n];
    private static long l = Long.reverse(-5867497551766925360L);
    private static long j = Long.reverse(6958754186984247248L);
 
@@ -122,24 +122,24 @@ public class NLoginCore_216 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_127.D("֎գպմժ՚֟կ֑ի֡ռքպ֖գ֧փ֖ո֊֎էբ֮֡իֱ֧֖ձճ", (byte)121, 68);
-               b[1] = NLoginCore_433.B("ƩƳǉǁǥǀǮǃƻǋưǧǱǍǓƯǉǤǄǇƼǭǄǅ", (byte)121, 66);
-               b[2] = NLoginCore_076.F("ժ֮֏֭։֏վֳַ֢րս", (byte)121, 70);
-               b[3] = NLoginCore_004.C("Ֆ֔֍էռ֚՞ըս֛բը", (byte)121, 67);
+               ZKM_STR_B[0] = NLoginCore_127.D("֎գպմժ՚֟կ֑ի֡ռքպ֖գ֧փ֖ո֊֎էբ֮֡իֱ֧֖ձճ", (byte)121, 68);
+               ZKM_STR_B[1] = NLoginCore_433.B("ƩƳǉǁǥǀǮǃƻǋưǧǱǍǓƯǉǤǄǇƼǭǄǅ", (byte)121, 66);
+               ZKM_STR_B[2] = NLoginCore_076.F("ժ֮֏֭։֏վֳַ֢րս", (byte)121, 70);
+               ZKM_STR_B[3] = NLoginCore_004.C("Ֆ֔֍էռ֚՞ըս֛բը", (byte)121, 67);
                break;
             case 1:
-               b[0] = NLoginCore_110.C("֎գպմժ՚֟կ֑ի֡ռքպ֖գ֧փ֖ո֊֚ւխ֍ռְֱֶ֠\u058b֒", (byte)121, 67);
-               b[1] = NLoginCore_141.A("ƩƳǉǁǥǀǮǃƻǋưǡǠǅǵǐǒǯǜǍǗǗǄǅ", (byte)121, 65);
-               b[2] = NLoginCore_232.B("ǒƫƣǬƽǞǏǇǯǌǠǓǳƮǕǧƹƱǳǥǘǗǄǅ", (byte)121, 66);
-               b[3] = NLoginCore_427.F("֣օ֥\u058c֏վ\u058c֥֫ք֢ս", (byte)121, 70);
+               ZKM_STR_B[0] = NLoginCore_110.C("֎գպմժ՚֟կ֑ի֡ռքպ֖գ֧փ֖ո֊֚ւխ֍ռְֱֶ֠\u058b֒", (byte)121, 67);
+               ZKM_STR_B[1] = NLoginCore_141.A("ƩƳǉǁǥǀǮǃƻǋưǡǠǅǵǐǒǯǜǍǗǗǄǅ", (byte)121, 65);
+               ZKM_STR_B[2] = NLoginCore_232.B("ǒƫƣǬƽǞǏǇǯǌǠǓǳƮǕǧƹƱǳǥǘǗǄǅ", (byte)121, 66);
+               ZKM_STR_B[3] = NLoginCore_427.F("֣օ֥\u058c֏վ\u058c֥֫ք֢ս", (byte)121, 70);
                break;
             case 2:
-               b[0] = NLoginCore_553.D("֗֓ոխղ֎֛֖՝֓լ՜ք֚ճշմւ֛֠֊ְ֢֫փֱ֢֒֯ֆ֭ւ", (byte)121, 68);
+               ZKM_STR_B[0] = NLoginCore_553.D("֗֓ոխղ֎֛֖՝֓լ՜ք֚ճշմւ֛֠֊ְ֢֫փֱ֢֒֯ֆ֭ւ", (byte)121, 68);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_091.F("ծ\u058bքֱֳ֛֔իֱ\u058cֱցֈ֖֖\u0590ֵ֑֑֛֘֔ֈ։", (byte)121, 70);
+               ZKM_STR_B[0] = NLoginCore_091.F("ծ\u058bքֱֳ֛֔իֱ\u058cֱցֈ֖֖\u0590ֵ֑֑֛֘֔ֈ։", (byte)121, 70);
          }
       }
    }
@@ -147,7 +147,7 @@ public class NLoginCore_216 {
    private static String a(int var0, long var1) {
       var1 ^= 115L;
       var1 ^= 7251430571362918486L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -191,10 +191,10 @@ public class NLoginCore_216 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Generated
@@ -203,6 +203,6 @@ public class NLoginCore_216 {
    }
 
    public String getName() {
-      return this.e != NLoginCore_229.c && NLoginCore_329.d.ar() ? BCryptHashProvider.g(this.A, (boolean)(this.e == NLoginCore_229.a ? a : b)) : this.A;
+      return this.e != NLoginCore_229.c && NLoginCore_329.d.ar() ? BCryptHashProvider.g(this.A, ((this.e == NLoginCore_229.a ? a : b) != 0)) : this.A;
    }
 }

@@ -52,7 +52,7 @@ public abstract class HikariConnectionPool implements NLoginCore_459 {
    private static long bj = Long.reverse(-7611824465769637790L);
    private static int x = 5120 >>> 137 | 5120 << -137;
    private static long ax = Long.reverse(-7611824465769637790L);
-   private static String[] a = new String[bd];
+   private static String[] ZKM_STR_A = new String[bd];
    private static long af = Long.reverse(-4873635892328376222L);
    private static long bb = Long.reverse(3026418949592973312L);
    private static long ba = Long.reverse(-7611824465769637790L);
@@ -82,7 +82,7 @@ public abstract class HikariConnectionPool implements NLoginCore_459 {
    private static long av = Long.reverse(3026418949592973312L);
    private static long bk = Long.reverse(3026418949592973312L);
    private static int ag = Integer.reverse(-1879048192);
-   private static String[] b = new String[be];
+   private static String[] ZKM_STR_B = new String[be];
    private static int ah = Integer.reverse(-1);
    private static long bg = Long.reverse(-7611824465769637790L);
    private static long l = Long.reverse(-7611824465769637790L);
@@ -107,7 +107,7 @@ public abstract class HikariConnectionPool implements NLoginCore_459 {
    private static String a(int var0, long var1) {
       var1 ^= 84L;
       var1 ^= 4189878986798920054L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -151,10 +151,10 @@ public abstract class HikariConnectionPool implements NLoginCore_459 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static void b() {
@@ -201,54 +201,54 @@ public abstract class HikariConnectionPool implements NLoginCore_459 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_183.B("ÞìÅþçæÚÒĊÿĉéĈĐúÒčĕõÞÞéæç", (byte)10, 66);
-               b[1] = NLoginCore_183.C("ЌНЛЉЪЮЍПАФепётјЦэјъчЛџЪанЛдЧѕеѨь", (byte)10, 67);
-               b[2] = NLoginCore_530.F("ԎԐԛԬԲԭԖՆՇՁԢԔՅԄԬԶՁՎԈԄԤԬԙԚ", (byte)10, 70);
-               b[3] = NLoginCore_127.F("ԋԹԶԍԒԟӽӿԑԚԈԎ", (byte)10, 70);
-               b[4] = NLoginCore_530.D("зРХчэкПЭгѕшбуювгГШЬКрЬбглмОвујѨй", (byte)10, 68);
-               b[5] = NLoginCore_183.B("çþďÅČåèíïáÍÛ", (byte)10, 66);
-               b[6] = NLoginCore_384.D("ЉКьШРЇЫлбэгррюДзЕъоЬдяЦЧ", (byte)10, 68);
-               b[7] = NLoginCore_427.C("РЌУУццЩоОШТпВЭюЗеЪЖћлйЦЧ", (byte)10, 67);
-               b[8] = NLoginCore_201.C("еЧрИийбНІєѐєШФйИєэЖѠЙЯПзѠеИїѤџзыоѨѨЩѧтрѥѕєѕђЪѹѨвяѷжязщцч", (byte)10, 67);
-               b[9] = NLoginCore_446.B("àÌããĆĆéþÞèâÿÒíĎ×õêÖěûùæç", (byte)10, 66);
-               b[10] = NLoginCore_173.A("÷ÄéÞĊĐÚþëĄÕÍčåÌÛĝĒýñ×ÙģÿĞþĤ÷ĤĕõĥýĘęĈïĭıĠôÿĠû", (byte)10, 65);
-               b[11] = NLoginCore_092.A("÷êËýĉÙïĉēâöÛ", (byte)10, 65);
-               b[12] = NLoginCore_559.B("öâêèÛäüĆÊĔĎóÐęĊîÚ÷êþėùæç", (byte)10, 66);
-               b[13] = NLoginCore_553.D("чОкШИЙкШЍАщВБъзфЎШЮіКмпрюяѕфсХъш", (byte)10, 68);
-               b[14] = NLoginCore_451.B("ÞìÅþçæÚÒĊÿĉéĈĐúÒčĕõÞÞéæç", (byte)10, 66);
-               b[15] = NLoginCore_138.F("ӷԶԒԬԑԵՃԳԧԄԒԀԝԸԽԋԸԩԻԐՉԜԙԚ", (byte)10, 70);
-               b[16] = NLoginCore_553.A("ĆÿýþÊÊâóòÏĕÔćâøôüÙìċàďæç", (byte)10, 65);
-               b[17] = NLoginCore_453.A("ÞÜÚëăčđĆÞï÷ďáĊëÚÖĈċÛĈÿčáďáðĖèþĔĥ", (byte)10, 65);
-               b[18] = NLoginCore_530.E("ӾԕԱԎԬӺԃԥԱԡԪՂԇՀԍԄԦԼԋՓՌԾՕՀՏԣՌՏԻԤ\u0558Չ՛ԙՎԲՍԟՎ՟բ՟՜ԼԳ\u0557էՉԽԻՙԱ՝ղԹԺ", (byte)10, 69);
+               ZKM_STR_B[0] = NLoginCore_183.B("ÞìÅþçæÚÒĊÿĉéĈĐúÒčĕõÞÞéæç", (byte)10, 66);
+               ZKM_STR_B[1] = NLoginCore_183.C("ЌНЛЉЪЮЍПАФепётјЦэјъчЛџЪанЛдЧѕеѨь", (byte)10, 67);
+               ZKM_STR_B[2] = NLoginCore_530.F("ԎԐԛԬԲԭԖՆՇՁԢԔՅԄԬԶՁՎԈԄԤԬԙԚ", (byte)10, 70);
+               ZKM_STR_B[3] = NLoginCore_127.F("ԋԹԶԍԒԟӽӿԑԚԈԎ", (byte)10, 70);
+               ZKM_STR_B[4] = NLoginCore_530.D("зРХчэкПЭгѕшбуювгГШЬКрЬбглмОвујѨй", (byte)10, 68);
+               ZKM_STR_B[5] = NLoginCore_183.B("çþďÅČåèíïáÍÛ", (byte)10, 66);
+               ZKM_STR_B[6] = NLoginCore_384.D("ЉКьШРЇЫлбэгррюДзЕъоЬдяЦЧ", (byte)10, 68);
+               ZKM_STR_B[7] = NLoginCore_427.C("РЌУУццЩоОШТпВЭюЗеЪЖћлйЦЧ", (byte)10, 67);
+               ZKM_STR_B[8] = NLoginCore_201.C("еЧрИийбНІєѐєШФйИєэЖѠЙЯПзѠеИїѤџзыоѨѨЩѧтрѥѕєѕђЪѹѨвяѷжязщцч", (byte)10, 67);
+               ZKM_STR_B[9] = NLoginCore_446.B("àÌããĆĆéþÞèâÿÒíĎ×õêÖěûùæç", (byte)10, 66);
+               ZKM_STR_B[10] = NLoginCore_173.A("÷ÄéÞĊĐÚþëĄÕÍčåÌÛĝĒýñ×ÙģÿĞþĤ÷ĤĕõĥýĘęĈïĭıĠôÿĠû", (byte)10, 65);
+               ZKM_STR_B[11] = NLoginCore_092.A("÷êËýĉÙïĉēâöÛ", (byte)10, 65);
+               ZKM_STR_B[12] = NLoginCore_559.B("öâêèÛäüĆÊĔĎóÐęĊîÚ÷êþėùæç", (byte)10, 66);
+               ZKM_STR_B[13] = NLoginCore_553.D("чОкШИЙкШЍАщВБъзфЎШЮіКмпрюяѕфсХъш", (byte)10, 68);
+               ZKM_STR_B[14] = NLoginCore_451.B("ÞìÅþçæÚÒĊÿĉéĈĐúÒčĕõÞÞéæç", (byte)10, 66);
+               ZKM_STR_B[15] = NLoginCore_138.F("ӷԶԒԬԑԵՃԳԧԄԒԀԝԸԽԋԸԩԻԐՉԜԙԚ", (byte)10, 70);
+               ZKM_STR_B[16] = NLoginCore_553.A("ĆÿýþÊÊâóòÏĕÔćâøôüÙìċàďæç", (byte)10, 65);
+               ZKM_STR_B[17] = NLoginCore_453.A("ÞÜÚëăčđĆÞï÷ďáĊëÚÖĈċÛĈÿčáďáðĖèþĔĥ", (byte)10, 65);
+               ZKM_STR_B[18] = NLoginCore_530.E("ӾԕԱԎԬӺԃԥԱԡԪՂԇՀԍԄԦԼԋՓՌԾՕՀՏԣՌՏԻԤ\u0558Չ՛ԙՎԲՍԟՎ՟բ՟՜ԼԳ\u0557էՉԽԻՙԱ՝ղԹԺ", (byte)10, 69);
                break;
             case 1:
-               b[0] = NLoginCore_183.F("ԑԟӸԱԚԙԍԅԽԲԾԘԃՋԘՈԹՍԾՊԮՌՕՌԬԑ\u0530՛ԓԖԚԼ", (byte)10, 70);
-               b[1] = NLoginCore_004.E("ӿԐԎӼԝԡԀԒԃԗԨԲՄԵՋԙՀՋԽԺԎԊՀՊՈԔՑՅՆԹԕՇ", (byte)10, 69);
-               b[2] = NLoginCore_553.B("ÛÝèùÿúãēĔĎîÿõĈěêÛĊćÖïéæç", (byte)10, 66);
-               b[3] = NLoginCore_453.A("øìÚĂìÚßàñÓĈÛ", (byte)10, 65);
-               b[4] = NLoginCore_092.C("зРХчэкПЭгѕшбуювгГШЬКрдЮНікнѦЦўыѝ", (byte)10, 67);
-               b[5] = NLoginCore_138.A("õêÍĐØÌÑáæČâÛ", (byte)10, 65);
-               b[6] = NLoginCore_446.E("ӼԍԿԛԓӺԞԮԤՀԧԫՈԵԾԋԫՋՉԞՀՒԙԚ", (byte)10, 69);
-               b[7] = NLoginCore_091.A("àÌããĆĆéþÞèåāāąûĉæĕĒČĀěðãßĒĘģĥæåá", (byte)10, 65);
-               b[8] = NLoginCore_446.C("еЧрИийбНІєѐєШФйИєэЖѠЙЯПзѠеИїѤџзыоѨѨЩѧтрѥѕєєцѹгзѴчѫњбѵљцч", (byte)10, 67);
-               b[9] = NLoginCore_451.A("àÌããĆĆéþÞèäĕÔúûĄä÷ýúïúĘăĤöĦĝáãåë", (byte)10, 65);
-               b[10] = NLoginCore_453.B("÷ÄéÞĊĐÚþëĄÕÍčåÌÛĝĒýñ×ÙģÿĞþĤ÷ĤĕõĥèĊāĭĨİđĈĒįĒû", (byte)10, 66);
-               b[11] = NLoginCore_173.B("íîÜÊđëÝéĔðêÛ", (byte)10, 66);
-               b[12] = NLoginCore_521.E("ԩԕԝԛԎԗԯԹӽՇԿԽԙԧՂԠՄՈԚԭԌԬԙԚ", (byte)10, 69);
-               b[13] = NLoginCore_397.A("ćÞúèØÙúèÍÐĉÒÑĊ÷ĄÎèîĖÚýóîĖôēûĢĈúī", (byte)10, 65);
-               b[14] = NLoginCore_232.E("ԑԟӸԱԚԙԍԅԽԲԽԊԡԃՉԄԻՇՅԣՉԐՑԾԉԲՄՑԻԼՖԺ", (byte)10, 69);
-               b[15] = NLoginCore_201.F("ӷԶԒԬԑԵՃԳԧԄԔԫԛӾԷՍՍՄՊԭԢԬԙԚ", (byte)10, 70);
-               b[16] = NLoginCore_092.D("цпноЊЊТгвЏєЯиюкуКюипЪЛТёѣХхѨкцои", (byte)10, 68);
-               b[17] = NLoginCore_232.D("ОМКЫуэёцОЯзяСъЫКЖшыЛшпњићСѠѧѧўѝѧ", (byte)10, 68);
-               b[18] = NLoginCore_092.D("ЋТоЛйЇАвоЮзяДэКБгщИѠљыѢэќаљќшбѥіѨЦћпњЬћѬѯѬѨьѳѕаейѝнкиљцч", (byte)10, 68);
+               ZKM_STR_B[0] = NLoginCore_183.F("ԑԟӸԱԚԙԍԅԽԲԾԘԃՋԘՈԹՍԾՊԮՌՕՌԬԑ\u0530՛ԓԖԚԼ", (byte)10, 70);
+               ZKM_STR_B[1] = NLoginCore_004.E("ӿԐԎӼԝԡԀԒԃԗԨԲՄԵՋԙՀՋԽԺԎԊՀՊՈԔՑՅՆԹԕՇ", (byte)10, 69);
+               ZKM_STR_B[2] = NLoginCore_553.B("ÛÝèùÿúãēĔĎîÿõĈěêÛĊćÖïéæç", (byte)10, 66);
+               ZKM_STR_B[3] = NLoginCore_453.A("øìÚĂìÚßàñÓĈÛ", (byte)10, 65);
+               ZKM_STR_B[4] = NLoginCore_092.C("зРХчэкПЭгѕшбуювгГШЬКрдЮНікнѦЦўыѝ", (byte)10, 67);
+               ZKM_STR_B[5] = NLoginCore_138.A("õêÍĐØÌÑáæČâÛ", (byte)10, 65);
+               ZKM_STR_B[6] = NLoginCore_446.E("ӼԍԿԛԓӺԞԮԤՀԧԫՈԵԾԋԫՋՉԞՀՒԙԚ", (byte)10, 69);
+               ZKM_STR_B[7] = NLoginCore_091.A("àÌããĆĆéþÞèåāāąûĉæĕĒČĀěðãßĒĘģĥæåá", (byte)10, 65);
+               ZKM_STR_B[8] = NLoginCore_446.C("еЧрИийбНІєѐєШФйИєэЖѠЙЯПзѠеИїѤџзыоѨѨЩѧтрѥѕєєцѹгзѴчѫњбѵљцч", (byte)10, 67);
+               ZKM_STR_B[9] = NLoginCore_451.A("àÌããĆĆéþÞèäĕÔúûĄä÷ýúïúĘăĤöĦĝáãåë", (byte)10, 65);
+               ZKM_STR_B[10] = NLoginCore_453.B("÷ÄéÞĊĐÚþëĄÕÍčåÌÛĝĒýñ×ÙģÿĞþĤ÷ĤĕõĥèĊāĭĨİđĈĒįĒû", (byte)10, 66);
+               ZKM_STR_B[11] = NLoginCore_173.B("íîÜÊđëÝéĔðêÛ", (byte)10, 66);
+               ZKM_STR_B[12] = NLoginCore_521.E("ԩԕԝԛԎԗԯԹӽՇԿԽԙԧՂԠՄՈԚԭԌԬԙԚ", (byte)10, 69);
+               ZKM_STR_B[13] = NLoginCore_397.A("ćÞúèØÙúèÍÐĉÒÑĊ÷ĄÎèîĖÚýóîĖôēûĢĈúī", (byte)10, 65);
+               ZKM_STR_B[14] = NLoginCore_232.E("ԑԟӸԱԚԙԍԅԽԲԽԊԡԃՉԄԻՇՅԣՉԐՑԾԉԲՄՑԻԼՖԺ", (byte)10, 69);
+               ZKM_STR_B[15] = NLoginCore_201.F("ӷԶԒԬԑԵՃԳԧԄԔԫԛӾԷՍՍՄՊԭԢԬԙԚ", (byte)10, 70);
+               ZKM_STR_B[16] = NLoginCore_092.D("цпноЊЊТгвЏєЯиюкуКюипЪЛТёѣХхѨкцои", (byte)10, 68);
+               ZKM_STR_B[17] = NLoginCore_232.D("ОМКЫуэёцОЯзяСъЫКЖшыЛшпњићСѠѧѧўѝѧ", (byte)10, 68);
+               ZKM_STR_B[18] = NLoginCore_092.D("ЋТоЛйЇАвоЮзяДэКБгщИѠљыѢэќаљќшбѥіѨЦћпњЬћѬѯѬѨьѳѕаейѝнкиљцч", (byte)10, 68);
                break;
             case 2:
-               b[0] = NLoginCore_091.B("çÞÞÝĆûČĎĔÿíð×ô÷÷ýėėėĒďæç", (byte)10, 66);
+               ZKM_STR_B[0] = NLoginCore_091.B("çÞÞÝĆûČĎĔÿíð×ô÷÷ýėėėĒďæç", (byte)10, 66);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_091.E("ӺԿԀԖԳԂՂԑԇԧԟԀԴԥԸԈԙԢԞՐ\u0530ԜԙԚ", (byte)10, 69);
+               ZKM_STR_B[0] = NLoginCore_091.E("ӺԿԀԖԳԂՂԑԇԧԟԀԴԥԸԈԙԢԞՐ\u0530ԜԙԚ", (byte)10, 69);
          }
       }
    }
@@ -289,7 +289,7 @@ public abstract class HikariConnectionPool implements NLoginCore_459 {
                var12.setMinimumIdle(x);
                var12.setMaxLifetime(TimeUnit.MINUTES.toMillis(y));
                var12.setConnectionTimeout(TimeUnit.SECONDS.toMillis(z));
-               this.a(var6, (boolean)aa);
+               this.a(var6, (aa != 0));
                var12.setDataSourceProperties(var6);
                if (var4 != null) {
                   var4.accept(var12);
@@ -312,7 +312,7 @@ public abstract class HikariConnectionPool implements NLoginCore_459 {
 
                var6.putIfAbsent(a(al, am ^ an), var3.z());
                var6.putIfAbsent(a(ao, ap), var3.j());
-               this.a(var6, (boolean)aq);
+               this.a(var6, (aq != 0));
                this.a(var3);
                String var9 = this.a(var3);
                this.g = new NLoginCore_197(var1, var7, var9, var6, null);

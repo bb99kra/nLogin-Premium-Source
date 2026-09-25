@@ -13,14 +13,14 @@ import lombok.Generated;
 
 public class NLoginCore_015 implements NLoginInterface_006 {
    public static final NLoginCore_015 a = new NLoginCore_015();
-   private static String[] b = new String[NLoginCore_015.h];
+   private static String[] ZKM_STR_B = new String[NLoginCore_015.h];
    private static long b = Long.reverse(6161421232654485144L);
    private static int a = Integer.reverse(0);
    private static int f = Integer.MIN_VALUE >>> 31 | Integer.MIN_VALUE << -31;
    private static int g = 16384 >>> 110 | 16384 << ~110 + 1;
    private static long d = Long.reverse(-4899916394579099648L);
    private static long c;
-   private static String[] a = new String[g];
+   private static String[] ZKM_STR_A = new String[g];
    private static int h = Integer.reverse(Integer.MIN_VALUE);
    private static int e = Integer.reverse(Integer.MIN_VALUE);
 
@@ -35,7 +35,7 @@ public class NLoginCore_015 implements NLoginInterface_006 {
 
    @Override
    public boolean i(String var1) {
-      return (boolean)e;
+      return (e != 0);
    }
 
    @Generated
@@ -62,7 +62,7 @@ public class NLoginCore_015 implements NLoginInterface_006 {
    private static String a(int var0, long var1) {
       var1 ^= 61L;
       var1 ^= 5432086587237976437L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -106,15 +106,15 @@ public class NLoginCore_015 implements NLoginInterface_006 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Override
    public void k(String var1) {
-      System.out.println(NLoginCore_065.d(var1, (boolean)f));
+      System.out.println(NLoginCore_065.d(var1, (f != 0)));
    }
 
    private static void b() {
@@ -161,18 +161,18 @@ public class NLoginCore_015 implements NLoginInterface_006 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_223.A("ũŒŉōŭĲŐŷŕŅŎŃ", (byte)62, 65);
+               ZKM_STR_B[0] = NLoginCore_223.A("ũŒŉōŭĲŐŷŕŅŎŃ", (byte)62, 65);
                break;
             case 1:
-               b[0] = NLoginCore_232.E("ՐաաբթՀԹնծՐձյՔըլւՏՃջղնֆՍՎ", (byte)62, 69);
+               ZKM_STR_B[0] = NLoginCore_232.E("ՐաաբթՀԹնծՐձյՔըլւՏՃջղնֆՍՎ", (byte)62, 69);
                break;
             case 2:
-               b[0] = NLoginCore_427.F("ԯԯՒԶոՒշՆծղոՙխճթՙւ\u0557ակՐ՟ևղՇ\u0558շՆշւՌփ", (byte)62, 70);
+               ZKM_STR_B[0] = NLoginCore_427.F("ԯԯՒԶոՒշՆծղոՙխճթՙւ\u0557ակՐ՟ևղՇ\u0558շՆշւՌփ", (byte)62, 70);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_553.D("ҹӀҼӃӅӧҾӞӢӬӞұӓҳҲӍӭӬӘӫӉӇӘӗӞӺӯӳӲӔӯӹ", (byte)62, 68);
+               ZKM_STR_B[0] = NLoginCore_553.D("ҹӀҼӃӅӧҾӞӢӬӞұӓҳҲӍӭӬӘӫӉӇӘӗӞӺӯӳӲӔӯӹ", (byte)62, 68);
          }
       }
    }

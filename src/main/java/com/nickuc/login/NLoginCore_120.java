@@ -14,12 +14,12 @@ import org.bukkit.plugin.messaging.Messenger;
 import org.bukkit.plugin.messaging.PluginMessageListener;
 
 public class NLoginCore_120 extends NLoginCore_483<NLoginCore_089> {
-   private static String[] c = new String[NLoginCore_120.w];
+   private static String[] ZKM_STR_A = new String[NLoginCore_120.w];
    private static long p = Long.reverse(8978897489676811223L);
    private static long s = Long.reverse(-1873497444986126336L);
    private static int q = (67108864 >>> 25 | 67108864 << -25) & -1;
    private static int o = (-1 >>> 138 | -1 << ~138 + 1) & -1;
-   private static String[] d = new String[NLoginCore_120.x];
+   private static String[] ZKM_STR_B = new String[NLoginCore_120.x];
    private static long v = Long.reverse(-1873497444986126336L);
    private static int t = (384 >>> 71 | 384 << -71) & -1;
    private static int n = Integer.reverse(Integer.MIN_VALUE);
@@ -40,7 +40,7 @@ public class NLoginCore_120 extends NLoginCore_483<NLoginCore_089> {
    private static String a(int var0, long var1) {
       var1 ^= 103L;
       var1 ^= 4493939641104002683L;
-      if (c[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -84,10 +84,10 @@ public class NLoginCore_120 extends NLoginCore_483<NLoginCore_089> {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         c[var0] = new String(var3.doFinal(Base64.getDecoder().decode(d[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return c[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static void b() {
@@ -134,24 +134,24 @@ public class NLoginCore_120 extends NLoginCore_483<NLoginCore_089> {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               d[0] = NLoginCore_521.E("ԲՇԙՇԖԝՉԺԈԎԊՊԫՎՍՌԓՏՊՓԡԨԫԷԚ՞ՙԙՒՀՌՂԭ՞ՈԶՕԢդդԵ՝աԴ", (byte)16, 69);
-               d[1] = NLoginCore_397.B("åĖČęĉĈĝÖčíÿĐĘáöçßāħêĢġīĈĀĎġĆĳđąĪ", (byte)16, 66);
-               d[2] = NLoginCore_324.B("äĆÕïç×ČØĐāâēēûģñĖþóĕþěÿĂĢĚðĪĢóïĶðćıĵďėúčĵúùć", (byte)16, 66);
-               d[3] = NLoginCore_201.B("äĆÕïç×ČØĐāâēēûģñĖþóĕþěÿĂĢĚðĪĢóïĶðćıĵďėúčĵúùć", (byte)16, 66);
+               ZKM_STR_B[0] = NLoginCore_521.E("ԲՇԙՇԖԝՉԺԈԎԊՊԫՎՍՌԓՏՊՓԡԨԫԷԚ՞ՙԙՒՀՌՂԭ՞ՈԶՕԢդդԵ՝աԴ", (byte)16, 69);
+               ZKM_STR_B[1] = NLoginCore_397.B("åĖČęĉĈĝÖčíÿĐĘáöçßāħêĢġīĈĀĎġĆĳđąĪ", (byte)16, 66);
+               ZKM_STR_B[2] = NLoginCore_324.B("äĆÕïç×ČØĐāâēēûģñĖþóĕþěÿĂĢĚðĪĢóïĶðćıĵďėúčĵúùć", (byte)16, 66);
+               ZKM_STR_B[3] = NLoginCore_201.B("äĆÕïç×ČØĐāâēēûģñĖþóĕþěÿĂĢĚðĪĢóïĶðćıĵďėúčĵúùć", (byte)16, 66);
                break;
             case 1:
-               d[0] = NLoginCore_183.D("ыѠвѠЯжѢѓСЧУѣфѧѦѥЬѨѣѬксфѐгѷѲвѫљѥћѸїмҁѣѠѼѤ҅Ѳчэ", (byte)16, 68);
-               d[1] = NLoginCore_451.C("ЫќђџяюѣМѓгхіўЧмЭХчѭаѨѦЭіЬщяјѕѼѽѬ", (byte)16, 67);
-               d[2] = NLoginCore_110.E("ԑԳԂԜԔԄԹԅԽԮԏՀՀԨՐԞՃԫԠՂԫՈԬԯՏՇԝ\u0557ՏԠԜգ՛եՒՄՕԻՖՆՆՅաԴ", (byte)16, 69);
-               d[3] = NLoginCore_223.D("ЪьЛеЭНђОічШљљсѩзќфйћфѡхшѨѠжѰѨйеѼѰѱѯѼѽк҅ѽѹѰѲэ", (byte)16, 68);
+               ZKM_STR_B[0] = NLoginCore_183.D("ыѠвѠЯжѢѓСЧУѣфѧѦѥЬѨѣѬксфѐгѷѲвѫљѥћѸїмҁѣѠѼѤ҅Ѳчэ", (byte)16, 68);
+               ZKM_STR_B[1] = NLoginCore_451.C("ЫќђџяюѣМѓгхіўЧмЭХчѭаѨѦЭіЬщяјѕѼѽѬ", (byte)16, 67);
+               ZKM_STR_B[2] = NLoginCore_110.E("ԑԳԂԜԔԄԹԅԽԮԏՀՀԨՐԞՃԫԠՂԫՈԬԯՏՇԝ\u0557ՏԠԜգ՛եՒՄՕԻՖՆՆՅաԴ", (byte)16, 69);
+               ZKM_STR_B[3] = NLoginCore_223.D("ЪьЛеЭНђОічШљљсѩзќфйћфѡхшѨѠжѰѨйеѼѰѱѯѼѽк҅ѽѹѰѲэ", (byte)16, 68);
                break;
             case 2:
-               d[0] = NLoginCore_575.D("ЪбљЮгђжхћйіЭ", (byte)16, 68);
+               ZKM_STR_B[0] = NLoginCore_575.D("ЪбљЮгђжхћйіЭ", (byte)16, 68);
             case 3:
             default:
                break;
             case 4:
-               d[0] = NLoginCore_471.A("ēçĈðøÜæďòÙČęÛÝýæĤĕûéĊīòó", (byte)16, 65);
+               ZKM_STR_B[0] = NLoginCore_471.A("ēçĈðøÜæďòÙČęÛÝýæĤĕûéĊīòó", (byte)16, 65);
          }
       }
    }

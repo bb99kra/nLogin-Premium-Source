@@ -13,14 +13,14 @@ import lombok.Generated;
 
 public class NLoginCore_038 implements NLoginInterface_010, NLoginInterface_035 {
    private static int e = (2 >>> 1 | 2 << ~1 + 1) & -1;
-   private static String[] b = new String[NLoginCore_038.n];
+   private static String[] ZKM_STR_B = new String[NLoginCore_038.n];
    private static long c;
    private final NLoginCore_211 ac;
    private static long l = Long.reverse(-4899916394579099648L);
    private static int j = Integer.reverse(Integer.MIN_VALUE);
    private static int n = Integer.reverse(1073741824);
    private static int f = (0 >>> 70 | 0 << ~70 + 1) & -1;
-   private static String[] a = new String[NLoginCore_038.m];
+   private static String[] ZKM_STR_A = new String[NLoginCore_038.m];
    private static int c = (0 >>> 63 | 0 << -63) & -1;
    private static int b = Integer.reverse(Integer.MIN_VALUE);
    private static int m = Integer.reverse(1073741824);
@@ -33,7 +33,7 @@ public class NLoginCore_038 implements NLoginInterface_010, NLoginInterface_035 
 
    @Override
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
-      return (boolean)(var1.a().n() == a && var1.a().q() && this.a(var3).av() ? b : c);
+      return ((var1.a() != 0).n() == a && var1.a().q() && this.a(var3).av() ? b : c);
    }
 
    static {
@@ -95,20 +95,20 @@ public class NLoginCore_038 implements NLoginInterface_010, NLoginInterface_035 
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_446.E("ԊԤԎԃԵԲӿԨӼԗԄՌԶՎՅԩԧԦՎԦՕԟԜԝ", (byte)13, 69);
-               b[1] = NLoginCore_173.B("ČñäçĐôāĔöîĝđèúÿċòëÿåėðççĕĉćß÷īĄĂįĨğĂíĨīĂĦĲęĞĘĕĖĿěĒďĭĖćĲĚąăĄĜčĨĺıőĭĝŖŊŋĴĔŕĺĸġ", (byte)13, 66);
+               ZKM_STR_B[0] = NLoginCore_446.E("ԊԤԎԃԵԲӿԨӼԗԄՌԶՎՅԩԧԦՎԦՕԟԜԝ", (byte)13, 69);
+               ZKM_STR_B[1] = NLoginCore_173.B("ČñäçĐôāĔöîĝđèúÿċòëÿåėðççĕĉćß÷īĄĂįĨğĂíĨīĂĦĲęĞĘĕĖĿěĒďĭĖćĲĚąăĄĜčĨĺıőĭĝŖŊŋĴĔŕĺĸġ", (byte)13, 66);
                break;
             case 1:
-               b[0] = NLoginCore_138.C("НзСЖшхВлЏЪЖПммОКѐлїѣштЯа", (byte)13, 67);
-               b[1] = NLoginCore_427.F("ԼԡԔԗՀԤԱՄԦԞՍՁԘԪԯԻԢԛԯԕՇԠԗԗՅԹԷԏԧ՛ԴԲ՟\u0558ՏԲԝ\u0558՛ԲՖբՉՎՈՅՆկՋՂԿ՝ՆԷբՊԵԳԴՌԽ\u0558ժաղ՜ետ՟ևջՇֈվ\u0558Ց", (byte)13, 70);
+               ZKM_STR_B[0] = NLoginCore_138.C("НзСЖшхВлЏЪЖПммОКѐлїѣштЯа", (byte)13, 67);
+               ZKM_STR_B[1] = NLoginCore_427.F("ԼԡԔԗՀԤԱՄԦԞՍՁԘԪԯԻԢԛԯԕՇԠԗԗՅԹԷԏԧ՛ԴԲ՟\u0558ՏԲԝ\u0558՛ԲՖբՉՎՈՅՆկՋՂԿ՝ՆԷբՊԵԳԴՌԽ\u0558ժաղ՜ետ՟ևջՇֈվ\u0558Ց", (byte)13, 70);
                break;
             case 2:
-               b[0] = NLoginCore_127.E("ԠԌԳՃԞԹՅԶԥԳԦՎԷԩՎՀՀԲՒԭԨԡՂՇՎՈԩՙ՝ԨաՂ", (byte)13, 69);
+               ZKM_STR_B[0] = NLoginCore_127.E("ԠԌԳՃԞԹՅԶԥԳԦՎԷԩՎՀՀԲՒԭԨԡՂՇՎՈԩՙ՝ԨաՂ", (byte)13, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_471.F("ԮԢՁԽԺԒԗԻԢԉԊԩԮԭԂԃՇՈՏԩՅԯԜԝ", (byte)13, 70);
+               ZKM_STR_B[0] = NLoginCore_471.F("ԮԢՁԽԺԒԗԻԢԉԊԩԮԭԂԃՇՈՏԩՅԯԜԝ", (byte)13, 70);
          }
       }
    }
@@ -133,7 +133,7 @@ public class NLoginCore_038 implements NLoginInterface_010, NLoginInterface_035 
    private static String a(int var0, long var1) {
       var1 ^= 61L;
       var1 ^= 3739436817657354170L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -177,10 +177,10 @@ public class NLoginCore_038 implements NLoginInterface_010, NLoginInterface_035 
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Override

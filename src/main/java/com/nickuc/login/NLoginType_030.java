@@ -18,7 +18,7 @@ public abstract class NLoginType_030 implements NLoginInterface_039, NLoginInter
    private static int s = 0 >>> 119 | 0 << -119;
    private static int v = Integer.reverse(1073741824);
    private static long c;
-   private static String[] b = new String[v];
+   private static String[] ZKM_STR_B = new String[v];
    private static int b = Integer.reverse(0);
    private final NLoginCore_487 a;
    private static int t = (256 >>> 8 | 256 << -8) & -1;
@@ -37,7 +37,7 @@ public abstract class NLoginType_030 implements NLoginInterface_039, NLoginInter
    private static int c = Integer.reverse(0);
    private static int n = 0 >>> 147 | 0 << ~147 + 1;
    private static long q = Long.reverse(-269685297102639533L);
-   private static String[] a = new String[u];
+   private static String[] ZKM_STR_A = new String[u];
    private final NLoginCore_211 ap;
    private static int j = Integer.reverse(0);
    private static int k = Integer.reverse(Integer.MIN_VALUE);
@@ -45,7 +45,7 @@ public abstract class NLoginType_030 implements NLoginInterface_039, NLoginInter
 
    @Override
    public boolean c(NLoginType_008 var1) {
-      return (boolean)s;
+      return (s != 0);
    }
 
    @Generated
@@ -92,7 +92,7 @@ public abstract class NLoginType_030 implements NLoginInterface_039, NLoginInter
    private static String a(int var0, long var1) {
       var1 ^= 72L;
       var1 ^= -7468930573081363444L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -136,15 +136,15 @@ public abstract class NLoginType_030 implements NLoginInterface_039, NLoginInter
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Override
    public boolean at() {
-      return (boolean)t;
+      return (t != 0);
    }
 
    static {
@@ -202,20 +202,20 @@ public abstract class NLoginType_030 implements NLoginInterface_039, NLoginInter
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_004.A("ºéü¾ÿéÁÂºÎ¸ýüâĀÿûÕàáùÿÖ×", (byte)2, 65);
-               b[1] = NLoginCore_110.F("ԊԍԵԑԑ\u0530ԑӻԱԾԸԮԚԖԛԟԻ\u0530ԼԉՌՊԑԒ", (byte)2, 70);
+               ZKM_STR_B[0] = NLoginCore_004.A("ºéü¾ÿéÁÂºÎ¸ýüâĀÿûÕàáùÿÖ×", (byte)2, 65);
+               ZKM_STR_B[1] = NLoginCore_110.F("ԊԍԵԑԑ\u0530ԑӻԱԾԸԮԚԖԛԟԻ\u0530ԼԉՌՊԑԒ", (byte)2, 70);
                break;
             case 1:
-               b[0] = NLoginCore_027.E("ӵԤԷӹԺԤӼӽӵԉӳԒԼԙԹԹՅԔԻՋԴԔԢԯԍԜԨԊԾԆԽՈ", (byte)2, 69);
-               b[1] = NLoginCore_027.C("ЇЊвЎЎЭЎϸЮлеКШЁУϹсвЯмсзЎЏ", (byte)2, 67);
+               ZKM_STR_B[0] = NLoginCore_027.E("ӵԤԷӹԺԤӼӽӵԉӳԒԼԙԹԹՅԔԻՋԴԔԢԯԍԜԨԊԾԆԽՈ", (byte)2, 69);
+               ZKM_STR_B[1] = NLoginCore_027.C("ЇЊвЎЎЭЎϸЮлеКШЁУϹсвЯмсзЎЏ", (byte)2, 67);
                break;
             case 2:
-               b[0] = NLoginCore_173.E("ԢԸӶԚԖԋԧӷԾԞӸԆ", (byte)2, 69);
+               ZKM_STR_B[0] = NLoginCore_173.E("ԢԸӶԚԖԋԧӷԾԞӸԆ", (byte)2, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_521.E("ԯԘԒԄԻԨԩԮԕԊԊԋԙԵԤӸԄԹԪՋՃԔԑԒ", (byte)2, 69);
+               ZKM_STR_B[0] = NLoginCore_521.E("ԯԘԒԄԻԨԩԮԕԊԊԋԙԵԤӸԄԹԪՋՃԔԑԒ", (byte)2, 69);
          }
       }
    }
@@ -223,25 +223,25 @@ public abstract class NLoginType_030 implements NLoginInterface_039, NLoginInter
    @Override
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
       if (!this.b.d(var1)) {
-         return (boolean)a;
+         return (a != 0);
       } else {
          NLoginInterface_038 var4 = this.b.a(var1);
          if (!var4.aF()) {
-            return (boolean)b;
+            return (b != 0);
          } else {
             ForceRegisterConfig var5 = var3.a();
             if (!var2.i(a(c, d) + this.b.getName())) {
                String var6 = var5.k();
                if (var6 == null || var6.equals(var2.ac())) {
-                  return (boolean)e;
+                  return (e != 0);
                }
             }
 
             if (Boolean.TRUE.equals(var3.a(NLoginCore_567.D))) {
-               return (boolean)f;
+               return (f != 0);
             } else {
                String var7 = this.b.b(var5);
-               return (boolean)(var7 != null && this.b.e(var5) ? g : h);
+               return ((var7 != null && this.b.e(var5) != 0) ? g : h);
             }
          }
       }

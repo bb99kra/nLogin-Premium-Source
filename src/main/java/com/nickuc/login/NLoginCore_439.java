@@ -31,7 +31,7 @@ class NLoginCore_439 implements NLoginInterface_016 {
          String var4 = var2.toLowerCase(Locale.ENGLISH);
          return this.n.stream().anyMatch(var4::contains);
       } else {
-         return (boolean)c;
+         return (c != 0);
       }
    }
 

@@ -18,8 +18,8 @@ public class NLoginCore_245 extends NLoginType_011 {
    private static long h = Long.reverse(864691128455135232L);
    private static int c = Integer.reverse(0);
    private static long f = Long.reverse(5071525607157180063L);
-   private static String[] c = new String[NLoginCore_245.j];
-   private static String[] d = new String[NLoginCore_245.m];
+   private static String[] ZKM_STR_A = new String[NLoginCore_245.j];
+   private static String[] ZKM_STR_B = new String[NLoginCore_245.m];
    private static long e;
    private static int m = 134217728 >>> 123 | 134217728 << -123;
    private static int j = Integer.reverse(Integer.MIN_VALUE);
@@ -68,18 +68,18 @@ public class NLoginCore_245 extends NLoginType_011 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               d[0] = NLoginCore_241.C("ҊѸҼґҁҴҧѺңҩҿҜҖҷӈҮӆҋӀҾҫҞқҜ", (byte)49, 67);
+               ZKM_STR_B[0] = NLoginCore_241.C("ҊѸҼґҁҴҧѺңҩҿҜҖҷӈҮӆҋӀҾҫҞқҜ", (byte)49, 67);
                break;
             case 1:
-               d[0] = NLoginCore_110.B("ģđŕĪĚōŀēļłŖœŘğŜĤĲŕĿŕŬĭĬŀűņņĿţşĸť", (byte)49, 66);
+               ZKM_STR_B[0] = NLoginCore_110.B("ģđŕĪĚōŀēļłŖœŘğŜĤĲŕĿŕŬĭĬŀűņņĿţşĸť", (byte)49, 66);
                break;
             case 2:
-               d[0] = NLoginCore_453.F("ԵԺՉԧԣԼդԹԪՋ՞Ե", (byte)49, 70);
+               ZKM_STR_B[0] = NLoginCore_453.F("ԵԺՉԧԣԼդԹԪՋ՞Ե", (byte)49, 70);
             case 3:
             default:
                break;
             case 4:
-               d[0] = NLoginCore_141.A("ŚĲŉĬĶŐŝŐĪĵŃłœŦļĢţĹĵņĽīĪũŤįŇĬŊŒŘŶ", (byte)49, 65);
+               ZKM_STR_B[0] = NLoginCore_141.A("ŚĲŉĬĶŐŝŐĪĵŃłœŦļĢţĹĵņĽīĪũŤįŇĬŊŒŘŶ", (byte)49, 65);
          }
       }
    }
@@ -126,7 +126,7 @@ public class NLoginCore_245 extends NLoginType_011 {
    private static String a(int var0, long var1) {
       var1 ^= 48L;
       var1 ^= -2338025732603883783L;
-      if (c[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -170,10 +170,10 @@ public class NLoginCore_245 extends NLoginType_011 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         c[var0] = new String(var3.doFinal(Base64.getDecoder().decode(d[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return c[var0];
+      return ZKM_STR_A[var0];
    }
 
    public NLoginCore_245(NLoginType_012 var1) {

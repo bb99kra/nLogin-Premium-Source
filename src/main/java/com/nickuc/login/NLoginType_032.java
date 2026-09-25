@@ -59,7 +59,7 @@ public abstract class NLoginType_032 extends NLoginCore_168<NLoginType_008> {
             return;
          }
 
-         if (!super.a(var1, var2, var3, (boolean)b)) {
+         if (!super.a(var1, var2, var3, (b != 0))) {
             NLoginCore_150.a(var1, NLoginCore_487.y);
             return;
          }
@@ -91,7 +91,7 @@ public abstract class NLoginType_032 extends NLoginCore_168<NLoginType_008> {
             var10002[ao] = var2;
             var10002[ap] = var13;
             CancellableEvent var14 = var10000.a(var10001, var10002);
-            var14.setCancelled((boolean)var12);
+            var14.setCancelled((var12 != 0));
             var12 = !this.a.callEvent(var14) ? aq : ar;
          }
 
@@ -110,7 +110,7 @@ public abstract class NLoginType_032 extends NLoginCore_168<NLoginType_008> {
 
    @Override
    protected boolean a(NLoginInterface_042 var1, String var2, String[] var3, boolean var4) {
-      return (boolean)(var4 && !super.a(var1, var2, var3, (boolean)as) ? au : at);
+      return ((var4 && !super.a(var1, var2, var3, (as != 0) != 0)) ? au : at);
    }
 
    protected List<String> b(NLoginInterface_042 var1, String var2, String[] var3) {

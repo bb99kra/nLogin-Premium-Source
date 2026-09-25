@@ -27,7 +27,7 @@ public class NLoginCore_394 implements NLoginInterface_046 {
       if (var1.getReceiver() instanceof ProxiedPlayer) {
          var1.getCommands().values().removeIf(var1x -> {
             String var2 = var1x.getName().toLowerCase(Locale.ENGLISH);
-            return (boolean)(!var2.startsWith(this.aq + a) && !this.l.contains(var2) ? c : b);
+            return ((!var2.startsWith(this.aq + a) != 0) && !this.l.contains(var2) ? c : b);
          });
       }
    }

@@ -22,15 +22,15 @@ import lombok.Generated;
 
 public class NLoginCore_187 {
    private static int ad = (3 >>> 127 | 3 << -127) & -1;
-   private final Map<Integer, NLoginCore_509> o;
+   private final Map<Integer, NLoginCore_509> zkm_o;
    private static int e = 0 >>> 166 | 0 << ~166 + 1;
    private static int k = Integer.reverse(-1);
    private static long i = Long.reverse(8935141660703064064L);
    private static long f = Long.reverse(-282048351919050356L);
-   private final Map<NLoginCore_277, NLoginCore_509> n = new ConcurrentHashMap<>();
+   private final Map<NLoginCore_277, NLoginCore_509> zkm_n = new ConcurrentHashMap<>();
    private static int w = Integer.reverse(Integer.MIN_VALUE);
    private static int aw = Integer.reverse(0);
-   private static int o = Integer.reverse(Integer.MIN_VALUE);
+   private static int zkm_o = Integer.reverse(Integer.MIN_VALUE);
    private static int ap = (0 >>> 209 | 0 << ~209 + 1) & -1;
    private static int m = (50331648 >>> 248 | 50331648 << ~248 + 1) & -1;
    private static int at = Integer.reverse(0);
@@ -40,23 +40,23 @@ public class NLoginCore_187 {
    private static int aa = (671088640 >>> 91 | 671088640 << -91) & -1;
    private static long b = Long.reverse(-1152921504606846976L);
    private static int ar = 0 >>> 116 | 0 << -116;
-   private static String[] a = new String[NLoginCore_187.bd];
-   private static int n = (0 >>> 66 | 0 << ~66 + 1) & -1;
+   private static String[] ZKM_STR_A = new String[NLoginCore_187.bd];
+   private static int zkm_n = (0 >>> 66 | 0 << ~66 + 1) & -1;
    private static int u = 6144 >>> 139 | 6144 << ~139 + 1;
    private static long h = Long.reverse(-9217190012622114420L);
    private static int an = (0 >>> 242 | 0 << ~242 + 1) & -1;
-   private static String[] b = new String[NLoginCore_187.be];
+   private static String[] ZKM_STR_B = new String[NLoginCore_187.be];
    private static int be = 114688 >>> 14 | 114688 << -14;
    private static int c = (-1 >>> 104 | -1 << ~104 + 1) & -1;
    private static int az = Integer.reverse(Integer.MIN_VALUE);
    private static int r = -1 >>> 123 | -1 << ~123 + 1;
    private static int t = (2 >>> 225 | 2 << -225) & -1;
-   private static int d = Integer.reverse(Integer.MIN_VALUE);
+   private static int zkm_d = Integer.reverse(Integer.MIN_VALUE);
    private static int bc = Integer.reverse(0);
    private static long z = Long.reverse(-282048351919050356L);
    private static int bb = (32 >>> 229 | 32 << ~229 + 1) & -1;
    private static long l = Long.reverse(-282048351919050356L);
-   private final NLoginInterface_048 d;
+   private final NLoginInterface_048 zkm_d;
    private static int al = 268435456 >>> 124 | 268435456 << ~124 + 1;
    private static int au = Integer.reverse(Integer.MAX_VALUE);
    private static int ai = Integer.reverse(Integer.MIN_VALUE);
@@ -75,7 +75,7 @@ public class NLoginCore_187 {
    private static int ak = Integer.reverse(-637534208);
    private static int j = Integer.reverse(1073741824);
    private static int as = Integer.reverse(Integer.MIN_VALUE);
-   private static long c;
+   private static long zkm_c;
    private static int ag = Integer.reverse(Integer.MIN_VALUE);
    private static int aq = Integer.reverse(Integer.MIN_VALUE);
    private static int aj = (0 >>> 235 | 0 << -235) & -1;
@@ -106,7 +106,7 @@ public class NLoginCore_187 {
    private static String a(int var0, long var1) {
       var1 ^= 62L;
       var1 ^= -6068061249158154082L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -150,26 +150,26 @@ public class NLoginCore_187 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public boolean b(String var1, @Nullable UUID var2) {
       int var3 = var1.length();
-      return (boolean)((var3 <= ai || var1.charAt(aj) != ak || var1.charAt(var3 - al) != am)
+      return (((var3 <= ai || var1.charAt(aj) != 0) != ak || var1.charAt(var3 - al) != am)
             && !NLoginCore_477.C
                .a(new Object[an])
                .stream()
-               .anyMatch(var2x -> (boolean)(!var2x.equalsIgnoreCase(var1) && (var2 == null || !var2x.equalsIgnoreCase(var2.toString())) ? ar : aq))
+               .anyMatch(var2x -> ((!var2x.equalsIgnoreCase(var1) != 0) && (var2 == null || !var2x.equalsIgnoreCase(var2.toString())) ? ar : aq))
          ? ap
          : ao);
    }
 
    private static void b() {
       c = 3570939392181643265L;
-      long var0 = c ^ -6068061249158154082L;
+      long var0 = zkm_c ^ -6068061249158154082L;
       Cipher var2 = Cipher.getInstance(
          new String(
             new byte[]{
@@ -211,36 +211,36 @@ public class NLoginCore_187 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_232.F("՟շտազռա։ժ֘ոտ֤֜ֆձֈև։ճֈո֢֘֙ջշյշ֩ցֶ֛օ֝֝\u05c9ֈ׆֖־ֵּ֓", (byte)111, 70);
-               b[1] = NLoginCore_446.E("՟շտազռա։ժ֘չզְֱ֛֑ծֶձր֣֍ֹ֧֊֑֧նֶ֑\u0590ր֏׀֯֡փׁׅ֕֊֥֮֓", (byte)111, 69);
-               b[2] = NLoginCore_232.D("ԶՎՖԸԽՓԸՠՁկՐԽղևըֈՅ֍Ո\u0557պ\u0558՝ՈքճղքՐՑ֎ՔծմՓլպըչ֓յ֒խժ", (byte)111, 68);
-               b[3] = NLoginCore_530.F("մհկս֣֚֟է֝շ֜ճ", (byte)111, 70);
-               b[4] = NLoginCore_427.E(
+               ZKM_STR_B[0] = NLoginCore_232.F("՟շտազռա։ժ֘ոտ֤֜ֆձֈև։ճֈո֢֘֙ջշյշ֩ցֶ֛օ֝֝\u05c9ֈ׆֖־ֵּ֓", (byte)111, 70);
+               ZKM_STR_B[1] = NLoginCore_446.E("՟շտազռա։ժ֘չզְֱ֛֑ծֶձր֣֍ֹ֧֊֑֧նֶ֑\u0590ր֏׀֯֡փׁׅ֕֊֥֮֓", (byte)111, 69);
+               ZKM_STR_B[2] = NLoginCore_232.D("ԶՎՖԸԽՓԸՠՁկՐԽղևըֈՅ֍Ո\u0557պ\u0558՝ՈքճղքՐՑ֎ՔծմՓլպըչ֓յ֒խժ", (byte)111, 68);
+               ZKM_STR_B[3] = NLoginCore_530.F("մհկս֣֚֟է֝շ֜ճ", (byte)111, 70);
+               ZKM_STR_B[4] = NLoginCore_427.E(
                   "կ՜֑բե՛ֆվ֤խվְզ֧֭ժք։ֲ֮֮֊֦֍֔ս\u058c֍շո֑֘֬׆ֶ֚ցֺ֛֔\u05cdׄ\u058c֤׀ׄ\u05ce׆֔\u05cdִֵֶַַֻ֩֔כׇחֶ\u05caכג֡ךֿוץׅחן\u05c8֥ףפש\u05edײ׀\u05cdנ\u05ec״ׁ־ֿ",
                   (byte)111,
                   69
                );
-               b[5] = NLoginCore_433.F("՟շտազռա։ժ֘չ։֑ր֩\u0590ք\u058bճֺ֪֥֭֜\u058cջ\u058c֮֓֔֎ցָ֘׀ֺքֆ\u05c8֖֓֫֫֓", (byte)111, 70);
-               b[6] = NLoginCore_387.E("֑֕ՠֈ՞֙֘սվը֤ճ", (byte)111, 69);
+               ZKM_STR_B[5] = NLoginCore_433.F("՟շտազռա։ժ֘չ։֑ր֩\u0590ք\u058bճֺ֪֥֭֜\u058cջ\u058c֮֓֔֎ցָ֘׀ֺքֆ\u05c8֖֓֫֫֓", (byte)111, 70);
+               ZKM_STR_B[6] = NLoginCore_387.E("֑֕ՠֈ՞֙֘սվը֤ճ", (byte)111, 69);
                break;
             case 1:
-               b[0] = NLoginCore_397.C("ԶՎՖԸԽՓԸՠՁկՏՖջճ՝Ո՟՞ՠՊ՟ՏչկհՒՎՌՎր\u0558֍ռս\u058bհի֊իկպ՞կե֖տ՛֖֔֬ֆֆկֈյն", (byte)111, 67);
-               b[1] = NLoginCore_433.F("՟շտազռա։ժ֘չզְֱ֛֑ծֶձր֣֍ֹ֧֊֑֧նֶ֑\u0590ր֏ֹ֠ցֲ֙׀ׇׁ֕։֓", (byte)111, 70);
-               b[2] = NLoginCore_427.D("ԶՎՖԸԽՓԸՠՁկՐԽղևըֈՅ֍Ո\u0557պ\u0558՝ՈքճղքՐՑ֎Քշձհճ՟ֈՙփ֕խյժ", (byte)111, 68);
-               b[3] = NLoginCore_092.D("խյթկՇռճԸՔց՛զՒզնօպՊդՆխըՕՖ", (byte)111, 68);
-               b[4] = NLoginCore_575.D(
+               ZKM_STR_B[0] = NLoginCore_397.C("ԶՎՖԸԽՓԸՠՁկՏՖջճ՝Ո՟՞ՠՊ՟ՏչկհՒՎՌՎր\u0558֍ռս\u058bհի֊իկպ՞կե֖տ՛֖֔֬ֆֆկֈյն", (byte)111, 67);
+               ZKM_STR_B[1] = NLoginCore_433.F("՟շտազռա։ժ֘չզְֱ֛֑ծֶձր֣֍ֹ֧֊֑֧նֶ֑\u0590ր֏ֹ֠ցֲ֙׀ׇׁ֕։֓", (byte)111, 70);
+               ZKM_STR_B[2] = NLoginCore_427.D("ԶՎՖԸԽՓԸՠՁկՐԽղևըֈՅ֍Ո\u0557պ\u0558՝ՈքճղքՐՑ֎Քշձհճ՟ֈՙփ֕խյժ", (byte)111, 68);
+               ZKM_STR_B[3] = NLoginCore_092.D("խյթկՇռճԸՔց՛զՒզնօպՊդՆխըՕՖ", (byte)111, 68);
+               ZKM_STR_B[4] = NLoginCore_575.D(
                   "ՆԳըԹԼԲ՝ՕջՄՕևԽքվՁ՛ՠօ։օասդիՔգդՎՏըկփ֝֍ձ\u0558֑ղի֤֛գջ֛֥֗֝ի֤րի֎֍֎\u058b\u058cֲ֮֒֞֍ֲ֡֩ոֱֶּ֖֮֬֜֟ս֢֞ׄ\u05c8֖\u05cb֣֘\u05c8֊־֖֕", (byte)111, 68
                );
-               b[5] = NLoginCore_451.A("ƑƩƱƓƘƮƓƻƜǊƫƻǃƲǛǂƶƽƥǜǗǟǬǎƾƭƾǅǆǠǀƳǗǸǣƶƶǖƮǻǱǶƻǅ", (byte)111, 65);
-               b[6] = NLoginCore_387.C("ՙէՋ\u0558\u0558ծՏՓՋՃՍՊ", (byte)111, 67);
+               ZKM_STR_B[5] = NLoginCore_451.A("ƑƩƱƓƘƮƓƻƜǊƫƻǃƲǛǂƶƽƥǜǗǟǬǎƾƭƾǅǆǠǀƳǗǸǣƶƶǖƮǻǱǶƻǅ", (byte)111, 65);
+               ZKM_STR_B[6] = NLoginCore_387.C("ՙէՋ\u0558\u0558ծՏՓՋՃՍՊ", (byte)111, 67);
                break;
             case 2:
-               b[0] = NLoginCore_451.B("ǇǖƔƬƬƦƭǝǇƖǌơƛƴƬƤǙƼƽƸǩƿƩƨǘƹǙǜǨǍƦǆ", (byte)111, 66);
+               ZKM_STR_B[0] = NLoginCore_451.B("ǇǖƔƬƬƦƭǝǇƖǌơƛƴƬƤǙƼƽƸǩƿƩƨǘƹǙǜǨǍƦǆ", (byte)111, 66);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_091.C("ոՖռոսՐ՟ՊտԺփոհԺմռչ\u058bչ՞֏\u0558ՕՖ", (byte)111, 67);
+               ZKM_STR_B[0] = NLoginCore_091.C("ոՖռոսՐ՟ՊտԺփոհԺմռչ\u058bչ՞֏\u0558ՕՖ", (byte)111, 67);
          }
       }
    }
@@ -273,7 +273,7 @@ public class NLoginCore_187 {
 
    public NLoginCore_509 a(NLoginCore_277 var1, @Nullable ForceRegisterConfig var2, String var3, InetSocketAddress var4, boolean var5, boolean var6, NLoginInterface_017 var7) {
       NLoginCore_509 var8 = this.n.computeIfAbsent(var1, var1x -> new NLoginCore_509(var1x, var4));
-      int var9 = var8.c.getAndSet(d);
+      int var9 = var8.c.getAndSet(zkm_d);
       switch (var9) {
          case -2:
             var8.c.set(var9);
@@ -285,8 +285,8 @@ public class NLoginCore_187 {
          default:
             Map var10000 = this.o;
             Object[] var10001 = new Object[m];
-            var10001[n] = var1.getName();
-            var10001[o] = var1.a();
+            var10001[zkm_n] = var1.getName();
+            var10001[zkm_o] = var1.a();
             var10001[p] = var8.d(NLoginCore_567.d);
             var10000.put(Objects.hash(var10001), var8);
             if (var2 != null) {
@@ -348,21 +348,21 @@ public class NLoginCore_187 {
 
    public boolean b(NLoginCore_277 var1) {
       if (this.b(var1.getName(), var1.a())) {
-         return (boolean)ag;
+         return (ag != 0);
       } else {
          NLoginCore_509 var2 = this.a(var1);
-         return (boolean)(var2 == null ? ah : var2.a().b(NLoginCore_077.g));
+         return ((var2 == null ? ah : var2.a() != 0).b(NLoginCore_077.g));
       }
    }
 
    public NLoginCore_187(NLoginType_008 var1) {
       this.o = new ConcurrentHashMap<>();
       this.K = var1;
-      this.d = var1.b((boolean)a).a(() -> {
+      this.d = var1.b((a != 0)).a(() -> {
          if (!this.n.isEmpty()) {
             this.n.values().removeIf(var1x -> {
                if (var1x.c.get() == as) {
-                  return (boolean)at;
+                  return (at != 0);
                } else {
                   int var2 = var1x.c.getAndSet(au);
                   switch (var2) {
@@ -374,12 +374,12 @@ public class NLoginCore_187 {
                         var10001[az] = var3.a();
                         var10001[ba] = var1x.d(NLoginCore_567.d);
                         var10000.remove(Objects.hash(var10001));
-                        return (boolean)bb;
+                        return (bb != 0);
                      case 1:
                         var1x.c.set(av);
-                        return (boolean)aw;
+                        return (aw != 0);
                      default:
-                        return (boolean)bc;
+                        return (bc != 0);
                   }
                }
             });

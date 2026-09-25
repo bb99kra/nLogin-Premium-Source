@@ -18,9 +18,9 @@ public class NLoginCore_087 {
    private static int j = Integer.reverse(0);
    private boolean G;
    private static int k = 0 >>> 27 | 0 << ~27 + 1;
-   private static String[] b = new String[NLoginCore_087.m];
+   private static String[] ZKM_STR_B = new String[NLoginCore_087.m];
    private static long c;
-   private static String[] a = new String[l];
+   private static String[] ZKM_STR_A = new String[l];
    private static int g = Integer.reverse(Integer.MIN_VALUE);
    private static int c = Integer.reverse(0);
    private static int f = (0 >>> 186 | 0 << -186) & -1;
@@ -79,30 +79,30 @@ public class NLoginCore_087 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_201.D(
+               ZKM_STR_B[0] = NLoginCore_201.D(
                   "ҝҟӂ҃ґұҕҚ҄ҢҵҢҌӏҞӂҨӃӇӉҞғӂҊӉґӕҤӊҗӒӈҩӂҢӕӀҿҢӡҧӡҪӞҬҺӉҢӊӠӤӬӞӊӊӁӕӦӜӯӮӻҿӠӬӐԀӷҷӰӥәӲӄӪӤӪԌӆӛԀӲԂӪӧԊԇԄӱԉӴӥԋԛӾԡөӼԑԁӞԚәӾӣԫԡӰ", (byte)49, 68
                );
-               b[1] = NLoginCore_384.A(
+               ZKM_STR_B[1] = NLoginCore_384.A(
                   "ĶĸśĜĪŊĮĳĝĻŎĻĥŨķśŁŜŠŢķĬśģŢĪŮĽţİūšłśĻŮřŘĻźŀźŃŷŅœŢĻţŹŽƅŷťƋŚƑōƀŰŬšƒƏŭƗřƗŷŖŠŚŽƖŷžƂƣƣťƆƛƃźơƪƁƌƍųƥŰƧƈƩƩƣƔưƳƇƹƙƟƘƮǂƕƝƛƵƺƙƆǅǀƠƧƔƕ", (byte)49, 65
                );
                break;
             case 1:
-               b[0] = NLoginCore_387.C(
+               ZKM_STR_B[0] = NLoginCore_387.C(
                   "ҝҟӂ҃ґұҕҚ҄ҢҵҢҌӏҞӂҨӃӇӉҞғӂҊӉґӕҤӊҗӒӈҩӂҢӕӀҿҢӡҧӡҪӞҬҺӉҢӊӠӤӬӞӊӊӁӕӦӜӯӮӻҿӠӬӐԀӷҷӰӥәӲӄӪӤӪԌӆӛԀӲԂӪӧԊԇԄӱԉӴӥԋԛӾԡӚԕӛӭӛӷӞԤӳԈԃӰ", (byte)49, 67
                );
-               b[1] = NLoginCore_004.E(
+               ZKM_STR_B[1] = NLoginCore_004.E(
                   "ՂՄէԨԶՖԺԿԩՇ՚ՇԱմՃէՍըլծՃԸէԯծԶպՉկԼշխՎէՇպեդՇֆՌֆՏփՑ՟ծՇկօ։֑փձ֗զ֝ՙ\u058cռոխ֛֞չ֣ե֣փբլզ։֢փ֊֎֯֯ձ֧֒֏ֆֶ֭֍֘֙տֱռֳֵֵֺּֿׅ֥֤֔֯֠֓֫א\u05ce֡֊ׇ\u05ceֵׇ֣֬֬֫֠֡",
                   (byte)49,
                   69
                );
                break;
             case 2:
-               b[0] = NLoginCore_092.F("ԺդԲ՞ՠ\u0557ԶԦԤ՞ԩԱՄ՞՞ՄՇՋՒեՑՃՀՁ", (byte)49, 70);
+               ZKM_STR_B[0] = NLoginCore_092.F("ԺդԲ՞ՠ\u0557ԶԦԤ՞ԩԱՄ՞՞ՄՇՋՒեՑՃՀՁ", (byte)49, 70);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_530.C("ҁѻҳҌҕґҔґҵӋқҐ", (byte)49, 67);
+               ZKM_STR_B[0] = NLoginCore_530.C("ҁѻҳҌҕґҔґҵӋқҐ", (byte)49, 67);
          }
       }
    }
@@ -125,7 +125,7 @@ public class NLoginCore_087 {
    private static String a(int var0, long var1) {
       var1 ^= 88L;
       var1 ^= -2569751829866761772L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -169,14 +169,14 @@ public class NLoginCore_087 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public NLoginCore_087() {
-      this.G = (boolean)a;
+      this.G = (a != 0);
    }
 
    public boolean b(Entity var1) {
@@ -184,7 +184,7 @@ public class NLoginCore_087 {
          try {
             return CitizensAPI.getNPCRegistry().isNPC(var1);
          } catch (Throwable var3) {
-            this.G = (boolean)b;
+            this.G = (b != 0);
             if (var3.getCause() instanceof ClassNotFoundException) {
                String var10000 = a(c, d);
                Object[] var10001 = new Object[e];
@@ -196,6 +196,6 @@ public class NLoginCore_087 {
          }
       }
 
-      return (boolean)k;
+      return (k != 0);
    }
 }

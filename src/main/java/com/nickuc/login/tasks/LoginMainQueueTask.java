@@ -59,12 +59,12 @@ public class LoginMainQueueTask implements Runnable {
    private static long au = Long.reverse(2449958197289549824L);
    private static long l = Long.reverse(-4661387340910955053L);
    private static int ap = 41943040 >>> 246 | 41943040 << ~246 + 1;
-   private static int e = Integer.reverse(Integer.MIN_VALUE);
+   private static int zkm_e = Integer.reverse(Integer.MIN_VALUE);
    private static int ah = (268435456 >>> 185 | 268435456 << -185) & -1;
    private static long c;
    private static long r = Long.reverse(2449958197289549824L);
    private static int n = 2 >>> 191 | 2 << ~191 + 1;
-   private static int p = Integer.reverse(-1610612736);
+   private static int zkm_p = Integer.reverse(-1610612736);
    private static int bc = Integer.reverse(-1342177280);
    private static int z = Integer.reverse(0);
    private static long ai = Long.reverse(-4661387340910955053L);
@@ -78,7 +78,7 @@ public class LoginMainQueueTask implements Runnable {
    private static int k = -2147483647 >>> 63 | -2147483647 << ~63 + 1;
    private static int ba = Integer.reverse(-1);
    private static int b = Integer.reverse(0);
-   private static int w = Integer.reverse(-536870912);
+   private static int zkm_w = Integer.reverse(-536870912);
    private static int ae = Integer.MIN_VALUE >>> 63 | Integer.MIN_VALUE << -63;
    private static long d = Long.reverse(-7111345538200504877L);
    private static final int aP = LoginMainQueueTask.be;
@@ -96,11 +96,11 @@ public class LoginMainQueueTask implements Runnable {
    private static int af = Integer.reverse(0);
    private static int al = Integer.reverse(0);
    private static long i = Long.reverse(-7111345538200504877L);
-   private static String[] b = new String[LoginMainQueueTask.bd];
+   private static String[] ZKM_STR_B = new String[LoginMainQueueTask.bd];
    private static int c = -1 >>> 107 | -1 << -107;
    private static int bd = 109051904 >>> 151 | 109051904 << -151;
    private static long ay = Long.reverse(6845471433603153920L);
-   private static String[] a = new String[bc];
+   private static String[] ZKM_STR_A = new String[bc];
    private static int aw = Integer.reverse(Integer.MIN_VALUE);
    private static int an = Integer.reverse(-1);
    private static int j = Integer.reverse(0);
@@ -178,8 +178,8 @@ public class LoginMainQueueTask implements Runnable {
                               var7.a()
                                  .a(
                                     var7.j()
-                                       ? a(b & c, d) + var14 + a(e, f) + var14 + a(g & h, i) + NLoginCore_532.a.a().a()[j] + a(k, l ^ m)
-                                       : a(n, o) + var14 + a(p, q ^ r) + var14 + a(s, t ^ u) + NLoginCore_532.a.a().a()[v] + a(w, x ^ y)
+                                       ? a(b & c, d) + var14 + a(zkm_e, f) + var14 + a(g & h, i) + NLoginCore_532.a.a().a()[j] + a(k, l ^ m)
+                                       : a(n, o) + var14 + a(zkm_p, q ^ r) + var14 + a(s, t ^ u) + NLoginCore_532.a.a().a()[v] + a(zkm_w, x ^ y)
                                  );
                            }
                         }
@@ -277,68 +277,68 @@ public class LoginMainQueueTask implements Runnable {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_559.C(
+               ZKM_STR_B[0] = NLoginCore_559.C(
                   "ѻіҘѱѵѺѬѼҚѵѠѴѡҧ҆҉ҞҍҊѦҤґҁғҏҴҭ҇үҧҥҏҩҐҝѾҋҹҚҍҒ҃ӈ҈ґҟҁҘ҄҄ӋҊӃ҉ӅӎӅӀӔӎӐӊҖҤҬӏӑҿӕӕӞҹӢҹӣәӑҢӞӅҾҼӘӝӨҰӈұӥӔҵөӊӊӍәӯҰӠҹӡҿӭӛӖҼԆӀӷԄԆӄӤԇԉөԆԓӊӳӣԖԘԈԕӮӶԄԇӹԜӴԖӽӸԔԦԒԟӾԛԈӽԁӵԄԋԩԢԭԂԞԕ\u0530ԧԍԕԱԑӼԵԐԷԐԁԠԽԮԟԆԆՇԥԡԃԛՌՀՎՆԨԋԠԪՇԌ\u0558ԯԋՄԤՋԯԘՖՔՔԡՓՒԴՅ՝եԱժԾԸԧԼծՙԧԯձԴԳԲծՉՄՇԸձ",
                   (byte)37,
                   67
                );
-               b[1] = NLoginCore_387.E(
+               ZKM_STR_B[1] = NLoginCore_387.E(
                   "Չ՜ՑԽԼՓԹՕ՞Ծՙ՞ԮեդթՃԢՁըԬԭԩԣԲՁթԮՃկՅՙձհճՊս՜ԲձռղջվծԾղաղրֈ\u0557֍ՁրեՌ֍րՐ֒աձ֊քըթճհժ\u058bժ֣շգր֤գՠև֖֓ց֎֥փ֍֏ղս֓֞ծ֖֮֬ք֖֘֗\u058c֏ָ֖֮֬\u0590։",
                   (byte)37,
                   69
                );
-               b[2] = NLoginCore_521.A("úċĂńĆĶÿĲĿĬġĦķŃįŒěŐņģŉŘŅđŐęĮěŊĳŜĪ", (byte)37, 65);
-               b[3] = NLoginCore_471.A("ŃúŃĎņķľŀŋĺĘđ", (byte)37, 65);
-               b[4] = NLoginCore_553.D(
+               ZKM_STR_B[2] = NLoginCore_521.A("úċĂńĆĶÿĲĿĬġĦķŃįŒěŐņģŉŘŅđŐęĮěŊĳŜĪ", (byte)37, 65);
+               ZKM_STR_B[3] = NLoginCore_471.A("ŃúŃĎņķľŀŋĺĘđ", (byte)37, 65);
+               ZKM_STR_B[4] = NLoginCore_553.D(
                   "ѻіҘѱѵѺѬѼҚѵѠѴѡҧ҆҉ҞҍҊѦҤҌҴңҍҭѮѳѱҴѹѵҩҼқҴҢҼҘҗѼҹҵҤӆҦҜҥҋҮҮӀҌӀӅӌҨҞӆҰӇӓҷҔҏһҼҝӢҘӘӕҳӝәӠҠӋӗһӘҿӥӋҨӱӐӁҲӟӪӴӡҸӲӳӺӌӴӺӝҾӱҽӀӐӑӤӝӅӶӪӢӊԍӛӿӡԒӧӶԊԄӴӦӧӻӒӺӨӗӺԛԏԛӡԦӻԒԨӺԛԌԁӽԇԯӫӪԇӿԇӮԲӮԅԇԱӲӳԧӻԈՀԼԳԃԐԎԡՀԈԠԨԊԉԃՄՈԱԉԟԽԤԯՌՊԪԙ՛ԕԯ",
                   (byte)37,
                   68
                );
-               b[5] = NLoginCore_397.F(
+               ZKM_STR_B[5] = NLoginCore_397.F(
                   "ԌԸՎՐԕՕՑՠԫԿԖ\u0558ԽբՆԺԨԪՅԽՊԸԯՍՒՇեՓխբձպ\u0557զզՎԽՖՀԳպտնօվԹ՟Քևք՚փՀՌգ֎ւխդ՞֏Օղ֔֕֏է֎֑֞֗֏֛֤ջխվո֢ը֧շ֨֠էք֥֞ծ֩֠տը֧ֆ֥֤֘ճ֏մּ։ո־ֳֺ։", (byte)37, 70
                );
-               b[6] = NLoginCore_027.C("њѻѬҠҡѯҀѺҢѹѸѶҖѹѫҫѥѶҏѼҎҭѰҪүѯұү҄үһһҚҳҨӀҳѺүүңҟңҌ", (byte)37, 67);
-               b[7] = NLoginCore_127.D("ѯћҕҖѯѷ҄ҤҢўѢѻѴѶҔ҇Ѹ҃ѫҡҞѺѷѸ", (byte)37, 68);
-               b[8] = NLoginCore_384.D("ҙѷѳҙҍҌҌѯѠ҄ўѬ", (byte)37, 68);
-               b[9] = NLoginCore_027.F("Ֆ՛՛\u0557ԦՖաՐՖԴԸԩ", (byte)37, 70);
-               b[10] = NLoginCore_223.A("ċġğĲĥĜĴćĕğĬđ", (byte)37, 65);
-               b[11] = NLoginCore_471.B("ĮĬğĜħęĴĿłĉĊġĩķıĥŇŁőĪŀĤįœİĨĜļŐĪĶőġŗĸŜŧĤŨŝŤģĬňľŀŇıŜŭŊňĴŏļĽ", (byte)37, 66);
-               b[12] = NLoginCore_027.E("ԻԩԭՖՇԗԴՔ՚Ԣԛ՟ԥԼ՝ՈԹդԵ՚ժԸ՝ԫլՐԪդկյՓՅճջնԺզկՙսգ՚րՃՖաՆ։՛ՠեշ֍Չՙջ֒ը՜վծձրի֚ջ֓ծֆն֊֑յ՛֒թ", (byte)37, 69);
+               ZKM_STR_B[6] = NLoginCore_027.C("њѻѬҠҡѯҀѺҢѹѸѶҖѹѫҫѥѶҏѼҎҭѰҪүѯұү҄үһһҚҳҨӀҳѺүүңҟңҌ", (byte)37, 67);
+               ZKM_STR_B[7] = NLoginCore_127.D("ѯћҕҖѯѷ҄ҤҢўѢѻѴѶҔ҇Ѹ҃ѫҡҞѺѷѸ", (byte)37, 68);
+               ZKM_STR_B[8] = NLoginCore_384.D("ҙѷѳҙҍҌҌѯѠ҄ўѬ", (byte)37, 68);
+               ZKM_STR_B[9] = NLoginCore_027.F("Ֆ՛՛\u0557ԦՖաՐՖԴԸԩ", (byte)37, 70);
+               ZKM_STR_B[10] = NLoginCore_223.A("ċġğĲĥĜĴćĕğĬđ", (byte)37, 65);
+               ZKM_STR_B[11] = NLoginCore_471.B("ĮĬğĜħęĴĿłĉĊġĩķıĥŇŁőĪŀĤįœİĨĜļŐĪĶőġŗĸŜŧĤŨŝŤģĬňľŀŇıŜŭŊňĴŏļĽ", (byte)37, 66);
+               ZKM_STR_B[12] = NLoginCore_027.E("ԻԩԭՖՇԗԴՔ՚Ԣԛ՟ԥԼ՝ՈԹդԵ՚ժԸ՝ԫլՐԪդկյՓՅճջնԺզկՙսգ՚րՃՖաՆ։՛ՠեշ֍Չՙջ֒ը՜վծձրի֚ջ֓ծֆն֊֑յ՛֒թ", (byte)37, 69);
                break;
             case 1:
-               b[0] = NLoginCore_004.E(
+               ZKM_STR_B[0] = NLoginCore_004.E(
                   "ԸԓՕԮԲԷԩԹ\u0557ԲԝԱԞդՃՆ՛ՊՇԣաՎԾՐՌձժՄլդբՌզՍ՚ԻՈն\u0557ՊՏՀօՅՎ՜ԾՕՁՁֈՇրՆւ\u058bւս֑\u058b֍ևՓաթ\u058c֎ռ֛֒֒ն֟ն֖֠֎՟֛ւջչ֥֚֕խօծ֢֑ղ֦ևև֊֖֬խ֝ն֞ռ֪֘֓չ׃սִׁ׃ց֡ׄ׆֦׃אևְ֠דוׅגֳֶׁ֫ׄיֱדֵֺבף\u05cfלֻטֺׅ־ֲׁ\u05c8צןתֿכג\u05edפ\u05caג\u05ee\u05ceֹײ\u05cd״\u05cd־ם\u05fa\u05ebל׃׃\u0604עמ׀ט؉\u05fd؋\u0603ץ\u05c8םק\u0604\u05c9ؕ\u05ec\u05c8\u0601ס؈\u05ecוؓؑؑמؐ؏ױ\u0602ؚآ\u05eeا\u05fb\u05f5פ\u05f9ثؖפרؤ؎ذح؋ױ\u0605\u05f7ؙة",
                   (byte)37,
                   69
                );
-               b[1] = NLoginCore_384.B(
+               ZKM_STR_B[1] = NLoginCore_384.B(
                   "ıńĹĥĤĻġĽņĦŁņĖōŌőīĊĩŐĔĕđċĚĩőĖīŗĭŁřŘśĲťńĚřŤŚţŦŖĦŚŉŚŨŰĿŵĩŨōĴŵŨĸźŉřŲŬŐőśŘŒųŒƋşŋŨƌŋňůžŻũŶƍūŵŷŚťŻƆŖžƔƖůƠƚƑşŢųŷŶŶƦƬŽƏƃƇƯůƀƫƴƥżŽ", (byte)37, 66
                );
-               b[2] = NLoginCore_324.A("úċĂńĆĶÿĲĿĬġĦķŃįŒěŐņģŉĉĢłĶħŅśŝŖřķ", (byte)37, 65);
-               b[3] = NLoginCore_232.A("ĮüĐłĲķąûĦŋČčŀŊĸĻŁħďŐōŅĜĝ", (byte)37, 65);
-               b[4] = NLoginCore_004.E(
+               ZKM_STR_B[2] = NLoginCore_324.A("úċĂńĆĶÿĲĿĬġĦķŃįŒěŐņģŉĉĢłĶħŅśŝŖřķ", (byte)37, 65);
+               ZKM_STR_B[3] = NLoginCore_232.A("ĮüĐłĲķąûĦŋČčŀŊĸĻŁħďŐōŅĜĝ", (byte)37, 65);
+               ZKM_STR_B[4] = NLoginCore_004.E(
                   "ԸԓՕԮԲԷԩԹ\u0557ԲԝԱԞդՃՆ՛ՊՇԣաՉձՠՊժԫ\u0530ԮձԶԲզչ\u0558ձ՟չՕՔԹնղափգՙբՈիիսՉսւ։ե՛փխք\u0590մՑՌոչ՚֟Օ֕֒հ֖֚֝՝ֈ֔ո֕ռ֢ֈե֮֍վկֱ֧֜֞յְַ֯։ֱַ֚ջ֮պս֍֎֚֡ւֳ֧֟և\u05caּ֘֞\u05cfֱֳׇָׁ֤֣֤֏ַַ֥֔ט\u05ccט֞ףָ\u05cfץַט\u05c9־ֺׄ\u05ecּ֧֨ׄׄ֫ׯׂ֫ׄ\u05eeְ֯פָׅ\u05fd\u05f9װ׀\u05cd\u05cbמ\u05fdׅםץׇ׆׀\u0601\u0605\u05ee׆ךאבׯ؊סג\u05f7ؓ\u0604\u05f6",
                   (byte)37,
                   69
                );
-               b[5] = NLoginCore_433.F(
+               ZKM_STR_B[5] = NLoginCore_433.F(
                   "ԌԸՎՐԕՕՑՠԫԿԖ\u0558ԽբՆԺԨԪՅԽՊԸԯՍՒՇեՓխբձպ\u0557զզՎԽՖՀԳպտնօվԹ՟Քևք՚փՀՌգ֎ւխդ՞֏Օղ֔֕֏է֎֑֞֗֏֛֤ջխվո֢ը֧շ֨֠էք֥֞ծ֩֠տը֧ֆ֥֧֘֔֏ֱֺ֟֯֒֝֬։", (byte)37, 70
                );
-               b[6] = NLoginCore_387.C("њѻѬҠҡѯҀѺҢѹѸѶҖѹѫҫѥѶҏѼҎҭѰҪүѯұү҄үһһҳҝӀҀҽҟҋҸҕҁҹҌ", (byte)37, 67);
-               b[7] = NLoginCore_387.B("ĔĀĺĻĔĜĩŉŇăĈĈěĬīĎĬĐİŐČįĳńŊŖĕěĜĕľġ", (byte)37, 66);
-               b[8] = NLoginCore_453.D("ҏғҏҀҜҐѲҟҘѹўѬ", (byte)37, 68);
-               b[9] = NLoginCore_110.B("ľčĬĒĞĻāķĹħņđ", (byte)37, 66);
-               b[10] = NLoginCore_004.A("ĕĎčıęħĸļĦĶĜđ", (byte)37, 65);
-               b[11] = NLoginCore_138.E("ՆՄԷԴԿԱՌ\u0557՚ԡԢԹՁՏՉԽ՟ՙթՂ\u0558ԼՇիՈՀԴՔըՂՎթԹկՐմտԼրյռԻԶկջռՖ՚՝գիՌՙսՔՕ", (byte)37, 69);
-               b[12] = NLoginCore_004.F("ԻԩԭՖՇԗԴՔ՚Ԣԛ՟ԥԼ՝ՈԹդԵ՚ժԸ՝ԫլՐԪդկյՓՅճջնԺզկՙսգ՚րՃՖաՆ։՛ՠեշ֍Չՙջ֒ը՜վծձրի֊յՙ֏էճ\u0557կՔս֖թ", (byte)37, 70);
+               ZKM_STR_B[6] = NLoginCore_387.C("њѻѬҠҡѯҀѺҢѹѸѶҖѹѫҫѥѶҏѼҎҭѰҪүѯұү҄үһһҳҝӀҀҽҟҋҸҕҁҹҌ", (byte)37, 67);
+               ZKM_STR_B[7] = NLoginCore_387.B("ĔĀĺĻĔĜĩŉŇăĈĈěĬīĎĬĐİŐČįĳńŊŖĕěĜĕľġ", (byte)37, 66);
+               ZKM_STR_B[8] = NLoginCore_453.D("ҏғҏҀҜҐѲҟҘѹўѬ", (byte)37, 68);
+               ZKM_STR_B[9] = NLoginCore_110.B("ľčĬĒĞĻāķĹħņđ", (byte)37, 66);
+               ZKM_STR_B[10] = NLoginCore_004.A("ĕĎčıęħĸļĦĶĜđ", (byte)37, 65);
+               ZKM_STR_B[11] = NLoginCore_138.E("ՆՄԷԴԿԱՌ\u0557՚ԡԢԹՁՏՉԽ՟ՙթՂ\u0558ԼՇիՈՀԴՔըՂՎթԹկՐմտԼրյռԻԶկջռՖ՚՝գիՌՙսՔՕ", (byte)37, 69);
+               ZKM_STR_B[12] = NLoginCore_004.F("ԻԩԭՖՇԗԴՔ՚Ԣԛ՟ԥԼ՝ՈԹդԵ՚ժԸ՝ԫլՐԪդկյՓՅճջնԺզկՙսգ՚րՃՖաՆ։՛ՠեշ֍Չՙջ֒ը՜վծձրի֊յՙ֏էճ\u0557կՔս֖թ", (byte)37, 70);
                break;
             case 2:
-               b[0] = NLoginCore_183.E("ԶԕԻԪԕՠ՜Բ\u0557ԚԟԡԾ՛ՈՑԵԧԺԤԩԾզժՈԬԾԾղլՈն", (byte)37, 69);
+               ZKM_STR_B[0] = NLoginCore_183.E("ԶԕԻԪԕՠ՜Բ\u0557ԚԟԡԾ՛ՈՑԵԧԺԤԩԾզժՈԬԾԾղլՈն", (byte)37, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_201.D("Ѳѷ҇ҜҁѮґҝѮѲ҇ҝѺқѫѷҜңѯҚҌҨҟҲҡҨѱҘҶ҄ѱғ", (byte)37, 68);
+               ZKM_STR_B[0] = NLoginCore_201.D("Ѳѷ҇ҜҁѮґҝѮѲ҇ҝѺқѫѷҜңѯҚҌҨҟҲҡҨѱҘҶ҄ѱғ", (byte)37, 68);
          }
       }
    }
@@ -350,7 +350,7 @@ public class LoginMainQueueTask implements Runnable {
 
    public static void p(NLoginType_008 var0) {
       if (e == null) {
-         e = var0.b((boolean)aw).a(new LoginMainQueueTask(var0), ax, ay, TimeUnit.MILLISECONDS);
+         e = var0.b((aw != 0)).a(new LoginMainQueueTask(var0), ax, ay, TimeUnit.MILLISECONDS);
       }
    }
 
@@ -378,7 +378,7 @@ public class LoginMainQueueTask implements Runnable {
    private static String a(int var0, long var1) {
       var1 ^= 68L;
       var1 ^= 50716935409016518L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -422,10 +422,10 @@ public class LoginMainQueueTask implements Runnable {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public static void m(NLoginCore_277 var0) {

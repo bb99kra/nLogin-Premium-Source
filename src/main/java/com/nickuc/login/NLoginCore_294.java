@@ -29,11 +29,11 @@ public class NLoginCore_294 {
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static boolean a(File var0, Charset var1, String... var2) {
       if (var2.length == 0) {
-         return (boolean)f;
+         return (f != 0);
       } else if (!NLoginCore_366.b(var0)) {
-         return (boolean)g;
+         return (g != 0);
       } else {
-         PrintWriter var3 = a(var0, var1, (boolean)h);
+         PrintWriter var3 = a(var0, var1, (h != 0));
          boolean var10 = false /* VF: Semaphore variable */;
 
          int var12;
@@ -66,13 +66,13 @@ public class NLoginCore_294 {
             var3.close();
          }
 
-         return (boolean)var12;
+         return (var12 != 0);
       }
    }
 
    @CheckReturnValue
    public static PrintWriter a(File var0, Charset var1, boolean var2) {
-      return new PrintWriter(new BufferedWriter(new OutputStreamWriter(new FileOutputStream(var0, (boolean)e), var1)), var2);
+      return new PrintWriter(new BufferedWriter(new OutputStreamWriter(new FileOutputStream(var0, (e != 0)), var1)), var2);
    }
 
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
@@ -100,9 +100,9 @@ public class NLoginCore_294 {
             var2.close();
          }
 
-         return (boolean)var3;
+         return (var3 != 0);
       } else {
-         return (boolean)d;
+         return (d != 0);
       }
    }
 

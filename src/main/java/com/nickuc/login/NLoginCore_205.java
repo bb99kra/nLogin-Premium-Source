@@ -14,8 +14,8 @@ import org.bukkit.entity.Player;
 public class NLoginCore_205 {
    private static int b = Integer.reverse(0);
    private static int c = 256 >>> 136 | 256 << -136;
-   private static String[] b = new String[NLoginCore_205.d];
-   private static String[] a = new String[c];
+   private static String[] ZKM_STR_B = new String[NLoginCore_205.d];
+   private static String[] ZKM_STR_A = new String[c];
    private static int i = Integer.reverse(Integer.MIN_VALUE);
    private static int a = Integer.reverse(Integer.MIN_VALUE);
    private static int f = -1 >>> 178 | -1 << -178;
@@ -77,18 +77,18 @@ public class NLoginCore_205 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_232.B("ƭǕǁǌǑƮǚǛǄǅǗǔƩǨƿƭǅǞƺƿǤǳƺƻ", (byte)116, 66);
+               ZKM_STR_B[0] = NLoginCore_232.B("ƭǕǁǌǑƮǚǛǄǅǗǔƩǨƿƭǅǞƺƿǤǳƺƻ", (byte)116, 66);
                break;
             case 1:
-               b[0] = NLoginCore_397.F("ն֞֊֚֕շ֣֤֍֎ֳ֪֠լ֢֔֎ֵֺ֭կֆփք", (byte)116, 70);
+               ZKM_STR_B[0] = NLoginCore_397.F("ն֞֊֚֕շ֣֤֍֎ֳ֪֠լ֢֔֎ֵֺ֭կֆփք", (byte)116, 70);
                break;
             case 2:
-               b[0] = NLoginCore_521.C("ֆՕՠՋք\u058bբՙք՜ժՇՓ֓չ֊խ\u0558ճ\u0557Օ֍դե", (byte)116, 67);
+               ZKM_STR_B[0] = NLoginCore_521.C("ֆՕՠՋք\u058bբՙք՜ժՇՓ֓չ֊խ\u0558ճ\u0557Օ֍դե", (byte)116, 67);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_384.F("֧֔գօպ։ը֎֢դ֩ո", (byte)116, 70);
+               ZKM_STR_B[0] = NLoginCore_384.F("֧֔գօպ։ը֎֢դ֩ո", (byte)116, 70);
          }
       }
    }
@@ -96,7 +96,7 @@ public class NLoginCore_205 {
    private static String a(int var0, long var1) {
       var1 ^= 16L;
       var1 ^= -6253923773708946156L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -140,14 +140,14 @@ public class NLoginCore_205 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public static boolean a(Player var0) {
-      return (boolean)(j && var0.isGliding() ? a : b);
+      return ((j && var0.isGliding() != 0) ? a : b);
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {
@@ -169,6 +169,6 @@ public class NLoginCore_205 {
 
    static {
       b();
-      j = (boolean)(NLoginCore_546.a(Player.class, a(e & f, g)) != null ? i : j);
+      j = ((NLoginCore_546.a(Player.class, a(e & f, g) != 0)) != null ? i : j);
    }
 }

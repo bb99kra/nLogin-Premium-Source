@@ -16,11 +16,11 @@ public abstract class NLoginCore_438 implements NLoginInterface_039, NLoginInter
    private static int l = Integer.reverse(0);
    private static long f = Long.reverse(-8989753833847258271L);
    private static int i = Integer.reverse(0);
-   private static String[] a = new String[NLoginCore_438.n];
+   private static String[] ZKM_STR_A = new String[NLoginCore_438.n];
    private static int g = Integer.reverse(0);
    private static int m = (65536 >>> 144 | 65536 << -144) & -1;
    private static int n = Integer.reverse(Integer.MIN_VALUE);
-   private static String[] b = new String[NLoginCore_438.o];
+   private static String[] ZKM_STR_B = new String[NLoginCore_438.o];
    private static int a = Integer.reverse(0);
    private static int b = Integer.reverse(0);
    private static int k = Integer.reverse(0);
@@ -85,25 +85,25 @@ public abstract class NLoginCore_438 implements NLoginInterface_039, NLoginInter
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_076.C("ԨԔԢԫԴԜԭԬԵԻԻԠգՍՔԘԤՈՅԲ\u0557ՄԱԲ", (byte)99, 67);
+               ZKM_STR_B[0] = NLoginCore_076.C("ԨԔԢԫԴԜԭԬԵԻԻԠգՍՔԘԤՈՅԲ\u0557ՄԱԲ", (byte)99, 67);
                break;
             case 1:
-               b[0] = NLoginCore_384.D("ԨԔԢԫԴԜԭԬԵԻԼԛԼԠՒԿԤԽԠՄլՔգՅՂ՜ՉՀԳզմը", (byte)99, 68);
+               ZKM_STR_B[0] = NLoginCore_384.D("ԨԔԢԫԴԜԭԬԵԻԼԛԼԠՒԿԤԽԠՄլՔգՅՂ՜ՉՀԳզմը", (byte)99, 68);
                break;
             case 2:
-               b[0] = NLoginCore_004.E("ւ֚֎֑֒\u0558֎ր֓ւ֚իր֝տտ՚ն֓֜եօղճ", (byte)99, 69);
+               ZKM_STR_B[0] = NLoginCore_004.E("ւ֚֎֑֒\u0558֎ր֓ւ֚իր֝տտ՚ն֓֜եօղճ", (byte)99, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_387.C("ԪՐԋԳ\u0530ԶՏԿ՛՝ՎԶԚԺԲ\u0558՞ՑեԶԺԩՎ՝ԩԪԪԮլՃճՀ", (byte)99, 67);
+               ZKM_STR_B[0] = NLoginCore_387.C("ԪՐԋԳ\u0530ԶՏԿ՛՝ՎԶԚԺԲ\u0558՞ՑեԶԺԩՎ՝ԩԪԪԮլՃճՀ", (byte)99, 67);
          }
       }
    }
 
    @Override
    public boolean c(NLoginType_008 var1) {
-      return (boolean)l;
+      return (l != 0);
    }
 
    static {
@@ -112,7 +112,7 @@ public abstract class NLoginCore_438 implements NLoginInterface_039, NLoginInter
 
    @Override
    public boolean at() {
-      return (boolean)m;
+      return (m != 0);
    }
 
    @Generated
@@ -143,7 +143,7 @@ public abstract class NLoginCore_438 implements NLoginInterface_039, NLoginInter
    private static String a(int var0, long var1) {
       var1 ^= 76L;
       var1 ^= -1230901004390007078L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -187,10 +187,10 @@ public abstract class NLoginCore_438 implements NLoginInterface_039, NLoginInter
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {
@@ -213,19 +213,19 @@ public abstract class NLoginCore_438 implements NLoginInterface_039, NLoginInter
    @Override
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
       if (!this.d.d(var1)) {
-         return (boolean)a;
+         return (a != 0);
       } else if (!this.d.aJ()) {
-         return (boolean)b;
+         return (b != 0);
       } else {
          ForceRegisterConfig var4 = var3.a();
          if (var4.t() && !this.d.aK()) {
-            return (boolean)c;
+            return (c != 0);
          } else if (var4.u() && !this.d.aL()) {
-            return (boolean)d;
+            return (d != 0);
          } else if (var2.i(a(e, f) + this.d.getName())) {
-            return (boolean)g;
+            return (g != 0);
          } else {
-            return (boolean)(this.d.b(var4) == null ? h : i);
+            return ((this.d.b(var4) != 0) == null ? h : i);
          }
       }
    }

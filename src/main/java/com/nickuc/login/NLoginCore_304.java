@@ -35,12 +35,12 @@ public class NLoginCore_304 implements NLoginInterface_039 {
 
    @Override
    public boolean at() {
-      return (boolean)q;
+      return (q != 0);
    }
 
    @Override
    public boolean c(NLoginType_008 var1) {
-      return (boolean)p;
+      return (p != 0);
    }
 
    @Override
@@ -55,14 +55,14 @@ public class NLoginCore_304 implements NLoginInterface_039 {
    @Override
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
       if (!NLoginCore_329.c.ar()) {
-         return (boolean)a;
+         return (a != 0);
       } else if (!NLoginCore_329.n.ar()) {
-         return (boolean)b;
+         return (b != 0);
       } else if (NLoginCore_329.d.ar()) {
-         return (boolean)c;
+         return (c != 0);
       } else {
          ForceRegisterConfig var4 = var3.a();
-         return (boolean)(var4.h() && (var4.t() || !var4.y()) ? e : d);
+         return ((var4.h() != 0) && (var4.t() || !var4.y()) ? e : d);
       }
    }
 

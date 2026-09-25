@@ -23,16 +23,16 @@ public class NLoginCore_538 implements NLoginInterface_039, NLoginInterface_044 
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
       String var4 = var3.d(NLoginCore_567.u);
       if (var4 == null) {
-         return (boolean)a;
+         return (a != 0);
       } else if (NLoginCore_477.V.ar() && NLoginCore_477.W.ar()) {
          ForceRegisterConfig var5 = var3.a();
          if (!var5.s()) {
-            return (boolean)c;
+            return (c != 0);
          } else {
-            return (boolean)(!var5.x() && BCryptHashProvider.b().matcher(var4).matches() ? e : d);
+            return ((!var5.x() != 0) && BCryptHashProvider.b().matcher(var4).matches() ? e : d);
          }
       } else {
-         return (boolean)b;
+         return (b != 0);
       }
    }
 
@@ -44,12 +44,12 @@ public class NLoginCore_538 implements NLoginInterface_039, NLoginInterface_044 
 
    @Override
    public boolean c(NLoginType_008 var1) {
-      return (boolean)h;
+      return (h != 0);
    }
 
    @Override
    public boolean at() {
-      return (boolean)i;
+      return (i != 0);
    }
 
    @Override

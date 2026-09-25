@@ -17,17 +17,17 @@ import org.bukkit.entity.Player;
 
 public class NLoginCore_155 extends NLoginType_011 {
    private static long e;
-   private static String[] d = new String[NLoginCore_155.j];
+   private static String[] ZKM_STR_B = new String[NLoginCore_155.j];
    private static long f = Long.reverse(-3696541810282931093L);
    private static int c = Integer.reverse(0);
-   private static String[] c = new String[NLoginCore_155.g];
+   private static String[] ZKM_STR_A = new String[NLoginCore_155.g];
    private static int g = 134217728 >>> 251 | 134217728 << ~251 + 1;
    private static int j = Integer.reverse(Integer.MIN_VALUE);
 
    private static String a(int var0, long var1) {
       var1 ^= 104L;
       var1 ^= 1208071138250122499L;
-      if (c[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -71,10 +71,10 @@ public class NLoginCore_155 extends NLoginType_011 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         c[var0] = new String(var3.doFinal(Base64.getDecoder().decode(d[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return c[var0];
+      return ZKM_STR_A[var0];
    }
 
    public NLoginCore_155(NLoginType_007 var1) {
@@ -125,18 +125,18 @@ public class NLoginCore_155 extends NLoginType_011 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               d[0] = NLoginCore_138.D("ҴӉӐӍөӧӇӼӐӱӚӵӾӴӴӢӯӦӸӓӃӺӑӒ", (byte)67, 68);
+               ZKM_STR_B[0] = NLoginCore_138.D("ҴӉӐӍөӧӇӼӐӱӚӵӾӴӴӢӯӦӸӓӃӺӑӒ", (byte)67, 68);
                break;
             case 1:
-               d[0] = NLoginCore_324.C("ҴӉӐӍөӧӇӼӐӱӚӁӫӺӮӺӔӁӨӀԆөӵӈԂԏӠӑԎӏӋӲ", (byte)67, 67);
+               ZKM_STR_B[0] = NLoginCore_324.C("ҴӉӐӍөӧӇӼӐӱӚӁӫӺӮӺӔӁӨӀԆөӵӈԂԏӠӑԎӏӋӲ", (byte)67, 67);
                break;
             case 2:
-               d[0] = NLoginCore_451.D("ӡӅӤӰӼӍҹӌӲӊӉәӷӱӀӏӀԇӸӂӢӔӑӒ", (byte)67, 68);
+               ZKM_STR_B[0] = NLoginCore_451.D("ӡӅӤӰӼӍҹӌӲӊӉәӷӱӀӏӀԇӸӂӢӔӑӒ", (byte)67, 68);
             case 3:
             default:
                break;
             case 4:
-               d[0] = NLoginCore_387.C("ӅӠӒӬӘҳӑәҼӡӎһӬӓӲҸԂӲӚԊӾӨӼԈӜӏӻԎӳӔԈӭ", (byte)67, 67);
+               ZKM_STR_B[0] = NLoginCore_387.C("ӅӠӒӬӘҳӑәҼӡӎһӬӓӲҸԂӲӚԊӾӨӼԈӜӏӻԎӳӔԈӭ", (byte)67, 67);
          }
       }
    }

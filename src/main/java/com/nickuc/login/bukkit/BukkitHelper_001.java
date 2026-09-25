@@ -56,14 +56,14 @@ public class BukkitHelper_001 implements NLoginInterface_017 {
    public final boolean a;
    public static final AttributeKey<BukkitHelper_001> a = NLoginCore_389.a(a(l & m, BukkitHelper_001.n));
    private static int h = (0 >>> 93 | 0 << ~93 + 1) & -1;
-   private static String[] b = new String[BukkitHelper_001.k];
+   private static String[] ZKM_STR_B = new String[BukkitHelper_001.k];
    @Nullable
    public final UUID c;
    private static long c;
    private static final Cache<String, BukkitHelper_001> b = Caffeine.newBuilder().expireAfterWrite(1L, TimeUnit.MINUTES).build();
    public final User a;
    public final ForceRegisterConfig a;
-   private static String[] a = new String[BukkitHelper_001.j];
+   private static String[] ZKM_STR_A = new String[BukkitHelper_001.j];
    private static int g = Integer.reverse(Integer.MIN_VALUE);
    private static int j = Integer.reverse(-1073741824);
    private static int k = Integer.reverse(-1073741824);
@@ -77,7 +77,7 @@ public class BukkitHelper_001 implements NLoginInterface_017 {
 
    public boolean d() {
       ChannelPipeline var1 = this.a.pipeline();
-      return (boolean)(var1.get(a(a & b, d)) != null && var1.get(a(e, f)) != null ? g : h);
+      return ((var1.get(a(a & b, d) != 0)) != null && var1.get(a(e, f)) != null ? g : h);
    }
 
    public static BukkitHelper_001 a(String var0, InetAddress var1, @Nullable InetAddress var2) {
@@ -110,7 +110,7 @@ public class BukkitHelper_001 implements NLoginInterface_017 {
    private static String a(int var0, long var1) {
       var1 ^= 87L;
       var1 ^= -7569864832455592126L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -154,10 +154,10 @@ public class BukkitHelper_001 implements NLoginInterface_017 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Generated
@@ -189,7 +189,7 @@ public class BukkitHelper_001 implements NLoginInterface_017 {
 
    @Override
    public void g() {
-      this.b = (boolean)i;
+      this.b = (i != 0);
    }
 
    private static void b() {
@@ -236,22 +236,22 @@ public class BukkitHelper_001 implements NLoginInterface_017 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_110.A("ŗŌŰůŤĴŧſŗŘŴŇ", (byte)64, 65);
-               b[1] = NLoginCore_138.F("ՍՠէէՅՑհՕխտչՄ", (byte)64, 70);
-               b[2] = NLoginCore_183.A("įŮŹņĳŸŉĻŪŲƀłńƀĽţœńŷŪŵŦŶŗřŞōƉşőōū", (byte)64, 65);
+               ZKM_STR_B[0] = NLoginCore_110.A("ŗŌŰůŤĴŧſŗŘŴŇ", (byte)64, 65);
+               ZKM_STR_B[1] = NLoginCore_138.F("ՍՠէէՅՑհՕխտչՄ", (byte)64, 70);
+               ZKM_STR_B[2] = NLoginCore_183.A("įŮŹņĳŸŉĻŪŲƀłńƀĽţœńŷŪŵŦŶŗřŞōƉşőōū", (byte)64, 65);
                break;
             case 1:
-               b[0] = NLoginCore_384.A("ŧŉŮňŭĺŚıķŹŘžŁƀļŃŰňŶřŊƋŒœ", (byte)64, 65);
-               b[1] = NLoginCore_427.A("ťųŐĶůŭŪůŹœŹŵĺťłŨĺžŶńƄƋŒœ", (byte)64, 65);
-               b[2] = NLoginCore_553.B("įŮŹņĳŸŉĻŪŲƀłńƀĽţœńŷŪŵŵŦňţƎőƆƆƃşşŹŪœƚśƞžūŒŻŝŧ", (byte)64, 66);
+               ZKM_STR_B[0] = NLoginCore_384.A("ŧŉŮňŭĺŚıķŹŘžŁƀļŃŰňŶřŊƋŒœ", (byte)64, 65);
+               ZKM_STR_B[1] = NLoginCore_427.A("ťųŐĶůŭŪůŹœŹŵĺťłŨĺžŶńƄƋŒœ", (byte)64, 65);
+               ZKM_STR_B[2] = NLoginCore_553.B("įŮŹņĳŸŉĻŪŲƀłńƀĽţœńŷŪŵŵŦňţƎőƆƆƃşşŹŪœƚśƞžūŒŻŝŧ", (byte)64, 66);
                break;
             case 2:
-               b[0] = NLoginCore_201.A("ųķŭĲŗĺİųŬŹŭŭŌůşŁŠŽńƄŽƀŦƁƀƆŢůſſŤŗ", (byte)64, 65);
+               ZKM_STR_B[0] = NLoginCore_201.A("ųķŭĲŗĺİųŬŹŭŭŌůşŁŠŽńƄŽƀŦƁƀƆŢůſſŤŗ", (byte)64, 65);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_453.D("ӉӘҼөӤӱӲҿөӒӢүӂӲӕҼӲҺӭӉӛӗӞӅӝԅӷԃӄӚӌӹ", (byte)64, 68);
+               ZKM_STR_B[0] = NLoginCore_453.D("ӉӘҼөӤӱӲҿөӒӢүӂӲӕҼӲҺӭӉӛӗӞӅӝԅӷԃӄӚӌӹ", (byte)64, 68);
          }
       }
    }

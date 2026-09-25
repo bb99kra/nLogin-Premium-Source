@@ -20,7 +20,7 @@ public abstract class NLoginCore_483<V extends NLoginInterface_011<?>> implement
    private static long h = Long.reverse(-2882303761517117440L);
    private static long c;
    private static int k = 0 >>> 217 | 0 << ~217 + 1;
-   private static String[] a = new String[NLoginCore_483.l];
+   private static String[] ZKM_STR_A = new String[NLoginCore_483.l];
    private static long g = Long.reverse(-8359511176136350356L);
    private static long e = Long.reverse(-2882303761517117440L);
    private static int m = Integer.reverse(-1073741824);
@@ -28,7 +28,7 @@ public abstract class NLoginCore_483<V extends NLoginInterface_011<?>> implement
    private static int c = Integer.reverse(Integer.MIN_VALUE);
    private static int l = 48 >>> 100 | 48 << ~100 + 1;
    private static int j = Integer.reverse(Integer.MIN_VALUE);
-   private static String[] b = new String[m];
+   private static String[] ZKM_STR_B = new String[m];
 
    private static void b() {
       c = 3937340539207204817L;
@@ -74,22 +74,22 @@ public abstract class NLoginCore_483<V extends NLoginInterface_011<?>> implement
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_451.B("ƬǅƱưƵƉƇǊƹƨǍƆƨƿƬƍƠǓǎƗƗƩƮƷǘǚǈƵǁǒǓǛ", (byte)102, 66);
-               b[1] = NLoginCore_091.C("ՈաՍՌՑԥԣզՕՄթԢՄ՛ՈԩԼկժԳԳՁղԲեՖպՒՅ՞ՆԸԿՠս\u0558ԶԼ՚աքֈժՏ", (byte)102, 67);
-               b[2] = NLoginCore_553.F("ֈխլձ֜ՠջ՜շ֕յղտս֑֩ջ֭թ֢լւ֢֮֓֍ֱ֨֔֊ָյַ\u0590֔ֈָ֖֯չ֭֙ր֊", (byte)102, 70);
+               ZKM_STR_B[0] = NLoginCore_451.B("ƬǅƱưƵƉƇǊƹƨǍƆƨƿƬƍƠǓǎƗƗƩƮƷǘǚǈƵǁǒǓǛ", (byte)102, 66);
+               ZKM_STR_B[1] = NLoginCore_091.C("ՈաՍՌՑԥԣզՕՄթԢՄ՛ՈԩԼկժԳԳՁղԲեՖպՒՅ՞ՆԸԿՠս\u0558ԶԼ՚աքֈժՏ", (byte)102, 67);
+               ZKM_STR_B[2] = NLoginCore_553.F("ֈխլձ֜ՠջ՜շ֕յղտս֑֩ջ֭թ֢լւ֢֮֓֍ֱ֨֔֊ָյַ\u0590֔ֈָ֖֯չ֭֙ր֊", (byte)102, 70);
                break;
             case 1:
-               b[0] = NLoginCore_471.E("փ֜ֈև\u058cՠ՞֡\u0590տ֤՝տ֖փդշ֪֥ծծր֍֧֠֕֨֍ղկիֶ֖յַׁ֩֞֫֒֜ն֕֊", (byte)102, 69);
-               b[1] = NLoginCore_446.B("ƬǅƱưƵƉƇǊƹƨǍƆƨƿƬƍƠǓǎƗƗƥǖƖǉƺǞƶƩǂƪƜƽǐƵǞƲơǀǉǜǍƶƳ", (byte)102, 66);
-               b[2] = NLoginCore_127.E("ֈխլձ֜ՠջ՜շ֕յղտս֑֩ջ֭թ֢լւ֢֮֓֍ֱ֨֔֊ָյ֍ֲַַֽ֑֪մ\u0590ւ֍֊", (byte)102, 69);
+               ZKM_STR_B[0] = NLoginCore_471.E("փ֜ֈև\u058cՠ՞֡\u0590տ֤՝տ֖փդշ֪֥ծծր֍֧֠֕֨֍ղկիֶ֖յַׁ֩֞֫֒֜ն֕֊", (byte)102, 69);
+               ZKM_STR_B[1] = NLoginCore_446.B("ƬǅƱưƵƉƇǊƹƨǍƆƨƿƬƍƠǓǎƗƗƥǖƖǉƺǞƶƩǂƪƜƽǐƵǞƲơǀǉǜǍƶƳ", (byte)102, 66);
+               ZKM_STR_B[2] = NLoginCore_127.E("ֈխլձ֜ՠջ՜շ֕յղտս֑֩ջ֭թ֢լւ֢֮֓֍ֱ֨֔֊ָյ֍ֲַַֽ֑֪մ\u0590ւ֍֊", (byte)102, 69);
                break;
             case 2:
-               b[0] = NLoginCore_173.F("Օռկ֖\u0558՛տպ՛֣վչձ֔եղ֘բռ֍֚֞յն", (byte)102, 70);
+               ZKM_STR_B[0] = NLoginCore_173.F("Օռկ֖\u0558՛տպ՛֣վչձ֔եղ֘բռ֍֚֞յն", (byte)102, 70);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_553.E("֙Վ։՞֖֜՝խ\u058b֢ցժ", (byte)102, 69);
+               ZKM_STR_B[0] = NLoginCore_553.E("֙Վ։՞֖֜՝խ\u058b֢ցժ", (byte)102, 69);
          }
       }
    }
@@ -97,7 +97,7 @@ public abstract class NLoginCore_483<V extends NLoginInterface_011<?>> implement
    private static String a(int var0, long var1) {
       var1 ^= 27L;
       var1 ^= 7634789438276402145L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -141,10 +141,10 @@ public abstract class NLoginCore_483<V extends NLoginInterface_011<?>> implement
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {
@@ -179,16 +179,16 @@ public abstract class NLoginCore_483<V extends NLoginInterface_011<?>> implement
          throw new IllegalArgumentException(a(f, g ^ h));
       } else if (var1 != null) {
          var1.a(this.h, var2, var3, var4);
-         return (boolean)i;
+         return (i != 0);
       } else {
          for (NLoginCore_277 var6 : this.h.b().c()) {
             if (var6.R()) {
                var6.a(this.h, var2, var3, var4);
-               return (boolean)j;
+               return (j != 0);
             }
          }
 
-         return (boolean)k;
+         return (k != 0);
       }
    }
 

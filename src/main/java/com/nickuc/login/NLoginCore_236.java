@@ -30,7 +30,7 @@ public class NLoginCore_236 implements Iterator<AccountData> {
    private static int y = Integer.reverse(0);
    private static int c = (0 >>> 183 | 0 << -183) & -1;
    private static long af = Long.reverse(12577884303918739L);
-   private static String[] b = new String[NLoginCore_236.ah];
+   private static String[] ZKM_STR_B = new String[NLoginCore_236.ah];
    private static int u = Integer.reverse(0);
    private static int h = Integer.reverse(0);
    private static int k = 0 >>> 72 | 0 << ~72 + 1;
@@ -40,7 +40,7 @@ public class NLoginCore_236 implements Iterator<AccountData> {
    private static int g = Integer.reverse(0);
    private static int ah = 12 >>> 161 | 12 << ~161 + 1;
    private static long n = Long.reverse(12577884303918739L);
-   private static String[] a = new String[NLoginCore_236.ag];
+   private static String[] ZKM_STR_A = new String[NLoginCore_236.ag];
    private static int d = Integer.reverse(-1);
    private static int f = Integer.reverse(1073741824);
    private static int w = Integer.reverse(Integer.MIN_VALUE);
@@ -110,28 +110,28 @@ public class NLoginCore_236 implements Iterator<AccountData> {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_076.D("Ѩях҆ѓҔѡѯ҈ѥ҇ѸѳѾҒҖ҂ҞѰѬѳѾѲѥҚѿҪ҃ѬҖҍҬҁ҅Ҟң҃҄ѲҹҗѳҖҌҬҫҺ҈ғҪҾҬҵҜҨӅ҆҄ҙӀҟҙҎ҉", (byte)33, 68);
-               b[1] = NLoginCore_387.E("ՌԔՌԩԩԺԬՓՕԪՈԞԱ՛\u0530ՄաՐ\u0557ՙՓիԨԨ\u0557ԿՌ՜եկիՔ", (byte)33, 69);
-               b[2] = NLoginCore_451.B("ñģĥûēħþīĪēöĘĳŁİĴĦŊĚŋĥĺĈĐőěīĤĔīŇįİđĭĜľŋĬĚŒōńĩ", (byte)33, 66);
-               b[3] = NLoginCore_387.C("Ѩях҆ѓҔѡѯ҈ѥ҇ѸѳѾҒҖ҂ҞѰѬѳѾѲѥҚѿҪ҃ѬҖҍҬҝҞ҆ѮҝѳҤѳ҆ҰғѸѵҝҒҡҸғҴҷҭҞҋҌ", (byte)33, 67);
-               b[4] = NLoginCore_427.D("҇я҇ѤѤѵѧҎҐѥ҃љѬҖѫѿҜҋҒҔҎҦѣѣҒѺ҇җҠҪҦҏ", (byte)33, 68);
-               b[5] = NLoginCore_397.B("ñģĥûēħþīĪēöĘĳŁİĴĦŊĚŋĥĺĈĐőěīĤĔīŇįİđĭĜľŋĬĚŒōńĩ", (byte)33, 66);
+               ZKM_STR_B[0] = NLoginCore_076.D("Ѩях҆ѓҔѡѯ҈ѥ҇ѸѳѾҒҖ҂ҞѰѬѳѾѲѥҚѿҪ҃ѬҖҍҬҁ҅Ҟң҃҄ѲҹҗѳҖҌҬҫҺ҈ғҪҾҬҵҜҨӅ҆҄ҙӀҟҙҎ҉", (byte)33, 68);
+               ZKM_STR_B[1] = NLoginCore_387.E("ՌԔՌԩԩԺԬՓՕԪՈԞԱ՛\u0530ՄաՐ\u0557ՙՓիԨԨ\u0557ԿՌ՜եկիՔ", (byte)33, 69);
+               ZKM_STR_B[2] = NLoginCore_451.B("ñģĥûēħþīĪēöĘĳŁİĴĦŊĚŋĥĺĈĐőěīĤĔīŇįİđĭĜľŋĬĚŒōńĩ", (byte)33, 66);
+               ZKM_STR_B[3] = NLoginCore_387.C("Ѩях҆ѓҔѡѯ҈ѥ҇ѸѳѾҒҖ҂ҞѰѬѳѾѲѥҚѿҪ҃ѬҖҍҬҝҞ҆ѮҝѳҤѳ҆ҰғѸѵҝҒҡҸғҴҷҭҞҋҌ", (byte)33, 67);
+               ZKM_STR_B[4] = NLoginCore_427.D("҇я҇ѤѤѵѧҎҐѥ҃љѬҖѫѿҜҋҒҔҎҦѣѣҒѺ҇җҠҪҦҏ", (byte)33, 68);
+               ZKM_STR_B[5] = NLoginCore_397.B("ñģĥûēħþīĪēöĘĳŁİĴĦŊĚŋĥĺĈĐőěīĤĔīŇįİđĭĜľŋĬĚŒōńĩ", (byte)33, 66);
                break;
             case 1:
-               b[0] = NLoginCore_201.F("ԭԔԊՋԘՙԦԴՍԪՌԽԸՃ\u0557՛ՇգԵԱԸՃԷԪ՟ՄկՈԱ՛ՒձՆՊգըՈՉԷվ՜Ը՛ՑձհտՍ\u0558կփձպ\u0557իՇտ֏՚ՏտՎ֍Շ", (byte)33, 70);
-               b[1] = NLoginCore_521.F("ՌԔՌԩԩԺԬՓՕԪՈԞԱ՛\u0530ՄաՐ\u0557ՙՓԨաՆԼբԭԭդԿԿԮԶՖոըգճՑՏԾհղՅ", (byte)33, 70);
-               b[2] = NLoginCore_091.A("ñģĥûēħþīĪēöĘĳŁİĴĦŊĚŋĥĺĈĐőěīĤĔīŇįēħĦŐřĖœęĿŖŕŃĴŖņśŝŗřŝĦķĴĵ", (byte)33, 65);
-               b[3] = NLoginCore_324.A("đøîįüĽĊĘıĎİġĜħĻĿīŇęĕĜħěĎŃĨœĬĕĿĶŕņŇįėņĜōĜįřĿĲłŞŇĩŃĤţŊĬŝĴĵ", (byte)33, 65);
-               b[4] = NLoginCore_223.C("҇я҇ѤѤѵѧҎҐѥ҃љѬҖѫѿҜҋҒҔҎѤѝѤ҅ҕѴѸѼҥ҉қ", (byte)33, 67);
-               b[5] = NLoginCore_127.B("ñģĥûēħþīĪēöĘĳŁİĴĦŊĚŋĥĺĈĐőěīĤĔīŇįŚŚœďĩĘĮŒĿİţřĞğĠĻŧĵŪňŬŝĴĵ", (byte)33, 66);
+               ZKM_STR_B[0] = NLoginCore_201.F("ԭԔԊՋԘՙԦԴՍԪՌԽԸՃ\u0557՛ՇգԵԱԸՃԷԪ՟ՄկՈԱ՛ՒձՆՊգըՈՉԷվ՜Ը՛ՑձհտՍ\u0558կփձպ\u0557իՇտ֏՚ՏտՎ֍Շ", (byte)33, 70);
+               ZKM_STR_B[1] = NLoginCore_521.F("ՌԔՌԩԩԺԬՓՕԪՈԞԱ՛\u0530ՄաՐ\u0557ՙՓԨաՆԼբԭԭդԿԿԮԶՖոըգճՑՏԾհղՅ", (byte)33, 70);
+               ZKM_STR_B[2] = NLoginCore_091.A("ñģĥûēħþīĪēöĘĳŁİĴĦŊĚŋĥĺĈĐőěīĤĔīŇįēħĦŐřĖœęĿŖŕŃĴŖņśŝŗřŝĦķĴĵ", (byte)33, 65);
+               ZKM_STR_B[3] = NLoginCore_324.A("đøîįüĽĊĘıĎİġĜħĻĿīŇęĕĜħěĎŃĨœĬĕĿĶŕņŇįėņĜōĜįřĿĲłŞŇĩŃĤţŊĬŝĴĵ", (byte)33, 65);
+               ZKM_STR_B[4] = NLoginCore_223.C("҇я҇ѤѤѵѧҎҐѥ҃љѬҖѫѿҜҋҒҔҎѤѝѤ҅ҕѴѸѼҥ҉қ", (byte)33, 67);
+               ZKM_STR_B[5] = NLoginCore_127.B("ñģĥûēħþīĪēöĘĳŁİĴĦŊĚŋĥĺĈĐőěīĤĔīŇįŚŚœďĩĘĮŒĿİţřĞğĠĻŧĵŪňŬŝĴĵ", (byte)33, 66);
                break;
             case 2:
-               b[0] = NLoginCore_092.F("ԪՅՍՄԐԘԘԴԻԵԶ\u0557ԛՄՕԞՠ\u0530ԲԥՕԳ\u0530Ա", (byte)33, 70);
+               ZKM_STR_B[0] = NLoginCore_092.F("ԪՅՍՄԐԘԘԴԻԵԶ\u0557ԛՄՕԞՠ\u0530ԲԥՕԳ\u0530Ա", (byte)33, 70);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_553.D("҃ьѫѭѵѤёїҌҖѳѠ", (byte)33, 68);
+               ZKM_STR_B[0] = NLoginCore_553.D("҃ьѫѭѵѤёїҌҖѳѠ", (byte)33, 68);
          }
       }
    }
@@ -139,7 +139,7 @@ public class NLoginCore_236 implements Iterator<AccountData> {
    private static String a(int var0, long var1) {
       var1 ^= 112L;
       var1 ^= 3680545283428866962L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -183,10 +183,10 @@ public class NLoginCore_236 implements Iterator<AccountData> {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public AccountData next() {
@@ -341,6 +341,6 @@ public class NLoginCore_236 implements Iterator<AccountData> {
 
    @Override
    public boolean hasNext() {
-      return (boolean)(this.b <= this.a ? a : b);
+      return ((this.b <= this.a ? a : b) != 0);
    }
 }

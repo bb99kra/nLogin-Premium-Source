@@ -15,7 +15,7 @@ public class NLoginCore_279 implements NLoginInterface_010, NLoginInterface_035 
    private static int n = Integer.reverse(-1);
    private static int q = Integer.reverse(1073741824);
    private static int j = Integer.reverse(0);
-   private static String[] a = new String[NLoginCore_279.p];
+   private static String[] ZKM_STR_A = new String[NLoginCore_279.p];
    private static int f = 0 >>> 90 | 0 << -90;
    private static long c;
    private static int i = (0 >>> 9 | 0 << -9) & -1;
@@ -32,7 +32,7 @@ public class NLoginCore_279 implements NLoginInterface_010, NLoginInterface_035 
    private static long o = Long.reverse(-5119936981078562325L);
    private static int g = (4096 >>> 140 | 4096 << ~140 + 1) & -1;
    private static long l = Long.reverse(2594073385365405696L);
-   private static String[] b = new String[q];
+   private static String[] ZKM_STR_B = new String[q];
 
    @Generated
    public NLoginCore_279(NLoginCore_211 var1) {
@@ -52,7 +52,7 @@ public class NLoginCore_279 implements NLoginInterface_010, NLoginInterface_035 
    private static String a(int var0, long var1) {
       var1 ^= 36L;
       var1 ^= 7163277145169251723L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -96,10 +96,10 @@ public class NLoginCore_279 implements NLoginInterface_010, NLoginInterface_035 
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Override
@@ -161,20 +161,20 @@ public class NLoginCore_279 implements NLoginInterface_010, NLoginInterface_035 
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_446.D("ҠңӅӂҥӅңҎӓӆӗҔәӛҖҗҮӌҿӡһҺҧҨ", (byte)53, 68);
-               b[1] = NLoginCore_173.D("ҊҠҝ҂ңңӓҔҰңҍҤҹҦҪӅүӚӖӋҳҝӑҳқҲұӓӛҹӠөӈӠҾӮӏӈҿӁҴӃӠӔӆөӓӕӱӾӉӨӟҾӏӑӚӣӀӿӇӽԄԈӿӘӢԆԇӉӼӟԐԄӯӜ", (byte)53, 68);
+               ZKM_STR_B[0] = NLoginCore_446.D("ҠңӅӂҥӅңҎӓӆӗҔәӛҖҗҮӌҿӡһҺҧҨ", (byte)53, 68);
+               ZKM_STR_B[1] = NLoginCore_173.D("ҊҠҝ҂ңңӓҔҰңҍҤҹҦҪӅүӚӖӋҳҝӑҳқҲұӓӛҹӠөӈӠҾӮӏӈҿӁҴӃӠӔӆөӓӕӱӾӉӨӟҾӏӑӚӣӀӿӇӽԄԈӿӘӢԆԇӉӼӟԐԄӯӜ", (byte)53, 68);
                break;
             case 1:
-               b[0] = NLoginCore_433.E("ԽՀբ՟ՂբՀԫհգղնՄՄժըժՍԶ՝՚խՄՅ", (byte)53, 69);
-               b[1] = NLoginCore_384.B("ğĵĲėĸĸŨĩŅĸĢĹŎĻĿŚńůūŠňĲŦňİŇņŨŰŎŵžŝŵœƃŤŝŔŖŉŘŵũśžŨŪƆƓŞŽŴœŤŦůŸŕƔŜƒƙƝƢƂŻşƛŞťƘƨŹƞű", (byte)53, 66);
+               ZKM_STR_B[0] = NLoginCore_433.E("ԽՀբ՟ՂբՀԫհգղնՄՄժըժՍԶ՝՚խՄՅ", (byte)53, 69);
+               ZKM_STR_B[1] = NLoginCore_384.B("ğĵĲėĸĸŨĩŅĸĢĹŎĻĿŚńůūŠňĲŦňİŇņŨŰŎŵžŝŵœƃŤŝŔŖŉŘŵũśžŨŪƆƓŞŽŴœŤŦůŸŕƔŜƒƙƝƢƂŻşƛŞťƘƨŹƞű", (byte)53, 66);
                break;
             case 2:
-               b[0] = NLoginCore_471.D("҃ҶҮҞҦҾҮӀӍӐӂӀҭҗәӕӇҜҰӐәӠҧҨ", (byte)53, 68);
+               ZKM_STR_B[0] = NLoginCore_471.D("҃ҶҮҞҦҾҮӀӍӐӂӀҭҗәӕӇҜҰӐәӠҧҨ", (byte)53, 68);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_433.E("ՁՌԼԫ՛ՅԯՊԩԥժճԭԲԪէժՌԹՏ\u0558խՄՅ", (byte)53, 69);
+               ZKM_STR_B[0] = NLoginCore_433.E("ՁՌԼԫ՛ՅԯՊԩԥժճԭԲԪէժՌԹՏ\u0558խՄՅ", (byte)53, 69);
          }
       }
    }
@@ -203,13 +203,13 @@ public class NLoginCore_279 implements NLoginInterface_010, NLoginInterface_035 
       switch (NLoginCore_188.C[var5.ordinal()]) {
          case 1:
          case 2:
-            this.a(var3).i((boolean)(var5 == NLoginCore_445.b ? h : i));
+            this.a(var3).i(((var5 == NLoginCore_445.b ? h : i) != 0));
             NLoginInterface_035.super.a(var1, var2, var3, var4, var5);
       }
    }
 
    @Override
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
-      return (boolean)(var1.a().n() == a && var1.a().q() ? b : c);
+      return ((var1.a() != 0).n() == a && var1.a().q() ? b : c);
    }
 }

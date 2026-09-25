@@ -31,7 +31,7 @@ public class NLoginCore_372 {
    private static long w = Long.reverse(8409442463912470823L);
    private static int a = (0 >>> 254 | 0 << ~254 + 1) & -1;
    private static int s = 16777216 >>> 182 | 16777216 << -182;
-   private static String[] a = new String[ae];
+   private static String[] ZKM_STR_A = new String[ae];
    private static int ac = Integer.reverse(Integer.MIN_VALUE);
    private static long d = Long.reverse(8070450532247928832L);
    private static int g = Integer.reverse(Integer.MIN_VALUE);
@@ -46,14 +46,14 @@ public class NLoginCore_372 {
    private static long h = Long.reverse(8409442463912470823L);
    private static int aa = Integer.reverse(Integer.MIN_VALUE);
    private static long n = Long.reverse(8409442463912470823L);
-   private static String[] b = new String[af];
+   private static String[] ZKM_STR_B = new String[af];
    private static long q = Long.reverse(8409442463912470823L);
    private static long z = Long.reverse(338991931664541991L);
 
    private static String a(int var0, long var1) {
       var1 ^= 14L;
       var1 ^= -5614831594392132048L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -97,10 +97,10 @@ public class NLoginCore_372 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public static String ae() {
@@ -219,30 +219,30 @@ public class NLoginCore_372 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_446.C("ё҄йїѕс҉ъ҅ѿ҅є", (byte)29, 67);
-               b[1] = NLoginCore_138.F("ԍՏԎԢԐԮԳԧՙՑՊԡ", (byte)29, 70);
-               b[2] = NLoginCore_141.D("јѯѿѻѵ҄ѴфѬ҈ъ҆ыяҀѴѵѥєїҊђѱљҌғѰҔҍҕѻѾҥјѥҀқҗҔқ҆Үң҆҈ҤҮѯұҏ҆ҶҶҒѿҀ", (byte)29, 68);
-               b[3] = NLoginCore_138.F("ԐԠԐԾԦՌՐԶԶՕՋՓՓ՝ՏՒԭԵԾԿԺՕԬԭ", (byte)29, 70);
-               b[4] = NLoginCore_453.C("ѢњѨффѓѨљѮѭює", (byte)29, 67);
-               b[5] = NLoginCore_183.A("ĳćďģģóıĴĒôĔā", (byte)29, 65);
-               b[6] = NLoginCore_138.D("ѓфф҆҄҈҆тїѶѧє", (byte)29, 68);
+               ZKM_STR_B[0] = NLoginCore_446.C("ё҄йїѕс҉ъ҅ѿ҅є", (byte)29, 67);
+               ZKM_STR_B[1] = NLoginCore_138.F("ԍՏԎԢԐԮԳԧՙՑՊԡ", (byte)29, 70);
+               ZKM_STR_B[2] = NLoginCore_141.D("јѯѿѻѵ҄ѴфѬ҈ъ҆ыяҀѴѵѥєїҊђѱљҌғѰҔҍҕѻѾҥјѥҀқҗҔқ҆Үң҆҈ҤҮѯұҏ҆ҶҶҒѿҀ", (byte)29, 68);
+               ZKM_STR_B[3] = NLoginCore_138.F("ԐԠԐԾԦՌՐԶԶՕՋՓՓ՝ՏՒԭԵԾԿԺՕԬԭ", (byte)29, 70);
+               ZKM_STR_B[4] = NLoginCore_453.C("ѢњѨффѓѨљѮѭює", (byte)29, 67);
+               ZKM_STR_B[5] = NLoginCore_183.A("ĳćďģģóıĴĒôĔā", (byte)29, 65);
+               ZKM_STR_B[6] = NLoginCore_138.D("ѓфф҆҄҈҆тїѶѧє", (byte)29, 68);
                break;
             case 1:
-               b[0] = NLoginCore_127.F("ԌԬԍԮԌԳՂԧԲԚՆԡ", (byte)29, 70);
-               b[1] = NLoginCore_173.A("òćþìČēðĢĘęČā", (byte)29, 65);
-               b[2] = NLoginCore_223.E("ԥԼՌՈՂՑՁԑԹՕԗՓԘԜՍՁՂԲԡԤ\u0557ԟԾԦՙՠԽա՚բՈՋղԥԲՍըդաըՓջձՇՔ\u0558խոՠՏԿծ՛ՐփաՁֆփիֈՁ\u0558Չ", (byte)29, 69);
-               b[3] = NLoginCore_004.A("ðĀðĞĆĬİĖĖĵĭĎđķĞĘďĕěĄłĵČč", (byte)29, 65);
-               b[4] = NLoginCore_183.B("īĳāĂğðćĊĮĐĶā", (byte)29, 66);
-               b[5] = NLoginCore_384.E("ԛԬՑՂԦՁԷՊԨ՚Լԡ", (byte)29, 69);
-               b[6] = NLoginCore_091.B("êĳāđčĔĩĆñĬĐā", (byte)29, 66);
+               ZKM_STR_B[0] = NLoginCore_127.F("ԌԬԍԮԌԳՂԧԲԚՆԡ", (byte)29, 70);
+               ZKM_STR_B[1] = NLoginCore_173.A("òćþìČēðĢĘęČā", (byte)29, 65);
+               ZKM_STR_B[2] = NLoginCore_223.E("ԥԼՌՈՂՑՁԑԹՕԗՓԘԜՍՁՂԲԡԤ\u0557ԟԾԦՙՠԽա՚բՈՋղԥԲՍըդաըՓջձՇՔ\u0558խոՠՏԿծ՛ՐփաՁֆփիֈՁ\u0558Չ", (byte)29, 69);
+               ZKM_STR_B[3] = NLoginCore_004.A("ðĀðĞĆĬİĖĖĵĭĎđķĞĘďĕěĄłĵČč", (byte)29, 65);
+               ZKM_STR_B[4] = NLoginCore_183.B("īĳāĂğðćĊĮĐĶā", (byte)29, 66);
+               ZKM_STR_B[5] = NLoginCore_384.E("ԛԬՑՂԦՁԷՊԨ՚Լԡ", (byte)29, 69);
+               ZKM_STR_B[6] = NLoginCore_091.B("êĳāđčĔĩĆñĬĐā", (byte)29, 66);
                break;
             case 2:
-               b[0] = NLoginCore_324.B("ģÿĮĶāïĤĊõĺĩöĮĐĎđĂďÿąļĵČč", (byte)29, 66);
+               ZKM_STR_B[0] = NLoginCore_324.B("ģÿĮĶāïĤĊõĺĩöĮĐĎđĂďÿąļĵČč", (byte)29, 66);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_575.F("ԲՃԽՇԕԑԥԯՐԕ\u0530\u0530ԙՑԙԟԛ\u0557ԬԾզԵԷՙԡըԤլՈԻՊՀ", (byte)29, 70);
+               ZKM_STR_B[0] = NLoginCore_575.F("ԲՃԽՇԕԑԥԯՐԕ\u0530\u0530ԙՑԙԟԛ\u0557ԬԾզԵԷՙԡըԤլՈԻՊՀ", (byte)29, 70);
          }
       }
    }

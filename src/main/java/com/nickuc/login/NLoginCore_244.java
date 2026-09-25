@@ -16,8 +16,8 @@ public enum NLoginCore_244 {
    c,
    d;
 
-   private static String[] a = new String[NLoginCore_244.f];
-   private static String[] b = new String[NLoginCore_244.g];
+   private static String[] ZKM_STR_A = new String[NLoginCore_244.f];
+   private static String[] ZKM_STR_B = new String[NLoginCore_244.g];
    private static long c;
    private static int a = (128 >>> 101 | 128 << ~101 + 1) & -1;
    private static int b = 0 >>> 165 | 0 << ~165 + 1;
@@ -103,24 +103,24 @@ public enum NLoginCore_244 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_232.A("ęøĚýüĄĖéĀĆüñ", (byte)21, 65);
-               b[1] = NLoginCore_446.E("ԤԨԊՃՌՎԝԃՓԐՊՂԴԕԥՙԻԸԵԭԴՍԤԥ", (byte)21, 69);
-               b[2] = NLoginCore_427.B("ëĎóğěġĒþĠĆãñ", (byte)21, 66);
-               b[3] = NLoginCore_138.E("ԺԨԞՈԝԢԼՏ\u0530ԢԬԙ", (byte)21, 69);
+               ZKM_STR_B[0] = NLoginCore_232.A("ęøĚýüĄĖéĀĆüñ", (byte)21, 65);
+               ZKM_STR_B[1] = NLoginCore_446.E("ԤԨԊՃՌՎԝԃՓԐՊՂԴԕԥՙԻԸԵԭԴՍԤԥ", (byte)21, 69);
+               ZKM_STR_B[2] = NLoginCore_427.B("ëĎóğěġĒþĠĆãñ", (byte)21, 66);
+               ZKM_STR_B[3] = NLoginCore_138.E("ԺԨԞՈԝԢԼՏ\u0530ԢԬԙ", (byte)21, 69);
                break;
             case 1:
-               b[0] = NLoginCore_427.A("ýģěĚćïçğöęùúāçÿýĳĢìĭĔĵüý", (byte)21, 65);
-               b[1] = NLoginCore_384.B("üĀâěĤĦõÛīèģßèČêĨĐēİĕóĵüý", (byte)21, 66);
-               b[2] = NLoginCore_183.D("ѨќышцѧцѦЫђїЮїѮжќшѨќпѮҀчш", (byte)21, 68);
-               b[3] = NLoginCore_173.F("ԓՅӾՇԢԨՂՆԒԬՓԨԳՋԘՈԺՃԯ\u0530ԯԧԤԥ", (byte)21, 70);
+               ZKM_STR_B[0] = NLoginCore_427.A("ýģěĚćïçğöęùúāçÿýĳĢìĭĔĵüý", (byte)21, 65);
+               ZKM_STR_B[1] = NLoginCore_384.B("üĀâěĤĦõÛīèģßèČêĨĐēİĕóĵüý", (byte)21, 66);
+               ZKM_STR_B[2] = NLoginCore_183.D("ѨќышцѧцѦЫђїЮїѮжќшѨќпѮҀчш", (byte)21, 68);
+               ZKM_STR_B[3] = NLoginCore_173.F("ԓՅӾՇԢԨՂՆԒԬՓԨԳՋԘՈԺՃԯ\u0530ԯԧԤԥ", (byte)21, 70);
                break;
             case 2:
-               b[0] = NLoginCore_387.E("ԥԾԈԙԝԆԂԟԫԑՌՆԣԠԗԗԙՕԴ՞ԻԷԤԥ", (byte)21, 69);
+               ZKM_STR_B[0] = NLoginCore_387.E("ԥԾԈԙԝԆԂԟԫԑՌՆԣԠԗԗԙՕԴ՞ԻԷԤԥ", (byte)21, 69);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_004.D("щэѪЪыяѳрыыѩм", (byte)21, 68);
+               ZKM_STR_B[0] = NLoginCore_004.D("щэѪЪыяѳрыыѩм", (byte)21, 68);
          }
       }
    }
@@ -128,7 +128,7 @@ public enum NLoginCore_244 {
    private static String a(int var0, long var1) {
       var1 ^= 4L;
       var1 ^= 954251832060673430L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -172,10 +172,10 @@ public enum NLoginCore_244 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    static {

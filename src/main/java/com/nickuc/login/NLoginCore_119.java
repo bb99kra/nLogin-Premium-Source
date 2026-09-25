@@ -16,7 +16,7 @@ public class NLoginCore_119 implements NLoginInterface_010, NLoginInterface_035 
 
    @Override
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
-      return (boolean)(var1.a().n() == a && var1.a().q() ? b : c);
+      return ((var1.a() != 0).n() == a && var1.a().q() ? b : c);
    }
 
    @Generated
@@ -46,7 +46,7 @@ public class NLoginCore_119 implements NLoginInterface_010, NLoginInterface_035 
       switch (NLoginCore_320.G[var5.ordinal()]) {
          case 1:
          case 2:
-            this.a(var3).l((boolean)(var5 == NLoginCore_445.b ? h : i));
+            this.a(var3).l(((var5 == NLoginCore_445.b ? h : i) != 0));
             NLoginInterface_035.super.a(var1, var2, var3, var4, var5);
       }
    }

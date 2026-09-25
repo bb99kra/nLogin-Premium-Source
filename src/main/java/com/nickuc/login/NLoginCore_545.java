@@ -15,7 +15,7 @@ public class NLoginCore_545 implements NLoginInterface_027 {
    )
    public void a(PlayerSwapHandItemsEvent var1) {
       if (this.f.a(var1)) {
-         var1.setCancelled((boolean)a);
+         var1.setCancelled((a != 0));
       }
    }
 

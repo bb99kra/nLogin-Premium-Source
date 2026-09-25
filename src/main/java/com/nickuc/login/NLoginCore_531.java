@@ -30,7 +30,7 @@ abstract class NLoginCore_531 implements NLoginInterface_012 {
    @Override
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
       String var4 = this.c.aA();
-      return (boolean)(this.c.d(var1) && this.c.aG() && (var4 == null || var2.i(var4)) && this.c.b(var3.a()) == null ? a : b);
+      return ((this.c.d(var1) != 0) && this.c.aG() && (var4 == null || var2.i(var4)) && this.c.b(var3.a()) == null ? a : b);
    }
 
    @Generated

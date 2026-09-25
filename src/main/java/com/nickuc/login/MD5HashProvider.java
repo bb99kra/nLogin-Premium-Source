@@ -25,7 +25,7 @@ public final class MD5HashProvider extends NLoginCore_130 {
    private static long ag = Long.reverse(-8935141660703064064L);
    private static long af = Long.reverse(6295654890016953873L);
    private static int am = (28672 >>> 44 | 28672 << -44) & -1;
-   private static String[] d = new String[an];
+   private static String[] ZKM_STR_B = new String[an];
    private static int ak = (1610612736 >>> 252 | 1610612736 << -252) & -1;
    private static long y = Long.reverse(6295654890016953873L);
    private static long al = Long.reverse(-3215947522989533679L);
@@ -36,7 +36,7 @@ public final class MD5HashProvider extends NLoginCore_130 {
    private static int ad = 64 >>> 166 | 64 << -166;
    private static long z = Long.reverse(-8935141660703064064L);
    private static int c = Integer.reverse(0);
-   private static String[] c = new String[am];
+   private static String[] ZKM_STR_A = new String[am];
    private static int aa = Integer.reverse(-1073741824);
    private static int ah = Integer.reverse(0);
    private static int k = Integer.reverse(Integer.MIN_VALUE);
@@ -51,7 +51,7 @@ public final class MD5HashProvider extends NLoginCore_130 {
    private static String a(int var0, long var1) {
       var1 ^= 33L;
       var1 ^= 5236369277624323427L;
-      if (c[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -95,10 +95,10 @@ public final class MD5HashProvider extends NLoginCore_130 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         c[var0] = new String(var3.doFinal(Base64.getDecoder().decode(d[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return c[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static void b() {
@@ -145,30 +145,30 @@ public final class MD5HashProvider extends NLoginCore_130 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               d[0] = NLoginCore_397.D("ԖԤ\u0557ԧԬ\u0557\u0530ՊԽԗԭԦ", (byte)99, 68);
-               d[1] = NLoginCore_575.D("ԣԏԮ՚ԩ՝ԙԝ\u0530ՏԱԦ", (byte)99, 68);
-               d[2] = NLoginCore_110.F("֗ւյ֚֜֙ֆշ֠ժ֜է", (byte)99, 70);
-               d[3] = NLoginCore_530.D("ՖՁԴ՛ՙ\u0558ՅԶ՟ԩ՛Ԧ", (byte)99, 68);
-               d[4] = NLoginCore_433.E("իՏ֕֍թ֊նէրշպէ", (byte)99, 69);
-               d[5] = NLoginCore_232.F("\u0557ե֘ըխ֘ձ\u058bվ\u0558ծէ", (byte)99, 70);
-               d[6] = NLoginCore_559.A("ƱƺƕŸƺƶŶŷǆƏƕǈƫǉǉƽǆƽƛƠƝƏƴǁǆǍǘǅƖƹǊƪƨǍƳƷǖǓǌƶƯǏƱǪǃǜƿǞǞǨǧǩǬǋƸƹ", (byte)99, 65);
+               ZKM_STR_B[0] = NLoginCore_397.D("ԖԤ\u0557ԧԬ\u0557\u0530ՊԽԗԭԦ", (byte)99, 68);
+               ZKM_STR_B[1] = NLoginCore_575.D("ԣԏԮ՚ԩ՝ԙԝ\u0530ՏԱԦ", (byte)99, 68);
+               ZKM_STR_B[2] = NLoginCore_110.F("֗ւյ֚֜֙ֆշ֠ժ֜է", (byte)99, 70);
+               ZKM_STR_B[3] = NLoginCore_530.D("ՖՁԴ՛ՙ\u0558ՅԶ՟ԩ՛Ԧ", (byte)99, 68);
+               ZKM_STR_B[4] = NLoginCore_433.E("իՏ֕֍թ֊նէրշպէ", (byte)99, 69);
+               ZKM_STR_B[5] = NLoginCore_232.F("\u0557ե֘ըխ֘ձ\u058bվ\u0558ծէ", (byte)99, 70);
+               ZKM_STR_B[6] = NLoginCore_559.A("ƱƺƕŸƺƶŶŷǆƏƕǈƫǉǉƽǆƽƛƠƝƏƴǁǆǍǘǅƖƹǊƪƨǍƳƷǖǓǌƶƯǏƱǪǃǜƿǞǞǨǧǩǬǋƸƹ", (byte)99, 65);
                break;
             case 1:
-               d[0] = NLoginCore_427.A("ƬƼŸƬŽƟƴƅƵƻƜƍ", (byte)99, 65);
-               d[1] = NLoginCore_201.A("ƫƍƒƶǃƺƒƄǀƜƗƹǇƔƟƚƀǈǏƿǑǁƘƙ", (byte)99, 65);
-               d[2] = NLoginCore_138.E("ոբօջ֕֗յ֍\u058b֙֜է", (byte)99, 69);
-               d[3] = NLoginCore_553.E("զօ֍Ս\u0557ղո֓ի֡֠է", (byte)99, 69);
-               d[4] = NLoginCore_092.B("żƶƳǀƟưƐǄƧƐƃƍ", (byte)99, 66);
-               d[5] = NLoginCore_521.B("ƸƯƱƾƾƙƺƎƐƂƇƍ", (byte)99, 66);
-               d[6] = NLoginCore_201.F("\u058b֔կՒ֔\u0590ՐՑ֠թկ֢օ֣֣֗֠֗յպշթ֎ֲ֛֧֠֟հ֤֓քւ֧֍ְ֑֦֭\u0590։֩\u058cր֑փֻׁ֢֖֤֓։ֺք֥־גֳ֢֭֓חֲ", (byte)99, 70);
+               ZKM_STR_B[0] = NLoginCore_427.A("ƬƼŸƬŽƟƴƅƵƻƜƍ", (byte)99, 65);
+               ZKM_STR_B[1] = NLoginCore_201.A("ƫƍƒƶǃƺƒƄǀƜƗƹǇƔƟƚƀǈǏƿǑǁƘƙ", (byte)99, 65);
+               ZKM_STR_B[2] = NLoginCore_138.E("ոբօջ֕֗յ֍\u058b֙֜է", (byte)99, 69);
+               ZKM_STR_B[3] = NLoginCore_553.E("զօ֍Ս\u0557ղո֓ի֡֠է", (byte)99, 69);
+               ZKM_STR_B[4] = NLoginCore_092.B("żƶƳǀƟưƐǄƧƐƃƍ", (byte)99, 66);
+               ZKM_STR_B[5] = NLoginCore_521.B("ƸƯƱƾƾƙƺƎƐƂƇƍ", (byte)99, 66);
+               ZKM_STR_B[6] = NLoginCore_201.F("\u058b֔կՒ֔\u0590ՐՑ֠թկ֢օ֣֣֗֠֗յպշթ֎ֲ֛֧֠֟հ֤֓քւ֧֍ְ֑֦֭\u0590։֩\u058cր֑փֻׁ֢֖֤֓։ֺք֥־גֳ֢֭֓חֲ", (byte)99, 70);
                break;
             case 2:
-               d[0] = NLoginCore_559.B("ƼƘƺŻƒǃƾƲƁƤƐƟƂǉƻƨƌǉƞƜǇǁƘƙ", (byte)99, 66);
+               ZKM_STR_B[0] = NLoginCore_559.B("ƼƘƺŻƒǃƾƲƁƤƐƟƂǉƻƨƌǉƞƜǇǁƘƙ", (byte)99, 66);
             case 3:
             default:
                break;
             case 4:
-               d[0] = NLoginCore_004.B("ŴƳƎƌƟƖƢƁưƼƸŻƓƓƇƾƯƤǊơǐƫƘƙ", (byte)99, 66);
+               ZKM_STR_B[0] = NLoginCore_004.B("ŴƳƎƌƟƖƢƁưƼƸŻƓƓƇƾƯƤǊơǐƫƘƙ", (byte)99, 66);
          }
       }
    }
@@ -181,11 +181,11 @@ public final class MD5HashProvider extends NLoginCore_130 {
 
       String[] var3 = var2.split(a(x, y ^ z));
       if (var3.length != aa && var3.length != ab) {
-         return (boolean)ac;
+         return (ac != 0);
       } else {
          String var4 = var3[ad];
          if (!var4.equalsIgnoreCase(a(ae, af ^ ag))) {
-            return (boolean)ah;
+            return (ah != 0);
          } else {
             String var5 = var3[ai];
             String var6 = super.w(var1);

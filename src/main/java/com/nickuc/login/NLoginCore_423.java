@@ -14,7 +14,7 @@ import javax.crypto.spec.IvParameterSpec;
 public class NLoginCore_423 {
    private final NLoginType_008 r;
    private static int c = (0 >>> 33 | 0 << -33) & -1;
-   private static String[] a = new String[NLoginCore_423.o];
+   private static String[] ZKM_STR_A = new String[NLoginCore_423.o];
    private static int a = 1024 >>> 138 | 1024 << ~138 + 1;
    private static int k = 32 >>> 133 | 32 << ~133 + 1;
    private static long g = Long.reverse(8358680908399640576L);
@@ -22,7 +22,7 @@ public class NLoginCore_423 {
    private static int j = Integer.reverse(0);
    private static int i = 2097152 >>> 149 | 2097152 << ~149 + 1;
    private static long f = Long.reverse(7548202719190720634L);
-   private static String[] b = new String[NLoginCore_423.p];
+   private static String[] ZKM_STR_B = new String[NLoginCore_423.p];
    private static long c;
    private static long m = Long.reverse(2882303761517117440L);
    private static int o = Integer.reverse(Integer.MIN_VALUE);
@@ -53,7 +53,7 @@ public class NLoginCore_423 {
    private static String a(int var0, long var1) {
       var1 ^= 46L;
       var1 ^= 4532489605557390615L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -97,14 +97,14 @@ public class NLoginCore_423 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public boolean a(NLoginCore_277 var1, NLoginCore_509 var2) {
-      return (boolean)(this.a(var1, var2, (boolean)a) != null ? b : c);
+      return ((this.a(var1, var2, (a != 0) != 0)) != null ? b : c);
    }
 
    static {
@@ -155,18 +155,18 @@ public class NLoginCore_423 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_397.B("ǜƷǧƳǅƣƥǀƥǈǩǇǚƱǰǋƼǄƲǃƵǧƾƿ", (byte)118, 66);
+               ZKM_STR_B[0] = NLoginCore_397.B("ǜƷǧƳǅƣƥǀƥǈǩǇǚƱǰǋƼǄƲǃƵǧƾƿ", (byte)118, 66);
                break;
             case 1:
-               b[0] = NLoginCore_387.E("֣վ֮պ\u058cժլևլ֏ְն֍֤հպֵ\u0590ֳ֝ռֈօֆ", (byte)118, 69);
+               ZKM_STR_B[0] = NLoginCore_387.E("֣վ֮պ\u058cժլևլ֏ְն֍֤հպֵ\u0590ֳ֝ռֈօֆ", (byte)118, 69);
                break;
             case 2:
-               b[0] = NLoginCore_092.A("ƤǦƺƦǑǈǜǖƴƶǃƧǀƹƺǨǝǲƯǐǣǁƾƿ", (byte)118, 65);
+               ZKM_STR_B[0] = NLoginCore_092.A("ƤǦƺƦǑǈǜǖƴƶǃƧǀƹƺǨǝǲƯǐǣǁƾƿ", (byte)118, 65);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_521.F("ն֩շփ֥֪ռ֛\u0590֡֟պ", (byte)118, 70);
+               ZKM_STR_B[0] = NLoginCore_521.F("ն֩շփ֥֪ռ֛\u0590֡֟պ", (byte)118, 70);
          }
       }
    }
@@ -188,10 +188,10 @@ public class NLoginCore_423 {
          if (!var3 && !(var7 instanceof NLoginInterface_039)) {
             var2.a(NLoginCore_567.H, var7);
          } else {
-            var7.a(this.r, var1, var2, (boolean)h);
+            var7.a(this.r, var1, var2, (h != 0));
             if (var7 instanceof NLoginInterface_039) {
                if (!var3) {
-                  var2.a(NLoginCore_567.y, Boolean.valueOf((boolean)i));
+                  var2.a(NLoginCore_567.y, Boolean.valueOf((i != 0)));
                }
 
                NLoginInterface_039 var8 = (NLoginInterface_039)var7;
@@ -200,7 +200,7 @@ public class NLoginCore_423 {
                }
 
                if (var8.au()) {
-                  this.r.b((boolean)k).a(var3x -> {
+                  this.r.b((k != 0)).a(var3x -> {
                      if (var1.R() && var8.a(var2)) {
                         NLoginCore_150.a(var1, NLoginCore_508.m);
                      } else {
@@ -216,6 +216,6 @@ public class NLoginCore_423 {
    }
 
    public NLoginInterface_012 a(NLoginCore_277 var1, NLoginCore_509 var2) {
-      return this.a(var1, var2, (boolean)d);
+      return this.a(var1, var2, (d != 0));
    }
 }

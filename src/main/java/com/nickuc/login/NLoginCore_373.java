@@ -25,7 +25,7 @@ public class NLoginCore_373 implements NLoginInterface_027 {
       Component var3 = var1.message();
       String var4 = var3 instanceof TextComponent ? ((TextComponent)var3).content() : null;
       if (this.e.a().b().a(var2, var4)) {
-         var1.setCancelled((boolean)a);
+         var1.setCancelled((a != 0));
       }
    }
 }

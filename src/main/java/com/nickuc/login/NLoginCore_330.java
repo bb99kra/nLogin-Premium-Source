@@ -13,9 +13,9 @@ import lombok.Generated;
 
 public class NLoginCore_330 implements NLoginInterface_010, NLoginInterface_035 {
    private static int i = Integer.reverse(Integer.MIN_VALUE);
-   private static String[] a = new String[NLoginCore_330.h];
+   private static String[] ZKM_STR_A = new String[NLoginCore_330.h];
    private static int b = 0 >>> 181 | 0 << -181;
-   private static String[] b = new String[i];
+   private static String[] ZKM_STR_B = new String[i];
    private static int g = 0 >>> 176 | 0 << -176;
    private static long c;
    private static int a = Integer.reverse(Integer.MIN_VALUE);
@@ -97,18 +97,18 @@ public class NLoginCore_330 implements NLoginInterface_010, NLoginInterface_035 
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_173.A("ŹƨƝƦŷƿƔƼƠƙƣƶƙǂƹǇǁƻƽƧƟǂƻƐƮƲǕǄƱƔǘƴ", (byte)97, 65);
+               ZKM_STR_B[0] = NLoginCore_173.A("ŹƨƝƦŷƿƔƼƠƙƣƶƙǂƹǇǁƻƽƧƟǂƻƐƮƲǕǄƱƔǘƴ", (byte)97, 65);
                break;
             case 1:
-               b[0] = NLoginCore_575.E("ՕքչւՓ֛հ֘ռյտ֒յ֣֞֕֝֗֙փջ֡֍֦֡֝սֲ֤ևլվ֦֎ֹ֖֢օּ֥֖֠ֈօ", (byte)97, 69);
+               ZKM_STR_B[0] = NLoginCore_575.E("ՕքչւՓ֛հ֘ռյտ֒յ֣֞֕֝֗֙փջ֡֍֦֡֝սֲ֤ևլվ֦֎ֹ֖֢օּ֥֖֠ֈօ", (byte)97, 69);
                break;
             case 2:
-               b[0] = NLoginCore_004.C("ՑԍԊԑԑԠԸՉԗՊԍՆԾԵԺԪ\u0530ԡՂՍԠՔԫԬ", (byte)97, 67);
+               ZKM_STR_B[0] = NLoginCore_004.C("ՑԍԊԑԑԠԸՉԗՊԍՆԾԵԺԪ\u0530ԡՂՍԠՔԫԬ", (byte)97, 67);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_004.A("ƉƒƲƏźƈưƟƎƯƂƞƒƝƇƱƷƉƶǍƬƗƔƕ", (byte)97, 65);
+               ZKM_STR_B[0] = NLoginCore_004.A("ƉƒƲƏźƈưƟƎƯƂƞƒƝƇƱƷƉƶǍƬƗƔƕ", (byte)97, 65);
          }
       }
    }
@@ -127,7 +127,7 @@ public class NLoginCore_330 implements NLoginInterface_010, NLoginInterface_035 
    private static String a(int var0, long var1) {
       var1 ^= 63L;
       var1 ^= 8873165954278435705L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -171,10 +171,10 @@ public class NLoginCore_330 implements NLoginInterface_010, NLoginInterface_035 
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Generated

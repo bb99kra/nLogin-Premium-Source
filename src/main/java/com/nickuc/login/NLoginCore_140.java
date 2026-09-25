@@ -40,9 +40,9 @@ public class NLoginCore_140 {
    private static int t = Integer.reverse(Integer.MIN_VALUE);
    private static int i = (0 >>> 88 | 0 << ~88 + 1) & -1;
    private static int a = Integer.reverse(524288);
-   private static String[] a = new String[t];
+   private static String[] ZKM_STR_A = new String[t];
    private static int o = Integer.reverse(0);
-   private static String[] b = new String[u];
+   private static String[] ZKM_STR_B = new String[u];
    private static int h = (16 >>> 55 | 16 << -55) & -1;
    private static int d = 4 >>> 22 | 4 << -22;
    private static int g = 0 >>> 94 | 0 << ~94 + 1;
@@ -136,18 +136,18 @@ public class NLoginCore_140 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_427.D("ѢќѺѼтуѠѝѯљьѧҒ҃ҒѥҕѥѥқҙѴѮѶѽќѼѰѠҚ҃ѿ", (byte)30, 68);
+               ZKM_STR_B[0] = NLoginCore_427.D("ѢќѺѼтуѠѝѯљьѧҒ҃ҒѥҕѥѥқҙѴѮѶѽќѼѰѠҚ҃ѿ", (byte)30, 68);
                break;
             case 1:
-               b[0] = NLoginCore_223.B("ĎĈĦĨîïČĉěąøēľįľđŁđđŇŅĜĥĘĈĢĖłőļīģņŏĔĔĊĴŌĵĜŅŐģ", (byte)30, 66);
+               ZKM_STR_B[0] = NLoginCore_223.B("ĎĈĦĨîïČĉěąøēľįľđŁđđŇŅĜĥĘĈĢĖłőļīģņŏĔĔĊĴŌĵĜŅŐģ", (byte)30, 66);
                break;
             case 2:
-               b[0] = NLoginCore_521.B("êĔčīĪôùčđďĨă", (byte)30, 66);
+               ZKM_STR_B[0] = NLoginCore_521.B("êĔčīĪôùčđďĨă", (byte)30, 66);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_427.C("ѹѨѲѹѾѕїѾҌѮ҄ї", (byte)30, 67);
+               ZKM_STR_B[0] = NLoginCore_427.C("ѹѨѲѹѾѕїѾҌѮ҄ї", (byte)30, 67);
          }
       }
    }
@@ -155,7 +155,7 @@ public class NLoginCore_140 {
    private static String a(int var0, long var1) {
       var1 ^= 79L;
       var1 ^= -2051766061078832260L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -199,10 +199,10 @@ public class NLoginCore_140 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @CheckReturnValue
@@ -235,7 +235,7 @@ public class NLoginCore_140 {
    @CheckReturnValue
    @Nullable
    public static InputStream a(String var0) {
-      return a(var0, (boolean)o);
+      return a(var0, (o != 0));
    }
 
    @CheckReturnValue

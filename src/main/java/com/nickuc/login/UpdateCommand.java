@@ -26,14 +26,14 @@ public class UpdateCommand implements NLoginInterface_010, NLoginInterface_035 {
    private static int f = (0 >>> 247 | 0 << ~247 + 1) & -1;
    private static int s = Integer.reverse(536870912);
    private static int e = 256 >>> 40 | 256 << -40;
-   private static String[] a = new String[s];
+   private static String[] ZKM_STR_A = new String[s];
    private static int b = Integer.reverse(-1);
    private static int l = (0 >>> 196 | 0 << -196) & -1;
    private static int t = (Integer.MIN_VALUE >>> 29 | Integer.MIN_VALUE << -29) & -1;
    private static int p = 1572864 >>> 243 | 1572864 << ~243 + 1;
    private static long d = Long.reverse(-2463710287377877882L);
    private static int n = '耀' >>> 'n' | 32768 << -110;
-   private static String[] b = new String[t];
+   private static String[] ZKM_STR_B = new String[t];
    private static int h = (0 >>> 42 | 0 << ~42 + 1) & -1;
 
    @Generated
@@ -57,7 +57,7 @@ public class UpdateCommand implements NLoginInterface_010, NLoginInterface_035 {
    private static String a(int var0, long var1) {
       var1 ^= 11L;
       var1 ^= 2869351537434598908L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -101,10 +101,10 @@ public class UpdateCommand implements NLoginInterface_010, NLoginInterface_035 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static void b() {
@@ -151,24 +151,24 @@ public class UpdateCommand implements NLoginInterface_010, NLoginInterface_035 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_183.E("Պՙ՜հծՈ\u058c֍վևքհմՌՍե՜֘\u0558֟֒֠էը", (byte)88, 69);
-               b[1] = NLoginCore_092.B("ŲŷƣūŞŤƏƧźƣżƠƈƑŨƃƎƴƭƇŴƅƂƃ", (byte)88, 66);
-               b[2] = NLoginCore_110.D("ӳԂԅԙԗӱԵԶԧ\u0530ԭԙԝӵӶԎԅՁԁՈԻՉԐԑ", (byte)88, 68);
-               b[3] = NLoginCore_453.F("ՍիօՎ֏\u058cՓկՠՍՎ՜", (byte)88, 70);
+               ZKM_STR_B[0] = NLoginCore_183.E("Պՙ՜հծՈ\u058c֍վևքհմՌՍե՜֘\u0558֟֒֠էը", (byte)88, 69);
+               ZKM_STR_B[1] = NLoginCore_092.B("ŲŷƣūŞŤƏƧźƣżƠƈƑŨƃƎƴƭƇŴƅƂƃ", (byte)88, 66);
+               ZKM_STR_B[2] = NLoginCore_110.D("ӳԂԅԙԗӱԵԶԧ\u0530ԭԙԝӵӶԎԅՁԁՈԻՉԐԑ", (byte)88, 68);
+               ZKM_STR_B[3] = NLoginCore_453.F("ՍիօՎ֏\u058cՓկՠՍՎ՜", (byte)88, 70);
                break;
             case 1:
-               b[0] = NLoginCore_092.A("ťŴŷƋƉţƧƨƙƢƟƅƊƩƯƟƈƋƮƦƥƫƂƃ", (byte)88, 65);
-               b[1] = NLoginCore_553.D("ԀԅԱӹӬӲԝԵԈԱԋԒӿӼӼԏՁՆՄԙԩԘԿԷԎՅԽՈՎԌՂԤ", (byte)88, 68);
-               b[2] = NLoginCore_201.F("Պՙ՜հծՈ\u058c֍վևփդխ֊֚֔չվՕ֠՜պէը", (byte)88, 70);
-               b[3] = NLoginCore_427.C("ӮԳԨӲԵӶԵԛԋӵԌԅ", (byte)88, 67);
+               ZKM_STR_B[0] = NLoginCore_092.A("ťŴŷƋƉţƧƨƙƢƟƅƊƩƯƟƈƋƮƦƥƫƂƃ", (byte)88, 65);
+               ZKM_STR_B[1] = NLoginCore_553.D("ԀԅԱӹӬӲԝԵԈԱԋԒӿӼӼԏՁՆՄԙԩԘԿԷԎՅԽՈՎԌՂԤ", (byte)88, 68);
+               ZKM_STR_B[2] = NLoginCore_201.F("Պՙ՜հծՈ\u058c֍վևփդխ֊֚֔չվՕ֠՜պէը", (byte)88, 70);
+               ZKM_STR_B[3] = NLoginCore_427.C("ӮԳԨӲԵӶԵԛԋӵԌԅ", (byte)88, 67);
                break;
             case 2:
-               b[0] = NLoginCore_092.C("ӵԀԹԡԹӱԭԐԌԳԔԅ", (byte)88, 67);
+               ZKM_STR_B[0] = NLoginCore_092.C("ӵԀԹԡԹӱԭԐԌԳԔԅ", (byte)88, 67);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_173.C("ӲԥԁԆӹԗԳԇԮԛӹԗԫԣӼԠԂՇԹԞԥԓԐԑ", (byte)88, 67);
+               ZKM_STR_B[0] = NLoginCore_173.C("ӲԥԁԆӹԗԳԇԮԛӹԗԫԣӼԠԂՇԹԞԥԓԐԑ", (byte)88, 67);
          }
       }
    }
@@ -197,7 +197,7 @@ public class UpdateCommand implements NLoginInterface_010, NLoginInterface_035 {
 
    @Override
    public boolean a(NLoginType_008 var1, NLoginCore_277 var2, NLoginCore_509 var3) {
-      return (boolean)(!var1.a().p() && var1.a().a().c(a(a & b, d)) ? f : e);
+      return ((!var1.a() != 0).p() && var1.a().a().c(a(a & b, d)) ? f : e);
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {

@@ -25,7 +25,7 @@ public class NLoginCore_548 {
          a[var5][var7] = var3;
          a[var5] = var3;
          if (var7 == b) {
-            a[var5] = (boolean)c;
+            a[var5] = (c != 0);
             ai[var5] = d;
          }
       }

@@ -42,7 +42,7 @@ public class NLoginCore_380 implements NLoginInterface_022 {
    }
 
    public NLoginCore_380(BukkitLoader var1, @Nullable Player var2) {
-      this(var1, var2, (boolean)a);
+      this(var1, var2, (a != 0));
    }
 
    @Override

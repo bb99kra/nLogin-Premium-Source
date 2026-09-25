@@ -20,14 +20,14 @@ public class NLoginCore_180 {
    private static int j = 33554432 >>> 249 | 33554432 << -249;
    private static int k = (1 >>> 32 | 1 << ~32 + 1) & -1;
    private static int d = (10240 >>> 103 | 10240 << ~103 + 1) & -1;
-   private static String[] b = new String[k];
+   private static String[] ZKM_STR_B = new String[k];
    private static int g = (0 >>> 180 | 0 << ~180 + 1) & -1;
    private static int h = (0 >>> 36 | 0 << -36) & -1;
    private static long c;
    private static int a = Integer.reverse(0);
    private final String aZ;
    private static int e = (0 >>> 192 | 0 << ~192 + 1) & -1;
-   private static String[] a = new String[j];
+   private static String[] ZKM_STR_A = new String[j];
    private static int c = 1031798784 >>> 215 | 1031798784 << -215;
 
    public boolean a(JSONObject var1, String var2, byte[] var3) {
@@ -93,18 +93,18 @@ public class NLoginCore_180 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_110.C("ԡԹӶՃԝԏԻԘԜԣԶՈՊՊՆԝՒԊԥԡԶՕԜԝ", (byte)92, 67);
+               ZKM_STR_B[0] = NLoginCore_110.C("ԡԹӶՃԝԏԻԘԜԣԶՈՊՊՆԝՒԊԥԡԶՕԜԝ", (byte)92, 67);
                break;
             case 1:
-               b[0] = NLoginCore_324.F("հֈՅ֒լ՞֊էիղօ֑֖֕ձռՙլսդնվիլ", (byte)92, 70);
+               ZKM_STR_B[0] = NLoginCore_324.F("հֈՅ֒լ՞֊էիղօ֑֖֕ձռՙլսդնվիլ", (byte)92, 70);
                break;
             case 2:
-               b[0] = NLoginCore_553.C("ԴԾԥԯԁԃԆԛԤԄՊԑ", (byte)92, 67);
+               ZKM_STR_B[0] = NLoginCore_553.C("ԴԾԥԯԁԃԆԛԤԄՊԑ", (byte)92, 67);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_397.A("ƟƊƌƈƴƯƊƘƙƁƣƐƙƾƛƗŷƕƭƾƘƾƚǁƤǁƢƩƚǅƎǊ", (byte)92, 65);
+               ZKM_STR_B[0] = NLoginCore_397.A("ƟƊƌƈƴƯƊƘƙƁƣƐƙƾƛƗŷƕƭƾƘƾƚǁƤǁƢƩƚǅƎǊ", (byte)92, 65);
          }
       }
    }
@@ -117,7 +117,7 @@ public class NLoginCore_180 {
    private static String a(int var0, long var1) {
       var1 ^= 124L;
       var1 ^= 4976315622005182375L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -161,10 +161,10 @@ public class NLoginCore_180 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {

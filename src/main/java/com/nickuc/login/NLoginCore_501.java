@@ -20,10 +20,10 @@ public class NLoginCore_501 {
    private static int j = Integer.reverse(-1);
    private static int l = (268435456 >>> 92 | 268435456 << -92) & -1;
    private static int k = Integer.reverse(Integer.MIN_VALUE);
-   private static String[] a = new String[k];
+   private static String[] ZKM_STR_A = new String[k];
    private int ab = j;
    private static int a = Integer.reverse(Integer.MIN_VALUE);
-   private static String[] b = new String[l];
+   private static String[] ZKM_STR_B = new String[l];
    private static int b = (16777216 >>> 248 | 16777216 << ~248 + 1) & -1;
    private final boolean ar;
    private static long c;
@@ -104,18 +104,18 @@ public class NLoginCore_501 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_575.D("ӈӌӟӰӱӮԀӠӲӥԃӞӜӗӗӵӬӺԎӬӟӰӼӒԇӳӮԑԂԊԔӦ", (byte)69, 68);
+               ZKM_STR_B[0] = NLoginCore_575.D("ӈӌӟӰӱӮԀӠӲӥԃӞӜӗӗӵӬӺԎӬӟӰӼӒԇӳӮԑԂԊԔӦ", (byte)69, 68);
                break;
             case 1:
-               b[0] = NLoginCore_232.D("ӈӌӟӰӱӮԀӠӲӥԃӞӜӗӗӵӬӺԎӬӟӮӾԌԌԖӑӗԁӴӒӶ", (byte)69, 68);
+               ZKM_STR_B[0] = NLoginCore_232.D("ӈӌӟӰӱӮԀӠӲӥԃӞӜӗӗӵӬӺԎӬӟӮӾԌԌԖӑӗԁӴӒӶ", (byte)69, 68);
                break;
             case 2:
-               b[0] = NLoginCore_091.C("ӲӏӨӖӋӗӻԄӅӞӦӺԄԊӃӤӉӣԈӣӬӚӗӘ", (byte)69, 67);
+               ZKM_STR_B[0] = NLoginCore_091.C("ӲӏӨӖӋӗӻԄӅӞӦӺԄԊӃӤӉӣԈӣӬӚӗӘ", (byte)69, 67);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_453.F("գԵդըՊ՚Ջ՚իՋԻՉ", (byte)69, 70);
+               ZKM_STR_B[0] = NLoginCore_453.F("գԵդըՊ՚Ջ՚իՋԻՉ", (byte)69, 70);
          }
       }
    }
@@ -123,7 +123,7 @@ public class NLoginCore_501 {
    private static String a(int var0, long var1) {
       var1 ^= 52L;
       var1 ^= 5181515925203540853L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -167,14 +167,14 @@ public class NLoginCore_501 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public NLoginCore_501 a() {
-      NLoginCore_501 var1 = new NLoginCore_501(this.s, this.ar, this.as, (boolean)e);
+      NLoginCore_501 var1 = new NLoginCore_501(this.s, this.ar, this.as, (e != 0));
       var1.ab = this.ab;
       return var1;
    }

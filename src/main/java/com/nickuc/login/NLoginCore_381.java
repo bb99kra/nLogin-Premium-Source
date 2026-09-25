@@ -22,17 +22,17 @@ public class NLoginCore_381 implements NLoginInterface_039, NLoginInterface_044 
 
    @Override
    public boolean at() {
-      return (boolean)c;
+      return (c != 0);
    }
 
    @Override
    public boolean au() {
-      return (boolean)d;
+      return (d != 0);
    }
 
    @Override
    public boolean c(NLoginType_008 var1) {
-      return (boolean)b;
+      return (b != 0);
    }
 
    @Generated

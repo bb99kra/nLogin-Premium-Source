@@ -14,9 +14,9 @@ public class NLoginCore_298 {
    public static boolean a(Class<?> var0, String var1, Class<?>... var2) {
       try {
          var0.getDeclaredMethod(var1, var2);
-         return (boolean)c;
+         return (c != 0);
       } catch (NoSuchMethodException var4) {
-         return (boolean)d;
+         return (d != 0);
       }
    }
 
@@ -44,13 +44,13 @@ public class NLoginCore_298 {
    public static boolean a(Class<?> var0, String var1) {
       try {
          var0.getDeclaredField(var1);
-         return (boolean)e;
+         return (e != 0);
       } catch (NoSuchFieldException var3) {
-         return (boolean)f;
+         return (f != 0);
       }
    }
 
    public static boolean a(String var0, String... var1) {
-      return (boolean)(a(var0, var1) != null ? a : b);
+      return ((a(var0, var1) != 0) != null ? a : b);
    }
 }

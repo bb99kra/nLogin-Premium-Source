@@ -13,9 +13,9 @@ public class LoginMainQueueTask$Cycle {
       this.aR = this.aR + b;
       if (this.aR == c) {
          this.aR = d;
-         return (boolean)e;
+         return (e != 0);
       } else {
-         return (boolean)f;
+         return (f != 0);
       }
    }
 }

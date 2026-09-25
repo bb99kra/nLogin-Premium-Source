@@ -18,7 +18,7 @@ public class NLoginCore_375 extends PBKDF2HashProvider implements NLoginInterfac
    private static int ae = Integer.reverse(Integer.MIN_VALUE);
    private static long e;
    private static int p = 1073741824 >>> 93 | 1073741824 << ~93 + 1;
-   private static String[] d = new String[NLoginCore_375.ak];
+   private static String[] ZKM_STR_B = new String[NLoginCore_375.ak];
    private static int q = 25165824 >>> 151 | 25165824 << ~151 + 1;
    private static int aj = 192 >>> 198 | 192 << -198;
    private static int n = 0 >>> 142 | 0 << -142;
@@ -28,7 +28,7 @@ public class NLoginCore_375 extends PBKDF2HashProvider implements NLoginInterfac
    private static long ag = Long.reverse(-7102334855700795069L);
    private static long j = Long.reverse(-1152921504606846976L);
    private static int s = Integer.reverse(536870912);
-   private static String[] c = new String[aj];
+   private static String[] ZKM_STR_A = new String[aj];
    private static int v = 20 >>> 66 | 20 << -66;
    private static int ak = Integer.reverse(-1073741824);
    private static int af = -1 >>> 29 | -1 << ~29 + 1;
@@ -77,22 +77,22 @@ public class NLoginCore_375 extends PBKDF2HashProvider implements NLoginInterfac
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               d[0] = NLoginCore_138.E("Կ՟ձՒՍ՚ՄԴծԴ՛Մ", (byte)64, 69);
-               d[1] = NLoginCore_530.C("ӣӘӛӛӈӇӎӔӄӪӑӃӺөӷҸәӯһӓҸӱӈӉ", (byte)64, 67);
-               d[2] = NLoginCore_471.E("ՇԶյՙլԵ\u0558զՅՑ՟Մ", (byte)64, 69);
+               ZKM_STR_B[0] = NLoginCore_138.E("Կ՟ձՒՍ՚ՄԴծԴ՛Մ", (byte)64, 69);
+               ZKM_STR_B[1] = NLoginCore_530.C("ӣӘӛӛӈӇӎӔӄӪӑӃӺөӷҸәӯһӓҸӱӈӉ", (byte)64, 67);
+               ZKM_STR_B[2] = NLoginCore_471.E("ՇԶյՙլԵ\u0558զՅՑ՟Մ", (byte)64, 69);
                break;
             case 1:
-               d[0] = NLoginCore_446.E("գզԭՌՏԺՕձ\u0558յԶՄ", (byte)64, 69);
-               d[1] = NLoginCore_138.A("ŭŢťťŒőŘŞŎŴŝŰŃĿřńƁƁłŘƊƋŒœ", (byte)64, 65);
-               d[2] = NLoginCore_384.E("էԳՈՊՋԳՌՇԹ՜ՋՄ", (byte)64, 69);
+               ZKM_STR_B[0] = NLoginCore_446.E("գզԭՌՏԺՕձ\u0558յԶՄ", (byte)64, 69);
+               ZKM_STR_B[1] = NLoginCore_138.A("ŭŢťťŒőŘŞŎŴŝŰŃĿřńƁƁłŘƊƋŒœ", (byte)64, 65);
+               ZKM_STR_B[2] = NLoginCore_384.E("էԳՈՊՋԳՌՇԹ՜ՋՄ", (byte)64, 69);
                break;
             case 2:
-               d[0] = NLoginCore_092.B("ŃŃŷŃżűķŌŎŐœĻŔşřŸŝƃŖŋťŻŒœ", (byte)64, 66);
+               ZKM_STR_B[0] = NLoginCore_092.B("ŃŃŷŃżűķŌŎŐœĻŔşřŸŝƃŖŋťŻŒœ", (byte)64, 66);
             case 3:
             default:
                break;
             case 4:
-               d[0] = NLoginCore_201.A("ŔūūıĹŎİĿŨĿżĿŭťžžũśŲųţŉŇŁƏŋŜţŌſŬŲ", (byte)64, 65);
+               ZKM_STR_B[0] = NLoginCore_201.A("ŔūūıĹŎİĿŨĿżĿŭťžžũśŲųţŉŇŁƏŋŜţŌſŬŲ", (byte)64, 65);
          }
       }
    }
@@ -108,7 +108,7 @@ public class NLoginCore_375 extends PBKDF2HashProvider implements NLoginInterfac
    public boolean i(String var1, String var2) {
       String[] var3 = var2.split(a(f, h ^ j));
       if (var3.length != k) {
-         return (boolean)n;
+         return (n != 0);
       } else {
          String var4 = var3[p];
          int var5 = Integer.parseInt(var3[q]);
@@ -123,7 +123,7 @@ public class NLoginCore_375 extends PBKDF2HashProvider implements NLoginInterfac
    private static String a(int var0, long var1) {
       var1 ^= 15L;
       var1 ^= -769132196522835955L;
-      if (c[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -167,15 +167,15 @@ public class NLoginCore_375 extends PBKDF2HashProvider implements NLoginInterfac
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         c[var0] = new String(var3.doFinal(Base64.getDecoder().decode(d[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return c[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Override
    public boolean v(String var1) {
-      return (boolean)w;
+      return (w != 0);
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {

@@ -14,8 +14,8 @@ public enum NLoginCore_231 {
    a,
    b;
 
-   private static String[] a = new String[NLoginCore_231.d];
-   private static String[] b = new String[NLoginCore_231.e];
+   private static String[] ZKM_STR_A = new String[NLoginCore_231.d];
+   private static String[] ZKM_STR_B = new String[NLoginCore_231.e];
    private static long c;
    private static int a = Integer.reverse(1073741824);
    private static int b = Integer.reverse(0);
@@ -92,20 +92,20 @@ public enum NLoginCore_231 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_141.E("ӱԌԳԐԄԨԌԒԵӿԔԅ", (byte)1, 69);
-               b[1] = NLoginCore_241.D("БϮЮЊУЃЋиАЂ϶Ѐ", (byte)1, 68);
+               ZKM_STR_B[0] = NLoginCore_141.E("ӱԌԳԐԄԨԌԒԵӿԔԅ", (byte)1, 69);
+               ZKM_STR_B[1] = NLoginCore_241.D("БϮЮЊУЃЋиАЂ϶Ѐ", (byte)1, 68);
                break;
             case 1:
-               b[0] = NLoginCore_092.B("¬êÚæÇÐöÜÙóÙÍáăĈõÙØ÷ÕØçÔÕ", (byte)1, 66);
-               b[1] = NLoginCore_110.C("ЅϬЌϳϽбФЅкϳЫϹϹЪкЮϷϻПЏддЋЌ", (byte)1, 67);
+               ZKM_STR_B[0] = NLoginCore_092.B("¬êÚæÇÐöÜÙóÙÍáăĈõÙØ÷ÕØçÔÕ", (byte)1, 66);
+               ZKM_STR_B[1] = NLoginCore_110.C("ЅϬЌϳϽбФЅкϳЫϹϹЪкЮϷϻПЏддЋЌ", (byte)1, 67);
                break;
             case 2:
-               b[0] = NLoginCore_201.D("ϺЌϲϮТбЬТІЬеЀ", (byte)1, 68);
+               ZKM_STR_B[0] = NLoginCore_201.D("ϺЌϲϮТбЬТІЬеЀ", (byte)1, 68);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_471.B("¬¸äæÇìòÞíÔÔÉ", (byte)1, 66);
+               ZKM_STR_B[0] = NLoginCore_471.B("¬¸äæÇìòÞíÔÔÉ", (byte)1, 66);
          }
       }
    }
@@ -117,7 +117,7 @@ public enum NLoginCore_231 {
    private static String a(int var0, long var1) {
       var1 ^= 93L;
       var1 ^= 6411684145213426233L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -161,9 +161,9 @@ public enum NLoginCore_231 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 }

@@ -16,7 +16,7 @@ public class NLoginCore_011 implements NLoginInterface_027 {
    public void a(AsyncPlayerChatEvent var1) {
       NLoginCore_277 var2 = this.f.b().a(var1.getPlayer());
       if (this.f.a().b().a(var2, var1.getMessage())) {
-         var1.setCancelled((boolean)a);
+         var1.setCancelled((a != 0));
       }
    }
 

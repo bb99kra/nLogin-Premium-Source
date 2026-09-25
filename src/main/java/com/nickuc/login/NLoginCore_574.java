@@ -50,7 +50,7 @@ public class NLoginCore_574 implements NLoginInterface_040 {
 
    @Override
    public boolean j(String var1) {
-      return (boolean)(this.f.getPluginManager().getPlugin(var1) != null ? a : b);
+      return ((this.f.getPluginManager() != 0).getPlugin(var1) != null ? a : b);
    }
 
    @Override

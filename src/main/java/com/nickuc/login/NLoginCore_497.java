@@ -30,8 +30,8 @@ public class NLoginCore_497 extends PBKDF2HashProvider implements NLoginInterfac
    private static int n = (8 >>> 227 | 8 << ~227 + 1) & -1;
    private static long ae = Long.reverse(51836685379508772L);
    private static long aq = Long.reverse(4035225266123964416L);
-   private static String[] c = new String[al];
-   private static String[] d = new String[NLoginCore_497.am];
+   private static String[] ZKM_STR_A = new String[al];
+   private static String[] ZKM_STR_B = new String[NLoginCore_497.am];
    private static int am = Integer.reverse(536870912);
    private static final int aC = NLoginCore_497.an;
    private static int ar = Integer.reverse(-1073741824);
@@ -50,7 +50,7 @@ public class NLoginCore_497 extends PBKDF2HashProvider implements NLoginInterfac
    private static String a(int var0, long var1) {
       var1 ^= 28L;
       var1 ^= 9016704428008711820L;
-      if (c[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -94,10 +94,10 @@ public class NLoginCore_497 extends PBKDF2HashProvider implements NLoginInterfac
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         c[var0] = new String(var3.doFinal(Base64.getDecoder().decode(d[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return c[var0];
+      return ZKM_STR_A[var0];
    }
 
    static {
@@ -108,7 +108,7 @@ public class NLoginCore_497 extends PBKDF2HashProvider implements NLoginInterfac
    public boolean i(String var1, String var2) {
       String[] var3 = var2.split(a(f & g, h));
       if (var3.length != i) {
-         return (boolean)k;
+         return (k != 0);
       } else {
          int var4 = n << Integer.parseInt(var3[p]);
          byte[] var5 = Base64.getUrlDecoder().decode(var3[q]);
@@ -126,11 +126,11 @@ public class NLoginCore_497 extends PBKDF2HashProvider implements NLoginInterfac
             }
 
             if (var12 == 0) {
-               return (boolean)aj;
+               return (aj != 0);
             }
          }
 
-         return (boolean)ak;
+         return (ak != 0);
       }
    }
 
@@ -195,24 +195,24 @@ public class NLoginCore_497 extends PBKDF2HashProvider implements NLoginInterfac
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               d[0] = NLoginCore_427.F("՜Նԗ\u0557ԼԼՋԹգ՜Նԫ", (byte)39, 70);
-               d[1] = NLoginCore_027.E("Էԯԗ\u0557Չ\u0557ՍԱԛ՚ՕԥԱԺԦՖԞՃԶհՌ՟ԶԷ", (byte)39, 69);
-               d[2] = NLoginCore_384.A("ġęāŁĳŁķěąńĿďěĤĐŀĈĭĠŚĶŉĠġ", (byte)39, 65);
-               d[3] = NLoginCore_384.F("՛ԓԨՉԗԙԴԺՒԯէՕ՛Լթ՝ՆծԭԹ՜ՍԨԲդԾՐՔՊձՑջմԻՌջռԻՕփպՖՙչգբրՓդպ֎ՠվցբջ֕ՔՍՉՕ֑ՔՒ֕֞շ֚֘\u0590ոլ֟ո֠օ֖֡գվև֚թւվչնշ", (byte)39, 70);
+               ZKM_STR_B[0] = NLoginCore_427.F("՜Նԗ\u0557ԼԼՋԹգ՜Նԫ", (byte)39, 70);
+               ZKM_STR_B[1] = NLoginCore_027.E("Էԯԗ\u0557Չ\u0557ՍԱԛ՚ՕԥԱԺԦՖԞՃԶհՌ՟ԶԷ", (byte)39, 69);
+               ZKM_STR_B[2] = NLoginCore_384.A("ġęāŁĳŁķěąńĿďěĤĐŀĈĭĠŚĶŉĠġ", (byte)39, 65);
+               ZKM_STR_B[3] = NLoginCore_384.F("՛ԓԨՉԗԙԴԺՒԯէՕ՛Լթ՝ՆծԭԹ՜ՍԨԲդԾՐՔՊձՑջմԻՌջռԻՕփպՖՙչգբրՓդպ֎ՠվցբջ֕ՔՍՉՕ֑ՔՒ֕֞շ֚֘\u0590ոլ֟ո֠օ֖֡գվև֚թւվչնշ", (byte)39, 70);
                break;
             case 1:
-               d[0] = NLoginCore_110.A("ĘēŇŅĻŅĊĶĪŀŊĕ", (byte)39, 65);
-               d[1] = NLoginCore_553.D("ѾѶўҞҐҞҔѸѢҡҝѨҋѩ҆ѯқѭѬҟғҐѽѾ", (byte)39, 68);
-               d[2] = NLoginCore_446.D("ѾѶўҞҐҞҔѸѢҡҞѶүҦҩҳұѲҌѮҲҐѽѾ", (byte)39, 68);
-               d[3] = NLoginCore_138.A("ŅýĒĳāăĞĤļęőĿŅĦœŇİŘėģņķĒĜŎĨĺľĴśĻťŞĥĶťŦĥĿŭŤŀŃţōŌŪĽŎŤŸŊŨūŌťſľķĳĿŻľļſƈšƄƂźŢŖƉŢƊŢşŞŽƃŠōƎœƉţŠš", (byte)39, 65);
+               ZKM_STR_B[0] = NLoginCore_110.A("ĘēŇŅĻŅĊĶĪŀŊĕ", (byte)39, 65);
+               ZKM_STR_B[1] = NLoginCore_553.D("ѾѶўҞҐҞҔѸѢҡҝѨҋѩ҆ѯқѭѬҟғҐѽѾ", (byte)39, 68);
+               ZKM_STR_B[2] = NLoginCore_446.D("ѾѶўҞҐҞҔѸѢҡҞѶүҦҩҳұѲҌѮҲҐѽѾ", (byte)39, 68);
+               ZKM_STR_B[3] = NLoginCore_138.A("ŅýĒĳāăĞĤļęőĿŅĦœŇİŘėģņķĒĜŎĨĺľĴśĻťŞĥĶťŦĥĿŭŤŀŃţōŌŪĽŎŤŸŊŨūŌťſľķĳĿŻľļſƈšƄƂźŢŖƉŢƊŢşŞŽƃŠōƎœƉţŠš", (byte)39, 65);
                break;
             case 2:
-               d[0] = NLoginCore_451.C("ѵҙѽҡғѳ҆ѴҤҫҕѼѪѼҢҢѯ҆ҋҤѵҀѽѾ", (byte)39, 67);
+               ZKM_STR_B[0] = NLoginCore_451.C("ѵҙѽҡғѳ҆ѴҤҫҕѼѪѼҢҢѯ҆ҋҤѵҀѽѾ", (byte)39, 67);
             case 3:
             default:
                break;
             case 4:
-               d[0] = NLoginCore_183.D("ңѢҀ҆҇ҕҀҨҔѦҟѲ", (byte)39, 68);
+               ZKM_STR_B[0] = NLoginCore_183.D("ңѢҀ҆҇ҕҀҨҔѦҟѲ", (byte)39, 68);
          }
       }
    }

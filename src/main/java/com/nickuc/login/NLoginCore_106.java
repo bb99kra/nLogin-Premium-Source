@@ -20,7 +20,7 @@ public class NLoginCore_106 implements NLoginInterface_027 {
    public void a(PlayerCommandSendEvent var1) {
       var1.getCommands().removeIf(var1x -> {
          var1x = var1x.toLowerCase(Locale.ENGLISH);
-         return (boolean)(!var1x.startsWith(this.ad + a) && !this.f.contains(var1x) ? c : b);
+         return ((!var1x.startsWith(this.ad + a) != 0) && !this.f.contains(var1x) ? c : b);
       });
    }
 

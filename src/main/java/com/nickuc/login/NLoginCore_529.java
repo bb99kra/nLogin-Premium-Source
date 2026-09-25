@@ -23,6 +23,6 @@ public class NLoginCore_529 {
    }
 
    public static TextComponent a(String var0) {
-      return b(var0, (boolean)a);
+      return b(var0, (a != 0));
    }
 }

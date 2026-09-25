@@ -15,13 +15,13 @@ import lombok.Generated;
 
 public class NLoginCore_588 implements NLoginInterface_017 {
    private static int m = Integer.reverse(1073741824);
-   private static String[] a = new String[NLoginCore_588.k];
+   private static String[] ZKM_STR_A = new String[NLoginCore_588.k];
    private static long g = Long.reverse(899367137347213232L);
    private boolean b;
    private static int l = (1610612736 >>> 189 | 1610612736 << ~189 + 1) & -1;
    private static int k = Integer.reverse(-1073741824);
    public static final AttributeKey<NLoginCore_588> f = NLoginCore_389.a(a(m, NLoginCore_588.n));
-   private static String[] b = new String[l];
+   private static String[] ZKM_STR_B = new String[l];
    @Nullable
    private NLoginCore_042 a;
    public final ForceRegisterConfig f;
@@ -91,22 +91,22 @@ public class NLoginCore_588 implements NLoginInterface_017 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_384.E("ֱ֓֔ճ֑րֱնֹևֿׁ֚֩սցֽ֬ւտր׀ֿׂց֕׆և֮\u058bּ֤", (byte)126, 69);
-               b[1] = NLoginCore_138.F("ջ֟ևְֲ֑֚շַևֆվ֟սָ֛־քׂׅ֭֚ֆּ֤֦֮֨֠֏ֈׇֽהו֏։ֺ֡֗\u05cbד֢֩", (byte)126, 70);
-               b[2] = NLoginCore_223.D("բտաօռէ֚֜կ֡֡֬օ֭լֲֲ֢֯ֆևַջֿ\u058cֿ֖֚֓ցַ֕", (byte)126, 68);
+               ZKM_STR_B[0] = NLoginCore_384.E("ֱ֓֔ճ֑րֱնֹևֿׁ֚֩սցֽ֬ւտր׀ֿׂց֕׆և֮\u058bּ֤", (byte)126, 69);
+               ZKM_STR_B[1] = NLoginCore_138.F("ջ֟ևְֲ֑֚շַևֆվ֟սָ֛־քׂׅ֭֚ֆּ֤֦֮֨֠֏ֈׇֽהו֏։ֺ֡֗\u05cbד֢֩", (byte)126, 70);
+               ZKM_STR_B[2] = NLoginCore_223.D("բտաօռէ֚֜կ֡֡֬օ֭լֲֲ֢֯ֆևַջֿ\u058cֿ֖֚֓ցַ֕", (byte)126, 68);
                break;
             case 1:
-               b[0] = NLoginCore_471.C("ֈ։֦ըֆյ֦ի֮ռ֞֏ִֶղնֲ֡շմյֱֿֿ֮֬֞֍ָ֮֎֠և׀ּּֿ\u05cdֆֹּ֫֞֗", (byte)126, 67);
-               b[1] = NLoginCore_453.E("ջ֟ևְֲ֑֚շַևֆվ֟սָ֛־քׂׅ֭֚ֆּ֤֦֮֨֠֏ֈׇ֏֓׃֣׃֘֡֬֍ֱּ֢", (byte)126, 69);
-               b[2] = NLoginCore_223.D("բտաօռէ֚֜կ֡֡֬օ֭լֲֲ֢֯ֆևֱַׂׂ֑֒֞ׄ֗ֆַ֤֑֦֜֞տ֣ցֺ֥֞֗", (byte)126, 68);
+               ZKM_STR_B[0] = NLoginCore_471.C("ֈ։֦ըֆյ֦ի֮ռ֞֏ִֶղնֲ֡շմյֱֿֿ֮֬֞֍ָ֮֎֠և׀ּּֿ\u05cdֆֹּ֫֞֗", (byte)126, 67);
+               ZKM_STR_B[1] = NLoginCore_453.E("ջ֟ևְֲ֑֚շַևֆվ֟սָ֛־քׂׅ֭֚ֆּ֤֦֮֨֠֏ֈׇ֏֓׃֣׃֘֡֬֍ֱּ֢", (byte)126, 69);
+               ZKM_STR_B[2] = NLoginCore_223.D("բտաօռէ֚֜կ֡֡֬օ֭լֲֲ֢֯ֆևֱַׂׂ֑֒֞ׄ֗ֆַ֤֑֦֜֞տ֣ցֺ֥֞֗", (byte)126, 68);
                break;
             case 2:
-               b[0] = NLoginCore_223.F("֮օէվ֠֕և\u058cֵַ֛֒յ\u0590\u058bׂցּ֭ց֥׆֍֎", (byte)126, 70);
+               ZKM_STR_B[0] = NLoginCore_223.F("֮օէվ֠֕և\u058cֵַ֛֒յ\u0590\u058bׂցּ֭ց֥׆֍֎", (byte)126, 70);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_241.C("վ՟ւյ֕ռ։վչ֏ւշ", (byte)126, 67);
+               ZKM_STR_B[0] = NLoginCore_241.C("վ՟ւյ֕ռ։վչ֏ւշ", (byte)126, 67);
          }
       }
    }
@@ -120,7 +120,7 @@ public class NLoginCore_588 implements NLoginInterface_017 {
    private static String a(int var0, long var1) {
       var1 ^= 49L;
       var1 ^= -2306620689802220317L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -164,10 +164,10 @@ public class NLoginCore_588 implements NLoginInterface_017 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Nullable
@@ -178,7 +178,7 @@ public class NLoginCore_588 implements NLoginInterface_017 {
 
    @Override
    public boolean e() {
-      return (boolean)(this.a != null ? i : j);
+      return ((this.a != null ? i : j) != 0);
    }
 
    @Override
@@ -188,7 +188,7 @@ public class NLoginCore_588 implements NLoginInterface_017 {
 
    @Override
    public void g() {
-      this.b = (boolean)h;
+      this.b = (h != 0);
    }
 
    @Generated

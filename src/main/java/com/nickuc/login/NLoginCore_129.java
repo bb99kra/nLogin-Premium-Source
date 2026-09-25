@@ -33,7 +33,7 @@ public class NLoginCore_129 implements NLoginInterface_027 {
    )
    public void a(EntityDamageByEntityEvent var1) {
       if (this.b.a(var1.getDamager())) {
-         var1.setCancelled((boolean)c);
+         var1.setCancelled((c != 0));
       }
    }
 
@@ -44,7 +44,7 @@ public class NLoginCore_129 implements NLoginInterface_027 {
    public void a(EntityRegainHealthEvent var1) {
       if (this.b.a(var1)) {
          var1.setAmount(0.0);
-         var1.setCancelled((boolean)e);
+         var1.setCancelled((e != 0));
       }
    }
 
@@ -59,7 +59,7 @@ public class NLoginCore_129 implements NLoginInterface_027 {
    )
    public void a(EntityInteractEvent var1) {
       if (this.b.a(var1)) {
-         var1.setCancelled((boolean)f);
+         var1.setCancelled((f != 0));
       }
    }
 
@@ -69,7 +69,7 @@ public class NLoginCore_129 implements NLoginInterface_027 {
    )
    public void a(FoodLevelChangeEvent var1) {
       if (this.b.a(var1)) {
-         var1.setCancelled((boolean)d);
+         var1.setCancelled((d != 0));
       }
    }
 
@@ -91,7 +91,7 @@ public class NLoginCore_129 implements NLoginInterface_027 {
       if (this.b.a(var1)) {
          var1.getEntity().setFireTicks(a);
          var1.setDamage(0.0);
-         var1.setCancelled((boolean)b);
+         var1.setCancelled((b != 0));
       }
    }
 
@@ -104,7 +104,7 @@ public class NLoginCore_129 implements NLoginInterface_027 {
       if (var2.getType() != EntityType.ENDER_PEARL) {
          ProjectileSource var3 = var2.getShooter();
          if (var3 instanceof Player && this.b.b((Player)var3)) {
-            var1.setCancelled((boolean)g);
+            var1.setCancelled((g != 0));
          }
       }
    }
@@ -115,7 +115,7 @@ public class NLoginCore_129 implements NLoginInterface_027 {
    )
    public void a(EntityShootBowEvent var1) {
       if (this.b.a(var1)) {
-         var1.setCancelled((boolean)h);
+         var1.setCancelled((h != 0));
       }
    }
 }

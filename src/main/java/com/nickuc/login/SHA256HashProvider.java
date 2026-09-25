@@ -14,7 +14,7 @@ public class SHA256HashProvider extends PBKDF2HashProvider implements NLoginInte
    private static int at = Integer.reverse(1073741824);
    private static int ad = Integer.reverse(1073741824);
    private static long j = Long.reverse(-2738188573441261568L);
-   private static String[] d = new String[SHA256HashProvider.bb];
+   private static String[] ZKM_STR_B = new String[SHA256HashProvider.bb];
    private static long af = Long.reverse(-2738188573441261568L);
    private static int av = 65536 >>> 111 | 65536 << ~111 + 1;
    private static int v = 0 >>> 72 | 0 << ~72 + 1;
@@ -48,7 +48,7 @@ public class SHA256HashProvider extends PBKDF2HashProvider implements NLoginInte
    private static int am = Integer.reverse(1073741824);
    private static long r = Long.reverse(4914942000171893922L);
    private static int ak = Integer.reverse(0);
-   private static String[] c = new String[ba];
+   private static String[] ZKM_STR_A = new String[ba];
    private static long t = Long.reverse(-2738188573441261568L);
    private static long aq = Long.reverse(-2738188573441261568L);
    private static int bc = Integer.reverse(1610612736);
@@ -59,14 +59,14 @@ public class SHA256HashProvider extends PBKDF2HashProvider implements NLoginInte
    public boolean i(String var1, String var2) {
       String[] var3 = var2.split(a(f, h ^ j));
       if (var3.length != k) {
-         return (boolean)n;
+         return (n != 0);
       } else if (!var3[p].equalsIgnoreCase(a(q, r ^ t))) {
-         return (boolean)v;
+         return (v != 0);
       } else {
          Integer var4 = NLoginCore_449.a(var3[w]);
          if (var4 == null) {
             NLoginCore_370.c(a(ad, ae ^ af) + var3[ag] + a(ah, ai ^ aj));
-            return (boolean)al;
+            return (al != 0);
          } else {
             String var5 = var3[am];
             byte[] var6 = d(var3[an]);
@@ -107,7 +107,7 @@ public class SHA256HashProvider extends PBKDF2HashProvider implements NLoginInte
    private static String a(int var0, long var1) {
       var1 ^= 91L;
       var1 ^= 4462577079677662321L;
-      if (c[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -151,10 +151,10 @@ public class SHA256HashProvider extends PBKDF2HashProvider implements NLoginInte
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         c[var0] = new String(var3.doFinal(Base64.getDecoder().decode(d[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return c[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static void b() {
@@ -201,38 +201,38 @@ public class SHA256HashProvider extends PBKDF2HashProvider implements NLoginInte
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               d[0] = NLoginCore_427.E("֚\u0590ս֡֙ֈւ֣իծշմ", (byte)112, 69);
-               d[1] = NLoginCore_027.A("ƮǓƔƬƲƼǙƪƖǘƔǡƮǛƠƴơǙǩǃǄǅƲƳ", (byte)112, 65);
-               d[2] = NLoginCore_232.D(
+               ZKM_STR_B[0] = NLoginCore_427.E("֚\u0590ս֡֙ֈւ֣իծշմ", (byte)112, 69);
+               ZKM_STR_B[1] = NLoginCore_027.A("ƮǓƔƬƲƼǙƪƖǘƔǡƮǛƠƴơǙǩǃǄǅƲƳ", (byte)112, 65);
+               ZKM_STR_B[2] = NLoginCore_232.D(
                   "ըՈԺՀմ՜քռՆկֆեեըզէւոըկլփլկ֏ՉՑՔ֚փ֍֞֞ֈ֕ձ֣մ֢՟՝֥ր֪֢֥֣շզ֢\u058b\u058b֎ִ։֤\u058c֖֩֬շִַָֻּ֪֮֞ռջֽׁ֥֘֝֠֟\u05c9ׅ\u05ccא\u058c\u05cb\u05cfׄגֿ֎֪֗\u058b֮ז\u05caׇ",
                   (byte)112,
                   68
                );
-               d[3] = NLoginCore_384.F("դ֕֞դև֣վ֢֭֠֟մ", (byte)112, 70);
-               d[4] = NLoginCore_027.A("ƮƫǅƫǉǖǌǛƮǞǜƢƠƟƯǥǃǩǜƣǖƵƲƳ", (byte)112, 65);
-               d[5] = NLoginCore_446.E("ջո֒ո֖֣֙֨ջ֫֩կխլռֲ\u0590ֶ֩հ֣ւտր", (byte)112, 69);
-               d[6] = NLoginCore_076.F("ջո֒ո֖֣֙֨ջ֫֩կխլռֲ\u0590ֶ֩հ֣ւտր", (byte)112, 70);
+               ZKM_STR_B[3] = NLoginCore_384.F("դ֕֞դև֣վ֢֭֠֟մ", (byte)112, 70);
+               ZKM_STR_B[4] = NLoginCore_027.A("ƮƫǅƫǉǖǌǛƮǞǜƢƠƟƯǥǃǩǜƣǖƵƲƳ", (byte)112, 65);
+               ZKM_STR_B[5] = NLoginCore_446.E("ջո֒ո֖֣֙֨ջ֫֩կխլռֲ\u0590ֶ֩հ֣ւտր", (byte)112, 69);
+               ZKM_STR_B[6] = NLoginCore_076.F("ջո֒ո֖֣֙֨ջ֫֩կխլռֲ\u0590ֶ֩հ֣ւտր", (byte)112, 70);
                break;
             case 1:
-               d[0] = NLoginCore_110.F("֠զճ֦։թբռսլ֙մ", (byte)112, 70);
-               d[1] = NLoginCore_384.C("ՔչԺՒ\u0558բտՐԼվՇ՞ՊնբևՙչւՋօ՛\u0558ՙ", (byte)112, 67);
-               d[2] = NLoginCore_530.F(
+               ZKM_STR_B[0] = NLoginCore_110.F("֠զճ֦։թբռսլ֙մ", (byte)112, 70);
+               ZKM_STR_B[1] = NLoginCore_384.C("ՔչԺՒ\u0558բտՐԼվՇ՞ՊնբևՙչւՋօ՛\u0558ՙ", (byte)112, 67);
+               ZKM_STR_B[2] = NLoginCore_530.F(
                   "֏կաէ֛փ֣֫խ֖֭\u058c\u058c֏֍֎֩֟֏ֶ֖֪֖֓֓հոջִּׁ֪ׅׅ֯֘\u05ca֛\u05c9ֆք\u05cc֧ב\u05c9\u05cc\u05ca֞֍\u05c9ֲֲֵכְ\u05cbֳאֽד֞מכׅוןףעבֿ֣֢ׄ\u05ccׇרפ׆װ\u05ec׳\u05f7ֳײ\u05f6\u05ee\u05cb\u05ed\u05fd\u05f7ױ־ׯּ\u05ed\u05f8",
                   (byte)112,
                   70
                );
-               d[3] = NLoginCore_201.F("բ֜ղ֡դ֞գ֣֭իտմ", (byte)112, 70);
-               d[4] = NLoginCore_110.D("ՔՑիՑկռղցՔքւՄ՝սՂրվև\u0558փլ՛\u0558ՙ", (byte)112, 68);
-               d[5] = NLoginCore_530.A("ƮƫǅƫǉǖǌǛƮǞǞƢǓǥǇƣǕǅǓǜǘƵƲƳ", (byte)112, 65);
-               d[6] = NLoginCore_451.F("ջո֒ո֖֣֙֨ջ֫֫֙֡ֈխִ֦֩֊նָ֚տր", (byte)112, 70);
+               ZKM_STR_B[3] = NLoginCore_201.F("բ֜ղ֡դ֞գ֣֭իտմ", (byte)112, 70);
+               ZKM_STR_B[4] = NLoginCore_110.D("ՔՑիՑկռղցՔքւՄ՝սՂրվև\u0558փլ՛\u0558ՙ", (byte)112, 68);
+               ZKM_STR_B[5] = NLoginCore_530.A("ƮƫǅƫǉǖǌǛƮǞǞƢǓǥǇƣǕǅǓǜǘƵƲƳ", (byte)112, 65);
+               ZKM_STR_B[6] = NLoginCore_451.F("ջո֒ո֖֣֙֨ջ֫֫֙֡ֈխִ֦֩֊նָ֚տր", (byte)112, 70);
                break;
             case 2:
-               d[0] = NLoginCore_091.E("֦֦յ֑֖բ֘֫֊֤պ֜վձև֊ְֱխָո֑֧֭֕֬ն֚\u058bְ֘֕", (byte)112, 69);
+               ZKM_STR_B[0] = NLoginCore_091.E("֦֦յ֑֖բ֘֫֊֤պ֜վձև֊ְֱխָո֑֧֭֕֬ն֚\u058bְ֘֕", (byte)112, 69);
             case 3:
             default:
                break;
             case 4:
-               d[0] = NLoginCore_183.A("ƗƯƖƤǘǔƬǔƠǛƚǡƝƟǧǤǂƻǂƝǌǥǘƫǪǝƬƿƱǣƵǦ", (byte)112, 65);
+               ZKM_STR_B[0] = NLoginCore_183.A("ƗƯƖƤǘǔƬǔƠǛƚǡƝƟǧǤǂƻǂƝǌǥǘƫǪǝƬƿƱǣƵǦ", (byte)112, 65);
          }
       }
    }

@@ -14,9 +14,9 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
 public class NLoginCore_432 {
-   private static String[] b = new String[NLoginCore_432.r];
+   private static String[] ZKM_STR_B = new String[NLoginCore_432.r];
    private static long o = Long.reverse(676363008676895768L);
-   private static String[] a = new String[NLoginCore_432.q];
+   private static String[] ZKM_STR_A = new String[NLoginCore_432.q];
    private static final Pattern j = Pattern.compile(a(NLoginCore_432.s, NLoginCore_432.t));
    private static long t = Long.reverse(-2782401505143645160L);
    private static long d = Long.reverse(-3458764513820540928L);
@@ -109,28 +109,28 @@ public class NLoginCore_432 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_471.C("҆Ҷұ҇ҟѾҟҫҠҔҍҊ", (byte)47, 67);
-               b[1] = NLoginCore_559.B("ĐŇĸĕęįĒĪįŔňŋŐşŗİŏśģĳŖŃİı", (byte)47, 66);
-               b[2] = NLoginCore_091.F("ԯ՟՚\u0530ՈԧՈՔՉԽԶԳ", (byte)47, 70);
-               b[3] = NLoginCore_446.A("ĦĩĖĘŋĘļĶřĲŞĥ", (byte)47, 65);
-               b[4] = NLoginCore_384.D("ҦҒѷҭѵ҈қҵҌґһӂҵѿґҪӀҫҮҺҩҘҕҖ", (byte)47, 68);
-               b[5] = NLoginCore_092.E("՟ԟԘբՁՕԜ՟Ջ\u0558թդՉՙԪձԯ՟ՐԶզիկՔՔճՈ՚ջծպԺեՍ՜՚՞ՕՀՈ֍ր՛֏Սսպՠ֊սբՏնա՞՟", (byte)47, 69);
+               ZKM_STR_B[0] = NLoginCore_471.C("҆Ҷұ҇ҟѾҟҫҠҔҍҊ", (byte)47, 67);
+               ZKM_STR_B[1] = NLoginCore_559.B("ĐŇĸĕęįĒĪįŔňŋŐşŗİŏśģĳŖŃİı", (byte)47, 66);
+               ZKM_STR_B[2] = NLoginCore_091.F("ԯ՟՚\u0530ՈԧՈՔՉԽԶԳ", (byte)47, 70);
+               ZKM_STR_B[3] = NLoginCore_446.A("ĦĩĖĘŋĘļĶřĲŞĥ", (byte)47, 65);
+               ZKM_STR_B[4] = NLoginCore_384.D("ҦҒѷҭѵ҈қҵҌґһӂҵѿґҪӀҫҮҺҩҘҕҖ", (byte)47, 68);
+               ZKM_STR_B[5] = NLoginCore_092.E("՟ԟԘբՁՕԜ՟Ջ\u0558թդՉՙԪձԯ՟ՐԶզիկՔՔճՈ՚ջծպԺեՍ՜՚՞ՕՀՈ֍ր՛֏Սսպՠ֊սբՏնա՞՟", (byte)47, 69);
                break;
             case 1:
-               b[0] = NLoginCore_453.D("ҥҌҦѽҭүҸҡѿҐҀҊ", (byte)47, 68);
-               b[1] = NLoginCore_076.A("ĐŇĸĕęįĒĪįŔňğŞńĞŗőĽĤŒņūĬŗĮįŀŀťĬŉĵ", (byte)47, 65);
-               b[2] = NLoginCore_223.E("ՎՂՕբ՞բՅբԥՌԭԳ", (byte)47, 69);
-               b[3] = NLoginCore_453.C("ҒҮҔҍҚҌҬүҫҙ҄Ҋ", (byte)47, 67);
-               b[4] = NLoginCore_387.D("ҦҒѷҭѵ҈қҵҌґҼҽӁҴҞҪҫӇҺӈҟӉҹ҄ҭ҆ҥӒҮҗҪҧ", (byte)47, 68);
-               b[5] = NLoginCore_183.A("őđĊŔĳŇĎőĽŊśŖĻŋĜţġőłĨŘŝšņņťĺŌŭŠŬĬŗĿŎŌŐŇĲĺſŲōšŭűŘŞŷşŚƉŁŤŸŤřŻƅőŨŮųƖ", (byte)47, 65);
+               ZKM_STR_B[0] = NLoginCore_453.D("ҥҌҦѽҭүҸҡѿҐҀҊ", (byte)47, 68);
+               ZKM_STR_B[1] = NLoginCore_076.A("ĐŇĸĕęįĒĪįŔňğŞńĞŗőĽĤŒņūĬŗĮįŀŀťĬŉĵ", (byte)47, 65);
+               ZKM_STR_B[2] = NLoginCore_223.E("ՎՂՕբ՞բՅբԥՌԭԳ", (byte)47, 69);
+               ZKM_STR_B[3] = NLoginCore_453.C("ҒҮҔҍҚҌҬүҫҙ҄Ҋ", (byte)47, 67);
+               ZKM_STR_B[4] = NLoginCore_387.D("ҦҒѷҭѵ҈қҵҌґҼҽӁҴҞҪҫӇҺӈҟӉҹ҄ҭ҆ҥӒҮҗҪҧ", (byte)47, 68);
+               ZKM_STR_B[5] = NLoginCore_183.A("őđĊŔĳŇĎőĽŊśŖĻŋĜţġőłĨŘŝšņņťĺŌŭŠŬĬŗĿŎŌŐŇĲĺſŲōšŭűŘŞŷşŚƉŁŤŸŤřŻƅőŨŮųƖ", (byte)47, 65);
                break;
             case 2:
-               b[0] = NLoginCore_138.D("҅Ҙ҉ѻѶѶѿѽҗҰүҊ", (byte)47, 68);
+               ZKM_STR_B[0] = NLoginCore_138.D("҅Ҙ҉ѻѶѶѿѽҗҰүҊ", (byte)47, 68);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_521.D("ҼұҎҼҔ҉ҁҚҍҤҙҊ", (byte)47, 68);
+               ZKM_STR_B[0] = NLoginCore_521.D("ҼұҎҼҔ҉ҁҚҍҤҙҊ", (byte)47, 68);
          }
       }
    }
@@ -142,7 +142,7 @@ public class NLoginCore_432 {
    private static String a(int var0, long var1) {
       var1 ^= 11L;
       var1 ^= -2821616638977443334L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -186,10 +186,10 @@ public class NLoginCore_432 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {

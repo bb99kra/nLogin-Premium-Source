@@ -36,19 +36,19 @@ public class NLoginCore_111 implements NLoginInterface_018 {
 
    @Override
    public NLoginCore_056 a() {
-      return new NLoginCore_209(this.m.b(), this.m, (boolean)c);
+      return new NLoginCore_209(this.m.b(), this.m, (c != 0));
    }
 
    @Override
    public boolean a() {
-      return NLoginCore_134.a(this.m, (boolean)b);
+      return NLoginCore_134.a(this.m, (b != 0));
    }
 
    @Override
    public void b() {
       NLoginType_008 var1 = this.m.a();
       this.m.b().c().forEach(var0 -> var0.a(NLoginCore_150.a(NLoginCore_487.p, var0)));
-      NLoginCore_478.a(this.m, (boolean)a);
+      NLoginCore_478.a(this.m, (a != 0));
       this.m.a().n();
    }
 }

@@ -18,7 +18,7 @@ public class NLoginCore_361 implements NLoginInterface_003 {
    private static int o = Integer.reverse(0);
    private static int q = 1024 >>> 170 | 1024 << -170;
    private static int e = Integer.reverse(-201326592);
-   private static String[] a = new String[NLoginCore_361.p];
+   private static String[] ZKM_STR_A = new String[NLoginCore_361.p];
    private static int l = (1024 >>> 42 | 1024 << -42) & -1;
    private static int m = (67108864 >>> 58 | 67108864 << ~58 + 1) & -1;
    private static int p = Integer.reverse(Integer.MIN_VALUE);
@@ -28,7 +28,7 @@ public class NLoginCore_361 implements NLoginInterface_003 {
    private static int b = Integer.reverse(-201326592);
    private static int n = (0 >>> 91 | 0 << ~91 + 1) & -1;
    private static long c;
-   private static String[] b = new String[q];
+   private static String[] ZKM_STR_B = new String[q];
    private static int c = 8192 >>> 77 | 8192 << ~77 + 1;
    private static int j = Integer.reverse(Integer.MIN_VALUE);
    private static int k = (0 >>> 49 | 0 << -49) & -1;
@@ -39,7 +39,7 @@ public class NLoginCore_361 implements NLoginInterface_003 {
    private static String a(int var0, long var1) {
       var1 ^= 73L;
       var1 ^= -1604801141519867054L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -83,10 +83,10 @@ public class NLoginCore_361 implements NLoginInterface_003 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static void b() {
@@ -133,18 +133,18 @@ public class NLoginCore_361 implements NLoginInterface_003 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_110.A("ŌĻŊřŌőƇłƁĿŉŏ", (byte)68, 65);
+               ZKM_STR_B[0] = NLoginCore_110.A("ŌĻŊřŌőƇłƁĿŉŏ", (byte)68, 65);
                break;
             case 1:
-               b[0] = NLoginCore_521.E("ՇՍՍզՓՈպոՔԸչՈ", (byte)68, 69);
+               ZKM_STR_B[0] = NLoginCore_521.E("ՇՍՍզՓՈպոՔԸչՈ", (byte)68, 69);
                break;
             case 2:
-               b[0] = NLoginCore_201.D("ӛҸӳӱӦӒԁӑӛӛӚӂԂӗӰһԋӦӅӬӆԅԈӺӱӟӱӢԋӴӬԓ", (byte)68, 68);
+               ZKM_STR_B[0] = NLoginCore_201.D("ӛҸӳӱӦӒԁӑӛӛӚӂԂӗӰһԋӦӅӬӆԅԈӺӱӟӱӢԋӴӬԓ", (byte)68, 68);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_384.A("ūŞŘšžšŢŰŨżłƉŅſŦƈšƋŦƌƐƃŚś", (byte)68, 65);
+               ZKM_STR_B[0] = NLoginCore_384.A("ūŞŘšžšŢŰŨżłƉŅſŦƈšƋŦƌƐƃŚś", (byte)68, 65);
          }
       }
    }
@@ -180,14 +180,14 @@ public class NLoginCore_361 implements NLoginInterface_003 {
          NLoginCore_277 var3 = NLoginCore_346.a(this.a).b().a(var1.getPlayer());
          NLoginCore_509 var4 = NLoginCore_346.a(this.a).a().a(var3);
          if (var4 == null) {
-            var1.setCancelled((boolean)a);
+            var1.setCancelled((a != 0));
          } else {
             WrapperPlayClientChatCommand var5 = new WrapperPlayClientChatCommand(var1);
             String var6 = var5.getCommand().trim();
             if (!var6.isEmpty()) {
                String var7 = NLoginCore_346.a(this.a).b().a(var3, b + var6);
                if (var7 == null) {
-                  var1.setCancelled((boolean)c);
+                  var1.setCancelled((c != 0));
                } else {
                   if (var7.charAt(d) == e) {
                      var7 = var7.substring(f);
@@ -195,7 +195,7 @@ public class NLoginCore_361 implements NLoginInterface_003 {
 
                   if (var5.getMessageSignData().getSaltSignature().getSignature().length == 0 && var5.getMessageSignData().getSaltSignature().getSalt() == 0L) {
                      var5.setCommand(var7);
-                     var1.markForReEncode((boolean)g);
+                     var1.markForReEncode((g != 0));
                   }
 
                   String[] var8 = var6.split(a(h, i));

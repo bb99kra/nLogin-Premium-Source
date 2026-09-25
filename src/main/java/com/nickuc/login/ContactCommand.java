@@ -23,9 +23,9 @@ public class ContactCommand implements NLoginInterface_035 {
    private static int b = 18 >>> 97 | 18 << -97;
    private static long j = Long.reverse(3309416986446876304L);
    private static int s = Integer.reverse(1073741824);
-   private static String[] b = new String[ContactCommand.t];
+   private static String[] ZKM_STR_B = new String[ContactCommand.t];
    private Boolean c;
-   private static String[] a = new String[s];
+   private static String[] ZKM_STR_A = new String[s];
    private static int c = Integer.reverse(Integer.MIN_VALUE);
    private static int g = Integer.reverse(0);
    private static int a = Integer.MIN_VALUE >>> 191 | Integer.MIN_VALUE << ~191 + 1;
@@ -41,7 +41,7 @@ public class ContactCommand implements NLoginInterface_035 {
    private static String a(int var0, long var1) {
       var1 ^= 2L;
       var1 ^= -1957008598363100742L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -85,10 +85,10 @@ public class ContactCommand implements NLoginInterface_035 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    static {
@@ -101,7 +101,7 @@ public class ContactCommand implements NLoginInterface_035 {
          return this.c;
       } else {
          int var4 = var1.a().n();
-         return this.c = Boolean.valueOf((boolean)(var4 != a && var4 != b ? c : d));
+         return this.c = Boolean.valueOf(((var4 != a && var4 != b ? c : d) != 0));
       }
    }
 
@@ -159,20 +159,20 @@ public class ContactCommand implements NLoginInterface_035 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_397.D("չգֈքՔփէ\u0590֙հդփծչ՜ըշցջր֒ց֖֠ոֆօմս֧ռ֢֘ըղծտէֵַ֣֞֩֨և֕ջֲչִֻֻ֙֝֊\u058b", (byte)118, 68);
-               b[1] = NLoginCore_201.A("ƽƞǃǡƣƛƢǬǊƤǆǌǃǣǇƱǇǭǱǌǫǷƾƿ", (byte)118, 65);
+               ZKM_STR_B[0] = NLoginCore_397.D("չգֈքՔփէ\u0590֙հդփծչ՜ըշցջր֒ց֖֠ոֆօմս֧ռ֢֘ըղծտէֵַ֣֞֩֨և֕ջֲչִֻֻ֙֝֊\u058b", (byte)118, 68);
+               ZKM_STR_B[1] = NLoginCore_201.A("ƽƞǃǡƣƛƢǬǊƤǆǌǃǣǇƱǇǭǱǌǫǷƾƿ", (byte)118, 65);
                break;
             case 1:
-               b[0] = NLoginCore_453.F("֔վ֣֟կ֞ւִ֫\u058bտ֞։֔շփֱֻ֖֛֭֒֜֜֓֡֠֏ֳֽׂ֘֗փ֍։֚ւֹׄג־ג׀ׂ֔\u05cf\u05cbַ֥֥֦֬֞֯֨", (byte)118, 70);
-               b[1] = NLoginCore_384.B("ƽƞǃǡƣƛƢǬǊƤǉǋǄưǦǓǋǫƶǨǸǒǇǎƼǽǙƹǾƸǗǖ", (byte)118, 66);
+               ZKM_STR_B[0] = NLoginCore_453.F("֔վ֣֟կ֞ւִ֫\u058bտ֞։֔շփֱֻ֖֛֭֒֜֜֓֡֠֏ֳֽׂ֘֗փ֍։֚ւֹׄג־ג׀ׂ֔\u05cf\u05cbַ֥֥֦֬֞֯֨", (byte)118, 70);
+               ZKM_STR_B[1] = NLoginCore_384.B("ƽƞǃǡƣƛƢǬǊƤǉǋǄưǦǓǋǫƶǨǸǒǇǎƼǽǙƹǾƸǗǖ", (byte)118, 66);
                break;
             case 2:
-               b[0] = NLoginCore_201.A("ǙǒǢǂǛǚƵƢƦǨǦǮǭǅǀǎǇǱǕƱǆǧƾƿ", (byte)118, 65);
+               ZKM_STR_B[0] = NLoginCore_201.A("ǙǒǢǂǛǚƵƢƦǨǦǮǭǅǀǎǇǱǕƱǆǧƾƿ", (byte)118, 65);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_091.A("ƭǜǡǙǃǗƷǈǥǝƾơƨǭƺǧǰǀǅǏǣǁƾƿ", (byte)118, 65);
+               ZKM_STR_B[0] = NLoginCore_091.A("ƭǜǡǙǃǗƷǈǥǝƾơƨǭƺǧǰǀǅǏǣǁƾƿ", (byte)118, 65);
          }
       }
    }
@@ -185,7 +185,7 @@ public class ContactCommand implements NLoginInterface_035 {
       var10002[h] = a(i, j ^ k);
       var10002[l] = a(m & n, o);
       NLoginCore_150.a(var2, var10001, var10002);
-      this.c = Boolean.valueOf((boolean)p);
+      this.c = Boolean.valueOf((p != 0));
       NLoginCore_445[] var5 = new NLoginCore_445[q];
       var5[r] = NLoginCore_445.a;
       return GUIButtonContainer.a(var2, var5);

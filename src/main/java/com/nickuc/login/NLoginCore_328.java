@@ -46,12 +46,12 @@ public class NLoginCore_328 implements NLoginInterface_029 {
    private static int q = (1073741824 >>> 254 | 1073741824 << -254) & -1;
    private static int s = Integer.reverse(1543503872);
    private static int n = Integer.reverse(0);
-   private static String[] b = new String[ab];
+   private static String[] ZKM_STR_B = new String[ab];
    private static int u = 0 >>> 193 | 0 << ~193 + 1;
    private final Set<String> t;
    private final Set<String> u;
    private static int j = 0 >>> 108 | 0 << ~108 + 1;
-   private static String[] a = new String[aa];
+   private static String[] ZKM_STR_A = new String[aa];
    private static int v = Integer.reverse(-201326592);
    private static int i = Integer.reverse(-201326592);
    private static int d = Integer.reverse(0);
@@ -73,7 +73,7 @@ public class NLoginCore_328 implements NLoginInterface_029 {
    private static String a(int var0, long var1) {
       var1 ^= 110L;
       var1 ^= 7936652216971819836L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -117,10 +117,10 @@ public class NLoginCore_328 implements NLoginInterface_029 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    @Subscribe(
@@ -129,7 +129,7 @@ public class NLoginCore_328 implements NLoginInterface_029 {
    public void a(PlayerAvailableCommandsEvent var1) {
       var1.getRootNode().getChildren().removeIf(var1x -> {
          String var2 = var1x.getName().toLowerCase(Locale.ENGLISH);
-         return (boolean)(!var2.startsWith(this.bS + s) && !this.t.contains(var2) ? u : t);
+         return ((!var2.startsWith(this.bS + s) != 0) && !this.t.contains(var2) ? u : t);
       });
    }
 
@@ -152,12 +152,12 @@ public class NLoginCore_328 implements NLoginInterface_029 {
 
    private boolean g(String var1) {
       if (var1.isEmpty()) {
-         return (boolean)j;
+         return (j != 0);
       } else if (var1.charAt(k) != l) {
-         return (boolean)m;
+         return (m != 0);
       } else {
          String[] var2 = var1.split(a(n, o));
-         return (boolean)(var2.length > 0 && this.u.contains(var2[p].toLowerCase(Locale.ENGLISH)) ? q : r);
+         return ((var2.length > 0 && this.u.contains(var2[p].toLowerCase(Locale.ENGLISH) != 0)) ? q : r);
       }
    }
 
@@ -188,7 +188,7 @@ public class NLoginCore_328 implements NLoginInterface_029 {
       if (!var2.isEmpty()) {
          String var3 = var1.getPartialMessage().trim();
          if (var3.isEmpty() || var3.charAt(h) == i) {
-            var2.removeIf(var1x -> (boolean)(!var1x.startsWith(v + this.bS + w) && !this.g(var1x) ? y : x));
+            var2.removeIf(var1x -> ((!var1x.startsWith(v + this.bS + w) != 0) && !this.g(var1x) ? y : x));
          }
       }
    }
@@ -237,18 +237,18 @@ public class NLoginCore_328 implements NLoginInterface_029 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_453.D("ҷӘҿӈӬҭӲҿӠӦӘҽ", (byte)64, 68);
+               ZKM_STR_B[0] = NLoginCore_453.D("ҷӘҿӈӬҭӲҿӠӦӘҽ", (byte)64, 68);
                break;
             case 1:
-               b[0] = NLoginCore_141.D("ӇҾӤӆөӅҼӇӥұӪҽ", (byte)64, 68);
+               ZKM_STR_B[0] = NLoginCore_141.D("ӇҾӤӆөӅҼӇӥұӪҽ", (byte)64, 68);
                break;
             case 2:
-               b[0] = NLoginCore_076.A("ťŤńŖŻĽōŞŖššľŏőŕľŇĻŞŠšƋŒœ", (byte)64, 65);
+               ZKM_STR_B[0] = NLoginCore_076.A("ťŤńŖŻĽōŞŖššľŏőŕľŇĻŞŠšƋŒœ", (byte)64, 65);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_553.E("ԵգԱԵապՙչԻՒՖմ\u0557չչշՄւղբՒբՏՐ", (byte)64, 69);
+               ZKM_STR_B[0] = NLoginCore_553.E("ԵգԱԵապՙչԻՒՖմ\u0557չչշՄւղբՒբՏՐ", (byte)64, 69);
          }
       }
    }

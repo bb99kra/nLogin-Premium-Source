@@ -22,14 +22,14 @@ import lombok.Generated;
 
 public class NLoginCore_191 implements NLoginInterface_021, SimpleCommand {
    private static long g = Long.reverse(4823502279966634215L);
-   private static String[] a = new String[NLoginCore_191.i];
+   private static String[] ZKM_STR_A = new String[NLoginCore_191.i];
    private static long d = Long.reverse(8070450532247928832L);
    private static int i = 1048576 >>> 147 | 1048576 << ~147 + 1;
    private static int a = Integer.reverse(0);
    private static int f = (-1 >>> 45 | -1 << ~45 + 1) & -1;
    private static int e = (262144 >>> 242 | 262144 << -242) & -1;
    private static long b = Long.reverse(3670580775359787239L);
-   private static String[] b = new String[NLoginCore_191.j];
+   private static String[] ZKM_STR_B = new String[NLoginCore_191.j];
    private static int h = (0 >>> 204 | 0 << -204) & -1;
    private static int j = (262144 >>> 145 | 262144 << -145) & -1;
    private final NLoginCore_168<?> d;
@@ -116,20 +116,20 @@ public class NLoginCore_191 implements NLoginInterface_021, SimpleCommand {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_387.B("ðĔþčĶġĔąİİľč", (byte)35, 66);
-               b[1] = NLoginCore_397.E("ԊԮԘԧՐԻԮԟՊՊ\u0558ԧ", (byte)35, 69);
+               ZKM_STR_B[0] = NLoginCore_387.B("ðĔþčĶġĔąİİľč", (byte)35, 66);
+               ZKM_STR_B[1] = NLoginCore_397.E("ԊԮԘԧՐԻԮԟՊՊ\u0558ԧ", (byte)35, 69);
                break;
             case 1:
-               b[0] = NLoginCore_575.D("҄ѯђҐғ҅ѱѫѵѭҋґҎҖѭѱљҕ҄ќѹҚѱѲ", (byte)35, 68);
-               b[1] = NLoginCore_446.B("ĕĜĎļġăĬĴıħĲŇģĊĔăĮĺŋčīőĘę", (byte)35, 66);
+               ZKM_STR_B[0] = NLoginCore_575.D("҄ѯђҐғ҅ѱѫѵѭҋґҎҖѭѱљҕ҄ќѹҚѱѲ", (byte)35, 68);
+               ZKM_STR_B[1] = NLoginCore_446.B("ĕĜĎļġăĬĴıħĲŇģĊĔăĮĺŋčīőĘę", (byte)35, 66);
                break;
             case 2:
-               b[0] = NLoginCore_004.D("ҕ҆ѥҗљҋґѧѝҟѝѹҝ҂ќҚѧҘѷҀѨ҄ѱѲ", (byte)35, 68);
+               ZKM_STR_B[0] = NLoginCore_004.D("ҕ҆ѥҗљҋґѧѝҟѝѹҝ҂ќҚѧҘѷҀѨ҄ѱѲ", (byte)35, 68);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_446.A("÷īĽøĮĒĢüĺāĜč", (byte)35, 65);
+               ZKM_STR_B[0] = NLoginCore_446.A("÷īĽøĮĒĢüĺāĜč", (byte)35, 65);
          }
       }
    }
@@ -148,7 +148,7 @@ public class NLoginCore_191 implements NLoginInterface_021, SimpleCommand {
    private static String a(int var0, long var1) {
       var1 ^= 14L;
       var1 ^= 5236053179007801768L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -192,10 +192,10 @@ public class NLoginCore_191 implements NLoginInterface_021, SimpleCommand {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    public void a(Invocation var1) {

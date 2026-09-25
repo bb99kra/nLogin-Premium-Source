@@ -16,7 +16,7 @@ import lombok.Generated;
 
 public class NLoginCore_099 implements NLoginInterface_003 {
    private static int q = 524288 >>> 211 | 524288 << -211;
-   private static String[] b = new String[NLoginCore_099.r];
+   private static String[] ZKM_STR_B = new String[NLoginCore_099.r];
    private static int m = Integer.reverse(Integer.MIN_VALUE);
    private static int p = 0 >>> 39 | 0 << ~39 + 1;
    private static int k = (536870912 >>> 61 | 536870912 << ~61 + 1) & -1;
@@ -28,7 +28,7 @@ public class NLoginCore_099 implements NLoginInterface_003 {
    private static long i = Long.reverse(1576659477577277511L);
    private static long c;
    private static long j = Long.reverse(-3746994889972252672L);
-   private static String[] a = new String[q];
+   private static String[] ZKM_STR_A = new String[q];
    private static int c = Integer.reverse(Integer.MIN_VALUE);
    private static int g = Integer.reverse(Integer.MIN_VALUE);
    private static int a = Integer.reverse(Integer.MIN_VALUE);
@@ -44,21 +44,21 @@ public class NLoginCore_099 implements NLoginInterface_003 {
          NLoginCore_277 var3 = NLoginCore_346.a(this.b).b().a(var2);
          NLoginCore_509 var4 = NLoginCore_346.a(this.b).a().a(var3);
          if (var4 == null) {
-            var1.setCancelled((boolean)a);
+            var1.setCancelled((a != 0));
          } else {
             WrapperPlayClientChatCommandUnsigned var5 = new WrapperPlayClientChatCommandUnsigned(var1);
             String var6 = var5.getCommand().trim();
             if (!var6.isEmpty()) {
                String var7 = NLoginCore_346.a(this.b).b().a(var3, b + var6);
                if (var7 == null) {
-                  var1.setCancelled((boolean)c);
+                  var1.setCancelled((c != 0));
                } else {
                   if (var7.charAt(d) == e) {
                      var7 = var7.substring(f);
                   }
 
                   var5.setCommand(var7);
-                  var1.markForReEncode((boolean)g);
+                  var1.markForReEncode((g != 0));
                   String[] var8 = var6.split(a(h, i ^ j));
                   if (var8.length >= k) {
                      NLoginCore_466 var9 = NLoginCore_346.a(this.b).a().a(var8[l].toLowerCase(Locale.ENGLISH));
@@ -125,18 +125,18 @@ public class NLoginCore_099 implements NLoginInterface_003 {
       for (int var6 = 0; var6 < var7; var6++) {
          switch (var6) {
             case 0:
-               b[0] = NLoginCore_384.A("ǇƢǋǃƟƜƍǎƿƟƪƗ", (byte)104, 65);
+               ZKM_STR_B[0] = NLoginCore_384.A("ǇƢǋǃƟƜƍǎƿƟƪƗ", (byte)104, 65);
                break;
             case 1:
-               b[0] = NLoginCore_397.D("՟ԠՐ\u0557ԿՔթՈԿհԫԵ", (byte)104, 68);
+               ZKM_STR_B[0] = NLoginCore_397.D("՟ԠՐ\u0557ԿՔթՈԿհԫԵ", (byte)104, 68);
                break;
             case 2:
-               b[0] = NLoginCore_183.F("ո֏՝Ֆջձաո՞֧֚տբ֨դ֤֞ջլցօ\u058b֢ւ֖ղ֤ժ֪\u058bֽ֖", (byte)104, 70);
+               ZKM_STR_B[0] = NLoginCore_183.F("ո֏՝Ֆջձաո՞֧֚տբ֨դ֤֞ջլցօ\u058b֢ւ֖ղ֤ժ֪\u058bֽ֖", (byte)104, 70);
             case 3:
             default:
                break;
             case 4:
-               b[0] = NLoginCore_241.C("էԵԼՄՂԾԹծՠծԫ\u0530լթ՟ՒՍՊ\u0558Ճ\u0558ՓՀՁ", (byte)104, 67);
+               ZKM_STR_B[0] = NLoginCore_241.C("էԵԼՄՂԾԹծՠծԫ\u0530լթ՟ՒՍՊ\u0558Ճ\u0558ՓՀՁ", (byte)104, 67);
          }
       }
    }
@@ -149,7 +149,7 @@ public class NLoginCore_099 implements NLoginInterface_003 {
    private static String a(int var0, long var1) {
       var1 ^= 51L;
       var1 ^= 6664509851917338479L;
-      if (a[var0] == null) {
+      if (ZKM_STR_A[var0] == null) {
          Cipher var3;
          SecretKeyFactory var4;
          try {
@@ -193,10 +193,10 @@ public class NLoginCore_099 implements NLoginInterface_003 {
          }
 
          var3.init(2, var4.generateSecret(new DESKeySpec(var5)), new IvParameterSpec(new byte[8]));
-         a[var0] = new String(var3.doFinal(Base64.getDecoder().decode(b[var0])), StandardCharsets.UTF_8);
+         ZKM_STR_A[var0] = new String(var3.doFinal(Base64.getDecoder().decode(ZKM_STR_B[var0])), StandardCharsets.UTF_8);
       }
 
-      return a[var0];
+      return ZKM_STR_A[var0];
    }
 
    private static Object c(Lookup var0, String var1, MethodType var2) {

@@ -24,7 +24,7 @@ public class NLoginCore_399 implements NLoginInterface_027 {
    )
    public void a(BlockPlaceEvent var1) {
       if (this.a.b(var1.getPlayer())) {
-         var1.setCancelled((boolean)a);
+         var1.setCancelled((a != 0));
       }
    }
 
@@ -34,7 +34,7 @@ public class NLoginCore_399 implements NLoginInterface_027 {
    )
    public void a(SignChangeEvent var1) {
       if (this.a.b(var1.getPlayer())) {
-         var1.setCancelled((boolean)c);
+         var1.setCancelled((c != 0));
       }
    }
 
@@ -44,7 +44,7 @@ public class NLoginCore_399 implements NLoginInterface_027 {
    )
    public void a(BlockBreakEvent var1) {
       if (this.a.b(var1.getPlayer())) {
-         var1.setCancelled((boolean)b);
+         var1.setCancelled((b != 0));
       }
    }
 }

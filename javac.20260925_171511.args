@@ -1,0 +1,4 @@
+@/data/data/com.termux/files/home/javac_opts.args
+-d
+/data/data/com.termux/files/home/tmp/classes
+src/main/java/com/nickuc/login/proxy/velocity/nLoginVelocity.java
